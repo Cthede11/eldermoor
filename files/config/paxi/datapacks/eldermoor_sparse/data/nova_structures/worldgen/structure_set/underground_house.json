@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 23094,
+    "separation": 35,
+    "spacing": 70,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "nova_structures:underground_house",
+      "weight": 1
+    }
+  ]
+}

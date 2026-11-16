@@ -1,0 +1,20 @@
+{
+  "forge:conditions": [
+    {
+      "config": "arcane_library_enabled",
+      "type": "ars_additions:config"
+    }
+  ],
+  "placement": {
+    "salt": 41285528,
+    "separation": 57,
+    "spacing": 115,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "ars_additions:arcane_library",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 5,
+      "other_set": "minecraft:ancient_cities"
+    },
+    "salt": 83979417,
+    "separation": 37,
+    "spacing": 147,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "dungeonnowloading:temple_of_duality",
+      "weight": 1
+    }
+  ]
+}

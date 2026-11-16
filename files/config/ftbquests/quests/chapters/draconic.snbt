@@ -1,0 +1,1364 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "draconic"
+	group: "02AD8609A8FE6EE4"
+	icon: "draconicevolution:wyvern_core"
+	id: "02DD7C13F44BCE16"
+	images: [ ]
+	order_index: 16
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["295CE42425413F4A"]
+			description: [
+				"The last word in engineering. Draconium ore is deep in the overworld, in the Nether and in the End (the End's is richest)."
+				""
+				"It goes in three tiers: &bWyvern&f, &6Draconic&f (needs the Ender Dragon's heart) and &cChaotic&f (needs the Chaos Guardian, Act IV)."
+				""
+				"Its armour does not block damage the usual way: a shield of energy soaks it all up until the shield runs dry. Keep it charged."
+			]
+			hide_until_deps_complete: true
+			id: "1C1B485D735A4F2A"
+			rewards: [
+				{
+					id: "5CD50B9D621285F2"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "31E5FA8D1928BF0E"
+					item: "draconicevolution:draconium_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6F6FA604D64E1C30"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6D318DE385C26D79"
+					title: "Begin"
+					type: "checkmark"
+				}
+			]
+			title: "&5&lDraconic Evolution"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32B15EA9B27A909B"]
+			id: "3894B6203AD5120E"
+			rewards: [
+				{
+					id: "1067AB8F1DA3A02E"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "07E76381B9E1D2ED"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "41BBADE709A96662"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ore in, ingots out. Mekanism's ore processing works on it."
+			tasks: [
+				{
+					count: 16L
+					id: "2A0530F19EC685B7"
+					item: "draconicevolution:draconium_ingot"
+					type: "item"
+				}
+			]
+			title: "Draconium"
+			x: 3.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3894B6203AD5120E"]
+			id: "6E9B8DA264802149"
+			rewards: [
+				{
+					id: "60FEC59A65A5B344"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "1E8469216C3F4019"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6E6A42C0A77B0035"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The first of the cores. Everything else is built from cores."
+			tasks: [
+				{
+					id: "1184899DFEBFC2F3"
+					item: "draconicevolution:draconium_core"
+					type: "item"
+				}
+			]
+			title: "A Draconium Core"
+			x: 5.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E9B8DA264802149"]
+			description: ["The Fusion Crafting Core sits in the middle; injectors face it from around. Power them, put the ingredients in and press start."]
+			id: "6B4812F4EEAF1EC2"
+			rewards: [
+				{
+					id: "6949CCFFE16CDC73"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 4
+					id: "4E6806827A418C1E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09FF947F553483BD"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0213C014E8957E6F"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5263729C2314171F"
+					item: "draconicevolution:crafting_core"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "75013839F4B010B5"
+					item: "draconicevolution:basic_crafting_injector"
+					type: "item"
+				}
+			]
+			title: "Fusion Crafting"
+			x: 7.45d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E49CDDB35418BDD"]
+			description: ["&7Made from: &fDraconium Ingot x4, Draconium Core x4, any nether stars"]
+			id: "6119BC37ECC671A9"
+			rewards: [
+				{
+					id: "48CC24D7B160246F"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "02CCE04E78FCA91C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "06E676AFD4465208"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Wyvern-tier gear starts here."
+			tasks: [
+				{
+					id: "1E99C837A89509D8"
+					item: "draconicevolution:wyvern_core"
+					type: "item"
+				}
+			]
+			title: "A Wyvern Core"
+			x: 11.05d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B6BA9081D116B75"]
+			id: "32F6E5E86DCB273D"
+			rewards: [
+				{
+					id: "704A1072719092B9"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "43A3E49BDC7B16D6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2478D33DB85D465A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A multiblock battery that grows to absurd sizes."
+			tasks: [
+				{
+					id: "5CB231162CB0FC61"
+					item: "draconicevolution:energy_core"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "14D304976FF0BC0B"
+					item: "draconicevolution:energy_core_stabilizer"
+					type: "item"
+				}
+			]
+			title: "An Energy Core"
+			x: 14.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6119BC37ECC671A9"]
+			description: ["&7Made at: &fFusion Crafting &7from &fDiamond Chestplate, Draconium Core, Draconium Ingot x2, Basic Energy Relay Crystal x2, Wyvern Energy Controller"]
+			id: "6D987E8CA946E0E4"
+			rewards: [
+				{
+					id: "3C5AD883A02F7855"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 4
+					id: "4AE0F466716CA3F8"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CE81B7476613A1D"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "33D96564653B0126"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "One piece, a whole suit's worth of shield. Fill its module grid."
+			tasks: [
+				{
+					id: "6BF22B42101C7707"
+					item: "draconicevolution:wyvern_chestpiece"
+					type: "item"
+				}
+			]
+			title: "Wyvern Armour"
+			x: 12.9d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6D987E8CA946E0E4"]
+			description: ["&7Made at: &fFusion Crafting &7from &fDiamond Sword, Draconium Core, Draconium Ingot x2, Basic Energy Relay Crystal x2, Wyvern Energy Controller"]
+			id: "3BD1629C996A69B3"
+			rewards: [
+				{
+					id: "784D638BD725325A"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "226F6D5C532C39FA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6A62655CA42EB998"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5D310A4EA99F0218"
+					item: "draconicevolution:wyvern_sword"
+					type: "item"
+				}
+			]
+			title: "Wyvern Weapons"
+			x: 14.75d
+			y: -1.75d
+		}
+		{
+			dependencies: ["502BC58C59BA260D"]
+			description: ["Modules go into the gear's grid: shields, speed, flight, auto-feeding and more."]
+			id: "2F9A07ACEC0AD56C"
+			rewards: [
+				{
+					id: "4C7BE0B5EE76B121"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "215DF09A1785BC29"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "390D6A817EB6F09D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "724DE2298266A2DC"
+					item: "draconicevolution:item_wyvern_shield_capacity"
+					type: "item"
+				}
+			]
+			title: "Modules"
+			x: 18.35d
+			y: -1.75d
+		}
+		{
+			dependencies: ["3E49CDDB35418BDD"]
+			id: "0D6D4F78C48E8E3A"
+			rewards: [
+				{
+					id: "1EB5445DE5457807"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "0BA9908AB88F472D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "412E7F5C7D797669"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The Ender Dragon drops it (Act II)."
+			tasks: [
+				{
+					id: "4C4CF2A88A793ACD"
+					item: "draconicevolution:dragon_heart"
+					type: "item"
+				}
+			]
+			title: "The Dragon's Heart"
+			x: 11.05d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D6D4F78C48E8E3A"]
+			id: "40E2F078B434E099"
+			rewards: [
+				{
+					id: "4B441AEA9CF2F3D3"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 4
+					id: "444CEA4C80A20049"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "734635B879715216"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4DC33ACA59A51F0C"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Fused from draconium and the heart."
+			tasks: [
+				{
+					count: 4L
+					id: "2DF131233394807C"
+					item: "draconicevolution:awakened_draconium_ingot"
+					type: "item"
+				}
+			]
+			title: "Awakened Draconium"
+			x: 12.9d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0C557E97D94BDA3C"]
+			description: ["&7Made at: &fFusion Crafting &7from &fany nether stars, Wyvern Core x4, Draconium Awakened Ingot x4"]
+			id: "347A9331F3318310"
+			rewards: [
+				{
+					id: "03F59231B7D274C9"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "1378C0F9984DFE8F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1509ED165DB5D5A7"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6BA200899054AF4F"
+					item: "draconicevolution:awakened_core"
+					type: "item"
+				}
+			]
+			title: "An Awakened Core"
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["66CD7EBB504AFCBE"]
+			description: ["&7Made at: &fFusion Crafting &7from &fWyvern Chestpiece, Netherite Ingot x4, Wyvern Core, Draconium Awakened Ingot x2, Draconic Energy Controller"]
+			id: "0F026819D1FAE104"
+			rewards: [
+				{
+					id: "5AAD138E1EC769CC"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 4
+					id: "7C2BD52C46BBFE13"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C5033C4DD6CC422"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0481A4C22A43C73E"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Bigger shields, flight modules, protection from almost anything."
+			tasks: [
+				{
+					id: "0C0BC4455C62A0B6"
+					item: "draconicevolution:draconic_chestpiece"
+					type: "item"
+				}
+			]
+			title: "Draconic Armour"
+			x: 20.45d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F026819D1FAE104"]
+			description: ["&7Made at: &fFusion Crafting &7from &fWyvern Sword, Netherite Ingot x4, Wyvern Core, Draconium Awakened Ingot x2, Draconic Energy Controller"]
+			id: "312C3E876024F0E1"
+			rewards: [
+				{
+					id: "2BDFA2537049D962"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "48C2107DFB8B91CE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2C95D2EEFE858191"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "13F478829B003818"
+					item: "draconicevolution:draconic_sword"
+					type: "item"
+				}
+			]
+			title: "Draconic Weapons"
+			x: 22.3d
+			y: 3.0d
+		}
+		{
+			dependencies: ["312C3E876024F0E1"]
+			id: "5A0B7BDCE6E1F04E"
+			rewards: [
+				{
+					id: "68B926DE8B9ACCEF"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "2BBDE12A0984FF89"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "16C43FF608263691"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Creative-style flight, while the armour has power."
+			tasks: [
+				{
+					id: "20590E5EAC18DBFD"
+					item: "draconicevolution:item_draconic_flight"
+					type: "item"
+				}
+			]
+			title: "Wings"
+			x: 24.05d
+			y: 3.0d
+		}
+		{
+			dependencies: ["347A9331F3318310"]
+			id: "70C7898E5CC9CE79"
+			rewards: [
+				{
+					id: "4BF2E11FA0BAC8C2"
+					type: "xp"
+					xp: 6000
+				}
+				{
+					id: "6BBE87311E7DD59C"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "49355D9BC4912B91"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6CED6F2846A8494B"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6F7ECA0BFFE35B86"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Far out in the End, on a Chaos Island. See Act IV."
+			tasks: [
+				{
+					entity: "draconicevolution:draconic_guardian"
+					id: "7A73C4FD4D00A4E0"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Chaos Guardian"
+			x: 18.35d
+			y: 4.75d
+		}
+		{
+			dependencies: ["70C7898E5CC9CE79"]
+			description: ["When the Guardian dies, the Chaos Crystal it was guarding can at last be broken. It bursts into shards: pick up every one."]
+			id: "419AFE2B349458B1"
+			rewards: [
+				{
+					id: "2C2998BFAF5F71B7"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "53967033159A3A12"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1D19DDF27E2568D1"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "What is left of the crystal"
+			tasks: [
+				{
+					count: 4L
+					id: "72342C21BCBD10E0"
+					item: "draconicevolution:chaos_shard"
+					type: "item"
+				}
+			]
+			title: "Chaos Shards"
+			x: 20.45d
+			y: 4.75d
+		}
+		{
+			dependencies: ["269A6C4A82AB8B87"]
+			description: ["&7Made at: &fFusion Crafting &7from &fLarge Chaos Fragment x5, Draconium Awakened Ingot x4, Draconic Core x4"]
+			id: "4ADD59161C6330E0"
+			rewards: [
+				{
+					id: "743DBD9AC6814035"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "77210ED72CC5DB91"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "09E06A5AFFE4B63D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "53ED192D93C1A716"
+					item: "draconicevolution:chaotic_core"
+					type: "item"
+				}
+			]
+			title: "A Chaotic Core"
+			x: 25.8d
+			y: 4.75d
+		}
+		{
+			dependencies: ["1015DEEFFD210AED"]
+			description: ["&7Made at: &fFusion Crafting &7from &fDraconic Chestpiece, Draconium Awakened Ingot x6, Chaotic Core, Chaotic Energy Controller"]
+			id: "015C4EECBEC24A20"
+			rewards: [
+				{
+					id: "6BED292C39AE5981"
+					type: "xp"
+					xp: 5000
+				}
+				{
+					id: "6095D8E8127FE4BA"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E1F82057DED8366"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A1CE61F665388C5"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5139845C5D25BC7E"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The strongest armour in the pack."
+			tasks: [
+				{
+					id: "18DA18DF21455FD0"
+					item: "draconicevolution:chaotic_chestpiece"
+					type: "item"
+				}
+			]
+			title: "Chaotic Armour"
+			x: 29.4d
+			y: 4.75d
+		}
+		{
+			dependencies: ["015C4EECBEC24A20"]
+			description: ["&7Made at: &fFusion Crafting &7from &fDraconic Sword, Draconium Awakened Ingot x6, Chaotic Core, Chaotic Energy Controller"]
+			id: "3F7510CC3A9829FD"
+			rewards: [
+				{
+					id: "348DD345B91D6E1C"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "0CBB190F042F41F7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "11092BFC0AE38DF4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "11937D11DDC7F1CE"
+					item: "draconicevolution:chaotic_sword"
+					type: "item"
+				}
+			]
+			title: "Chaotic Weapons"
+			x: 31.75d
+			y: 4.75d
+		}
+		{
+			dependencies: ["40E2F078B434E099"]
+			description: [
+				"A star in a jar. More power than anything else in Eldermoor, and it explodes like nothing else if it runs too hot."
+				"&7Made at: &fFusion Crafting &7from &fChaos Shard, Draconium Awakened Ingot x4, Draconium Ingot x3, Large Chaos Fragment x2"
+			]
+			id: "4527C03102EE10E7"
+			optional: true
+			rewards: [
+				{
+					id: "261152D18B97C725"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "41BA79991DA4F213"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C885F235077485B"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5B5CFF1160C6938C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4320CA80733E86A4"
+					item: "draconicevolution:reactor_core"
+					type: "item"
+				}
+			]
+			title: "The Draconic Reactor"
+			x: 14.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["015C4EECBEC24A20"]
+			description: ["Chaotic armour, from the shards of a dragon that was never killed."]
+			id: "4290DD45B08CE1B5"
+			rewards: [
+				{
+					id: "071F1378ABA1BB83"
+					type: "xp"
+					xp: 6000
+				}
+				{
+					id: "332672C9D3E02D10"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "321E47D102013917"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "627FC95BB1A59574"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "7BAF180A61813F83"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "&5&lChaos Tamed"
+			x: 31.75d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1C1B485D735A4F2A"]
+			description: ["The ore is rare at the bottom of the overworld and plentiful in the End."]
+			id: "32B15EA9B27A909B"
+			rewards: [
+				{
+					id: "48518A2FA9076794"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "04CC9F3E1A768090"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4A10D2F82FDDABBA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4584B865FF19CE4B"
+					item: "draconicevolution:draconium_dust"
+					type: "item"
+				}
+			]
+			title: "Draconium Dust"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B4812F4EEAF1EC2"]
+			description: [
+				"Each tier of fusion recipe needs injectors of that tier around the core."
+				"&7Made at: &fFusion Crafting &7from &fDraconium Fusion Crafting Injector, Wyvern Core, Diamond x4, Draconium Core x2, Draconium Block"
+			]
+			id: "3E49CDDB35418BDD"
+			rewards: [
+				{
+					id: "056BE108E9A8F69A"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "4232604EE728502F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "30A23EF7998F07A5"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "42C1C232375FF886"
+					item: "draconicevolution:wyvern_crafting_injector"
+					type: "item"
+				}
+			]
+			title: "Wyvern Injectors"
+			x: 9.3d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40E2F078B434E099"]
+			description: ["&7Made at: &fFusion Crafting &7from &fWyvern Fusion Crafting Injector, Diamond x4, Wyvern Core x2, Draconium Awakened Block"]
+			id: "0C557E97D94BDA3C"
+			rewards: [
+				{
+					id: "7E8DE306AECB9DDC"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "5F0E5B5B8CD392D6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5DC140A56E28E6FB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The same again, a tier up."
+			tasks: [
+				{
+					count: 4L
+					id: "2AA72D4C91E2E88F"
+					item: "draconicevolution:awakened_crafting_injector"
+					type: "item"
+				}
+			]
+			title: "Awakened Injectors"
+			x: 14.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["419AFE2B349458B1"]
+			description: ["&7Made at: &fFusion Crafting &7from &fDraconic Fusion Crafting Injector, Diamond x4, Large Chaos Fragment x4, Dragon Egg"]
+			id: "4F89D2F3718E6DF5"
+			rewards: [
+				{
+					id: "20A86B1E83187900"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "4BBB1407060909F4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6CEB0A1E7DDDAD90"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last set."
+			tasks: [
+				{
+					count: 4L
+					id: "08CE01CBF1ADFA42"
+					item: "draconicevolution:chaotic_crafting_injector"
+					type: "item"
+				}
+			]
+			title: "Chaotic Injectors"
+			x: 22.3d
+			y: 4.75d
+		}
+		{
+			dependencies: ["3BD1629C996A69B3"]
+			description: ["Every module - shield, speed, flight, auto-feed - is built on one. Gear has a grid; modules are pieces placed in it, and bigger tiers of gear have bigger grids."]
+			id: "502BC58C59BA260D"
+			rewards: [
+				{
+					id: "1E1C806577C33046"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "0FB8EAC09C67EFB3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "51BE96D01595262E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3AF5F6624463B411"
+					item: "draconicevolution:module_core"
+					type: "item"
+				}
+			]
+			title: "A Module Core"
+			x: 16.5d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6119BC37ECC671A9"]
+			description: ["Draconium around a block of redstone. They are the battery inside Wyvern gear, and the first stage of the Energy Core multiblock."]
+			id: "6B6BA9081D116B75"
+			rewards: [
+				{
+					id: "52BDFDB5141982AC"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "77432B659314C6E3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5201EA37A21A790B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "611394BEA3AB08D4"
+					item: "draconicevolution:wyvern_energy_core"
+					type: "item"
+				}
+			]
+			title: "Wyvern Energy Cores"
+			x: 12.9d
+			y: 0.0d
+		}
+		{
+			dependencies: ["347A9331F3318310"]
+			description: ["Awakened draconium around Wyvern energy cores. Draconic gear holds sixteen times what Wyvern does."]
+			id: "66CD7EBB504AFCBE"
+			rewards: [
+				{
+					id: "73C0D244D62F093D"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "5DF15884453EACCF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0D9392F3A2E47F0B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "459C492F40026257"
+					item: "draconicevolution:draconic_energy_core"
+					type: "item"
+				}
+			]
+			title: "Draconic Energy Cores"
+			x: 18.35d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F89D2F3718E6DF5"]
+			description: [
+				"Shards come apart into large, medium and small fragments, and Chaotic recipes are priced in all three."
+				"Count before you craft. There are only so many shards on an island."
+			]
+			id: "269A6C4A82AB8B87"
+			rewards: [
+				{
+					id: "2CAF5A59AB9BC1B0"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "4B1F99BA1F3BBD4F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4ECC2ACB5B1277BC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6D5FA5DB2C300588"
+					item: "draconicevolution:large_chaos_frag"
+					type: "item"
+				}
+			]
+			title: "Chaos Fragments"
+			x: 24.05d
+			y: 4.75d
+		}
+		{
+			dependencies: ["4ADD59161C6330E0"]
+			description: ["The last battery: Draconic energy cores and a Draconic Core, bound with small chaos fragments."]
+			id: "1015DEEFFD210AED"
+			rewards: [
+				{
+					id: "50D14F58BFC193B9"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "215FAC08634EC460"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0CA737DD39BF61F8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "265FD6EEA012C7BE"
+					item: "draconicevolution:chaotic_energy_core"
+					type: "item"
+				}
+			]
+			title: "A Chaotic Energy Core"
+			x: 27.55d
+			y: 4.75d
+		}
+		{
+			dependencies: ["32F6E5E86DCB273D"]
+			description: [
+				"Draconic's wireless power. &eIO crystals&f sit on machines; &erelay crystals&f link them, by beam, over long distances. Bind them with the Crystal Binder."
+				"They move more power than any cable in the pack."
+			]
+			id: "64744EAF99CA13DD"
+			optional: true
+			rewards: [
+				{
+					id: "3D50BDECD9D83248"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "004DAE23040A1740"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "057E4DB258FC27CB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Power by beam"
+			tasks: [
+				{
+					count: 2L
+					id: "58684C7C01FD73D3"
+					item: "draconicevolution:basic_relay_crystal"
+					type: "item"
+				}
+			]
+			title: "Energy Crystals"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64744EAF99CA13DD"]
+			description: ["Remembers one place and takes you back to it. The Advanced one holds a whole list and can be fuelled with ender pearls."]
+			id: "00155E809CF6B020"
+			optional: true
+			rewards: [
+				{
+					id: "4FC850A72DE26149"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 15
+					id: "298552BE170EE4E0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "677601C082F3F0CB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "One click home"
+			tasks: [
+				{
+					id: "6301C7C5399F7FE8"
+					item: "draconicevolution:dislocator"
+					type: "item"
+				}
+			]
+			title: "A Dislocator"
+			x: 18.35d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Fusion, dragon hearts and armour that shields you from anything"]
+	title: "&5Draconic Evolution"
+}

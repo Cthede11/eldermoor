@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 159447824,
+    "separation": 35,
+    "spacing": 315,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:grave_petasi",
+      "weight": 1
+    }
+  ]
+}

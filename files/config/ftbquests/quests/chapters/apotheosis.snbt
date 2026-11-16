@@ -1,0 +1,4174 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "apotheosis"
+	group: "3368DAD22055D0D9"
+	icon: "minecraft:enchanting_table"
+	id: "2733F15928535798"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7735F10E2C20E0C6"]
+			description: [
+				"Apotheosis rebuilds enchanting, loot and spawners."
+				""
+				"&dEnchanting&f now has three stats: &cEterna&f (level, up to 100), &bQuanta&f (randomness) and &aArcana&f (rarity and number of enchantments). Special shelves raise each."
+				""
+				"&6Affix loot&f drops from monsters with random bonuses and &egem sockets&f. Rare &cworld bosses&f carry the best of it."
+				""
+				"&9Spawners&f can be picked up with Silk Touch and tuned with everyday items."
+				""
+				"Its guide is the &eApothic Chronicle&f, and JEI shows every infusion, modifier and table recipe."
+			]
+			hide_until_deps_complete: true
+			id: "261766B32625B301"
+			rewards: [
+				{
+					id: "31C3026C92C1A900"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "10BF81CA1300D517"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1B803F37F7D5C45A"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0F1AEFD9DDEBC1BB"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "A new kind of power"
+			tasks: [
+				{
+					id: "4CB9FBA0789A3F82"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&6Beyond Level 30"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["261766B32625B301"]
+			description: ["Hover over any bookshelf to see the Eterna, Quanta and Arcana it gives. The table shows the totals."]
+			id: "313DD976E085082D"
+			rewards: [
+				{
+					id: "25664C742732BC97"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "32DCCCAF443CC52A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "25D862CB3E592C94"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain an enchanting table, and begin to unveil the mystery."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/enchanter"
+					criterion: ""
+					icon: "minecraft:enchanting_table"
+					id: "4EEE9CD9A36A584A"
+					title: "The Secrets of Enchanting"
+					type: "advancement"
+				}
+			]
+			title: "The Secrets of Enchanting"
+			x: 1.85d
+			y: -18.81d
+		}
+		{
+			dependencies: ["313DD976E085082D"]
+			description: ["&cEterna&f sets the level. &bQuanta&f swings the power up or down from it. &aArcana&f makes rarer and more numerous enchantments likely."]
+			id: "6EC4060315F50910"
+			rewards: [
+				{
+					id: "6A9614C7A6F18377"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3F7EE78C4AEB1F3A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7775E9C38A198B18"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item while having at least 10 of each stat."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/enchanting_stats"
+					criterion: ""
+					icon: "minecraft:experience_bottle"
+					id: "52478DB4D2B47881"
+					title: "Eterna, Quanta, Arcana"
+					type: "advancement"
+				}
+			]
+			title: "Eterna, Quanta, Arcana"
+			x: 6.85d
+			y: -25.69d
+		}
+		{
+			dependencies: ["313DD976E085082D"]
+			description: ["Fifteen ordinary bookshelves around the table still reach level 30. Apotheosis's own shelves are how you go past it."]
+			id: "279696FA9CC14792"
+			rewards: [
+				{
+					id: "4DB6199AB2144FBC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "64DCD4EFC7F3A8C2"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "10AE40A15C8A9D25"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item at level 30."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/30ench"
+					criterion: ""
+					icon: "minecraft:enchanting_table"
+					id: "6C0FC8FFBD80B08A"
+					title: "Enchant at level 30"
+					type: "advancement"
+				}
+			]
+			title: "Level 30"
+			x: 6.85d
+			y: -19.56d
+		}
+		{
+			dependencies: ["279696FA9CC14792"]
+			description: ["Hellshelves (Nether), Seashelves (ocean) and later Endshelves each push Eterna past the vanilla cap. Hover over a shelf to see its stats."]
+			id: "2D8B390B7B232FAC"
+			rewards: [
+				{
+					id: "4D40BB80D6479AE1"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 4
+					id: "6882C161FA3EF28A"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "3DF0E1B576F27571"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "07279A66D723B914"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/hellshelf"
+					criterion: ""
+					icon: "apotheosis:hellshelf"
+					id: "3287088BC8A476B5"
+					title: "Craft a Hellshelf"
+					type: "advancement"
+				}
+			]
+			title: "Better Bookshelves"
+			x: 10.1d
+			y: -18.19d
+		}
+		{
+			dependencies: ["279696FA9CC14792"]
+			description: ["Prismarine and the sea's own blocks. Seashelves lean towards Arcana where Hellshelves lean towards Quanta."]
+			id: "727E88E9485B7C22"
+			rewards: [
+				{
+					id: "2DC9CEDBA3D25901"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2CBD1550F47C6247"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3596CD151E4FC7E0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain a Seashelf"
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/seashelf"
+					criterion: ""
+					icon: "apotheosis:seashelf"
+					id: "5D76D2F3EDD1B029"
+					title: "The Purity of the Seas"
+					type: "advancement"
+				}
+			]
+			title: "The Purity of the Seas"
+			x: 10.1d
+			y: -19.69d
+		}
+		{
+			dependencies: ["2D8B390B7B232FAC"]
+			description: ["Put a Hellshelf in the enchanting table itself. With the right stats around it, the third slot lights up and the shelf is &einfused&f instead of enchanted. JEI lists the stats each infusion needs."]
+			id: "25E140AC23053AC1"
+			rewards: [
+				{
+					id: "11C03E1D20A1B01A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7CB07EAC83504757"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4F62CE09F34ECA11"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1AD16D2A1E462A03"
+					item: "apotheosis:infused_hellshelf"
+					type: "item"
+				}
+			]
+			title: "Infused Hellshelf"
+			x: 11.85d
+			y: -18.19d
+		}
+		{
+			dependencies: ["727E88E9485B7C22"]
+			id: "11014BB59AC8A025"
+			rewards: [
+				{
+					id: "0FBC7CD3F8214650"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "47F49D0EEC6BF25F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5ED70E48EFEF30EE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The same infusion, for a Seashelf."
+			tasks: [
+				{
+					id: "23866B887A064A2E"
+					item: "apotheosis:infused_seashelf"
+					type: "item"
+				}
+			]
+			title: "Infused Seashelf"
+			x: 11.85d
+			y: -19.69d
+		}
+		{
+			dependencies: ["25E140AC23053AC1"]
+			description: ["Blazing Hellshelves add Quanta; Glowing Hellshelves add Arcana."]
+			id: "04AC28E1C20BB318"
+			rewards: [
+				{
+					id: "07A65459B3FB82BA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "45167D85ECBD9742"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "62D9C4DA486E77D3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade an Infused Hellshelf."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/upgrade_hellshelf"
+					criterion: ""
+					icon: "apotheosis:blazing_hellshelf"
+					id: "2D1043758A2C02EF"
+					title: "Mastering the Inferno"
+					type: "advancement"
+				}
+			]
+			title: "Mastering the Inferno"
+			x: 13.6d
+			y: -16.69d
+		}
+		{
+			dependencies: ["11014BB59AC8A025"]
+			description: ["Heart Seashelves add Arcana; Crystal Seashelves steady the Quanta."]
+			id: "75C914BD0BB19101"
+			rewards: [
+				{
+					id: "316C8836C4B7AEC9"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0A6B4B18BF41F1B9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4D4D747B8C39918F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade an Infused Seashelf"
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/upgrade_seashelf"
+					criterion: ""
+					icon: "apotheosis:heart_seashelf"
+					id: "2DA3F14552C691EA"
+					title: "Sleeping in the Cold Below"
+					type: "advancement"
+				}
+			]
+			title: "Sleeping in the Cold Below"
+			x: 13.6d
+			y: -19.69d
+		}
+		{
+			dependencies: [
+				"25E140AC23053AC1"
+				"11014BB59AC8A025"
+			]
+			description: ["Infuse Hellshelves and Seashelves in the enchanting table itself to upgrade them."]
+			id: "5AB53DE92B1D3501"
+			rewards: [
+				{
+					id: "05FD88D4D4C96501"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "634BD876E8EBE4CB"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "048E0AFFC9EA9706"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6845481B41FD2203"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/60ench"
+					criterion: ""
+					icon: "minecraft:enchanting_table"
+					id: "3D5C87E0595DD486"
+					title: "Enchant at level 60"
+					type: "advancement"
+				}
+			]
+			title: "Level 60"
+			x: 13.6d
+			y: -18.19d
+		}
+		{
+			dependencies: ["5AB53DE92B1D3501"]
+			description: ["Deepslate, crafted into a shelf that does nothing yet. Infuse it at a level 60 table; the infusion needs a few extra shelves to reach its stats."]
+			id: "10E75AA8F2CD2D74"
+			rewards: [
+				{
+					id: "66C09B8812E5144C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0174E82DBE1B6C38"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "28BECEB6B1900BA6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "56E7035CF9140E9B"
+					item: "apotheosis:dormant_deepshelf"
+					type: "item"
+				}
+			]
+			title: "Dormant Deepshelf"
+			x: 15.35d
+			y: -16.69d
+		}
+		{
+			dependencies: ["10E75AA8F2CD2D74"]
+			description: ["A Deepshelf takes the table to level 70."]
+			id: "11E98A4D662A49D1"
+			rewards: [
+				{
+					id: "18007181D94377FD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4CF4DFFDB35D3F31"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3291EB161F805B01"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Activate a Dormant Deepshelf."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/deepshelf"
+					criterion: ""
+					icon: "apotheosis:dormant_deepshelf"
+					id: "5D82B506DA109F63"
+					title: "Delving Into Darkness"
+					type: "advancement"
+				}
+			]
+			title: "Delving Into Darkness"
+			x: 17.1d
+			y: -16.69d
+		}
+		{
+			dependencies: ["11E98A4D662A49D1"]
+			description: ["Echo shards from the Ancient Cities make an Echoing Deepshelf; sculk taken with Silk Touch makes a Soul-Touched one. Together they reach level 75."]
+			id: "7C3F29673DCF8B02"
+			rewards: [
+				{
+					id: "068C33F4DF331D23"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "61113A3C39037C6B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5F0FD21663A7AA58"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "12E497BF1EA8F033"
+					item: "apotheosis:echoing_deepshelf"
+					type: "item"
+				}
+			]
+			title: "Deeper Still"
+			x: 18.95d
+			y: -16.69d
+		}
+		{
+			dependencies: ["11E98A4D662A49D1"]
+			description: [
+				"The &cWarden&f drops its tendril when it dies. It is the heart of every Sculkshelf."
+				""
+				"Bring friends. Bring wool. Do not run."
+			]
+			id: "5E9D3EF0EF128E0B"
+			rewards: [
+				{
+					id: "01062C15605E8994"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "64D0762870FA7D40"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "119FA8A8C68C50E4"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5C5904D6424C0436"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5A06923B7F3CE794"
+					item: "apotheosis:warden_tendril"
+					type: "item"
+				}
+			]
+			title: "Warden Tendril"
+			x: 18.95d
+			y: -15.19d
+		}
+		{
+			dependencies: ["5E9D3EF0EF128E0B"]
+			id: "2651CBC0DA06758F"
+			rewards: [
+				{
+					id: "367A90BA1D90561E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "610C1EF4CE9AB114"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7368A02F87E61342"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Create a Sculkshelf using a Warden Tendril."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/sculkshelf"
+					criterion: ""
+					icon: "apotheosis:echoing_sculkshelf"
+					id: "79A8D80F6063FDDE"
+					title: "Embracing the Sculk"
+					type: "advancement"
+				}
+			]
+			title: "Embracing the Sculk"
+			x: 20.8d
+			y: -15.19d
+		}
+		{
+			dependencies: [
+				"2651CBC0DA06758F"
+				"7C3F29673DCF8B02"
+			]
+			id: "46BB7EC961AD8955"
+			rewards: [
+				{
+					id: "7100596B99576E5F"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "43DF7344297CD177"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6CC9928C85A5D9D7"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "31B982257D61F31D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "You'll want Endshelves and Deepshelves by now."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/80ench"
+					criterion: ""
+					icon: "minecraft:enchanting_table"
+					id: "2E93A10F6E11EF82"
+					title: "Enchant at level 80"
+					type: "advancement"
+				}
+			]
+			title: "Level 80"
+			x: 22.55d
+			y: -15.19d
+		}
+		{
+			dependencies: ["46BB7EC961AD8955"]
+			description: ["Bottle the dragon's breath and infuse it at a level 80 table. It is what every Endshelf is built around."]
+			id: "1FA63D26581B6186"
+			rewards: [
+				{
+					id: "4ED250CEA93FC2AD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "02EBBF324CCA1520"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0904E48F50673580"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7DFC307DC173FD5D"
+					item: "apotheosis:infused_breath"
+					type: "item"
+				}
+			]
+			title: "Infused Dragon's Breath"
+			x: 24.3d
+			y: -15.19d
+		}
+		{
+			dependencies: ["1FA63D26581B6186"]
+			id: "60CFB2A7CFC9DF0A"
+			rewards: [
+				{
+					id: "23B966EB2DCCF75A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5AF21D7B55394874"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2F68514AC0E528AC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire Infused Dragon's Breath, and create an Endshelf."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/endshelf"
+					criterion: ""
+					icon: "apotheosis:endshelf"
+					id: "29AD1AFE82A11540"
+					title: "Dragon-Slaying Enchanter"
+					type: "advancement"
+				}
+			]
+			title: "Dragon-Slaying Enchanter"
+			x: 26.05d
+			y: -15.19d
+		}
+		{
+			dependencies: ["60CFB2A7CFC9DF0A"]
+			id: "3C1ED05118CEB999"
+			rewards: [
+				{
+					id: "47DD875D9EBE89A6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3C3A7AA7A0527454"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4CF15EF748C95D73"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "An Endshelf studded with ender pearls: more Arcana."
+			tasks: [
+				{
+					id: "3B1E724FF9426A24"
+					item: "apotheosis:pearl_endshelf"
+					type: "item"
+				}
+			]
+			title: "Pearl Endshelf"
+			x: 27.8d
+			y: -13.69d
+		}
+		{
+			dependencies: ["60CFB2A7CFC9DF0A"]
+			description: ["It needs a &eDragon Head&f from the outer End's ships. One Draconic Endshelf carries the table from level 90 to 100 by itself."]
+			id: "3C78372413AC644D"
+			rewards: [
+				{
+					id: "117B02D433E2009D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "13A2B09459C4F07F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5C9079EA4BA8B240"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade an Endshelf into a Draconic Endshelf."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/upgrade_endshelf"
+					criterion: ""
+					icon: "apotheosis:draconic_endshelf"
+					id: "494C77EFDA9683C3"
+					title: "The Final Bookshelf"
+					type: "advancement"
+				}
+			]
+			title: "The Final Bookshelf"
+			x: 27.8d
+			y: -15.19d
+		}
+		{
+			dependencies: ["3C78372413AC644D"]
+			description: ["The absolute peak. Enchantments beyond their vanilla maximum."]
+			id: "2FCF1DDA6454FEA2"
+			rewards: [
+				{
+					id: "3C118F0A6BA90DA1"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "6F913850DA34ACD3"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					id: "74C85BB9D0EFF95C"
+					table_id: 255314140086928802L
+					type: "choice"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4205B50A15D5B358"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Maximum Eterna"
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/100ench"
+					criterion: ""
+					icon: "minecraft:enchanting_table"
+					id: "305B59505797995F"
+					title: "Enchant at level 100"
+					type: "advancement"
+				}
+			]
+			title: "&6Level 100"
+			x: 29.55d
+			y: -15.19d
+		}
+		{
+			dependencies: ["6EC4060315F50910"]
+			id: "080346793484A205"
+			rewards: [
+				{
+					id: "0CDEC1187DD54A2B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "55C06AA02AC2DC2E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "00B47693496755CB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item at 50% Quanta."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/quanta50"
+					criterion: ""
+					icon: "minecraft:experience_bottle"
+					id: "7461EDB82F2505E3"
+					title: "Introduction to Chaos"
+					type: "advancement"
+				}
+			]
+			title: "Introduction to Chaos"
+			x: 10.1d
+			y: -25.69d
+		}
+		{
+			dependencies: ["080346793484A205"]
+			description: ["High Quanta can roll far above the table's level, or far below it."]
+			id: "61B5B443AD55294B"
+			rewards: [
+				{
+					id: "086D70F0F551E176"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "58EE98DA1321FB8A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6029B5FD9A16C7C6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item at 100% Quanta."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/quanta100"
+					criterion: ""
+					icon: "minecraft:experience_bottle"
+					id: "7BEAEA57B4929095"
+					title: "Rolling the Dice"
+					type: "advancement"
+				}
+			]
+			title: "Rolling the Dice"
+			x: 31.53d
+			y: -25.69d
+		}
+		{
+			dependencies: ["6EC4060315F50910"]
+			id: "3A1771739A7E9346"
+			rewards: [
+				{
+					id: "5DA376328C5BF8FA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "48F5E2CC950B1062"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1DACFD13ED906B81"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item at 50% Arcana."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/arcana50"
+					criterion: ""
+					icon: "minecraft:experience_bottle"
+					id: "7366385232BF760D"
+					title: "Magical Energy"
+					type: "advancement"
+				}
+			]
+			title: "Magical Energy"
+			x: 10.1d
+			y: -28.69d
+		}
+		{
+			dependencies: ["3A1771739A7E9346"]
+			id: "1259C3E31B562EB3"
+			rewards: [
+				{
+					id: "703E1D9DB648B5F4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2178D9D8898DB3B2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "42F72A2EB7C8CBE4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item at 100% Arcana."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/arcana100"
+					criterion: ""
+					icon: "minecraft:experience_bottle"
+					id: "633BF1A21B8937FC"
+					title: "Arcane Power"
+					type: "advancement"
+				}
+			]
+			title: "Arcane Power"
+			x: 31.53d
+			y: -28.69d
+		}
+		{
+			dependencies: ["6EC4060315F50910"]
+			description: ["A shelf of &eRectification&f: the share of Quanta that may only push the roll upwards. Rectification cuts the downside of high Quanta."]
+			id: "0086C109E9C493C9"
+			rewards: [
+				{
+					id: "1FD278E59F4DF54B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6C0D1DBCAAF89C12"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4BED2B2CB0AE0116"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "25A2A6E7B73D3BB1"
+					item: "apotheosis:rectifier"
+					type: "item"
+				}
+			]
+			title: "Rectifier"
+			x: 10.1d
+			y: -24.19d
+		}
+		{
+			dependencies: ["0086C109E9C493C9"]
+			id: "3A6D0873A047AA66"
+			rewards: [
+				{
+					id: "57AD5E49FEE71A58"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1052AE64504DF327"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "271F2C7C1CC6F46F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "More Rectification: less of the Quanta swing can go against you."
+			tasks: [
+				{
+					id: "51B02F3416EAF8B6"
+					item: "apotheosis:rectifier_t2"
+					type: "item"
+				}
+			]
+			title: "Improved Rectifier"
+			x: 11.85d
+			y: -24.19d
+		}
+		{
+			dependencies: ["3A6D0873A047AA66"]
+			id: "3F3A084B8E748438"
+			rewards: [
+				{
+					id: "5CD1171B48016B50"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7B2310A92313D672"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3565F3234451B7FE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "With enough of these the table's randomness only ever helps."
+			tasks: [
+				{
+					id: "21CA90CC81B641AF"
+					item: "apotheosis:rectifier_t3"
+					type: "item"
+				}
+			]
+			title: "Perfect Rectifier"
+			x: 31.53d
+			y: -24.19d
+		}
+		{
+			dependencies: ["6EC4060315F50910"]
+			description: ["No randomness at all: the table gives exactly what its level says."]
+			id: "0DEA41452AE5A43E"
+			rewards: [
+				{
+					id: "3B84E2513CC19316"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "516319625C6CF705"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5837115F2C9C1F77"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item at 0% Quanta."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/quanta0"
+					criterion: ""
+					icon: "minecraft:experience_bottle"
+					id: "49A0B823B85DADDF"
+					title: "Begone, Flux"
+					type: "advancement"
+				}
+			]
+			title: "Begone, Flux"
+			x: 10.1d
+			y: -22.69d
+		}
+		{
+			dependencies: ["6EC4060315F50910"]
+			description: ["Each Sightshelf reveals one more of the enchantments a slot will give before you commit."]
+			id: "67252B779F9FD09A"
+			optional: true
+			rewards: [
+				{
+					id: "3B6E9F7F9F11652A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3AF711D282B0842D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "21AAA6681AA6EEA6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7FC7B69589DEEEA4"
+					item: "apotheosis:sightshelf"
+					type: "item"
+				}
+			]
+			title: "Sightshelf"
+			x: 10.1d
+			y: -27.19d
+		}
+		{
+			dependencies: ["67252B779F9FD09A"]
+			id: "2F78D24E08B7985B"
+			optional: true
+			rewards: [
+				{
+					id: "7FE1EAA08A4D1B7E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "194947494889848F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0CD4BB008A47CD71"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Reveals two."
+			tasks: [
+				{
+					id: "22A5CF04C5F68049"
+					item: "apotheosis:sightshelf_t2"
+					type: "item"
+				}
+			]
+			title: "Improved Sightshelf"
+			x: 11.85d
+			y: -27.19d
+		}
+		{
+			dependencies: [
+				"2FCF1DDA6454FEA2"
+				"0DEA41452AE5A43E"
+			]
+			description: ["Enchant an item while having max Eterna and Arcana, but 0% Quanta."]
+			hide_dependency_lines: true
+			id: "0B80DAB10A85100D"
+			rewards: [
+				{
+					id: "360D2C479B5BE474"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "6550EC47793221CE"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34BE563C4B2FB04E"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6D55CE7C001473DF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/max_stable"
+					criterion: ""
+					icon: "minecraft:experience_bottle"
+					id: "5A94E45CA31A52C9"
+					title: "Stable Power"
+					type: "advancement"
+				}
+			]
+			title: "Stable Power"
+			x: 31.53d
+			y: -15.19d
+		}
+		{
+			dependencies: [
+				"2FCF1DDA6454FEA2"
+				"3F3A084B8E748438"
+				"61B5B443AD55294B"
+			]
+			hide_dependency_lines: true
+			id: "19AA8DECC7CADCB4"
+			rewards: [
+				{
+					id: "0F4C45347AB1E02E"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "3655B86A9A4C175E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "318288B401B88856"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "10174385D16B6E00"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item with max stats and max rectification."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/max_rectified"
+					criterion: ""
+					icon: "minecraft:experience_bottle"
+					id: "07CEB96BE55C8803"
+					title: "Only the Best"
+					type: "advancement"
+				}
+			]
+			title: "Only the Best"
+			x: 33.75d
+			y: -24.1d
+		}
+		{
+			dependencies: [
+				"2FCF1DDA6454FEA2"
+				"61B5B443AD55294B"
+				"1259C3E31B562EB3"
+			]
+			id: "4D1F929BCABF860E"
+			rewards: [
+				{
+					id: "6A63FAD9350FFB3F"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "5AE8F6539BFE625A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46AA74B193A745D2"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7ACBFEDF3C20D8E7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item while having all stats at maximum."
+			tasks: [
+				{
+					advancement: "apotheosis:enchanting/max_stats"
+					criterion: ""
+					icon: "minecraft:experience_bottle"
+					id: "2FB4A3F45353164A"
+					title: "Maximum Strength"
+					type: "advancement"
+				}
+			]
+			title: "Maximum Strength"
+			x: 33.75d
+			y: -25.6d
+		}
+		{
+			dependencies: ["279696FA9CC14792"]
+			description: [
+				"Deposits every enchanted book into one block and lets you withdraw any level you have enough points for. No more chests of books."
+				""
+				"It only hands out levels up to the highest one you ever put in, and up to its own cap."
+			]
+			id: "6599907F4435CD5C"
+			optional: true
+			rewards: [
+				{
+					id: "572BE462320AB1F2"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "02A830AC8F274A6A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5B98A68F846BAE57"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "382B500C6BB1FF6B"
+					item: "apotheosis:library"
+					type: "item"
+				}
+			]
+			title: "Enchantment Library"
+			x: 10.1d
+			y: -21.19d
+		}
+		{
+			dependencies: ["6599907F4435CD5C"]
+			description: ["Infuse a library into its upgraded form: a far higher level cap. It keeps everything already stored."]
+			id: "5A4AF7C31DE21AA6"
+			optional: true
+			rewards: [
+				{
+					id: "7E0B4F4E65B83C02"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "149ABB65BA12B3B8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "53CA6BD22C82A656"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "24691AD5BA93EBC4"
+					item: "apotheosis:ender_library"
+					type: "item"
+				}
+			]
+			title: "Library of Alexandria"
+			x: 11.85d
+			y: -21.19d
+		}
+		{
+			dependencies: ["5AB53DE92B1D3501"]
+			description: ["Slot up to six single-enchantment books into it and those enchantments can no longer appear at the table. It also adds a little Eterna and Arcana for each book."]
+			id: "320745077D9A3B57"
+			optional: true
+			rewards: [
+				{
+					id: "114D58091D032FC0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6E5D69BBED82C25A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2820F09EB82952E3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4F4B9A479BBD101B"
+					item: "apotheosis:filtering_shelf"
+					type: "item"
+				}
+			]
+			title: "Seashelf of Aquatic Filtration"
+			x: 15.35d
+			y: -18.19d
+		}
+		{
+			dependencies: ["46BB7EC961AD8955"]
+			description: ["Lets treasure enchantments (Mending, Frost Walker and friends) appear at the table. Most curses are treasure too."]
+			id: "319C23D2F0DBAEF8"
+			optional: true
+			rewards: [
+				{
+					id: "302B4041A32BE5F7"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "765419EA75F542A3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "17D6251F460659FE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7101682676342A6C"
+					item: "apotheosis:treasure_shelf"
+					type: "item"
+				}
+			]
+			title: "Deepshelf of Arcane Treasures"
+			x: 24.3d
+			y: -13.69d
+		}
+		{
+			dependencies: ["313DD976E085082D"]
+			description: ["Combine with an item in an anvil: the item is destroyed and you get a book with half its enchantments."]
+			id: "06912188272D539A"
+			optional: true
+			rewards: [
+				{
+					id: "6A13FF24EE8054DC"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1A77A4CD963E9908"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "45723998D6637BCB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "32336BA945F72CE1"
+					item: "apotheosis:scrap_tome"
+					type: "item"
+				}
+			]
+			title: "Tome of Scrapping"
+			x: 6.85d
+			y: -16.69d
+		}
+		{
+			dependencies: ["06912188272D539A"]
+			id: "7CA226FFB4A4AB2B"
+			optional: true
+			rewards: [
+				{
+					id: "10F81DCB15B83B8B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7C88B7FA77176C9C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2A4453EF73D645E5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Infused from the plain tome: it takes every enchantment."
+			tasks: [
+				{
+					id: "0F1FB96FC8BEAFF3"
+					item: "apotheosis:improved_scrap_tome"
+					type: "item"
+				}
+			]
+			title: "Tome of Superior Scrapping"
+			x: 10.1d
+			y: -16.69d
+		}
+		{
+			dependencies: ["7CA226FFB4A4AB2B"]
+			description: ["The perfected tome: every enchantment comes off, and the item survives."]
+			id: "2F8F7CE54BB9639A"
+			optional: true
+			rewards: [
+				{
+					id: "4BB84B716B6496F6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0996FA13AE95128E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "45BAF9ED4068077C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5523AFC3D07914C9"
+					item: "apotheosis:extraction_tome"
+					type: "item"
+				}
+			]
+			title: "Tome of Extraction"
+			x: 11.85d
+			y: -16.69d
+		}
+		{
+			dependencies: ["313DD976E085082D"]
+			description: ["Tomes enchant like books but only take enchantments for one kind of gear: weapons, bows, pickaxes, armour pieces, fishing rods. Narrow the pool, get what you want."]
+			id: "18995C9115C8F94C"
+			optional: true
+			rewards: [
+				{
+					id: "7B8F9ECD11FCC505"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1992CD529C05613D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "448494CE48159162"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5FF3949A269DF3F3"
+					item: "apotheosis:weapon_tome"
+					type: "item"
+				}
+			]
+			title: "Tomes"
+			x: 6.85d
+			y: -20.94d
+		}
+		{
+			dependencies: ["313DD976E085082D"]
+			description: ["Combine with an item in an anvil to strip its &ccurses&f and nothing else. (A plain cobweb strips every enchantment.)"]
+			id: "784098705FE41F12"
+			optional: true
+			rewards: [
+				{
+					id: "30063E67BBCDFADF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "33868CAD64C49C23"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6717EEA514A4D880"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0F8F751117E3A32E"
+					item: "apotheosis:prismatic_web"
+					type: "item"
+				}
+			]
+			title: "Prismatic Web"
+			x: 6.85d
+			y: -18.19d
+		}
+		{
+			dependencies: ["5AB53DE92B1D3501"]
+			description: ["Infuse it at the table and it wakes up as a real trident. No drowned required."]
+			id: "0E0339F715458B7A"
+			optional: true
+			rewards: [
+				{
+					id: "2A855CAA51F19406"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "297793597D5171F0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5BD93902DE653B99"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "00DC05B92626B049"
+					item: "apotheosis:inert_trident"
+					type: "item"
+				}
+			]
+			title: "Inert Trident"
+			x: 15.35d
+			y: -19.69d
+		}
+		{
+			dependencies: ["313DD976E085082D"]
+			description: ["Melon, hive and stone shelves. Weak, but the table room should look like something."]
+			id: "3F3EA8F64945C2F0"
+			optional: true
+			rewards: [
+				{
+					id: "2C57E4E5A9B2614F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6C5A6FDC2DC1A400"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "528A58823267DE93"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "299DB3DAA1EF7DB1"
+					item: "apotheosis:melonshelf"
+					type: "item"
+				}
+				{
+					id: "5B3A5791D851E0DC"
+					item: "apotheosis:beeshelf"
+					type: "item"
+				}
+				{
+					id: "1C84A42D3F7334D8"
+					item: "apotheosis:stoneshelf"
+					type: "item"
+				}
+			]
+			title: "Shelves for the Look of It"
+			x: 6.85d
+			y: -15.19d
+		}
+		{
+			dependencies: ["261766B32625B301"]
+			description: ["Affix items carry a coloured name, extra stats and sometimes sockets. Hold Shift over one to read its affixes."]
+			id: "001FA4B9F0B81569"
+			rewards: [
+				{
+					id: "362EB133B9F2A651"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "003FF83D827A69B5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1EFC31DB28F39D63"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find an item with an Apothic Affix."
+			tasks: [
+				{
+					advancement: "apotheosis:affix/root"
+					criterion: ""
+					icon: "minecraft:iron_sword"
+					id: "3ACE75390807C91A"
+					title: "Apothic Affixes"
+					type: "advancement"
+				}
+			]
+			title: "Apothic Affixes"
+			x: 1.85d
+			y: -10.69d
+		}
+		{
+			dependencies: ["001FA4B9F0B81569"]
+			description: ["Any monster can carry affix gear. The ones that glow, or have names, carry better."]
+			id: "66355F339544FC59"
+			rewards: [
+				{
+					id: "6D7FE01E34297E71"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "43EE6EBC9EFD4FE5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "09FEFBBDC1085CFC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Retrieve an affix item from a random monster."
+			tasks: [
+				{
+					advancement: "apotheosis:affix/random"
+					criterion: ""
+					icon: "minecraft:skeleton_skull"
+					id: "17390768278713A6"
+					title: "How'd You Get This?"
+					type: "advancement"
+				}
+			]
+			title: "How'd You Get This?"
+			x: 6.85d
+			y: -12.19d
+		}
+		{
+			dependencies: ["001FA4B9F0B81569"]
+			description: ["Dungeon and structure chests hold affix gear too - yours alone, thanks to Lootr."]
+			id: "504E97FD23F44F1A"
+			rewards: [
+				{
+					id: "2A6F64818BA4D1D8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "441F186FFC47ED8C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5B15D22065C6DBCC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find an affix item in a chest."
+			tasks: [
+				{
+					advancement: "apotheosis:affix/chests"
+					criterion: ""
+					icon: "minecraft:chest"
+					id: "33FFFCA7333C4776"
+					title: "I Found It Underground"
+					type: "advancement"
+				}
+			]
+			title: "I Found It Underground"
+			x: 6.85d
+			y: -10.69d
+		}
+		{
+			dependencies: ["001FA4B9F0B81569"]
+			description: ["The Wandering Trader sometimes stocks a piece."]
+			id: "4C0438748B90B2FD"
+			optional: true
+			rewards: [
+				{
+					id: "3769B1144CDF4ACA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "465AE28F40FD3FDF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0DB36708D1910416"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Purchase an affix item from the wandering trader."
+			tasks: [
+				{
+					advancement: "apotheosis:affix/merchant"
+					criterion: ""
+					icon: "minecraft:emerald"
+					id: "5061FB181C5F4ABE"
+					title: "I Got Deals"
+					type: "advancement"
+				}
+			]
+			title: "I Got Deals"
+			x: 6.85d
+			y: -9.19d
+		}
+		{
+			dependencies: ["001FA4B9F0B81569"]
+			id: "0D43275AD277474F"
+			rewards: [
+				{
+					id: "08204B603FA1A91D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "6A245AA59E0A96EF"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5B597D7AF3BD69B3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Affix rarities: Common, Uncommon, &9Rare&f, &5Epic&f, &6Mythic&f, &cAncient&f."
+			tasks: [
+				{
+					advancement: "apotheosis:affix/rare"
+					criterion: ""
+					icon: "minecraft:iron_sword"
+					id: "2C2EBCC1A431A5FD"
+					title: "Obtain a Rare affix item"
+					type: "advancement"
+				}
+			]
+			title: "Rare Find"
+			x: 6.85d
+			y: -13.69d
+		}
+		{
+			dependencies: ["0D43275AD277474F"]
+			description: ["Affix gear drops from monsters and waits in chests. The rarities run Common, Uncommon, Rare, &5Epic&f and &6Mythic&f, with &cAncient&f above them all. Higher rarity means more affixes and more sockets."]
+			id: "7D6DE5FF27CA96CA"
+			rewards: [
+				{
+					id: "6D2601B6D36AC99E"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "40A649E6D0802D2F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "52E0E2CEC7131E3E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find an epic affix item."
+			tasks: [
+				{
+					advancement: "apotheosis:affix/epic"
+					criterion: ""
+					icon: "minecraft:diamond_sword"
+					id: "26C39A72C2C1FD65"
+					title: "Obtain an Epic affix item"
+					type: "advancement"
+				}
+			]
+			title: "Epic Find"
+			x: 10.1d
+			y: -13.69d
+		}
+		{
+			dependencies: ["7D6DE5FF27CA96CA"]
+			description: ["Reforge at a &eReforging Table&f using rarity materials from the &eSalvaging Table&f to roll for it deliberately."]
+			id: "44A0D249B52DA4E1"
+			rewards: [
+				{
+					id: "2261D1F2680B9052"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 3
+					id: "49F6FEA1277A8D03"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6708C3AF82537A54"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6A9C01BCD21F98F7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "apotheosis:affix/mythic"
+					criterion: ""
+					icon: "minecraft:netherite_sword"
+					id: "79772503044F6389"
+					title: "Obtain a Mythic affix item"
+					type: "advancement"
+				}
+			]
+			title: "Mythic Find"
+			x: 11.85d
+			y: -13.69d
+		}
+		{
+			dependencies: ["44A0D249B52DA4E1"]
+			id: "38F45409903CFD7C"
+			optional: true
+			rewards: [
+				{
+					id: "05405C56F27E698F"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "3D0F6241EB60B36A"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "68C1EC48E7AE4133"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "165F190D814060C9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The rarest of all"
+			tasks: [
+				{
+					advancement: "apotheosis:affix/ancient"
+					criterion: ""
+					icon: "minecraft:nether_star"
+					id: "0AE021F2F5EA5871"
+					title: "Obtain an Ancient affix item"
+					type: "advancement"
+				}
+			]
+			title: "&6Ancient Find"
+			x: 13.6d
+			y: -13.69d
+		}
+		{
+			dependencies: ["001FA4B9F0B81569"]
+			description: [
+				"A thunderclap and a name in chat means a boss has spawned nearby. They are oversized, heavily geared, and &ealways drop affix loot&f."
+				""
+				"Every boss carries exactly one affix item, and it is guaranteed to drop - with better odds of a high rarity than anything else."
+			]
+			id: "260184580EC34249"
+			rewards: [
+				{
+					id: "132D214D85616E99"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "2FF567C93CBE8047"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7FAFE871BE389D1A"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 160"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4391821E374FB42B"
+					silent: true
+					title: "+160 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4708431AB3C03857"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hear the thunder"
+			tasks: [
+				{
+					advancement: "apotheosis:affix/boss"
+					criterion: ""
+					icon: "minecraft:wither_skeleton_skull"
+					id: "6EBDBE29698FB09B"
+					title: "Slay an Apotheosis boss"
+					type: "advancement"
+				}
+			]
+			title: "&cWorld Boss"
+			x: 6.85d
+			y: -7.69d
+		}
+		{
+			dependencies: ["261766B32625B301"]
+			description: ["Gems drop from monsters and chests. Each gives a different bonus depending on whether it sits in a weapon, armour or tool."]
+			id: "60C190AE7B83634B"
+			rewards: [
+				{
+					id: "6BF063F43B271794"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 10
+					id: "18C73AAFB33DA36D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "746F8408C3605543"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "apotheosis:affix/gem"
+					criterion: ""
+					icon: "apotheosis:gem"
+					id: "309DC51CA79D8CF5"
+					title: "Find a Gem"
+					type: "advancement"
+				}
+			]
+			title: "Gems"
+			x: 1.85d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60C190AE7B83634B"]
+			description: ["Combine a gem with a socketed item in a &eSmithing Table&f. A Sigil of Socketing adds another socket."]
+			id: "4599DD1F539CD06F"
+			rewards: [
+				{
+					id: "471591113E64BE31"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "109E7B1D17FE7806"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "68507C2AC7921C45"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "apotheosis:affix/socket"
+					criterion: ""
+					icon: "apotheosis:sigil_of_socketing"
+					id: "4673201A1901943B"
+					title: "Socket a Gem"
+					type: "advancement"
+				}
+			]
+			title: "Sockets"
+			x: 6.85d
+			y: 3.31d
+		}
+		{
+			dependencies: ["60C190AE7B83634B"]
+			id: "0227E4F287D571A2"
+			rewards: [
+				{
+					id: "5B1E3BE29938722E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2C5D908263783D11"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "760B0A4736ED9E3B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire a Flawed Gem."
+			tasks: [
+				{
+					advancement: "apotheosis:affix/rare_gem"
+					criterion: ""
+					icon: "apotheosis:gem"
+					id: "0ACFEDE5EC7F1F0D"
+					title: "Far From Perfect"
+					type: "advancement"
+				}
+			]
+			title: "Far From Perfect"
+			x: 6.85d
+			y: 4.81d
+		}
+		{
+			dependencies: ["0227E4F287D571A2"]
+			id: "5DAA25320DFBEB64"
+			rewards: [
+				{
+					id: "3668F1F84A2A3AE5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "27AC17F71FF82C72"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2EB098DCCF4E09D5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire a Flawless Gem."
+			tasks: [
+				{
+					advancement: "apotheosis:affix/mythic_gem"
+					criterion: ""
+					icon: "apotheosis:gem"
+					id: "79E2B7AB719BE143"
+					title: "Flawless Crystals"
+					type: "advancement"
+				}
+			]
+			title: "Flawless Crystals"
+			x: 10.1d
+			y: 4.81d
+		}
+		{
+			dependencies: ["5DAA25320DFBEB64"]
+			id: "6C391606F0840C04"
+			rewards: [
+				{
+					id: "581F1E05EB54F143"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "71A0EC20BDBF5F6B"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "674A05D6864DE48E"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "037C5CCC3B57C2CE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Using the Gem Cutting Table, create a Perfect Gemstone."
+			tasks: [
+				{
+					advancement: "apotheosis:affix/ancient_gem"
+					criterion: ""
+					icon: "apotheosis:gem"
+					id: "1D74C187B22EA25D"
+					title: "Infinity Stones"
+					type: "advancement"
+				}
+			]
+			title: "Infinity Stones"
+			x: 11.85d
+			y: 4.81d
+		}
+		{
+			dependencies: ["60C190AE7B83634B"]
+			description: ["Drop a gem on the ground and land an &eanvil&f on it: it is crushed to Gem Dust. Later the Salvaging Table does it for you."]
+			id: "323E45555180E6D3"
+			rewards: [
+				{
+					id: "35CB4F8BB30628D4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "27336810805D6D50"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "23E19DC5C6C2B3D5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "0B3013A162C38378"
+					item: "apotheosis:gem_dust"
+					type: "item"
+				}
+			]
+			title: "Gem Dust"
+			x: 6.85d
+			y: 1.94d
+		}
+		{
+			dependencies: ["323E45555180E6D3"]
+			id: "002C5352F44A477C"
+			rewards: [
+				{
+					id: "26E2769982F7F20B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "708E52865CB1419D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1EF513A2D5DBCCF1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Deepslate bound with gem dust: the base of every sigil."
+			tasks: [
+				{
+					id: "4693A327282AA175"
+					item: "apotheosis:gem_fused_slate"
+					type: "item"
+				}
+			]
+			title: "Gem-Fused Slate"
+			x: 10.1d
+			y: 1.94d
+		}
+		{
+			dependencies: ["323E45555180E6D3"]
+			description: ["Breaks affix items you do not want into &eRarity Materials&f, and gems into dust. Nothing you find is wasted again."]
+			id: "5C9074AB4EEAF977"
+			rewards: [
+				{
+					id: "3F1B652B154F163D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "106391A23B2C3D4B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "630216921A5CBE22"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "67CC794501E430EE"
+					item: "apotheosis:salvaging_table"
+					type: "item"
+				}
+			]
+			title: "Salvaging Table"
+			x: 10.1d
+			y: -1.69d
+		}
+		{
+			dependencies: ["5C9074AB4EEAF977"]
+			description: ["The Gem Cutting Table merges two identical gems plus gem dust and rarity materials into one of the next rarity. The exact cost shows in the table."]
+			id: "1BF697BB84926062"
+			optional: true
+			rewards: [
+				{
+					id: "70DC2F23249C6B23"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "61DFF0F690787565"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "150FE2A4FB88DF43"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "apotheosis:affix/gem_cut"
+					criterion: ""
+					icon: "apotheosis:gem_cutting_table"
+					id: "59D2D5B552B8FE24"
+					title: "Upgrade a Gem"
+					type: "advancement"
+				}
+			]
+			title: "Gem Cutting"
+			x: 11.85d
+			y: -1.69d
+		}
+		{
+			dependencies: ["5C9074AB4EEAF977"]
+			id: "5E6B6454320B0B44"
+			rewards: [
+				{
+					id: "3879EEF9B936965D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2E0FA50ACF184C71"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "006CC9612A7AC66B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Salvaged from common items."
+			tasks: [
+				{
+					id: "659EE88239357BD6"
+					item: "apotheosis:common_material"
+					type: "item"
+				}
+			]
+			title: "Mysterious Scrap Metal"
+			x: 11.85d
+			y: -4.69d
+		}
+		{
+			dependencies: ["5E6B6454320B0B44"]
+			id: "2464BA99C09BE0B5"
+			rewards: [
+				{
+					id: "1D4E5ACDD17DC596"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "20DB0DB428218E61"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "22A343E55A23914F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Salvaged from uncommon items. Not a single tear."
+			tasks: [
+				{
+					id: "3A347746B5B308BD"
+					item: "apotheosis:uncommon_material"
+					type: "item"
+				}
+			]
+			title: "Timeworn Fabric"
+			x: 13.6d
+			y: -4.69d
+		}
+		{
+			dependencies: ["2464BA99C09BE0B5"]
+			id: "20F9C8149CF83D48"
+			rewards: [
+				{
+					id: "7938AF32BB1A4186"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5808AD6C394EDEA0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0EFEFF816118714D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Salvaged from rare items."
+			tasks: [
+				{
+					id: "2C17AFC7E7519117"
+					item: "apotheosis:rare_material"
+					type: "item"
+				}
+			]
+			title: "Luminous Crystal Shard"
+			x: 15.35d
+			y: -4.69d
+		}
+		{
+			dependencies: ["20F9C8149CF83D48"]
+			id: "19A330EC2FC70E98"
+			rewards: [
+				{
+					id: "701E9FE2F26E9E57"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4379A5A90CDA2437"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5570AD738E2F7629"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Salvaged from epic items."
+			tasks: [
+				{
+					id: "0755B5118551B445"
+					item: "apotheosis:epic_material"
+					type: "item"
+				}
+			]
+			title: "Arcane Sands"
+			x: 17.1d
+			y: -4.69d
+		}
+		{
+			dependencies: ["19A330EC2FC70E98"]
+			description: ["Salvaged from mythic items. Two of these light the Augmenting Table."]
+			id: "4C24F3D514608E33"
+			rewards: [
+				{
+					id: "638F6C30E1461CDB"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "5B2D1951A776CC82"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "25FE1F79EA9C8537"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "75D8630654D4AA6B"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "58E4013A9D880798"
+					item: "apotheosis:mythic_material"
+					type: "item"
+				}
+			]
+			title: "Godforged Pearl"
+			x: 18.95d
+			y: -4.69d
+		}
+		{
+			dependencies: ["5E6B6454320B0B44"]
+			description: ["Reforge any weapon, tool or armour piece with brand new affixes, up to &9Rare&f. It takes rarity materials of the rarity you want, gem dust, and Sigils of Rebirth as fuel."]
+			id: "452A9B42E639BA1F"
+			rewards: [
+				{
+					id: "2B46E8D6E7E54776"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "310904CD623CEA12"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "10CB209C7611E08B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1A3BCF9587D1C53F"
+					item: "apotheosis:simple_reforging_table"
+					type: "item"
+				}
+			]
+			title: "Simple Reforging Table"
+			x: 13.6d
+			y: -3.19d
+		}
+		{
+			dependencies: ["002C5352F44A477C"]
+			id: "7C6BEF7D886F02BB"
+			rewards: [
+				{
+					id: "399D3D912C59E88C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7E11847B28F72B2A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6B563D54880BC603"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fuel for reforging."
+			tasks: [
+				{
+					id: "6ADBA370C1BF5152"
+					item: "apotheosis:sigil_of_rebirth"
+					type: "item"
+				}
+			]
+			title: "Sigil of Rebirth"
+			x: 11.85d
+			y: -0.19d
+		}
+		{
+			dependencies: [
+				"452A9B42E639BA1F"
+				"20F9C8149CF83D48"
+			]
+			id: "70A7BCC22DA76484"
+			rewards: [
+				{
+					id: "2A358B46812A70BF"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "22E982A21CD38C30"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C2DF1AC396A275D"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "156CF45F2B7B0E64"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The full table: reforges up to &6Mythic&f."
+			tasks: [
+				{
+					id: "6C504186FD78543E"
+					item: "apotheosis:reforging_table"
+					type: "item"
+				}
+			]
+			title: "Reforging Table"
+			x: 17.1d
+			y: -3.19d
+		}
+		{
+			dependencies: ["002C5352F44A477C"]
+			description: ["Adds an empty socket to an item, up to its limit, in a Smithing Table."]
+			id: "7E19238BFA37EE87"
+			rewards: [
+				{
+					id: "652B669D5646ADAA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "34553DC70812C5EC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "08B775ABD2DA9CDD"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "628560039AFBFF96"
+					item: "apotheosis:sigil_of_socketing"
+					type: "item"
+				}
+			]
+			title: "Sigil of Socketing"
+			x: 13.45d
+			y: -0.69d
+		}
+		{
+			dependencies: ["002C5352F44A477C"]
+			id: "33DCBEF1B555E1DB"
+			optional: true
+			rewards: [
+				{
+					id: "771AEC37BA39C011"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "029B838A3E2F6933"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "238AC9BC5363EC83"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Takes every gem back out of an item, unharmed."
+			tasks: [
+				{
+					id: "01BD36BB4C167EB6"
+					item: "apotheosis:sigil_of_withdrawal"
+					type: "item"
+				}
+			]
+			title: "Sigil of Withdrawal"
+			x: 13.45d
+			y: 0.56d
+		}
+		{
+			dependencies: ["002C5352F44A477C"]
+			id: "47A5E534F60C1989"
+			optional: true
+			rewards: [
+				{
+					id: "68C6BE1DED9E6BED"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "49FA505020D6EC57"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "59E878A2F7CE7C8C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Strips the long affix name from an item. The affixes stay."
+			tasks: [
+				{
+					id: "229E6DD4F3ECAE6D"
+					item: "apotheosis:sigil_of_unnaming"
+					type: "item"
+				}
+			]
+			title: "Sigil of Unnaming"
+			x: 13.45d
+			y: 1.81d
+		}
+		{
+			dependencies: ["4C24F3D514608E33"]
+			id: "48DBA92F80947F8F"
+			rewards: [
+				{
+					id: "532BE3BAD4673038"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "01AF8AA65FBA9E0A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0455942E0F22AA7F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fuel for augmenting."
+			tasks: [
+				{
+					id: "1E0F30F42F74D621"
+					item: "apotheosis:sigil_of_enhancement"
+					type: "item"
+				}
+			]
+			title: "Sigil of Enhancement"
+			x: 20.8d
+			y: -4.69d
+		}
+		{
+			dependencies: [
+				"48DBA92F80947F8F"
+				"70A7BCC22DA76484"
+			]
+			description: ["An enchanting table, two Godforged Pearls and a Nether Star. It upgrades or rerolls &eone&f affix of a Mythic item and leaves the rest alone. The end of the road for gear."]
+			id: "59B27ADADFED78D3"
+			rewards: [
+				{
+					id: "648E4D167BCAA40D"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "27AE2B991C84E072"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "761A9871F13CE05F"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2371778C8A6673C9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "56B041FD04BDD0A1"
+					item: "apotheosis:augmenting_table"
+					type: "item"
+				}
+			]
+			title: "&dAugmenting Table"
+			x: 31.53d
+			y: -4.69d
+		}
+		{
+			dependencies: ["261766B32625B301"]
+			description: ["Silk Touch picks a spawner up, mob and all. Place it wherever it is useful."]
+			id: "244B4441F252BFA7"
+			rewards: [
+				{
+					id: "3696985501ABE577"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2B1D6C610B653CDD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "15744CCA27199C16"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Collect a mob spawner using Silk Touch."
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/root"
+					criterion: ""
+					icon: "minecraft:spawner"
+					id: "2989A97F663629DB"
+					title: "Apothic Spawners"
+					type: "advancement"
+				}
+			]
+			title: "Apothic Spawners"
+			x: 1.85d
+			y: 14.06d
+		}
+		{
+			dependencies: ["244B4441F252BFA7"]
+			description: [
+				"Right-click a spawner with certain items to change it: faster delays, more mobs, no player needed, redstone control."
+				""
+				"Holding &equartz&f in your off hand reverses a modifier. Every modifier is in JEI under the spawner's uses."
+			]
+			id: "0CAAB6320D2A582F"
+			rewards: [
+				{
+					id: "6EA496D049B96427"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "035E14DCBF7645C1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2A3C814B7ACB9F5B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/modifier"
+					criterion: ""
+					icon: "minecraft:spawner"
+					id: "7A230A8029F0E2AF"
+					title: "Modify a spawner"
+					type: "advancement"
+				}
+			]
+			title: "Spawner Tinkering"
+			x: 6.85d
+			y: 14.06d
+		}
+		{
+			dependencies: ["244B4441F252BFA7"]
+			description: ["The &eCapturing&f enchantment (swords) gives a small chance per level for a mob to drop its spawn egg. Use the egg on a spawner to change its mob."]
+			id: "74C886B38F1098A1"
+			rewards: [
+				{
+					id: "70A9E5611E3D28EE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "13B18BA02448017A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4D338DC3C80CB3E4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Get a spawn egg from a mob using the Capturing enchantment"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/capturing"
+					criterion: ""
+					icon: "minecraft:witch_spawn_egg"
+					id: "4C1D05186F71018D"
+					title: "Captured!"
+					type: "advancement"
+				}
+			]
+			title: "Captured!"
+			x: 6.85d
+			y: 15.56d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["Sugar lowers the shortest delay between spawns by 10 ticks a use."]
+			id: "7CC27C9C7906FAE3"
+			rewards: [
+				{
+					id: "1265580313C19768"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2365DC08167857E1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "786F19F10251A38E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Decrease the minimum spawn delay of a spawner to 20"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/mindelay"
+					criterion: ""
+					icon: "minecraft:sugar"
+					id: "37CB3A2062DFE0E2"
+					title: "I Am The Fast"
+					type: "advancement"
+				}
+			]
+			title: "I Am The Fast"
+			x: 10.1d
+			y: 7.81d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["A clock lowers the longest delay by 10 ticks a use."]
+			id: "590CD709FB75C7AA"
+			rewards: [
+				{
+					id: "5AC59C1CE943597B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0BF3F7E71D2DACAB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "01823B4FC2EE5F92"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Decrease the maximum spawn delay of a spawner to 20"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/maxdelay"
+					criterion: ""
+					icon: "minecraft:clock"
+					id: "7FBC62BC22287770"
+					title: "Time-Warped Spawner"
+					type: "advancement"
+				}
+			]
+			title: "Time-Warped Spawner"
+			x: 10.1d
+			y: 9.31d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["Fermented spider eyes add one more mob to each spawn."]
+			id: "1F82516BD88EB810"
+			rewards: [
+				{
+					id: "4610EB134B362EE5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "07737E22E82B66EE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "045354F6825C73C2"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raise the spawn count of a spawner to 16"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/spawncount"
+					criterion: ""
+					icon: "minecraft:fermented_spider_eye"
+					id: "72DBB39EA66380F4"
+					title: "Look at the Size of His Spawner!"
+					type: "advancement"
+				}
+			]
+			title: "Look at the Size of His Spawner!"
+			x: 10.1d
+			y: 12.31d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["Ghast tears raise how many of its mobs may stand nearby before it stops."]
+			id: "4FF8D391D758AB11"
+			rewards: [
+				{
+					id: "2AD31C5E5E3FDDD2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "09D678B3A377E183"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "392F0CF7BC41AA8E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raise the max nearby entities of a spawner to 32"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/nearbyents"
+					criterion: ""
+					icon: "minecraft:ghast_tear"
+					id: "6F68FA881C9BFF53"
+					title: "Creating a Horde"
+					type: "advancement"
+				}
+			]
+			title: "Creating a Horde"
+			x: 11.7d
+			y: 12.81d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["Blaze rods widen the area mobs appear in."]
+			id: "127A1B6C09E11983"
+			rewards: [
+				{
+					id: "1A3F0D476CF3DD62"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "446131AB86041E66"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "61AC6D43F13EF4DE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raise the spawn range of a spawner to 32"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/spawnrange"
+					criterion: ""
+					icon: "minecraft:blaze_rod"
+					id: "70EA0178B4641DBF"
+					title: "Mobs for Miles"
+					type: "advancement"
+				}
+			]
+			title: "Mobs for Miles"
+			x: 10.1d
+			y: 13.81d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["Prismarine crystals let it run with you further away."]
+			id: "01CBEEE361FB4E5E"
+			rewards: [
+				{
+					id: "3129317453886D4D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5103236668087282"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3C65286C0EFCEE90"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raise the player activation range of a spawner to 48"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/playerrange"
+					criterion: ""
+					icon: "minecraft:prismarine_crystals"
+					id: "620297E74740EC3D"
+					title: "Far from the Fight"
+					type: "advancement"
+				}
+			]
+			title: "Far from the Fight"
+			x: 11.7d
+			y: 14.56d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["A soul lantern: it spawns in any light."]
+			id: "707DE66FCE1D2562"
+			rewards: [
+				{
+					id: "6099B76D20405388"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4C028A588DF509FD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2FA0E4DFBEC5E09D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make your spawner work in any light level."
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/light"
+					criterion: ""
+					icon: "minecraft:soul_lantern"
+					id: "5E3568371E806F7D"
+					title: "Who Needs Darkness?"
+					type: "advancement"
+				}
+			]
+			title: "Who Needs Darkness?"
+			x: 10.1d
+			y: 15.31d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["A comparator: a redstone signal turns it off."]
+			id: "1DB9D0B39BF4250B"
+			rewards: [
+				{
+					id: "7B06A4E3CFA70092"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2332C099679A2D83"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "483D29D1685469C1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enable redstone control for a spawner"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/redstone"
+					criterion: ""
+					icon: "minecraft:comparator"
+					id: "5834BF42341DF54B"
+					title: "Adding a Switch"
+					type: "advancement"
+				}
+			]
+			title: "Adding a Switch"
+			x: 10.1d
+			y: 6.31d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["Chorus fruit: its mobs stand still and do nothing. Farms love this."]
+			id: "47308F51950F9CFB"
+			rewards: [
+				{
+					id: "33B2021537A426E5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4100B5B9D1B390B5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "13F413DED9608044"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Disable Mob AI for a spawner."
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/noai"
+					criterion: ""
+					icon: "minecraft:chorus_fruit"
+					id: "6005173794382CE9"
+					title: "Brain Drain"
+					type: "advancement"
+				}
+			]
+			title: "Brain Drain"
+			x: 10.1d
+			y: 10.81d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["A dragon egg: it ignores what its mob normally needs to spawn."]
+			id: "1C1079F99D301312"
+			rewards: [
+				{
+					id: "3E72FCAFEA39D134"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5ACB6B16FFC0A4E3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "44046893A7FB392B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Disable spawn conditions for a spawner"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/conditions"
+					criterion: ""
+					icon: "minecraft:dragon_egg"
+					id: "41CBB793A4CFB947"
+					title: "Unchecked Spawning"
+					type: "advancement"
+				}
+			]
+			title: "Unchecked Spawning"
+			x: 10.1d
+			y: 16.81d
+		}
+		{
+			dependencies: ["0CAAB6320D2A582F"]
+			description: ["A nether star: it runs with nobody near."]
+			id: "4C1839C9577F8173"
+			rewards: [
+				{
+					id: "111BC33F3B769A60"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "745BD906C26BBE02"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7A40D7D96397FC8C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Disable the need for nearby players for a spawner"
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/players"
+					criterion: ""
+					icon: "minecraft:nether_star"
+					id: "55C491D027DBD707"
+					title: "Factory-Ready"
+					type: "advancement"
+				}
+			]
+			title: "Factory-Ready"
+			x: 10.1d
+			y: 18.31d
+		}
+		{
+			dependencies: [
+				"7CC27C9C7906FAE3"
+				"590CD709FB75C7AA"
+				"1DB9D0B39BF4250B"
+				"47308F51950F9CFB"
+				"1C1079F99D301312"
+				"4C1839C9577F8173"
+			]
+			description: [
+				"Create a spawner with minimal delays that has redstone control, no AI, ignores spawn conditions, and ignores players."
+				""
+				"Minimal delays, redstone control, no AI, no conditions, no players needed. The perfect farm block."
+			]
+			id: "25C7E9C52F1EF6CD"
+			rewards: [
+				{
+					id: "38B1D65EDEDB9B09"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "1188F5735F6095AC"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0347510E538B8A6F"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "77DCC5201D42BF96"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "apotheosis:spawner/ultimate_spawner"
+					criterion: ""
+					icon: "minecraft:spawner"
+					id: "4AE9B32027872098"
+					title: "The Ultimate Spawner"
+					type: "advancement"
+				}
+			]
+			title: "The Ultimate Spawner"
+			x: 31.53d
+			y: 7.81d
+		}
+		{
+			dependencies: ["261766B32625B301"]
+			description: ["Apotheosis gives the fletching table a use: arrows cost less here, and it makes the special arrows below."]
+			id: "447427F803C6554D"
+			rewards: [
+				{
+					id: "6D1F61890F553D27"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "74362297E5AEEEBF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "68BB58340F6BC38E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "67AE6D84CAA6E351"
+					item: "minecraft:fletching_table"
+					type: "item"
+				}
+			]
+			title: "Fletching"
+			x: 1.85d
+			y: -6.19d
+		}
+		{
+			dependencies: ["447427F803C6554D"]
+			id: "5661819CDE2340F1"
+			rewards: [
+				{
+					id: "735FE5CFC2B92B92"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "02F21545A8161AE6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "731675A74DF614F5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "20% more damage from every ranged hit."
+			tasks: [
+				{
+					count: 16L
+					id: "52F803DCE4ACA44C"
+					item: "apotheosis:obsidian_arrow"
+					type: "item"
+				}
+			]
+			title: "Obsidian Arrow"
+			x: 6.85d
+			y: -6.19d
+		}
+		{
+			dependencies: ["5661819CDE2340F1"]
+			id: "4659422F85152F70"
+			rewards: [
+				{
+					id: "16C2B14B72BF1E24"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "078E587A11E4D744"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5EB0A9F94318C690"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Each hit makes the target bleed, and the bleeding stacks."
+			tasks: [
+				{
+					count: 16L
+					id: "37AB3EFC95387FC7"
+					item: "apotheosis:broadhead_arrow"
+					type: "item"
+				}
+			]
+			title: "Broadhead Arrow"
+			x: 10.1d
+			y: -6.19d
+		}
+		{
+			dependencies: ["4659422F85152F70"]
+			id: "57F422745184C12D"
+			rewards: [
+				{
+					id: "258F6281D39B148D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "24C9F7E044689218"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0C928C4FF338270F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "It explodes where it lands. For crowds."
+			tasks: [
+				{
+					count: 8L
+					id: "473AF1EA712EDDF3"
+					item: "apotheosis:explosive_arrow"
+					type: "item"
+				}
+			]
+			title: "Explosive Arrow"
+			x: 11.85d
+			y: -6.19d
+		}
+		{
+			dependencies: ["57F422745184C12D"]
+			id: "7F632FEBD26D8658"
+			rewards: [
+				{
+					id: "1C78D8F6942562EC"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "01E3AD5955B04FF8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "087E280CEC92DC41"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mines the blocks it hits, like a flying pickaxe."
+			tasks: [
+				{
+					count: 8L
+					id: "7FF2A75A4DD10B50"
+					item: "apotheosis:iron_mining_arrow"
+					type: "item"
+				}
+			]
+			title: "Iron Mining Arrow"
+			x: 13.6d
+			y: -6.19d
+		}
+		{
+			dependencies: ["7F632FEBD26D8658"]
+			id: "11939AAD9982E410"
+			rewards: [
+				{
+					id: "34A010715FCF5B60"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "13EA56ADCF152050"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "60989EA0F639FC30"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mines harder blocks."
+			tasks: [
+				{
+					count: 8L
+					id: "53259A19975DCFF9"
+					item: "apotheosis:diamond_mining_arrow"
+					type: "item"
+				}
+			]
+			title: "Diamond Mining Arrow"
+			x: 15.35d
+			y: -6.19d
+		}
+		{
+			dependencies: ["261766B32625B301"]
+			description: ["Three of the same potion and some blaze powder. Right-click to switch it on: it keeps the effect on you a few seconds at a time and lasts longer than the three potions did."]
+			id: "7A835A37BDB39C9D"
+			rewards: [
+				{
+					id: "703A768911AC442F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "542194F208898542"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "158D737FABE57D53"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "226FC87E36F616D7"
+					item: "apotheosis:potion_charm"
+					type: "item"
+				}
+			]
+			title: "Potion Charm"
+			x: 1.85d
+			y: 0.06d
+		}
+		{
+			dependencies: ["261766B32625B301"]
+			description: ["Hit a farm animal with it to put the animal in your pocket; right-click to let it out again."]
+			id: "57CA8D4914B3F271"
+			optional: true
+			rewards: [
+				{
+					id: "3D09A565671F21F4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "329F5616DD734DF2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3F2CBBBC96FA47F0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "147F317E509CF896"
+					item: "apotheosis:ender_lead"
+					type: "item"
+				}
+			]
+			title: "Ender Lead"
+			x: 1.85d
+			y: 3.31d
+		}
+		{
+			dependencies: [
+				"2FCF1DDA6454FEA2"
+				"44A0D249B52DA4E1"
+				"260184580EC34249"
+				"59B27ADADFED78D3"
+				"25C7E9C52F1EF6CD"
+			]
+			description: ["Level 100 enchantments on mythic gear, studded with gems, and a spawner that answers to you. You have ascended."]
+			id: "4308AFA920AE113E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "32670F6F4938F950"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					id: "1CBE796C6B2F6423"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					id: "708198718D82E707"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/mastery xp @s magic 160"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1A7204411876C640"
+					silent: true
+					title: "+160 Magic experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "52CA8A48252174E3"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "0C8166557041EE4D"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&d&lApotheosis"
+			x: 33.75d
+			y: -5.24d
+		}
+	]
+	subtitle: ["Level 100 enchanting, gems, affixes, spawners and world bosses"]
+	title: "&dApotheosis"
+}

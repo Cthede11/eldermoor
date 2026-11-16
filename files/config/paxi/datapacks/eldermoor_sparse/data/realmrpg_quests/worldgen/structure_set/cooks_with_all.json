@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 5,
+      "other_set": "minecraft:villages"
+    },
+    "salt": 736240813,
+    "separation": 56,
+    "spacing": 91,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "realmrpg_quests:cooks",
+      "weight": 1
+    }
+  ]
+}

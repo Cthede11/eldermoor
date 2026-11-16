@@ -1,0 +1,1390 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "colony_defense"
+	group: "0A20FFE9BBE69D51"
+	icon: "minecolonies:blockhutbarracks"
+	id: "03BD7E210349172D"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["18215A0F4E13E60F"]
+			description: [
+				"Once a colony has enough citizens, &craiders&f target it. Which raiders you get depends on where you settled: Barbarians inland, Pirates by the sea, Egyptians in deserts, Amazons in jungles, Norsemen in the cold."
+				""
+				"The Town Hall warns you the evening before. Raids scale with colony size - so should your guard."
+			]
+			hide_until_deps_complete: true
+			id: "0A3F4F1DAA13904B"
+			rewards: [
+				{
+					id: "7D36D2255AFC494A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "0F1958975111F475"
+					item: "minecraft:iron_sword"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 250"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "0C56306B46839026"
+					silent: true
+					title: "+250 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1730DFB097EACFAA"
+					title: "To arms!"
+					type: "checkmark"
+				}
+			]
+			title: "&6They Come at Night"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A3F4F1DAA13904B"]
+			description: ["Get it from a Guard Tower's GUI to set patrol points or a guard post. Guards can &epatrol&f, &eguard&f a spot or &efollow&f you into battle."]
+			id: "7EE83C4E58F7F857"
+			optional: true
+			rewards: [
+				{
+					id: "5C65B35EAC4668B3"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 8
+					id: "7BD8AA71DDC6B1BA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "239CB0178E1453DD"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "53B265770F1BAA32"
+					item: "minecolonies:scepterguard"
+					type: "item"
+				}
+			]
+			title: "Guard Scepter"
+			x: 2.98d
+			y: -5.12d
+		}
+		{
+			dependencies: ["0A3F4F1DAA13904B"]
+			description: ["Link the banner to guard towers (shift-right-click them), then use it to call those guards to your side - even far outside the colony."]
+			id: "47A2AFDA4F450FFE"
+			optional: true
+			rewards: [
+				{
+					id: "42F3971E5A4188E8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "10D762A3273F93C4"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "4A08682EDFA77C16"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6044D1290B960770"
+					item: "minecolonies:banner_rally_guards"
+					type: "item"
+				}
+			]
+			title: "Rally the Guard"
+			x: 2.98d
+			y: -3.63d
+		}
+		{
+			dependencies: ["47A2AFDA4F450FFE"]
+			description: ["Researched at the University, crafted by the Blacksmith. Tougher than iron, and guards wear it gladly."]
+			id: "6555714DFE94DE85"
+			optional: true
+			rewards: [
+				{
+					id: "7DCC68345D1457DF"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 16
+					id: "112903D249EB0ECA"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "3469C2D8A7C43635"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7B9D61B208A33064"
+					item: "minecolonies:plate_armor_chest"
+					type: "item"
+				}
+			]
+			title: "Plate Armour"
+			x: 4.97d
+			y: -3.63d
+		}
+		{
+			dependencies: ["0A3F4F1DAA13904B"]
+			description: ["A fortress with room for Barracks Towers, each housing one guard per level. This is the backbone of a real army."]
+			id: "5385FDEF798131B3"
+			rewards: [
+				{
+					id: "37065868D7A5AE84"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 24
+					id: "18933AB6BF40E474"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "0A826C46633E6831"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "609AAA0C656757C8"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 100"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "05DADA340A0D16B3"
+					silent: true
+					title: "+100 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "A proper garrison"
+			tasks: [
+				{
+					advancement: "minecolonies:military/build_barracks"
+					criterion: ""
+					icon: "minecolonies:blockhutbarracks"
+					id: "2E259A1E7E64C2BC"
+					title: "Barracks completed"
+					type: "advancement"
+				}
+			]
+			title: "The Barracks"
+			x: 2.98d
+			y: 5.38d
+		}
+		{
+			dependencies: ["5385FDEF798131B3"]
+			id: "71657D46EBC0D0D3"
+			rewards: [
+				{
+					id: "565C98FA16980283"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 2
+					id: "7C03D9D7458E4D90"
+					item: "minecraft:shield"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "7D5793275142A7D0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "1FBEF403FD24D2F8"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Build the first tower of your Barracks."
+			tasks: [
+				{
+					advancement: "minecolonies:military/build_barracks_tower"
+					criterion: ""
+					icon: "minecolonies:blockhutbarrackstower"
+					id: "608B4A546BF2F2F0"
+					title: "Barracks Tower completed"
+					type: "advancement"
+				}
+			]
+			title: "Barracks Tower"
+			x: 4.97d
+			y: 6.87d
+		}
+		{
+			dependencies: ["71657D46EBC0D0D3"]
+			id: "333244CF4C03BC3E"
+			rewards: [
+				{
+					id: "7BD81B13EDFAC934"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 2
+					id: "565D420DFFC57701"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D0EEB377592084F"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "66D78CDB0987ABF8"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fill every tower slot of the Barracks."
+			tasks: [
+				{
+					advancement: "minecolonies:military/build_all_barracks_towers"
+					criterion: ""
+					icon: "minecolonies:blockhutbarrackstower"
+					id: "2AE53DE892EA0523"
+					title: "All Barracks Towers built"
+					type: "advancement"
+				}
+			]
+			title: "Four Corners"
+			x: 6.72d
+			y: 6.87d
+		}
+		{
+			dependencies: ["5385FDEF798131B3"]
+			description: ["Archers train here to gain levels between raids."]
+			id: "4F42AB9037A27DAA"
+			rewards: [
+				{
+					id: "6F50505859322686"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 64
+					id: "75BA45CBCD829C2E"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "03FC9A481D1B08E5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "42DDD04837F7F937"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Train your Archers"
+			tasks: [
+				{
+					advancement: "minecolonies:military/build_archery"
+					criterion: ""
+					icon: "minecolonies:blockhutarchery"
+					id: "6C3D94D6BD21F5B0"
+					title: "Archery completed"
+					type: "advancement"
+				}
+			]
+			title: "The Archery Range"
+			x: 4.97d
+			y: 5.38d
+		}
+		{
+			dependencies: ["5385FDEF798131B3"]
+			description: ["Knights spar here to gain levels between raids."]
+			id: "1C0FFA9C95F83D03"
+			rewards: [
+				{
+					id: "21AAA8F9DD8B3A24"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 2
+					id: "2764780CBF9922DE"
+					item: "minecraft:iron_sword"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "37C3460F305C7976"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "3D6FC366E945CA8C"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Train your Knights"
+			tasks: [
+				{
+					advancement: "minecolonies:military/build_combat_academy"
+					criterion: ""
+					icon: "minecolonies:blockhutcombatacademy"
+					id: "4B85129B47DE649A"
+					title: "Combat Academy completed"
+					type: "advancement"
+				}
+			]
+			title: "The Combat Academy"
+			x: 4.97d
+			y: 3.87d
+		}
+		{
+			dependencies: ["1C0FFA9C95F83D03"]
+			description: [
+				"Research &eMounted Combat&f at the University (a saddle and a lead, after Tactic Training) to unlock the &6Stable&f."
+				""
+				"Its &eStablemaster&f raises horses and trains them for war. &eCavalry&f guards ride them: fast and tough, but archers are their weakness. Keep the Stablemaster supplied with feed and the items it asks for, or the riders have nothing to mount."
+			]
+			id: "122415819FEC0B4E"
+			optional: true
+			rewards: [
+				{
+					id: "4951C4D85179628E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "3A9D48B3DE7644CB"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3352A012D9034E35"
+					item: "minecraft:hay_block"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6D8BCEF287FA2C70"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "59E877547B7D666D"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mounted guards"
+			tasks: [
+				{
+					id: "49632247E2D5F8EA"
+					item: "minecolonies:blockhutstable"
+					type: "item"
+				}
+			]
+			title: "The Stable"
+			x: 6.72d
+			y: 3.87d
+		}
+		{
+			dependencies: ["0A3F4F1DAA13904B"]
+			description: [
+				"A fortified gate with room for &atwo guards&f. Put one on each road into town."
+				""
+				"A Gatehouse is also how colonies reach each other: link one to a friend's Gatehouse with &6Colony Signs&f and you can travel between the two from the Gatehouse."
+			]
+			id: "5611064CCC665BD0"
+			rewards: [
+				{
+					id: "6C8DE8F32B3D28A4"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 12
+					id: "37DCA79413A5A6D0"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5935668227F67242"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "200E658F418291A1"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Guards at the gate"
+			tasks: [
+				{
+					id: "16A7C54926002EA9"
+					item: "minecolonies:blockhutgatehouse"
+					type: "item"
+				}
+			]
+			title: "The Gatehouse"
+			x: 2.98d
+			y: -6.63d
+		}
+		{
+			dependencies: ["5611064CCC665BD0"]
+			description: [
+				"Shift-right-click your Gatehouse with a &6Colony Sign&f to begin, then place a sign every 50 blocks or so along the road to the other colony. Shift-right-click the other colony's Gatehouse (or its last sign) to finish the connection."
+				""
+				"Needs the &eManage Huts&f permission in both colonies, and a high enough Gatehouse level. Each trip costs a few nuggets."
+			]
+			id: "2D704CB6A580DC16"
+			optional: true
+			rewards: [
+				{
+					id: "7D0445F16C8E8B6C"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "3D5EEEA77689AF7B"
+					item: "minecraft:oak_sign"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "72B56FE8B649BC3A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "72CEBF18514FB119"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Connect two colonies"
+			tasks: [
+				{
+					count: 4L
+					id: "666392BBB78621F9"
+					item: "minecolonies:colonysign"
+					type: "item"
+				}
+			]
+			title: "The Road Between"
+			x: 4.97d
+			y: -6.63d
+		}
+		{
+			dependencies: ["4F42AB9037A27DAA"]
+			description: ["Employ &a8 guards&f."]
+			id: "22CE1A5188F2881A"
+			rewards: [
+				{
+					id: "760F56CA787454C2"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 5
+					id: "4E7CAF7A3AB6DC62"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "4958A6D8CD555755"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "8 guards"
+			tasks: [
+				{
+					advancement: "minecolonies:military/army_8"
+					criterion: ""
+					icon: "minecraft:iron_helmet"
+					id: "1C5867D9C9B20BA1"
+					title: "Command 8 guards"
+					type: "advancement"
+				}
+			]
+			title: "Militia"
+			x: 6.72d
+			y: 5.38d
+		}
+		{
+			dependencies: ["22CE1A5188F2881A"]
+			description: ["Employ &a30 guards&f."]
+			id: "3E312712DB8FAF5C"
+			rewards: [
+				{
+					id: "7787113C3CC2A338"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 3
+					id: "09A0C5928451F5EA"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0047C19A4FA2AA51"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "4FF26BD599581931"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "30 guards"
+			tasks: [
+				{
+					advancement: "minecolonies:military/army_30"
+					criterion: ""
+					icon: "minecraft:diamond_helmet"
+					id: "71C015B45759A513"
+					title: "Command 30 guards"
+					type: "advancement"
+				}
+			]
+			title: "Standing Army"
+			x: 8.47d
+			y: 5.38d
+		}
+		{
+			dependencies: ["3E312712DB8FAF5C"]
+			description: ["Employ &a80 guards&f. A true empire."]
+			id: "749094B11535C1F1"
+			optional: true
+			rewards: [
+				{
+					id: "173F313011CB85AD"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 2
+					id: "5276B90FEB3ECB01"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6FFF6AD3E29740FE"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "32661BB60A160D95"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "80 guards"
+			tasks: [
+				{
+					advancement: "minecolonies:military/army_80"
+					criterion: ""
+					icon: "minecraft:netherite_helmet"
+					id: "448A89A54BFF4FA2"
+					title: "Command 80 guards"
+					type: "advancement"
+				}
+			]
+			title: "Legion"
+			x: 10.22d
+			y: 5.38d
+		}
+		{
+			dependencies: ["0A3F4F1DAA13904B"]
+			description: ["Break a Barbarian raid. Chiefs drop the &6Chief's Sword&f."]
+			id: "26F4AC2D579AE41E"
+			optional: true
+			rewards: [
+				{
+					id: "31B32DE19634365B"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "184F1ACD36751C55"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A484449535D23F8"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "407F627956AB4373"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "5103CE7D12446D5A"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raid: Barbarians"
+			tasks: [
+				{
+					entity: "minecolonies:barbarian"
+					id: "405647C4F6A58E4E"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecolonies:archerbarbarian"
+					id: "113D34FE5E8C9FA6"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "minecolonies:chiefbarbarian"
+					id: "5FCE489EA6256C6C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Barbarians at the Gate"
+			x: 2.98d
+			y: -0.63d
+		}
+		{
+			dependencies: ["0A3F4F1DAA13904B"]
+			description: ["Pirates arrive by ship near coastal colonies. Destroy the spawners on board to end the raid - and loot the ship."]
+			id: "69D3B9590219D005"
+			optional: true
+			rewards: [
+				{
+					id: "53F563FBBA8E62F8"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "6F0F3C7C13399E3A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "01A6D5DCABFA8BC1"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "29C021F884C5F9EC"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "19D7B18FCD73BF6D"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raid: Pirates"
+			tasks: [
+				{
+					entity: "minecolonies:pirate"
+					id: "14F0CCFF90E18B67"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecolonies:archerpirate"
+					id: "119369E60D82C19D"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "minecolonies:chiefpirate"
+					id: "6FA3372796A6303F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Repel Boarders"
+			x: 2.98d
+			y: -2.12d
+		}
+		{
+			dependencies: ["0A3F4F1DAA13904B"]
+			description: ["Egyptian raiders attack desert colonies."]
+			id: "175074009E38DF00"
+			optional: true
+			rewards: [
+				{
+					id: "7007E1E940ED556F"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "323144052D26709F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "2C556DAF618DE865"
+					item: "minecolonies:pharaoscepter"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "618CD0811FB051C7"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "3597867B5EBD4C9A"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raid: Egyptians"
+			tasks: [
+				{
+					entity: "minecolonies:mummy"
+					id: "125F25F5D8980684"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecolonies:pharao"
+					id: "268763820068E71F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Curse of the Pharaoh"
+			x: 2.98d
+			y: 0.88d
+		}
+		{
+			dependencies: ["0A3F4F1DAA13904B"]
+			description: ["Amazons attack jungle colonies."]
+			id: "431CB17BC5DF62C1"
+			optional: true
+			rewards: [
+				{
+					id: "5009E3ABF068A657"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "1CB9FA5F3187471B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2814E2F5A6323D31"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3CC535F23BC5C737"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "5F64CB6B4426B1FA"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raid: Amazons"
+			tasks: [
+				{
+					entity: "minecolonies:amazon"
+					id: "5DC630A2C72D0276"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecolonies:amazonchief"
+					id: "510270B2F0DBB4E1"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Jungle Fury"
+			x: 2.98d
+			y: 2.37d
+		}
+		{
+			dependencies: ["0A3F4F1DAA13904B"]
+			description: ["Norsemen attack colonies in cold biomes."]
+			id: "0BE5A09761B164A5"
+			optional: true
+			rewards: [
+				{
+					id: "3989F09D5DB45967"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "40CA74D81315414C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F2AAAF5489CA4FD"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "042C09BD583FE44D"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "1F31FD36629A0090"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raid: Norsemen"
+			tasks: [
+				{
+					entity: "minecolonies:shieldmaiden"
+					id: "1E99E0D1D5CFE2F1"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecolonies:norsemenchief"
+					id: "55A79C0E736D34FF"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "From the North"
+			x: 2.98d
+			y: 3.88d
+		}
+		{
+			dependencies: [
+				"26F4AC2D579AE41E"
+				"69D3B9590219D005"
+				"175074009E38DF00"
+				"431CB17BC5DF62C1"
+				"0BE5A09761B164A5"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Break &aany one&f raid. Which raiders you face depends on where you settled, so any of the five raid quests counts."]
+			id: "15B9A9D4C9BC02E7"
+			rewards: [
+				{
+					id: "5D441179D5AC8267"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "1C00E472B553EC2F"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "281E30CE410CA71B"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "5B7F2AE6DE0DF9BB"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Any one raid quest"
+			tasks: [
+				{
+					id: "2B2C9089D4D3E7F3"
+					title: "The colony stands"
+					type: "checkmark"
+				}
+			]
+			title: "Held the Line"
+			x: 4.97d
+			y: -0.63d
+		}
+		{
+			dependencies: [
+				"26F4AC2D579AE41E"
+				"69D3B9590219D005"
+				"175074009E38DF00"
+				"431CB17BC5DF62C1"
+				"0BE5A09761B164A5"
+			]
+			description: [
+				"Defeat &atwo different&f raider factions."
+				""
+				"&7Which raiders come depends on where the colony stands, so this one is a bonus: an inland colony far from deserts and jungles may only ever meet Barbarians."
+			]
+			hide_dependency_lines: true
+			id: "55E21455C13C20A5"
+			min_required_dependencies: 2
+			optional: true
+			rewards: [
+				{
+					id: "01285AC63975706C"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 3
+					id: "04B6DE56168853C1"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "087D79ED21C3BF89"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 160"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "280C84DE20E80AFF"
+					silent: true
+					title: "+160 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "2F27BB0684D8BBAC"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Any two raid quests"
+			tasks: [
+				{
+					id: "2CD63927B758554D"
+					title: "We held the line"
+					type: "checkmark"
+				}
+			]
+			title: "Veteran Defender"
+			x: 6.72d
+			y: -0.63d
+		}
+		{
+			dependencies: ["333244CF4C03BC3E"]
+			description: [
+				"This pack includes &6War 'N Taxes&f. Your buildings generate &etax income&f over time, guards cost upkeep - and colonies can declare &cwar&f on each other or raid for loot."
+				""
+				"It is all driven by chat commands: type &e/&f and tab-complete &etax&f and &ewar&f to see what is available, and the server owner can tune every rule in config/minecolonytax.toml."
+				""
+				"On a friends-only server: agree on your own rules of engagement before somebody's capital burns down."
+			]
+			id: "2571C285598D0BCD"
+			rewards: [
+				{
+					id: "41DAED138E493CDE"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 5
+					id: "2F668D73ABB1BCDA"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "3A9B6AC55FC82359"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Income, upkeep and war"
+			tasks: [
+				{
+					id: "269CCF5F53AA9998"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "War 'N Taxes"
+			x: 8.47d
+			y: 6.87d
+		}
+		{
+			dependencies: ["2571C285598D0BCD"]
+			id: "3C754B6958595635"
+			optional: true
+			rewards: [
+				{
+					id: "45AF16999E1D982E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 3
+					id: "59D1602E02BDB72E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "19270D2DB7E859DA"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Claim tax revenue from your colony for the first time."
+			tasks: [
+				{
+					advancement: "minecolonytax:codex/claim_tax"
+					criterion: ""
+					icon: "minecraft:gold_nugget"
+					id: "0FD50A2297C261A6"
+					title: "Claim your colony's taxes"
+					type: "advancement"
+				}
+			]
+			title: "Tax Season"
+			x: 10.22d
+			y: 8.37d
+		}
+		{
+			dependencies: ["2571C285598D0BCD"]
+			description: ["Raise your Town Hall to its maximum level."]
+			id: "58A9F4594ECA4742"
+			rewards: [
+				{
+					id: "46B7FB5AE21DB846"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "4F790A73B8735408"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "046C003625487A0D"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5831108E29FA1C69"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 100"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "231CFD614691B3B3"
+					silent: true
+					title: "+100 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Town Hall level 5"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/build_town_hall_5"
+					criterion: ""
+					icon: "minecolonies:blockhuttownhall"
+					id: "4DCF639ED78FF81B"
+					title: "Town Hall level 5"
+					type: "advancement"
+				}
+			]
+			title: "&6The Capital"
+			x: 10.22d
+			y: 6.87d
+		}
+		{
+			dependencies: ["58A9F4594ECA4742"]
+			description: ["Grow the colony to &a75 citizens&f."]
+			id: "735DC6305A0896E9"
+			optional: true
+			rewards: [
+				{
+					id: "55875FAA2F56F27C"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 2
+					id: "1782589204C0D36D"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2709EBF80B9C1D05"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "2690EADB2341D623"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Population: 75"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/colony_population_75"
+					criterion: ""
+					icon: "minecraft:player_head"
+					id: "6F343F51EDAAC76F"
+					title: "Reach 75 citizens"
+					type: "advancement"
+				}
+			]
+			title: "Metropolis"
+			x: 11.97d
+			y: 6.87d
+		}
+		{
+			dependencies: [
+				"58A9F4594ECA4742"
+				"3E312712DB8FAF5C"
+				"15B9A9D4C9BC02E7"
+			]
+			description: [
+				"A level 5 Town Hall, thirty guards and &aone raid broken&f - whichever raiders your land sends."
+				""
+				"A capital city, a standing army and raiders who have learned to fear your walls. The Colony path is complete - though a city is never truly finished."
+			]
+			id: "3E1EE099022774A2"
+			rewards: [
+				{
+					id: "2C24F13E0E17A28C"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "53E148086DDCF8A4"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66DCF574EB4C5D2B"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					id: "3BA4B0E2790787D3"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					command: "/mastery xp @s defense 240"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "073DDED3AC3F4509"
+					silent: true
+					title: "+240 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 250"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "25F4D01B0364AD1D"
+					silent: true
+					title: "+250 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Colony path complete"
+			tasks: [
+				{
+					id: "3D76DA3F79F8A46C"
+					title: "Long may it stand"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lThe Golden Age"
+			x: 14.07d
+			y: 3.29d
+		}
+	]
+	subtitle: ["Guards, raids and the road to a capital"]
+	title: "&cWalls \\& Wardens"
+}

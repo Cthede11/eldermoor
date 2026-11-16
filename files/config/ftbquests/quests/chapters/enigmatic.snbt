@@ -1,0 +1,1826 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enigmatic"
+	group: "3368DAD22055D0D9"
+	icon: "enigmaticlegacy:enigmatic_amulet"
+	id: "40E0FB8BC7751524"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["76F56B2DEC226C03"]
+			description: [
+				"You woke up with a book and an amulet. The book is the manual; read it - it fills in as you find things."
+				""
+				"Most of this mod is &ecurios&f: rings, charms and scrolls worn in their own slots. Open them from the button beside your inventory."
+				""
+				"Many pieces are found, not crafted. The rows on this page are collections: take them in any order."
+			]
+			hide_until_deps_complete: true
+			id: "3140B91A73A3F6EA"
+			rewards: [
+				{
+					id: "34019F0BCC1DF562"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "144F51E140ED4459"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4AA884AFF008AE42"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "0BCE4B77A3B1D75A"
+					item: "enigmaticlegacy:the_acknowledgment"
+					type: "item"
+				}
+			]
+			title: "&b&lThe Acknowledgment"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3140B91A73A3F6EA"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "enigmaticlegacy:golden_ring"
+			id: "50C502A8BE3872BD"
+			rewards: [
+				{
+					id: "776268F9870DC941"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6FCDC59B994077CA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "463AF569528D876C"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Rings"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50C502A8BE3872BD"]
+			description: ["&7Made from: &fIron Ingot x4, Iron Nugget x4"]
+			id: "2F8316E745E65E3D"
+			rewards: [
+				{
+					id: "62A84911F47F6277"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "532BA331F476F484"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "18CDD548DF07A573"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A little armour. A start."
+			tasks: [
+				{
+					id: "51EFFE784813BEF5"
+					item: "enigmaticlegacy:iron_ring"
+					type: "item"
+				}
+			]
+			title: "Iron Ring"
+			x: -0.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["50C502A8BE3872BD"]
+			description: ["&7Made from: &fIron Ring, Gold Ingot x4, Gold Nugget x4"]
+			id: "331CC94870BD3E4F"
+			rewards: [
+				{
+					id: "2F63C5054208C4EB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6600F7C84BCC4C63"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6143016278C562A3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Piglins leave you alone."
+			tasks: [
+				{
+					id: "6B2AE7C05D696C47"
+					item: "enigmaticlegacy:golden_ring"
+					type: "item"
+				}
+			]
+			title: "Golden Ring"
+			x: 1.4d
+			y: -2.5d
+		}
+		{
+			dependencies: ["50C502A8BE3872BD"]
+			description: ["&7Made from: &fDiamond, Gold Ingot, Redstone Dust, Iron Ingot, Iron Ring"]
+			id: "51085C64831B4F3D"
+			rewards: [
+				{
+					id: "15A0A9AEB862C009"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7AFFEA6ECE598B88"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "53576E22041184A5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pulls items to you."
+			tasks: [
+				{
+					id: "1C4E0BC2797AA081"
+					item: "enigmaticlegacy:magnet_ring"
+					type: "item"
+				}
+			]
+			title: "Magnetic Ring"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["50C502A8BE3872BD"]
+			description: ["&7Made from: &fMagnetic Ring, Gold Ingot x3, Eye of Ender, Lapis x4"]
+			id: "0B8F1FA183862198"
+			rewards: [
+				{
+					id: "6D3AAC814F2BF41C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3BACA214705A60CA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "67ED05BEBDCECFDD"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Items skip the walk."
+			tasks: [
+				{
+					id: "3DB2A4FD47316EFB"
+					item: "enigmaticlegacy:super_magnet_ring"
+					type: "item"
+				}
+			]
+			title: "Dislocation Ring"
+			x: 4.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["50C502A8BE3872BD"]
+			description: ["&7Made from: &fIron Ring, Ender Chest, Gold Ingot x2, Gold Nugget x2, Ender Pearl"]
+			id: "579A63F9B73AE7B3"
+			rewards: [
+				{
+					id: "0F18C13A141C7ED8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2816692700C73BA6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "41C1A7711B48014C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Your ender chest, anywhere."
+			tasks: [
+				{
+					id: "1FC6DD512857CB5E"
+					item: "enigmaticlegacy:ender_ring"
+					type: "item"
+				}
+			]
+			title: "Ring of Ender"
+			x: 6.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["50C502A8BE3872BD"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "enigmaticlegacy:golem_heart"
+			id: "0F2B612E87CBDEB4"
+			rewards: [
+				{
+					id: "4E81851E260B6E88"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "66EC72950C2C1349"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "6523AAA835F1E256"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Spellstones"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F2B612E87CBDEB4"]
+			description: ["&7Found in: &fabandoned dungeons and mineshafts of the Overworld&7 - the easiest spellstone to come by."]
+			id: "4BD3F7478316B42E"
+			rewards: [
+				{
+					id: "5DE56FBD6DBA1271"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "244062838E9E603A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4054406F2320B47E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Spellstone of earth: armour and knockback resistance."
+			tasks: [
+				{
+					id: "24DA29E0DFB85B2F"
+					item: "enigmaticlegacy:golem_heart"
+					type: "item"
+				}
+			]
+			title: "Heart of the Golem"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0F2B612E87CBDEB4"]
+			description: ["&7Found in: &fthe ruins of old temples&7."]
+			id: "003832220E39EF79"
+			rewards: [
+				{
+					id: "218F5CCCD21BC935"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "649F9DA9A2A0CD32"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "08ECD8710461AE8D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Spellstone of air: speed and deflection."
+			tasks: [
+				{
+					id: "43BCB7E7CA4100D8"
+					item: "enigmaticlegacy:angel_blessing"
+					type: "item"
+				}
+			]
+			title: "Angel's Blessing"
+			x: 3.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0F2B612E87CBDEB4"]
+			description: [
+				"Breathe water as easily as air, and be stronger in it than on dry land."
+				"&7Found in: &fsunken ocean ruins&7."
+			]
+			id: "1963AF5932B5E009"
+			rewards: [
+				{
+					id: "10CC53D3FF178CDD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2129E16B61E3D3A6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "42522C50CCC6A0D0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Spellstone of water."
+			tasks: [
+				{
+					id: "0DCBBA8CFAA5E94C"
+					item: "enigmaticlegacy:ocean_stone"
+					type: "item"
+				}
+			]
+			title: "Will of the Ocean"
+			x: 5.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0F2B612E87CBDEB4"]
+			description: ["&7Found in: &fthe Nether&7, in the chests of its ruins."]
+			id: "03E0AA44B7DE3E58"
+			rewards: [
+				{
+					id: "6F2095ACAF5EAD68"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "162ABA699DA4E966"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7E44EA60F9BD12DB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Spellstone of fire."
+			tasks: [
+				{
+					id: "482FBB31E018E711"
+					item: "enigmaticlegacy:blazing_core"
+					type: "item"
+				}
+			]
+			title: "Blazing Core"
+			x: 6.8d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0F2B612E87CBDEB4"]
+			description: [
+				"It gives you an enderman's tricks: step out of nowhere beside whatever you are hunting."
+				"&7Found in: &fthe End&7."
+			]
+			id: "4A870CE24F7EA6A4"
+			rewards: [
+				{
+					id: "75017C3CC820ED22"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "29AFD9A90EFC61F6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "21A3295F723B8CA7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Spellstone of the End."
+			tasks: [
+				{
+					id: "75113076BA4DF7B3"
+					item: "enigmaticlegacy:eye_of_nebula"
+					type: "item"
+				}
+			]
+			title: "Eye of the Nebula"
+			x: 8.4d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0F2B612E87CBDEB4"]
+			description: ["&7Found in: &fthe End&7."]
+			id: "441ED011B2873E09"
+			rewards: [
+				{
+					id: "618DDE363AEBCDA1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0CC789D0B2EDAF10"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "67C317E210FB6540"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last spellstone. It does not want you to have it."
+			tasks: [
+				{
+					id: "178C31809193016D"
+					item: "enigmaticlegacy:void_pearl"
+					type: "item"
+				}
+			]
+			title: "Pearl of the Void"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0F2B612E87CBDEB4"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "enigmaticlegacy:xp_scroll"
+			id: "35A45CC2D622DBA4"
+			rewards: [
+				{
+					id: "0D1B5E1088E29C49"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "000987582EDFBDDF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "26968680633D58A2"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Scrolls"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35A45CC2D622DBA4"]
+			description: ["&7Made from: &fBlank Scroll, Feather, Ink Sac, Bottle o' Enchanting x4, Eye of Ender, Emerald"]
+			id: "06F260401A4A4FE8"
+			rewards: [
+				{
+					id: "26C645F64FA385FF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1EBE97AD7A5E55A6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4E1C0686870DAFD3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stores experience."
+			tasks: [
+				{
+					id: "31673233DCDB55BF"
+					item: "enigmaticlegacy:xp_scroll"
+					type: "item"
+				}
+			]
+			title: "Scroll of Ageless Wisdom"
+			x: 7.8d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35A45CC2D622DBA4"]
+			id: "57DDA0DDABA00D11"
+			rewards: [
+				{
+					id: "11EDC881D7D670F4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4A9D5A76463480A2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "07C1DCB0292A6477"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Your items come home when you die."
+			tasks: [
+				{
+					id: "6EE6715319A02553"
+					item: "enigmaticlegacy:escape_scroll"
+					type: "item"
+				}
+			]
+			title: "Scroll of Postmortal Recall"
+			x: 9.4d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35A45CC2D622DBA4"]
+			description: ["&7Made from: &fBlank Scroll, Feather, Ink Sac, Nether Star, Gold Ingot x2, Lapis x2, Angel's Blessing"]
+			id: "0F16A670C326932D"
+			rewards: [
+				{
+					id: "3496ACEEC1584B9F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "584FE890D044E36E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "74F9EFB1D17CF002"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Flight, paid for in experience."
+			tasks: [
+				{
+					id: "3D12594800F40AA2"
+					item: "enigmaticlegacy:heaven_scroll"
+					type: "item"
+				}
+			]
+			title: "Gift of the Heaven"
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35A45CC2D622DBA4"]
+			description: ["&7Made from: &fPaper x3, Stick x2"]
+			id: "6C5A5B33343FDA58"
+			rewards: [
+				{
+					id: "2A1F6559052E08FF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7B061853168C1B4F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "57C82797A0B118A1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "More curses, more power."
+			tasks: [
+				{
+					id: "6F755ADCE5E82F9B"
+					item: "enigmaticlegacy:thicc_scroll"
+					type: "item"
+				}
+			]
+			title: "Scroll of a Thousand Curses"
+			x: 12.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35A45CC2D622DBA4"]
+			description: ["&7Made from: &fGift of the Heaven, Etherium Ingot x2, Astral Dust x3, Dragon's Breath x2, Elytra"]
+			id: "115C3FA424C183CA"
+			rewards: [
+				{
+					id: "11B880F79ED2E38A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "72054A6B27E86434"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3DF9E8F71DF2A2C2"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Heaven's gift without the bill."
+			tasks: [
+				{
+					id: "100007D7D9A358DD"
+					item: "enigmaticlegacy:fabulous_scroll"
+					type: "item"
+				}
+			]
+			title: "Grace of the Creator"
+			x: 14.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35A45CC2D622DBA4"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "enigmaticlegacy:mining_charm"
+			id: "1167486AD4B2EF04"
+			rewards: [
+				{
+					id: "5AB0D99A6D200799"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4948476910D39FAE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "2AD4081E98DEF3B3"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Charms and Oddities"
+			x: 15.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1167486AD4B2EF04"]
+			id: "01FF2E7B5E2DBCA1"
+			rewards: [
+				{
+					id: "248831E8873B4258"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3BB94140E79EAB97"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5E99076EC1EF9B93"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster digging and a little luck."
+			tasks: [
+				{
+					id: "26D87A77AD691393"
+					item: "enigmaticlegacy:mining_charm"
+					type: "item"
+				}
+			]
+			title: "Charm of the Treasure Hunter"
+			x: 11.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1167486AD4B2EF04"]
+			id: "3DCE91898482AD46"
+			rewards: [
+				{
+					id: "11C792828D8F092D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "680EFB806AC84B9A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "05BEA773F24C8D2A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "More damage to monsters, more loot from them."
+			tasks: [
+				{
+					id: "0C726BC20ED08CD6"
+					item: "enigmaticlegacy:monster_charm"
+					type: "item"
+				}
+			]
+			title: "Emblem of the Monster Slayer"
+			x: 13.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1167486AD4B2EF04"]
+			description: ["&7Made from: &fHeart of the Sea x2, Nautilus Shell, Sponge x4, Eye of Ender, Ghast Tear"]
+			id: "7C226F7A8D8BF202"
+			rewards: [
+				{
+					id: "61D370AC91051CE1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1E8358BEA175DCE6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "064164E375ACF044"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Drinks a lake."
+			tasks: [
+				{
+					id: "0E330CCDC4C3319C"
+					item: "enigmaticlegacy:mega_sponge"
+					type: "item"
+				}
+			]
+			title: "Mega Sponge"
+			x: 14.8d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1167486AD4B2EF04"]
+			id: "4B2D74E7A72F3350"
+			rewards: [
+				{
+					id: "1FF6E791EEE9B17B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "66160A33D2C3D3B8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "78FAFA36C404B99C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Throw it and go where it lands - across worlds."
+			tasks: [
+				{
+					id: "6F9DBC7D360DA3C1"
+					item: "enigmaticlegacy:extradimensional_eye"
+					type: "item"
+				}
+			]
+			title: "Extradimensional Eye"
+			x: 16.4d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1167486AD4B2EF04"]
+			description: ["&7Found lying in the chests of nameless ruins. Drink from it whenever you like; the legends oversold it."]
+			id: "0BC0E7B69FAF36A1"
+			rewards: [
+				{
+					id: "5239C3F8D0DF4F0D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2843C07F0BA2010D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0C3F8A870958ACC8"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Never empty. Not always pleasant."
+			tasks: [
+				{
+					id: "38DA2DA77300A0B5"
+					item: "enigmaticlegacy:unholy_grail"
+					type: "item"
+				}
+			]
+			title: "Unholy Grail"
+			x: 18.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1167486AD4B2EF04"]
+			id: "53897DB43CE1D89A"
+			rewards: [
+				{
+					id: "7ECA99B321678F90"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "508D94F2648D76B4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "16FA174DC9598710"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Moves enchantments from an item to a book."
+			tasks: [
+				{
+					id: "74E634A00F7C92A6"
+					item: "enigmaticlegacy:enchantment_transposer"
+					type: "item"
+				}
+			]
+			title: "Enchantment Transposer"
+			x: 19.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3140B91A73A3F6EA"]
+			id: "320BE463BED12006"
+			rewards: [
+				{
+					id: "4BB747C3431A2279"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "62211302D26AA4D0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "441B8A27AF6690F1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Found only in the End's ruins."
+			tasks: [
+				{
+					id: "2B9CF83BE1569F3B"
+					item: "enigmaticlegacy:etherium_ore"
+					type: "item"
+				}
+			]
+			title: "Etherium Ore"
+			x: 2.1d
+			y: 7.81d
+		}
+		{
+			dependencies: ["320BE463BED12006"]
+			description: ["&7Smelted from: &fEtherium Ore"]
+			id: "21739474D70313A8"
+			rewards: [
+				{
+					id: "1690FBCC111369C4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "120160FE2C2D3684"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "13B2762137862C82"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Smelted with ender rods."
+			tasks: [
+				{
+					id: "3485DFAC530FC993"
+					item: "enigmaticlegacy:etherium_ingot"
+					type: "item"
+				}
+			]
+			title: "Etherium"
+			x: 3.85d
+			y: 7.81d
+		}
+		{
+			dependencies: ["21739474D70313A8"]
+			id: "1C62389F0222C567"
+			rewards: [
+				{
+					id: "5373DBE2889660E0"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "5E15ADD34B345AD6"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "74723FDCA206BE64"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "64FA04EF804F5073"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A full set shields you when your health is low."
+			tasks: [
+				{
+					id: "70BAF47262701061"
+					item: "enigmaticlegacy:etherium_chestplate"
+					type: "item"
+				}
+			]
+			title: "Etherium Armour"
+			x: 5.7d
+			y: 6.37d
+		}
+		{
+			dependencies: ["1C62389F0222C567"]
+			description: ["&7Made from: &fEtherium Ingot x3, Ender Rod x2"]
+			id: "167D9E1E4B3BCCFC"
+			rewards: [
+				{
+					id: "760D2693A5786763"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "424FB6D7B918BEB3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "64F052E937ACFE90"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mines a 3x3 area."
+			tasks: [
+				{
+					id: "4BC59AFE69794FFF"
+					item: "enigmaticlegacy:etherium_pickaxe"
+					type: "item"
+				}
+			]
+			title: "Etherium Tools"
+			x: 7.55d
+			y: 6.37d
+		}
+		{
+			dependencies: ["167D9E1E4B3BCCFC"]
+			description: ["&7Found in: &fEnd city chests&7. The Astral Breaker and the last upgrades are made from it."]
+			id: "7FE35CD99595BAD5"
+			rewards: [
+				{
+					id: "15F7C9CCFA3675AA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1FB7698671DF5115"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6472C54E07BA2BEF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Dust of fallen stars."
+			tasks: [
+				{
+					count: 4L
+					id: "4B905F79779F8D25"
+					item: "enigmaticlegacy:astral_dust"
+					type: "item"
+				}
+			]
+			title: "Astral Dust"
+			x: 9.3d
+			y: 6.37d
+		}
+		{
+			dependencies: ["7FE35CD99595BAD5"]
+			id: "4427B39646D16442"
+			rewards: [
+				{
+					id: "65832923EC8E91AA"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "030B3695AEEB9C30"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4AA157B31226E167"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "58324DADF077A3F6"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A hammer for people in a hurry."
+			tasks: [
+				{
+					id: "2E982F0FA26F6BCD"
+					item: "enigmaticlegacy:astral_breaker"
+					type: "item"
+				}
+			]
+			title: "Astral Breaker"
+			x: 11.15d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1167486AD4B2EF04"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "enigmaticaddons:forger_crystal"
+			id: "1DDE0A563452279B"
+			rewards: [
+				{
+					id: "0175013C59FAC267"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "48FD5CAA5DFB8BA7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "1622B7B0F9E105BD"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Enigmatic Addons"
+			x: 19.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1DDE0A563452279B"]
+			description: ["An upgraded Forger's Gem: your anvils never wear out, and two identical new tools plus a lot of experience make an unbreakable one."]
+			id: "4EABB903DCD6995F"
+			rewards: [
+				{
+					id: "13EA2B866B61B1D2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "29E4BAAC717A4CEC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "22647B6FEB932E78"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "03765D73EE54EB0A"
+					item: "enigmaticaddons:forger_crystal"
+					type: "item"
+				}
+			]
+			title: "Flawless Forging Gem"
+			x: 15.8d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1DDE0A563452279B"]
+			description: ["Villagers never raise prices or run out. Raiders come for you first, and you lose your emeralds on death."]
+			id: "07610F1C0198BE54"
+			rewards: [
+				{
+					id: "72FEED227A6B8858"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "68A17AC2FBCF4FC8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2337938F06B92187"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4289CF9DF504EFB8"
+					item: "enigmaticaddons:avarice_ring"
+					type: "item"
+				}
+			]
+			title: "Ring of Ultimate Luxury"
+			x: 17.4d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1DDE0A563452279B"]
+			id: "1A993BBE6487019E"
+			rewards: [
+				{
+					id: "46E557EDCC958ADE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "126AE759A700FE93"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7CE22D2CF98E5C02"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A spellstone from the Nether, full of restless souls."
+			tasks: [
+				{
+					id: "1A96542AA24C181C"
+					item: "enigmaticaddons:illusion_lantern"
+					type: "item"
+				}
+			]
+			title: "Soul Lantern of Illusion"
+			x: 19.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1DDE0A563452279B"]
+			description: ["Found in ruins' chests. Feed it lapis and it grants an effect or an immunity."]
+			id: "40309D7DF4EEDD7D"
+			rewards: [
+				{
+					id: "6BE343068E40ADB3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5092CCB84DB92708"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "007A3109A03CD0CE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5359D224C58FB75E"
+					item: "enigmaticaddons:artificial_flower"
+					type: "item"
+				}
+			]
+			title: "Magic Quartz Flower"
+			x: 20.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1DDE0A563452279B"]
+			id: "67EB3707EDB608AE"
+			rewards: [
+				{
+					id: "3944A22C0E4E2BB1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "05B9C1A3759220B7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1767FE925468BDEF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stores a weakened creature and lets it out again elsewhere."
+			tasks: [
+				{
+					id: "7C12ED1CC583B741"
+					item: "enigmaticaddons:extradimensional_scepter"
+					type: "item"
+				}
+			]
+			title: "Scepter of Extradimension"
+			x: 22.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1DDE0A563452279B"]
+			description: ["Turns every bad effect on you into resistance. Wasted if you have none."]
+			id: "5F8FC4CE0A107A74"
+			rewards: [
+				{
+					id: "7B43F1E9B0EA21BF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "680F2C82FC2233BE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "65584F5932CE7A10"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "575A7AD10D7A3DB7"
+					item: "enigmaticaddons:bless_potion"
+					type: "item"
+				}
+			]
+			title: "Potion of Purification"
+			x: 23.8d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"579A63F9B73AE7B3"
+				"441ED011B2873E09"
+				"115C3FA424C183CA"
+				"53897DB43CE1D89A"
+				"1C62389F0222C567"
+				"4427B39646D16442"
+			]
+			description: ["Any four of: the Ring of Ender, the Pearl of the Void, Grace of the Creator, the Enchantment Transposer, Etherium armour, the Astral Breaker."]
+			hide_dependency_lines: true
+			id: "70F29AA0BB3FD62D"
+			min_required_dependencies: 4
+			rewards: [
+				{
+					id: "0E83A08B748DCAD0"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 5
+					id: "154AE41619F0E729"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E6935D8820DD2F7"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46B9D77C58617B2C"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5BFDBE13A9BAB094"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "17B1F28F6308CC99"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&b&lKeeper of the Legacy"
+			x: 26.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7FE35CD99595BAD5"]
+			description: ["A baked potato with gold and Astral Dust. Eating it sends you somewhere random nearby."]
+			id: "45D28C158CAE2EE7"
+			optional: true
+			rewards: [
+				{
+					id: "766DD397DD9707B3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "16B9B56D6BF8D414"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "528978AB1E6B5AA5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A potato that teleports you"
+			tasks: [
+				{
+					id: "152E6A2DF425A63C"
+					item: "enigmaticlegacy:astral_potato"
+					type: "item"
+				}
+			]
+			title: "The Teleportato"
+			x: 11.15d
+			y: 5.75d
+		}
+		{
+			dependencies: ["21739474D70313A8"]
+			description: ["An Etherium axe and weapon. Etherium tools are the base of the Astral Breaker."]
+			id: "1302C86689A03441"
+			optional: true
+			rewards: [
+				{
+					id: "2FA9DF11F6C41374"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1BE3CD8576A546A5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "57B01B3C92CD0EDB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "An axe from the stars"
+			tasks: [
+				{
+					id: "186F2D4962F4B877"
+					item: "enigmaticlegacy:etherium_axe"
+					type: "item"
+				}
+			]
+			title: "The Etherium Waraxe"
+			x: 5.7d
+			y: 8.0d
+		}
+		{
+			dependencies: ["21739474D70313A8"]
+			description: ["Etherium, on an Ender Rod. Part of the set that becomes the Astral Breaker."]
+			id: "4C143B8ABDDCF560"
+			optional: true
+			rewards: [
+				{
+					id: "51DD08A32E8EFC4F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5877A4D9415E5C75"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "02FFE61D28B26E25"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A shovel from the stars"
+			tasks: [
+				{
+					id: "4665A33CF758349C"
+					item: "enigmaticlegacy:etherium_shovel"
+					type: "item"
+				}
+			]
+			title: "The Etherium Shovel"
+			x: 5.7d
+			y: 9.5d
+		}
+		{
+			dependencies: ["21739474D70313A8"]
+			description: ["Etherium, an Ender Rod and diamonds. The base of the Astral Spear."]
+			id: "74274986085878E6"
+			optional: true
+			rewards: [
+				{
+					id: "2D2B5EF1ABEE23B9"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "51075A8F2492D980"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3B6CA6D7E14BC522"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A sword from the stars"
+			tasks: [
+				{
+					id: "7D1E3AFB83D63B12"
+					item: "enigmaticlegacy:etherium_sword"
+					type: "item"
+				}
+			]
+			title: "The Etherium Broadsword"
+			x: 5.7d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7FE35CD99595BAD5"]
+			description: ["Lets you write a name and lore lines onto your items, the way the mod's relics have them."]
+			id: "5D6BE538DA15EDD1"
+			optional: true
+			rewards: [
+				{
+					id: "324B1D8832958384"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "731E4FA67C064924"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3D40F4824BD425EF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Write your own legend"
+			tasks: [
+				{
+					id: "48F3D980F9F1DA2C"
+					item: "enigmaticlegacy:lore_inscriber"
+					type: "item"
+				}
+			]
+			title: "The Architect's Inkwell"
+			x: 11.15d
+			y: 7.25d
+		}
+		{
+			dependencies: ["7FE35CD99595BAD5"]
+			description: ["A cake built around a &eHeart of the Cosmos&f. Eat from it as much as you like; it never ends."]
+			id: "2ABC2A89DB931777"
+			optional: true
+			rewards: [
+				{
+					id: "527919CF568D7993"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "081429432D1A3D1F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4024B64580A02DAB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A cake that never runs out"
+			tasks: [
+				{
+					id: "30FB126516CDEC5A"
+					item: "enigmaticlegacy:cosmic_cake"
+					type: "item"
+				}
+			]
+			title: "The Eternal Cake"
+			x: 11.15d
+			y: 8.75d
+		}
+	]
+	subtitle: ["Rings, charms, scrolls and spellstones"]
+	title: "&bEnigmatic Legacy"
+}

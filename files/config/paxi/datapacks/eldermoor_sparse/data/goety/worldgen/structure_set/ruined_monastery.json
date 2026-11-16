@@ -1,0 +1,20 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    },
+    "frequency": 0.2,
+    "frequency_reduction_method": "legacy_type_1",
+    "salt": 8998465,
+    "separation": 23,
+    "spacing": 92,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "goety:ruined_monastery",
+      "weight": 1
+    }
+  ]
+}

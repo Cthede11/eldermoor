@@ -1,0 +1,1924 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "archery"
+	group: "478F493742D3F387"
+	icon: "minecraft:bow"
+	id: "4D26C9F4389944B5"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["184768A56985E56B"]
+			description: [
+				"Drawing a bow costs stamina, and a &equiver&f keeps arrows out of your inventory. Beyond that, Eldermoor has a wall of special bows: each has its own trick, most are crafted from boss drops and rare finds."
+				""
+				"This page is a collection. Take them in any order."
+			]
+			hide_until_deps_complete: true
+			id: "4967742811F5EA0E"
+			rewards: [
+				{
+					id: "4281B5FB4F21BCA5"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "163054D273551EBB"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "4177ECCEF795ABEC"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 250"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "18C64DCFE77C0BD7"
+					silent: true
+					title: "+250 Marksmanship experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "A bow keeps the thing with teeth over there."
+			tasks: [
+				{
+					id: "761AC2450AA56651"
+					item: "minecraft:bow"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6501F6C928006C20"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+			]
+			title: "&b&lThe Long Shot"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4967742811F5EA0E"]
+			id: "190B2065060FA37F"
+			rewards: [
+				{
+					id: "1102D7EE4C43F5CB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1261E00236D6957C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "3E561D5A926D267C"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Wear it on your back. Arrows go in by themselves."
+			tasks: [
+				{
+					id: "2A4C1EBBD803E35C"
+					item: "nyfsquiver:basic_quiver"
+					type: "item"
+				}
+			]
+			title: "A Quiver"
+			x: 2.1d
+			y: 3.85d
+		}
+		{
+			dependencies: ["190B2065060FA37F"]
+			id: "61DF47BC2A275C05"
+			rewards: [
+				{
+					id: "3E03124FEA892923"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "59F3946822B9C404"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "0AA16A52ACAB4BE9"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Spun from spider silk. Most special bows need it."
+			tasks: [
+				{
+					count: 4L
+					id: "15EF8FC0E288290F"
+					item: "too_many_bows:webstring"
+					type: "item"
+				}
+			]
+			title: "Better String"
+			x: 3.85d
+			y: 3.85d
+		}
+		{
+			dependencies: ["61DF47BC2A275C05"]
+			id: "7D15821429C8A281"
+			rewards: [
+				{
+					id: "1F0CC774D4BF41F6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2E2624F47B8E0004"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "0A915DFBB5041371"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charged gems for the stronger bows."
+			tasks: [
+				{
+					id: "594FB02C0D55ECF2"
+					item: "too_many_bows:power_crystal"
+					type: "item"
+				}
+			]
+			title: "Power Crystals"
+			x: 5.6d
+			y: 3.85d
+		}
+		{
+			dependencies: ["7D15821429C8A281"]
+			description: ["&7Made from: &fNether Quartz, Ender Pearl"]
+			id: "4ADF62F3C00868D0"
+			rewards: [
+				{
+					id: "49D8964BC7E183F9"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5102E1FE11828A84"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "04663DCA06D5B0BD"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pieces of somewhere else."
+			tasks: [
+				{
+					id: "5106DC2207209618"
+					item: "too_many_bows:rift_shard"
+					type: "item"
+				}
+			]
+			title: "Rift Shards"
+			x: 7.35d
+			y: 3.85d
+		}
+		{
+			dependencies: ["4ADF62F3C00868D0"]
+			description: ["&7Made from: &fFeather, Gold Quiver, Diamond x7"]
+			id: "5EDD2E62EA9B9904"
+			rewards: [
+				{
+					id: "1C712CF6C83977E2"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "7100030C554A620C"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3E09EF8ED8F74A87"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s marksmanship 100"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "4EBC475C8D4BE3EC"
+					silent: true
+					title: "+100 Marksmanship experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Holds a war's worth."
+			tasks: [
+				{
+					id: "6309EBD5C8B03142"
+					item: "nyfsquiver:diamond_quiver"
+					type: "item"
+				}
+			]
+			title: "Diamond Quiver"
+			x: 9.2d
+			y: 3.85d
+		}
+		{
+			dependencies: ["4967742811F5EA0E"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "too_many_bows:hunter_bow"
+			id: "0BE59ED1A676E9CE"
+			rewards: [
+				{
+					id: "63DDEA7A3508B099"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "3AD3DBDA586BD032"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "4941EA8CEDF5483A"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Bows of the Road"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BE59ED1A676E9CE"]
+			id: "760D910F11D14732"
+			rewards: [
+				{
+					id: "21537D444C3BE02D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5073D43D31A155CA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "07C5D7AFCD4987A7"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "671AF44FD4B008A5"
+					item: "too_many_bows:hunter_bow"
+					type: "item"
+				}
+			]
+			title: "Hunter's Bow"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0BE59ED1A676E9CE"]
+			id: "3F1103F88CF2E4B2"
+			rewards: [
+				{
+					id: "43A6707337DE5044"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "13B620AEAABBF587"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "3C73BCE54493A1E4"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "6C33F23A5BC526BB"
+					item: "too_many_bows:ironclad_bow"
+					type: "item"
+				}
+			]
+			title: "Ironclad Bow"
+			x: 0.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0BE59ED1A676E9CE"]
+			id: "4258E8F9EF9994FE"
+			rewards: [
+				{
+					id: "6378E699705598A7"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "04F6EB38944B39D9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "1CFAA6E9820A69D7"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "589A1A7C661037BD"
+					item: "too_many_bows:scatter_bow"
+					type: "item"
+				}
+			]
+			title: "Scatter Bow"
+			x: 2.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0BE59ED1A676E9CE"]
+			id: "293539DF55E11056"
+			rewards: [
+				{
+					id: "6BB5C81D03F8A5D4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0D5E90C5634ACE18"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "6557D6C86C220668"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "5644043EA59C3A5B"
+					item: "too_many_bows:torchbearer"
+					type: "item"
+				}
+			]
+			title: "Torchbearer"
+			x: 3.8d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0BE59ED1A676E9CE"]
+			id: "1EF979D7BA5AA148"
+			rewards: [
+				{
+					id: "441AAD45C155D7C4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "294488C8D93F3A38"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "211A9BBEE2C56EA1"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "755940133042B9AE"
+					item: "too_many_bows:wind_bow"
+					type: "item"
+				}
+			]
+			title: "Wind Bow"
+			x: 5.4d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0BE59ED1A676E9CE"]
+			id: "587D631760D26D21"
+			rewards: [
+				{
+					id: "18CFB32F407EB36A"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "551A285897719595"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0C599EA7562F64E5"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "6E5F9D3564A1724A"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "00527AF733E5CABB"
+					item: "too_many_bows:burnt_relic"
+					type: "item"
+				}
+			]
+			title: "Burnt Relic"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0BE59ED1A676E9CE"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "too_many_bows:flame_bow"
+			id: "50DF2C304FA7E5B6"
+			rewards: [
+				{
+					id: "62CC71DEEBBA9CE4"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "2DD2444C05F564EF"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "4F8434763CF1477D"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Bows of the Elements"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50DF2C304FA7E5B6"]
+			id: "150BCB8EBA013D82"
+			rewards: [
+				{
+					id: "3B4244A8F09EE20B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "59AC539E00DC3491"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "7A59F6E486057136"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "7B9332F8FC0F9988"
+					item: "too_many_bows:flame_bow"
+					type: "item"
+				}
+			]
+			title: "Flame Bow"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50DF2C304FA7E5B6"]
+			id: "458B4CA9A663D3AA"
+			rewards: [
+				{
+					id: "4BDC0210B644447F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5CDA9F8EB2B1FEA1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "3B4C51A4E5700B9A"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "53A238855576BA4C"
+					item: "too_many_bows:frostbite"
+					type: "item"
+				}
+			]
+			title: "Frostbite"
+			x: 3.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50DF2C304FA7E5B6"]
+			id: "2598399674082896"
+			rewards: [
+				{
+					id: "4AD02B6E5D34221C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "24AA0806BC9E82C3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "585C8D2D708D18F9"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "10E3CDB32A576CA9"
+					item: "too_many_bows:tidal_bow"
+					type: "item"
+				}
+			]
+			title: "Tidal Bow"
+			x: 5.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50DF2C304FA7E5B6"]
+			id: "74C001118832BD11"
+			rewards: [
+				{
+					id: "69A3291116EE87C6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "52BEDD82087BE901"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "44101C59E078C415"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "17524ACB80583826"
+					item: "too_many_bows:solar_bow"
+					type: "item"
+				}
+			]
+			title: "Solar Bow"
+			x: 6.8d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50DF2C304FA7E5B6"]
+			id: "55C0A4E332551E78"
+			rewards: [
+				{
+					id: "29333C286DD8A30B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "62E8A92A4DFAC10A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "758792427A9C4DDC"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "305ED6CD0581771D"
+					item: "too_many_bows:verdant_viper"
+					type: "item"
+				}
+			]
+			title: "Verdant Viper"
+			x: 8.4d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50DF2C304FA7E5B6"]
+			id: "5D5ADCC79ADF1AC0"
+			rewards: [
+				{
+					id: "1E296C5D4E50F86C"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "0CB43E2792134C47"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C61B3A799F5510C"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "4A109186C6D55B26"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "6DA962C31C235D15"
+					item: "too_many_bows:cyroheart_bow"
+					type: "item"
+				}
+			]
+			title: "Cryoheart Bow"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50DF2C304FA7E5B6"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "too_many_bows:dark_bow"
+			id: "4FB8316FF6E9C4D5"
+			rewards: [
+				{
+					id: "1C0DE32653438D84"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "400B63C0C37FF19A"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "6F754D8D2105D21E"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Bows of Shadow"
+			x: 12.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FB8316FF6E9C4D5"]
+			id: "5F3F5AEDB1C4869F"
+			rewards: [
+				{
+					id: "3EB5D516E89A4B22"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "79C1AE7EEE097D06"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "0B3FF1002E0DA11C"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "6ABC9021560039D2"
+					item: "too_many_bows:dark_bow"
+					type: "item"
+				}
+			]
+			title: "Dark Bow"
+			x: 8.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["775C9504B43955B2"]
+			id: "4BEFF80D7450DAAB"
+			rewards: [
+				{
+					id: "55680BA20D932EAA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1772BA69DA8711D4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "0DD73CE39203C654"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "652CF19183E82F8B"
+					item: "too_many_bows:necro_flame_bow"
+					type: "item"
+				}
+			]
+			title: "Necro-Flame Bow"
+			x: 16.6d
+			y: -4.1d
+		}
+		{
+			dependencies: ["4FB8316FF6E9C4D5"]
+			id: "79725DEB6C624D6B"
+			rewards: [
+				{
+					id: "79D3C96ADDC7B4EC"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2B774B5934D3DF86"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "5F4E334B126109FF"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "1E70F21D5BB868D4"
+					item: "too_many_bows:demons_grasp"
+					type: "item"
+				}
+			]
+			title: "Demon's Grasp"
+			x: 10.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4FB8316FF6E9C4D5"]
+			id: "55D132F66A5427F0"
+			rewards: [
+				{
+					id: "508300280E918306"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0CDD16A8579551E6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "7705704CACB3A1A4"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "2CB4338C954BD570"
+					item: "too_many_bows:dusk_reaper"
+					type: "item"
+				}
+			]
+			title: "Dusk Reaper"
+			x: 11.8d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4FB8316FF6E9C4D5"]
+			id: "1364D6601C5183E4"
+			rewards: [
+				{
+					id: "340FA3E67786874B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1F114172C70FB02B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "5CEC49749F23B25A"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "59D5BD2F8E67D422"
+					item: "too_many_bows:twin_shadows"
+					type: "item"
+				}
+			]
+			title: "Twin Shadows"
+			x: 13.4d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4FB8316FF6E9C4D5"]
+			id: "6D719BD0C1905F77"
+			rewards: [
+				{
+					id: "173125D4BDB420E6"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "100A09983D2394BD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "785E0C4F809F35CB"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "3DEF78BAC027AF1B"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "36848FFEF6883679"
+					item: "too_many_bows:crimson_nexus"
+					type: "item"
+				}
+			]
+			title: "Crimson Nexus"
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4FB8316FF6E9C4D5"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "too_many_bows:arcane_bow"
+			id: "2DC1A19B908CB186"
+			rewards: [
+				{
+					id: "4A45F8C04FF5D018"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "0ED803FB0289317C"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "66A1A5F7CAECDC14"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Bows of the Arcane"
+			x: 15.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2DC1A19B908CB186"]
+			id: "1A2F462918CEBC19"
+			rewards: [
+				{
+					id: "7C9028327B63CD0A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6D1A961F6A5785D6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "125E224B5B892840"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "02D755D19B448464"
+					item: "too_many_bows:arcane_bow"
+					type: "item"
+				}
+			]
+			title: "Arcane Bow"
+			x: 11.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2DC1A19B908CB186"]
+			id: "1571A3D49B2399CC"
+			rewards: [
+				{
+					id: "5A401CEE9FADCA41"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "04EC270D0114CCA0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "17D247A652B8BFAD"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "21A6229D0E2FECDB"
+					item: "too_many_bows:ancient_sage_bow"
+					type: "item"
+				}
+			]
+			title: "Ancient Sage Bow"
+			x: 13.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2DC1A19B908CB186"]
+			id: "41011006C61718C8"
+			rewards: [
+				{
+					id: "2E88C2FB3D02EE33"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "79B73FC0A5F3204E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "6DD3CF39D6394345"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "751E743CC2EEF73B"
+					item: "too_many_bows:emerald_sage_bow"
+					type: "item"
+				}
+			]
+			title: "Emerald Sage Bow"
+			x: 14.8d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2DC1A19B908CB186"]
+			id: "309ACA13ED740709"
+			rewards: [
+				{
+					id: "3E88B27AFE26E832"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "579B0323E9DDBE16"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "7504449701B95D6B"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "5A952BFCDBFBD125"
+					item: "too_many_bows:spectral_whisper"
+					type: "item"
+				}
+			]
+			title: "Spectral Whisper"
+			x: 16.4d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2DC1A19B908CB186"]
+			id: "35BB788F9F59C4EF"
+			rewards: [
+				{
+					id: "10C255EBC53E6FE4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5DD81F83B874A4B3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "2BD7FF9C6889AFDA"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "52D30FA3E7B3493C"
+					item: "too_many_bows:astral_bound"
+					type: "item"
+				}
+			]
+			title: "Astral Bound"
+			x: 18.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2DC1A19B908CB186"]
+			id: "1EBAD0A72F9B8A2A"
+			rewards: [
+				{
+					id: "2F27375E4A18DB6F"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "146A27D8B6AF9CAD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3361C4A13759724D"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "34E5CCE0DC98B91A"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "0ECC62783C00CAAC"
+					item: "too_many_bows:auroras_grace"
+					type: "item"
+				}
+			]
+			title: "Aurora's Grace"
+			x: 19.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2DC1A19B908CB186"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "too_many_bows:dragons_breath"
+			id: "31589607D39ED541"
+			rewards: [
+				{
+					id: "6F8EB118221CB78F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "19082BC41C373DEC"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "10F35C22CBB038D5"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Bows of the Sky"
+			x: 22.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31589607D39ED541"]
+			id: "52C18AA0D705828E"
+			rewards: [
+				{
+					id: "050E3E52ED4F8248"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "37244D6F5D473560"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "5AFA6DF5F00643A2"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "5689FC359943B82B"
+					item: "too_many_bows:dragons_breath"
+					type: "item"
+				}
+			]
+			title: "Dragon's Breath"
+			x: 18.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31589607D39ED541"]
+			id: "2547A294F354B4FE"
+			rewards: [
+				{
+					id: "59402ED2669AA13A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "014CA1720625BC37"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "064D28FF29B0E241"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "28399DA2FF116C14"
+					item: "too_many_bows:shulker_blast"
+					type: "item"
+				}
+			]
+			title: "Shulker Blast"
+			x: 19.8d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31589607D39ED541"]
+			id: "7F054BF2D14C9338"
+			rewards: [
+				{
+					id: "22D5C330077B524E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "37CCC35ED8797872"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "02CA3BFD88498605"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "6A21210088A4CA25"
+					item: "too_many_bows:arc_heavens"
+					type: "item"
+				}
+			]
+			title: "Arc of the Heavens"
+			x: 21.4d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31589607D39ED541"]
+			id: "2F9F670E431C8AF9"
+			rewards: [
+				{
+					id: "47FDF87378364ECD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "510EACC9F54AA788"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "1B0DDBB896797D13"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "78529B1ED3D7725C"
+					item: "too_many_bows:aethers_call"
+					type: "item"
+				}
+			]
+			title: "Aether's Call"
+			x: 23.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31589607D39ED541"]
+			id: "74E7C5D97E8F2701"
+			rewards: [
+				{
+					id: "0BBD02B1BF34DB85"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "74BBEAA6E2A19555"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "02225CDF62E3CCDB"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "262FFFC6530C1B47"
+					item: "too_many_bows:sentinels_wrath"
+					type: "item"
+				}
+			]
+			title: "Sentinel's Wrath"
+			x: 24.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31589607D39ED541"]
+			id: "43027423FBAB1503"
+			rewards: [
+				{
+					id: "0E3C26D5B24CA3DF"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "12940CF42D67AD5A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A6FE958C17295C9"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "64E21F08B3B3C3E5"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Check its recipe with &eR&f - and its tooltip for what it does."
+			tasks: [
+				{
+					id: "7FC71DA9DA581D0C"
+					item: "too_many_bows:radiance"
+					type: "item"
+				}
+			]
+			title: "Radiance"
+			x: 26.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31589607D39ED541"]
+			description: ["Everything on this branch can be found or made in any order. Each ticks itself off when you hold it."]
+			icon: "too_many_bows:sharpshot_ring"
+			id: "02A1480FF4736B46"
+			rewards: [
+				{
+					id: "0DB5EE49531B39BC"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "6BEF3A0F6117CDC5"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "0B011DED1F1BE886"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Archer's Trinkets"
+			x: 25.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["02A1480FF4736B46"]
+			description: ["A curio for archers: wear it in its slot (the button beside your inventory). Its tooltip lists what it adds to your bows."]
+			id: "36465B754A0EFCA6"
+			optional: true
+			rewards: [
+				{
+					id: "668F710230F21678"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "75B3BA4622D4BACE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "66B277DFE1A47C14"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6AEE67ABFF67BF8F"
+					item: "too_many_bows:sharpshot_ring"
+					type: "item"
+				}
+			]
+			title: "Sharpshot Ring"
+			x: 22.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["02A1480FF4736B46"]
+			description: ["A curio for archers: wear it in its slot (the button beside your inventory). Its tooltip lists what it adds to your bows."]
+			id: "0641576C660BC31B"
+			optional: true
+			rewards: [
+				{
+					id: "16A0651BC99DB9E5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "05D71B5E388724E0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "23F79A26B1FC077A"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "458C50647AD1CA7B"
+					item: "too_many_bows:stormbound_signet"
+					type: "item"
+				}
+			]
+			title: "Stormbound Signet"
+			x: 23.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["02A1480FF4736B46"]
+			description: ["A curio for archers: wear it in its slot (the button beside your inventory). Its tooltip lists what it adds to your bows."]
+			id: "5531D9B5D3E5B383"
+			optional: true
+			rewards: [
+				{
+					id: "171A61BCAE165506"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "25895EE77042732C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "0CCE31668FEA1D93"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "45AD37CE592B3759"
+					item: "too_many_bows:fletchers_talisman"
+					type: "item"
+				}
+			]
+			title: "Fletcher's Talisman"
+			x: 25.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["02A1480FF4736B46"]
+			description: ["A curio for archers: wear it in its slot (the button beside your inventory). Its tooltip lists what it adds to your bows."]
+			id: "7CF066B47139D5FB"
+			optional: true
+			rewards: [
+				{
+					id: "15161BDF50AB8A12"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "53482607C9C836C1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "78130437C4515AEF"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0A57A889D9303301"
+					item: "too_many_bows:dead_eyes_pendant"
+					type: "item"
+				}
+			]
+			title: "Dead Eye's Pendant"
+			x: 26.8d
+			y: 2.5d
+		}
+		{
+			dependencies: ["02A1480FF4736B46"]
+			description: ["A curio for archers: wear it in its slot (the button beside your inventory). Its tooltip lists what it adds to your bows."]
+			id: "6E414412AE228708"
+			optional: true
+			rewards: [
+				{
+					id: "67FBBA2DD36CA387"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "60ED2BC24F45B8B3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "4916A00A92A78F52"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "060C122C06BED421"
+					item: "too_many_bows:wind_glove"
+					type: "item"
+				}
+			]
+			title: "Windwoven Gloves"
+			x: 28.4d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"760D910F11D14732"
+				"3F1103F88CF2E4B2"
+				"4258E8F9EF9994FE"
+				"293539DF55E11056"
+				"1EF979D7BA5AA148"
+				"587D631760D26D21"
+				"150BCB8EBA013D82"
+				"458B4CA9A663D3AA"
+				"2598399674082896"
+				"74C001118832BD11"
+				"55C0A4E332551E78"
+				"5D5ADCC79ADF1AC0"
+				"5F3F5AEDB1C4869F"
+				"4BEFF80D7450DAAB"
+				"79725DEB6C624D6B"
+				"55D132F66A5427F0"
+				"1364D6601C5183E4"
+				"6D719BD0C1905F77"
+				"1A2F462918CEBC19"
+				"1571A3D49B2399CC"
+				"41011006C61718C8"
+				"309ACA13ED740709"
+				"35BB788F9F59C4EF"
+				"1EBAD0A72F9B8A2A"
+				"52C18AA0D705828E"
+				"2547A294F354B4FE"
+				"7F054BF2D14C9338"
+				"2F9F670E431C8AF9"
+				"74E7C5D97E8F2701"
+				"43027423FBAB1503"
+			]
+			description: ["Own any &atwelve&f of the special bows."]
+			hide_dependency_lines: true
+			id: "54B79B4A0BD24475"
+			min_required_dependencies: 12
+			rewards: [
+				{
+					id: "41B26007CF9E5015"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 5
+					id: "2C1978AA10F81D05"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2CA57AB35284546B"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E3924F51778AD74"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s marksmanship 250"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "30251869336BFDF7"
+					silent: true
+					title: "+250 Marksmanship experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Any twelve"
+			tasks: [
+				{
+					id: "2DC862FAA9D8E2DF"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&b&lMaster Archer"
+			x: 31.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FB8316FF6E9C4D5"]
+			id: "775C9504B43955B2"
+			rewards: [
+				{
+					id: "0E3F78E45990884B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "22109C8406674F94"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s marksmanship 35"
+					elevate_perms: true
+					icon: "minecraft:bow"
+					id: "73ABF8B586E6076B"
+					silent: true
+					title: "+35 Marksmanship experience"
+					type: "command"
+				}
+			]
+			subtitle: "Something died holding this and did not let go."
+			tasks: [
+				{
+					id: "1BFC875AB67D5715"
+					item: "too_many_bows:cursed_stone"
+					type: "item"
+				}
+			]
+			title: "A Cursed Stone"
+			x: 16.6d
+			y: -2.5d
+		}
+	]
+	subtitle: ["Thirty-odd bows, and no two shoot alike"]
+	title: "&bThe Long Shot"
+}

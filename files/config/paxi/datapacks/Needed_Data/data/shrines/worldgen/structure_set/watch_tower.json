@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 432189012,
+    "separation": 56,
+    "spacing": 270,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "shrines:watch_tower",
+      "weight": 1
+    }
+  ]
+}

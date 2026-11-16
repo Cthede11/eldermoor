@@ -1,0 +1,39 @@
+{
+  "weight": 4,
+  "reforge_experience_cost": 4,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "gray"
+  },
+  "attributes": [
+    {
+      "type": "generic.max_health",
+      "modifier": {
+        "name": "tiered:resilient_1",
+        "operation": "ADDITION",
+        "amount": 4
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    },
+    {
+      "type": "betterparagliders:idle_stamina_regen",
+      "modifier": {
+        "name": "tiered:resilient_1",
+        "operation": "ADDITION",
+        "amount": 20
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 567483014,
+    "separation": 77,
+    "spacing": 210,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "shrines:infested_prison",
+      "weight": 1
+    }
+  ]
+}

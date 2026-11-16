@@ -1,0 +1,18 @@
+{
+ "structures": [
+  {
+   "structure": "eldermoor:butcher_house_1",
+   "weight": 1
+  },
+  {
+   "structure": "eldermoor:butcher_house_2",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 40,
+  "separation": 16,
+  "salt": 1840217
+ }
+}

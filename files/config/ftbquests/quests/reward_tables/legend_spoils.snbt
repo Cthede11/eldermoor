@@ -1,0 +1,43 @@
+{
+	icon: "minecraft:nether_star"
+	id: "5EDFD952D9107AAB"
+	loot_size: 1
+	order_index: 31
+	rewards: [
+		{
+			count: 2
+			item: "minecraft:netherite_ingot"
+			weight: 3.0f
+		}
+		{
+			item: "minecraft:nether_star"
+			weight: 2.0f
+		}
+		{
+			item: "coinsje:diamond_coin_pile"
+			weight: 2.0f
+		}
+		{
+			count: 2
+			item: "minecraft:enchanted_golden_apple"
+			weight: 3.0f
+		}
+		{
+			item: "minecraft:totem_of_undying"
+			weight: 3.0f
+		}
+		{
+			item: "minecraft:elytra"
+		}
+		{
+			item: "coinsje:netherite_coin"
+			weight: 2.0f
+		}
+		{
+			count: 2
+			item: "minecraft:diamond_block"
+			weight: 3.0f
+		}
+	]
+	title: "Spoils of Legend"
+}

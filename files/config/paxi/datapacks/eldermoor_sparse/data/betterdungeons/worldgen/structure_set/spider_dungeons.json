@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 596523129,
+    "separation": 51,
+    "spacing": 101,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "betterdungeons:spider_dungeon",
+      "weight": 1
+    }
+  ]
+}

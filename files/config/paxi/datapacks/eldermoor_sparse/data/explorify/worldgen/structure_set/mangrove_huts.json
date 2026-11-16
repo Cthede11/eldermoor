@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "frequency": 1.0,
+    "salt": 2063493658,
+    "separation": 42,
+    "spacing": 98,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "explorify:mangrove_hut",
+      "weight": 1
+    }
+  ]
+}

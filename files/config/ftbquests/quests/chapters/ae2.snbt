@@ -1,0 +1,3960 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ae2"
+	group: "02AD8609A8FE6EE4"
+	icon: "ae2:controller"
+	id: "2437228F9674062E"
+	images: [ ]
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["30F75583C47DEC3F"]
+			description: [
+				"Applied Energistics turns items into data on a network you can reach from any terminal."
+				""
+				"It begins with &bCertus Quartz&f. Craft a &6Meteorite Compass&f - it points to buried meteorites where budding quartz and the four &ePresses&f wait in a mysterious cube."
+				""
+				"The in-game &6Guide&f (your reward) is excellent."
+				"&7Made from: &fany water, Charged Certus Quartz Crystal, Certus Quartz Dust &7(dropped in water together)"
+			]
+			hide_until_deps_complete: true
+			id: "576A2747C532F837"
+			rewards: [
+				{
+					id: "711A90C3745140E8"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "03AFDEB6FA2F4D0E"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "67A639428617D05B"
+					item: "ae2:guide"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2534CE34D6963EE9"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Find a meteorite"
+			tasks: [
+				{
+					count: 8L
+					id: "45903B4D8FE2E690"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "&6Certus Quartz"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["576A2747C532F837"]
+			id: "6BA3D31D8CAF8C35"
+			rewards: [
+				{
+					id: "7B9C1A1A1791B22F"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 8
+					id: "4CBF4BE65D7AA1C6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "012BC4218A41ABE0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Spins when you are right on top of one."
+			tasks: [
+				{
+					advancement: "ae2:main/compass"
+					criterion: ""
+					icon: "ae2:meteorite_compass"
+					id: "43D8162BD91E4CEC"
+					title: "Craft a Meteorite Compass"
+					type: "advancement"
+				}
+			]
+			title: "Meteorite Compass"
+			x: 1.85d
+			y: -0.03d
+		}
+		{
+			dependencies: ["6BA3D31D8CAF8C35"]
+			description: [
+				"Break the &eMysterious Cube&f at the heart of a meteorite for the Silicon, Logic, Calculation and Engineering presses."
+				""
+				"Playing with friends? An Inscriber can copy presses onto iron blocks - share them."
+			]
+			id: "765EB5A5128C319E"
+			rewards: [
+				{
+					id: "1148BCBD2AE5A132"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 8
+					id: "0D7F9479C79DA65D"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "639CFB044F14DF8F"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2B9B11415FCEEA7A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "576E78F2E66AAE33"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Inside the meteorite"
+			tasks: [
+				{
+					advancement: "ae2:main/presses"
+					criterion: ""
+					icon: "ae2:logic_processor_press"
+					id: "099FD10104C6CF1F"
+					title: "Find the Inscriber Presses"
+					type: "advancement"
+				}
+			]
+			title: "The Four Presses"
+			x: 3.6d
+			y: -0.03d
+		}
+		{
+			dependencies: ["576A2747C532F837"]
+			id: "01F26EEBD4A45B35"
+			rewards: [
+				{
+					id: "65C6993E12B88033"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "76E1947AF2BD0F13"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "22B22C901A785D5B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charges Certus Quartz. It can also be cranked by hand."
+			tasks: [
+				{
+					advancement: "ae2:main/charger"
+					criterion: ""
+					icon: "ae2:charger"
+					id: "1686B7BE9D4F1CB4"
+					title: "Craft a Charger"
+					type: "advancement"
+				}
+			]
+			title: "Charger"
+			x: 1.85d
+			y: 21.0d
+		}
+		{
+			dependencies: ["01F26EEBD4A45B35"]
+			description: ["Throw &eCharged Certus Quartz&f, &eNether Quartz&f and &eRedstone&f into water together."]
+			id: "24D400CDDAC3954D"
+			rewards: [
+				{
+					id: "45BA15D1208F86D0"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "476D893AB9E7AA40"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "35C76B8D7A061CFE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Throw it in water"
+			tasks: [
+				{
+					advancement: "ae2:main/fluix"
+					criterion: ""
+					icon: "ae2:fluix_crystal"
+					id: "0C93D500C988F2CF"
+					title: "Make Fluix Crystals"
+					type: "advancement"
+				}
+			]
+			title: "Fluix Crystals"
+			x: 3.6d
+			y: 21.0d
+		}
+		{
+			dependencies: ["24D400CDDAC3954D"]
+			description: ["Budding quartz blocks grow crystals like amethyst. Surround them with powered accelerators for a renewable supply."]
+			id: "2478DF10156542CE"
+			optional: true
+			rewards: [
+				{
+					id: "48BA33EDC8EB0A58"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "5922FF4438D2F6A0"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3DD44D22F7392BAD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "ae2:main/growth_accelerator"
+					criterion: ""
+					icon: "ae2:growth_accelerator"
+					id: "33A9DCBBA1972213"
+					title: "Craft a Growth Accelerator"
+					type: "advancement"
+				}
+			]
+			title: "Growing Quartz"
+			x: 5.35d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"277D6B62C4EDFBB7"
+				"24D400CDDAC3954D"
+			]
+			description: [
+				"Press gold, certus and diamond into circuits, silicon into silicon prints, then sandwich both with redstone into processors."
+				"&7&fLogic Processor&7 - Made at: &fInscriber &7from &fPrinted Silicon, Redstone Dust, Printed Logic Circuit"
+				"&7&fCalculation Processor&7 - Made at: &fInscriber &7from &fPrinted Silicon, Redstone Dust, Printed Calculation Circuit"
+			]
+			id: "3AAB08583FB4BF55"
+			rewards: [
+				{
+					id: "189924AF5C91879E"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 16
+					id: "64E3BBD5E815C39C"
+					item: "ae2:silicon"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4FFF9292943582F9"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "067DE1F79605EDF8"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Make processors"
+			tasks: [
+				{
+					id: "0F7ECD5E3363A7D3"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+				{
+					id: "783B0C1FB65942FB"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "2A7C92C8E1888A56"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "0F253CC2DF29B3A8"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "The Inscriber"
+			x: 7.1d
+			y: -0.03d
+		}
+		{
+			dependencies: ["24D400CDDAC3954D"]
+			description: [
+				"Everything touching a cable is one network. An &eEnergy Acceptor&f feeds it FE."
+				""
+				"A cable carries &e8 channels&f; most devices use one. Without a Controller, a network has 8 channels total."
+			]
+			id: "5E8A993B4B640D30"
+			rewards: [
+				{
+					id: "018D0EBFE7CEA8D5"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 16
+					id: "276345924245D6C6"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "66B22531C95787E3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "ae2:main/glass_cable"
+					criterion: ""
+					icon: "ae2:fluix_glass_cable"
+					id: "68459C2432AC98EF"
+					title: "Craft ME Glass Cable"
+					type: "advancement"
+				}
+				{
+					id: "00B63658C7065C4C"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+			]
+			title: "Cables \\& Power"
+			x: 5.35d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"5E8A993B4B640D30"
+				"2556A877B95C7FA1"
+			]
+			description: [
+				"&eME Drive&f + &eStorage Cells&f + &eTerminal&f + power. Put items in, search for them, take them out."
+				""
+				"Each cell holds 63 &etypes&f of item - partition cells and use Storage Drawers or a Storage Bus for bulk goods."
+			]
+			id: "320273E98A7867A9"
+			rewards: [
+				{
+					id: "16A29A7308744EFE"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 2
+					id: "7DDABC5A09739DA4"
+					item: "ae2:item_storage_cell_1k"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0277CD0C8E3341E7"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "661A3B6451C493C5"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Drive + Cell + Terminal"
+			tasks: [
+				{
+					advancement: "ae2:main/storage_cell"
+					criterion: ""
+					icon: "ae2:item_storage_cell_1k"
+					id: "4F137B10D7764A83"
+					title: "Craft a Storage Cell"
+					type: "advancement"
+				}
+				{
+					id: "14D1B349BAAE2FDA"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "3DE515204B7D5153"
+					item: "ae2:terminal"
+					type: "item"
+				}
+			]
+			title: "&6Your First Network"
+			x: 14.35d
+			y: 17.89d
+		}
+		{
+			dependencies: ["320273E98A7867A9"]
+			description: ["A terminal with a crafting grid that pulls straight from storage. JEI's &e+&f button fills recipes from the network."]
+			id: "0F718350477F2425"
+			rewards: [
+				{
+					id: "242CA33460577747"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 10
+					id: "2AF4418A8F784B3F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "245D4B36C722F86C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "ae2:main/crafting_terminal"
+					criterion: ""
+					icon: "ae2:crafting_terminal"
+					id: "7D8BF8F7FD9A53E2"
+					title: "Craft a Crafting Terminal"
+					type: "advancement"
+				}
+			]
+			title: "Crafting Terminal"
+			x: 16.35d
+			y: 21.25d
+		}
+		{
+			dependencies: ["77FC19776F4DBEF5"]
+			description: ["Each face of a Controller provides &e32 channels&f through dense cable, 8 through normal cable. One controller structure per network."]
+			id: "09D1D3C976A1323C"
+			rewards: [
+				{
+					id: "4A56143B95FEF7AE"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "775A2377CCB8FA4D"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					id: "46D0FA5EFA999BFB"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7B9E487FDA4D8E2E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More channels"
+			tasks: [
+				{
+					advancement: "ae2:main/controller"
+					criterion: ""
+					icon: "ae2:controller"
+					id: "23AD6B2925CE458A"
+					title: "Craft an ME Controller"
+					type: "advancement"
+				}
+			]
+			title: "The Controller"
+			x: 18.1d
+			y: 11.5d
+		}
+		{
+			dependencies: ["320273E98A7867A9"]
+			description: ["1k -> 4k -> 16k -> 64k -> 256k. Fluid cells store fluids the same way."]
+			id: "2F4DE31E91AD5365"
+			rewards: [
+				{
+					id: "58C332A01D510BD2"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 2
+					id: "6AC55B0FDFED6B8E"
+					item: "ae2:cell_component_4k"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "31BB6F8E35814F90"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "56AAA6B54216A646"
+					item: "ae2:item_storage_cell_16k"
+					type: "item"
+				}
+			]
+			title: "Bigger Cells"
+			x: 16.35d
+			y: 24.53d
+		}
+		{
+			dependencies: ["09D1D3C976A1323C"]
+			description: [
+				"&eImport Bus&f pulls from an inventory. &eExport Bus&f pushes into one. &eStorage Bus&f makes an outside inventory part of the network."
+				""
+				"Point a Storage Bus at a &6Drawer Controller&f or a Sophisticated Storage &6Controller&f and your whole storage room shows up in the terminal."
+			]
+			id: "0B155EEBB2A55185"
+			rewards: [
+				{
+					id: "2FF27965D76F0E09"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "00A1F58B8615A9D4"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "27D2B8A7ABABE539"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Connect to the world"
+			tasks: [
+				{
+					advancement: "ae2:main/storage_bus"
+					criterion: ""
+					icon: "ae2:storage_bus"
+					id: "187C1A4C81EE5EED"
+					title: "Craft a Storage Bus"
+					type: "advancement"
+				}
+				{
+					id: "13A8C9B2463BD3DE"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+				{
+					id: "16D0C5B43FAFF5B2"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+			]
+			title: "Import, Export, Storage"
+			x: 19.95d
+			y: 11.5d
+		}
+		{
+			dependencies: ["09D1D3C976A1323C"]
+			description: ["Keeps chosen items in stock in its slots, and accepts anything piped into it."]
+			id: "56CCC86F3A83861D"
+			optional: true
+			rewards: [
+				{
+					id: "2A4BD6D04E0772A8"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 10
+					id: "0DF23541B10D6630"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "52BFA67B406592BA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4E084B2C3C47DB52"
+					item: "ae2:interface"
+					type: "item"
+				}
+			]
+			title: "ME Interface"
+			x: 19.95d
+			y: 10.0d
+		}
+		{
+			dependencies: ["09D1D3C976A1323C"]
+			description: ["Encode a recipe onto a pattern so the network knows how to make it."]
+			id: "5796525B7C39C66E"
+			rewards: [
+				{
+					id: "0A69F3B3B0481247"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 16
+					id: "774FE0A09BEF5850"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2373786E31CEEFC9"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "ae2:main/pattern_encoding_terminal"
+					criterion: ""
+					icon: "ae2:pattern_encoding_terminal"
+					id: "5B2A3F494F55EE5E"
+					title: "Craft a Pattern Encoding Terminal"
+					type: "advancement"
+				}
+				{
+					count: 8L
+					id: "5909406B6F6C1D91"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+			]
+			title: "Patterns"
+			x: 19.95d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5796525B7C39C66E"]
+			description: [
+				"&eCrafting CPU&f (crafting storage + optional co-processors) plans the job. &ePattern Providers&f hold patterns and push ingredients into a &eMolecular Assembler&f - or any machine for processing recipes."
+				""
+				"Middle-click an item in the terminal to request it."
+			]
+			id: "3F34C23ED65393F6"
+			rewards: [
+				{
+					id: "009D7306E2EB0F08"
+					type: "xp"
+					xp: 600
+				}
+				{
+					exclude_from_claim_all: true
+					id: "51046CFC09B31F19"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "068CB12DC866D18E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "19D42070F65E2E1D"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Craft on demand"
+			tasks: [
+				{
+					advancement: "ae2:main/crafting_cpu"
+					criterion: ""
+					icon: "ae2:crafting_unit"
+					id: "080DDC1F99FDBE57"
+					title: "Build a Crafting CPU"
+					type: "advancement"
+				}
+				{
+					id: "6F316DC68AA35FE6"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					id: "5F43FE966047BFD4"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+			]
+			title: "&6Autocrafting"
+			x: 21.93d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0F718350477F2425"]
+			id: "3771580523FFEAF6"
+			optional: true
+			rewards: [
+				{
+					id: "6FB9323B1D987245"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "59567F9AA80A3A1B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "62957BCC370F7601"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Reach your storage from anywhere in range of an access point."
+			tasks: [
+				{
+					id: "225763FA24B3E0E5"
+					item: "ae2:wireless_access_point"
+					type: "item"
+				}
+				{
+					id: "0BD0E6B7BD92603A"
+					item: "ae2:wireless_terminal"
+					type: "item"
+				}
+			]
+			title: "Wireless Terminal"
+			x: 18.1d
+			y: 19.75d
+		}
+		{
+			dependencies: ["320273E98A7867A9"]
+			id: "54E8B00E916403F6"
+			optional: true
+			rewards: [
+				{
+					id: "2F4FC92703F6ED4C"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "3C383F383B81A239"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "210F99ABCBF7C453"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Shows channel usage and holds your upgrade cards."
+			tasks: [
+				{
+					advancement: "ae2:main/network_tool"
+					criterion: ""
+					icon: "ae2:network_tool"
+					id: "55CBA083536AA31C"
+					title: "Craft a Network Tool"
+					type: "advancement"
+				}
+			]
+			title: "Network Tool"
+			x: 16.35d
+			y: 16.25d
+		}
+		{
+			dependencies: ["320273E98A7867A9"]
+			id: "3A7E753654F6D4E6"
+			optional: true
+			rewards: [
+				{
+					id: "13E59B260C2D4DF9"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "3C34E74AE41194C7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2AABDE64FA0BCAB0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A storage cell with a built-in terminal for your pocket."
+			tasks: [
+				{
+					advancement: "ae2:main/portable_cell"
+					criterion: ""
+					icon: "ae2:portable_item_cell_1k"
+					id: "108DEAD4A41C910F"
+					title: "Craft a Portable Cell"
+					type: "advancement"
+				}
+			]
+			title: "Portable Cell"
+			x: 16.35d
+			y: 14.75d
+		}
+		{
+			dependencies: ["0B155EEBB2A55185"]
+			description: ["Carry 32 channels through a single channel, or tunnel power, items, fluids and redstone."]
+			id: "4B4A43907FE64AA6"
+			optional: true
+			rewards: [
+				{
+					id: "097195B5084E15BD"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "38E3292A0F4AB912"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "28F09259FB75FF58"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "ae2:main/p2p"
+					criterion: ""
+					icon: "ae2:me_p2p_tunnel"
+					id: "5697AB0320BC4F77"
+					title: "Craft a P2P Tunnel"
+					type: "advancement"
+				}
+			]
+			title: "P2P Tunnels"
+			x: 21.93d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4B4A43907FE64AA6"]
+			description: ["Joins two networks across any distance or dimension. Run one network through your base, your colony and your Twilight outpost."]
+			id: "27ACBD258408F4BC"
+			optional: true
+			rewards: [
+				{
+					id: "2EEC79DC202BBC4F"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "34241009A08F62CE"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A8B6510C8036B3D"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5425D64180B9110F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "ae2:main/qnb"
+					criterion: ""
+					icon: "ae2:quantum_link"
+					id: "26481FE84DEE82C0"
+					title: "Build a Quantum Network Bridge"
+					type: "advancement"
+				}
+			]
+			title: "Quantum Network Bridge"
+			x: 24.03d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3F34C23ED65393F6"]
+			id: "123A0B1DDD5D616A"
+			optional: true
+			rewards: [
+				{
+					id: "63C13E1608F508AF"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "786F0138498A4C16"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "765974498C002F8B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Cut a chunk of the world out and store it on a disk."
+			tasks: [
+				{
+					advancement: "ae2:main/spatial_ioport"
+					criterion: ""
+					icon: "ae2:spatial_io_port"
+					id: "423CC10E8E2E27B8"
+					title: "Craft a Spatial IO Port"
+					type: "advancement"
+				}
+			]
+			title: "Spatial Storage"
+			x: 24.03d
+			y: 16.5d
+		}
+		{
+			dependencies: ["320273E98A7867A9"]
+			description: [
+				"&eApplied Mekanistics&f stores Mekanism's gases, infuse types, pigments and slurries on AE2 cells, like any item."
+				""
+				"Import and export buses, interfaces and pattern providers handle them too, so the network can run a Mekanism processing line. A chemical P2P tunnel carries them through one channel."
+			]
+			id: "70843D22D1880E16"
+			optional: true
+			rewards: [
+				{
+					id: "2C4AECC976B06512"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "419969199FD3EA31"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "662CC4230ED00770"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mekanism chemicals in the network"
+			tasks: [
+				{
+					id: "6CA776C9538F0429"
+					item: "appmek:chemical_storage_cell_1k"
+					type: "item"
+				}
+			]
+			title: "Chemical Cells"
+			x: 17.95d
+			y: 16.25d
+		}
+		{
+			dependencies: ["3771580523FFEAF6"]
+			description: [
+				"&eAE2 Wireless Terminals&f adds wireless crafting and pattern terminals - and the Universal Terminal, which is all of them in one item."
+				""
+				"It fits in a Curios slot and opens with a key, so it never takes up your hotbar."
+			]
+			id: "09640640DE136357"
+			optional: true
+			rewards: [
+				{
+					id: "2B5609FE898E7DF1"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "5BE5F5EFC09FCBE5"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2534009DAC080C1A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Every terminal in one"
+			tasks: [
+				{
+					id: "05E60EC04624265F"
+					item: "ae2wtlib:wireless_universal_terminal"
+					type: "item"
+				}
+			]
+			title: "The Universal Terminal"
+			x: 19.95d
+			y: 19.75d
+		}
+		{
+			dependencies: ["09640640DE136357"]
+			description: ["In a wireless terminal, it pulls nearby items to you - or straight into the network."]
+			id: "7C74B89743904BC0"
+			optional: true
+			rewards: [
+				{
+					id: "0AE820A2634A2255"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 10
+					id: "5DDD47FBBDF8ECC0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "285F3884F16C2ADF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "26B200909A768792"
+					item: "ae2wtlib:magnet_card"
+					type: "item"
+				}
+			]
+			title: "Magnet Card"
+			x: 21.93d
+			y: 19.75d
+		}
+		{
+			dependencies: [
+				"3F34C23ED65393F6"
+				"0B155EEBB2A55185"
+			]
+			description: ["Everything you own, one search away - and anything you don't, one click away. Applied Energistics: mastered."]
+			id: "698D4FA41B63405C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43E857C286ED5817"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 5
+					id: "2A7B7111A7E41D50"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "1E8B72CE959C67EB"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "570C9CE02DF4E9E6"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "758B02A6F20B4002"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lDigital Age"
+			x: 24.03d
+			y: 13.25d
+		}
+		{
+			dependencies: ["5796525B7C39C66E"]
+			id: "39164956B5E0A9EC"
+			rewards: [
+				{
+					id: "76862C6095BC7CB0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6F9663C1380D24BC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5E43282D42E5D98F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Extended AE: a pattern provider with four times the slots."
+			tasks: [
+				{
+					id: "1BD0C06CC7410EA5"
+					item: "expatternprovider:ex_pattern_provider"
+					type: "item"
+				}
+			]
+			title: "Extended Pattern Provider"
+			x: 21.93d
+			y: 18.25d
+		}
+		{
+			dependencies: ["39164956B5E0A9EC"]
+			description: ["A multiblock that crafts hundreds of patterns at once, in place of rows of molecular assemblers."]
+			id: "265DFEF040AB6F08"
+			rewards: [
+				{
+					id: "46F629DC7D518816"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "77C598BE2ED397CC"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "046DCD527B122566"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "5248C7E17B0E8F82"
+					item: "expatternprovider:assembler_matrix_frame"
+					type: "item"
+				}
+				{
+					id: "4845A505F278998B"
+					item: "expatternprovider:assembler_matrix_crafter"
+					type: "item"
+				}
+			]
+			title: "The Assembler Matrix"
+			x: 24.03d
+			y: 18.25d
+		}
+		{
+			dependencies: ["265DFEF040AB6F08"]
+			description: ["Two connectors join two networks without a cable, like a quantum bridge for the near distance."]
+			id: "002A154D7C941405"
+			rewards: [
+				{
+					id: "6CD1B231769306DF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "25D6BD4A64B0F980"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5179FE70C84E6660"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "380875EC17A704C5"
+					item: "expatternprovider:wireless_connect"
+					type: "item"
+				}
+			]
+			title: "Wireless Connector"
+			x: 26.0d
+			y: 18.25d
+		}
+		{
+			dependencies: ["002A154D7C941405"]
+			description: ["Keeps chosen items in stock: when the network drops below the amount you set, it crafts more."]
+			id: "431B82D096382485"
+			rewards: [
+				{
+					id: "4165D91357222338"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1B4666D2CA7C9307"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "77BC6CE52777752E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7FAA7337A78BCDAC"
+					item: "merequester:requester"
+					type: "item"
+				}
+			]
+			title: "ME Requester"
+			x: 27.75d
+			y: 18.25d
+		}
+		{
+			dependencies: ["2F4DE31E91AD5365"]
+			description: ["MEGA Cells: components from 1M to 256M bytes, made with Accumulation Processors and Sky Steel."]
+			id: "0865173F40C57D94"
+			rewards: [
+				{
+					id: "72F718B86DD32737"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "128DC16FEDA1F269"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "368F6B9F3C222D1B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5E23879155D56512"
+					item: "megacells:cell_component_1m"
+					type: "item"
+				}
+				{
+					id: "0A17EE53D83C41CB"
+					item: "megacells:item_storage_cell_1m"
+					type: "item"
+				}
+			]
+			title: "1M Storage"
+			x: 18.1d
+			y: 24.53d
+		}
+		{
+			dependencies: ["0865173F40C57D94"]
+			id: "51B0DD0734424ED6"
+			rewards: [
+				{
+					id: "1CD73DAB2B13CF32"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "690BE652F65E7DBD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1D151C0EC5B428D7"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "One item, any amount: a cell for the cobblestone farm."
+			tasks: [
+				{
+					id: "44B0E05E30ED3CEA"
+					item: "megacells:bulk_item_cell"
+					type: "item"
+				}
+			]
+			title: "The Bulk Cell"
+			x: 19.95d
+			y: 22.75d
+		}
+		{
+			dependencies: ["51B0DD0734424ED6"]
+			id: "3D6E9BD69D0D7274"
+			rewards: [
+				{
+					id: "03DE9988E01E659F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4A888F9F1A910ABA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "13510E333B05F63B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Crafting CPUs that fit a megabyte of jobs in one block."
+			tasks: [
+				{
+					id: "60B9A64D79D9662F"
+					item: "megacells:mega_crafting_unit"
+					type: "item"
+				}
+				{
+					id: "1A1A278CAA2A60F0"
+					item: "megacells:mega_crafting_accelerator"
+					type: "item"
+				}
+			]
+			title: "MEGA Crafting"
+			x: 21.93d
+			y: 22.75d
+		}
+		{
+			dependencies: ["3D6E9BD69D0D7274"]
+			description: ["&7Made from: &fMEGA Item Cell Housing, 256M MEGA Storage Component"]
+			id: "291D59302AFA77AD"
+			optional: true
+			rewards: [
+				{
+					id: "425F2BB0DEC81D48"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 3
+					id: "34E4BE55EE218A4E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "34D96111C894B55B"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The biggest cell there is."
+			tasks: [
+				{
+					id: "1CEBC5560A3EFEF0"
+					item: "megacells:item_storage_cell_256m"
+					type: "item"
+				}
+			]
+			title: "256M"
+			x: 24.03d
+			y: 22.75d
+		}
+		{
+			dependencies: ["765EB5A5128C319E"]
+			id: "277D6B62C4EDFBB7"
+			rewards: [
+				{
+					id: "2F7866A08673E89C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0CB95FB1F2952088"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6815B5748259B8AD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Smelt certus quartz dust. Every processor has a layer of it."
+			tasks: [
+				{
+					count: 8L
+					id: "6EB384649578E039"
+					item: "ae2:silicon"
+					type: "item"
+				}
+			]
+			title: "Silicon"
+			x: 5.35d
+			y: -0.03d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["A component holds the data and a housing holds the component. Take one out to reuse the other."]
+			id: "2556A877B95C7FA1"
+			rewards: [
+				{
+					id: "7F008DF537E9D0A9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "61F7B7CAB4AC46D9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4E7EE12AB2372DD5"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6C5DB982752C08CE"
+					item: "ae2:cell_component_1k"
+					type: "item"
+				}
+				{
+					id: "5E9746FC01BC123B"
+					item: "ae2:item_cell_housing"
+					type: "item"
+				}
+			]
+			title: "A Cell's Parts"
+			x: 12.35d
+			y: 5.2d
+		}
+		{
+			dependencies: ["320273E98A7867A9"]
+			description: ["A buffer for the network, so a large craft does not brown it out."]
+			id: "77FC19776F4DBEF5"
+			rewards: [
+				{
+					id: "21DFEC68012CD4A8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5E2B81B09B1DF0E7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "09B141BF1FFEE67D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5ED39230246228E3"
+					item: "ae2:energy_cell"
+					type: "item"
+				}
+			]
+			title: "An Energy Cell"
+			x: 16.35d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2478DF10156542CE"]
+			description: [
+				"Certus dust and glass. Clear, borderless, and an ingredient in every cable, interface and cell housing."
+				"Add glowstone for &eVibrant&f Quartz Glass, which lights up."
+			]
+			id: "1BDFD49D59239C8B"
+			optional: true
+			rewards: [
+				{
+					id: "2F0A7FE82C9EF3B7"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1D9C518DCFB854D2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4E6E0F6BF2764B31"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "19CF895B46E669AD"
+					item: "ae2:quartz_glass"
+					type: "item"
+				}
+			]
+			title: "Quartz Glass"
+			x: 7.1d
+			y: 22.5d
+		}
+		{
+			dependencies: ["320273E98A7867A9"]
+			description: ["Gives a redstone signal when the network holds more - or less - than a number of something. Run the furnace only while there is ore; stop the farm when the chest is full."]
+			id: "54FFF20A592DDBE1"
+			optional: true
+			rewards: [
+				{
+					id: "4B486327768983AA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4F17B8F419587F43"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3259F64C93CCA7BF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "66E46100D317299F"
+					item: "ae2:level_emitter"
+					type: "item"
+				}
+			]
+			title: "A Level Emitter"
+			x: 17.95d
+			y: 17.75d
+		}
+		{
+			dependencies: ["09D1D3C976A1323C"]
+			description: [
+				"Two rings of eight around a Link Chamber, with a matched pair of &dQuantum Entangled Singularities&f inside, join two networks across any distance, even between dimensions."
+				"The singularities are made by blowing one up next to ender dust."
+			]
+			id: "6B728CF27F02AB6F"
+			optional: true
+			rewards: [
+				{
+					id: "2EAA93F42810C9BA"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "1A4F75312A569A84"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0C45797E53BA3A66"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "One network, two worlds"
+			tasks: [
+				{
+					count: 16L
+					id: "7DE2D01766FD2DF3"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "23E56AD57876DF28"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+			]
+			title: "A Quantum Bridge"
+			x: 19.95d
+			y: 8.25d
+		}
+		{
+			dependencies: ["0F718350477F2425"]
+			description: ["Filter a view cell in a Cell Workbench, drop it into a terminal, and that terminal only shows what is on the list. A terminal just for ores; another just for food."]
+			id: "5A0E612D152BB08D"
+			optional: true
+			rewards: [
+				{
+					id: "033709E5FA21EA33"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7DD54D2071513B96"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0C62B66F2779A17E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "66806052CB1A95E6"
+					item: "ae2:view_cell"
+					type: "item"
+				}
+			]
+			title: "View Cells"
+			x: 18.1d
+			y: 21.25d
+		}
+		{
+			dependencies: ["5A0E612D152BB08D"]
+			description: ["A bin that destroys anything put in it. Fitted with a storage component it turns the destruction into &eMatter Balls&f - and, with far more, &dSingularities&f."]
+			id: "532B03367074855B"
+			optional: true
+			rewards: [
+				{
+					id: "623B36C3A4086F37"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2EE9C3EAD7690020"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7D264A3C608EE334"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bin that pays"
+			tasks: [
+				{
+					id: "11B66E1298FE8220"
+					item: "ae2:condenser"
+					type: "item"
+				}
+			]
+			title: "The Matter Condenser"
+			x: 19.95d
+			y: 21.25d
+		}
+		{
+			dependencies: ["532B03367074855B"]
+			description: ["Feed a &eMatter Condenser&f enough junk and it collapses it into a Singularity. Set one off in an explosion next to ender dust and you get a pair of &eQuantum Entangled Singularities&f, the link inside a Quantum Network Bridge."]
+			id: "5F8E3BCAA19090A4"
+			optional: true
+			rewards: [
+				{
+					id: "166CEB102B9ED2FC"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2E2DE990ED3C4AAA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "554869662C8ADC9D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "What a Matter Condenser leaves behind"
+			tasks: [
+				{
+					id: "09F3FE8E1A614F1F"
+					item: "ae2:singularity"
+					type: "item"
+				}
+			]
+			title: "A Singularity"
+			x: 21.93d
+			y: 21.25d
+		}
+		{
+			dependencies: ["6BA3D31D8CAF8C35"]
+			description: ["Every meteorite is a shell of &eSky Stone&f. It mines slowly, and it is the only way into AE2's heart: the ME Controller needs a block of it, and a Crusher grinds it into Sky Stone Dust for the bigger cells."]
+			id: "37075AEF205FCBD1"
+			optional: true
+			rewards: [
+				{
+					id: "202668293DEA571A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "67EDDC5171D07E16"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2413BBC202463B64"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The rock meteorites are made of"
+			tasks: [
+				{
+					id: "0EB9C25DCDD213E2"
+					item: "ae2:sky_stone_block"
+					type: "item"
+				}
+			]
+			title: "Sky Stone"
+			x: 3.6d
+			y: -1.5d
+		}
+		{
+			dependencies: ["37075AEF205FCBD1"]
+			description: [
+				"Crushed Sky Stone. It goes into the 256k storage component and into every MEGA cell housing, so grind a stack while you are at the meteorite."
+				"&7Made at: &fInscriber &7from &fSky Stone"
+			]
+			id: "5CE34B994B769E7E"
+			optional: true
+			rewards: [
+				{
+					id: "64E734047549646E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1E6C20157AF3C18A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "07248709E87176F0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Meteorite, ground fine"
+			tasks: [
+				{
+					id: "7D35282901BC6E85"
+					item: "ae2:sky_dust"
+					type: "item"
+				}
+			]
+			title: "Sky Stone Dust"
+			x: 5.35d
+			y: -1.5d
+		}
+		{
+			dependencies: ["576A2747C532F837"]
+			description: [
+				"Put a Certus Quartz Crystal in a &eCharger&f and it comes out charged. Charged quartz is what Fluix is grown from, and it can repair cracked Budding Certus so your quartz farm keeps going."
+				"&7Made at: &fEnergizing Orb &7from &fCertus Quartz Crystal"
+			]
+			id: "12C0FD5DB4DD2615"
+			optional: true
+			rewards: [
+				{
+					id: "01B9C9F8A27D316D"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "42B09D9C7097AD90"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0B2127BEECABD979"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Certus, with a spark in it"
+			tasks: [
+				{
+					id: "0A9BED28F45A625D"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "Charged Quartz"
+			x: 1.85d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["An Inscriber with no press, or a Crusher, grinds Certus Quartz into dust. Mixed with glass it becomes Quartz Fiber, and it is part of Quartz Glass."]
+			id: "424D9F2F8E5D351F"
+			optional: true
+			rewards: [
+				{
+					id: "72884A52E996A826"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6314A9510554EF3E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "60A2DFA4D4300470"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Quartz, crushed"
+			tasks: [
+				{
+					id: "61A6349E6FFFA2AA"
+					item: "ae2:certus_quartz_dust"
+					type: "item"
+				}
+			]
+			title: "Certus Dust"
+			x: 12.35d
+			y: -16.75d
+		}
+		{
+			dependencies: ["1BDFD49D59239C8B"]
+			description: ["Quartz Glass, redstone and copper. Put a storage component in it and it becomes a fluid cell, so your ME Drive can hold lava, water or anything else that pours."]
+			id: "60BF48451A44BEC0"
+			optional: true
+			rewards: [
+				{
+					id: "74B48A7ADD4730DA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0775CCC398DAD6E5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1793B552E9EF8CCC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A cell that holds liquids"
+			tasks: [
+				{
+					id: "1837DFE779DD75F4"
+					item: "ae2:fluid_cell_housing"
+					type: "item"
+				}
+			]
+			title: "Fluid Housing"
+			x: 12.35d
+			y: 22.5d
+		}
+		{
+			dependencies: ["424D9F2F8E5D351F"]
+			description: ["&eQuartz Fiber&f carries power and nothing else. Wrap it in Fluix and it becomes Fluix ME Glass Cable, which carries power and up to eight channels: the basic wire of every network."]
+			id: "3A39DD0B2A3FF25E"
+			optional: true
+			rewards: [
+				{
+					id: "428F5F0013CE9CDD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2DDAC270FEB4B378"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5B8D3499BF3BF7E5"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Power first, then channels"
+			tasks: [
+				{
+					id: "7A8D790E22E4D8C1"
+					item: "ae2:quartz_fiber"
+					type: "item"
+				}
+				{
+					id: "547A2BABCC6015D6"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+			]
+			title: "Fibre and Glass Cable"
+			x: 14.35d
+			y: -16.75d
+		}
+		{
+			dependencies: ["1BDFD49D59239C8B"]
+			description: ["MEGA Cells' own housings, made with Sky Stone Dust and Vibrant Quartz Glass. Only the 1M-and-up components fit in them, which is where storage stops being a worry."]
+			id: "4110C583F309653B"
+			optional: true
+			rewards: [
+				{
+					id: "07300A6DD303CEC5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "13CD9C932FA4A365"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5F226E36DCF88172"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Room for the giant cells"
+			tasks: [
+				{
+					id: "3E0485D3E7456953"
+					item: "megacells:mega_fluid_cell_housing"
+					type: "item"
+				}
+				{
+					id: "076588AFD491C3EB"
+					item: "megacells:mega_item_cell_housing"
+					type: "item"
+				}
+			]
+			title: "MEGA Housings"
+			x: 12.35d
+			y: 24.0d
+		}
+		{
+			dependencies: ["3A39DD0B2A3FF25E"]
+			description: ["Spatial storage lifts a whole cube of the world into a cell. &ePylons&f mark its size: lay a line of them along three edges of the box, each line a channel."]
+			id: "08131C03B8443504"
+			optional: true
+			rewards: [
+				{
+					id: "28C7D17E339224CD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "367DAD93A9BDF1FC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5EA44C9B48FFA7DA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Draw the box"
+			tasks: [
+				{
+					id: "3AFDBCD2D6383CC7"
+					item: "ae2:spatial_pylon"
+					type: "item"
+				}
+			]
+			title: "Spatial Pylons"
+			x: 16.35d
+			y: -18.25d
+		}
+		{
+			dependencies: ["5E8A993B4B640D30"]
+			description: ["It burns ordinary furnace fuel and feeds the energy straight into your network. Slow, but it means a network can run before you have any other power."]
+			id: "0438B29C43CE2B36"
+			optional: true
+			rewards: [
+				{
+					id: "3345A5A3D9FD6988"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "31D5DC249FC37D77"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "42F6FAF1B51EB96E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Power from a furnace's worth of fuel"
+			tasks: [
+				{
+					id: "42908C83564AA0A3"
+					item: "ae2:vibration_chamber"
+					type: "item"
+				}
+			]
+			title: "Vibration Chamber"
+			x: 7.1d
+			y: 21.0d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["The &eAnnihilation Core&f pulls things into a network and the &eFormation Core&f pushes them out. Import and export buses, planes, terminals and interfaces all start from these two."]
+			id: "7487181A1689FD1B"
+			optional: true
+			rewards: [
+				{
+					id: "7454B2552A16DA91"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0E4AD152C2354243"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4BCC9DB093D23590"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The parts that move things in and out"
+			tasks: [
+				{
+					id: "725EB50EC3810D71"
+					item: "ae2:annihilation_core"
+					type: "item"
+				}
+				{
+					id: "59CAE7666A62B90E"
+					item: "ae2:formation_core"
+					type: "item"
+				}
+			]
+			title: "Cores"
+			x: 12.35d
+			y: -13.25d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["Eight times what an Energy Cell holds, made from one. Wireless terminals are built around it, because a terminal in your pocket needs its own battery."]
+			id: "3E5DC00509717D59"
+			optional: true
+			rewards: [
+				{
+					id: "47E3E076A54571CE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "161A74D7B468EE91"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "227E754695DAB4CC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Eight cells in one"
+			tasks: [
+				{
+					id: "3FC396DF98CE584F"
+					item: "ae2:dense_energy_cell"
+					type: "item"
+				}
+			]
+			title: "Dense Energy Cell"
+			x: 12.35d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3A39DD0B2A3FF25E"]
+			description: ["Works like a covered cable, but lights up a stripe for every channel in use. When a device stops working, this is how you see which cable has run out."]
+			id: "04598D8D7CC82577"
+			optional: true
+			rewards: [
+				{
+					id: "61DC802305D00FFA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "51A58881CC4ED42E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3FAB8FCF7B18691F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "See the channels"
+			tasks: [
+				{
+					id: "066C54D17EDAF479"
+					item: "ae2:fluix_smart_cable"
+					type: "item"
+				}
+			]
+			title: "Smart Cable"
+			x: 16.35d
+			y: -16.75d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["A pair of &eP2P Tunnels&f carries a whole cable's worth of channels through a single one. Set the input, then copy it to the output with a &eMemory Card&f. They can also carry items, fluids and power."]
+			id: "1CE17D41DFD9435B"
+			optional: true
+			rewards: [
+				{
+					id: "1AC2191EE245E92C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "72E4FB726670A857"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "27CE3016575A0191"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Many channels down one"
+			tasks: [
+				{
+					id: "198B392E3577E28E"
+					item: "ae2:memory_card"
+					type: "item"
+				}
+			]
+			title: "P2P Tunnels: ME P2P Tunnel"
+			x: 13.95d
+			y: -1.25d
+		}
+		{
+			dependencies: ["3F34C23ED65393F6"]
+			description: ["&eCrafting Storage&f holds the items a big craft needs along the way. A &eCo-Processing Unit&f lets the CPU push more patterns at once. Both go into the Crafting Unit box."]
+			id: "79F7ECE2EADD8290"
+			optional: true
+			rewards: [
+				{
+					id: "5F3B10CFD89D7D20"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "78CDA758B7B55B00"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1851EDBEA1BF926F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Memory and speed"
+			tasks: [
+				{
+					id: "20F0243A91A7F18A"
+					item: "ae2:1k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "3ED2CE6C196B5980"
+					item: "ae2:crafting_accelerator"
+					type: "item"
+				}
+			]
+			title: "Crafting CPU Parts"
+			x: 24.03d
+			y: 15.0d
+		}
+		{
+			dependencies: ["7487181A1689FD1B"]
+			description: ["The &eAnnihilation Plane&f breaks the block in front of it and picks up items that land there. The &eFormation Plane&f places blocks or drops items. Together they farm almost anything."]
+			id: "18902106BCEBC360"
+			optional: true
+			rewards: [
+				{
+					id: "33E1192E4A9E2FF8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3935D4518470FC8C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "543668429C1B3B37"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Break and place"
+			tasks: [
+				{
+					id: "6D9C3F014FC706BD"
+					item: "ae2:annihilation_plane"
+					type: "item"
+				}
+				{
+					id: "2453505D98B1A9B4"
+					item: "ae2:formation_plane"
+					type: "item"
+				}
+			]
+			title: "Planes"
+			x: 14.35d
+			y: -13.25d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["Each one opens another row of filter slots on a bus, so one import or export bus can handle more than one item."]
+			id: "3D1ECCA82CF8691A"
+			optional: true
+			rewards: [
+				{
+					id: "7E62D6D6243427F1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "29BCD8B9036690D9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7980BC4C048AB841"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More filter slots"
+			tasks: [
+				{
+					id: "58FCF37B335905BD"
+					item: "ae2:capacity_card"
+					type: "item"
+				}
+			]
+			title: "Capacity Card"
+			x: 15.55d
+			y: -14.0d
+		}
+		{
+			dependencies: ["2556A877B95C7FA1"]
+			description: ["Four 1k components in one. Bigger cells, bigger crafting storage, and the Matter Cannon and Color Applicator are built around it."]
+			id: "1B011D831E17FB1D"
+			optional: true
+			rewards: [
+				{
+					id: "1BE2371EF4D6E403"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1E42F267A912A6F1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "45655710FCB9FDC1"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Four times the storage"
+			tasks: [
+				{
+					id: "46F0BF6E43B58602"
+					item: "ae2:cell_component_4k"
+					type: "item"
+				}
+			]
+			title: "4k Component"
+			x: 14.35d
+			y: 1.12d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["With this in an export bus or interface, a missing item is not a dead end: the device asks the network's autocrafting to make it."]
+			id: "0D4B53FE6336050D"
+			optional: true
+			rewards: [
+				{
+					id: "36FC197D85826ABA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "214EDB7EB6BA5BB4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5E74105ACD6AFFD4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ask for it to be made"
+			tasks: [
+				{
+					id: "6A6E3170FDFBD175"
+					item: "ae2:crafting_card"
+					type: "item"
+				}
+			]
+			title: "Crafting Card"
+			x: 15.55d
+			y: -12.75d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["In a storage cell it splits the space evenly between the item types you partition, so one item cannot fill a cell meant for five."]
+			id: "64789F17B7B64926"
+			optional: true
+			rewards: [
+				{
+					id: "081BD64260C9443D"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6C7C79CE25D16741"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7F2E7D6EF58D9E52"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Share a cell fairly"
+			tasks: [
+				{
+					id: "2A8DFE0089368636"
+					item: "ae2:equal_distribution_card"
+					type: "item"
+				}
+			]
+			title: "Equal Distribution"
+			x: 12.35d
+			y: -0.25d
+		}
+		{
+			dependencies: ["2556A877B95C7FA1"]
+			description: ["A fluid housing with a 1k component. It holds a few kinds of fluid in an ME Drive, and every bigger component makes a bigger one."]
+			id: "4DD397E0B723FAF4"
+			optional: true
+			rewards: [
+				{
+					id: "5D43B3F37C7C966A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "59270DE56FA4FC87"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "41B7E6A9EFACB0B3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Liquids in a drive"
+			tasks: [
+				{
+					id: "3061AA7B26D421B7"
+					item: "ae2:fluid_storage_cell_1k"
+					type: "item"
+				}
+			]
+			title: "A Fluid Cell"
+			x: 14.35d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3A39DD0B2A3FF25E"]
+			description: ["A dense cable carries 32 channels but cannot hold buses or panels, so step down to a normal cable before attaching them. This one also lights up its channels."]
+			id: "00F848D4FD8244D7"
+			optional: true
+			rewards: [
+				{
+					id: "5382DFF022ADFF68"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "74E2FDE5AA66BB65"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "398ACEB2C837419C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "32 channels you can see"
+			tasks: [
+				{
+					id: "7B39A8B2F1322BDB"
+					item: "ae2:fluix_smart_dense_cable"
+					type: "item"
+				}
+			]
+			title: "Dense Smart Cable"
+			x: 16.35d
+			y: -15.25d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["Filters normally want an exact match. With a Fuzzy Card they ignore damage and NBT, so one filter catches every damaged sword, not just the new ones."]
+			id: "2250B8C7548583E0"
+			optional: true
+			rewards: [
+				{
+					id: "1608814D6892DA51"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0718BC1992303C06"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4AF09410AB0BDD5E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Close enough counts"
+			tasks: [
+				{
+					id: "130B6DC5BE64E6C9"
+					item: "ae2:fuzzy_card"
+					type: "item"
+				}
+			]
+			title: "Fuzzy Card"
+			x: 15.55d
+			y: -11.25d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["Turns a device's filter around: instead of only those items, everything except those items."]
+			id: "0E9FA984669F4532"
+			optional: true
+			rewards: [
+				{
+					id: "0F5A080440E6EF42"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2E959B42E7CE2AED"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "66E7C05A514D2DEF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A blacklist, not a whitelist"
+			tasks: [
+				{
+					id: "187C498B01F22016"
+					item: "ae2:inverter_card"
+					type: "item"
+				}
+			]
+			title: "Inverter Card"
+			x: 15.55d
+			y: -9.75d
+		}
+		{
+			dependencies: ["320273E98A7867A9"]
+			description: ["Put a storage cell in and it moves everything out into the network, or the other way. Use it to swap small cells for big ones without emptying them by hand."]
+			id: "2010EC8E16E88A5B"
+			optional: true
+			rewards: [
+				{
+					id: "30DAE7CCE330D0A2"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "665D8437EBB71FE3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4AB08A8BC9279868"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Empty a cell, or fill one"
+			tasks: [
+				{
+					id: "4C9B493F7EA672C9"
+					item: "ae2:io_port"
+					type: "item"
+				}
+			]
+			title: "ME IO Port"
+			x: 16.35d
+			y: 18.5d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["Put it in a bus or interface and that device works only when a redstone signal says so, or only when it does not."]
+			id: "0BC4F1727EA90A15"
+			optional: true
+			rewards: [
+				{
+					id: "61C567E5C44D69C6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5EE8ADBB6E7DEF12"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5E3F93FCD172011B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "On and off by signal"
+			tasks: [
+				{
+					id: "60C160F21D75CADB"
+					item: "ae2:redstone_card"
+					type: "item"
+				}
+			]
+			title: "Redstone Card"
+			x: 15.55d
+			y: -8.25d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["Holds a 2x2x2 region of the world. With pylons and a Spatial IO Port, a redstone pulse swaps what is inside the box with what is in the cell."]
+			id: "684844989A46B3E5"
+			optional: true
+			rewards: [
+				{
+					id: "4C6E27013300B589"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "665ED817BBC3ACCC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "11B8A02A231A9DEE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A 2x2x2 world in your pocket"
+			tasks: [
+				{
+					id: "5E8B5E4B5CBF6967"
+					item: "ae2:spatial_storage_cell_2"
+					type: "item"
+				}
+			]
+			title: "A Small Spatial Cell"
+			x: 15.55d
+			y: -6.75d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["Each card makes a bus, an IO Port or an assembler work faster. Add them where items pile up waiting."]
+			id: "4019A63D7324BB3B"
+			optional: true
+			rewards: [
+				{
+					id: "3E01834203FDD813"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "69F73694F3C1BAA2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "53D3C097A4C427CA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster buses"
+			tasks: [
+				{
+					id: "11506CE548E2D61D"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+			]
+			title: "Acceleration Card"
+			x: 15.55d
+			y: -5.25d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["Put it in a partitioned storage cell. When the cell fills up, anything more of that item is destroyed, not left to clog the network. Handy for cobblestone."]
+			id: "7D93DE488EB914A3"
+			optional: true
+			rewards: [
+				{
+					id: "22CB729B6F3C2BE1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0A58F7A9DA0C15E7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "34588CAEDCD27AD7"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "When a cell is full, delete the rest"
+			tasks: [
+				{
+					id: "1FA4E67454321784"
+					item: "ae2:void_card"
+					type: "item"
+				}
+			]
+			title: "Overflow Destruction"
+			x: 15.55d
+			y: -3.75d
+		}
+		{
+			dependencies: ["1B011D831E17FB1D"]
+			description: ["Four 4k components. It makes 16k cells and the 64k component."]
+			id: "0D102BD435B7AC9C"
+			optional: true
+			rewards: [
+				{
+					id: "1A175599C48B4CCA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "335DBE2C1A33FA13"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "258A18B8F760D562"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The next size up"
+			tasks: [
+				{
+					id: "7446E648F9BB9FFC"
+					item: "ae2:cell_component_16k"
+					type: "item"
+				}
+			]
+			title: "16k Component"
+			x: 16.35d
+			y: 3.5d
+		}
+		{
+			dependencies: ["320273E98A7867A9"]
+			description: ["A single storage cell with a terminal on top. It works on its own, and it also charges portable cells and refills tools such as the Matter Cannon."]
+			id: "64950FD4C7483936"
+			optional: true
+			rewards: [
+				{
+					id: "794CB792A7072DAE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2EAA8F53FDE02727"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "394B0D4DBFE15337"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "One cell, with its own terminal"
+			tasks: [
+				{
+					id: "4931661516C954B5"
+					item: "ae2:chest"
+					type: "item"
+				}
+			]
+			title: "The ME Chest"
+			x: 16.35d
+			y: 19.75d
+		}
+		{
+			dependencies: ["1B011D831E17FB1D"]
+			description: ["Colours cables. Different colours do not connect to each other, but Fluix connects to all of them, which is how two lines can run side by side. Fill it with dye in an ME Chest."]
+			id: "5F1618E65B73E500"
+			optional: true
+			rewards: [
+				{
+					id: "461FD1505B04083F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "233A16F0A4B244C1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "065A2F2EDEB42E84"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Paint your cables"
+			tasks: [
+				{
+					id: "48D050D9E05D8FC3"
+					item: "ae2:color_applicator"
+					type: "item"
+				}
+			]
+			title: "Colour Applicator"
+			x: 16.35d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B011D831E17FB1D"]
+			description: ["A fluid housing with a 4k component."]
+			id: "64292E12BFE3DD21"
+			optional: true
+			rewards: [
+				{
+					id: "2D288AAD8089940B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "383FFC04E3167E4A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "234C9916CE7F3141"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Room for more fluid"
+			tasks: [
+				{
+					id: "408FE9EC9DA4799D"
+					item: "ae2:fluid_storage_cell_4k"
+					type: "item"
+				}
+			]
+			title: "4k Fluid Cell"
+			x: 16.35d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B011D831E17FB1D"]
+			description: ["A gun that shoots Matter Balls or metal nuggets, harder with each. Charge it in a Charger and load it in an ME Chest like a cell."]
+			id: "025F18B314EBD64D"
+			optional: true
+			rewards: [
+				{
+					id: "325C2169474B2232"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "205CCB3D481B1D80"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7327DDC9697FA6A1"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "It fires what you store"
+			tasks: [
+				{
+					id: "64B0C098A8D46AD4"
+					item: "ae2:matter_cannon"
+					type: "item"
+				}
+			]
+			title: "Matter Cannon"
+			x: 16.35d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3AAB08583FB4BF55"]
+			description: ["Holds a 16x16x16 piece of the world: a room, a farm, a whole small base, moved in one pulse."]
+			id: "4981D4BFC7D445C3"
+			optional: true
+			rewards: [
+				{
+					id: "2820A09137B40279"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5005473B07454861"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1B6E1B80B9359E31"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A 16x16x16 region"
+			tasks: [
+				{
+					id: "24CFFCC0E66702B9"
+					item: "ae2:spatial_storage_cell_16"
+					type: "item"
+				}
+			]
+			title: "The Big Spatial Cell"
+			x: 15.55d
+			y: -2.25d
+		}
+		{
+			dependencies: ["0D102BD435B7AC9C"]
+			description: ["Four 16k components: 64k cells, larger portable cells and the next component up."]
+			id: "065782F4863314FD"
+			optional: true
+			rewards: [
+				{
+					id: "1B302D62E7C42E0E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "49CA47CF5226AAAE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "75F42D80DCB37F6F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Serious storage"
+			tasks: [
+				{
+					id: "75F3AD6E94549285"
+					item: "ae2:cell_component_64k"
+					type: "item"
+				}
+			]
+			title: "64k Component"
+			x: 18.1d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0D102BD435B7AC9C"]
+			description: ["A fluid housing with a 16k component."]
+			id: "7A0994B38FAA5D05"
+			optional: true
+			rewards: [
+				{
+					id: "12CB2A77C99F9117"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "49D0F40BFF11F4BE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2C3351F38C20428A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bulk liquids"
+			tasks: [
+				{
+					id: "4F2CE34F6B139AD1"
+					item: "ae2:fluid_storage_cell_16k"
+					type: "item"
+				}
+			]
+			title: "16k Fluid Cell"
+			x: 18.1d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0F718350477F2425"]
+			description: ["A Crafting Terminal with a battery and an antenna. Link it at a Wireless Access Point and you can reach and craft from the whole network anywhere in range."]
+			id: "1505C6D27108C257"
+			optional: true
+			rewards: [
+				{
+					id: "57D08DA546ED5AA1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2FF4168D35D31E50"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3FA731E071F9B0CE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The network in your pocket"
+			tasks: [
+				{
+					id: "013B1FB1D277FD81"
+					item: "ae2:wireless_crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "Wireless Crafting"
+			x: 18.1d
+			y: 22.75d
+		}
+		{
+			dependencies: ["065782F4863314FD"]
+			description: ["Four 64k components and some Sky Stone Dust. The biggest storage component in plain AE2; MEGA Cells starts after it."]
+			id: "327CCAB5966E1105"
+			optional: true
+			rewards: [
+				{
+					id: "5AE981AF4ED7BB7A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "129E6B8FEFC1653D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4703689B63D2500F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The largest AE2 makes"
+			tasks: [
+				{
+					id: "6BAC98D975AC5A4D"
+					item: "ae2:cell_component_256k"
+					type: "item"
+				}
+			]
+			title: "256k Component"
+			x: 19.95d
+			y: 5.0d
+		}
+		{
+			dependencies: ["065782F4863314FD"]
+			description: ["A fluid housing with a 64k component."]
+			id: "402E727D9F48409C"
+			optional: true
+			rewards: [
+				{
+					id: "14A2750275A0B741"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2E58BF4EDE83BB7E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0B6621115021E87D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A lake in a slot"
+			tasks: [
+				{
+					id: "3E0DE5CD67BD8038"
+					item: "ae2:fluid_storage_cell_64k"
+					type: "item"
+				}
+			]
+			title: "64k Fluid Cell"
+			x: 19.95d
+			y: 6.5d
+		}
+		{
+			dependencies: ["327CCAB5966E1105"]
+			description: ["A fluid housing with a 256k component."]
+			id: "010F47278CB9C4A5"
+			optional: true
+			rewards: [
+				{
+					id: "21B6CED5F01865BE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "43FCEE6CD0A395DD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "078ED498863CEFDC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The largest plain fluid cell"
+			tasks: [
+				{
+					id: "1FFCB461F5D9A79D"
+					item: "ae2:fluid_storage_cell_256k"
+					type: "item"
+				}
+			]
+			title: "256k Fluid Cell"
+			x: 21.93d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0865173F40C57D94"]
+			description: ["MEGA's components are built from Accumulation Processors and Vibrant Quartz Glass. Each one is four of the last."]
+			id: "0678DDC2728C6021"
+			optional: true
+			rewards: [
+				{
+					id: "41E97A3BE7D5CDEC"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "09872F259A7D5109"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "11B81A426BE4FD34"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "MEGA, step two"
+			tasks: [
+				{
+					id: "6F439208C3A6CB29"
+					item: "megacells:cell_component_4m"
+					type: "item"
+				}
+			]
+			title: "4M Component"
+			x: 19.95d
+			y: 25.81d
+		}
+		{
+			dependencies: ["0865173F40C57D94"]
+			description: ["A 1M component in a MEGA fluid housing."]
+			id: "063B0DDA16C31A7B"
+			optional: true
+			rewards: [
+				{
+					id: "722CA38411C24A61"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4B01CB2C85E23B45"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7C79206915FBD88D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A MEGA fluid cell"
+			tasks: [
+				{
+					id: "51432A06157EED98"
+					item: "megacells:fluid_storage_cell_1m"
+					type: "item"
+				}
+			]
+			title: "1M Fluid Cell"
+			x: 19.95d
+			y: 24.5d
+		}
+		{
+			dependencies: ["0678DDC2728C6021"]
+			description: ["Four 4M components. Each tier from here on holds four times the last."]
+			id: "3E2DF4DF8C51FD6B"
+			optional: true
+			rewards: [
+				{
+					id: "3F03F0E68FF76E16"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1C381A4D8B7912B1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0B35B0F7CF957ACB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "MEGA, step three"
+			tasks: [
+				{
+					id: "15D2FC46A92D0EB9"
+					item: "megacells:cell_component_16m"
+					type: "item"
+				}
+			]
+			title: "16M Component"
+			x: 21.93d
+			y: 27.12d
+		}
+		{
+			dependencies: ["0678DDC2728C6021"]
+			description: ["A 4M component in a MEGA fluid housing."]
+			id: "7178C18DD3BAFDE9"
+			optional: true
+			rewards: [
+				{
+					id: "09B599024C65790B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1C125EBF5D7AEE45"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5B67A13922751056"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Four million, wet"
+			tasks: [
+				{
+					id: "137F1C1D3746F839"
+					item: "megacells:fluid_storage_cell_4m"
+					type: "item"
+				}
+			]
+			title: "4M Fluid Cell"
+			x: 21.93d
+			y: 24.25d
+		}
+		{
+			dependencies: ["0678DDC2728C6021"]
+			description: ["A 4M component in a MEGA item housing."]
+			id: "20E0494870C0DB61"
+			optional: true
+			rewards: [
+				{
+					id: "48543736D81EE7ED"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0FE5DD62D68D702C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5CDA1F85D4ABB6DF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Four million"
+			tasks: [
+				{
+					id: "280B896D525D26A0"
+					item: "megacells:item_storage_cell_4m"
+					type: "item"
+				}
+			]
+			title: "4M Item Cell"
+			x: 21.93d
+			y: 25.75d
+		}
+		{
+			dependencies: ["3E2DF4DF8C51FD6B"]
+			description: ["From this tier the recipe wants a &eMatter Ball&f, made by AE2's Matter Condenser."]
+			id: "368DA1D6B2E238EE"
+			optional: true
+			rewards: [
+				{
+					id: "4FFC0C04EC98FAED"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "61A46052857A7A79"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2867ED2BC224BD24"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "MEGA, step four"
+			tasks: [
+				{
+					id: "65BED49ED0E9AEC8"
+					item: "megacells:cell_component_64m"
+					type: "item"
+				}
+			]
+			title: "64M Component"
+			x: 24.03d
+			y: 28.5d
+		}
+		{
+			dependencies: ["3E2DF4DF8C51FD6B"]
+			description: ["A 16M component in a MEGA fluid housing."]
+			id: "7081E4258CE72E88"
+			optional: true
+			rewards: [
+				{
+					id: "09A967F42A519EB2"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4C23C1B9F688356B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "48C743BCAEB2592B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sixteen million, wet"
+			tasks: [
+				{
+					id: "59C6F7EBA1235EF7"
+					item: "megacells:fluid_storage_cell_16m"
+					type: "item"
+				}
+			]
+			title: "16M Fluid Cell"
+			x: 24.03d
+			y: 25.5d
+		}
+		{
+			dependencies: ["3E2DF4DF8C51FD6B"]
+			description: ["A 16M component in a MEGA item housing."]
+			id: "1EECA3C368A75C83"
+			optional: true
+			rewards: [
+				{
+					id: "76EE7F5AECDADC53"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "22A972B4521BFA8A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "55300C14A6E979CA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sixteen million"
+			tasks: [
+				{
+					id: "3F96F8A1F6BFB53E"
+					item: "megacells:item_storage_cell_16m"
+					type: "item"
+				}
+			]
+			title: "16M Item Cell"
+			x: 24.03d
+			y: 27.0d
+		}
+		{
+			dependencies: ["368DA1D6B2E238EE"]
+			description: ["Four 64M components. The largest storage component in the pack."]
+			id: "4AD46250011CCAEE"
+			optional: true
+			rewards: [
+				{
+					id: "531E961E22D107C9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "64D60A196E43DD87"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "28B5C15BED451693"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The top of MEGA"
+			tasks: [
+				{
+					id: "654A1B6C8C3F3C97"
+					item: "megacells:cell_component_256m"
+					type: "item"
+				}
+			]
+			title: "256M Component"
+			x: 26.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["368DA1D6B2E238EE"]
+			description: ["A 64M component in a MEGA fluid housing."]
+			id: "106295C2BD93A8B2"
+			optional: true
+			rewards: [
+				{
+					id: "1C26BD75D6BABAC1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "37D33FEA5A8D718D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2F567542945FDCBD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sixty-four million, wet"
+			tasks: [
+				{
+					id: "4D2366AFFE945D6F"
+					item: "megacells:fluid_storage_cell_64m"
+					type: "item"
+				}
+			]
+			title: "64M Fluid Cell"
+			x: 26.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["368DA1D6B2E238EE"]
+			description: ["A 64M component in a MEGA item housing."]
+			id: "3BAA01B51D04ADDF"
+			optional: true
+			rewards: [
+				{
+					id: "471C63721D6B3FAF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3AAEF947C34B07B1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6CEB460DB9A9F514"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sixty-four million"
+			tasks: [
+				{
+					id: "7EE3440CDCDA71E0"
+					item: "megacells:item_storage_cell_64m"
+					type: "item"
+				}
+			]
+			title: "64M Item Cell"
+			x: 26.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["4AD46250011CCAEE"]
+			description: ["The largest fluid cell there is."]
+			id: "0419E78A2D8C6F5C"
+			optional: true
+			rewards: [
+				{
+					id: "1A431BBDDD76F89A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2ABEC3E678D52775"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4DA22E3E8AE79B6E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More fluid than the sea"
+			tasks: [
+				{
+					id: "6B72D06FBFEEB843"
+					item: "megacells:fluid_storage_cell_256m"
+					type: "item"
+				}
+			]
+			title: "256M Fluid Cell"
+			x: 27.75d
+			y: 27.0d
+		}
+	]
+	subtitle: ["Store everything as energy. Craft anything on demand."]
+	title: "&dApplied Energistics 2"
+}

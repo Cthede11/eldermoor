@@ -1,0 +1,59 @@
+{
+	icon: "mekanism:alloy_atomic"
+	id: "4F1FD39555E74CDC"
+	loot_size: 1
+	order_index: 38
+	rewards: [
+		{
+			count: 4
+			item: "mekanism:alloy_reinforced"
+			weight: 3.0f
+		}
+		{
+			count: 3
+			item: "mekanism:advanced_control_circuit"
+			weight: 3.0f
+		}
+		{
+			count: 4
+			item: "ae2:engineering_processor"
+			weight: 3.0f
+		}
+		{
+			count: 24
+			item: "mekanism:ingot_steel"
+			weight: 3.0f
+		}
+		{
+			count: 6
+			item: "minecraft:diamond"
+			weight: 3.0f
+		}
+		{
+			count: 2
+			item: "mekanism:upgrade_speed"
+			weight: 2.0f
+		}
+		{
+			item: "ae2:item_storage_cell_4k"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "coinsje:gold_coin"
+			weight: 2.0f
+		}
+		{
+			count: 2
+			item: "mekanism:alloy_atomic"
+		}
+		{
+			count: 2
+			item: "minecraft:netherite_scrap"
+		}
+		{
+			item: "coinsje:diamond_coin"
+		}
+	]
+	title: "Master Engineer's Cache"
+}

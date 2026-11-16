@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 574383120,
+    "separation": 24,
+    "spacing": 340,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:grave_rotborne",
+      "weight": 1
+    }
+  ]
+}

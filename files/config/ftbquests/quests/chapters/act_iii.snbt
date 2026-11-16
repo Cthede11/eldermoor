@@ -1,0 +1,1973 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act_iii"
+	group: "2082B1037B9195D1"
+	icon: "cataclysm:ignitium_ingot"
+	id: "541C0A7DF5FEA0B2"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["35FE140DAE03BB36"]
+			description: [
+				"Eight lords rule eight ruins. Each has an &eEye&f: craft it and throw it, and it flies towards its master's hall the way an Eye of Ender finds a stronghold."
+				""
+				"They are not equals. The book takes them in three courts:"
+				"&cThe Outer Court&f - the Netherite Monstrosity, the Ender Guardian and the Ancient Remnant."
+				"&4The Inner Court&f - the Harbinger and the Leviathan. Opens after any two of the Outer Court."
+				"&5The Throne&f - Ignis, Maledictus and Scylla. Opens after either of the Inner Court."
+				""
+				"Each lord drops the heart of a set of gear found nowhere else."
+				""
+				"&7Engineers: the MekaSuit is built around Ignis's armour, and the Digital Miner needs a Nether Star."
+			]
+			hide_until_deps_complete: true
+			id: "28E8CB15B320082F"
+			rewards: [
+				{
+					id: "0837CD18AD773D99"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 3
+					id: "19778EB8E9B72782"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7F461F0F3724F070"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "23A7F0A91AEE1CE8"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Eight lords, three courts"
+			tasks: [
+				{
+					id: "78F250BAAB8718A4"
+					title: "I accept"
+					type: "checkmark"
+				}
+			]
+			title: "&4&lTrial of the Immortals"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28E8CB15B320082F"]
+			id: "7E6C4BC97869C72E"
+			rewards: [
+				{
+					id: "45B2D2A92C72811B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "6CBE50A4C3CA74B6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "61A3DD8F4A77E7A8"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft it, then throw it and follow."
+			tasks: [
+				{
+					id: "69DEF9F723802593"
+					item: "cataclysm:monstrous_eye"
+					type: "item"
+				}
+			]
+			title: "The Monstrous Eye"
+			x: 2.1d
+			y: -2.02d
+		}
+		{
+			dependencies: ["7E6C4BC97869C72E"]
+			description: ["In the Nether. It wakes when you bring it a Lava Power Cell."]
+			id: "3902DE14E296ED04"
+			rewards: [
+				{
+					id: "3C9E05AD646291D5"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "68B06A9BA2387610"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0935906864B4647E"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Soul Forge"
+			tasks: [
+				{
+					advancement: "cataclysm:find_soul_black_smith"
+					criterion: ""
+					icon: "minecraft:blackstone"
+					id: "0A3A3AE63458149C"
+					title: "Where the Monstrous be Forged"
+					type: "advancement"
+				}
+			]
+			title: "The Soul Forge"
+			x: 3.85d
+			y: -2.02d
+		}
+		{
+			dependencies: ["7BA7C08604018F4C"]
+			id: "41A3436F564BA27E"
+			rewards: [
+				{
+					id: "4BD7088E1B7F434B"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 5
+					id: "232C8F369245800E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0472DC92932989C4"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "10184F15323B0E3D"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Kill the Netherite Monstrosity"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_monstrosity"
+					criterion: ""
+					icon: "cataclysm:infernal_forge"
+					id: "4D6D128BB44F513F"
+					title: "The Broken Nether's Warmachine"
+					type: "advancement"
+				}
+			]
+			title: "The Broken Nether's Warmachine"
+			x: 7.8d
+			y: -2.02d
+		}
+		{
+			dependencies: ["28E8CB15B320082F"]
+			id: "3D9F02CED679B7D7"
+			rewards: [
+				{
+					id: "694D08CAD4B73E29"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "3340E6D9593D82D6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3E6B2ECE126317D3"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft it, then throw it and follow."
+			tasks: [
+				{
+					id: "40D347BC210B78AE"
+					item: "cataclysm:void_eye"
+					type: "item"
+				}
+			]
+			title: "The Void Eye"
+			x: 2.1d
+			y: -0.11d
+		}
+		{
+			dependencies: ["3D9F02CED679B7D7"]
+			description: ["On the outer End islands. An Ender Golem guards the way in."]
+			id: "3B14F3BB72CC246F"
+			rewards: [
+				{
+					id: "572DE4A3F9D7AE28"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "7D4B13ABE11BD203"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0C4BCED29D2274A5"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Ruined Citadel"
+			tasks: [
+				{
+					advancement: "cataclysm:find_ruined_citadel"
+					criterion: ""
+					icon: "cataclysm:chiseled_end_stone_bricks"
+					id: "1389B25ACF78AC01"
+					title: "Another Stronghold?!"
+					type: "advancement"
+				}
+			]
+			title: "The Ruined Citadel"
+			x: 3.85d
+			y: -0.11d
+		}
+		{
+			dependencies: ["3B14F3BB72CC246F"]
+			id: "152C9E886041A0EE"
+			rewards: [
+				{
+					id: "02AD25F178C9A9B3"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 5
+					id: "080912915B5FAD18"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0701251B3D6416DE"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7F2CE8EFEEBC44D0"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Ender Guardian"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_ender_guardian"
+					criterion: ""
+					icon: "cataclysm:gauntlet_of_guard"
+					id: "1FC03DEF2311EF2B"
+					title: "Wasn't that a Shulker?"
+					type: "advancement"
+				}
+			]
+			title: "Wasn't that a Shulker?"
+			x: 5.7d
+			y: -0.11d
+		}
+		{
+			dependencies: ["28E8CB15B320082F"]
+			id: "739E852A4A604E52"
+			rewards: [
+				{
+					id: "380FA96D8003D2A9"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "5802257B0E1D2506"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3BA4113BB117C31C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft it, then throw it and follow."
+			tasks: [
+				{
+					id: "11BDE7FC29549982"
+					item: "cataclysm:desert_eye"
+					type: "item"
+				}
+			]
+			title: "The Desert Eye"
+			x: 2.1d
+			y: 5.52d
+		}
+		{
+			dependencies: ["739E852A4A604E52"]
+			description: ["In a desert. Brush the suspicious sand in the last chamber."]
+			id: "0FAFFD42A011066F"
+			rewards: [
+				{
+					id: "7A10CB51E10DE2E5"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "765C441BCFA54049"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7829F60436475236"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Cursed Pyramid"
+			tasks: [
+				{
+					advancement: "cataclysm:find_cursed_pyramid"
+					criterion: ""
+					icon: "cataclysm:sandstone_poison_dart_trap"
+					id: "5CDE027CC9AA9FE4"
+					title: "Desert Pyramid Revamped"
+					type: "advancement"
+				}
+			]
+			title: "The Cursed Pyramid"
+			x: 3.85d
+			y: 5.52d
+		}
+		{
+			dependencies: ["4FE44E9474004A4A"]
+			description: ["Excavate from the suspicious sand within the cursed pyramid to wake up and knock down the Ancient Remnant"]
+			id: "51518968171EA2E3"
+			rewards: [
+				{
+					id: "40C857757E4865B4"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 5
+					id: "1915F9257D465823"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5111F9799974353D"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7579A736A14C07E4"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "cataclysm:kill_remnant"
+					criterion: ""
+					icon: "cataclysm:remnant_skull"
+					id: "5A8D29B33A9B2CB6"
+					title: "Death Finds a Way"
+					type: "advancement"
+				}
+			]
+			title: "Death Finds a Way"
+			x: 7.8d
+			y: 3.14d
+		}
+		{
+			dependencies: ["51C4BBFCAE22B9FB"]
+			id: "6C482BBF3FF1749C"
+			rewards: [
+				{
+					id: "5A760F208214115A"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2983EEAB9F449DDF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "473F0AEF98CAEEB6"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft it, then throw it and follow."
+			tasks: [
+				{
+					id: "5FAF5A52E20998AE"
+					item: "cataclysm:mech_eye"
+					type: "item"
+				}
+			]
+			title: "The Mech Eye"
+			x: 12.0d
+			y: -4.67d
+		}
+		{
+			dependencies: ["6C482BBF3FF1749C"]
+			description: ["Deep under the overworld. Bring a Nether Star to wake it."]
+			id: "4A02918749F5226F"
+			rewards: [
+				{
+					id: "2B0A283E382FC3C6"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2028B2ECBC56D970"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4BFB00709DDEDE28"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Ancient Factory"
+			tasks: [
+				{
+					advancement: "cataclysm:find_ancient_factory"
+					criterion: ""
+					icon: "cataclysm:emp"
+					id: "27E9C38392F60D5F"
+					title: "Out-of-Place"
+					type: "advancement"
+				}
+			]
+			title: "The Ancient Factory"
+			x: 14.1d
+			y: -4.67d
+		}
+		{
+			dependencies: ["6C4C8F43352EEFEE"]
+			id: "46981868BDD670DA"
+			rewards: [
+				{
+					id: "11832961EBFA2CD8"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 6
+					id: "52D7E536D7A89346"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E54FC15E7F469ED"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4D125AC9B1F72F80"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0EE4B18CFB131EA1"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Wake and Defeat the Harbinger"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_harbinger"
+					criterion: ""
+					icon: "cataclysm:witherite_ingot"
+					id: "533F164CD1819F7C"
+					title: "The Thing of Ancient Civilization"
+					type: "advancement"
+				}
+			]
+			title: "The Thing of Ancient Civilization"
+			x: 17.7d
+			y: -5.98d
+		}
+		{
+			dependencies: ["51C4BBFCAE22B9FB"]
+			id: "298E93FDFFB13F0A"
+			rewards: [
+				{
+					id: "47556B0181B3DABB"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "72615F1A5C73F9A4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "006505ABCA1B3C21"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft it, then throw it and follow."
+			tasks: [
+				{
+					id: "2C5B02CB27CE235E"
+					item: "cataclysm:abyss_eye"
+					type: "item"
+				}
+			]
+			title: "The Abyss Eye"
+			x: 12.0d
+			y: -1.61d
+		}
+		{
+			dependencies: ["298E93FDFFB13F0A"]
+			description: ["At the bottom of a deep ocean. Offer an Abyssal Sacrifice at the altar."]
+			id: "07EF1A774427D4C9"
+			rewards: [
+				{
+					id: "6EFCBEDEDB0CCE7A"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "0C630FCECAD48A62"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5B1CD7B626456212"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Sunken City"
+			tasks: [
+				{
+					advancement: "cataclysm:find_sunken_city"
+					criterion: ""
+					icon: "cataclysm:stone_tiles"
+					id: "4FB9B67CA520E591"
+					title: "Sunken in the Sea"
+					type: "advancement"
+				}
+			]
+			title: "The Sunken City"
+			x: 14.1d
+			y: -1.61d
+		}
+		{
+			dependencies: ["171C7B64B60B80E8"]
+			id: "35AF1270DE350B8A"
+			rewards: [
+				{
+					id: "41139954B9E269D0"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 6
+					id: "31DEA2B99BDEDC34"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "341F6FDE7BE174A3"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16660D654509ECC2"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5849788B1A8DEA91"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Summon and Defeat the Leviathan"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_leviathan"
+					criterion: ""
+					icon: "cataclysm:tidal_claws"
+					id: "7C26B569D8486B04"
+					title: "A Multidimensional Predator"
+					type: "advancement"
+				}
+			]
+			title: "A Multidimensional Predator"
+			x: 17.7d
+			y: -1.61d
+		}
+		{
+			dependencies: ["5CD6A4725C6A825A"]
+			id: "51FBB27490F88B2F"
+			rewards: [
+				{
+					id: "6CC9E47F3ECE770E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "6DDAF438D42D6A16"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7F0282E8B4E9FCEC"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft it, then throw it and follow."
+			tasks: [
+				{
+					id: "1D28CC1D62887A1C"
+					item: "cataclysm:flame_eye"
+					type: "item"
+				}
+			]
+			title: "The Flame Eye"
+			x: 21.43d
+			y: -8.36d
+		}
+		{
+			dependencies: ["51FBB27490F88B2F"]
+			description: ["In the Nether. Feed Burning Ashes to the Altar of Fire. Revenants drop them."]
+			id: "20C1701730916FFC"
+			rewards: [
+				{
+					id: "5AF85B8DCB8AF571"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2AB5D45DECB5DEC9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "290B615554C3F9D0"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Burning Arena"
+			tasks: [
+				{
+					advancement: "cataclysm:find_burning_arena"
+					criterion: ""
+					icon: "cataclysm:altar_of_fire"
+					id: "411A4DEC85764AB6"
+					title: "A Massive Arena"
+					type: "advancement"
+				}
+			]
+			title: "The Burning Arena"
+			x: 23.18d
+			y: -8.36d
+		}
+		{
+			dependencies: ["54A7F58065D55BB3"]
+			id: "59FB6F4A0ADA8F9E"
+			rewards: [
+				{
+					id: "499E189737E34C8A"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "6317B229912BA685"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "29540CBA98DE14CF"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E7DCE374F03E03E"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4743DF6EC1E1CC67"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Summon and Defeat the Ignis"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_ignis"
+					criterion: ""
+					icon: "cataclysm:bulwark_of_the_flame"
+					id: "02E9A35B7FC95FA8"
+					title: "The Extinguished Fire"
+					type: "advancement"
+				}
+			]
+			title: "The Extinguished Fire"
+			x: 26.78d
+			y: -8.36d
+		}
+		{
+			dependencies: ["5CD6A4725C6A825A"]
+			id: "1C541100BBBF3B50"
+			rewards: [
+				{
+					id: "43C21C3DD86C32C6"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "5F658CF8AB7D9909"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "19ABD618E5DA6C42"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft it, then throw it and follow."
+			tasks: [
+				{
+					id: "4FA4A469C1D0FC30"
+					item: "cataclysm:cursed_eye"
+					type: "item"
+				}
+			]
+			title: "The Cursed Eye"
+			x: 21.43d
+			y: -5.36d
+		}
+		{
+			dependencies: ["1C541100BBBF3B50"]
+			description: ["In the coldest lands. Draugr hold the keys."]
+			id: "35D50E7EF7142296"
+			rewards: [
+				{
+					id: "04E84CB54863CBD3"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "06DFF957333B1FC5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "291DCC9A26B5A1C1"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Frosted Prison"
+			tasks: [
+				{
+					advancement: "cataclysm:find_frosted_prison"
+					criterion: ""
+					icon: "cataclysm:door_of_seal"
+					id: "3D65BE7B1151540D"
+					title: "Jail of Cold"
+					type: "advancement"
+				}
+			]
+			title: "The Frosted Prison"
+			x: 23.18d
+			y: -5.36d
+		}
+		{
+			dependencies: ["0C79288206F81EE6"]
+			id: "6E542258B61DA27E"
+			rewards: [
+				{
+					id: "1A638B8C15E76D77"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "54B26A54B1884162"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6D8881988491BA9A"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7025887E879DD64B"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6D5D31104444FB33"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Summon and Defeat Maledictus"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_maledictus"
+					criterion: ""
+					icon: "cataclysm:cursed_tombstone"
+					id: "0187F31F7E63BF47"
+					title: "Crusade Against Curse"
+					type: "advancement"
+				}
+			]
+			title: "Crusade Against Curse"
+			x: 26.78d
+			y: -5.36d
+		}
+		{
+			dependencies: ["5CD6A4725C6A825A"]
+			id: "551D66A186E6A80B"
+			rewards: [
+				{
+					id: "1181BA9AC4AE3E30"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "215893AF8707CF44"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "148BF3AB92971B38"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft it, then throw it and follow."
+			tasks: [
+				{
+					id: "537DA514DC52F126"
+					item: "cataclysm:storm_eye"
+					type: "item"
+				}
+			]
+			title: "The Storm Eye"
+			x: 21.43d
+			y: -3.36d
+		}
+		{
+			dependencies: ["551D66A186E6A80B"]
+			description: ["A temple of blue seastone floating high above a warm ocean. Clawdian guards the way up."]
+			id: "72D7D0063ADFAC88"
+			rewards: [
+				{
+					id: "1D73F3FFED7B8F94"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "6995392CC1C3CAD3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2F6F40E7F227A4CC"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Acropolis"
+			tasks: [
+				{
+					advancement: "cataclysm:find_acropolis"
+					criterion: ""
+					icon: "cataclysm:lacrima"
+					id: "48A27F501D69350C"
+					title: "Why in the Sky?"
+					type: "advancement"
+				}
+			]
+			title: "The Acropolis"
+			x: 23.18d
+			y: -3.36d
+		}
+		{
+			dependencies: ["72D7D0063ADFAC88"]
+			description: ["A giant armoured shrimp holds the Acropolis. It drops the Chitin Claw."]
+			id: "2B4C09DBC8A78463"
+			rewards: [
+				{
+					id: "67F11771A06DA808"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 3
+					id: "4745E007FD76618D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "17686A73DB6F9078"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "043B8E13310F75DF"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Kill an Clawdian"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_clawdian"
+					criterion: ""
+					icon: "cataclysm:chitin_claw"
+					id: "122142CE041F3787"
+					title: "Not so Shrimple Now"
+					type: "advancement"
+				}
+			]
+			title: "Not so Shrimple Now"
+			x: 24.93d
+			y: -3.36d
+		}
+		{
+			dependencies: ["2B4C09DBC8A78463"]
+			id: "77CB08947CF0B221"
+			rewards: [
+				{
+					id: "68D000D685CE23C4"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "0C360C936FB87E20"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "737D76F53CAADF26"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "372CAC4D729309CD"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7CEF85E671C2DA76"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Storm Empress, Scylla"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_scylla"
+					criterion: ""
+					icon: "cataclysm:essence_of_the_storm"
+					id: "0AA9CE69928F1454"
+					title: "The Calm after the Storm"
+					type: "advancement"
+				}
+			]
+			title: "The Calm after the Storm"
+			x: 26.78d
+			y: -3.36d
+		}
+		{
+			dependencies: [
+				"41A3436F564BA27E"
+				"152C9E886041A0EE"
+				"51518968171EA2E3"
+			]
+			description: [
+				"Any &atwo&f of the Netherite Monstrosity, the Ender Guardian and the Ancient Remnant."
+				""
+				"The Harbinger and the Leviathan are waiting."
+			]
+			id: "51C4BBFCAE22B9FB"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "1C3A136B3E43A59A"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "762E58439577B334"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2348252D78AB2016"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Opens the Inner Court"
+			tasks: [
+				{
+					id: "5E86804C793C15BC"
+					title: "Onwards"
+					type: "checkmark"
+				}
+			]
+			title: "&cThe Outer Court Falls"
+			x: 9.78d
+			y: -2.02d
+		}
+		{
+			dependencies: [
+				"46981868BDD670DA"
+				"35AF1270DE350B8A"
+			]
+			description: [
+				"The Harbinger or the Leviathan."
+				""
+				"Three lords sit on the Throne: Ignis, Maledictus and Scylla, the Storm Empress."
+			]
+			id: "5CD6A4725C6A825A"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					id: "02F55CE8CAB2A8EA"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "5E91078518BA2ECC"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1DA2D043BFC8E6B8"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Opens the Throne"
+			tasks: [
+				{
+					id: "1D54F9429D2BAD60"
+					title: "Onwards"
+					type: "checkmark"
+				}
+			]
+			title: "&4The Inner Court Falls"
+			x: 19.68d
+			y: -5.98d
+		}
+		{
+			dependencies: ["3B14F3BB72CC246F"]
+			id: "09A369FB6607FE81"
+			optional: true
+			rewards: [
+				{
+					id: "7B2A1C55C4F79FF8"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "5251B9D07FDBAB9C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "14DA7E6D66081776"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Kill an Ender Golem"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_ender_golem"
+					criterion: ""
+					icon: "cataclysm:void_core"
+					id: "2E63A258FFB822A6"
+					title: "Palette Swap"
+					type: "advancement"
+				}
+			]
+			title: "The Doorman"
+			x: 5.7d
+			y: 1.64d
+		}
+		{
+			dependencies: ["20C1701730916FFC"]
+			description: ["Ignited Revenants stand guard in the Burning Arena. Their ashes are what summon Ignis."]
+			id: "5CF21638189E251C"
+			optional: true
+			rewards: [
+				{
+					id: "0BAFBBD9981AA44E"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "50D7C8CA12558850"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6A8A2A35D215DAE2"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "cataclysm:kill_revenant"
+					criterion: ""
+					icon: "cataclysm:burning_ashes"
+					id: "6ED5A0C49134D994"
+					title: "Imperfect thing"
+					type: "advancement"
+				}
+				{
+					id: "5D544C9922A45067"
+					item: "cataclysm:burning_ashes"
+					type: "item"
+				}
+			]
+			title: "Ashes"
+			x: 24.93d
+			y: -9.86d
+		}
+		{
+			dependencies: ["4A02918749F5226F"]
+			description: ["End machines that still follow their orders. They patrol the Ancient Factory."]
+			id: "36DB9B99AA6C9639"
+			optional: true
+			rewards: [
+				{
+					id: "7BF1D86BD5575BF7"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "5D68B6DBE9909756"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B30B9EBE9EC78BD"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "50A291A67CD44DD1"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					entity: "cataclysm:the_watcher"
+					id: "104FC1F2181B18BB"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "The Watchers"
+			x: 15.85d
+			y: -4.61d
+		}
+		{
+			dependencies: ["4A02918749F5226F"]
+			description: ["It patrols the Ancient Factory, and it hits harder than the Harbinger."]
+			id: "372745B1581E7DE0"
+			optional: true
+			rewards: [
+				{
+					id: "2E267E8B37984BC2"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "073BD403427CCDB3"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "39B9155DEC35681B"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "46A163FCD20E74C7"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					entity: "cataclysm:the_prowler"
+					id: "154CA04C21F7EC68"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Prowler"
+			x: 15.85d
+			y: -3.11d
+		}
+		{
+			dependencies: ["0FAFFD42A011066F"]
+			id: "308FA19339221BFD"
+			optional: true
+			rewards: [
+				{
+					id: "5C3B65D954DC625E"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "37B69939705B6A03"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A2F5099D944B219"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2DFBE5BC4CFDBDC6"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The desert dead of the Cursed Pyramid."
+			tasks: [
+				{
+					entity: "cataclysm:koboleton"
+					id: "1ED28FA5A3D6E750"
+					type: "kill"
+					value: 15L
+				}
+			]
+			title: "Koboletons"
+			x: 5.7d
+			y: 4.64d
+		}
+		{
+			dependencies: ["0FAFFD42A011066F"]
+			id: "4B6E054F479B52EF"
+			optional: true
+			rewards: [
+				{
+					id: "74F3A4A67BA63A12"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "75E609A5EE6FA84C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5225C0069EE759EE"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "34F38ABE67A67440"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Champion of the Cursed Pyramid's arena."
+			tasks: [
+				{
+					entity: "cataclysm:kobolediator"
+					id: "7C7ABEE3EF9C8BF3"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Kobolediator"
+			x: 5.7d
+			y: 6.14d
+		}
+		{
+			dependencies: ["0FAFFD42A011066F"]
+			id: "75C5488AA79F278E"
+			optional: true
+			rewards: [
+				{
+					id: "610E34A877542253"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "24929EE963F1C4D8"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F3EEE36F8A30EE0"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2BB1BFE121F4F51D"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The pyramid's other guardian."
+			tasks: [
+				{
+					entity: "cataclysm:wadjet"
+					id: "7B19309E5DC9558A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Wadjet"
+			x: 5.7d
+			y: 7.64d
+		}
+		{
+			dependencies: ["35D50E7EF7142296"]
+			id: "64574AD3A2608F24"
+			optional: true
+			rewards: [
+				{
+					id: "055EE5469F0A10AF"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "6FA06C8812C37BA9"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4793EDDDCE14009D"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "710B2745D72966AE"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The great draugr who keeps the Frosted Prison."
+			tasks: [
+				{
+					entity: "cataclysm:aptrgangr"
+					id: "2775A56B5058AEE0"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Aptrgangr"
+			x: 24.93d
+			y: -6.86d
+		}
+		{
+			dependencies: [
+				"41A3436F564BA27E"
+				"152C9E886041A0EE"
+				"51518968171EA2E3"
+				"46981868BDD670DA"
+				"35AF1270DE350B8A"
+				"59FB6F4A0ADA8F9E"
+				"6E542258B61DA27E"
+				"77CB08947CF0B221"
+			]
+			description: [
+				"Any &asix&f of the eight lords."
+				""
+				"One thing is left, and it has been watching the whole time. The &dEpilogue&f has been added to your book."
+			]
+			hide_dependency_lines: true
+			id: "44D1B6D776155BA9"
+			min_required_dependencies: 6
+			rewards: [
+				{
+					id: "4FC9ABB04CBD5D19"
+					type: "xp"
+					xp: 6000
+				}
+				{
+					count: 3
+					id: "15F1318904B15137"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "427A5BDDB949EE02"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B1CAE99EC8A0B6E"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "25845A8FF5137018"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "55584BCC2F8F468B"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Any six lords - opens the Epilogue"
+			tasks: [
+				{
+					id: "38C4625B73AC1F76"
+					title: "It is done"
+					type: "checkmark"
+				}
+			]
+			title: "&4&lImmortal No Longer"
+			x: 12.0d
+			y: 0.39d
+		}
+		{
+			dependencies: [
+				"41A3436F564BA27E"
+				"152C9E886041A0EE"
+				"51518968171EA2E3"
+				"46981868BDD670DA"
+				"35AF1270DE350B8A"
+				"59FB6F4A0ADA8F9E"
+				"6E542258B61DA27E"
+				"77CB08947CF0B221"
+			]
+			description: [
+				"All eight."
+				""
+				"You have reached the summit of Cataclysm!"
+			]
+			hide_dependency_lines: true
+			id: "3C41DF2A5533FAD5"
+			optional: true
+			rewards: [
+				{
+					id: "7AF0844C81811FEF"
+					type: "xp"
+					xp: 8000
+				}
+				{
+					id: "4D99A59EB8A65D3A"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05A29968CB398F34"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "522EF40F70862A3A"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "64613D1C5DF540C3"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			subtitle: "All eight lords"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_all_bosses"
+					criterion: ""
+					icon: "cataclysm:music_disc_the_cataclysmfarer"
+					id: "39528E4A17144847"
+					title: "The Cataclysmfarer"
+					type: "advancement"
+				}
+			]
+			title: "&6&lLord of Lords"
+			x: 12.0d
+			y: 2.52d
+		}
+		{
+			dependencies: ["3902DE14E296ED04"]
+			description: ["The Monstrosity sleeps until it is fed one. Press &eR&f on the cell for how to come by it."]
+			id: "7BA7C08604018F4C"
+			rewards: [
+				{
+					id: "27D84BF00D09D669"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "237A2FCC083AB39C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "54994A59B5A2F937"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "20CF4A59C97412B5"
+					item: "cataclysm:lava_power_cell"
+					type: "item"
+				}
+			]
+			title: "A Lava Power Cell"
+			x: 5.7d
+			y: -2.02d
+		}
+		{
+			dependencies: ["0FAFFD42A011066F"]
+			description: ["Brushed out of the suspicious sand in the pyramid's last chamber. The bones answer to it."]
+			id: "4FE44E9474004A4A"
+			rewards: [
+				{
+					id: "7C31D0452DE80A10"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "55EF7160EBB4CA31"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "07D0BD15C6796293"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7A32ABF2153CF6DA"
+					item: "cataclysm:necklace_of_the_desert"
+					type: "item"
+				}
+			]
+			title: "The Necklace of the Desert"
+			x: 5.7d
+			y: 3.14d
+		}
+		{
+			dependencies: ["4A02918749F5226F"]
+			description: ["The Harbinger is Wither-made, and wakes for a Nether Star. That is one more Wither."]
+			id: "6C4C8F43352EEFEE"
+			rewards: [
+				{
+					id: "570ED508F8F96079"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "4A82EEF6B8C23C26"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3EAEB18EA4D12E87"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "33C872E712AA06CF"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "A Star for the Machine"
+			x: 15.85d
+			y: -5.98d
+		}
+		{
+			dependencies: ["07EF1A774427D4C9"]
+			description: ["Laid on the altar in the Sunken City, it calls the Leviathan up. Press &eR&f on it for the recipe."]
+			id: "171C7B64B60B80E8"
+			rewards: [
+				{
+					id: "649D7402E8C21B4E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "69812739AA472EB0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0B945279A2A4D22D"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6FF91B2F8CF87514"
+					item: "cataclysm:abyssal_sacrifice"
+					type: "item"
+				}
+			]
+			title: "An Abyssal Sacrifice"
+			x: 15.85d
+			y: -1.61d
+		}
+		{
+			dependencies: ["20C1701730916FFC"]
+			description: ["Ignited Revenants guard the arena and leave these behind. The Altar of Fire takes one."]
+			id: "54A7F58065D55BB3"
+			rewards: [
+				{
+					id: "207D7A4AF1CB7E7A"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2EA592069DA79ABD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4ABE9EFBFF331953"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "61CA8631CB51E1F8"
+					item: "cataclysm:burning_ashes"
+					type: "item"
+				}
+			]
+			title: "Burning Ashes"
+			x: 24.93d
+			y: -8.36d
+		}
+		{
+			dependencies: ["35D50E7EF7142296"]
+			description: ["The prison's doors do not open to force. Its wardens carry the key."]
+			id: "0C79288206F81EE6"
+			rewards: [
+				{
+					id: "63284D36E95FECB8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "4E7E57DC84994E11"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "364D331EB1692D1A"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5A592D0AE7D519BD"
+					item: "cataclysm:strange_key"
+					type: "item"
+				}
+			]
+			title: "A Strange Key"
+			x: 24.93d
+			y: -5.36d
+		}
+	]
+	subtitle: ["Eight lords, in three courts. An Eye to find each."]
+	title: "&4Act III - &7&oTrial of the Immortals"
+}

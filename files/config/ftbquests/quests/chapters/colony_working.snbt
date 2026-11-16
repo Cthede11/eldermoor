@@ -1,0 +1,1877 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "colony_working"
+	group: "0A20FFE9BBE69D51"
+	icon: "minecolonies:blockhutsawmill"
+	id: "0DFFAB81508253B9"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0DAD8B729E18A40B"]
+			description: [
+				"A colony really shines once citizens craft things for you. Crafter huts are taught recipes: open the hut -> &eRecipes&f -> &eTeach Recipe&f and lay it out like a crafting grid."
+				""
+				"With a Warehouse and Couriers, crafters request ingredients and deliver results automatically. Builders then request doors, planks, bricks and glass straight from them."
+			]
+			hide_until_deps_complete: true
+			id: "243BFEECB44BBAA2"
+			rewards: [
+				{
+					id: "25AD084FEAC3D3EC"
+					type: "xp"
+					xp: 50
+				}
+				{
+					command: "/mastery xp @s leadership 250"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "29B1E99AB2E4EF60"
+					silent: true
+					title: "+250 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "126BA4CD63E232E1"
+					title: "Let's get to work"
+					type: "checkmark"
+				}
+			]
+			title: "&6Putting People to Work"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["Crafts anything that is mostly wood: planks, doors, fences, trapdoors and Domum Ornamentum timber frames."]
+			id: "666A024B6A3E72A8"
+			rewards: [
+				{
+					id: "1D654DDC4D99E977"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 32
+					id: "0F6B14376D76D491"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0DF95A8C58B0543C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "1BC7D4279222C695"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Wooden goods"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_sawmill"
+					criterion: ""
+					icon: "minecolonies:blockhutsawmill"
+					id: "344D467B3C2C115A"
+					title: "Sawmill completed"
+					type: "advancement"
+				}
+			]
+			title: "The Sawmill"
+			x: 3.85d
+			y: 1.5d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["Crafts anything that is mostly stone: bricks, stairs, slabs, walls."]
+			id: "6DA0021E4715052E"
+			rewards: [
+				{
+					id: "416D7F6858EFCC31"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 64
+					id: "4D892688B474323A"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "49157829AD42FD87"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "5CF059C0A668EC31"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stone goods"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_stonemason"
+					criterion: ""
+					icon: "minecolonies:blockhutstonemason"
+					id: "1D7E7C797210F160"
+					title: "Stonemason completed"
+					type: "advancement"
+				}
+			]
+			title: "The Stonemason"
+			x: 3.85d
+			y: -13.5d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["Crafts tools, weapons and armour for your workers and guards. Tool tier is limited by hut level."]
+			id: "2D4747AF0711130D"
+			rewards: [
+				{
+					id: "0594A0EE3AF6E09F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "16D69819FA0C0DB4"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1B7810B0E8AE3340"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "78F1BF61AF1554CF"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Tools and armour"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_blacksmith"
+					criterion: ""
+					icon: "minecolonies:blockhutblacksmith"
+					id: "5199DCE649727FCD"
+					title: "Blacksmith completed"
+					type: "advancement"
+				}
+			]
+			title: "The Blacksmith"
+			x: 3.85d
+			y: -7.5d
+		}
+		{
+			dependencies: ["666A024B6A3E72A8"]
+			description: ["Teach your Sawmill how to craft a door. Builders ask for doors constantly."]
+			id: "4FBB320213B41593"
+			optional: true
+			rewards: [
+				{
+					id: "693B14CF0490E560"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "345C76EDC2BAAF5C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "17D460453321ABC9"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/building_add_recipe_door"
+					criterion: ""
+					icon: "minecraft:oak_door"
+					id: "743BCFEA9A4A50FB"
+					title: "Teach a crafter the door recipe"
+					type: "advancement"
+				}
+			]
+			title: "Teacher's Pet"
+			x: 5.85d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2D4747AF0711130D"]
+			description: ["Smelts ores into ingots - with a chance for bonus ingots at higher levels."]
+			id: "5F343BDC35952B44"
+			rewards: [
+				{
+					id: "2E519869A511A24D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 32
+					id: "7A7567F6EA68D9A1"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "50555C76C1A5E9D6"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "095C913ABCB2580D"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ore to ingots"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_smeltery"
+					criterion: ""
+					icon: "minecolonies:blockhutsmeltery"
+					id: "2253AB4A6558D236"
+					title: "Smeltery completed"
+					type: "advancement"
+				}
+			]
+			title: "The Smeltery"
+			x: 5.85d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5F343BDC35952B44"]
+			id: "53CE301834686C02"
+			optional: true
+			rewards: [
+				{
+					id: "347A2A611089C2FE"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 32
+					id: "359FAEE50E18B449"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "588E22007D6B8DDD"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "60DD2611DEEC6812"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade the Smeltery to level 3."
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_smeltery_3"
+					criterion: ""
+					icon: "minecolonies:blockhutsmeltery"
+					id: "42FEEF7A7715F4CD"
+					title: "Smeltery level 3"
+					type: "advancement"
+				}
+			]
+			title: "Hot Stuff"
+			x: 7.6d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6DA0021E4715052E"]
+			description: ["Smelts stone, bricks, terracotta and other non-metal furnace recipes."]
+			id: "1ACC8DD5A9CEEE64"
+			rewards: [
+				{
+					id: "16859ACBACE0477D"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "658C5498839166B7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "7F8148C6242B9E12"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bricks and smooth stone"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_stone_smeltery"
+					criterion: ""
+					icon: "minecolonies:blockhutstonesmeltery"
+					id: "35A68E4924B39A0D"
+					title: "Stone Smeltery completed"
+					type: "advancement"
+				}
+			]
+			title: "The Stone Smeltery"
+			x: 5.85d
+			y: -13.5d
+		}
+		{
+			dependencies: ["6DA0021E4715052E"]
+			description: ["Crushes cobblestone -> gravel -> sand -> clay."]
+			id: "7D67BC98EA879DDF"
+			rewards: [
+				{
+					id: "298BE8D0A0579FD4"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 32
+					id: "23BE916FCEE65F7F"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "03CCB79E11355F16"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "6317209AEFA52B3C"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Cobble to gravel to sand"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_crusher"
+					criterion: ""
+					icon: "minecolonies:blockhutcrusher"
+					id: "3E29A19BADCF3FF6"
+					title: "Crusher completed"
+					type: "advancement"
+				}
+			]
+			title: "The Crusher"
+			x: 5.85d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7D67BC98EA879DDF"]
+			description: ["Sifts dirt, sand, gravel and soul sand through a mesh for seeds, ores and oddities. Better meshes give better loot."]
+			id: "7E43E607D706F1BE"
+			rewards: [
+				{
+					id: "3745F013B33E0C0B"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "67A1543D1AEACC47"
+					item: "minecolonies:sifter_mesh_iron"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "26382D3F86567410"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "41750E3E06188F56"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hidden treasures"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_sifter"
+					criterion: ""
+					icon: "minecolonies:blockhutsifter"
+					id: "1F2C89D077373CA4"
+					title: "Sifter completed"
+					type: "advancement"
+				}
+			]
+			title: "The Sifter"
+			x: 7.6d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1ACC8DD5A9CEEE64"]
+			id: "39424A615C0D07C3"
+			optional: true
+			rewards: [
+				{
+					id: "7CE20CEA97175DE3"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 32
+					id: "42F41ACE8F715E5C"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "08F0DADD3CFEB699"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Smelts and crafts glass, panes and bottles."
+			tasks: [
+				{
+					id: "62F1EB5D5D637417"
+					item: "minecolonies:blockhutglassblower"
+					type: "item"
+				}
+			]
+			title: "The Glassblower"
+			x: 7.6d
+			y: -13.5d
+		}
+		{
+			dependencies: ["1ACC8DD5A9CEEE64"]
+			description: ["&7Made from: &fRed Dye, Build Tool, any planks x7"]
+			id: "2662C79636162664"
+			optional: true
+			rewards: [
+				{
+					id: "249BD5E44E05625C"
+					type: "xp"
+					xp: 60
+				}
+				{
+					exclude_from_claim_all: true
+					id: "59C4970CC73CA47C"
+					table_id: 7679661309800464934L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "477E1FF3239D6449"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Crafts dyes and dyed blocks."
+			tasks: [
+				{
+					id: "61BD4E5902D66CB5"
+					item: "minecolonies:blockhutdyer"
+					type: "item"
+				}
+			]
+			title: "The Dyer"
+			x: 7.6d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7D67BC98EA879DDF"]
+			description: ["Turns concrete powder into concrete. Needs flowing water inside the building."]
+			id: "3C909563C137ACA1"
+			optional: true
+			rewards: [
+				{
+					id: "7413043C5016C62E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 32
+					id: "0074BEF585214AFD"
+					item: "minecraft:white_concrete_powder"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "7ECCBD8DE452BD39"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "45090CF4284DB977"
+					item: "minecolonies:blockhutconcretemixer"
+					type: "item"
+				}
+			]
+			title: "The Concrete Mixer"
+			x: 7.6d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2D4747AF0711130D"]
+			description: ["Crafts bows, arrows, leather armour and anything stringy - the Archer guards' best friend."]
+			id: "48A454154BCE3FCF"
+			optional: true
+			rewards: [
+				{
+					id: "0FDFBE50AF466598"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 32
+					id: "1162DA8E4BEA3B5F"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "58A99B53510C0B9A"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5C7FBD03D2061C8D"
+					item: "minecolonies:blockhutfletcher"
+					type: "item"
+				}
+			]
+			title: "The Fletcher"
+			x: 5.85d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5F343BDC35952B44"
+				"7E43E607D706F1BE"
+			]
+			description: [
+				"Crafts redstone components, rails, lanterns and many modded machine parts."
+				""
+				"Thanks to the &eCompatibility&f addon your colonists can work with Create, Farmer's Delight, Storage Drawers and more."
+			]
+			id: "0F023B2AA4A1B3F1"
+			rewards: [
+				{
+					id: "0380C305F8356F53"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 32
+					id: "5999EFE53B346200"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "082EE4E6C481F4B0"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "1AA22FC9D0907088"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Redstone and machinery"
+			tasks: [
+				{
+					id: "4E7C50FAE5C31DE7"
+					item: "minecolonies:blockhutmechanic"
+					type: "item"
+				}
+			]
+			title: "The Mechanic"
+			x: 9.35d
+			y: -9.0d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["Bakes bread, cakes, cookies and pies from the Warehouse's wheat."]
+			id: "73F6821C050A7D3F"
+			rewards: [
+				{
+					id: "3BAE2A0C8F0AE927"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 32
+					id: "3E7C798988326B8A"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2A4D68D2690FE36E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "5B40A3BA4FB555D1"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fresh bread"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_baker"
+					criterion: ""
+					icon: "minecolonies:blockhutbaker"
+					id: "080B754CFCA4F545"
+					title: "Bakery completed"
+					type: "advancement"
+				}
+			]
+			title: "The Bakery"
+			x: 3.85d
+			y: -1.5d
+		}
+		{
+			dependencies: ["73F6821C050A7D3F"]
+			description: ["The Chef prepares proper multi-ingredient meals. High level citizens refuse to live on bread alone - this is how you keep them happy."]
+			id: "24B31F406F46D315"
+			rewards: [
+				{
+					id: "677A22A5801CA893"
+					type: "xp"
+					xp: 80
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F6AB5D0560410FA"
+					table_id: 4324331771948795312L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "638B63CA2F4F54FB"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Real cooking"
+			tasks: [
+				{
+					id: "2631FEC9DE82A3CD"
+					item: "minecolonies:blockhutkitchen"
+					type: "item"
+				}
+			]
+			title: "The Kitchen"
+			x: 5.85d
+			y: -1.5d
+		}
+		{
+			dependencies: ["73F6821C050A7D3F"]
+			description: ["Upgrade a Farm to level 5 and give the farmer every field they can handle."]
+			id: "56B16831207482C9"
+			optional: true
+			rewards: [
+				{
+					id: "30EBF2E3622B6AAE"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 32
+					id: "5D45A8F516D1051E"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s farming 80"
+					elevate_perms: true
+					icon: "minecraft:wheat"
+					id: "4C5FB1D1C55FD515"
+					silent: true
+					title: "+80 Farming experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "0FF295639EB038FC"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecolonies:production/max_fields"
+					criterion: ""
+					icon: "minecolonies:blockhutfield"
+					id: "27E64E0BF20A57F8"
+					title: "A farmer working the maximum number of fields"
+					type: "advancement"
+				}
+			]
+			title: "Breadbasket"
+			x: 5.85d
+			y: -3.0d
+		}
+		{
+			dependencies: ["73F6821C050A7D3F"]
+			description: ["Turns spare seeds, saplings and rotten flesh into compost - a bonemeal substitute your farmers love."]
+			id: "0CF189DEC6257FBD"
+			optional: true
+			rewards: [
+				{
+					id: "048BA3162CE6DBDD"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "60F0EC6D9B3A6CFD"
+					item: "minecolonies:compost"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "7A7DF711C87117F5"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_composter"
+					criterion: ""
+					icon: "minecolonies:blockhutcomposter"
+					id: "48D32F653F9449CD"
+					title: "Composter's Hut completed"
+					type: "advancement"
+				}
+			]
+			title: "The Composter"
+			x: 5.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CF189DEC6257FBD"]
+			description: ["Grows sugar cane, cactus, bamboo and - with research - much more."]
+			id: "67418D75A624CF92"
+			optional: true
+			rewards: [
+				{
+					id: "42DB67124228F3AE"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 16
+					id: "31651C065F50EAAE"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3D85BECE94E04B87"
+					item: "minecraft:bamboo"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "0856F4AF28C8AB80"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6BB29346A597A211"
+					item: "minecolonies:blockhutplantation"
+					type: "item"
+				}
+				{
+					id: "70F9DE6E4226571D"
+					item: "minecolonies:blockhutplantationfield"
+					type: "item"
+				}
+			]
+			title: "The Plantation"
+			x: 7.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CF189DEC6257FBD"]
+			id: "080B028F7074DFF8"
+			optional: true
+			rewards: [
+				{
+					id: "2068EFEB58514DB3"
+					type: "xp"
+					xp: 60
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6849ADBBE7E593FB"
+					table_id: 7679661309800464934L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "33EE55C2D4380E6F"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Grows flowers on composted dirt."
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_florist"
+					criterion: ""
+					icon: "minecolonies:blockhutflorist"
+					id: "2958C38E87B60197"
+					title: "Flower Shop completed"
+					type: "advancement"
+				}
+			]
+			title: "The Florist"
+			x: 7.6d
+			y: 1.5d
+		}
+		{
+			dependencies: ["080B028F7074DFF8"]
+			id: "113210148D950C8E"
+			optional: true
+			rewards: [
+				{
+					id: "66393213787B6997"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 4
+					id: "7FE2EB66B13A9106"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "04E22D681D9CD393"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Keeps bees for honey and honeycomb."
+			tasks: [
+				{
+					id: "4155C640EB18A042"
+					item: "minecolonies:blockhutbeekeeper"
+					type: "item"
+				}
+			]
+			title: "The Apiary"
+			x: 9.35d
+			y: 1.5d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["Breeds and butchers cows. Bring two cows into the pen to get started."]
+			id: "646941EF37EE47E8"
+			rewards: [
+				{
+					id: "529D19E1C3E08126"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "049F076E638E7E46"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "4489368884F9BDE3"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "09212341E341E141"
+					item: "minecolonies:blockhutcowboy"
+					type: "item"
+				}
+			]
+			title: "The Cowhand"
+			x: 3.85d
+			y: 4.5d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["&7Made from: &fShears, Build Tool, any planks x7"]
+			id: "3BAA7B187D1AE7C8"
+			rewards: [
+				{
+					id: "49AE828D95F2E594"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "1484D3EF0C5DA67A"
+					item: "minecraft:shears"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "385CA4D28040343C"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Breeds and shears sheep."
+			tasks: [
+				{
+					id: "54422E195E77DBB8"
+					item: "minecolonies:blockhutshepherd"
+					type: "item"
+				}
+			]
+			title: "The Shepherd"
+			x: 3.85d
+			y: 6.0d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["&7Made from: &fRaw Porkchop, Build Tool, any planks x7"]
+			id: "0F2D48055A14819D"
+			rewards: [
+				{
+					id: "0EF51D80AC953A05"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "55B2739090AD293B"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "04D9978A1CA16F3C"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Breeds pigs."
+			tasks: [
+				{
+					id: "12D18094616A041D"
+					item: "minecolonies:blockhutswineherder"
+					type: "item"
+				}
+			]
+			title: "The Swineherd"
+			x: 3.85d
+			y: 7.5d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["&7Made from: &fEgg, Build Tool, any planks x7"]
+			id: "7B559D5C3339292D"
+			rewards: [
+				{
+					id: "36B228F9F140B601"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "171EABDEBE7A1695"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "1CD868EF43ABE28A"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Breeds chickens and collects eggs."
+			tasks: [
+				{
+					id: "4EC4D394C0AFAB09"
+					item: "minecolonies:blockhutchickenherder"
+					type: "item"
+				}
+			]
+			title: "The Chicken Farmer"
+			x: 3.85d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2354777FFDF6C8A6"]
+			description: ["The Rabbitherder keeps a fluffle of rabbits in check: rabbit meat, hide and the odd lucky foot."]
+			id: "608C146CE690C15A"
+			optional: true
+			rewards: [
+				{
+					id: "00E81C4D97D86A3E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "1670051EE1D5A47C"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "140B5980FB51DB6D"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2805113C31379D4E"
+					item: "minecolonies:blockhutrabbithutch"
+					type: "item"
+				}
+			]
+			title: "The Rabbit Hutch"
+			x: 7.6d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"646941EF37EE47E8"
+				"3BAA7B187D1AE7C8"
+				"0F2D48055A14819D"
+				"7B559D5C3339292D"
+			]
+			description: ["Build the Cowhand, Shepherd, Swineherd and Chicken Farmer huts (and the Rabbit Hutch, if the advancement asks for it)."]
+			id: "2354777FFDF6C8A6"
+			rewards: [
+				{
+					id: "02922CB8C9E93B16"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 6
+					id: "2A98BD59A5029E0A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E60F1EB0456E89A"
+					table_id: 1281641154896614215L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "72E662FBE3062521"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "E-I-E-I-O"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_all_herders"
+					criterion: ""
+					icon: "minecraft:lead"
+					id: "29BBDDFD6838BF59"
+					title: "Build every herder's hut"
+					type: "advancement"
+				}
+			]
+			title: "Old MacDonald"
+			x: 5.85d
+			y: 4.5d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["Citizens study here to raise their &bIntelligence&f. Stock it with books and paper."]
+			id: "54AF0B2F24A57523"
+			rewards: [
+				{
+					id: "03CB58F227648D3C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "49AB8062C540D1A0"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 80"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6C215C26EEF507DB"
+					silent: true
+					title: "+80 Magic experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "7049341C51115327"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raise Intelligence"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_library"
+					criterion: ""
+					icon: "minecolonies:blockhutlibrary"
+					id: "476D3E703C08F126"
+					title: "Library completed"
+					type: "advancement"
+				}
+			]
+			title: "The Library"
+			x: 3.85d
+			y: 10.75d
+		}
+		{
+			dependencies: ["54AF0B2F24A57523"]
+			id: "53ACEDB8359562B7"
+			optional: true
+			rewards: [
+				{
+					id: "1CF4AAD385B9E635"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 32
+					id: "300D240E78F50B28"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "574434D073EC51AF"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Children learn here so they grow up with better stats."
+			tasks: [
+				{
+					id: "63F89EC13E842EE3"
+					item: "minecolonies:blockhutschool"
+					type: "item"
+				}
+			]
+			title: "The School"
+			x: 5.85d
+			y: 12.25d
+		}
+		{
+			dependencies: ["54AF0B2F24A57523"]
+			description: [
+				"The University unlocks the &6research tree&f: better guards, faster workers, more citizens, new buildings and recipes."
+				""
+				"Research costs items and takes real time. Hire several researchers and always keep something queued."
+			]
+			id: "00889AD55A1BB971"
+			rewards: [
+				{
+					id: "06E94ADFB1C35ADC"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 6
+					id: "74C52DD3831F7058"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B60EC3BF5598F50"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 100"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "49151309322BE7BD"
+					silent: true
+					title: "+100 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Research!"
+			tasks: [
+				{
+					id: "3B5DF1FDC35AB8BF"
+					item: "minecolonies:blockhutuniversity"
+					type: "item"
+				}
+			]
+			title: "&6The University"
+			x: 5.85d
+			y: 10.75d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["Sick and injured citizens are treated here. Diseases each need specific cures - check the healer's requests."]
+			id: "085488AAC418302A"
+			rewards: [
+				{
+					id: "089D645AA0C7D8CE"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "3E9005E4F0210AAA"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "79126C1202F62809"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7EBF08A5A30A4C68"
+					item: "minecolonies:blockhuthospital"
+					type: "item"
+				}
+			]
+			title: "The Hospital"
+			x: 3.85d
+			y: 3.0d
+		}
+		{
+			dependencies: ["085488AAC418302A"]
+			description: ["When a citizen dies they leave a grave. The Undertaker buries them - and at high levels can sometimes &dresurrect&f them."]
+			id: "26FA1FB2506A4FCA"
+			rewards: [
+				{
+					id: "7BC9C179D9ADDE27"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "47AC0B00FD3551BF"
+					item: "minecraft:poppy"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "4D103F975DDBD7AA"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "649BA372466121C2"
+					item: "minecolonies:blockhutgraveyard"
+					type: "item"
+				}
+			]
+			title: "The Graveyard"
+			x: 5.85d
+			y: 3.0d
+		}
+		{
+			dependencies: ["26FA1FB2506A4FCA"]
+			id: "62FB8A3D2ED541A2"
+			optional: true
+			rewards: [
+				{
+					id: "7445C87E3F6272CC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 10
+					id: "52562900187E16BC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "6E3E54F9391FE529"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sooner or later it happens."
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/citizen_bury"
+					criterion: ""
+					icon: "minecolonies:blockminecoloniesgrave"
+					id: "3887C540B38ABBC9"
+					title: "An Undertaker buries a citizen"
+					type: "advancement"
+				}
+			]
+			title: "Rest in Peace"
+			x: 7.6d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00889AD55A1BB971"]
+			description: ["The Enchanter drains experience from your workers and turns &6Ancient Tomes&f into enchanted books."]
+			id: "56A7AF2D89150111"
+			rewards: [
+				{
+					id: "46451D6EDF1E043F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 3
+					id: "6CBBF010F3169E69"
+					item: "minecolonies:ancienttome"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B767715C74CA7A2"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "1F57A7D4535446C1"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Colony-made enchantments"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_enchanter"
+					criterion: ""
+					icon: "minecolonies:blockhutenchanter"
+					id: "26D98079DFED2120"
+					title: "Enchanter's Tower completed"
+					type: "advancement"
+				}
+			]
+			title: "The Enchanter"
+			x: 7.6d
+			y: 10.75d
+		}
+		{
+			dependencies: ["00889AD55A1BB971"]
+			description: ["Needs research. Brews potions and grows netherwart and mistletoe."]
+			id: "77012FB2F5939857"
+			optional: true
+			rewards: [
+				{
+					id: "083270CC7038D747"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6DA0FFE137DE361C"
+					table_id: 4541931633169242376L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "07329D6E2BAA548C"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "03B39DE3E9A2151A"
+					item: "minecolonies:blockhutalchemist"
+					type: "item"
+				}
+			]
+			title: "The Alchemist"
+			x: 7.6d
+			y: 12.25d
+		}
+		{
+			dependencies: ["00889AD55A1BB971"]
+			id: "098D149FA91A3A63"
+			optional: true
+			rewards: [
+				{
+					id: "76B075D4D06BC4B3"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 5
+					id: "66A0B9BDAA36FE20"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "568B1FF139AD76F1"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Needs research. A monument that makes the whole colony happier."
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/build_mysticalsite"
+					criterion: ""
+					icon: "minecolonies:blockhutmysticalsite"
+					id: "5335F85F9A4B6A7B"
+					title: "Mystical Site completed"
+					type: "advancement"
+				}
+			]
+			title: "The Mystical Site"
+			x: 7.6d
+			y: 9.25d
+		}
+		{
+			dependencies: ["0F023B2AA4A1B3F1"]
+			description: ["A huge open pit worked by a Miner assigned to it. The best source of bulk stone in the game."]
+			id: "1B9673BF0F104D19"
+			optional: true
+			rewards: [
+				{
+					id: "4FC7850821C27243"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 64
+					id: "6FA6F70C8B15DFE9"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "128BB0D162FE368F"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "64B06E9A889293A6"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "09C72BA5385091BE"
+					item: "minecolonies:simplequarry"
+					type: "item"
+				}
+			]
+			title: "The Quarry"
+			x: 11.1d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0F023B2AA4A1B3F1"]
+			description: ["Upgrade your Mine until the miner reaches the bottom of the world."]
+			id: "2757DBA875919E67"
+			optional: true
+			rewards: [
+				{
+					id: "3F2FA5CD4FFC3297"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "710EAC050B54CF58"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 160"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "3D206EC02B415BD7"
+					silent: true
+					title: "+160 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "363057CF6A070B56"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecolonies:production/deep_mine"
+					criterion: ""
+					icon: "minecraft:deepslate"
+					id: "5196158B3507EEE8"
+					title: "A miner reaches the deepest level"
+					type: "advancement"
+				}
+			]
+			title: "Diggy Diggy Hole"
+			x: 11.1d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0F023B2AA4A1B3F1"]
+			description: ["Needs research. A brave citizen makes expeditions into the Nether and returns with quartz, glowstone, blaze rods and worse."]
+			id: "7A280526569D356A"
+			optional: true
+			rewards: [
+				{
+					id: "02E48E3C433DAAFB"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3878B788205CF9CB"
+					table_id: 5393747632124787178L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "57C8901F3DF65374"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "27FC2B068F69640A"
+					item: "minecolonies:blockhutnetherworker"
+					type: "item"
+				}
+			]
+			title: "The Nether Mine"
+			x: 11.1d
+			y: -7.5d
+		}
+		{
+			dependencies: ["243BFEECB44BBAA2"]
+			description: ["Grow the colony to &a25 citizens&f. You will need a higher level Town Hall and plenty of beds."]
+			id: "2964B607ED7BEF31"
+			rewards: [
+				{
+					id: "77059755E4863690"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "65C0BE4374FB221A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7BED755551002AC5"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "5873C77A3AABFA84"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Population: 25"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/colony_population_25"
+					criterion: ""
+					icon: "minecraft:player_head"
+					id: "74BE194AD8B483C2"
+					title: "Reach 25 citizens"
+					type: "advancement"
+				}
+			]
+			title: "A Town"
+			x: 3.85d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2964B607ED7BEF31"]
+			description: ["Grow the colony to &a50 citizens&f. This needs research at the University."]
+			id: "0C5CF86F89FBF09E"
+			rewards: [
+				{
+					id: "1E83184AD77203EF"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 3
+					id: "44BA6AA57935CDB7"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0F4910A11DED0528"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "45895C1DA13E1500"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Population: 50"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/colony_population_50"
+					criterion: ""
+					icon: "minecraft:player_head"
+					id: "70C59B12EC355CF7"
+					title: "Reach 50 citizens"
+					type: "advancement"
+				}
+			]
+			title: "A City"
+			x: 5.85d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0F023B2AA4A1B3F1"
+				"00889AD55A1BB971"
+				"2354777FFDF6C8A6"
+				"24B31F406F46D315"
+				"2964B607ED7BEF31"
+			]
+			description: ["Your colony feeds, clothes, equips and educates itself. You are free to adventure knowing home takes care of itself."]
+			hide_dependency_lines: true
+			id: "32B21F62C5D1D2DA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0E8ACFC44FF44B8B"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					count: 4
+					id: "7DC2D1F18AEDFE65"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "271537A2CFD8C7E0"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/mastery xp @s building 240"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "25EA95F298163931"
+					silent: true
+					title: "+240 Building experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s leadership 250"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "7341606BB24B97D1"
+					silent: true
+					title: "+250 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "5F5329B2B591C9A1"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lIndustrial Heartland"
+			x: 13.07d
+			y: -9.0d
+		}
+	]
+	subtitle: ["Crafters, herders, scholars and industry"]
+	title: "&eA Working Town"
+}

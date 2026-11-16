@@ -1,0 +1,1240 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "delve"
+	group: "478F493742D3F387"
+	icon: "minecraft:iron_pickaxe"
+	id: "165E488A681AEF0A"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["63D583F00BADD799"]
+			description: [
+				"There is exactly &eone ore per metal&f in Eldermoor. Tin is tin, whichever mod wants it."
+				""
+				"Iron, copper and coal are high. Gold, redstone and lapis are lower. Diamonds, and most of the new metals, sit in the deepslate near the bottom."
+				""
+				"&7Hover an ore and press U to see every use for it."
+			]
+			hide_until_deps_complete: true
+			id: "4C3D2328CB128969"
+			rewards: [
+				{
+					id: "58D7FF2E21D33912"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 9
+					id: "5C8C6452BB5AB00C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0AAAD8D73C699C3D"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "627F7EC3DCD59FC2"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 250"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "19D4CD88BB1F1052"
+					silent: true
+					title: "+250 Mining experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "7D8424D8B8DAB1E9"
+					item: "minecraft:iron_pickaxe"
+					type: "item"
+				}
+			]
+			title: "&7&lDown"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C3D2328CB128969"]
+			icon: "minecraft:stone"
+			id: "51C3944428B36365"
+			rewards: [
+				{
+					id: "1E4C352BA1AE13D8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4D757E2B165BF7F1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "61B90BB3D02527B8"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "It adds up faster than you think."
+			tasks: [
+				{
+					block: "minecraft:stone"
+					block_type: 0
+					checkItem: false
+					id: "1CD9C7502E2D5519"
+					title: "Break 500 stone"
+					type: "questsadditions:break"
+					value: 500L
+				}
+			]
+			title: "Quarryman"
+			x: 2.1d
+			y: -2.62d
+		}
+		{
+			dependencies: ["51C3944428B36365"]
+			id: "046D724EBE619735"
+			rewards: [
+				{
+					id: "1E15985D03B76DE9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2A74E86D0795AC33"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "4F3DA52ACC5045B8"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Both are common in the high hills."
+			tasks: [
+				{
+					count: 32L
+					id: "64475040F3B3B0C9"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "385F52859D4B0762"
+					item: "minecraft:raw_copper"
+					type: "item"
+				}
+			]
+			title: "Fuel"
+			x: 3.85d
+			y: -2.62d
+		}
+		{
+			dependencies: ["01C8E0C7F42BD6BC"]
+			description: ["Badlands are full of gold. Redstone starts where the stone turns dark."]
+			id: "700F7A7EB8210B25"
+			rewards: [
+				{
+					id: "3816402395F3603D"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5C85AD0DBF88FF57"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "497A67C675399C77"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "3D9318E7E72C522C"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1DCE3FF54A4F050A"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			title: "Gold and Red Dust"
+			x: 7.35d
+			y: -2.62d
+		}
+		{
+			dependencies: ["700F7A7EB8210B25"]
+			icon: "minecraft:deepslate"
+			id: "5A504A02C6C16696"
+			rewards: [
+				{
+					id: "2A25C5FE016E8056"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1F9BB6029A1F34FA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "242D850AA56E8C2B"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Slower to dig. Everything good is in it."
+			tasks: [
+				{
+					block: "minecraft:deepslate"
+					block_type: 0
+					checkItem: false
+					id: "31D75F6C0FEFBF1D"
+					title: "Break 500 deepslate"
+					type: "questsadditions:break"
+					value: 500L
+				}
+			]
+			title: "Deepslate"
+			x: 9.1d
+			y: -2.62d
+		}
+		{
+			dependencies: ["05EF2E0B03D0A90E"]
+			description: ["Emeralds are only in mountains. Amethyst grows inside sealed geodes."]
+			id: "080E8605C3AF459F"
+			rewards: [
+				{
+					id: "4819158F1D07284D"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "117316338ACB03BE"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CFF8303C183A465"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s mining 100"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "70825966F83AB523"
+					silent: true
+					title: "+100 Mining experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "57444249832938C2"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7226D6FD2B3E2B6B"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
+			title: "Mountain Green"
+			x: 14.45d
+			y: -2.62d
+		}
+		{
+			dependencies: ["4C3D2328CB128969"]
+			description: ["Mid-depth. Tin with copper is bronze; lead goes into batteries and pewter."]
+			id: "5836F849CF019929"
+			rewards: [
+				{
+					id: "7D5D67487C81D366"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6A2DD2A199C7A367"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "722703A06D7ECE51"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "34C5E2CC9F9C4D81"
+					item: "mekanism:raw_tin"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7316C298AAF5FF0F"
+					item: "mekanism:raw_lead"
+					type: "item"
+				}
+			]
+			title: "Tin and Lead"
+			x: 2.1d
+			y: -0.88d
+		}
+		{
+			dependencies: ["5836F849CF019929"]
+			description: ["&7Mined from: &fDeepslate Zinc Ore, Zinc Ore"]
+			id: "288ABA4F077FC9EC"
+			rewards: [
+				{
+					id: "71DE84B4BEC08A1E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "56FF61DA98A0BF2B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "729B17D2BCF11F0E"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "With copper it makes brass - the metal Create runs on."
+			tasks: [
+				{
+					count: 8L
+					id: "0938A1EC1B2FC084"
+					item: "create:raw_zinc"
+					type: "item"
+				}
+			]
+			title: "Zinc"
+			x: 3.85d
+			y: -0.88d
+		}
+		{
+			dependencies: ["288ABA4F077FC9EC"]
+			id: "45EDD7E2D0C189A4"
+			rewards: [
+				{
+					id: "0A2BD9244A9E9AF0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "64C505E12F72EA34"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "324DDCDA13661F1E"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Deep. Silver and gold make electrum; nickel and iron make invar."
+			tasks: [
+				{
+					count: 8L
+					id: "16BE6A53B2642D74"
+					item: "immersiveengineering:raw_silver"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6DCB3411AD94FE91"
+					item: "immersiveengineering:raw_nickel"
+					type: "item"
+				}
+			]
+			title: "Silver and Nickel"
+			x: 5.6d
+			y: -0.88d
+		}
+		{
+			dependencies: ["45EDD7E2D0C189A4"]
+			description: ["&7Mined from: &fDeepslate Osmium Ore, Osmium Ore"]
+			id: "74624ADD03FFE62B"
+			rewards: [
+				{
+					id: "176FABD0C856C016"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4D11F134132A0CD1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "67C8DCE4062005C3"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pale blue, common, and wanted by every Mekanism machine."
+			tasks: [
+				{
+					count: 8L
+					id: "366B1AF96912EFEB"
+					item: "mekanism:raw_osmium"
+					type: "item"
+				}
+			]
+			title: "Osmium"
+			x: 7.35d
+			y: -0.88d
+		}
+		{
+			dependencies: ["74624ADD03FFE62B"]
+			id: "73E56F328BC4E27D"
+			rewards: [
+				{
+					id: "41285C200EDF32F0"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "1457664460DD4EE9"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C647D79D45F126B"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s mining 100"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "4F397358F094C6AC"
+					silent: true
+					title: "+100 Mining experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Aluminium ore, found high and low."
+			tasks: [
+				{
+					count: 8L
+					id: "38B9AD4D2C972007"
+					item: "immersiveengineering:raw_aluminum"
+					type: "item"
+				}
+			]
+			title: "Bauxite"
+			x: 14.45d
+			y: -0.88d
+		}
+		{
+			dependencies: ["4C3D2328CB128969"]
+			description: ["&7Made at: &fEnrichment Chamber &7from &fFluorite Dust"]
+			id: "3AF38E0664B245A5"
+			rewards: [
+				{
+					id: "714FA127406AC5CC"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7EBF79611101199C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "3E18FDD29133D7D3"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "A gem in the deepslate. Mekanism's chemistry starts here."
+			tasks: [
+				{
+					count: 4L
+					id: "1571965022999FB4"
+					item: "mekanism:fluorite_gem"
+					type: "item"
+				}
+			]
+			title: "Fluorite"
+			x: 2.1d
+			y: 0.88d
+		}
+		{
+			dependencies: ["3AF38E0664B245A5"]
+			description: ["&7Mined from: &fDeepslate Uranium Ore, Uranium Ore"]
+			id: "0C1144FBE75C0E6A"
+			rewards: [
+				{
+					id: "37799A69CFE70027"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "024B749C20823C6E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "2E2CEF8D3DCBBC79"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Very deep. Not dangerous yet."
+			tasks: [
+				{
+					count: 4L
+					id: "2C47BDE4EC5103D6"
+					item: "mekanism:raw_uranium"
+					type: "item"
+				}
+			]
+			title: "Uranium"
+			x: 3.85d
+			y: 0.88d
+		}
+		{
+			dependencies: ["476542A4428CB3E2"]
+			description: ["&7Mined from: &fCobalt Ore"]
+			id: "54F2F542A4930B65"
+			rewards: [
+				{
+					id: "16199C50D5CE0638"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "58E90E268E7403D4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "5433E1799DABD42D"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Nether only. Blue veins in the netherrack."
+			tasks: [
+				{
+					count: 4L
+					id: "05DBBF12B3AA665E"
+					item: "tconstruct:raw_cobalt"
+					type: "item"
+				}
+			]
+			title: "Cobalt"
+			x: 7.35d
+			y: 0.88d
+		}
+		{
+			dependencies: ["57DDB9471C8229FF"]
+			description: [
+				"Found in meteorites. A Meteorite Compass points to the nearest one."
+				"&7Made from: &fany water, Charged Certus Quartz Crystal, Certus Quartz Dust &7(dropped in water together)"
+			]
+			id: "22CE6AFB4634BF8C"
+			rewards: [
+				{
+					id: "742F30908C9BDE5F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "40B3B179CF6695A0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "01C1E73A80614EC3"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "7FAD0D3C0143D53F"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "Certus Quartz"
+			x: 10.85d
+			y: 0.88d
+		}
+		{
+			dependencies: ["372FE61001AB2377"]
+			id: "53966A489012D67A"
+			rewards: [
+				{
+					id: "2AC11F4985E4E37D"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "5190D1420EC89973"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "485759094442DC5A"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s mining 100"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "60824280AC867303"
+					silent: true
+					title: "+100 Mining experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Deep in the Nether. It also opens the Everbright."
+			tasks: [
+				{
+					count: 4L
+					id: "067341E6E86DB36D"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+			]
+			title: "Ancient Debris"
+			x: 14.45d
+			y: 0.88d
+		}
+		{
+			dependencies: ["4C3D2328CB128969"]
+			id: "69C4B02AEB74B5D8"
+			rewards: [
+				{
+					id: "3F89C0B92EA09E36"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "44DB3B3ADF0B0CCF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "4024078F7B462B6E"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Deepest of all. Fortune pays for itself."
+			tasks: [
+				{
+					count: 16L
+					id: "3CB5B6B3E3BEE15E"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Diamonds"
+			x: 2.1d
+			y: 2.62d
+		}
+		{
+			dependencies: ["69C4B02AEB74B5D8"]
+			id: "10ABC4DF843DC294"
+			rewards: [
+				{
+					id: "3911063E5C67D466"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "17D7FA9441A6EE6F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "5D59C67770888881"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Water on a lava source. Enough for a portal and a table."
+			tasks: [
+				{
+					count: 14L
+					id: "0FB4233675FB192E"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+			]
+			title: "Obsidian"
+			x: 3.85d
+			y: 2.62d
+		}
+		{
+			dependencies: ["10ABC4DF843DC294"]
+			description: ["Some deepslate glints. Inside is a geode; crack it on a workbench."]
+			id: "1890CB12BCD34BD2"
+			rewards: [
+				{
+					id: "42A6174EDC653CB0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5E0A1698BD2C368E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "57EB1A7C5E081098"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "68B81F6F0B7DB56C"
+					item: "tetra:geode"
+					type: "item"
+				}
+			]
+			title: "Hollow Stones"
+			x: 5.6d
+			y: 2.62d
+		}
+		{
+			dependencies: ["5E9BF140800F5CAC"]
+			id: "7F7003B97FB5254B"
+			rewards: [
+				{
+					id: "7A57258ECA73682C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1913AC637E0BB765"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "0BE81EA78F3D1B83"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "From the chests of an Ancient City. Walk softly."
+			tasks: [
+				{
+					count: 2L
+					id: "28727CE8E448F814"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+			]
+			title: "The Deep Dark"
+			x: 9.1d
+			y: 2.62d
+		}
+		{
+			dependencies: ["56129C70AB4A0232"]
+			description: ["Four scraps and four gold. Then a smithing template for every piece."]
+			id: "5572AF0693486825"
+			rewards: [
+				{
+					id: "7D0397DA5064F464"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "59203E7768B8E282"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3124CC8523004731"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s mining 100"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "7362F2B4F2751470"
+					silent: true
+					title: "+100 Mining experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2ECD72219160C28E"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			title: "Netherite"
+			x: 14.45d
+			y: 2.62d
+		}
+		{
+			dependencies: [
+				"080E8605C3AF459F"
+				"73E56F328BC4E27D"
+				"53966A489012D67A"
+				"5572AF0693486825"
+			]
+			id: "66A409BF149F8B4C"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					id: "2A464AFAC9CFAE4F"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 2
+					id: "773741909106467B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "041F143EAF028C04"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A1633342F9606A8"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s mining 250"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "521CFB08FFC850B7"
+					silent: true
+					title: "+250 Mining experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Finish any three rows."
+			tasks: [
+				{
+					id: "00D9F06B0F12C668"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&7&lDelver"
+			x: 16.8d
+			y: -1.75d
+		}
+		{
+			dependencies: ["046D724EBE619735"]
+			id: "01C8E0C7F42BD6BC"
+			rewards: [
+				{
+					id: "2BE916E711F03B95"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "63B301E04D716D3D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "0054AD80F11753BF"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mountains and the caves just under the surface carry the most."
+			tasks: [
+				{
+					count: 32L
+					id: "1F6E5FD0FD86CB4B"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+			]
+			title: "Iron by the Stack"
+			x: 5.6d
+			y: -2.62d
+		}
+		{
+			dependencies: ["5A504A02C6C16696"]
+			description: ["Around sea level and a little below. Every enchantment costs some."]
+			id: "05EF2E0B03D0A90E"
+			rewards: [
+				{
+					id: "0D51C12AD1BF1C50"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "63B56B63E35DE76A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "7C8A204F1E8B7449"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "509CC118368F7D0D"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			title: "Blue Veins"
+			x: 10.85d
+			y: -2.62d
+		}
+		{
+			dependencies: ["0C1144FBE75C0E6A"]
+			description: ["Cobalt and Ancient Debris are both Nether metals. The portal has its own key: see Act I."]
+			id: "476542A4428CB3E2"
+			rewards: [
+				{
+					id: "55FDBC8F17957A6A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "63988D3A32851FC3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "262966354F0FF155"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Build, light and enter a Nether Portal"
+			tasks: [
+				{
+					advancement: "minecraft:story/enter_the_nether"
+					criterion: ""
+					icon: "minecraft:flint_and_steel"
+					id: "39686B5DB1D3267D"
+					title: "We Need to Go Deeper"
+					type: "advancement"
+				}
+			]
+			title: "Through the Portal"
+			x: 5.6d
+			y: 0.88d
+		}
+		{
+			dependencies: ["22CE6AFB4634BF8C"]
+			id: "372FE61001AB2377"
+			rewards: [
+				{
+					id: "4CE751563342D33B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5177545614C5A069"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "07ED5F51CAC73FC9"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "White veins in the netherrack, everywhere. Fortune works on it."
+			tasks: [
+				{
+					count: 32L
+					id: "4135F400BCCE957A"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+			]
+			title: "Nether Quartz"
+			x: 12.6d
+			y: 0.88d
+		}
+		{
+			dependencies: ["1890CB12BCD34BD2"]
+			description: [
+				"Sneak near a Sculk Sensor or Warden to prevent it from detecting you"
+				""
+				"Sculk hears footsteps. Crouch, carry wool, and never run in an Ancient City."
+			]
+			id: "5E9BF140800F5CAC"
+			rewards: [
+				{
+					id: "64689B24B35CC8A5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "165A67E762D7E94A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "58D441618593C1CA"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:adventure/avoid_vibration"
+					criterion: ""
+					icon: "minecraft:sculk_sensor"
+					id: "5823405089EBAF03"
+					title: "Sneak 100"
+					type: "advancement"
+				}
+			]
+			title: "Walk Softly"
+			x: 7.35d
+			y: 2.62d
+		}
+		{
+			dependencies: ["7F7003B97FB5254B"]
+			id: "56129C70AB4A0232"
+			rewards: [
+				{
+					id: "600AB6EF821FC931"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7FC152E5DF89AB82"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "79969556D969B7D9"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			subtitle: "Smelt Ancient Debris. One piece, one scrap."
+			tasks: [
+				{
+					count: 4L
+					id: "70595D2B15DC911B"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+			]
+			title: "Netherite Scrap"
+			x: 10.85d
+			y: 2.62d
+		}
+		{
+			dependencies: ["54F2F542A4930B65"]
+			description: ["Certus quartz does little until it is &echarged&f. A Charger does one crystal at a time, on power or on a crank. Charged crystal dropped in water with redstone and nether quartz becomes &dFluix&f."]
+			id: "57DDB9471C8229FF"
+			rewards: [
+				{
+					id: "032C6E5CD8753F2C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "76E97FB09DDB1D7D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 35"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "42B83C6B5CA0D770"
+					silent: true
+					title: "+35 Mining experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1EA37E99F3F0221F"
+					item: "ae2:charger"
+					type: "item"
+				}
+			]
+			title: "A Charger"
+			x: 9.1d
+			y: 0.88d
+		}
+	]
+	subtitle: ["One ore per metal, and where each one hides"]
+	title: "&7The Deep"
+}

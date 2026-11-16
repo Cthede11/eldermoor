@@ -1,0 +1,19 @@
+{
+  "weight": 3,
+  "verifiers": [
+    {
+      "tag": "forge:tools/bows"
+    },
+    {
+      "tag": "forge:bows"
+    },
+    {
+      "tag": "too_many_bows:bows"
+    }
+  ],
+  "tiers": [
+    "tiered:bows/clumsy",
+    "tiered:bows/stiff",
+    "tiered:bows/stretched"
+  ]
+}

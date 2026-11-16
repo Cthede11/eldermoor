@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 14357618,
+    "separation": 18,
+    "spacing": 74,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "minecraft:igloo",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 643168754,
+    "separation": 52,
+    "spacing": 280,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "shrines:water_shrine",
+      "weight": 1
+    }
+  ]
+}

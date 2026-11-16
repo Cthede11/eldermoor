@@ -1,0 +1,492 @@
+[
+	{
+		"mob": [
+			"aquamirae:captain_cornelia"
+		],
+		"healthmultiply": 6.0,
+		"damagemultiply": 3.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"aquamirae:maze_mother"
+		],
+		"healthmultiply": 5.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"blue_skies:summoner",
+			"blue_skies:alchemist",
+			"blue_skies:starlit_crusher",
+			"blue_skies:arachnarch"
+		],
+		"healthmultiply": 4.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"aether:slider",
+			"aether:sun_spirit"
+		],
+		"healthmultiply": 4.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"alexscaves:luxtructosaurus"
+		],
+		"healthmultiply": 3.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"mowziesmobs:frostmaw",
+			"mowziesmobs:umvuthi",
+			"mowziesmobs:sculptor"
+		],
+		"healthmultiply": 5.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"mowziesmobs:ferrous_wroughtnaut"
+		],
+		"healthmultiply": 4.0,
+		"damagemultiply": 1.5,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"meetyourfight:swampjaw",
+			"meetyourfight:bellringer",
+			"meetyourfight:dame_fortuna"
+		],
+		"healthmultiply": 5.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"meetyourfight:rosalyne"
+		],
+		"healthmultiply": 4.0,
+		"damagemultiply": 1.5,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"goety:crone",
+			"goety:minister",
+			"goety:vizier",
+			"goety:skull_lord"
+		],
+		"healthmultiply": 4.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"legendary_monsters:ancient_guardian",
+			"legendary_monsters:cloud_golem",
+			"legendary_monsters:frostbitten_golem",
+			"legendary_monsters:overgrown_colossus",
+			"legendary_monsters:withered_abomination",
+			"legendary_monsters:skeletosaurus",
+			"legendary_monsters:lava_eater",
+			"legendary_monsters:warped_fungussus",
+			"legendary_monsters:shulker_mimic",
+			"legendary_monsters:endersent",
+			"legendary_monsters:dune_sentinel"
+		],
+		"healthmultiply": 4.0,
+		"damagemultiply": 1.5,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"block_factorys_bosses:yeti",
+			"block_factorys_bosses:sandworm",
+			"block_factorys_bosses:kraken",
+			"block_factorys_bosses:underworld_knight",
+			"block_factorys_bosses:infernal_dragon"
+		],
+		"healthmultiply": 6.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"dungeonnowloading:chaos_spawner",
+			"dungeonnowloading:fairkeeper_ouros",
+			"dungeonnowloading:fairkeeper_boros"
+		],
+		"healthmultiply": 4.0,
+		"damagemultiply": 1.5,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"celestisynth:tempest"
+		],
+		"healthmultiply": 4.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"irons_spellbooks:fire_boss"
+		],
+		"healthmultiply": 5.0,
+		"damagemultiply": 3.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"ars_nouveau:wilden_boss"
+		],
+		"healthmultiply": 3.0,
+		"damagemultiply": 3.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"mna:council_warden",
+			"mna:wither_lich",
+			"mna:odin",
+			"mna:tfpd",
+			"mna:demon_lord",
+			"mna:faerie_queen",
+			"mna:pumpkin_king"
+		],
+		"healthmultiply": 3.0,
+		"damagemultiply": 1.5,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"soulsweapons:draugr_boss",
+			"soulsweapons:night_shade"
+		],
+		"healthmultiply": 8.0,
+		"damagemultiply": 2.5,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"soulsweapons:returning_knight",
+			"soulsweapons:accursed_lord_boss",
+			"soulsweapons:moonknight",
+			"soulsweapons:day_stalker",
+			"soulsweapons:night_prowler"
+		],
+		"healthmultiply": 10.0,
+		"damagemultiply": 2.5,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"soulsweapons:chaos_monarch"
+		],
+		"healthmultiply": 12.0,
+		"damagemultiply": 2.5,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"goety:heresiarch",
+			"goety:wither_necromancer"
+		],
+		"healthmultiply": 6.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"goety:ender_keeper"
+		],
+		"healthmultiply": 8.0,
+		"damagemultiply": 2.5,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"goety:apostle"
+		],
+		"healthmultiply": 3.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"revelationfix:ice_hermit"
+		],
+		"healthmultiply": 6.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"deeperdarker:stalker"
+		],
+		"healthmultiply": 5.0,
+		"damagemultiply": 2.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"draconicevolution:draconic_guardian"
+		],
+		"healthmultiply": 3.0,
+		"damagemultiply": 1.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"twilightforest:naga",
+			"twilightforest:lich",
+			"twilightforest:minoshroom"
+		],
+		"damagemultiply": 4,
+		"healthmultiply": 10.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"twilightforest:hydra"
+		],
+		"damagemultiply": 5.0,
+		"healthmultiply": 12.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"irons_spellbooks:dead_king"
+		],
+		"damagemultiply": 6.0,
+		"healthmultiply": 15.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"aether:valkyrie"
+		],
+		"damagemultiply": 3.0,
+		"healthmultiply": 5.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"aether:valkyrie_queen"
+		],
+		"damagemultiply": 6.0,
+		"healthmultiply": 8.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"twilightforest:alpha_yeti",
+			"twilightforest:snow_queen"
+		],
+		"damagemultiply": 5,
+		"healthmultiply": 15.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"twilightforest:ur_ghast"
+		],
+		"damagemultiply": 4.0,
+		"healthmultiply": 15.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"minecraft:wither",
+			"minecraft:elder_guardian"
+		],
+		"damagemultiply": 3.0,
+		"healthmultiply": 7.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"minecraft:ender_dragon"
+		],
+		"damagemultiply": 5.0,
+		"healthmultiply": 15.0,
+		"when": "onjoin"
+	},
+	{
+		"mob": [
+			"minecraft:warden"
+		],
+		"damagemultiply": 2.0,
+		"healthmultiply": 6.0,
+		"when": "onjoin"
+	},
+	{
+		"dimension": "minecraft:overworld",
+		"mod": "untamedwilds",
+		"mincount": {
+			"amount": 5,
+			"mod": "untamedwilds",
+			"perchunk": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": "minecraft:overworld",
+		"mod": "alexsmobs",
+		"mincount": {
+			"amount": 5,
+			"mod": "alexsmobs",
+			"perchunk": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": "minecraft:the_nether",
+		"hostile": true,
+		"healthmultiply": 1.75,
+		"damagemultiply": 1.5,
+		"result": "default"
+	},
+	{
+		"dimension": "minecraft:the_end",
+		"hostile": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0,
+		"result": "default"
+	},
+	{
+		"dimension": "deeperdarker:otherside",
+		"hostile": true,
+		"healthmultiply": 3.0,
+		"damagemultiply": 2.5,
+		"result": "default"
+	},
+	{
+		"mob": [
+			"minecraft:skeleton",
+			"minecraft:zombie"
+		],
+		"seesky": true,
+		"result": "allow",
+		"healthmultiply": 2,
+		"damagemultiply": 2,
+		"armorhelmet": [
+			"minecraft:iron_helmet",
+			"minecraft:golden_helmet"
+		]
+	},
+	{
+		"seesky": true,
+		"hostile": true,
+		"result": "allow",
+		"healthmultiply": 2,
+		"damagemultiply": 2
+	},
+	{
+		"seesky": false,
+		"random": 0.1,
+		"mob": "minecraft:zombie",
+		"result": "allow",
+		"healthmultiply": 0.5,
+		"potion": "minecraft:invisibility,10000,1"
+	},
+	{
+		"dimension": "minecraft:overworld",
+		"seesky": false,
+		"hostile": true,
+		"healthmultiply": 1.5,
+		"damagemultiply": 1.5,
+		"result": "default"
+	},
+	{
+		"dimension": "minecraft:overworld",
+		"mob": "endermanoverhaul:cave_enderman",
+		"mincount": {
+			"amount": 5,
+			"hostile": true,
+			"perchunk": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": "minecraft:overworld",
+		"mod": "born_in_chaos_v1",
+		"mincount": {
+			"amount": 5,
+			"hostile": true,
+			"perchunk": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": "minecraft:overworld",
+		"mod": "guardvillagers",
+		"mincount": {
+			"amount": 5,
+			"hostile": true,
+			"perchunk": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": "minecraft:overworld",
+		"mod": "goblins_tyranny",
+		"mincount": {
+			"amount": 5,
+			"hostile": true,
+			"perchunk": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": "minecraft:overworld",
+		"mob": "minecraft:bee",
+		"mincount": {
+			"amount": 5,
+			"hostile": true,
+			"perchunk": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": "minecraft:overworld",
+		"mod": "minecraft",
+		"mincount": {
+			"amount": 75,
+			"mod": "minecraft",
+			"perchunk": true
+		},
+		"passive": true,
+		"result": "deny"
+	},
+	{
+		"dimension": "minecraft:the_nether",
+		"mod": "minecraft",
+		"mincount": {
+			"amount": 50,
+			"mod": "minecraft",
+			"perchunk": true
+		},
+		"result": "deny"
+	},
+	{
+		"dimension": "minecraft:the_end",
+		"mod": "minecraft",
+		"mincount": {
+			"amount": 50,
+			"mod": "minecraft",
+			"perchunk": true
+		},
+		"result": "deny"
+	}
+]

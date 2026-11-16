@@ -1,0 +1,1273 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "colony_founding"
+	group: "0A20FFE9BBE69D51"
+	icon: "minecolonies:blockhuttownhall"
+	id: "47DBECC4D899C692"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["568A179A4BEAAA6B"]
+			description: [
+				"&eMineColonies&f lets you found a living town. Citizens move in, take jobs, build your blueprints and keep the place running while you are off adventuring."
+				""
+				"Every player may found (or join) &aone colony&f. Playing with friends? One of you places the Town Hall, then adds the others as &eOfficers&f in the Town Hall's &bPermissions&f tab so you all share it."
+				"{@pagebreak}"
+				"Your reward here is a &6Supply Camp&f and a &6Build Tool&f. Prefer the coast? Craft a &6Supply Ship&f instead - it needs open water."
+				""
+				"&cPick your spot carefully!&f Flat land, away from other colonies and from big dungeons, with trees and stone nearby."
+			]
+			hide_until_deps_complete: true
+			id: "0D75A0087DFCFCA4"
+			rewards: [
+				{
+					id: "4D476A66256CD631"
+					item: "minecolonies:supplycampdeployer"
+					type: "item"
+				}
+				{
+					id: "78F98CAFC3E17AE9"
+					item: "structurize:sceptergold"
+					type: "item"
+				}
+				{
+					id: "0EB0A4206BD3758F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					command: "/mastery xp @s leadership 250"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "5BE5BE9DD91655FF"
+					silent: true
+					title: "+250 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "The Colony path begins"
+			tasks: [
+				{
+					id: "5A9E19F4C774718E"
+					title: "Found a colony"
+					type: "checkmark"
+				}
+			]
+			title: "&6A Place to Call Home"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D75A0087DFCFCA4"]
+			description: [
+				"The &6Build Tool&f is how you place every colony building. Right-click a block with it to open the blueprint browser, pick a &estyle pack&f and a building, line up the preview, then confirm."
+				""
+				"This pack ships the default styles plus &dByzantine&f, &dAzurecrest&f (Lunara Colonies) and the &dStylecolonies&f packs (Antique, High Magic, Steampunk, FairyTale and more). A colony can mix styles freely."
+				""
+				"Use it now to place your &6Supply Camp&f (right-click with the Supply Camp item)."
+			]
+			id: "60F7E6EDEF3EED82"
+			rewards: [
+				{
+					id: "5E22B060C7D3D38A"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "79BDF6EE4B2481FD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "203231CD4DE58F94"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Your most important tool"
+			tasks: [
+				{
+					id: "6A24859E25222E58"
+					item: "structurize:sceptergold"
+					type: "item"
+				}
+			]
+			title: "The Build Tool"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60F7E6EDEF3EED82"]
+			description: [
+				"Open the chest inside your Supply Camp and take the &6Town Hall&f block. Place it with the Build Tool to officially found your colony."
+				""
+				"Your first four citizens arrive shortly after. They are hungry, homeless and unemployed - let's fix that."
+			]
+			id: "21579FC81C07D927"
+			rewards: [
+				{
+					id: "4FF931DC834844E3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "26235B5016776B84"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "566AA5B928EDE18E"
+					table_id: 3685448626895050638L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 100"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "3907755E9EAB447E"
+					silent: true
+					title: "+100 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The colony is founded"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/place_townhall"
+					criterion: ""
+					icon: "minecolonies:blockhuttownhall"
+					id: "72BF04E4A553EE90"
+					title: "Place a Town Hall"
+					type: "advancement"
+				}
+			]
+			title: "&6Raise the Banner"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21579FC81C07D927"]
+			description: [
+				"Nothing gets built without a &eBuilder&f. Craft a &6Builder's Hut&f block and place it with the Build Tool."
+				""
+				"The very first Builder's Hut is the only building you have to help with - the builder constructs their own hut once placed."
+			]
+			id: "658737AAFF01E0F0"
+			rewards: [
+				{
+					id: "105A52AE9FFB1B77"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 64
+					id: "7C6FFACB02B3DD4A"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "1529DA852FFF9F41"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hire your first worker"
+			tasks: [
+				{
+					id: "4D75632BC1A1FBA7"
+					item: "minecolonies:blockhutbuilder"
+					type: "item"
+				}
+			]
+			title: "The Builder's Hut"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["658737AAFF01E0F0"]
+			description: [
+				"Right-click the hut block and press &aBuild&f. The builder will tell you what they need - hand it over or put it in the hut's chest."
+				""
+				"From now on every building follows the same loop: &eplace the hut block -> Build Options -> supply materials&f."
+			]
+			id: "0BE9031A4EEE9432"
+			rewards: [
+				{
+					id: "6388C97B55142788"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "429E78F2854ECF4B"
+					table_id: 3685448626895050638L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s building 80"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "79AE078956031B1F"
+					silent: true
+					title: "+80 Building experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "7901FAEC20586037"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Wait for the builder to finish"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/build_builder"
+					criterion: ""
+					icon: "minecolonies:blockhutbuilder"
+					id: "4BDD8D18796094FB"
+					title: "Builder's Hut completed"
+					type: "advancement"
+				}
+			]
+			title: "Grand Opening"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["658737AAFF01E0F0"]
+			description: [
+				"Citizens with a problem get an icon above their head. Right-click them, or open the Town Hall, to see what they are asking for."
+				""
+				"Later a &eWarehouse&f and &eCouriers&f will fulfil most requests automatically."
+			]
+			id: "382F6661AB514B8C"
+			rewards: [
+				{
+					id: "0C8A96572EFCBC88"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 8
+					id: "573924F985DC1B5E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "265DC351F431D974"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Help a citizen out"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/fulfill_request"
+					criterion: ""
+					icon: "minecraft:paper"
+					id: "04D6EC1A19CFA796"
+					title: "Fulfil a citizen's request"
+					type: "advancement"
+				}
+			]
+			title: "Ask and You Shall Receive"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["658737AAFF01E0F0"]
+			description: [
+				"&6Clipboard&f - shows every open request in the colony at a glance."
+				""
+				"&6Resource Scroll&f - link it to a Builder's Hut (shift-right-click) and it lists exactly what the current build still needs. The &eMineColonies Tweaks&f addon also lets you craft coloured scrolls, one per builder."
+			]
+			id: "40703305F49619FF"
+			optional: true
+			rewards: [
+				{
+					id: "097F836D7FBF7E9F"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 16
+					id: "41B1DB3E189548DE"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "3C3D0DE1319DC7B1"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stay organised"
+			tasks: [
+				{
+					id: "0A5ECC5D4B1E23D7"
+					item: "minecolonies:clipboard"
+					type: "item"
+				}
+				{
+					id: "7EAEA8DFBD6769BB"
+					item: "minecolonies:resourcescroll"
+					type: "item"
+				}
+			]
+			title: "Tools of the Trade"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["40703305F49619FF"]
+			description: ["Wear these to see the outline of every placed and planned building in the colony. Great for town planning."]
+			id: "21042A66D00D92DC"
+			optional: true
+			rewards: [
+				{
+					id: "5F2763C2485AA274"
+					type: "xp"
+					xp: 30
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "4A0A48865587F77D"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3E2E2FC7D2CE3D42"
+					item: "minecolonies:build_goggles"
+					type: "item"
+				}
+			]
+			title: "Build Goggles"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0BE9031A4EEE9432"]
+			description: [
+				"Have your builder construct the Town Hall itself. The Town Hall's level caps the colony's size and lets you manage citizens, permissions, work orders and happiness."
+				""
+				"Building levels matter: most huts can not exceed the level of the Builder's Hut that builds them, and the Builder's Hut can not exceed the Town Hall."
+			]
+			id: "0DAD8B729E18A40B"
+			rewards: [
+				{
+					id: "6DE37CD82D2BC170"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 5
+					id: "508354CEE4670355"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "53CA5FF5121B9503"
+					table_id: 3685448626895050638L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 100"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "431BA4338248BF5F"
+					silent: true
+					title: "+100 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The heart of the colony"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/build_town_hall"
+					criterion: ""
+					icon: "minecolonies:blockhuttownhall"
+					id: "725D44B642E9E099"
+					title: "Town Hall completed"
+					type: "advancement"
+				}
+			]
+			title: "&6The Town Hall"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DAD8B729E18A40B"]
+			description: ["The Forester chops and replants trees around the hut. Give them an axe and plant saplings nearby and you will never punch wood again."]
+			id: "6CF05755AD19BAEC"
+			rewards: [
+				{
+					id: "6EBE0559EFEBEEBE"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 16
+					id: "441BB31911E8CC7D"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3776C906C744CEFE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "6D5674DB500FD9A1"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Wood, forever"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_lumberjack"
+					criterion: ""
+					icon: "minecolonies:blockhutlumberjack"
+					id: "0E07B1E48B17D77B"
+					title: "Forester's Hut completed"
+					type: "advancement"
+				}
+			]
+			title: "The Forester"
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0DAD8B729E18A40B"]
+			description: ["The Miner digs a shaft straight down and branches out at each level. Needs a pickaxe, shovel and plenty of ladders, fences, slabs and torches."]
+			id: "34B642875A46C377"
+			rewards: [
+				{
+					id: "07C1951EAAEFB7E0"
+					type: "xp"
+					xp: 75
+				}
+				{
+					id: "022088E8EC26B62B"
+					item: "minecraft:iron_pickaxe"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "760A63522C2E8B71"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "5E494649EC57347D"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stone and ore"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_miner"
+					criterion: ""
+					icon: "minecolonies:blockhutminer"
+					id: "6D541CB2DFF607C1"
+					title: "Mine completed"
+					type: "advancement"
+				}
+			]
+			title: "The Miner"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0DAD8B729E18A40B"]
+			description: [
+				"Build a Farm, then place a &6Field&f (the scarecrow) on a 9x9 patch of tilled soil and choose a seed for it in its GUI. Assign the field in the farmer's hut."
+				""
+				"MineColonies also adds its own crops - cabbage, onion, garlic, rice, durum and more - used in the best citizen meals. Find them growing wild or buy them from visitors."
+			]
+			id: "129BE25D99FF921A"
+			rewards: [
+				{
+					id: "0215F757E20F8B05"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 32
+					id: "2F9BD421F95C73EE"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4F5B95FA801EAE23"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s farming 80"
+					elevate_perms: true
+					icon: "minecraft:wheat"
+					id: "2AE33B0CECCCF4D6"
+					silent: true
+					title: "+80 Farming experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "1E829FA920E894A2"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Feed the people"
+			tasks: [
+				{
+					id: "1C5C5FA08248E33D"
+					item: "minecolonies:blockhutfield"
+					type: "item"
+				}
+				{
+					advancement: "minecolonies:production/build_farmer"
+					criterion: ""
+					icon: "minecolonies:blockhutfarmer"
+					id: "7329F24FCC0941FD"
+					title: "Farm completed"
+					type: "advancement"
+				}
+			]
+			title: "The Farmer"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DAD8B729E18A40B"]
+			description: ["Place this next to open water. Fishers bring in a steady supply of food and the occasional treasure."]
+			id: "3E55ED294D33DBD1"
+			optional: true
+			rewards: [
+				{
+					id: "269B60FC2A93982E"
+					type: "xp"
+					xp: 75
+				}
+				{
+					id: "66E74F53E8934D77"
+					item: "minecraft:fishing_rod"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "65E8E91AD202407F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "5352BA97A8B1123A"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Needs water nearby"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_fisherman"
+					criterion: ""
+					icon: "minecolonies:blockhutfisherman"
+					id: "5C84F49EEF78E897"
+					title: "Fisher's Hut completed"
+					type: "advancement"
+				}
+			]
+			title: "The Fisher"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0DAD8B729E18A40B"]
+			description: [
+				"Citizens without a bed are unhappy and no new citizens will be born. Each Residence level adds a bed."
+				""
+				"Children are born when a couple shares housing with a free bed and the colony has enough food."
+			]
+			id: "52E67160833CDBF5"
+			rewards: [
+				{
+					id: "1A60179EA06CFE91"
+					type: "xp"
+					xp: 75
+				}
+				{
+					count: 2
+					id: "7DFE7033007F4D79"
+					item: "minecraft:white_bed"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "44162A9D7EB27E53"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "78931A5AF2C02FD0"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Housing for citizens"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/build_citizen"
+					criterion: ""
+					icon: "minecolonies:blockhutcitizen"
+					id: "383FBE3A30233AF0"
+					title: "Residence completed"
+					type: "advancement"
+				}
+			]
+			title: "A Roof Overhead"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["52E67160833CDBF5"]
+			description: ["Grow the colony to &a5 citizens&f."]
+			id: "1DFE523FA48C1563"
+			rewards: [
+				{
+					id: "14B8A0E0ED554CD9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "05CE31A0CD1FFA25"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "767621F06665138D"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Population: 5"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/colony_population_5"
+					criterion: ""
+					icon: "minecraft:player_head"
+					id: "65B151C4E66C2403"
+					title: "Reach 5 citizens"
+					type: "advancement"
+				}
+			]
+			title: "A Hamlet"
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["129BE25D99FF921A"]
+			description: [
+				"Hungry citizens walk to the Restaurant to eat. Keep the cook stocked with food and fuel."
+				""
+				"Higher level citizens want &ebetter and more varied food&f. MineColonies' own dishes feed them best; plain vanilla food counts for less. A &eKitchen&f (A Working Town) cooks those dishes for you."
+			]
+			id: "1A1A98D0C9C9290C"
+			rewards: [
+				{
+					id: "064BF5834E64EAE8"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 32
+					id: "6EE15052DED30BE1"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05D19C683032C897"
+					table_id: 4324331771948795312L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "5A71ADB9BB5D2B7F"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Citizens need to eat"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_cook"
+					criterion: ""
+					icon: "minecolonies:blockhutcook"
+					id: "1C019C163D80B0CC"
+					title: "Restaurant completed"
+					type: "advancement"
+				}
+			]
+			title: "The Restaurant"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A1A98D0C9C9290C"]
+			id: "2597CC56EB28CB89"
+			optional: true
+			rewards: [
+				{
+					id: "40075BC3AD557919"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "1A5C6588BF118502"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "251607AEB11D2129"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Watch a citizen sit down for their first proper meal."
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/citizen_eat_food_first"
+					criterion: ""
+					icon: "minecraft:cooked_beef"
+					id: "4F033E8695C0A263"
+					title: "A citizen eats a meal"
+					type: "advancement"
+				}
+			]
+			title: "Dinner is Served"
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6CF05755AD19BAEC"
+				"34B642875A46C377"
+			]
+			description: [
+				"The Warehouse is the colony's shared storage. Everything your workers produce ends up here, and everything they need is taken from here."
+				""
+				"Fill it with &6Racks&f - they hold more than chests and the couriers can see inside them."
+			]
+			id: "44D9FEAB3E42BC05"
+			rewards: [
+				{
+					id: "591E179BC05D17F6"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 8
+					id: "430B11EB45E0DE86"
+					item: "minecolonies:blockminecoloniesrack"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1D424402CF68ECA3"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 100"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "29B17F670717143E"
+					silent: true
+					title: "+100 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Central storage"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_warehouse"
+					criterion: ""
+					icon: "minecolonies:blockhutwarehouse"
+					id: "1263B7D6D7DDC0CA"
+					title: "Warehouse completed"
+					type: "advancement"
+				}
+			]
+			title: "&6The Warehouse"
+			x: 16.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["44D9FEAB3E42BC05"]
+			description: [
+				"Couriers carry goods between the Warehouse and every hut. A warehouse without a courier does nothing!"
+				""
+				"One courier per ~6 working huts is a good rule of thumb."
+			]
+			id: "3D7FC172E84A0E7B"
+			rewards: [
+				{
+					id: "296CB5AB16D8DDAC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "43B805C1B249CE6D"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "77231BC710495A52"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "52BB4EBF9DA7243A"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Automate your logistics"
+			tasks: [
+				{
+					advancement: "minecolonies:production/build_delivery_person"
+					criterion: ""
+					icon: "minecolonies:blockhutdeliveryman"
+					id: "37554844EDE68338"
+					title: "Courier's Hut completed"
+					type: "advancement"
+				}
+			]
+			title: "Special Delivery"
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3D7FC172E84A0E7B"]
+			description: [
+				"&6Postbox&f - request any item from the Warehouse and a courier delivers it to you."
+				""
+				"&6Stash&f - drop items in and a courier files them into the Warehouse."
+			]
+			id: "38DDCB37265F05A8"
+			optional: true
+			rewards: [
+				{
+					id: "1DEFFD9EA162BD23"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "736AF8C115487BD9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "51BDA1EBB4356D45"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecolonies:production/post_and_stash"
+					criterion: ""
+					icon: "minecolonies:blockpostbox"
+					id: "1E5D02840F71EA5F"
+					title: "Craft a Postbox and a Stash"
+					type: "advancement"
+				}
+			]
+			title: "Postbox \\& Stash"
+			x: 18.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1DFE523FA48C1563"]
+			description: ["The Tavern houses four citizens and attracts &evisitors&f. Visitors can be recruited for a price and often arrive with far better skills than colony-born children."]
+			id: "4B5F7F9A672E9C7D"
+			rewards: [
+				{
+					id: "7FEB4781DD979693"
+					type: "xp"
+					xp: 120
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6155444C0FFA73E8"
+					table_id: 6368590923468895226L
+					type: "loot"
+				}
+				{
+					count: 4
+					id: "66FB18BBD9BDCD97"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "7DE41C954945778A"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Recruit skilled visitors"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/build_tavern"
+					criterion: ""
+					icon: "minecolonies:blockhuttavern"
+					id: "2612D600E82F2D31"
+					title: "Tavern completed"
+					type: "advancement"
+				}
+			]
+			title: "The Tavern"
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1A1A98D0C9C9290C"]
+			description: [
+				"Mobs do not care about your town planning. A Guard Tower houses one guard - Knight, Archer or Druid - and &eextends the colony border&f."
+				""
+				"Once the colony grows, &craiders&f will come. See the &6Walls \\& Wardens&f chapter."
+			]
+			id: "18215A0F4E13E60F"
+			rewards: [
+				{
+					id: "13B7FDAEAE6B01D4"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "44D1E6F0B35C33A3"
+					item: "minecraft:iron_sword"
+					type: "item"
+				}
+				{
+					id: "7E851AD0F58E975C"
+					item: "minecraft:shield"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "452A97CCB55B98C4"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "2F7861A6B4FDDEB4"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Protect the colony"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/build_guard_tower"
+					criterion: ""
+					icon: "minecolonies:blockhutguardtower"
+					id: "4D1D2C3D71649513"
+					title: "Guard Tower completed"
+					type: "advancement"
+				}
+			]
+			title: "The Night Watch"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BE9031A4EEE9432"]
+			description: ["Upgrade the Builder's Hut so your builder can raise other buildings to level 2. You can also place a &esecond Builder's Hut&f to build two things at once."]
+			id: "216691071794E443"
+			rewards: [
+				{
+					id: "3148B413BC7DDE2D"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 16
+					id: "01DE83AC2174A97C"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "6BFCEAB040D18B45"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade the hut"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/build_builder_2"
+					criterion: ""
+					icon: "minecolonies:blockhutbuilder"
+					id: "75D7F4D81A8854AB"
+					title: "Builder's Hut level 2"
+					type: "advancement"
+				}
+			]
+			title: "A Better Builder"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["216691071794E443"]
+			description: [
+				"Higher level buildings ask for framed, shingled and panelled blocks. They all come from the &6Architect's Cutter&f - combine any two materials into thousands of decorative blocks."
+				""
+				"Later a &eSawmill&f, &eStonemason&f and &eMechanic&f can craft these for you."
+			]
+			id: "7869AED6FC2A1EFE"
+			optional: true
+			rewards: [
+				{
+					id: "66AD435A658A5004"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 32
+					id: "5899D24F7845823A"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "21B79CFA1E1CB48B"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Decorative building blocks"
+			tasks: [
+				{
+					id: "48F216400E0EA41F"
+					item: "domum_ornamentum:architectscutter"
+					type: "item"
+				}
+			]
+			title: "Domum Ornamentum"
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4B5F7F9A672E9C7D"]
+			description: ["Grow the colony to &a10 citizens&f."]
+			id: "1E84D6A1FB835F9D"
+			rewards: [
+				{
+					id: "6E8FA98D4B0F3BC1"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 8
+					id: "2D6D1E2612572CCF"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "01AB2555CFF6EA83"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			subtitle: "Population: 10"
+			tasks: [
+				{
+					advancement: "minecolonies:minecolonies/colony_population_10"
+					criterion: ""
+					icon: "minecraft:player_head"
+					id: "365CEA59416B1D1F"
+					title: "Reach 10 citizens"
+					type: "advancement"
+				}
+			]
+			title: "A Village"
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3D7FC172E84A0E7B"
+				"18215A0F4E13E60F"
+				"1E84D6A1FB835F9D"
+			]
+			description: [
+				"Wood, stone, food, storage, guards and ten souls who call this place home. You have a village."
+				""
+				"Next: put everyone to work in &aA Working Town&f, and prepare your defences in &cWalls \\& Wardens&f."
+			]
+			id: "1957B990BC313A5F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E01CA1101AC34F4"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "429020510459F1F4"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "79C75ED88BCC79F2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/mastery xp @s building 160"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "54523E11EC8B05D9"
+					silent: true
+					title: "+160 Building experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s leadership 250"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "3A8660AABEA24EBC"
+					silent: true
+					title: "+250 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "5A95076393B4A251"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lA Proper Village"
+			x: 20.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["From a supply camp to a proper village"]
+	title: "&aFounding a Colony"
+}

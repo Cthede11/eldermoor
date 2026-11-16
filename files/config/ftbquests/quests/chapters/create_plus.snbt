@@ -1,0 +1,1135 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_plus"
+	group: "02AD8609A8FE6EE4"
+	icon: "createdieselgenerators:diesel_engine"
+	id: "6E413FD2535C3CA5"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1ABE3B8BB58CD5DA"]
+			description: [
+				"Create is a whole family of mods. Six of its add-ons are in Eldermoor, one row each on this page:"
+				""
+				"&eSteam 'n' Rails&f - more track, signals and fuel for trains."
+				"&eDiesel Generators&f - oil, refining and engines that out-pull any water wheel."
+				"&eSlice \\& Dice&f - Farmer's Delight's kitchen work done by machines."
+				"&eCreate: Connected&f - gearboxes, fuses, batteries and tiny redstone programs."
+				"{@pagebreak}"
+				"&eCopycats+&f - building blocks that look like any block you give them."
+				"&eCreate Jetpack&f - flight, on backtank air."
+				""
+				"Hold &eW&f over any of their items for Ponder, just like Create itself."
+			]
+			hide_until_deps_complete: true
+			id: "36CDCFE3AA7F3387"
+			rewards: [
+				{
+					id: "21394133415AFF03"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "06063D41033E5F05"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1E031423330BAD23"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6AB30FB670AB89F3"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "26769DF2D4704BE8"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "0E74788B01E79222"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&a&lThe Wider Works"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36CDCFE3AA7F3387"]
+			description: ["The smallest train there is: one seat and a lever you pump by hand. No station and no schedule - put it on a track and ride."]
+			id: "09339B5B64A9B486"
+			rewards: [
+				{
+					id: "3BA484382622CFB3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "78AC7A8398C6FCAA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6A5C775E76020DA1"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "47EC002F9B90DEA2"
+					item: "railways:handcar"
+					type: "item"
+				}
+			]
+			title: "The Handcar"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["09339B5B64A9B486"]
+			description: [
+				"Steam 'n' Rails adds track in every wood and stone, plus monorail and other gauges. JEI lists them all."
+				"&7Made at: &fCreate sequenced assembly &7from &fMetal Girder, Incomplete Monorail Track x4, Metal Bracket, Iron Plates Internal"
+			]
+			id: "2191D4803C35669E"
+			rewards: [
+				{
+					id: "20844481D0FE303C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0FEF409889ED34E0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "573B2D7306690C4F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "0D2D93F878A80A7B"
+					item: "railways:track_monorail"
+					type: "item"
+				}
+			]
+			title: "Every Kind of Track"
+			x: 4.25d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2191D4803C35669E"]
+			description: ["A switch at a junction. Scheduled trains throw it for themselves, or redstone can hold it one way."]
+			id: "3BC7913ACBFE2261"
+			rewards: [
+				{
+					id: "165FA6C7D15B4A4F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2A95F6F4673BCB44"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "38F568EAB8096EF2"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0A0336B92B1444DF"
+					item: "railways:track_switch_andesite"
+					type: "item"
+				}
+			]
+			title: "Points"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3BC7913ACBFE2261"]
+			description: ["Mount one on a pole beside a Create signal: its arm shows whether the track ahead is clear."]
+			id: "64F13E7BDFFF6584"
+			rewards: [
+				{
+					id: "309097C7A0313744"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3180830FFA0015A5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "43779A88F61F0C0E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0288A231BBCE77D5"
+					item: "railways:semaphore"
+					type: "item"
+				}
+			]
+			title: "Semaphores"
+			x: 7.75d
+			y: -5.0d
+		}
+		{
+			dependencies: ["64F13E7BDFFF6584"]
+			description: ["Joins and splits trains at a fixed spot on the line, on a redstone signal."]
+			id: "0FDF3A5D856FA04D"
+			rewards: [
+				{
+					id: "387F4D8D60A3E3F6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "49FFB63DA5C8B516"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6CBA81D970768B63"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "40921CEF60F8C415"
+					item: "railways:track_coupler"
+					type: "item"
+				}
+			]
+			title: "The Coupler"
+			x: 9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0FDF3A5D856FA04D"]
+			description: ["A Fuel Tank on board lets a train burn liquid fuel instead of solid fuel. A Portable Fuel Interface at a station fills it."]
+			id: "023CC769A32C71B8"
+			rewards: [
+				{
+					id: "48F7550B6A28358B"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "6F4F4334D526A701"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "11BA9122FF5D5728"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4DF1CE85C557231B"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4232C7E1D91022FF"
+					item: "railways:fuel_tank"
+					type: "item"
+				}
+				{
+					id: "6669E53F7D578D9C"
+					item: "railways:portable_fuel_interface"
+					type: "item"
+				}
+			]
+			title: "Liquid Fuel"
+			x: 11.25d
+			y: -5.0d
+		}
+		{
+			dependencies: ["36CDCFE3AA7F3387"]
+			description: ["Some chunks sit over a pocket of crude oil. The scanner tells you how rich the chunk under your feet is."]
+			id: "138B06C62400D06B"
+			rewards: [
+				{
+					id: "49DE12AA5A384E11"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5498C98DEFC51CE7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "53761928F1D0331B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7C750C34A8A2501C"
+					item: "createdieselgenerators:oil_scanner"
+					type: "item"
+				}
+			]
+			title: "Where's the Oil?"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["138B06C62400D06B"]
+			description: [
+				"A bearing, a crank and a head over a pumpjack hole in an oil chunk, driven by rotation. Crude oil comes up. Ponder shows how the parts fit."
+				"&7&fPumpjack Crank&7 - Made at: &fMechanical Crafters &7from &fAndesite Alloy x6, Zinc Ingot x3, Iron Plate x2, Shaft x2"
+			]
+			id: "7B336B2EA93CF771"
+			rewards: [
+				{
+					id: "3EC80E6038E744B0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "359D213B162A603A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3A93DF761D816CF9"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "12A0B8D5A27FF650"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
+				}
+				{
+					id: "6693A1DDCC95E086"
+					item: "createdieselgenerators:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "2216A4E3F4D6B8B8"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
+			]
+			title: "The Pumpjack"
+			x: 4.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B336B2EA93CF771"]
+			description: ["A controller on a column of fluid tanks splits crude oil into diesel, gasoline and the rest."]
+			id: "769F74E899654C08"
+			rewards: [
+				{
+					id: "41631FCB97A0DCFB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7C01004278D10E4A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2DAFAA90E9BFA207"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "60B4CD314DD0DD15"
+					item: "createdieselgenerators:distillation_controller"
+					type: "item"
+				}
+			]
+			title: "Distillation"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["769F74E899654C08"]
+			description: ["No oil under you? Ferment crops into ethanol, press seeds into plant oil, and mix the two into biodiesel."]
+			id: "64EAD61F7221186F"
+			rewards: [
+				{
+					id: "76DE107616D1255B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5214968FD3CC564D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "59124AA5FE996F2E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0139191EFA4515DA"
+					item: "createdieselgenerators:bulk_fermenter"
+					type: "item"
+				}
+			]
+			title: "Grow Your Fuel"
+			x: 7.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["64EAD61F7221186F"]
+			description: ["Pipe fuel in and it turns a shaft, with far more stress capacity than any wheel or windmill."]
+			id: "453519F503BF8F04"
+			rewards: [
+				{
+					id: "79EF7CB2C5E3C686"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "4E502D53B51BE4B1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19940A9E51E6D1E1"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5067ABFF72EB6E45"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "472A35202F0BAE40"
+					item: "createdieselgenerators:diesel_engine"
+					type: "item"
+				}
+			]
+			title: "Diesel Engine"
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["453519F503BF8F04"]
+			description: ["Large and huge engines make more power still; a turbocharger squeezes out more. An engine silencer keeps the neighbours happy."]
+			id: "53F936D8AB5E09C6"
+			rewards: [
+				{
+					id: "38294829F801C368"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "301BE9C1C7373AF4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4F4D0D42C4658580"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6044435E6E29E68E"
+					item: "createdieselgenerators:large_diesel_engine"
+					type: "item"
+				}
+				{
+					id: "425474BB853B2DAF"
+					item: "createdieselgenerators:engine_turbocharger"
+					type: "item"
+				}
+			]
+			title: "Bigger Engines"
+			x: 11.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["36CDCFE3AA7F3387"]
+			description: ["Farmer's Delight's cutting board, automated. Put a knife in the slicer, power it, and feed it from a depot, belt or basin below."]
+			id: "6D20A413BC234F83"
+			rewards: [
+				{
+					id: "6E0130943C5ADF0A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "45B4BA423DE122B3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6A10EDBB5E5F1F0F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "220867AC53224B4E"
+					item: "sliceanddice:slicer"
+					type: "item"
+				}
+			]
+			title: "Slice \\& Dice"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D20A413BC234F83"]
+			description: ["Pipe water in and it waters the crops underneath. Pipe in fertilizer instead and they grow."]
+			id: "7C47A2471BB2E30C"
+			rewards: [
+				{
+					id: "6BA9B7C4D093C0E5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "62DFC0B6D0E80B41"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5954D3B69BA4D570"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4A14BB321D816347"
+					item: "sliceanddice:sprinkler"
+					type: "item"
+				}
+			]
+			title: "Sprinklers"
+			x: 4.25d
+			y: -1.0d
+		}
+		{
+			dependencies: ["36CDCFE3AA7F3387"]
+			description: ["Create: Connected adds gearboxes for every awkward corner: parallel, six-way, brass."]
+			id: "3E2A1803F692D296"
+			rewards: [
+				{
+					id: "4A4AB62D61E04A38"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "75A2F37FF0F7D4B5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3E076D8B6E49D229"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Place down a Brass Gearbox"
+			tasks: [
+				{
+					advancement: "create_connected:brass_gearbox"
+					criterion: ""
+					icon: "create_connected:brass_gearbox"
+					id: "199E2673F75D6F53"
+					title: "Serious Organization"
+					type: "advancement"
+				}
+			]
+			title: "Serious Organization"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3E2A1803F692D296"]
+			description: ["A cheap fuse. It snaps when the network is overstressed, so one greedy machine cannot stall the factory."]
+			id: "2B69A17EF6239025"
+			rewards: [
+				{
+					id: "17C043B38BDB6902"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "386FA49E0818E4C9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6AA9B5227946D9BB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Blow a Shear Pin"
+			tasks: [
+				{
+					advancement: "create_connected:shear_pin"
+					criterion: ""
+					icon: "create_connected:shear_pin"
+					id: "0BBB7CD831F19FE8"
+					title: "Snap!"
+					type: "advancement"
+				}
+			]
+			title: "Snap!"
+			x: 4.25d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B69A17EF6239025"]
+			description: ["Stores rotation while you have spare and gives it back when you don't."]
+			id: "7C98EFFC1E351CB4"
+			rewards: [
+				{
+					id: "0BFF1C854B41C68D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "697E448EC6AAB84C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3CF7A9B95E9FD271"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charge a Kinetic Battery to full"
+			tasks: [
+				{
+					advancement: "create_connected:kinetic_battery"
+					criterion: ""
+					icon: "create_connected:kinetic_battery"
+					id: "0536277C0C0A7264"
+					title: "Fully Charged"
+					type: "advancement"
+				}
+			]
+			title: "Fully Charged"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7C98EFFC1E351CB4"]
+			description: ["&7Made at: &fCreate sequenced assembly &7from &fGold Plate, Incomplete Control Chip x4, Electron Tube, Redstone Dust"]
+			id: "63FE92F90AFE3F36"
+			rewards: [
+				{
+					id: "63DB005FAE65B66E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6D28D2D2459B12EB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "18B13075B430D302"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Assemble a Control Chip"
+			tasks: [
+				{
+					advancement: "create_connected:control_chip"
+					criterion: ""
+					icon: "create_connected:control_chip"
+					id: "281FCDD116898C6F"
+					title: "Precise Fabrication"
+					type: "advancement"
+				}
+			]
+			title: "Precise Fabrication"
+			x: 7.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["63FE92F90AFE3F36"]
+			description: ["A tiny redstone program: pulses and waits, played in order."]
+			id: "2D7C1997A41F73C5"
+			rewards: [
+				{
+					id: "3883D3370243E89D"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "20332C839620A854"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "035D2D167A4EB04B"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7C85F455E7B32C28"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Place down a Sequenced Pulse Generator"
+			tasks: [
+				{
+					advancement: "create_connected:sequenced_pulse_generator"
+					criterion: ""
+					icon: "create_connected:sequenced_pulse_generator"
+					id: "6A80FEDC8A0388A3"
+					title: "Computational Supremacy"
+					type: "advancement"
+				}
+			]
+			title: "Computational Supremacy"
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["36CDCFE3AA7F3387"]
+			description: [
+				"Right-click a block into a copycat and it takes that block's look: slopes, steps, slices, panels, all in any material."
+				"&7&fCopycat Slope&7 - Made at: &fStonecutter &7from &fZinc Ingot"
+				"&7&fCopycat Stairs&7 - Made at: &fStonecutter &7from &fZinc Ingot"
+			]
+			id: "67625C30A2BE9A2D"
+			rewards: [
+				{
+					id: "7BE8B4AE3DAD1726"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "41AF6DF535A28777"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "197BD0933B67D238"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4F2FBCAF6CFF3153"
+					item: "copycats:copycat_slope"
+					type: "item"
+				}
+				{
+					id: "2478A476C397547E"
+					item: "copycats:copycat_stairs"
+					type: "item"
+				}
+			]
+			title: "Copycats"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["67625C30A2BE9A2D"]
+			description: [
+				"&7&fCopycat Door&7 - Made at: &fStonecutter &7from &fZinc Ingot"
+				"&7&fCopycat Trapdoor&7 - Made at: &fStonecutter &7from &fZinc Ingot"
+			]
+			id: "1D1C50AE9F6442E4"
+			rewards: [
+				{
+					id: "13CCCC771FBB74A4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0B8498514AFE297C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "708A08E87A6473EC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A door that is the wall it sits in."
+			tasks: [
+				{
+					id: "3BFE5A632102B7F3"
+					item: "copycats:copycat_door"
+					type: "item"
+				}
+				{
+					id: "191812CB522C9671"
+					item: "copycats:copycat_trapdoor"
+					type: "item"
+				}
+			]
+			title: "Doors That Match"
+			x: 4.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1D1C50AE9F6442E4"]
+			description: [
+				"An oak cogwheel, a stone shaft: they work exactly like the real thing and look like anything you like."
+				"&7&fCopycat Shaft&7 - Made at: &fStonecutter &7from &fZinc Ingot"
+			]
+			id: "4B8D8EB94F44407D"
+			rewards: [
+				{
+					id: "232A3270EC48826E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "241DF93EF46EF73C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3524210210C1F4E2"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4425D222E5531AED"
+					item: "copycats:copycat_cogwheel"
+					type: "item"
+				}
+				{
+					id: "08FF8F3EBF729DDE"
+					item: "copycats:copycat_shaft"
+					type: "item"
+				}
+			]
+			title: "Machinery in Disguise"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["36CDCFE3AA7F3387"]
+			description: [
+				"A brass jetpack that burns backtank air. Fill it like a backtank: place it down and give it rotation. Toggle hover with its key."
+				"&7Made at: &fMechanical Crafters &7from &fElytra, Chute x4, Copper Backtank, Shaft, Precision Mechanism x2 and 1 more"
+			]
+			id: "357082032D67012D"
+			rewards: [
+				{
+					id: "4A74C8C98D9F0F33"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "237AA01B5E51AAD1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2E93FC7E6D70F163"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6A9CF4ABC19370FA"
+					item: "create_jetpack:jetpack"
+					type: "item"
+				}
+			]
+			title: "Jetpack"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["357082032D67012D"]
+			description: [
+				"More air, and like the netherite backtank it shrugs off fire and lava."
+				"&7Made at: &fSmithing Table &7from &fJetpack, Netherite Chestplate, Netherite Upgrade Smithing Template"
+			]
+			id: "487DDA2B7778D728"
+			rewards: [
+				{
+					id: "7EF787F5B14521B4"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "668D3AD8173C62D1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B3D866835D40952"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2146A5A0FD602D6F"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5840AB2ACF626FA5"
+					item: "create_jetpack:netherite_jetpack"
+					type: "item"
+				}
+			]
+			title: "Netherite Jetpack"
+			x: 4.25d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"023CC769A32C71B8"
+				"53F936D8AB5E09C6"
+				"2D7C1997A41F73C5"
+				"487DDA2B7778D728"
+			]
+			description: ["Any three of: liquid-fuelled trains, large diesel engines, a sequenced pulse generator, a netherite jetpack."]
+			id: "02A9FF6A501936D2"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					id: "301821AAAF4512DA"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "3720635099CB36A1"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C26794CE2EF7F30"
+					table_id: 3964824304375825551L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6CF2FCC623D3E01C"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "77612E034B9F2984"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "297D142A4F6DEB64"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&a&lMaster of the Wider Works"
+			x: 13.5d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Trains, oil, engines, gadgets and a jetpack"]
+	title: "&aCreate: The Wider Works"
+}

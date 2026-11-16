@@ -1,0 +1,1761 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "armory"
+	group: "478F493742D3F387"
+	icon: "magistuarmory:steel_bastardsword"
+	id: "22BF22A3C7A9C80A"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["184768A56985E56B"]
+			description: [
+				"There are &ehundreds&f of weapons and armour sets in Eldermoor. This chapter is a tour of the families so you can pick a style - none of it is mandatory."
+				""
+				"Nothing here is locked behind skill levels - if you can make it or find it, you can wield it. Your &6skill trees&f (press ,) add the edge on top."
+				""
+				"&eBetter Combat&f gives every weapon type its own reach, speed and combo. Two-handers sweep, daggers flurry, spears poke from afar."
+			]
+			hide_until_deps_complete: true
+			id: "26766DCCDE3B2C7E"
+			rewards: [
+				{
+					id: "5DA2B43E936E00B4"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 12
+					id: "3F2F49678D88F6FA"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "792A126D88529FF6"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3020C84786E8B152"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "The Warrior's path"
+			tasks: [
+				{
+					id: "5F7750D2F756C876"
+					title: "Arm me"
+					type: "checkmark"
+				}
+			]
+			title: "&6Dress for the Job"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26766DCCDE3B2C7E"]
+			description: ["&6Epic Knights&f is historical European arms and armour. Nearly all of it starts with steel. In Eldermoor there is only one steel: make it in a Crude Blast Furnace, a Metallurgic Infuser or a Tinkers' smeltery and every Epic Knights recipe takes it."]
+			id: "617692340CA9068D"
+			rewards: [
+				{
+					id: "25075D3A0F13A46E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 4
+					id: "7E59FD56EB3EE4B4"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4E78B9AD6DB7F30A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "10D8CCAFE9049EE7"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Epic Knights"
+			tasks: [
+				{
+					count: 8L
+					id: "2FF1318BF3F50E3E"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+			]
+			title: "Knightly Steel"
+			x: 2.1d
+			y: -5.03d
+		}
+		{
+			dependencies: ["617692340CA9068D"]
+			description: ["The building blocks: plates for armour, rings for chainmail, hilts for swords and poles for polearms."]
+			id: "14EAD320FA1CBC03"
+			rewards: [
+				{
+					id: "09C157BCFD1D8EDE"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "3BAD0132477B6FC8"
+					item: "magistuarmory:leather_strip"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3095C04DA131D9C7"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "54E951F40B826707"
+					item: "immersiveengineering:plate_steel"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "07364D6DAD343018"
+					item: "magistuarmory:steel_chainmail"
+					type: "item"
+				}
+				{
+					id: "289E11215B93CF54"
+					item: "magistuarmory:hilt"
+					type: "item"
+				}
+				{
+					id: "01296E6C582702B8"
+					item: "magistuarmory:pole"
+					type: "item"
+				}
+			]
+			title: "Plates, Rings and Hilts"
+			x: 3.85d
+			y: -5.03d
+		}
+		{
+			dependencies: ["14EAD320FA1CBC03"]
+			description: ["Padded cloth. Cheap, and the under-layer for many heavier sets."]
+			id: "6091C829212D0693"
+			rewards: [
+				{
+					id: "5DB004F6570D9950"
+					type: "xp"
+					xp: 60
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "21CAAD93CF07DD73"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "62DA04C52AD37853"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Light"
+			tasks: [
+				{
+					id: "11472F2C43E68396"
+					item: "magistuarmory:gambeson_chestplate"
+					type: "item"
+				}
+			]
+			title: "Gambeson"
+			x: 5.6d
+			y: -5.03d
+		}
+		{
+			dependencies: ["6091C829212D0693"]
+			id: "7001B6B3C060C2E8"
+			rewards: [
+				{
+					id: "383C89D32A29160E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "10D85C2B4DB02F05"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "307F9A30B8EDA2CC"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Medium"
+			tasks: [
+				{
+					id: "69B809FFD34D2D17"
+					item: "magistuarmory:chainmail_chestplate"
+					type: "item"
+				}
+			]
+			title: "Chainmail"
+			x: 7.35d
+			y: -5.03d
+		}
+		{
+			dependencies: ["7001B6B3C060C2E8"]
+			description: ["Knight, Gothic, Maximilian, Kastenbrust... dozens of plate harnesses, all dyeable and decorated with heraldry at a loom."]
+			id: "7C79C38413A5A9C9"
+			rewards: [
+				{
+					id: "3A3381B673458272"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "2F9CB55AD5568C6E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "1D20F6DA66A79716"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "325D9FB36A3702C9"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Heavy"
+			tasks: [
+				{
+					id: "7FFC651C3DB77193"
+					item: "magistuarmory:knight_chestplate"
+					type: "item"
+				}
+			]
+			title: "Full Plate"
+			x: 10.85d
+			y: -5.03d
+		}
+		{
+			dependencies: ["14EAD320FA1CBC03"]
+			description: ["Usable in one hand or two. Each Epic Knights weapon comes in every material tier."]
+			id: "7DCA56743EA266CE"
+			rewards: [
+				{
+					id: "5F67275FF385C1A9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "43BEC83D822698A4"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "542AC036CFB7890F"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Versatile"
+			tasks: [
+				{
+					id: "59CEC626E44368BF"
+					item: "magistuarmory:steel_bastardsword"
+					type: "item"
+				}
+			]
+			title: "Bastard Sword"
+			x: 5.6d
+			y: -3.53d
+		}
+		{
+			dependencies: ["7DCA56743EA266CE"]
+			description: ["Enormous reach, enormous sweep, no shield."]
+			id: "1CF6B7A2F7D332F7"
+			rewards: [
+				{
+					id: "2EFA50291A517F7E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "49B3DED8B2AB04DC"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "49C3D86094F4931B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Two-handed"
+			tasks: [
+				{
+					id: "1D514CADCB1ECFD7"
+					item: "magistuarmory:steel_zweihander"
+					type: "item"
+				}
+			]
+			title: "Zweihander"
+			x: 7.35d
+			y: -3.53d
+		}
+		{
+			dependencies: ["7DCA56743EA266CE"]
+			description: ["Pikes, halberds, guisarmes and lances. Keep them at arm's length - a very long arm."]
+			id: "5BCE85D2ED7DECD3"
+			rewards: [
+				{
+					id: "7109A38AB8DB011A"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "019318C89873C7C7"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "062661DC7E3674A3"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Reach"
+			tasks: [
+				{
+					id: "33C57638D68392CA"
+					item: "magistuarmory:steel_pike"
+					type: "item"
+				}
+			]
+			title: "Polearms"
+			x: 7.35d
+			y: -2.03d
+		}
+		{
+			dependencies: ["14EAD320FA1CBC03"]
+			id: "7EFF605D3A8245FA"
+			rewards: [
+				{
+					id: "0E2BC1768276FD56"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "6559DF34DA9DAD58"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2768B48BC9027F1C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bucklers to pavises. Paint them with banner patterns."
+			tasks: [
+				{
+					id: "3802F224163845A1"
+					item: "magistuarmory:steel_heatershield"
+					type: "item"
+				}
+			]
+			title: "Shields"
+			x: 5.6d
+			y: -6.53d
+		}
+		{
+			dependencies: ["7EFF605D3A8245FA"]
+			description: ["Damage scales with your horse's speed. Find a friend, two horses and a long field."]
+			id: "3F23CCD2EDC98629"
+			optional: true
+			rewards: [
+				{
+					id: "7B5F5A9D25388294"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "5D9ABDF11763ECC4"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3DB57A0A08620787"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0957405F6959D185"
+					item: "magistuarmory:steel_chivalrylance"
+					type: "item"
+				}
+			]
+			title: "The Joust"
+			x: 7.35d
+			y: -6.53d
+		}
+		{
+			dependencies: ["26766DCCDE3B2C7E"]
+			description: ["Every vanilla material as a rapier, katana, sai, spear, glaive, warglaive, cutlass, claymore, greataxe, greathammer, chakram, scythe, halberd or twinblade."]
+			id: "7A414114BD9BE15F"
+			rewards: [
+				{
+					id: "658556D90690936B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "59E3DC24BD8565E3"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "22B57D2D20B1F0BB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "56C336A1F725CD1F"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fantasy weapon types"
+			tasks: [
+				{
+					id: "7AA400009415E476"
+					item: "simplyswords:iron_claymore"
+					type: "item"
+				}
+			]
+			title: "Simply Swords"
+			x: 2.1d
+			y: -10.47d
+		}
+		{
+			dependencies: ["7A414114BD9BE15F"]
+			id: "64ED8441B2C92FFE"
+			rewards: [
+				{
+					id: "31F88393FA92E08F"
+					type: "xp"
+					xp: 120
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3A5F1932FE23A43C"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0F77BB9130773DC6"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Katanas, rapiers and sai trade damage for speed."
+			tasks: [
+				{
+					id: "73F40B9E1748115A"
+					item: "simplyswords:diamond_katana"
+					type: "item"
+				}
+			]
+			title: "Fast and Light"
+			x: 3.85d
+			y: -11.66d
+		}
+		{
+			dependencies: ["7A414114BD9BE15F"]
+			id: "0DFC9997B42BE7CE"
+			rewards: [
+				{
+					id: "49D1E0AE71535F87"
+					type: "xp"
+					xp: 120
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2CA1D2818C21A0B6"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "45783B2F519D88D8"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Greathammers and greataxes hit like a falling tree."
+			tasks: [
+				{
+					id: "409717123C600D45"
+					item: "simplyswords:diamond_greathammer"
+					type: "item"
+				}
+			]
+			title: "Slow and Heavy"
+			x: 3.85d
+			y: -8.78d
+		}
+		{
+			dependencies: ["64ED8441B2C92FFE"]
+			description: ["&6Runic Tablets&f are found in loot. Combine one with a netherite Simply Swords weapon in a smithing table to give it a random &druneforged power&f."]
+			id: "080EBFCAE2EC764E"
+			rewards: [
+				{
+					id: "0404217D533FB3E2"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "3B96A8207CFEF3B6"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "330D6FC4B84DDA6E"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0E2D3B1B715269A3"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Found in loot"
+			tasks: [
+				{
+					id: "000607F0F167AE4C"
+					item: "simplyswords:runic_tablet"
+					type: "item"
+				}
+			]
+			title: "Runic Weapons"
+			x: 5.6d
+			y: -11.66d
+		}
+		{
+			dependencies: ["080EBFCAE2EC764E"]
+			description: [
+				"Named legendary weapons with active abilities - Brimstone Claymore, Stormbringer, Soulrender, Twisted Blade and more - hide in dungeon chests and drop from bosses."
+				""
+				"Tick this off when you find your first."
+			]
+			id: "18486F96A669445F"
+			optional: true
+			rewards: [
+				{
+					id: "76F20F552373A602"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "0686E68F01F4DED4"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2629DDEC61954EA4"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Dungeon loot"
+			tasks: [
+				{
+					id: "6B43F03541A7C12D"
+					title: "I found one"
+					type: "checkmark"
+				}
+			]
+			title: "&6Unique Weapons"
+			x: 7.35d
+			y: -9.03d
+		}
+		{
+			dependencies: ["26766DCCDE3B2C7E"]
+			description: ["Armour sets with personality, each with a set effect."]
+			id: "238D1A8E8429598A"
+			rewards: [
+				{
+					id: "0D172469737882D8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "2DFF0B65D22D295E"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5C5E0B03067E1214"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "10586489DDC3C557"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Themed sets with effects"
+			tasks: [
+				{
+					id: "6ECDC79C472FFE66"
+					item: "immersive_armors:bone_chestplate"
+					type: "item"
+				}
+			]
+			title: "Immersive Armours"
+			x: 2.1d
+			y: 5.59d
+		}
+		{
+			dependencies: ["238D1A8E8429598A"]
+			id: "6A1FC20E06520A47"
+			rewards: [
+				{
+					id: "78FCEFFF5B5810A6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "275E89979E07A808"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2791A86EA691245E"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Deal more damage the more hurt you are."
+			tasks: [
+				{
+					id: "34DB4CF5883623D2"
+					item: "immersive_armors:warrior_chestplate"
+					type: "item"
+				}
+			]
+			title: "Warrior"
+			x: 3.85d
+			y: 3.47d
+		}
+		{
+			dependencies: ["238D1A8E8429598A"]
+			id: "22B3D68BB6F05E81"
+			rewards: [
+				{
+					id: "4275536D5681F44D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "19AA19970279B73F"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7C84E9718461FD5C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Massive protection, knockback immunity... and you walk like it."
+			tasks: [
+				{
+					id: "257237FC1A0B3920"
+					item: "immersive_armors:heavy_chestplate"
+					type: "item"
+				}
+			]
+			title: "Heavy"
+			x: 3.85d
+			y: 4.97d
+		}
+		{
+			dependencies: ["238D1A8E8429598A"]
+			id: "46F234F07032BC6E"
+			rewards: [
+				{
+					id: "557EAC7E065AD3C0"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/mastery xp @s magic 80"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7A81079E950CCCFD"
+					silent: true
+					title: "+80 Magic experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0CB651ED37BEC573"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Light magical protection for the casters."
+			tasks: [
+				{
+					id: "72AFCCC48A1F0927"
+					item: "immersive_armors:robe_chestplate"
+					type: "item"
+				}
+			]
+			title: "Robes"
+			x: 3.85d
+			y: 6.47d
+		}
+		{
+			dependencies: ["238D1A8E8429598A"]
+			id: "4473FDBC0C999ABC"
+			optional: true
+			rewards: [
+				{
+					id: "0FF6C05FD1E25436"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "79D7FF6B14D097C9"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "590496C22693CBAD"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Thorns that bite harder, and at home underwater."
+			tasks: [
+				{
+					id: "3DD248C5263D4618"
+					item: "immersive_armors:prismarine_chestplate"
+					type: "item"
+				}
+			]
+			title: "Prismarine"
+			x: 3.85d
+			y: 7.97d
+		}
+		{
+			dependencies: [
+				"6A1FC20E06520A47"
+				"22B3D68BB6F05E81"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Blocks one hit completely every minute."]
+			id: "6E7DE818D398ACAD"
+			rewards: [
+				{
+					id: "6C33A8EE62F9629A"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "3B2CB1CA081E5D7D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1606536DDC42ECEA"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Deus vult"
+			tasks: [
+				{
+					id: "5144B348D72EEFE8"
+					item: "immersive_armors:divine_chestplate"
+					type: "item"
+				}
+			]
+			title: "Divine"
+			x: 10.85d
+			y: 3.47d
+		}
+		{
+			dependencies: [
+				"46F234F07032BC6E"
+				"4473FDBC0C999ABC"
+			]
+			dependency_requirement: "one_completed"
+			id: "629B0F3C4A3D80E7"
+			optional: true
+			rewards: [
+				{
+					id: "4667637B9E74E3C5"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "55E1EC8EEE790490"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5BEC29D4C9981A19"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Withers whatever dares to hit you."
+			tasks: [
+				{
+					id: "64A6790769012393"
+					item: "immersive_armors:wither_chestplate"
+					type: "item"
+				}
+			]
+			title: "Wither"
+			x: 5.6d
+			y: 6.47d
+		}
+		{
+			dependencies: ["26766DCCDE3B2C7E"]
+			description: [
+				"&dFantasy Armor&f, &6Armor of the Ages&f and &bEpic Paladins&f add dozens of late-game sets - Dragonslayer, Silver Knight, Ronin, O-Yoroi, Centurion, Pharaoh, Angel and more."
+				""
+				"Many need rare boss drops or &eMoon Crystals&f. Moon Crystals can not be crafted here: buy them with coins from &2The Merchant&f (choose The Merchant at the Crossroads). JEI shows what each set needs."
+			]
+			id: "5E08223B49118157"
+			rewards: [
+				{
+					id: "40B4AEE3988302B4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C37915FD7A7A86F"
+					table_id: 6140479905622921234L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6DBB9D02A45EAF43"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Late-game showpieces"
+			tasks: [
+				{
+					id: "6A5D1F038DF89857"
+					title: "Noted"
+					type: "checkmark"
+				}
+			]
+			title: "Fantasy Armour"
+			x: 2.1d
+			y: 1.97d
+		}
+		{
+			dependencies: ["5E08223B49118157"]
+			description: ["Craft and wear any full set from Fantasy Armor, Armor of the Ages or Epic Paladins. Honour system!"]
+			id: "25CEB8B53AD7E7E4"
+			optional: true
+			rewards: [
+				{
+					id: "409484AB4F94C652"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "4353BB8DC5D3C42B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72AF62B5492B6494"
+					table_id: 6140479905622921234L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "178C10C5045469B0"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "26AF3DE5762D6F4E"
+					title: "Looking sharp"
+					type: "checkmark"
+				}
+			]
+			title: "Dressed to Kill"
+			x: 3.85d
+			y: 1.97d
+		}
+		{
+			dependencies: ["26766DCCDE3B2C7E"]
+			description: ["A &eQuiver&f in a Curios slot holds your arrows. See &bThe Long Shot&f for thirty-odd special bows."]
+			id: "76411AEC55F37C54"
+			rewards: [
+				{
+					id: "086EE7D728B9469D"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 64
+					id: "1785C775476C7767"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 80"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "34F3C01CE162B95F"
+					silent: true
+					title: "+80 Exploration experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "32C9DD62A79DD397"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "See: The Long Shot"
+			tasks: [
+				{
+					id: "225FED152820202C"
+					item: "minecraft:bow"
+					type: "item"
+				}
+				{
+					id: "238CD79289C38299"
+					item: "nyfsquiver:basic_quiver"
+					type: "item"
+				}
+			]
+			title: "The Archer"
+			x: 2.1d
+			y: 3.47d
+		}
+		{
+			dependencies: ["26766DCCDE3B2C7E"]
+			description: ["Build weapons part by part - blade, guard, grip, pommel - and hone them as they level. See the &fTetra&f chapter. The &6Reforger&f chapter covers rerolling quality tiers."]
+			id: "3198A2E85B5E73EC"
+			rewards: [
+				{
+					id: "5D7CC79154D6DDE2"
+					type: "xp"
+					xp: 120
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0C06A69E3F54682C"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "55BF5F746019B391"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "See: Tetra"
+			tasks: [
+				{
+					icon: "minecraft:iron_sword"
+					id: "59239CA174C88EE2"
+					item: "tetra:modular_sword"
+					type: "item"
+				}
+			]
+			title: "The Smith"
+			x: 2.1d
+			y: -1.53d
+		}
+		{
+			dependencies: ["26766DCCDE3B2C7E"]
+			description: ["Spellbooks, staves and school-specific robes. See &bIron's Spells 'n Spellbooks&f in The Magical."]
+			id: "47E0E181194DC390"
+			rewards: [
+				{
+					id: "391BB1CC4F651AAC"
+					type: "xp"
+					xp: 120
+				}
+				{
+					command: "/mastery xp @s magic 80"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "539A5E1660D1E947"
+					silent: true
+					title: "+80 Magic experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "781279D5F4D4E320"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "See: Iron's Spells"
+			tasks: [
+				{
+					id: "0FC73154B4DE51F0"
+					item: "irons_spellbooks:iron_spell_book"
+					type: "item"
+				}
+			]
+			title: "The Battlemage"
+			x: 3.7d
+			y: -0.28d
+		}
+		{
+			dependencies: ["26766DCCDE3B2C7E"]
+			description: ["Paxels, refined obsidian plate, the Immersive Engineering revolver and railgun, and eventually the MekaSuit. See The Mechanical."]
+			id: "38A78F86C5A1B323"
+			optional: true
+			rewards: [
+				{
+					id: "7E63E6BEAE4C7FCC"
+					type: "xp"
+					xp: 120
+				}
+				{
+					command: "/mastery xp @s forestry 80"
+					elevate_perms: true
+					icon: "minecraft:iron_axe"
+					id: "45737B7132AFE8B3"
+					silent: true
+					title: "+80 Forestry experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3E85CFC5586D2E4A"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "See: Mekanism"
+			tasks: [
+				{
+					id: "48FDEE09330C0233"
+					item: "mekanismtools:steel_paxel"
+					type: "item"
+				}
+			]
+			title: "The Engineer"
+			x: 3.7d
+			y: -1.53d
+		}
+		{
+			dependencies: ["26766DCCDE3B2C7E"]
+			description: [
+				"&eArtifacts&f, &eRelics&f and &eEnigmatic Legacy&f add rings, charms, belts and oddities for your Curios slots. Mimics carry Artifacts; most others hide in structure chests."
+				""
+				"Tick this off when you find your first."
+			]
+			id: "032FDE69D1FB856A"
+			optional: true
+			rewards: [
+				{
+					id: "501786747059F8FB"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 3
+					id: "7EC2017BE3F5EE26"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0CF950A674F976F7"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fill those Curios slots"
+			tasks: [
+				{
+					id: "797E44C153903397"
+					title: "I found one"
+					type: "checkmark"
+				}
+			]
+			title: "Trinkets"
+			x: 2.1d
+			y: 0.47d
+		}
+		{
+			dependencies: [
+				"7C79C38413A5A9C9"
+				"080EBFCAE2EC764E"
+				"6E7DE818D398ACAD"
+			]
+			description: ["Complete &atwo&f of: a full plate harness, a runic weapon, a Divine set. You know your way around an armoury."]
+			id: "4ED70C028E50D89C"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0D7E1A1250ED658E"
+					table_id: 7914596619558840835L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04DDF72A2A958470"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "7187125C87D2DF86"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "48FE0DA95F693BE0"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+				{
+					command: "/mastery xp @s combat 160"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7B737D8E512A8E2A"
+					silent: true
+					title: "+160 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 160"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "7309E0C85B89874B"
+					silent: true
+					title: "+160 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "27CD1C316836B9DF"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Any two of three"
+			tasks: [
+				{
+					id: "15550D33DC2A22BC"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&c&lArmed and Dangerous"
+			x: 12.82d
+			y: -4.91d
+		}
+		{
+			dependencies: ["080EBFCAE2EC764E"]
+			description: ["It looks like a plain sword and does not hit like much. Found in chests, it is the start of two very different weapons: one holy, one tainted."]
+			id: "484A4F25C1B3B9AE"
+			optional: true
+			rewards: [
+				{
+					id: "1D89F2D492D909A6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6DBC9A499E054F4B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5240DB827307CDE3"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "An ordinary-looking sword"
+			tasks: [
+				{
+					id: "68DA3C5A935BA6C5"
+					item: "simplyswords:dormant_relic"
+					type: "item"
+				}
+			]
+			title: "A Dormant Relic"
+			x: 7.35d
+			y: -13.78d
+		}
+		{
+			dependencies: ["080EBFCAE2EC764E"]
+			description: ["Smelt a unique weapon in a furnace. The weapon is gone, but a little of its power is left as an &eEmpowered Remnant&f, the base of the socket gems."]
+			id: "32BCDF22342D4EB5"
+			optional: true
+			rewards: [
+				{
+					id: "59D2089EA39E1298"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1BF9C3F0446D7ABE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "329FBD99950B8613"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "What is left of a unique weapon"
+			tasks: [
+				{
+					id: "200739022ABF1A13"
+					item: "simplyswords:empowered_remnant"
+					type: "item"
+				}
+			]
+			title: "Empowered Remnant"
+			x: 7.35d
+			y: -10.78d
+		}
+		{
+			dependencies: ["484A4F25C1B3B9AE"]
+			description: ["Wake the Dormant Relic with gold, a &eRunic Tablet&f and an Enchanted Golden Apple. It is the halfway point to the Sunfire."]
+			id: "03E3B79E54B562F6"
+			optional: true
+			rewards: [
+				{
+					id: "4BD0A0ACFDAF630F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5B725D51A6C9B79E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2CDBAF7836157F1C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Gold and a golden apple"
+			tasks: [
+				{
+					id: "3A7218388F9E53DE"
+					item: "simplyswords:righteous_relic"
+					type: "item"
+				}
+			]
+			title: "The Righteous Relic"
+			x: 9.1d
+			y: -13.78d
+		}
+		{
+			dependencies: ["080EBFCAE2EC764E"]
+			description: ["A lich's greatsword, found rather than made. Asleep, its aura of tormented souls hurts anything that stands too close. It can be woken into the Waking Lichblade."]
+			id: "201809782049294A"
+			optional: true
+			rewards: [
+				{
+					id: "73A2D0C5E4106D29"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5B71DCA533DEE5C7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "278BAE5497F49DA9"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "A greatsword that is not awake yet"
+			tasks: [
+				{
+					id: "65D674C027500B27"
+					item: "simplyswords:slumbering_lichblade"
+					type: "item"
+				}
+			]
+			title: "The Slumbering Lichblade"
+			x: 7.35d
+			y: -12.28d
+		}
+		{
+			dependencies: ["32BCDF22342D4EB5"]
+			description: ["An Empowered Remnant and a Netherite Ingot in a smithing table. Identify it to see which power it rolled, then set it in a unique weapon's &eNether socket&f."]
+			id: "7164FCCAA4302C81"
+			optional: true
+			rewards: [
+				{
+					id: "209AEE3C4F971202"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3D9D2B4157ED7D8F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6DB9287BCD3B3475"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "A random power, sealed in netherite"
+			tasks: [
+				{
+					id: "1AC5A6C0EB01044F"
+					item: "simplyswords:netherfused_gem"
+					type: "item"
+				}
+			]
+			title: "Netherfused Gem"
+			x: 9.1d
+			y: -10.78d
+		}
+		{
+			dependencies: ["7A414114BD9BE15F"]
+			description: ["An Iron Longsword tied to a stick with string. The guide calls it a legend passed down through a family of warriors. It is a sword on a stick."]
+			id: "5DEF9E077E9F3D96"
+			optional: true
+			rewards: [
+				{
+					id: "2DB3731BDFF40051"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "221B83463600D413"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "79B7191BB29431D5"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Exactly what it says"
+			tasks: [
+				{
+					id: "28E882BDADA273CD"
+					item: "simplyswords:sword_on_a_stick"
+					type: "item"
+				}
+			]
+			title: "Sword on a Stick"
+			x: 3.85d
+			y: -10.28d
+		}
+		{
+			dependencies: ["484A4F25C1B3B9AE"]
+			description: ["The Dormant Relic again, this time with a Phantom Membrane and an Eye of Ender. It leads to the Harbinger."]
+			id: "652B91992B51E0A0"
+			optional: true
+			rewards: [
+				{
+					id: "599712A687C36B2D"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7DA846684AE626A2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "50EC6F22CF2B58A0"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The other way to wake it"
+			tasks: [
+				{
+					id: "40B7A68F8199FB47"
+					item: "simplyswords:tainted_relic"
+					type: "item"
+				}
+			]
+			title: "The Tainted Relic"
+			x: 9.1d
+			y: -12.28d
+		}
+		{
+			dependencies: ["652B91992B51E0A0"]
+			description: ["The Tainted Relic finished with an Eye of Ender and a &eSculk Catalyst&f. The other of the two relic weapons."]
+			id: "7DF98ECA832859CC"
+			optional: true
+			rewards: [
+				{
+					id: "6D4934D6D0D82935"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "532BF957B15567CC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3FC56399896F7C48"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The tainted one"
+			tasks: [
+				{
+					id: "5D70D22AB93C9087"
+					item: "simplyswords:harbinger"
+					type: "item"
+				}
+			]
+			title: "The Harbinger"
+			x: 10.85d
+			y: -12.28d
+		}
+		{
+			dependencies: ["32BCDF22342D4EB5"]
+			description: ["An Empowered Remnant, Crying Obsidian and a Runic Tablet in a smithing table. Identify it to reveal its runic power, then set it in a unique weapon's &eRune socket&f."]
+			id: "3683FD968F08379A"
+			optional: true
+			rewards: [
+				{
+					id: "104E36DFCEBAE1F9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7A6493CF53D22B18"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4913585E15CEEEE2"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "A runic power for your weapon"
+			tasks: [
+				{
+					id: "585C657CD7A69692"
+					item: "simplyswords:runefused_gem"
+					type: "item"
+				}
+			]
+			title: "Runefused Gem"
+			x: 9.1d
+			y: -9.28d
+		}
+		{
+			dependencies: ["03E3B79E54B562F6"]
+			description: ["The Righteous Relic finished with another golden apple and &eDragon's Breath&f. One of Simply Swords' unique weapons."]
+			id: "52A56BDB4583DDCB"
+			optional: true
+			rewards: [
+				{
+					id: "6ABA73363F74A444"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "458EC62C1B2C06F8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "11A2CCA70E0F4297"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The holy one"
+			tasks: [
+				{
+					id: "106B2207987B0CC7"
+					item: "simplyswords:sunfire"
+					type: "item"
+				}
+			]
+			title: "Sunfire"
+			x: 10.85d
+			y: -13.78d
+		}
+	]
+	subtitle: ["Choose how you fight - and what you wear doing it"]
+	title: "&cThe Armoury"
+}

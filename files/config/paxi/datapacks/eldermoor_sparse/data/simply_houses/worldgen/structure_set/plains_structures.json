@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "salt": 4418387,
+    "separation": 175,
+    "spacing": 210,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "simply_houses:plains_mansion",
+      "weight": 1
+    },
+    {
+      "structure": "simply_houses:plains_house",
+      "weight": 1
+    }
+  ]
+}

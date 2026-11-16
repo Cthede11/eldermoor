@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 365808513,
+    "separation": 37,
+    "spacing": 55,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "villagesandpillages:village_witch",
+      "weight": 1
+    }
+  ]
+}

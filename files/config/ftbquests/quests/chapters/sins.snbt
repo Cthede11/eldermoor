@@ -1,0 +1,816 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sins"
+	group: "3368DAD22055D0D9"
+	icon: "sons_of_sins:bloody_bone"
+	id: "4544B292A1C5E036"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7E39B88A644350BE"]
+			description: [
+				"The Sons of Sins are flesh-things that hunt in the dark. They are stronger than they look and they drop materials found nowhere else."
+				""
+				"Bones become &eosseous&f tools, flesh becomes &esinful&f ones, and the ashes of the worst of them become &esoul steel&f."
+			]
+			hide_until_deps_complete: true
+			id: "16F14EB23C4151FB"
+			rewards: [
+				{
+					id: "5899C532ECE647E6"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 4
+					id: "61289676FD333A92"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "72E27488664F7B1A"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6B37E1A8F564D976"
+					item: "sons_of_sins:bloody_bone"
+					type: "item"
+				}
+			]
+			title: "&c&lWhat Walks at Night"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16F14EB23C4151FB"]
+			id: "3E7A17ED6B84C57C"
+			rewards: [
+				{
+					id: "55E57FA3687992AF"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "37FE3F5DE32B9EA3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6CB40811AE9F4A05"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fast, and it hunts by sound."
+			tasks: [
+				{
+					entity: "sons_of_sins:prowler"
+					id: "66097B467DCF2FAC"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Prowler"
+			x: 2.1d
+			y: -1.75d
+		}
+		{
+			dependencies: ["3E7A17ED6B84C57C"]
+			id: "27EC894DBF1CA736"
+			rewards: [
+				{
+					id: "4564CA72A243360E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "32F3627FDBBB3306"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "19C7E373A521C4BE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Long arms."
+			tasks: [
+				{
+					entity: "sons_of_sins:wistiver"
+					id: "5F13F05970C217F1"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Wistiver"
+			x: 3.85d
+			y: -1.75d
+		}
+		{
+			dependencies: ["27EC894DBF1CA736"]
+			id: "47F4F9EDE1E88550"
+			rewards: [
+				{
+					id: "1F296BA16B38692E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "39FD33DD0D58B679"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3CCE7BAC3F7A2135"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Do not let it touch you."
+			tasks: [
+				{
+					entity: "sons_of_sins:curse"
+					id: "284F4798E671755E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Curse"
+			x: 5.6d
+			y: -1.75d
+		}
+		{
+			dependencies: ["47F4F9EDE1E88550"]
+			id: "093CB1ED0A5B10ED"
+			rewards: [
+				{
+					id: "0904CBBEAB13598D"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "5B59A21BA000FB49"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4C3C7691E2080962"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0147147324FC0FE6"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "It has a hook and a reach."
+			tasks: [
+				{
+					entity: "sons_of_sins:butcher"
+					id: "06AA5FFA57D54A55"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Butcher"
+			x: 7.45d
+			y: -1.75d
+		}
+		{
+			dependencies: ["093CB1ED0A5B10ED"]
+			id: "1D832AE99AD3C526"
+			rewards: [
+				{
+					id: "379EAAC2E373BA2D"
+					type: "xp"
+					xp: 900
+				}
+				{
+					count: 4
+					id: "228034588BA9FFAA"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5E977E66DD116783"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4D9229561A075BD8"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The last sin."
+			tasks: [
+				{
+					entity: "sons_of_sins:blud"
+					id: "519E66F683091E4C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Blud"
+			x: 11.15d
+			y: -1.75d
+		}
+		{
+			dependencies: ["16F14EB23C4151FB"]
+			description: ["&7Dropped by: &fBlüd, Butcher, Prowler, Walking Bed and others"]
+			id: "3A590519A0D85B59"
+			rewards: [
+				{
+					id: "46140E5944B37747"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "45CD59C60C95B350"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "04EE8A7F5EAD2A20"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enough for a set of tools."
+			tasks: [
+				{
+					count: 12L
+					id: "7C3DAAC9DD1A12FB"
+					item: "sons_of_sins:bloody_bone"
+					type: "item"
+				}
+			]
+			title: "A Pile of Bones"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A590519A0D85B59"]
+			description: [
+				"&7&fOsseous Sword&7 - Made from: &fBone x2, String"
+				"&7&fOsseous Pickaxe&7 - Made from: &fBone x4, String"
+			]
+			id: "2E30E9413ACB7A7E"
+			rewards: [
+				{
+					id: "2526670C2F05E090"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "21003088139D0A7F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6F9BED53E2C4C27C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bone tools. Better than iron."
+			tasks: [
+				{
+					id: "00E7620D692D67F3"
+					item: "sons_of_sins:osseous_sword"
+					type: "item"
+				}
+				{
+					id: "6450B1B63D3AC8D7"
+					item: "sons_of_sins:osseous_pickaxe"
+					type: "item"
+				}
+			]
+			title: "Osseous Tools"
+			x: 3.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E30E9413ACB7A7E"]
+			id: "474A5BBA0B57FEA0"
+			rewards: [
+				{
+					id: "31221671F766068E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3CC8DEC9F58C7EA3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "55E0939E140B4C02"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Do not think about it."
+			tasks: [
+				{
+					id: "02E6809F9FB05630"
+					item: "sons_of_sins:flesh_carcass"
+					type: "item"
+				}
+			]
+			title: "Flesh"
+			x: 5.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["474A5BBA0B57FEA0"]
+			description: [
+				"&7&fSinful Sword&7 - Made from: &fBloody Bone x2, String"
+				"&7&fSinful Pickaxe&7 - Made from: &fBloody Bone x4, String"
+			]
+			id: "22541894BFAA80E8"
+			rewards: [
+				{
+					id: "60F28075FB8FD537"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "3DB8D2F8EF3B6676"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "77CF21D155FC8134"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "61A8F70B5E60617D"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "They heal themselves."
+			tasks: [
+				{
+					id: "02284665D36D120A"
+					item: "sons_of_sins:sinful_sword"
+					type: "item"
+				}
+				{
+					id: "4E4B009B37875B59"
+					item: "sons_of_sins:sinful_pickaxe"
+					type: "item"
+				}
+			]
+			title: "Sinful Tools"
+			x: 11.15d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16F14EB23C4151FB"]
+			description: [
+				"&7Dropped by: &fCurse, Ether Ghost"
+				"&7Found in chests: &fSinful Church"
+			]
+			id: "075DBBEF8C915CE7"
+			rewards: [
+				{
+					id: "027B411C658FE3F9"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "09AA93B84B223FCF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4F3146265462EE6C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "What is left of the greater sins."
+			tasks: [
+				{
+					id: "3B11BE5D61956CED"
+					item: "sons_of_sins:ether_ashes"
+					type: "item"
+				}
+			]
+			title: "Ether Ashes"
+			x: 2.1d
+			y: 1.75d
+		}
+		{
+			dependencies: ["075DBBEF8C915CE7"]
+			description: ["&7Made from: &fBrick x4, Ether Ashes"]
+			id: "4BD51C939C648FD8"
+			rewards: [
+				{
+					id: "187305D5630046F4"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0F6B67D40408EFBE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5DCAD23B0E0A1AF9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Holds what the ashes held."
+			tasks: [
+				{
+					id: "5FE762A84C17A90C"
+					item: "sons_of_sins:urn"
+					type: "item"
+				}
+			]
+			title: "The Urn"
+			x: 3.85d
+			y: 1.75d
+		}
+		{
+			dependencies: ["18A097F295008A21"]
+			id: "5B12B5E5A603181C"
+			rewards: [
+				{
+					id: "6357D314CF2ACE48"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "367DB8FEFC232F27"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4699F8EDFAB75594"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Steel with something still inside it."
+			tasks: [
+				{
+					id: "13E20B1A4F7D3E88"
+					item: "sons_of_sins:soul_steel"
+					type: "item"
+				}
+			]
+			title: "Soul Steel"
+			x: 7.45d
+			y: 1.75d
+		}
+		{
+			dependencies: ["61458517657409B7"]
+			description: ["&7Made from: &fSoul Steel x8, Crystallized Ether"]
+			id: "77EF9FEB66B52912"
+			rewards: [
+				{
+					id: "597095EEB7245129"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "38DD72ACB61EB0A5"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "627D55A6DF3CCE26"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3FEDBDE5B42D409C"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The sins' own hide."
+			tasks: [
+				{
+					id: "683371014D5DFDC5"
+					item: "sons_of_sins:remnant_chestplate"
+					type: "item"
+				}
+			]
+			title: "Remnant Armour"
+			x: 11.15d
+			y: 1.75d
+		}
+		{
+			dependencies: ["075DBBEF8C915CE7"]
+			id: "5578810759C395F5"
+			optional: true
+			rewards: [
+				{
+					id: "72CF47DA2D359AA1"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "44593D573D78131A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1C2F15C22607539F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ether given a shape, and it is not friendly."
+			tasks: [
+				{
+					entity: "sons_of_sins:ether_ghost"
+					id: "19D32CD84A0ADDDC"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Ether Ghost"
+			x: 3.85d
+			y: 3.25d
+		}
+		{
+			dependencies: ["5B12B5E5A603181C"]
+			description: ["Soul steel makes chains, doors, trapdoors and an ether lantern. Remarkably hard to break."]
+			id: "6A4C3265E8992A8C"
+			optional: true
+			rewards: [
+				{
+					id: "4B10CB25DD22E4C5"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3578241121420845"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "41599FEFFE1E1E0B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "32FB452D6075C92C"
+					item: "sons_of_sins:ether_lantern"
+					type: "item"
+				}
+				{
+					id: "6610FA1DE9817EF7"
+					item: "sons_of_sins:soul_steel_door"
+					type: "item"
+				}
+			]
+			title: "Soul Steel Fittings"
+			x: 9.3d
+			y: 3.25d
+		}
+		{
+			dependencies: [
+				"1D832AE99AD3C526"
+				"22541894BFAA80E8"
+				"77EF9FEB66B52912"
+			]
+			id: "3FF0B94155D6BE9F"
+			rewards: [
+				{
+					id: "55B75AB22B4A79ED"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 5
+					id: "690CAFA5E0603ADD"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "697245EFF288D050"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "242B1484D9CDD12B"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1D1283528AF546CE"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Blud dead, sinful tools in hand and remnant armour on your back."
+			tasks: [
+				{
+					id: "43AA0043516FF22E"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&c&lAbsolved"
+			x: 13.5d
+			y: -1.75d
+		}
+		{
+			dependencies: ["4BD51C939C648FD8"]
+			description: ["Iron and ether ash, pressed together and not yet fired. The furnace does the rest."]
+			id: "18A097F295008A21"
+			rewards: [
+				{
+					id: "3353911D583F8A52"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5FD4D305466D9EE0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "69FC0027AE829D02"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "50962D297D9E9055"
+					item: "sons_of_sins:iron_and_ether"
+					type: "item"
+				}
+			]
+			title: "Iron and Ether"
+			x: 5.6d
+			y: 1.75d
+		}
+		{
+			dependencies: ["5B12B5E5A603181C"]
+			description: ["Ether that has had time to set. It is what makes the Remnant armour more than soul steel."]
+			id: "61458517657409B7"
+			rewards: [
+				{
+					id: "144A098E006A0FE8"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5E13CBCF786E46A1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1E1F3C2205D1DA80"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6603523377D764D7"
+					item: "sons_of_sins:crystallized_ether"
+					type: "item"
+				}
+			]
+			title: "Crystallized Ether"
+			x: 9.3d
+			y: 1.75d
+		}
+	]
+	subtitle: ["Sin given a body. Bodies given a use."]
+	title: "&cSons of Sins"
+}

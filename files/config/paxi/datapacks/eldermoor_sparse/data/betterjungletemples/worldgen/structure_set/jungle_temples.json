@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "enhanced_exclusion_zone": {
+      "chunk_count": 4,
+      "other_set": "#betterjungletemples:jungle_temple_avoid"
+    },
+    "salt": 996971851,
+    "separation": 18,
+    "spacing": 55,
+    "type": "betterjungletemples:jungle_temple"
+  },
+  "structures": [
+    {
+      "structure": "betterjungletemples:jungle_temple",
+      "weight": 1
+    }
+  ]
+}

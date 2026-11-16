@@ -1,0 +1,713 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "arcanum"
+	group: "3368DAD22055D0D9"
+	icon: "minecraft:enchanted_book"
+	id: "1D40C787B496DA04"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3189889F0814B72A"]
+			description: [
+				"There are fourteen kinds of magic in Eldermoor. They do not agree with each other, and you do not have to choose."
+				""
+				"Each gear on this page is a &edoor&f. Bring it what it asks for and a new chapter appears in &cThe Magical&f."
+				""
+				"The first row can be opened on your first day. The second row asks for a little blood, in one sense or another."
+				"The third row is the darkest: necromancy, torn spirits and the lords' own grimoires."
+			]
+			hide_until_deps_complete: true
+			id: "55068A22ABDD4995"
+			rewards: [
+				{
+					id: "16D095992756211B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "68C6C13D0FA87F01"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "04663FA0DBB951BA"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0FB361356761E81A"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2255027C5B216F1B"
+					title: "Open the doors"
+					type: "checkmark"
+				}
+			]
+			title: "&d&lThe Arcanum"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55068A22ABDD4995"]
+			description: [
+				"Dropped by almost anything magical and found in most chests. Spellbooks, scrolls, mana and nine schools of spells."
+				""
+				"&eOpens the chapter: &bIron's Spells"
+				"&7Made at: &fCreate sequenced assembly &7from &fTuff x4"
+			]
+			icon: "irons_spellbooks:arcane_essence"
+			id: "3FFCC2BE71CF1CC5"
+			rewards: [
+				{
+					id: "1B4E92741834A755"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "3763CF52DD778274"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1FAC754682F69C9B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Iron's Spells"
+			tasks: [
+				{
+					count: 4L
+					id: "1BDF9067559B8A9B"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+			]
+			title: "&bArcane Essence"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["55068A22ABDD4995"]
+			description: [
+				"Enchant anything. Then learn that level 30 was never the top."
+				""
+				"&eOpens the chapter: &dApotheosis"
+			]
+			icon: "minecraft:enchanting_table"
+			id: "7735F10E2C20E0C6"
+			rewards: [
+				{
+					id: "08ABCADE1E72B595"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "17581E56C7B54790"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1F501663C1D31817"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Apotheosis"
+			tasks: [
+				{
+					advancement: "minecraft:story/enchant_item"
+					criterion: ""
+					icon: "minecraft:enchanted_book"
+					id: "3AEE21E610E48E15"
+					title: "Enchanter"
+					type: "advancement"
+				}
+			]
+			title: "&dThe Table"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["55068A22ABDD4995"]
+			description: [
+				"The strange book you woke up with. It knows about rings, charms and a curse you can choose to wear."
+				""
+				"&eOpens the chapter: &bEnigmatic Legacy"
+			]
+			icon: "enigmaticlegacy:the_acknowledgment"
+			id: "76F56B2DEC226C03"
+			rewards: [
+				{
+					id: "196CAF56CA0316C2"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "3614E648AF2D70D5"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0DAB8BC8F78A2BA9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Enigmatic Legacy"
+			tasks: [
+				{
+					id: "4503919A19630DF1"
+					item: "enigmaticlegacy:the_acknowledgment"
+					type: "item"
+				}
+			]
+			title: "&bThe Acknowledgment"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55068A22ABDD4995"]
+			description: [
+				"Belts, rings, boots and stranger things turn up in loot chests. They level up as you use them."
+				""
+				"&eOpens the chapter: &eRelics \\& Curios"
+			]
+			icon: "relics:leather_belt"
+			id: "62BE7F6DB1645F9E"
+			rewards: [
+				{
+					id: "276C75C39AB9CB04"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "619E2E00BB4347BB"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "63801D680439EB0F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Relics \\& Curios"
+			tasks: [
+				{
+					id: "4CB55A8F7718F242"
+					title: "I found something strange"
+					type: "checkmark"
+				}
+			]
+			title: "&eSomething in a Chest"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["55068A22ABDD4995"]
+			description: [
+				"A book, a little pewter and something that died recently. Rituals, souls and prayer."
+				""
+				"&eOpens the chapter: &5Eidolon"
+			]
+			icon: "eidolon:codex"
+			id: "4EE3AA5B1C4B185C"
+			rewards: [
+				{
+					id: "2C64E1DCAD4F446E"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "0ACCF0A9443A860A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0BF46DA2DF4338EA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Eidolon"
+			tasks: [
+				{
+					id: "3976DDA557328DAB"
+					item: "eidolon:codex"
+					type: "item"
+				}
+			]
+			title: "&5The Codex"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3FFCC2BE71CF1CC5"]
+			description: [
+				"Mined from glowing ore deep underground. A forge that eats souls and gives back gear nobody should have."
+				""
+				"&eOpens the chapter: &cForbidden \\& Arcanus"
+				"&7Made at: &fClibano &7from &fany arcane crystal ores"
+			]
+			icon: "forbidden_arcanus:arcane_crystal"
+			id: "432441C0CA796D4E"
+			rewards: [
+				{
+					id: "78A16FFD6A954877"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "3A9AE7FCAD5B006A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7205FC35FF469907"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Forbidden \\& Arcanus"
+			tasks: [
+				{
+					count: 2L
+					id: "6681EB43FC57C87D"
+					item: "forbidden_arcanus:arcane_crystal"
+					type: "item"
+				}
+			]
+			title: "&cArcane Crystals"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3FFCC2BE71CF1CC5"]
+			description: [
+				"A blue ore. Build spells out of parts, weave mana with your hands, pick a side."
+				""
+				"&eOpens the chapter: &9Mana and Artifice"
+			]
+			icon: "mna:vinteum_dust"
+			id: "1B9161306F3ACF93"
+			rewards: [
+				{
+					id: "1FA8C23E7333BE60"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "023A20434EAFE63E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6EA720EC3BF24448"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Mana and Artifice"
+			tasks: [
+				{
+					count: 4L
+					id: "077926826264DAD5"
+					item: "mna:vinteum_dust"
+					type: "item"
+				}
+			]
+			title: "&9Vinteum"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4EE3AA5B1C4B185C"]
+			description: [
+				"It only cuts one person, and you are holding it."
+				""
+				"&eOpens the chapter: &4Blood Magic"
+			]
+			icon: "bloodmagic:sacrificialdagger"
+			id: "7E4FFF18A18C06E5"
+			rewards: [
+				{
+					id: "62C595ADE3F4A9BC"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "2CB2DA22465E0E07"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "00437854B531B384"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Blood Magic"
+			tasks: [
+				{
+					id: "1D805995DA2FA2E1"
+					item: "bloodmagic:sacrificialdagger"
+					type: "item"
+				}
+			]
+			title: "&4The Dagger"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4EE3AA5B1C4B185C"]
+			description: [
+				"Dropped by things that should not be walking. Each of the sins has a body, and each body has a use."
+				""
+				"&eOpens the chapter: &cSons of Sins"
+			]
+			icon: "sons_of_sins:bloody_bone"
+			id: "7E39B88A644350BE"
+			rewards: [
+				{
+					id: "3284E4A04F9DBB99"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "30DE08EF40670526"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "14AC98D588CF5C5C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Sons of Sins"
+			tasks: [
+				{
+					id: "7A8A341DEB9A5228"
+					item: "sons_of_sins:bloody_bone"
+					type: "item"
+				}
+			]
+			title: "&cA Bloody Bone"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["432441C0CA796D4E"]
+			description: [
+				"Jade from deep underground opens two new schools of Iron's Spells. The same chapter holds the Cataclysm lords' grimoires, once Act III begins."
+				""
+				"&eOpens the chapter: &dNew Schools"
+			]
+			icon: "iss_magicfromtheeast:jade"
+			id: "452E2DB266FC328C"
+			rewards: [
+				{
+					id: "475235F8D08EBC33"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "1B6F588138A4DBC4"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2A35768347950218"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens New Schools"
+			tasks: [
+				{
+					count: 4L
+					id: "4C3201A5D97FF55A"
+					item: "iss_magicfromtheeast:jade"
+					type: "item"
+				}
+			]
+			title: "&dJade"
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E4FFF18A18C06E5"]
+			description: [
+				"Kill something with a scythe and its spirits fall out. Malum is what you do with them."
+				""
+				"&eOpens the chapter: &5Malum"
+			]
+			icon: "malum:crude_scythe"
+			id: "6ED3BB3E3EB0271C"
+			rewards: [
+				{
+					id: "7C2BB447FBEBB2A1"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "360DFD32D4ED8040"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6BB3441AC1591FB4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Malum"
+			tasks: [
+				{
+					id: "6FB1C8CCBD353908"
+					item: "malum:crude_scythe"
+					type: "item"
+				}
+			]
+			title: "&5A Crude Scythe"
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7E39B88A644350BE"]
+			description: [
+				"The first totem of the dark arts. Necromancy, foci, and an Apostle at the end of it."
+				""
+				"&eOpens the chapter: &4Goety"
+			]
+			icon: "goety:totem_of_roots"
+			id: "2781D448A4EB8459"
+			rewards: [
+				{
+					id: "39EAC2932925620B"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "0ECDF61E59E13443"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6EB10CCBBC14990F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Goety"
+			tasks: [
+				{
+					advancement: "goety:goety/craft_totem_roots"
+					criterion: ""
+					icon: "goety:totem_of_roots"
+					id: "5D4AE1B4FDF6AC85"
+					title: "Starter Kit"
+					type: "advancement"
+				}
+			]
+			title: "&4The Totem of Roots"
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1B9161306F3ACF93"]
+			description: [
+				"A book and a piece of lapis. Spells you build yourself from glyphs, fed by source, with creatures that work for you."
+				""
+				"&eOpens the chapter: &bArs Nouveau"
+			]
+			icon: "ars_nouveau:worn_notebook"
+			id: "6749EF1FEC7830F8"
+			rewards: [
+				{
+					id: "167A7EC5E70A2829"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "339BAAE1DC1F3949"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6F9A1C12C5FA1D7D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Ars Nouveau"
+			tasks: [
+				{
+					id: "79F8DC641EEA307B"
+					item: "ars_nouveau:worn_notebook"
+					type: "item"
+				}
+			]
+			title: "&bA Worn Notebook"
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3FFCC2BE71CF1CC5"]
+			description: [
+				"Equip any Iron's Spells spellbook. Then put the spells into guns, staves, shields and robes instead."
+				""
+				"&eOpens the chapter: &eThe Apprentice's Codex"
+			]
+			icon: "apprenticecodex:iron_spellcaster_gun"
+			id: "45F3E9040A13D856"
+			rewards: [
+				{
+					id: "6FDE1816B736679D"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "6944DCB09E049CF1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "139E5287217CEBED"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens The Apprentice's Codex"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/root"
+					criterion: ""
+					icon: "apprenticecodex:sky_edge_sword"
+					id: "01C89C00BE3571CF"
+					title: "Apprentice's Codex"
+					type: "advancement"
+				}
+			]
+			title: "&eA Spellbook in Hand"
+			x: 6.0d
+			y: -5.0d
+		}
+	]
+	subtitle: ["Fourteen schools of magic, each behind its own door"]
+	title: "&d&lThe Arcanum"
+}

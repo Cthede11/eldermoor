@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1359044565,
+    "separation": 21,
+    "spacing": 402,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:grave_tem_187",
+      "weight": 1
+    }
+  ]
+}

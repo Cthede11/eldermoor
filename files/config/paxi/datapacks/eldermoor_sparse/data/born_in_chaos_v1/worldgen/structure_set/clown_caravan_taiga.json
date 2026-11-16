@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1703928760,
+    "separation": 28,
+    "spacing": 280,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:clown_caravan_taiga",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,1181 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "embers"
+	group: "02AD8609A8FE6EE4"
+	icon: "embers:tinker_hammer"
+	id: "58BF6650A11BB108"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["66AD283B190ABC89"]
+			description: [
+				"Something burns at the bottom of the world. The dwarves who mined it are gone; their notes are not."
+				""
+				"Embers is brass-and-soot machinery that runs on &6Ember&f instead of FE - beamed through the air between emitters and receivers. Nothing else in the pack works like it."
+				""
+				"The &6Ancient Codex&f is the manual. The &6Tinker Hammer&f links and rotates everything."
+			]
+			hide_until_deps_complete: true
+			id: "1F9023F13D94A5A8"
+			rewards: [
+				{
+					id: "66C746C6ECDAA73B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "4C43CD89E53F3970"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3184D6015C80372A"
+					item: "mekanism:ingot_lead"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 250"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "788EBD9DAFE2069C"
+					silent: true
+					title: "+250 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "A different kind of power"
+			tasks: [
+				{
+					id: "23B1428A3A2CA4DE"
+					item: "embers:ancient_codex"
+					type: "item"
+				}
+				{
+					id: "05DBAA195B76A2B1"
+					item: "embers:tinker_hammer"
+					type: "item"
+				}
+			]
+			title: "&6The Ancient Codex"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59C561DDEEC2BAD5"]
+			description: ["Clay and sand, blended and fired. The heat-proof brick every Embers machine is built from."]
+			id: "4311D52CBBF8F47B"
+			rewards: [
+				{
+					id: "7AC08EAF510FA21E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "6B2C16172E380FBE"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5E7A4EFF2E37C2CE"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "48C5C3D017F4CCA6"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "393F46E0BA90AABC"
+					item: "embers:caminite_brick"
+					type: "item"
+				}
+			]
+			title: "Caminite"
+			x: 3.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4311D52CBBF8F47B"]
+			description: [
+				"A great drill that grinds &6Ember Crystals&f, Shards and Grit out of the rock. It only works &edeep down, close to bedrock&f, and wants fuel and a clear 3x3 of space beneath it."
+				""
+				"Ember is richer in some chunks than others. The Codex explains how to read the ground."
+			]
+			id: "7D97D2BAA14C434C"
+			rewards: [
+				{
+					id: "7AA1847DC3587C9B"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 16
+					id: "53A4885B947DCF47"
+					item: "embers:caminite_bricks"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "666AAC4793FFDE54"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "44BD6D66DC9421B6"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Dig near bedrock"
+			tasks: [
+				{
+					id: "43E31B54ADCA0F6C"
+					item: "embers:ember_bore"
+					type: "item"
+				}
+			]
+			title: "The Ember Bore"
+			x: 5.35d
+			y: 0.0d
+		}
+		{
+			dependencies: ["077E9F5272D96A1F"]
+			description: ["Burns crystals and shards into usable Ember. Feed the bottom, take power from the top."]
+			id: "06F8BCDC25488666"
+			rewards: [
+				{
+					id: "530BADA1EDB1A684"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 16
+					id: "7E51A979C01A6271"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "017B2FD3C1B1CD2A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "743F08908A492840"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Crystals into power"
+			tasks: [
+				{
+					id: "5159D5A1E1799140"
+					item: "embers:ember_activator"
+					type: "item"
+				}
+			]
+			title: "Ember Activator"
+			x: 8.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2620E4C20B05E168"]
+			description: [
+				"Ember travels as bolts of light. Put an &eEmitter&f on the source and a &eReceiver&f on the machine, then link them with the Tinker Hammer (sneak-click one, click the other). The emitter needs a redstone signal to fire."
+				""
+				"Beams need a clear line. They look magnificent."
+			]
+			id: "1EB3E0A8169C7369"
+			rewards: [
+				{
+					id: "1CA6A1E04B8281AA"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 16
+					id: "5ED9FEBFF9EF7783"
+					item: "embers:ember_shard"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2BB966BDF970AC60"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "54487A78613C0BAC"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Link with the hammer"
+			tasks: [
+				{
+					id: "44D7D6D9F7D99FE4"
+					item: "embers:ember_emitter"
+					type: "item"
+				}
+				{
+					id: "2AC095C3C3283014"
+					item: "embers:ember_receiver"
+					type: "item"
+				}
+			]
+			title: "Beams"
+			x: 12.35d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1EB3E0A8169C7369"]
+			id: "1A4A29FB30D83A15"
+			rewards: [
+				{
+					id: "5E3067CDF3286F78"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "324F740F14A82019"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "032493AB2392E128"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stores Ember. Keeps its charge when picked up."
+			tasks: [
+				{
+					id: "61B98E5FED5B6570"
+					item: "embers:copper_cell"
+					type: "item"
+				}
+			]
+			title: "Copper Cell"
+			x: 14.1d
+			y: -1.56d
+		}
+		{
+			dependencies: ["1EB3E0A8169C7369"]
+			description: ["Stick one on a machine to read its Ember level. There are dials for fluids and items too."]
+			id: "37A244AF044A1E87"
+			optional: true
+			rewards: [
+				{
+					id: "05EE9A7A39E5BF5A"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "10487F1E94F7EAA8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "0F279DFCE97428FE"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "00CE086AF851B9F4"
+					item: "embers:ember_dial"
+					type: "item"
+				}
+			]
+			title: "Dials"
+			x: 14.1d
+			y: -0.06d
+		}
+		{
+			dependencies: ["1EB3E0A8169C7369"]
+			description: ["The &eMelter&f turns ore into molten metal with a bonus. The &eStamper&f hammers it into ingots, plates and gears on a &eStamp Base&f, depending on the stamp fitted."]
+			id: "244BA3F413F5FD31"
+			rewards: [
+				{
+					id: "0BC74B5B4B7A8CFD"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3E14A76304C21AC2"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "13526B02F6755CDD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "69AF40CDC181D7D5"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ore processing, dwarf style"
+			tasks: [
+				{
+					id: "14BD4719B452FC8A"
+					item: "embers:melter"
+					type: "item"
+				}
+				{
+					id: "567C4AA90E354B8D"
+					item: "embers:stamper"
+					type: "item"
+				}
+				{
+					id: "0C7851C0C2D2BC47"
+					item: "embers:stamp_base"
+					type: "item"
+				}
+			]
+			title: "Melter \\& Stamper"
+			x: 14.1d
+			y: 1.31d
+		}
+		{
+			dependencies: ["244BA3F413F5FD31"]
+			description: ["The &eMixer Centrifuge&f alloys molten metals. Copper + gold = &6Dawnstone&f, the metal the dwarves built everything important from."]
+			id: "3040AABB6A59E813"
+			rewards: [
+				{
+					id: "47ED35E46C87BAC0"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "0EF5C323394D61CC"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A6B773C2C073A28"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "27E5D1F14B009FBB"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The key alloy"
+			tasks: [
+				{
+					id: "40F8A3AA7BB095F1"
+					item: "embers:mixer_centrifuge"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1BBD99D92A6F43A0"
+					item: "embers:dawnstone_ingot"
+					type: "item"
+				}
+			]
+			title: "&6Dawnstone"
+			x: 15.85d
+			y: 1.31d
+		}
+		{
+			dependencies: ["3040AABB6A59E813"]
+			description: ["Hammer items on it to repair them with their material, break them down for parts - or attach &eaugments&f."]
+			id: "2D62D878E4BB6208"
+			rewards: [
+				{
+					id: "30AAE47131887724"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "153EEF4589739A38"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1CBEEA463C82CB0A"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4B92EC648F7DC172"
+					item: "embers:dawnstone_anvil"
+					type: "item"
+				}
+			]
+			title: "Dawnstone Anvil"
+			x: 17.6d
+			y: 2.69d
+		}
+		{
+			dependencies: ["3040AABB6A59E813"]
+			description: ["An Activator that uses steam pressure for far more Ember per crystal. Needs water."]
+			id: "51A542C8ABE12587"
+			rewards: [
+				{
+					id: "16B49324213904A5"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "64ACBD7559E4FA4C"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "2B538D6A0C8581C9"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "More power per crystal"
+			tasks: [
+				{
+					id: "41179F557E87CF70"
+					item: "embers:pressure_refinery"
+					type: "item"
+				}
+			]
+			title: "Pressure Refinery"
+			x: 17.6d
+			y: 1.19d
+		}
+		{
+			dependencies: ["3040AABB6A59E813"]
+			description: ["Lets pipes and beams reach the middle of a multiblock from its side."]
+			id: "56A5D860E4B1D355"
+			optional: true
+			rewards: [
+				{
+					id: "17AA8D6D9BC1E3C1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 10
+					id: "264DB43D9CD53ADA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "647C7400E657FE25"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "19102ADCC962D86D"
+					item: "embers:mechanical_core"
+					type: "item"
+				}
+			]
+			title: "Mechanical Core"
+			x: 17.6d
+			y: -0.31d
+		}
+		{
+			dependencies: [
+				"25CC0D96E817CCE2"
+				"51A542C8ABE12587"
+			]
+			description: [
+				"The Exchange Tablet transmutes - but each recipe is a &elock&f. Place aspect metals on the pedestals in the right arrangement; the &6Codebreaking Slate&f records what your failures taught you."
+				""
+				"Every world has different answers. Nobody can tell you the solution - including this book."
+			]
+			id: "4540D878DB2D9D38"
+			rewards: [
+				{
+					id: "3FDBCEB1C762C0A8"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "534830B85129D54B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22EE168EEB2124D8"
+					table_id: 9078944763667157318L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "5C26166838E478D0"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Every world's answers differ"
+			tasks: [
+				{
+					id: "549D1C428479CE0B"
+					item: "embers:alchemy_tablet"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "196FF6D9035CE642"
+					item: "embers:alchemy_pedestal"
+					type: "item"
+				}
+				{
+					id: "05A288F82C199B30"
+					item: "embers:codebreaking_slate"
+					type: "item"
+				}
+			]
+			title: "&dAlchemy"
+			x: 21.1d
+			y: 2.69d
+		}
+		{
+			dependencies: ["4EEA3696A9120C95"]
+			description: ["Armour woven from Ashen Fabric. Strong against fire and magic, and it takes augments."]
+			id: "5AB38468CD01809D"
+			rewards: [
+				{
+					id: "2780283E5A7B6328"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "52F739AFA52FE180"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 160"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "7776C3ADE7589159"
+					silent: true
+					title: "+160 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "46D02FE41600E21D"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Embers' armour"
+			tasks: [
+				{
+					id: "30B191274D993CC8"
+					item: "embers:ashen_goggles"
+					type: "item"
+				}
+				{
+					id: "61E9DCBFDF3B30D0"
+					item: "embers:ashen_cloak"
+					type: "item"
+				}
+				{
+					id: "3CE1AE9D9CE4F56D"
+					item: "embers:ashen_leggings"
+					type: "item"
+				}
+				{
+					id: "104E575FBCF0714C"
+					item: "embers:ashen_boots"
+					type: "item"
+				}
+			]
+			title: "Ashen Cloak"
+			x: 24.6d
+			y: 2.69d
+		}
+		{
+			dependencies: ["4540D878DB2D9D38"]
+			description: ["Ember weapons, fed from an &eEmber Jar&f or Cartridge in your inventory. The Ray fires a beam; the Staff lobs a charged fireball."]
+			id: "1E5D3B0215D0CDAD"
+			rewards: [
+				{
+					id: "02267909ECF7F7C1"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "396D8558CAEF624D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 160"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "21DD33A5DDF640CB"
+					silent: true
+					title: "+160 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "5B6960F3AC61F33C"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Embers' weapons"
+			tasks: [
+				{
+					id: "28F541CB142908B9"
+					item: "embers:blazing_ray"
+					type: "item"
+				}
+				{
+					id: "4DBB0ECC94DD8A91"
+					item: "embers:cinder_staff"
+					type: "item"
+				}
+				{
+					id: "7B4F4106FEA1EE7A"
+					item: "embers:ember_jar"
+					type: "item"
+				}
+			]
+			title: "Blazing Ray \\& Cinder Staff"
+			x: 22.85d
+			y: 4.19d
+		}
+		{
+			dependencies: [
+				"5AB38468CD01809D"
+				"1E5D3B0215D0CDAD"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Throw a tool in with Ember crystals and it gains &eheat levels&f - each one unlocks another augment slot."]
+			id: "0DA4B0B35ED8EF9B"
+			rewards: [
+				{
+					id: "2024D5255DA1B4BF"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 3
+					id: "09A6EC88DC23CE81"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15F5FB3BA61D5404"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "230A126DC1CEEDC7"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Level your gear with fire"
+			tasks: [
+				{
+					id: "1D449BDDB058622D"
+					item: "embers:inferno_forge"
+					type: "item"
+				}
+			]
+			title: "Inferno Forge"
+			x: 26.35d
+			y: 2.69d
+		}
+		{
+			dependencies: ["36579EECDF0BB00E"]
+			description: ["The top-tier Ember generator. Catalysts and fuels in the side chambers multiply its output."]
+			id: "5884D7698C92FE8E"
+			optional: true
+			rewards: [
+				{
+					id: "522ED97A1567C5E6"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 3
+					id: "1AF79E959CCC08D6"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "4621F09046829FC7"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "23FE5839742284D8"
+					item: "embers:ignem_reactor"
+					type: "item"
+				}
+				{
+					id: "1AAC50E1A2078F3A"
+					item: "embers:catalysis_chamber"
+					type: "item"
+				}
+				{
+					id: "2F3A7B01CA00840C"
+					item: "embers:combustion_chamber"
+					type: "item"
+				}
+			]
+			title: "Ignem Reactor"
+			x: 30.3d
+			y: 4.44d
+		}
+		{
+			dependencies: ["0DA4B0B35ED8EF9B"]
+			description: ["A turret that fires stored Ember at a redstone pulse. Colony walls, meet your new favourite fixture."]
+			id: "7767B9A82DDF7F8E"
+			optional: true
+			rewards: [
+				{
+					id: "5349496BDEB84AD2"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "469A0F214D40EC2F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "4A19418E4C078D1E"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "7B55023E6B142490"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "472DC39881F15AE4"
+					item: "embers:beam_cannon"
+					type: "item"
+				}
+			]
+			title: "Beam Cannon"
+			x: 28.33d
+			y: 0.94d
+		}
+		{
+			dependencies: ["0DA4B0B35ED8EF9B"]
+			description: [
+				"Craft a &6Wildfire Core&f - the heart of the dwarves' last machines."
+				"&7Made at: &fAlchemy Tablet &7from &fCopper Aspectu, Iron Aspectu, Silver Aspectu, Dawnstone Aspectu, Dawnstone Ingot x2 and 3 more"
+			]
+			id: "58083DEBEE906CA9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3A177CAF18127558"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 4
+					id: "5A26F47C2F7E04EF"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "18BD64216840F95C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/mastery xp @s mining 160"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "7098BDF1AEDDB133"
+					silent: true
+					title: "+160 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 250"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "16FE8099A1F06E79"
+					silent: true
+					title: "+250 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "3438FD42155B1899"
+					item: "embers:wildfire_core"
+					type: "item"
+				}
+			]
+			title: "&6&lKeeper of the Flame"
+			x: 28.33d
+			y: 2.69d
+		}
+		{
+			dependencies: ["1F9023F13D94A5A8"]
+			id: "59C561DDEEC2BAD5"
+			rewards: [
+				{
+					id: "05CEE4406969D44F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2B32799AB39E09F6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "5A2AC9AB93575179"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Clay and sand. Fire the blend into bricks and plates."
+			tasks: [
+				{
+					count: 16L
+					id: "64C1F6F450E27CFD"
+					item: "embers:caminite_blend"
+					type: "item"
+				}
+			]
+			title: "Caminite Blend"
+			x: 1.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D97D2BAA14C434C"]
+			description: [
+				"The bore only finds any near bedrock. Crystals and shards are raw fuel; the activator turns them into something a machine can use."
+				"&7&fEmber Shard&7 - Made at: &fStamper &7from &fEmber Crystal, Flat Stamp"
+			]
+			id: "077E9F5272D96A1F"
+			rewards: [
+				{
+					id: "0518042984018A12"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1F19B3AF6CF08094"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "7BEDE1C5E8557268"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5F12D8EC6C28C39A"
+					item: "embers:ember_crystal"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6E831D956BB1B901"
+					item: "embers:ember_shard"
+					type: "item"
+				}
+			]
+			title: "Ember"
+			x: 7.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06F8BCDC25488666"]
+			description: ["Caminite shaped into a plate and fired. Plates line the parts that carry ember as a &6beam&f rather than through a pipe."]
+			id: "2620E4C20B05E168"
+			rewards: [
+				{
+					id: "389A5B385C6EA783"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "639576EE70E81534"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "31DFBE60763811A2"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "6BD5231ABFCBCD57"
+					item: "embers:caminite_plate"
+					type: "item"
+				}
+			]
+			title: "Caminite Plates"
+			x: 10.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D62D878E4BB6208"]
+			description: [
+				"Ember shards ground to powder. Alchemy burns it; so do the charged weapons."
+				"&7Made at: &fStamper &7from &fEmber Shard, Flat Stamp"
+			]
+			id: "25CC0D96E817CCE2"
+			rewards: [
+				{
+					id: "24638B23F9582060"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4B3C3D8A580D1C46"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "3FBA86D0CCDF48FE"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5F83FB22B771B9A4"
+					item: "embers:ember_grit"
+					type: "item"
+				}
+			]
+			title: "Ember Grit"
+			x: 19.35d
+			y: 2.69d
+		}
+		{
+			dependencies: ["4540D878DB2D9D38"]
+			description: ["Wool treated with ash at the Alchemy Tablet. Ashen armour is light, and its real worth is the &eaugments&f it can carry."]
+			id: "4EEA3696A9120C95"
+			rewards: [
+				{
+					id: "4AE021F02C3FB095"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7FBED536F35E042D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "6A7B38260849EF78"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7A6ACA1D968F1BD3"
+					item: "embers:ashen_fabric"
+					type: "item"
+				}
+			]
+			title: "Ashen Fabric"
+			x: 22.85d
+			y: 2.69d
+		}
+		{
+			dependencies: ["0DA4B0B35ED8EF9B"]
+			description: ["Crystals and shards joined into one at the Alchemy Tablet. The reactor line eats them whole, and gives back far more ember than the crystals alone would."]
+			id: "36579EECDF0BB00E"
+			optional: true
+			rewards: [
+				{
+					id: "6239CF3B95364334"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2ABAB64B2476698C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "0894ED9CC0043221"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "05BEA86864ED181E"
+					item: "embers:ember_crystal_cluster"
+					type: "item"
+				}
+			]
+			title: "Crystal Clusters"
+			x: 28.33d
+			y: 4.44d
+		}
+	]
+	subtitle: ["Dwarven fire, dug out of the deep and put to work"]
+	title: "&6Embers"
+}

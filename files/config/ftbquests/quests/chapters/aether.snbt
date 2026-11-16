@@ -1,0 +1,1049 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aether"
+	group: "2082B1037B9195D1"
+	icon: "aether:aether_portal_frame"
+	id: "5EA5DF9F69BE3DE5"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["340CD033AD736E63"]
+			description: [
+				"Islands in a sky with no ground. Fall off and you land back in the overworld, a little flatter."
+				""
+				"Your tools work badly here. Make new ones from what the Aether gives you."
+				""
+				"&4Entering the Aether raises the world to Expert if nothing else has."
+			]
+			hide_until_deps_complete: true
+			id: "1216F4E37AE32586"
+			rewards: [
+				{
+					id: "7E3618AFAD08198F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "3F9FB06F28A52BA5"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0DE8F3CA5F9600B5"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1B0EAE8349B99263"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "aether:enter_aether"
+					criterion: ""
+					icon: "minecraft:glowstone"
+					id: "73D71743BB90FDFF"
+					title: "Hostile Paradise"
+					type: "advancement"
+				}
+			]
+			title: "&b&lHostile Paradise"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64D2122468FB9752"]
+			description: ["Zanite tools get faster as they wear out."]
+			id: "6F753B8D4FE81BAD"
+			rewards: [
+				{
+					id: "33C6F87F48B33EA3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5571324F7DCA8CE2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "285D5588478E8CC0"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Have a Zanite Gemstone in your inventory"
+			tasks: [
+				{
+					advancement: "aether:zanite"
+					criterion: ""
+					icon: "aether:zanite_gemstone"
+					id: "206AB9ABF823E1D1"
+					title: "Exotic Hardware"
+					type: "advancement"
+				}
+			]
+			title: "Exotic Hardware"
+			x: 6.3d
+			y: -3.25d
+		}
+		{
+			dependencies: ["73FBE0ED8BDC8F32"]
+			description: ["The Altar repairs and enchants Aether gear, burning Ambrosium."]
+			id: "738167097A24A670"
+			rewards: [
+				{
+					id: "315968262003F9AE"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "190AA2A318F845EA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "31CE42FACA3A42EC"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft an Altar"
+			tasks: [
+				{
+					advancement: "aether:craft_altar"
+					criterion: ""
+					icon: "aether:altar"
+					id: "3854793043538FE4"
+					title: "Do You Believe in Magic?"
+					type: "advancement"
+				}
+			]
+			title: "Do You Believe in Magic?"
+			x: 10.0d
+			y: -3.25d
+		}
+		{
+			dependencies: ["738167097A24A670"]
+			id: "0B67A702231FE52F"
+			rewards: [
+				{
+					id: "42C957D6EDE46BA1"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2FC9FCA12D0FE08C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "700C63A498F59052"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Use a Freezer and Icestone to freeze an accessory"
+			tasks: [
+				{
+					count: 4L
+					id: "38F44E61C2A1E7D5"
+					item: "aether:icestone"
+					type: "item"
+				}
+				{
+					advancement: "aether:ice_accessory"
+					criterion: ""
+					icon: "aether:ice_pendant"
+					id: "3C56EEC826CFE1DA"
+					title: "Cool Jewelery!"
+					type: "advancement"
+				}
+			]
+			title: "Cold Storage"
+			x: 11.75d
+			y: -3.25d
+		}
+		{
+			dependencies: ["27B74409F8205656"]
+			description: ["Enchanted Gravitite floats upward when powered."]
+			id: "04257A9263F8242A"
+			rewards: [
+				{
+					id: "78914CE9E07FEA85"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "51C51152E7069652"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "31D383C6412870E9"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6E42B912990A9B52"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Have a full set of gravitite armor in your inventory"
+			tasks: [
+				{
+					advancement: "aether:gravitite_armor"
+					criterion: ""
+					icon: "aether:gravitite_chestplate"
+					id: "6B14729578F00FAA"
+					title: "Defying Gravity"
+					type: "advancement"
+				}
+			]
+			title: "Defying Gravity"
+			x: 15.35d
+			y: -3.25d
+		}
+		{
+			dependencies: ["04257A9263F8242A"]
+			description: ["Freeze Phoenix armour to turn it into Obsidian armour - the toughest set in the Aether."]
+			id: "215CB1C612FFADF7"
+			rewards: [
+				{
+					id: "1DF7F318CA1194C9"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "79DB02BAFA2A8CF6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1BD52E58076DF2D9"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7540CFD88760529D"
+					item: "aether:obsidian_chestplate"
+					type: "item"
+				}
+			]
+			title: "Blacker than Night"
+			x: 17.45d
+			y: -3.25d
+		}
+		{
+			dependencies: ["1216F4E37AE32586"]
+			description: ["Bronze dungeons are stone rooms inside the islands. The Slider only wakes when hit with a pickaxe."]
+			id: "68A5731C68648244"
+			rewards: [
+				{
+					id: "4849F03F63197DD6"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 3
+					id: "59D335752E81E7CC"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E71CC3A59982750"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3098A3B66787449F"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the bronze boss"
+			tasks: [
+				{
+					advancement: "aether:bronze_dungeon"
+					criterion: ""
+					icon: "aether:bronze_dungeon_key"
+					id: "4F7A0B60CAA5D379"
+					title: "Like a Bossaru!"
+					type: "advancement"
+				}
+			]
+			title: "The Slider"
+			x: 2.35d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68A5731C68648244"]
+			description: ["Silver dungeons float as temples. Beat Valkyries for Victory Medals - the Queen wants ten before she will fight."]
+			id: "2999FC130301BF28"
+			rewards: [
+				{
+					id: "1D90B19065EA3882"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 4
+					id: "6ECFE28F608B4767"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FD486ABACE6555E"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1CD331ADD0364D84"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the silver boss"
+			tasks: [
+				{
+					advancement: "aether:silver_dungeon"
+					criterion: ""
+					icon: "aether:silver_dungeon_key"
+					id: "282FC3B0EB48B705"
+					title: "Dethroned"
+					type: "advancement"
+				}
+			]
+			title: "The Valkyrie Queen"
+			x: 4.45d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2999FC130301BF28"]
+			description: ["&7Found in chests: &fDungeon Silver Valkyrie"]
+			id: "3B3C300773548ED2"
+			rewards: [
+				{
+					id: "05133255583D8574"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6AF7B6373288A89B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6B145FAC9A22FD1D"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain a piece of Valkyrie equipment from the Silver Dungeon"
+			tasks: [
+				{
+					advancement: "aether:valkyrie_loot"
+					criterion: ""
+					icon: "aether:valkyrie_helmet"
+					id: "1618CF61B1F98703"
+					title: "Earning your Wings"
+					type: "advancement"
+				}
+			]
+			title: "Earning your Wings"
+			x: 6.3d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B3C300773548ED2"]
+			description: ["A sphere of hellfire stone on its own island. Hit his ice balls back at him."]
+			id: "46D195231B06404D"
+			rewards: [
+				{
+					id: "4DC4C8F09C4B0CEF"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 6
+					id: "6E822BB4ED81E6BA"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40B0DE7702D6E945"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "500E5AAB6049173E"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the gold boss"
+			tasks: [
+				{
+					advancement: "aether:gold_dungeon"
+					criterion: ""
+					icon: "aether:gold_dungeon_key"
+					id: "6AB1710EDE88BE4F"
+					title: "Extinguished"
+					type: "advancement"
+				}
+			]
+			title: "The Sun Spirit"
+			x: 8.15d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46D195231B06404D"]
+			description: ["&7Found in chests: &fDungeon Gold"]
+			id: "6E003163923173EE"
+			rewards: [
+				{
+					id: "63888B20CEEA40F9"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0614C9F66C64AA25"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1AAE7E5D57E8CBBE"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain a piece of Phoenix armor from the Gold Dungeon"
+			tasks: [
+				{
+					advancement: "aether:phoenix_armor"
+					criterion: ""
+					icon: "aether:phoenix_helmet"
+					id: "092E38D34C8F2F2B"
+					title: "Fireproof"
+					type: "advancement"
+				}
+			]
+			title: "Fireproof"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1216F4E37AE32586"]
+			id: "30B268E688630F11"
+			rewards: [
+				{
+					id: "35D3CF85A42EC077"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7F335CCA2F00CDDF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3188D4C3F0110922"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Read a Book of Lore"
+			tasks: [
+				{
+					advancement: "aether:read_lore"
+					criterion: ""
+					icon: "aether:book_of_lore"
+					id: "170C8A1B2DD4D860"
+					title: "The More You Know!"
+					type: "advancement"
+				}
+			]
+			title: "The More You Know!"
+			x: 2.35d
+			y: 3.0d
+		}
+		{
+			dependencies: ["30B268E688630F11"]
+			id: "420623A623558EE9"
+			rewards: [
+				{
+					id: "7FD822B729CD5F3E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5786094C141A120B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1B529B6A8BD01B71"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bounce on a Blue Aercloud"
+			tasks: [
+				{
+					advancement: "aether:blue_aercloud"
+					criterion: ""
+					icon: "aether:blue_aercloud"
+					id: "0EBD0127DC2D2E7C"
+					title: "To Infinity and Beyond!"
+					type: "advancement"
+				}
+			]
+			title: "To Infinity and Beyond!"
+			x: 4.45d
+			y: 3.0d
+		}
+		{
+			dependencies: ["420623A623558EE9"]
+			id: "511A22FD40E8E162"
+			rewards: [
+				{
+					id: "7024639E65B67F1A"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5FEC29983C881E24"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "194024AA1796522E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fly on a Phyg!"
+			tasks: [
+				{
+					advancement: "aether:mount_phyg"
+					criterion: ""
+					icon: "minecraft:saddle"
+					id: "327249BD91AE0B3E"
+					title: "When Phygs Fly"
+					type: "advancement"
+				}
+			]
+			title: "When Phygs Fly"
+			x: 6.3d
+			y: 3.0d
+		}
+		{
+			dependencies: ["511A22FD40E8E162"]
+			id: "3210FA57626739B3"
+			rewards: [
+				{
+					id: "68E1818C6E5B1874"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "419E7AE9B76A41B4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "4AD9095BCBE016F9"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain a Moa Egg"
+			tasks: [
+				{
+					advancement: "aether:obtain_egg"
+					criterion: ""
+					icon: "aether:blue_moa_egg"
+					id: "6D9116C43C8E7337"
+					title: "Don't Count Your Moas..."
+					type: "advancement"
+				}
+			]
+			title: "Don't Count Your Moas..."
+			x: 8.15d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3210FA57626739B3"]
+			id: "5F5468C77B3B1E4F"
+			rewards: [
+				{
+					id: "7727CA7434216960"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3265D6026F8E2769"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "324D6B7CD9933C37"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Incubate a Moa"
+			tasks: [
+				{
+					advancement: "aether:incubate_moa"
+					criterion: ""
+					icon: "aether:incubator"
+					id: "01C48BC1FE48A0E0"
+					title: "... Until They hatch!"
+					type: "advancement"
+				}
+			]
+			title: "... Until They hatch!"
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F5468C77B3B1E4F"]
+			id: "0FC4125B42F4671D"
+			rewards: [
+				{
+					id: "6915BAF2E7ABBE00"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "2275AEF91FFE0BFF"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BBC26C6B43732C4"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "556BE842584ACB98"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Ride a Black Moa"
+			tasks: [
+				{
+					advancement: "aether:black_moa"
+					criterion: ""
+					icon: "minecraft:feather"
+					id: "5736C2A834374A43"
+					title: "Let's Fly!"
+					type: "advancement"
+				}
+			]
+			title: "Let's Fly!"
+			x: 17.45d
+			y: 3.0d
+		}
+		{
+			dependencies: ["46D195231B06404D"]
+			description: ["You cannot sleep in the Aether until the Sun Spirit is gone."]
+			id: "03A7ACC91111168D"
+			optional: true
+			rewards: [
+				{
+					id: "7C5997842C3316CF"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "60FBD0E12A4266D3"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "0A06748F06DEF818"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Finally sleep in the Aether"
+			tasks: [
+				{
+					advancement: "aether:aether_sleep"
+					criterion: ""
+					icon: "aether:skyroot_bed"
+					id: "387957E5D1994C7E"
+					title: "A Well Earned Rest"
+					type: "advancement"
+				}
+			]
+			title: "A Well Earned Rest"
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["68A5731C68648244"]
+			id: "71BDF19F0BD86CF6"
+			optional: true
+			rewards: [
+				{
+					id: "576C3BFF57CBB14C"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "1D7650A9443C7BEE"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6BAAA62339087FDF"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Kill a Zephyr with the Hammer of Kingbdogz. Sweet Revenge!"
+			tasks: [
+				{
+					advancement: "aether:zephyr_hammer"
+					criterion: ""
+					icon: "minecraft:snowball"
+					id: "3610455F0DF34B10"
+					title: "Ultimate Ban Hammer"
+					type: "advancement"
+				}
+			]
+			title: "Sweet Revenge"
+			x: 4.45d
+			y: -1.75d
+		}
+		{
+			dependencies: [
+				"46D195231B06404D"
+				"04257A9263F8242A"
+				"0FC4125B42F4671D"
+			]
+			description: ["All three dungeons cleared, a suit that defies gravity and a bird to ride."]
+			hide_dependency_lines: true
+			id: "3314C28D4644FDD9"
+			rewards: [
+				{
+					id: "6B0938CE32BD6B0C"
+					type: "xp"
+					xp: 2500
+				}
+				{
+					id: "3DCA1AECB1508FBE"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "69F17E449FE6EFB2"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21EF4581269E9626"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "79BE14D671BBA2F0"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6E2E13B1C4A68495"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&b&lLord of the Sky"
+			x: 19.8d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1216F4E37AE32586"]
+			description: ["Overworld tools are close to useless up here. Start again, with the local wood."]
+			id: "3425BD5FD7CF5564"
+			rewards: [
+				{
+					id: "06E6337BA80090EA"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "57571D4B7B0D9C16"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2D0A20CD8FD91767"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "215DC97BB5CD3777"
+					item: "aether:skyroot_pickaxe"
+					type: "item"
+				}
+			]
+			title: "Skyroot"
+			x: 2.35d
+			y: -3.25d
+		}
+		{
+			dependencies: ["3425BD5FD7CF5564"]
+			id: "64D2122468FB9752"
+			rewards: [
+				{
+					id: "08600DA68CB06C01"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "319D73CE86162BC8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "62C39EC9169C07BA"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "The Aether's stone. It mines zanite and ambrosium."
+			tasks: [
+				{
+					id: "223D6C5BF7598614"
+					item: "aether:holystone_pickaxe"
+					type: "item"
+				}
+			]
+			title: "Holystone"
+			x: 4.45d
+			y: -3.25d
+		}
+		{
+			dependencies: ["6F753B8D4FE81BAD"]
+			description: ["Torches, fuel for the Altar, and a quick repair for anything made of the Aether's wood and stone."]
+			id: "73FBE0ED8BDC8F32"
+			rewards: [
+				{
+					id: "79225D739D2D12B2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2005FD61A950A267"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3B00BE0A531373D6"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "472FC8C5E4F29297"
+					item: "aether:ambrosium_shard"
+					type: "item"
+				}
+			]
+			title: "Ambrosium"
+			x: 8.15d
+			y: -3.25d
+		}
+		{
+			dependencies: ["0B67A702231FE52F"]
+			description: ["Gravitite ore falls upwards when it is dug loose. Catch it, then put it through the Altar."]
+			id: "27B74409F8205656"
+			rewards: [
+				{
+					id: "76F8067FAC03390D"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6E7A9A3BC562EAD4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "0C61A6A696B0F157"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Use an Altar to obtain Enchanted Gravitite"
+			tasks: [
+				{
+					advancement: "aether:enchanted_gravitite"
+					criterion: ""
+					icon: "aether:enchanted_gravitite"
+					id: "367B620904BE544F"
+					title: "Pink is the New Blue"
+					type: "advancement"
+				}
+			]
+			title: "Pink is the New Blue"
+			x: 13.5d
+			y: -3.25d
+		}
+	]
+	subtitle: ["A hostile paradise above the clouds"]
+	title: "&bThe Aether"
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 432333099,
+    "separation": 77,
+    "spacing": 234,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "shrines:shrine_of_savanna",
+      "weight": 1
+    }
+  ]
+}

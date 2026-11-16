@@ -1,0 +1,19 @@
+{
+  "placement": {
+    "frequency": 0.5,
+    "salt": 14357800,
+    "separation": 9,
+    "spacing": 80,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "tconstruct:sky_slime_island",
+      "weight": 4
+    },
+    {
+      "structure": "tconstruct:clay_island",
+      "weight": 1
+    }
+  ]
+}

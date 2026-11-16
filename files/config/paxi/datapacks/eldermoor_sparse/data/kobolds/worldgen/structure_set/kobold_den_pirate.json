@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 778910456,
+    "separation": 30,
+    "spacing": 72,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "kobolds:kobold_den_pirate",
+      "weight": 1
+    }
+  ]
+}

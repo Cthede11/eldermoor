@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "frequency": 0.8,
+    "salt": 535694654,
+    "separation": 56,
+    "spacing": 168,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "explorify:mausoleum",
+      "weight": 1
+    }
+  ]
+}

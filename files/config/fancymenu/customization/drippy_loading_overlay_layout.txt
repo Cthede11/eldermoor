@@ -1,0 +1,122 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = drippy_loading_overlay
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1733440007550
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:d6191692-3326-44d4-8f02-5d4bde3548e8-1733439871985] = [groups:][instances:]
+}
+
+menu_background {
+  background_type = image
+  image_path = [source:local]/config/fancymenu/assets/menu.png
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = true
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/eldermoor_logo.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  element_type = image
+  instance_identifier = c660fd49-b0b0-4271-adca-2b99939be9a6-1716091705364
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -141
+  y = -128
+  width = 265
+  height = 177
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = f8cd0ca6-5e6c-46a4-bc05-c44f616bd8c0-1716091705364
+  [loading_requirement_container_meta:f8cd0ca6-5e6c-46a4-bc05-c44f616bd8c0-1716091705364] = [groups:][instances:]
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 1745a8e8-05bd-4f37-a2e9-d9bcf60274a5-1716091688186
+  [executable_block:1745a8e8-05bd-4f37-a2e9-d9bcf60274a5-1716091688186][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  element_type = vanilla_button
+  instance_identifier = mojang_logo
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = element
+  anchor_point_element = c660fd49-b0b0-4271-adca-2b99939be9a6-1716091705364
+  x = -4
+  y = 189
+  width = 285
+  height = 42
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 478e9527-5235-467c-8cc2-86c41f2d43fc-1716091688186
+  [loading_requirement_container_meta:478e9527-5235-467c-8cc2-86c41f2d43fc-1716091688186] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 878f8f91-e466-4ec1-9879-0fdb265e85c9-1716091688186
+  [executable_block:878f8f91-e466-4ec1-9879-0fdb265e85c9-1716091688186][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  element_type = vanilla_button
+  instance_identifier = progress_bar
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 258
+  y = 277
+  width = 338
+  height = 10
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = d5726788-b202-40f6-a3c9-0068b3a58f30-1716091688186
+  [loading_requirement_container_meta:d5726788-b202-40f6-a3c9-0068b3a58f30-1716091688186] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+}
+

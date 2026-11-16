@@ -1,0 +1,884 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "guide"
+	group: "20F67971AC218528"
+	icon: "minecraft:writable_book"
+	id: "2044AD82DBFC7A36"
+	images: [
+		{
+			height: 2.5d
+			image: "loe:textures/other/eldermoor.png"
+			rotation: 0.0d
+			width: 7.5d
+			x: 0.0d
+			y: -3.2d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"This book is your guide. It starts small on purpose: &enew chapters appear as you earn them&f, so what you see is always something you can do next."
+				""
+				"This chapter explains how the world works. Each page is a quick read and pays a little for it. None of it is required - skip ahead whenever you like."
+				""
+				"When you are ready to play, open &aFirst Days&f. When you want to choose a direction, open &6The Crossroads&f."
+			]
+			id: "651F9568F829CECF"
+			rewards: [
+				{
+					id: "0DBE9D4058CB5A7B"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 8
+					id: "0A5AC31D4ED5DDF5"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0F3636F7E2E536E0"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "12AB2C3B59E3EC41"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Start here"
+			tasks: [
+				{
+					id: "594F6150B1BDF144"
+					title: "Begin"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lWelcome to Eldermoor"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["651F9568F829CECF"]
+			description: [
+				"&aCircles&f are steps, &ehexagons&f are milestones and &6pentagons&f open or finish something big."
+				""
+				"A quest you cannot see yet is behind one you have not finished. Whole chapters work the same way: finish the right quest and a new chapter appears in the list on the left."
+				""
+				"Rewards are not automatic - click a finished quest to claim, or use the chest button at the top to claim everything."
+			]
+			icon: "ftbquests:book"
+			id: "44EAB87876375555"
+			rewards: [
+				{
+					id: "4B688CA02143F717"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "47E85C16555567AE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "22F6E0EDEE303835"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5AFC73F157004FA8"
+					title: "Got it"
+					type: "checkmark"
+				}
+			]
+			title: "&eHow This Book Works"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44EAB87876375555"]
+			description: [
+				"The first time you open the skill trees (press &e,&f) you choose your &dmain tree&f. It earns experience faster, a share of every other tree's experience flows into it, and its deeds now and then drop coins. Only an operator can change it later."
+				""
+				"Every other tree is still open to you, just slower. Nothing in them is locked by your choice."
+				""
+				"&7Operators: /mastery main <player> <tree>"
+			]
+			icon: "minecraft:compass"
+			id: "090A05E1D7752617"
+			rewards: [
+				{
+					id: "428C5BD8B9BD2B85"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5E0D69C5233DED00"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "5579E86FFE947A20"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6F97C95B960D0815"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&dYour Main Tree"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["090A05E1D7752617"]
+			description: [
+				"Open your inventory, click the &6team&f button in the top-left corner, choose &eCreate Party&f and &eInvite&f the others."
+				""
+				"A party &ashares quest progress&f: one boss kill counts for everybody, and each of you still claims your own rewards. Without a party only the player who landed the killing blow gets the credit."
+				""
+				"MineColonies is separate - add friends as Officers in the Town Hall."
+			]
+			icon: "minecraft:player_head"
+			id: "71E193C9020A2147"
+			rewards: [
+				{
+					id: "05F8495A56D7C3ED"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2F549832A2EEA957"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "41E275100D844FCF"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Playing with friends? &eForm a party first.&f"
+			tasks: [
+				{
+					id: "70E9A535786B7DA8"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&bPlay Together"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["651F9568F829CECF"]
+			description: [
+				"Health, armour and hunger are shown as &enumbers&f beside small icons above the hotbar, not as rows of hearts."
+				""
+				"The green &ewheel&f that appears near the middle of the screen is your &astamina&f. It only shows while it is not full."
+				""
+				"Look at a block or a creature to see what it is and which mod it is from."
+			]
+			icon: "minecraft:spyglass"
+			id: "13D15F41F3D1ADB1"
+			rewards: [
+				{
+					id: "2CF4155FBAAB5EA6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "530098C3123A37F0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1C6CF1AEBCC57879"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "479A09EDDD2D2A59"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&aReading the Screen"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13D15F41F3D1ADB1"]
+			description: [
+				"There is a single stamina pool, and the wheel is it. Sprinting, swimming, gliding, climbing, parkour moves, dodging, weapon swings and blocking all draw from the same wheel."
+				""
+				"Empty it and you are &cexhausted&f (the wheel turns red): slow to swing, slow to dig and unable to dodge until it refills. Stop and it comes back quickly."
+				""
+				"&dSpirit Orbs&f from chests and spawners buy more: trade four at a &eGoddess Statue&f for a Stamina Vessel or a Heart Container."
+			]
+			icon: "paraglider:stamina_vessel"
+			id: "63C79D5F83B551AA"
+			rewards: [
+				{
+					id: "0EB8BDCBB343641E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3D4D66D8A1323FDE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "06F7535A9E281E87"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "753E8105170CFAD2"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&aOne Wheel for Everything"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63C79D5F83B551AA"]
+			description: [
+				"Spells cost &9mana&f, the blue bar above your hotbar. It refills by itself. &eIron's Spells&f and &eArs Nouveau&f both cast from this one bar, so a mage who uses both never juggles two pools."
+				""
+				"Robes, rings, enchantments, potions and skill nodes from &oeither&f mod make the bar bigger or faster to refill, and spell power helps both kinds of spell."
+				""
+				"Some magic runs on its own fuel instead: &cBlood Magic&f on life essence, &5Malum&f on spirits, &8Goety&f on souls in your focus, &6Eidolon&f on mana your patron grants at the altar, &eForbidden \\& Arcanus&f on aureal, and &9Mana and Artifice&f on a resource that depends on your faction. Each mod's chapter explains its own."
+			]
+			icon: "irons_spellbooks:mana_upgrade_orb"
+			id: "33C9CB9B925D0C7A"
+			rewards: [
+				{
+					id: "0370B120DE274DC9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0E64B20ADEA5E789"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "16BDBA11E6B780CA"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "31092887D584C1C0"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&9One Bar for Magic"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33C9CB9B925D0C7A"]
+			description: [
+				"&eLeft Ctrl&f sprints faster. &eC&f crawls. Run at a low wall to &evault&f it, hold &eright mouse&f against a ledge to cling, and press &eR&f as you land a long fall to roll out of it. Jump off a wall with &eSpace&f."
+				""
+				"&eLeft Alt&f is a quick dodge with a moment of invulnerability. Like everything else it costs &astamina&f from the wheel."
+				""
+				"A &eParaglider&f (found in the stone towers) opens when you jump in mid-air."
+				""
+				"&7Alt+P opens the parkour settings."
+			]
+			icon: "paraglider:paraglider"
+			id: "7D7E1AC263F285C8"
+			rewards: [
+				{
+					id: "68CAC3886A7B6FC1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "505EAFEBD6116381"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "05A5B416BB31ABAB"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "You can do far more than walk."
+			tasks: [
+				{
+					id: "12CFDBC679DB0311"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&aGetting Around"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D7E1AC263F285C8"]
+			description: [
+				"Weapons have their own swings. Keep clicking to chain a combo; big weapons hit several enemies and take both hands, so no shield with a greatsword."
+				""
+				"Every swing and every block costs stamina. Running dry in the middle of a fight is how most heroes die."
+				""
+				"Monsters with a coloured name and stars are &cChampions&f: tougher, with special tricks, and they drop better loot."
+				""
+				"Bleeding ignores armour. Carry bandages."
+			]
+			icon: "minecraft:iron_sword"
+			id: "2B5C796876A92698"
+			rewards: [
+				{
+					id: "5293E8336A680491"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1393F6BA1E64B0B4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "7153C2CADA04964B"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5AC8015A33A7275D"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&cHow Fighting Works"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B5C796876A92698"]
+			description: [
+				"Almost every tool, weapon and armour piece rolls a &equality&f when it is made or found - from Broken to Legendary - that changes its stats."
+				""
+				"A &eReforging Station&f rerolls it. It costs the item's own material, so iron gear is rerolled with iron."
+				""
+				"Gear found in the world can also carry &dgem sockets&f and &daffixes&f. Those are Apotheosis, which has its own chapter later."
+			]
+			icon: "tieredreforge:reforge_station"
+			id: "6A605CFDD2751D08"
+			rewards: [
+				{
+					id: "12B23AD573B1ACDF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4AA625A8FAD90496"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "761F1ABDD874F7E7"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3110D48E4ED17D87"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&6Quality and Reforging"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["651F9568F829CECF"]
+			description: [
+				"There are fifteen, all open from the start, and each grows from &odoing&f its own thing: fighting, mining, travelling, cooking, building, casting - and from quests. The first time you open them you choose your &6main tree&f: it grows fastest, and takes a small share of everything the others earn."
+				""
+				"Gear is never locked behind a skill. Skills only add to what you already are."
+				""
+				"&eVein mining:&f hold the &e`&f key (left of 1) while you break an ore or a log and the rest of the vein comes with it. It starts at &e4 blocks&f; &6Vein Mining Size&f nodes in the Mining tree (Tunneling, Prospecting, Demolition) and the Forestry tree (Felling) make it bigger."
+			]
+			icon: "minecraft:nether_star"
+			id: "7FA98625CB4FC5BB"
+			rewards: [
+				{
+					id: "11A7630BB5762D61"
+					type: "xp"
+					xp: 15
+				}
+				{
+					command: "/mastery xp @s exploration 50"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1273A00D7192CDDD"
+					silent: true
+					title: "+50 Exploration experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "467BE044C53A41B6"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Press &e,&f (comma) to open your &6skill trees&f."
+			tasks: [
+				{
+					id: "7425975396E379E6"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&6Skill Trees"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FA98625CB4FC5BB"]
+			description: [
+				"Your things are not scattered. They wait in a &egrave&f where you fell, and nobody else can open it."
+				""
+				"You respawn with a &eGrave Key&f that points the way back. Walk onto the grave to take everything back at once."
+				""
+				"Nothing despawns. Take your time."
+				""
+				"&e/back&f takes you to where you died (for 10 minutes after), or back to where you stood before your last teleport. Stand still and unhurt for 5 seconds while it works; it will not work within 15 seconds of taking damage."
+			]
+			icon: "tombstone:grave_key"
+			id: "2377C73D689DE74E"
+			rewards: [
+				{
+					id: "357FF3E428603D7C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "08CAFC7B90B95F4E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3485B66551FDCC19"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "392E3C8C9DC0AADF"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&7When You Die"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2377C73D689DE74E"]
+			description: [
+				"The minimap is in the corner and &eM&f opens the full map. Both fill in as you explore."
+				""
+				"&eWaystones&f are fast travel: right-click one to activate it, then travel between any you have found. Villages usually have one."
+				""
+				"&eClaiming&f chunks protects your base from other players and from explosions. Open the claim map from the buttons at the top-left of your inventory."
+			]
+			icon: "waystones:waystone"
+			id: "43C6081A4822D87D"
+			rewards: [
+				{
+					id: "192BE25C41251FC5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4D032D53DA45B45D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3BC1F8276FDA7365"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4D4212795612847C"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&bMaps, Waystones and Claims"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43C6081A4822D87D"]
+			description: [
+				"Treasure chests in the world are &eyours alone&f: every player who opens one finds their own loot inside. There is no need to race your friends to a chest."
+				""
+				"Leave the chest where it is - breaking it loses it for everyone."
+			]
+			icon: "lootr:lootr_chest"
+			id: "321EAEAD1DFA5BD9"
+			rewards: [
+				{
+					id: "24D67CF0AFE2102E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4E7E83E0A50C25A2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "5C8F62C5616B6E5F"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "25E3B7437C090D9C"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&eLoot is Personal"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["321EAEAD1DFA5BD9"]
+			description: [
+				"Monsters drop &ecoins&f and chests hide more: copper, iron, gold, diamond and netherite, each worth more than the last."
+				""
+				"Spend them with villagers and goblin traders, on bounty boards, or in the &2Merchant&f chapter once you have found it at the Crossroads."
+			]
+			icon: "coinsje:gold_coin"
+			id: "0AEE3587071C55E0"
+			rewards: [
+				{
+					id: "4307B98C9B308723"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 12
+					id: "255AD842E420BD32"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3108EACF1FEAD712"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6F00DE167AAD8002"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&2Coins and Trade"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["651F9568F829CECF"]
+			description: [
+				"Variety matters. Every &enew&f food you try counts towards extra hearts - check the Food Book for your progress."
+				""
+				"Sleeping leaves you &eWell Rested&f, and standing near a lit campfire slowly heals you."
+				""
+				"Some nights are different: a red moon brings more monsters, a harvest moon grows crops faster."
+			]
+			icon: "solcarrot:food_book"
+			id: "27D3201CCAAD727F"
+			rewards: [
+				{
+					id: "632BA26B40329084"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "6D9E70A6176D50B7"
+					item: "solcarrot:food_book"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "7EA21D02333EB396"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6C3B0A33B39BEEDA"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&aEat Well, Sleep Well"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["27D3201CCAAD727F"]
+			description: [
+				"Hover any item and press &eR&f for how to make it, &eU&f for what it makes."
+				""
+				"Middle-click an inventory to sort it. Sneak and right-click with empty hands to pick up a chest - or a pig - and carry it."
+				""
+				"If one set of ingredients can make two things, a small button appears on the result to choose which."
+				""
+				"There is only one kind of each metal in Eldermoor: whichever machine makes steel, it is the same steel."
+			]
+			icon: "minecraft:crafting_table"
+			id: "11FE8743F4998188"
+			rewards: [
+				{
+					id: "79BDCF653508BC5B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "473514DD438DCD2E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "032BC86D40A733EE"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "42B987977F8F3983"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "&eHandy Things"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["11FE8743F4998188"]
+			description: [
+				"The world grows harder in &cstages&f, for everyone at once, and it never goes back."
+				""
+				"It starts in Normal. The first step into the Nether, the End, the Aether or a Blue Skies realm brings &cExpert&f. The Ender Dragon's death brings &4Master&f, and the Dark Doppelganger's brings &6Legend&f."
+				""
+				"Where you stand matters too: caves are worse than the surface, the Nether worse than caves, the End worse than the Nether."
+				""
+				"Ticking this off adds &4A Harder World&f to your chapters, which lists exactly what each stage unleashes."
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "05F98494C7647371"
+			rewards: [
+				{
+					id: "58500911A303715B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0C8CE65F519D1195"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "215F45009DC0D819"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5DE90C47A74DBB9E"
+					title: "I have been warned"
+					type: "checkmark"
+				}
+			]
+			title: "&4The World Fights Back"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["05F98494C7647371"]
+			description: [
+				"&aFirst Days&f walks you from your first tree to your first diamonds, and finishing it opens the story and the everyday chapters."
+				""
+				"&6The Crossroads&f is where you choose what kind of hero to be. Each path you pick reveals its own chapters."
+			]
+			icon: "minecraft:compass"
+			id: "504B4B5677154D8A"
+			rewards: [
+				{
+					id: "14613F66D1159545"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 2
+					id: "2C00F4FCFD367560"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					id: "6133AC03B977CEA3"
+					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "49F6097E3F85204C"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "That is everything you need to know to stay alive."
+			tasks: [
+				{
+					id: "7FB1A6D4C120C97B"
+					title: "Onwards"
+					type: "checkmark"
+				}
+			]
+			title: "&6Where to Go Next"
+			x: 6.5d
+			y: 3.0d
+		}
+	]
+	subtitle: ["How Eldermoor works. Start here."]
+	title: "&e&lThe Traveller's Guide"
+}

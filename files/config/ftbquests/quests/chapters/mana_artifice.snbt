@@ -1,0 +1,1282 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mana_artifice"
+	group: "3368DAD22055D0D9"
+	icon: "mna:manaweaving_altar"
+	id: "12F691A8F9112CEE"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1B9161306F3ACF93"]
+			description: [
+				"Mana and Artifice is a deep spellcrafting mod: you design spells from a &eShape&f, a &eComponent&f and &eModifiers&f, then learn them for good."
+				""
+				"It starts underground with blue-purple &bVinteum Ore&f."
+				""
+				"&7Not to be confused with Iron's Spells - both work side by side, and both use your Curios slots."
+			]
+			hide_until_deps_complete: true
+			id: "22E915027B067A51"
+			rewards: [
+				{
+					id: "460EF7287EA272F9"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "34DEC948461DCC67"
+					item: "mna:vinteum_dust"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3040927B8E2F2F9B"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3A570E727E52946E"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "The Artificer's path begins"
+			tasks: [
+				{
+					advancement: "mna:tier_0/mine_vinteum"
+					criterion: ""
+					icon: "mna:vinteum_ore"
+					id: "36A85A9A34B7DF7D"
+					title: "Mine Vinteum Ore"
+					type: "advancement"
+				}
+				{
+					advancement: "mna:tier_0/smelt_vinteum"
+					criterion: ""
+					icon: "mna:vinteum_dust"
+					id: "39766F29B7E3F0A9"
+					title: "Smelt Vinteum"
+					type: "advancement"
+				}
+			]
+			title: "&6Vinteum"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22E915027B067A51"]
+			description: [
+				"Right-click a &ebookshelf&f with vinteum dust in hand. The Codex is one of the best in-game guides ever written - it tracks your &6Tier&f and lists exactly which tasks advance it."
+				""
+				"&aWhen in doubt, read the Codex.&f"
+			]
+			id: "23BEC99FEDC6960D"
+			rewards: [
+				{
+					id: "7EED35B973CC2BDD"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 10
+					id: "586A12D8487D0E5D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0410D0162981F55A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Your teacher"
+			tasks: [
+				{
+					id: "3CEB3B439E233389"
+					item: "mna:guide_book"
+					type: "item"
+				}
+			]
+			title: "The Codex Arcana"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23BEC99FEDC6960D"]
+			description: ["Refine the dust, then coat iron with it on a Runeforge for the mod's main structural metal."]
+			id: "0FDA8A0BCCB5C6F7"
+			rewards: [
+				{
+					id: "13E128B86CEB7F5E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "254E7F9F5BA028E1"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4570CC1A7513D501"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "mna:tier_0/vinteum_bar"
+					criterion: ""
+					icon: "mna:vinteum_ingot"
+					id: "4DB980886D2FA44A"
+					title: "Make a Vinteum Ingot"
+					type: "advancement"
+				}
+				{
+					advancement: "mna:tier_0/vinteum_coated_iron"
+					criterion: ""
+					icon: "mna:purified_vinteum_coated_iron"
+					id: "1F1578096F4B6836"
+					title: "Coat iron in Vinteum"
+					type: "advancement"
+				}
+			]
+			title: "Purified Vinteum"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["23BEC99FEDC6960D"]
+			description: ["Place items on the altar, then &edraw patterns in the air&f with a Manaweaver Wand (hold right-click and trace the shape). The altar pulls the patterns in and crafts."]
+			id: "6DDAEE86CCB7827C"
+			rewards: [
+				{
+					id: "36048FD28635C80C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "29A034F3E7BAA031"
+					item: "mna:manaweaver_wand"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A4DD70B5E1F79BC"
+					table_id: 9078944763667157318L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "09BDE5B24F4A49C6"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Crafting with gestures"
+			tasks: [
+				{
+					advancement: "mna:tier_1/obtain_manaweaving_altar"
+					criterion: ""
+					icon: "mna:manaweaving_altar"
+					id: "607C93CA3BB3E638"
+					title: "Obtain a Manaweaving Altar"
+					type: "advancement"
+				}
+			]
+			title: "Manaweaving Altar"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6DDAEE86CCB7827C"]
+			description: ["Circle, triangle, square... the Codex shows each pattern. Practice makes perfect."]
+			id: "604F6E2FB3197245"
+			rewards: [
+				{
+					id: "53CAEB95FCB4C20F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 10
+					id: "20E8BD9F098D75DC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3B7D0B7B3FC74845"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "mna:tier_1/draw_manaweave_pattern"
+					criterion: ""
+					icon: "mna:manaweaver_wand"
+					id: "15E0AEA34E3179B4"
+					title: "Draw a Manaweave Pattern"
+					type: "advancement"
+				}
+				{
+					advancement: "mna:tier_1/craft_at_manaweave_altar"
+					criterion: ""
+					icon: "mna:manaweaving_altar"
+					id: "5D390D75B4AB9D68"
+					title: "Craft at the Manaweaving Altar"
+					type: "advancement"
+				}
+			]
+			title: "Drawing in the Air"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6DDAEE86CCB7827C"]
+			description: ["Design a spell here: pick a Shape, a Component and Modifiers. It gives you a recipe to complete at the Manaweaving Altar."]
+			id: "68EB153F7F55D8A5"
+			rewards: [
+				{
+					id: "08966E7E86720A2D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "07820FFFD7BBAC5D"
+					item: "mna:vellum"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4AE5AF60E411B186"
+					item: "minecraft:ink_sac"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5CA6EFBF4D0CE16E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Design a spell"
+			tasks: [
+				{
+					advancement: "mna:tier_1/obtain_inscription_table"
+					criterion: ""
+					icon: "mna:inscription_table"
+					id: "05006FDF1AD57C6E"
+					title: "Obtain an Inscription Table"
+					type: "advancement"
+				}
+			]
+			title: "Inscription Table"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"68EB153F7F55D8A5"
+				"604F6E2FB3197245"
+			]
+			description: ["Craft it, cast it. Casting a spell repeatedly lets you &erote&f it - after that you can make copies without materials."]
+			id: "7FEE3E278F9564EE"
+			rewards: [
+				{
+					id: "7A4E4DB28646CE9D"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 3
+					id: "4049221F14DC4028"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 80"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3B80A0057FB38EA6"
+					silent: true
+					title: "+80 Magic experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5D84F61657647509"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Shape + Component + Modifiers"
+			tasks: [
+				{
+					advancement: "mna:tier_1/craft_a_spell"
+					criterion: ""
+					icon: "mna:spell"
+					id: "281BC4DBEBF3B2A7"
+					title: "Craft a Spell"
+					type: "advancement"
+				}
+				{
+					advancement: "mna:tier_1/cast_a_spell"
+					criterion: ""
+					icon: "mna:spell"
+					id: "7EF1B13FFE0AE2E6"
+					title: "Cast a Spell"
+					type: "advancement"
+				}
+			]
+			title: "&6Your First Spell"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["604F6E2FB3197245"]
+			description: ["Cantrips are cast with bare hands by drawing patterns in sequence - see the Cantrips screen. Flare makes light anywhere."]
+			id: "7E79CCA66712EE71"
+			optional: true
+			rewards: [
+				{
+					id: "063EEE7631237586"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "2EDC9EA3D18859FF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "513E1D841CDC6E87"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "mna:tier_1/cast_flare_cantrip"
+					criterion: ""
+					icon: "minecraft:torch"
+					id: "24D8446E1319C7B5"
+					title: "Cast the Flare cantrip"
+					type: "advancement"
+				}
+			]
+			title: "Cantrips"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["68EB153F7F55D8A5"]
+			description: ["Holds your ritual supplies and can be patched with upgrades later."]
+			id: "199244799CA8CCC8"
+			optional: true
+			rewards: [
+				{
+					id: "2AF3F640D27C6F4F"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "1A33153C383675EC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "540D819124585DCD"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "mna:tier_1/obtain_practitioners_pouch"
+					criterion: ""
+					icon: "mna:practitioners_pouch"
+					id: "19DAFE1182C3C56C"
+					title: "Obtain a Practitioner's Pouch"
+					type: "advancement"
+				}
+			]
+			title: "Practitioner's Pouch"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6DDAEE86CCB7827C"]
+			description: ["Your first ritual. Rituals are drawn on the ground with Wizard's Chalk on a grid of runes - the Codex shows where each rune goes."]
+			id: "6B338D4BB3D8D622"
+			optional: true
+			rewards: [
+				{
+					id: "66FEAAB386B588F9"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "44516CD6B2BCFF86"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "31592233CF6396FE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Your first ritual"
+			tasks: [
+				{
+					advancement: "mna:tier_1/summon_wandering_wizard"
+					criterion: ""
+					icon: "minecraft:emerald"
+					id: "460D2639462BFEEA"
+					title: "Summon the Wandering Wizard"
+					type: "advancement"
+				}
+			]
+			title: "The Wandering Wizard"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["199244799CA8CCC8"]
+			description: ["Constructs are programmable golems. Assemble one from parts, then give it orders: chop, farm, carry, guard. Better materials unlock later."]
+			id: "517250D9ABF0CB3A"
+			optional: true
+			rewards: [
+				{
+					id: "0931EF89DDC53700"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 3
+					id: "51E2E2F3493C15CF"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "18A7D17F4AAC39EC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Magical workers"
+			tasks: [
+				{
+					advancement: "mna:tier_1/craft_wickerwood_construct"
+					criterion: ""
+					icon: "minecraft:stick"
+					id: "6EE907BD2499E24C"
+					title: "Craft a Wickerwood Construct"
+					type: "advancement"
+				}
+			]
+			title: "Wickerwood Construct"
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FEE3E278F9564EE"]
+			description: ["Complete enough Tier I tasks in the Codex, then perform the advancement ritual it describes."]
+			id: "38E0657E876BC94E"
+			rewards: [
+				{
+					id: "45CD397C7705C069"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "5D584F591D3B0787"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5E6B55EAC70CD572"
+					table_id: 9078944763667157318L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2AA11536687EA996"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Follow the Codex"
+			tasks: [
+				{
+					advancement: "mna:tier_1/advance_tier_2"
+					criterion: ""
+					icon: "mna:guide_book"
+					id: "7A306B9CD9973144"
+					title: "Advance to Tier 2"
+					type: "advancement"
+				}
+			]
+			title: "&6Tier II"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38E0657E876BC94E"]
+			description: ["Scribe a pattern onto clay, then stamp it into hot metal on the Runeforge with a Runesmith's Hammer."]
+			id: "4BB1AAF06C08FC50"
+			rewards: [
+				{
+					id: "329EE54162A0C018"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 16
+					id: "0B048AA4FE39478A"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6DA6B38584E5641D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "65C54464726D1A80"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "mna:tier_2/runescribe_rune"
+					criterion: ""
+					icon: "mna:runescribing_table"
+					id: "0F30053F2E50011C"
+					title: "Runescribe a rune"
+					type: "advancement"
+				}
+				{
+					advancement: "mna:tier_2/runeforge_rune"
+					criterion: ""
+					icon: "mna:runeforge"
+					id: "631F2E3A012EF9DB"
+					title: "Forge a rune"
+					type: "advancement"
+				}
+			]
+			title: "Runeforge \\& Runescribing"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["38E0657E876BC94E"]
+			id: "3292C65189B93E1B"
+			rewards: [
+				{
+					id: "3AA945C5C2400484"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "2654FD078C97AADF"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "76D4DAA451480562"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Holds several spells and swaps between them with a keybind."
+			tasks: [
+				{
+					advancement: "mna:tier_2/obtain_spell_book"
+					criterion: ""
+					icon: "mna:spell_book"
+					id: "51191B09528612F3"
+					title: "Obtain a Spell Book"
+					type: "advancement"
+				}
+			]
+			title: "Spell Book"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38E0657E876BC94E"]
+			id: "309A7BFF8922053D"
+			rewards: [
+				{
+					id: "10557F811867B207"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "3C6B5F209057C6A8"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "254B32699023A1EF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Focused mana - needed for pylons, rituals and higher constructs."
+			tasks: [
+				{
+					advancement: "mna:tier_2/craft_mana_crystal"
+					criterion: ""
+					icon: "mna:mana_crystal"
+					id: "33E03C7C4D77ED14"
+					title: "Craft a Mana Crystal"
+					type: "advancement"
+				}
+			]
+			title: "Mana Crystals"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["309A7BFF8922053D"]
+			id: "6D37997F36F7B7D8"
+			optional: true
+			rewards: [
+				{
+					id: "5E317ED15A80B2B2"
+					type: "xp"
+					xp: 200
+				}
+				{
+					command: "/mastery xp @s exploration 80"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "66AD7343EA2E9A75"
+					silent: true
+					title: "+80 Exploration experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "016557B47EBC3EF8"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Yes, you can fly on it."
+			tasks: [
+				{
+					advancement: "mna:tier_2/craft_magic_broom"
+					criterion: ""
+					icon: "minecraft:hay_block"
+					id: "6EFC02D4ECD103DA"
+					title: "Craft a Magic Broom"
+					type: "advancement"
+				}
+			]
+			title: "Magic Broom"
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4BB1AAF06C08FC50"]
+			id: "7081699D3A11086B"
+			optional: true
+			rewards: [
+				{
+					id: "179E881D7D187C9A"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "54B7AD093C89962C"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4BD94A1698B0DCF1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Learn spell parts by study instead of by casting."
+			tasks: [
+				{
+					advancement: "mna:tier_2/study_desk_rote"
+					criterion: ""
+					icon: "mna:study_desk"
+					id: "57436202B579655E"
+					title: "Rote a spell part at a Study Desk"
+					type: "advancement"
+				}
+			]
+			title: "Study Desk"
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3292C65189B93E1B"
+				"4BB1AAF06C08FC50"
+				"309A7BFF8922053D"
+			]
+			description: ["Tier III is where the mod opens up: factions, runic enchanting and the Eldrin power network."]
+			id: "4EFA05D285922588"
+			rewards: [
+				{
+					id: "5B49C579B1E42897"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 2
+					id: "5F12F473998E081D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "47530E85D925C032"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6A39A33F2F5D1F26"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Follow the Codex"
+			tasks: [
+				{
+					advancement: "mna:tier_2/advance_tier_3"
+					criterion: ""
+					icon: "mna:guide_book"
+					id: "47C8E7BE8201DEF4"
+					title: "Advance to Tier 3"
+					type: "advancement"
+				}
+			]
+			title: "&6Tier III"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4EFA05D285922588"]
+			description: ["Scholars of pure arcane magic. Mana regeneration and raw spell power."]
+			id: "394B60A5D0413606"
+			optional: true
+			rewards: [
+				{
+					id: "530F0B0D70E00B66"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "5F37C09053B5CC2E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "75CF417F4AF393D0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faction: Arcane"
+			tasks: [
+				{
+					advancement: "mna:faction/join_council"
+					criterion: ""
+					icon: "mna:grimoire_council"
+					id: "610AAD7F05108D7A"
+					title: "Join the Council"
+					type: "advancement"
+				}
+			]
+			title: "The Council"
+			x: 16.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["4EFA05D285922588"]
+			description: ["Summer and Winter courts. Nature, weather and trickery."]
+			id: "7B538D13AD507787"
+			optional: true
+			rewards: [
+				{
+					id: "593B8F3BAE08D4BF"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "1866BE909FEDDFAA"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3428F90D740DE934"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faction: Fey"
+			tasks: [
+				{
+					advancement: "mna:faction/join_fey"
+					criterion: ""
+					icon: "mna:grimoire_fey"
+					id: "6C5853AFBD3C1593"
+					title: "Join the Fey"
+					type: "advancement"
+				}
+			]
+			title: "The Fey Court"
+			x: 16.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["4EFA05D285922588"]
+			description: ["Fire, fury and casting from your own heat."]
+			id: "180B60561642AED3"
+			optional: true
+			rewards: [
+				{
+					id: "317FC85297076856"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "0AA038504F8803D7"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "490E2C685C9D30E7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faction: Demons"
+			tasks: [
+				{
+					advancement: "mna:faction/join_demons"
+					criterion: ""
+					icon: "mna:grimoire_demon"
+					id: "783E0F5C5A916430"
+					title: "Join the Demons"
+					type: "advancement"
+				}
+			]
+			title: "The Demons"
+			x: 16.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["4EFA05D285922588"]
+			description: ["Necromancy and lichdom - cast from souls instead of mana."]
+			id: "30B995CDDA5C06D7"
+			optional: true
+			rewards: [
+				{
+					id: "6BA8F6B39B8C3E53"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "38D753C0B6BFF743"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1576522867795F12"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faction: Undead"
+			tasks: [
+				{
+					advancement: "mna:faction/join_undead"
+					criterion: ""
+					icon: "mna:grimoire_undead"
+					id: "35FAC7706A2A2CEB"
+					title: "Join the Undead"
+					type: "advancement"
+				}
+			]
+			title: "The Undead"
+			x: 16.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"394B60A5D0413606"
+				"7B538D13AD507787"
+				"180B60561642AED3"
+				"30B995CDDA5C06D7"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Join &aany one&f faction. Each has its own spells, gear, allies - and enemies. The other factions will send raids after you."
+				""
+				"Playing with friends? Different factions make for a more interesting server."
+			]
+			id: "0F0BB99B11E21523"
+			rewards: [
+				{
+					id: "56EC26ACD74BDB8D"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "144F253222DDA59F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A2E757B5A2E77FF"
+					table_id: 8298031287037069412L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3B8E365E26751626"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Join any one faction"
+			tasks: [
+				{
+					id: "6A79358204CB64E1"
+					title: "I have chosen"
+					type: "checkmark"
+				}
+			]
+			title: "&6Sworn"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F0BB99B11E21523"]
+			description: ["Wellsprings, pylons and transitory tunnels."]
+			id: "66C0F6F4439D1743"
+			rewards: [
+				{
+					id: "689C36DAD4E50FF7"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 4
+					id: "4F22B8E2363C8D15"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19366D7FEB8EF87C"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "111682AF408940CA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Follow the Codex"
+			tasks: [
+				{
+					advancement: "mna:tier_3/advance_tier_4"
+					criterion: ""
+					icon: "mna:guide_book"
+					id: "7F3EBCA0767AF7CC"
+					title: "Advance to Tier 4"
+					type: "advancement"
+				}
+			]
+			title: "Tier IV"
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66C0F6F4439D1743"]
+			description: ["Natural fonts of Eldrin power scattered across the world. Claim one and beam its power to your workshop."]
+			id: "45276851F850D8D3"
+			optional: true
+			rewards: [
+				{
+					id: "42701FB7BC883DD5"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "2806C8E70CFE8A98"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3818608B3F806331"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "mna:tier_4/capture_wellspring"
+					criterion: ""
+					icon: "mna:eldrin_altar"
+					id: "43C377272D042C74"
+					title: "Capture a Wellspring"
+					type: "advancement"
+				}
+			]
+			title: "Wellsprings"
+			x: 20.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["66C0F6F4439D1743"]
+			description: ["The final tier. Faction bosses and the mightiest spells await."]
+			id: "3402B286F01B3567"
+			rewards: [
+				{
+					id: "2F6BCD1CA7D3B795"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 2
+					id: "7763253E788F3FFE"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "35C0578CA0558642"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0369C9E693ACFEC4"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The pinnacle"
+			tasks: [
+				{
+					advancement: "mna:tier_4/advance_tier_5"
+					criterion: ""
+					icon: "mna:guide_book"
+					id: "2B8989876BFF33B6"
+					title: "Advance to Tier 5"
+					type: "advancement"
+				}
+			]
+			title: "&6Tier V"
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3402B286F01B3567"]
+			description: ["Mana and Artifice: mastered."]
+			id: "1880EF0C679B83D4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "72F4C62D536087DC"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F5C691E2C388267"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "20C16EFC68ACFEAE"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					id: "0E25B864D2821DBE"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					command: "/mastery xp @s magic 240"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "312D0BE8230E61E6"
+					silent: true
+					title: "+240 Magic experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7D2043AA69550E9E"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "55302C5C900856CE"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&9&lGrand Artificer"
+			x: 24.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Weave mana, build spells from parts, pick a faction"]
+	title: "&9Mana and Artifice"
+}

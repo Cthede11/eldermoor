@@ -1,0 +1,78 @@
+{
+	icon: "minecraft:amethyst_shard"
+	id: "7DFEE42905C61146"
+	loot_size: 1
+	order_index: 39
+	rewards: [
+		{
+			count: 24
+			item: "minecraft:lapis_lazuli"
+			weight: 4.0f
+		}
+		{
+			count: 16
+			item: "minecraft:amethyst_shard"
+			weight: 4.0f
+		}
+		{
+			count: 24
+			item: "minecraft:glowstone_dust"
+			weight: 3.0f
+		}
+		{
+			count: 12
+			item: "mna:vinteum_dust"
+			weight: 3.0f
+		}
+		{
+			count: 6
+			item: "bloodmagic:blankslate"
+			weight: 3.0f
+		}
+		{
+			count: 12
+			item: "minecraft:experience_bottle"
+			weight: 3.0f
+		}
+		{
+			count: 8
+			item: "irons_spellbooks:arcane_essence"
+			weight: 3.0f
+		}
+		{
+			count: 6
+			item: "minecraft:ender_pearl"
+			weight: 2.0f
+		}
+		{
+			count: 8
+			item: "minecraft:blaze_powder"
+			weight: 2.0f
+		}
+		{
+			count: 3
+			item: "bloodmagic:reinforcedslate"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "mna:mana_crystal_fragment"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "coinsje:iron_coin"
+			weight: 2.0f
+		}
+		{
+			count: 2
+			item: "minecraft:diamond"
+		}
+		{
+			count: 3
+			item: "irons_spellbooks:common_ink"
+			weight: 2.0f
+		}
+	]
+	title: "Arcane Cache"
+}

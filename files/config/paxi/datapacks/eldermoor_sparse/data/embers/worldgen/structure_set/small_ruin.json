@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 193826405,
+    "separation": 24,
+    "spacing": 60,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "embers:small_ruin",
+      "weight": 1
+    }
+  ]
+}

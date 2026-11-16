@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "frequency": 0.75,
+    "salt": 63294721,
+    "separation": 42,
+    "spacing": 112,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "explorify:badlands_pyramid",
+      "weight": 1
+    }
+  ]
+}

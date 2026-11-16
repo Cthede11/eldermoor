@@ -1,0 +1,1450 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "slayer"
+	group: "2082B1037B9195D1"
+	icon: "minecraft:iron_sword"
+	id: "16EEA6A775F1299A"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["184768A56985E56B"]
+			description: [
+				"Somebody has to keep the roads clear, and somebody is willing to pay."
+				""
+				"Each row is a line of work. Contracts get harder, and better paid, from left to right."
+			]
+			hide_until_deps_complete: true
+			id: "72107CE1C72F8BEE"
+			rewards: [
+				{
+					id: "592E4C59110F211B"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 12
+					id: "67754E82C0A2F9C6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "528DB6C861DAFC8B"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "044FA785B905E91F"
+					title: "Give me work"
+					type: "checkmark"
+				}
+			]
+			title: "&c&lThe Bounty Board"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72107CE1C72F8BEE"]
+			id: "7006D88B991D3EE5"
+			rewards: [
+				{
+					id: "7242DF361750D58D"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "435FB2AB2ED0F785"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20BB20E517B6F205"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "42D725025E943631"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The ordinary dead."
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "5402EE6DE742844F"
+					type: "kill"
+					value: 30L
+				}
+			]
+			title: "Night Watch"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7006D88B991D3EE5"]
+			id: "0803337346519A58"
+			rewards: [
+				{
+					id: "2FC1ABD8534C0953"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 6
+					id: "17CB1C1BB0873655"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F58E277194E046D"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "77D728F240FDCB8E"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bring a shield."
+			tasks: [
+				{
+					entity: "minecraft:skeleton"
+					id: "2CD1E84C41DCB2BF"
+					type: "kill"
+					value: 30L
+				}
+			]
+			title: "Bone Collector"
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0803337346519A58"]
+			id: "00E43248D0119F2F"
+			rewards: [
+				{
+					id: "305C4D2274FEF147"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 12
+					id: "7584746797774B81"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "60EB5BAAC34E7E4B"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "35D243078AF42C58"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Creepers leave bigger holes in Eldermoor."
+			tasks: [
+				{
+					entity: "minecraft:creeper"
+					id: "4CF95871728787A5"
+					type: "kill"
+					value: 20L
+				}
+			]
+			title: "Bomb Disposal"
+			x: 6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["00E43248D0119F2F"]
+			id: "07FED9A505324846"
+			rewards: [
+				{
+					id: "4C831E71030BF155"
+					type: "xp"
+					xp: 330
+				}
+				{
+					count: 3
+					id: "6E6B530E09E47150"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "192363344038E29C"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3EF159A93A0033DC"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "In Master they teleport you instead of themselves."
+			tasks: [
+				{
+					entity: "minecraft:enderman"
+					id: "2D574E645FC36D50"
+					type: "kill"
+					value: 15L
+				}
+			]
+			title: "Do Not Look"
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["07FED9A505324846"]
+			id: "0C6F1A0E008460C4"
+			rewards: [
+				{
+					id: "092A37D16EE5A04C"
+					type: "xp"
+					xp: 420
+				}
+				{
+					count: 6
+					id: "700FEE62E308BA54"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0C34204A2B3355AE"
+					table_id: 7386055547922529481L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6DE2A79ABEEA2348"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Drink milk."
+			tasks: [
+				{
+					entity: "minecraft:witch"
+					id: "16CE53C56E500810"
+					type: "kill"
+					value: 10L
+				}
+			]
+			title: "Coven Breaker"
+			x: 10.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["72107CE1C72F8BEE"]
+			id: "0DF6BD5805AF290B"
+			rewards: [
+				{
+					id: "5472AAE772764895"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "4A232AEA1DEEC265"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12D0B9277C5AAB72"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "58571D20B182E730"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "They come when you stay still too long at night."
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:nightmare_stalker"
+					id: "504867BA888E7A4C"
+					type: "kill"
+					value: 5L
+				}
+			]
+			title: "Things in the Fog"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0DF6BD5805AF290B"]
+			id: "7F064C2339138C3E"
+			rewards: [
+				{
+					id: "29F7D4B1D60DB017"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 6
+					id: "1479A8CBDD504D5F"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "60E5916A6618F30F"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "23717F0F1F6BD1BE"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Kill it before the skeletons it raises kill you."
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:supreme_bonescaller"
+					id: "2FD24F47BF7A6DF2"
+					type: "kill"
+					value: 2L
+				}
+			]
+			title: "The Caller"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7F064C2339138C3E"]
+			id: "7800DD5E7814072B"
+			rewards: [
+				{
+					id: "5176F02D8EACED68"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 12
+					id: "34B229815972EF5D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75F7C9EDBA2B0160"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "257EA0C6541562C5"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Heavily armoured, slow, patient."
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:fallen_chaos_knight"
+					id: "1D77E6B4BBE01827"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "Fallen Knights"
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7800DD5E7814072B"]
+			id: "236668345A883826"
+			rewards: [
+				{
+					id: "4B5E00DD1F589A66"
+					type: "xp"
+					xp: 330
+				}
+				{
+					count: 3
+					id: "4D68157C853CA27C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D3DE512A178EED1"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "005E291736058E4A"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "It heals on every hit it lands."
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:lifestealer"
+					id: "2E5F8E60FC9ED4F0"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Lifestealer"
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["236668345A883826"]
+			id: "124C368F60CD8CB8"
+			rewards: [
+				{
+					id: "46B7F088C859A94E"
+					type: "xp"
+					xp: 420
+				}
+				{
+					count: 6
+					id: "364431E9CFBCAD0F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72F6D0E857D00B5C"
+					table_id: 7386055547922529481L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2376DE0748EB7EAE"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A rider with no head and a very good horse."
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:lord_the_headless"
+					id: "41FEADFD1AF67809"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Lord of the Headless"
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["72107CE1C72F8BEE"]
+			id: "7033FC1AAFB4D4B6"
+			rewards: [
+				{
+					id: "40121F8E62EBDCA8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "7261EB259EE5C8F8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15F106E3E038D9E0"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4C1D821CDFBDE0BA"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Small, numerous, fond of your pockets."
+			tasks: [
+				{
+					entity: "mobs_of_mythology:kobold"
+					id: "2B8B77E8599E9961"
+					type: "kill"
+					value: 15L
+				}
+			]
+			title: "Tunnel Rats"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7033FC1AAFB4D4B6"]
+			id: "097CC359C5853A02"
+			rewards: [
+				{
+					id: "09184AA33EB2A583"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 6
+					id: "682AE63FCF5F375A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09A2B572925FA27B"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2F6256FEFBC9D073"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The ones with proper weapons."
+			tasks: [
+				{
+					entity: "mobs_of_mythology:kobold_warrior"
+					id: "41E0CCF917E05A63"
+					type: "kill"
+					value: 10L
+				}
+			]
+			title: "Kobold Warband"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["097CC359C5853A02"]
+			id: "7DE2C3888C6DF9F3"
+			rewards: [
+				{
+					id: "0BF7A6E67D506422"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 12
+					id: "3DF79BAC88B64E25"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4343B24E599EA4D9"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "48CBD232D36DADFA"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Goblin camps keep their best fighter at the centre."
+			tasks: [
+				{
+					entity: "goblins_tyranny:champion_goblin"
+					id: "452850CB7863B14E"
+					type: "kill"
+					value: 5L
+				}
+			]
+			title: "Goblin Champions"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7DE2C3888C6DF9F3"]
+			id: "444979262A06C530"
+			rewards: [
+				{
+					id: "42CBE6F58C1B6ED2"
+					type: "xp"
+					xp: 330
+				}
+				{
+					count: 3
+					id: "45C8BF0C46B2C18D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "45DFE30046817658"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "02C1038FD7FB0861"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bronze giant guarding a ruin. It does not get tired."
+			tasks: [
+				{
+					entity: "mobs_of_mythology:automaton"
+					id: "2EDB77C673E3764F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Bronze Sentinel"
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["444979262A06C530"]
+			id: "7575258AD59CDC66"
+			rewards: [
+				{
+					id: "2614759CC348624D"
+					type: "xp"
+					xp: 420
+				}
+				{
+					count: 6
+					id: "3E04E59ADFA3F714"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E6E949D25772D6D"
+					table_id: 7386055547922529481L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "62A65CC6E8AC08EF"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Small dragons are still dragons."
+			tasks: [
+				{
+					entity: "mobs_of_mythology:drake"
+					id: "7CA1E775B36376DC"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "Drake Hunt"
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["72107CE1C72F8BEE"]
+			id: "19AB1B5452EDB0B7"
+			rewards: [
+				{
+					id: "15D176C5E6493E2C"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "71B1CDB92655E688"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "596B8CEC37309952"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "66C1B66189032E89"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The ones with tridents first."
+			tasks: [
+				{
+					entity: "minecraft:drowned"
+					id: "00631C47A8CA2B05"
+					type: "kill"
+					value: 25L
+				}
+			]
+			title: "Clear the Shallows"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["19AB1B5452EDB0B7"]
+			id: "0DB8DBC38626A23B"
+			rewards: [
+				{
+					id: "5BD34257A3598DC3"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 6
+					id: "32A9BC6086A175AA"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "602E48188010DE15"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0A9C010046D26C0C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stay out of the beam."
+			tasks: [
+				{
+					entity: "minecraft:guardian"
+					id: "5CF0D6AD141BEBF3"
+					type: "kill"
+					value: 20L
+				}
+			]
+			title: "Monument Duty"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0DB8DBC38626A23B"]
+			id: "4CEE3BCD1BB9A927"
+			rewards: [
+				{
+					id: "18CB3C633EFB5573"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 12
+					id: "66644A0618AACDB4"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "241A3CDE0085333A"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5058C0EC6A48B90B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The deep ocean has its own people."
+			tasks: [
+				{
+					entity: "cataclysm:deepling"
+					id: "0E83B14822D5741C"
+					type: "kill"
+					value: 20L
+				}
+			]
+			title: "Deeplings"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4CEE3BCD1BB9A927"]
+			id: "2CE185AF924D67FC"
+			rewards: [
+				{
+					id: "08F4B3554BD30F19"
+					type: "xp"
+					xp: 330
+				}
+				{
+					count: 3
+					id: "73464B9DA294BF4C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4617A4E6AD1CB3DD"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6FD88959452BC526"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "A coral golem in the warm seas."
+			tasks: [
+				{
+					entity: "cataclysm:coralssus"
+					id: "64FD5664F573DA9C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Coralssus"
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CE185AF924D67FC"]
+			id: "6A371D7D15A0E052"
+			rewards: [
+				{
+					id: "13615AFBCCF98C19"
+					type: "xp"
+					xp: 420
+				}
+				{
+					count: 6
+					id: "296CCB0B8A05CB90"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "70123B939397F055"
+					table_id: 7386055547922529481L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "67634BC982049DB5"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Deep underground, in the geodes."
+			tasks: [
+				{
+					entity: "cataclysm:amethyst_crab"
+					id: "7C085FBFF80BDFCC"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Amethyst Crab"
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["72107CE1C72F8BEE"]
+			id: "168E7856830C634D"
+			rewards: [
+				{
+					id: "1AE97C73B3D019B7"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "3108462394F6AEE5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "687CBE6780D0D4BB"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2E142B95BCECAF73"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sins walk at night in the dark places."
+			tasks: [
+				{
+					entity: "sons_of_sins:prowler"
+					id: "47A7041BCC479111"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "The Prowler"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["168E7856830C634D"]
+			id: "6285B972AA39B59A"
+			rewards: [
+				{
+					id: "5E45107143F350C3"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 6
+					id: "0F40A8934E60241A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3ECAFC82B3425692"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2C431BC8530A6BA0"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "It whispers before it strikes."
+			tasks: [
+				{
+					entity: "sons_of_sins:wistiver"
+					id: "442DAE795DD0E562"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "The Wistiver"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6285B972AA39B59A"]
+			id: "27BE3360B864A15D"
+			rewards: [
+				{
+					id: "385AA15EE1AE6E68"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 12
+					id: "2E06F1228A918FD1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DD6381EC1881943"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "10043C04D55CA3A7"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Do not let it touch you."
+			tasks: [
+				{
+					entity: "sons_of_sins:curse"
+					id: "74129DBF926A4BE1"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "A Walking Curse"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["27BE3360B864A15D"]
+			id: "7BAE2F92BAD791E2"
+			rewards: [
+				{
+					id: "6773F2A2EABD586C"
+					type: "xp"
+					xp: 330
+				}
+				{
+					count: 3
+					id: "31A7D306C5432354"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D32425B44E3F31E"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "329A4CC8E08B6650"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "It has a hook and a reach."
+			tasks: [
+				{
+					entity: "sons_of_sins:butcher"
+					id: "5B4BDFC7EC2F68DA"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Butcher"
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7BAE2F92BAD791E2"]
+			id: "0FAA36B07010E048"
+			rewards: [
+				{
+					id: "183CBF05999DB58D"
+					type: "xp"
+					xp: 420
+				}
+				{
+					count: 6
+					id: "02C1959742E5B51B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "692EF9E423844610"
+					table_id: 7386055547922529481L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6556DABD4C29FA7F"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The last sin."
+			tasks: [
+				{
+					entity: "sons_of_sins:blud"
+					id: "3DBE03527DBEBD66"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Blud"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["72107CE1C72F8BEE"]
+			description: ["Jungle plants with teeth. They wait with their mouths shut until you are close."]
+			id: "1EE57FE4776A92D7"
+			rewards: [
+				{
+					id: "7F14EB71793229E6"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "52543725BF0B9100"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "171902ADD2C9226D"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2591785B85C7A869"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					entity: "mowziesmobs:foliaath"
+					id: "231E6AFD757601DB"
+					type: "kill"
+					value: 5L
+				}
+			]
+			title: "Weeding"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1EE57FE4776A92D7"]
+			description: ["The masked raptors of the savanna groves. Where there is one, there is a pack."]
+			id: "4A87B576D675FDBB"
+			rewards: [
+				{
+					id: "283D8D78B7208662"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 6
+					id: "02519B80E968D683"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "239A28691CA31898"
+					table_id: 3283448521356161865L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7489B53632B687B2"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					entity: "mowziesmobs:umvuthana_raptor"
+					id: "48BC3CC6FAD8F7F6"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "Masks in the Grass"
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4A87B576D675FDBB"]
+			id: "273A52FACAB89665"
+			rewards: [
+				{
+					id: "290ACC38236C8969"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 12
+					id: "43D76CCAACFD7E54"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06BF326A2B779939"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "332D7990B1FF5997"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Small, loud and quicker than they look."
+			tasks: [
+				{
+					entity: "mowziesmobs:bluff"
+					id: "79B307ED71947A43"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "Called Bluff"
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["273A52FACAB89665"]
+			id: "546410915C40E756"
+			rewards: [
+				{
+					id: "45C22CD8F481D044"
+					type: "xp"
+					xp: 330
+				}
+				{
+					count: 3
+					id: "49A528F4E00A75E6"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7EB956D33ECF52D4"
+					table_id: 3407043161375062910L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "15E833E1EBFA025D"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "It flies over the ocean cliffs and spits acid. Bring a bow."
+			tasks: [
+				{
+					entity: "mowziesmobs:naga"
+					id: "7A19AECEF0859CCE"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Sea Serpent"
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["546410915C40E756"]
+			description: ["An iron giant asleep in a chamber under the ground. Strike its back after it swings and misses."]
+			id: "2BA9F2A22058B32D"
+			rewards: [
+				{
+					id: "586F7D820BDD02D0"
+					type: "xp"
+					xp: 420
+				}
+				{
+					count: 6
+					id: "134C11286A19CCF1"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0AB1F912E3DE7704"
+					table_id: 7386055547922529481L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7B4CF6E73AC21B79"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					id: "55899399EF294BD5"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Wroughtnaut"
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0C6F1A0E008460C4"
+				"124C368F60CD8CB8"
+				"7575258AD59CDC66"
+				"6A371D7D15A0E052"
+				"0FAA36B07010E048"
+				"2BA9F2A22058B32D"
+			]
+			description: ["Finish any &afour&f lines of work."]
+			id: "59725FCD83445AF1"
+			min_required_dependencies: 4
+			rewards: [
+				{
+					id: "26769C5E9BE46269"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "7A407446A2FB6A5F"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "158D7E9348BCB604"
+					table_id: 7386055547922529481L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "419C73497FAC4AD5"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "33E0F78FE3AA399A"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Any four rows"
+			tasks: [
+				{
+					id: "1DE462774F690611"
+					title: "Paid in full"
+					type: "checkmark"
+				}
+			]
+			title: "&c&lMaster of the Board"
+			x: 13.5d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Contracts. Paid on delivery."]
+	title: "&cThe Bounty Board"
+}

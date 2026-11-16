@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "frequency": 0.1,
+    "salt": 1646207470,
+    "separation": 70,
+    "spacing": 175,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "mobs_of_mythology:automaton_structure",
+      "weight": 1
+    }
+  ]
+}

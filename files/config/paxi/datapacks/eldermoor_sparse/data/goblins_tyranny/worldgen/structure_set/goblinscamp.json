@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1519374798,
+    "separation": 70,
+    "spacing": 122,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "goblins_tyranny:goblinscamp",
+      "weight": 1
+    }
+  ]
+}

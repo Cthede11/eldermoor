@@ -1,0 +1,13 @@
+{
+ "type": "mekanism:enriching",
+ "input": {
+  "ingredient": {
+   "tag": "forge:raw_materials/zinc"
+  },
+  "amount": 3
+ },
+ "output": {
+  "item": "create:crushed_raw_zinc",
+  "count": 4
+ }
+}

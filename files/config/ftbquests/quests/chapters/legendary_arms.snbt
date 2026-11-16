@@ -1,0 +1,1833 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "legendary_arms"
+	group: "478F493742D3F387"
+	icon: "soulsweapons:moonlight_greatsword"
+	id: "409F3BC9FBD52798"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["35FE140DAE03BB36"]
+			description: [
+				"Three armouries, each with weapons that do more than hit:"
+				""
+				"&bSoulslike Weaponry&f - moonlight blades, trick weapons that change shape, guns, and weapons made from the souls of the Sleepless lords (Act IV)."
+				"&eCelestisynth&f - eight celestial weapons, each with its own skill. They start with a Celestial Core from the Starlit Factory."
+				"&3Cataclysm&f - Scylla's storm weapons."
+			]
+			hide_until_deps_complete: true
+			id: "00719670D2A5F3A1"
+			rewards: [
+				{
+					id: "4EB9867E8735542C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 2
+					id: "47024B9F8F0D5C08"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0736B1127D3E7104"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "30C1AEB6E8E599BA"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lLegendary Arms"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00719670D2A5F3A1"]
+			description: ["Moonstone ore is deep underground."]
+			id: "0AB7C904989593C1"
+			rewards: [
+				{
+					id: "6D5360885ECE0DFC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "79AFB72DC2863468"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4D97EDEAE0C09263"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire a moonstone, gems shinier than diamonds!"
+			tasks: [
+				{
+					advancement: "soulsweapons:moonstone"
+					criterion: ""
+					icon: "soulsweapons:moonstone"
+					id: "3B0DD13E5FC1B057"
+					title: "Full Moon in a Pocket"
+					type: "advancement"
+				}
+			]
+			title: "Full Moon in a Pocket"
+			x: 4.1d
+			y: -5.25d
+		}
+		{
+			dependencies: ["0AB7C904989593C1"]
+			description: ["Create weapons of the finest gems, the only thing they need now is raw power..."]
+			id: "75484794AC80BEC9"
+			rewards: [
+				{
+					id: "3F5AFF4A13BD2C66"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "54D78C78990CB3A5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "13AB116ADB1BE83E"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "soulsweapons:bluemoon_tools"
+					criterion: ""
+					icon: "soulsweapons:bluemoon_greatsword"
+					id: "6E14053837801611"
+					title: "A... Fake?"
+					type: "advancement"
+				}
+			]
+			title: "A... Fake?"
+			x: 6.2d
+			y: -5.25d
+		}
+		{
+			dependencies: ["75484794AC80BEC9"]
+			description: ["&7Made at: &fSmithing Table &7from &fany lord soul, Bluemoon Greatsword, Netherite Upgrade Smithing Template"]
+			id: "68477F358DFB02D6"
+			rewards: [
+				{
+					id: "1054E3F2D638A4F5"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "28C3BB24D33F587D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D9386AB9B305F22"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7FBE3EDABB1881BE"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Enhance the weapons to their prime"
+			tasks: [
+				{
+					advancement: "soulsweapons:moonlight_tools"
+					criterion: ""
+					icon: "soulsweapons:moonlight_greatsword"
+					id: "62A5A8AFFC116DD0"
+					title: "From the Software itself"
+					type: "advancement"
+				}
+			]
+			title: "From the Software itself"
+			x: 8.3d
+			y: -5.25d
+		}
+		{
+			dependencies: ["68477F358DFB02D6"]
+			description: ["Acquire all the different moonlight blades. Swords, greatswords, katanas, you name it!"]
+			id: "6967BC4FB144D93F"
+			optional: true
+			rewards: [
+				{
+					id: "69C0D232939D0F8C"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "398AAC2152712A0A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "49A535DC020753BB"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "soulsweapons:all_moonlight_weapons"
+					criterion: ""
+					icon: "soulsweapons:dark_moon_greatsword"
+					id: "3AC1359FF250F183"
+					title: "Mooning"
+					type: "advancement"
+				}
+			]
+			title: "Mooning"
+			x: 10.4d
+			y: -5.25d
+		}
+		{
+			dependencies: ["00719670D2A5F3A1"]
+			description: ["Aquire Verglas, a cold, smooth material that seems to have some particular liquid trapped inside"]
+			id: "2A1E755CA35F12BF"
+			rewards: [
+				{
+					id: "235BB451285BFDBF"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "59225CB309316002"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "059C409015762533"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "soulsweapons:verglas"
+					criterion: ""
+					icon: "soulsweapons:verglas"
+					id: "3D7A54BCDD4A77F3"
+					title: "False Water"
+					type: "advancement"
+				}
+			]
+			title: "False Water"
+			x: 4.1d
+			y: -1.75d
+		}
+		{
+			dependencies: ["2A1E755CA35F12BF"]
+			description: ["Acquire your first trickweapon, a weapon that can transform itself into other weaponry!"]
+			id: "4DDE412BBBE61500"
+			rewards: [
+				{
+					id: "17B36426E62791C3"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "1C4A4BA14B7C5339"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3C8189AAC00BD142"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "soulsweapons:trickweapon"
+					criterion: ""
+					icon: "soulsweapons:holy_greatsword"
+					id: "0101ECDFB663EF8D"
+					title: "Switcharoo!"
+					type: "advancement"
+				}
+			]
+			title: "Switcharoo!"
+			x: 6.2d
+			y: -1.75d
+		}
+		{
+			dependencies: ["4DDE412BBBE61500"]
+			id: "7D329331C7F3FC58"
+			rewards: [
+				{
+					id: "0CAA9749E9E6364C"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "03D641F5A9EF0305"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7282D14D18E31A5F"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft the Hunter Pistol, a simple, but powerful gun"
+			tasks: [
+				{
+					advancement: "soulsweapons:hunter_pistol"
+					criterion: ""
+					icon: "soulsweapons:hunter_pistol"
+					id: "62F28391FB5209B5"
+					title: "A new Hunter in Town"
+					type: "advancement"
+				}
+			]
+			title: "A new Hunter in Town"
+			x: 8.3d
+			y: -1.75d
+		}
+		{
+			dependencies: ["7D329331C7F3FC58"]
+			description: ["Craft the Hunter Blunderbuss, the bigger the blast, the bigger the damage!"]
+			id: "44B34A526E678564"
+			rewards: [
+				{
+					id: "338F7670D67BC982"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "4B9DD0466DE1803D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2C70F34429750427"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "soulsweapons:blunderbuss"
+					criterion: ""
+					icon: "soulsweapons:blunderbuss"
+					id: "55EC6122BCAD6BB0"
+					title: "Doomsday"
+					type: "advancement"
+				}
+			]
+			title: "Doomsday"
+			x: 10.4d
+			y: -1.75d
+		}
+		{
+			dependencies: ["44B34A526E678564"]
+			description: ["Craft the Gatling Gun and watch it drain all your ammunition in an instant"]
+			id: "1237674D677B3E75"
+			optional: true
+			rewards: [
+				{
+					id: "1747401F4C953A2A"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "137761C633476838"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "26C504A23459BEFF"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "soulsweapons:gatling_gun"
+					criterion: ""
+					icon: "soulsweapons:gatling_gun"
+					id: "210DF0C7AD99CD60"
+					title: "Bullets for Dinner"
+					type: "advancement"
+				}
+			]
+			title: "Bullets for Dinner"
+			x: 12.5d
+			y: -1.75d
+		}
+		{
+			dependencies: ["00719670D2A5F3A1"]
+			description: [
+				"The Withered Demon guards it."
+				"&7Dropped by: &fWithered Demon"
+			]
+			id: "03353A60E3156AB7"
+			rewards: [
+				{
+					id: "19C9CBB27E9F4A01"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2626D0CFC988D197"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "151D783863FB12D8"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire a Demon Heart"
+			tasks: [
+				{
+					advancement: "soulsweapons:demon_heart"
+					criterion: ""
+					icon: "soulsweapons:demon_heart"
+					id: "5783B0E822151281"
+					title: "Demon Slayer"
+					type: "advancement"
+				}
+			]
+			title: "Demon Slayer"
+			x: 4.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03353A60E3156AB7"]
+			id: "7D0C94BC50775480"
+			rewards: [
+				{
+					id: "4D2A36203F91012F"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "24C23C4F11206EDC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "48083DD6EF14FDAC"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft the Hallowheart and reject the withering"
+			tasks: [
+				{
+					advancement: "soulsweapons:hallowheart"
+					criterion: ""
+					icon: "soulsweapons:withered_chest"
+					id: "5D4A560E2ADC9969"
+					title: "or pvp boss"
+					type: "advancement"
+				}
+			]
+			title: "or pvp boss"
+			x: 6.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0C94BC50775480"]
+			id: "131A04FB9403FA17"
+			rewards: [
+				{
+					id: "2738D225492FCB8F"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "2C540B33E18C6C0A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F280F767844C06C"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5551B06E71BB6E9F"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft the Arkenplate and become stronger than diamonds"
+			tasks: [
+				{
+					advancement: "soulsweapons:arkenplate"
+					criterion: ""
+					icon: "soulsweapons:arkenplate"
+					id: "06AD791B7947CF38"
+					title: "Redemption Ark"
+					type: "advancement"
+				}
+			]
+			title: "Redemption Ark"
+			x: 8.3d
+			y: 0.0d
+		}
+		{
+			dependencies: ["131A04FB9403FA17"]
+			id: "4F587EC378D1CC19"
+			rewards: [
+				{
+					id: "7AD973F76C960B4F"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2A0EB117698F4D84"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "367EF59FFEFB0242"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire Guinsoo's Rageblade, attack at light speed!"
+			tasks: [
+				{
+					advancement: "soulsweapons:rageblade"
+					criterion: ""
+					icon: "soulsweapons:rageblade"
+					id: "0DCBF72EC6ABF79C"
+					title: "Standing here, I realize..."
+					type: "advancement"
+				}
+			]
+			title: "Standing here, I realize..."
+			x: 10.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F587EC378D1CC19"]
+			description: ["Feed the Darkin Scythe enough souls to transform itself into a new empowered form."]
+			id: "0F788409865E56B4"
+			rewards: [
+				{
+					id: "5ED4C765A991A946"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "21A43F9E1594C185"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D2FAF65073A178B"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7EB75547E219804B"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "soulsweapons:transform_scythe"
+					criterion: ""
+					icon: "soulsweapons:darkin_scythe_pre"
+					id: "3E461A88AFA60809"
+					title: "Winner takes all"
+					type: "advancement"
+				}
+			]
+			title: "Winner takes all"
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F788409865E56B4"]
+			id: "7D8F16548AF8494D"
+			optional: true
+			rewards: [
+				{
+					id: "0DBEB9847C59F720"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "3F2795447F7A9501"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2261DA5CCCF2ED60"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire all the Legendary Weapons from this mod"
+			tasks: [
+				{
+					advancement: "soulsweapons:all_weapons"
+					criterion: ""
+					icon: "soulsweapons:lord_soul_purple"
+					id: "687776ACE7C3CD0B"
+					title: "A Master at Work"
+					type: "advancement"
+				}
+			]
+			title: "A Master at Work"
+			x: 14.35d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00719670D2A5F3A1"]
+			description: ["Lord Souls come from the Sleepless (Act IV)."]
+			id: "53B6E727576C50D2"
+			rewards: [
+				{
+					id: "2198022163EF36E3"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "77FD4CF7F70CB047"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3463A9E9F7B88D28"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire a Lord Soul, the remnants of their excistence"
+			tasks: [
+				{
+					advancement: "soulsweapons:lord_soul"
+					criterion: ""
+					icon: "soulsweapons:lord_soul_rose"
+					id: "55095108C6A40F8C"
+					title: "Steeped in Strength"
+					type: "advancement"
+				}
+			]
+			title: "Steeped in Strength"
+			x: 4.1d
+			y: -7.0d
+		}
+		{
+			dependencies: ["53B6E727576C50D2"]
+			description: ["Acquire the Dragon Staff, and it's chaotic counterpart the Withered Wabbajack"]
+			id: "1F893611D8FACDDF"
+			rewards: [
+				{
+					id: "6CF384C4EA972A38"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "7767AA98E2C07206"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "50E1E78CCDA18439"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "soulsweapons:lords_on_stick"
+					criterion: ""
+					icon: "soulsweapons:dragon_staff"
+					id: "5EB55BBBCDB8BC03"
+					title: "Staves of Might and Magic"
+					type: "advancement"
+				}
+			]
+			title: "Staves of Might and Magic"
+			x: 6.2d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1F893611D8FACDDF"]
+			description: ["&7Made at: &fSmithing Table &7from &fLord Soul, Arkenplate, Netherite Upgrade Smithing Template"]
+			id: "348ED4769278CAA7"
+			rewards: [
+				{
+					id: "7EB81A6AA5515149"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2FD4488CC29E83D0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "014EC9D62B18FD10"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Infuse the Arkenplate with the soul of the Night Prowler"
+			tasks: [
+				{
+					advancement: "soulsweapons:infused_arkenplate"
+					criterion: ""
+					icon: "soulsweapons:enhanced_arkenplate"
+					id: "6081C723BDBF9907"
+					title: "ZABITO BOGA"
+					type: "advancement"
+				}
+			]
+			title: "ZABITO BOGA"
+			x: 8.3d
+			y: -7.0d
+		}
+		{
+			dependencies: ["348ED4769278CAA7"]
+			description: ["&7Made at: &fSmithing Table &7from &fLord Soul, Hallowheart, Netherite Upgrade Smithing Template"]
+			id: "36E762CB1DDCAC34"
+			rewards: [
+				{
+					id: "0C5EAF107FA58F57"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "65052DDBD2F30FB3"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1427F58355A428D6"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0E795EC9753166B8"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Infuse the Hallowheart with the soul of the Day Stalker"
+			tasks: [
+				{
+					advancement: "soulsweapons:infused_hallowheart"
+					criterion: ""
+					icon: "soulsweapons:enhanced_withered_chest"
+					id: "44184A268CFB0DE7"
+					title: "HATEFUL"
+					type: "advancement"
+				}
+			]
+			title: "HATEFUL"
+			x: 17.95d
+			y: -7.0d
+		}
+		{
+			dependencies: ["00719670D2A5F3A1"]
+			description: ["The Starlit Factory, a strange ruin in the overworld, holds Celestial Cores."]
+			id: "56B512F56AD99D09"
+			rewards: [
+				{
+					id: "58BA4EC3D49BF986"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "18D9572D31A1CC92"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6DE71C2B72E72C3A"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The dawn of a celestial journey! Obtain a Celestial Core."
+			tasks: [
+				{
+					advancement: "celestisynth:root"
+					criterion: ""
+					icon: "celestisynth:celestial_core"
+					id: "27C31F35CDA308D8"
+					title: "Down to the Core"
+					type: "advancement"
+				}
+			]
+			title: "Down to the Core"
+			x: 4.1d
+			y: 1.75d
+		}
+		{
+			dependencies: ["56B512F56AD99D09"]
+			id: "261691FC535973A2"
+			rewards: [
+				{
+					id: "202F8E1CB1DF16E5"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "1977EBB9975DB203"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0ADC0BCE095C2A67"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Place a Celestial Table, the root of Celestisynth weaponry."
+			tasks: [
+				{
+					advancement: "celestisynth:place_celestial_table"
+					criterion: ""
+					icon: "celestisynth:celestial_crafting_table"
+					id: "5FEB7BFE448C87D6"
+					title: "A Lost Memory"
+					type: "advancement"
+				}
+			]
+			title: "A Lost Memory"
+			x: 6.2d
+			y: 1.75d
+		}
+		{
+			dependencies: ["261691FC535973A2"]
+			description: ["Obtain a Celestial Netherite Ingot, an important material to craft Celestial weaponry."]
+			id: "713429470BE2C4F2"
+			rewards: [
+				{
+					id: "42A5D705EE2D8169"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "27BFBDB42E68A20C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "679C8B71B637D149"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_celestial_netherite_ingot"
+					criterion: ""
+					icon: "celestisynth:celestial_netherite_ingot"
+					id: "7E0C1618F341762A"
+					title: "Celestial Emergence"
+					type: "advancement"
+				}
+			]
+			title: "Celestial Emergence"
+			x: 8.3d
+			y: 1.75d
+		}
+		{
+			dependencies: ["713429470BE2C4F2"]
+			description: ["&7Made from: &fSolar Crystal x2, Supernal Netherite Ingot, Blaze Rod, Fire Charge, Iron Sword"]
+			id: "4A894FE0EDF495CE"
+			rewards: [
+				{
+					id: "740E00B47034A334"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "7EEDC11AF9AB934A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0946684C93E3C097"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain the Solaris"
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_solaris"
+					criterion: ""
+					icon: "celestisynth:solaris"
+					id: "4C6E9C7C06C214EA"
+					title: "A Million Degrees Above"
+					type: "advancement"
+				}
+			]
+			title: "A Million Degrees Above"
+			x: 10.4d
+			y: 1.75d
+		}
+		{
+			dependencies: ["4A894FE0EDF495CE"]
+			description: ["&7Made from: &fLunar Scrap x2, Supernal Netherite Ingot, Iron Ingot x2, Trident"]
+			id: "715FFF71E1997116"
+			rewards: [
+				{
+					id: "2B0789D0B619EC1B"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "5167C8AFEA22591A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A472ACB6DFC3339"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "47DDB9EC56CD39D6"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Obtain the Crescentia"
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_crescentia"
+					criterion: ""
+					icon: "celestisynth:crescentia"
+					id: "297719156B3EF559"
+					title: "Beautiful Fireworks"
+					type: "advancement"
+				}
+			]
+			title: "Beautiful Fireworks"
+			x: 12.5d
+			y: 1.75d
+		}
+		{
+			dependencies: ["715FFF71E1997116"]
+			description: ["&7Made from: &fZephyr Deposit x2, Supernal Netherite Ingot, Iron Ingot, Gold Ingot, Ghast Tear"]
+			id: "36325BE8A84F87CF"
+			rewards: [
+				{
+					id: "7F8902AAE937F664"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2902325687B3832C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "305C07FCE08EAE97"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain the Breezebreaker"
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_breezebreaker"
+					criterion: ""
+					icon: "celestisynth:breezebreaker"
+					id: "6E1E343EF27B718C"
+					title: "Swift and Sound"
+					type: "advancement"
+				}
+			]
+			title: "Swift and Sound"
+			x: 14.35d
+			y: 1.75d
+		}
+		{
+			dependencies: ["36325BE8A84F87CF"]
+			description: ["&7Made from: &fEyebomination x2, Supernal Netherite Ingot, Iron Axe, Anvil x2"]
+			id: "45E30EEAC5FB9DA0"
+			rewards: [
+				{
+					id: "30EA9C6C983B8007"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "56BD2EFF50040783"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "559319B7B9D77A6C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain the Poltergeist"
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_poltergeist"
+					criterion: ""
+					icon: "celestisynth:poltergeist"
+					id: "54051830371E2E71"
+					title: "A Haunted Axe"
+					type: "advancement"
+				}
+			]
+			title: "A Haunted Axe"
+			x: 16.1d
+			y: 1.75d
+		}
+		{
+			dependencies: ["713429470BE2C4F2"]
+			description: [
+				"Obtain a Supernal Netherite Ingot, an important material to craft Celestial weaponry."
+				"&7Made at: &fSmithing Table &7from &fCelestial Core, Netherite Ingot, Netherite Upgrade Smithing Template"
+			]
+			id: "6F64F8D9681C7B14"
+			rewards: [
+				{
+					id: "1D056265F67F7F08"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2F08A7BF6A3EEB84"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0DF408321642D4DD"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_supernal_netherite_ingot"
+					criterion: ""
+					icon: "celestisynth:supernal_netherite_ingot"
+					id: "0D9DDFEF0F3C1077"
+					title: "Eruption"
+					type: "advancement"
+				}
+			]
+			title: "Eruption"
+			x: 10.4d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6F64F8D9681C7B14"]
+			description: ["&7Made from: &fany flowers, Supernal Netherite Ingot, Lily Pad, Verdant Froglight, Ochre Froglight, Pearlescent Froglight"]
+			id: "4C21770BEAEBE042"
+			rewards: [
+				{
+					id: "7063F4ADE3E73243"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "3C1BA217B5A76998"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "114004E4E4DE9103"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain the Aquaflora"
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_aquaflora"
+					criterion: ""
+					icon: "celestisynth:aquaflora"
+					id: "7B0982F448C2FBAB"
+					title: "When the flowers bloom that day"
+					type: "advancement"
+				}
+			]
+			title: "When the flowers bloom that day"
+			x: 12.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4C21770BEAEBE042"]
+			description: ["&7Made from: &fStarstruck Scrap x2, Celestial Netherite Ingot, Bow, Starstruck Feather x2"]
+			id: "2C343993CCCF85B3"
+			rewards: [
+				{
+					id: "165637492D57FF95"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "49B5757ECF316CDC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7C864053B62DCDA7"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain the Rainfall Serenity"
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_rainfall_serenity"
+					criterion: ""
+					icon: "celestisynth:rainfall_serenity"
+					id: "486375DD2D8FF0F0"
+					title: "Beyond the Earth's Atmosphere"
+					type: "advancement"
+				}
+			]
+			title: "Beyond the Earth's Atmosphere"
+			x: 14.35d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2C343993CCCF85B3"]
+			description: ["&7Made from: &fWintereis Shard x2, Supernal Netherite Ingot, Diamond Hoe, Packed Ice, Blue Ice"]
+			id: "34AD83C9217AE54D"
+			rewards: [
+				{
+					id: "22E31AB3F4E44CBE"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "5EC4D4E3316B1087"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "64B95ACCBEA0CF01"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain the Frostbound"
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_frostbound"
+					criterion: ""
+					icon: "celestisynth:frostbound"
+					id: "23C6B31FC421E053"
+					title: "The Treasure of Boreas"
+					type: "advancement"
+				}
+			]
+			title: "The Treasure of Boreas"
+			x: 16.1d
+			y: 3.5d
+		}
+		{
+			dependencies: ["34AD83C9217AE54D"]
+			description: ["&7Made from: &fCrimson Piece x2, Celestial Netherite Ingot, Netherite Ingot x2, Nether Wart Block"]
+			id: "0B3B8CDEC2D6BCB6"
+			rewards: [
+				{
+					id: "67EEAD02B27004F6"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "5F515DFEF900F40C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "671915A1B1BD8E3B"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5840F3EFDF46C117"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Obtain the Keres"
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_keres"
+					criterion: ""
+					icon: "celestisynth:keres"
+					id: "3DE407F645A266FB"
+					title: "Power Hungry"
+					type: "advancement"
+				}
+			]
+			title: "Power Hungry"
+			x: 17.95d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"00719670D2A5F3A1"
+				"77CB08947CF0B221"
+			]
+			description: [
+				"&7Dropped by: &fCindaria, Clawdian, Drowned Host, Hippocamtus and others"
+				"&7Dropped by: &fScylla"
+			]
+			id: "2559ECA07070C75A"
+			rewards: [
+				{
+					id: "31CFB56484DEF5E2"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "4DCD5B8D73629624"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "109EE3F8DA3E4C4E"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Scylla's drops (Act III)."
+			tasks: [
+				{
+					count: 4L
+					id: "34ECAEE2DA7687F8"
+					item: "cataclysm:lacrima"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6397D95CBEBF27A5"
+					item: "cataclysm:essence_of_the_storm"
+					type: "item"
+				}
+			]
+			title: "Lacrima"
+			x: 4.1d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2559ECA07070C75A"]
+			description: ["&7Made from: &fLacrima x3, Essence of the Storm x2"]
+			id: "3D814DE32E101664"
+			rewards: [
+				{
+					id: "1D55C028F0B13385"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "52F7F51CC5DD7919"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50BEC5B1D9BC8931"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "133F2A797D600D1C"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A spear that throws lightning."
+			tasks: [
+				{
+					id: "54BC3CF40A96D413"
+					item: "cataclysm:astrape"
+					type: "item"
+				}
+			]
+			title: "Astrape"
+			x: 6.2d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3D814DE32E101664"]
+			id: "1CF70A50DE2FFE54"
+			rewards: [
+				{
+					id: "5FF9CB78A22FA6F3"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "362FA509691F5C13"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "137E539DE62EC4B6"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "545089D35BB278B7"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "An anchor on a chain; sneak to call waves."
+			tasks: [
+				{
+					id: "4843344D98DC1193"
+					item: "cataclysm:ceraunus"
+					type: "item"
+				}
+			]
+			title: "Ceraunus"
+			x: 17.95d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"68477F358DFB02D6"
+				"131A04FB9403FA17"
+				"0F788409865E56B4"
+				"36E762CB1DDCAC34"
+				"715FFF71E1997116"
+				"0B3B8CDEC2D6BCB6"
+				"3D814DE32E101664"
+				"1CF70A50DE2FFE54"
+			]
+			hide_dependency_lines: true
+			id: "327FCEE7F4DAF0A0"
+			min_required_dependencies: 5
+			rewards: [
+				{
+					id: "53EED03CE5AE1151"
+					type: "xp"
+					xp: 5000
+				}
+				{
+					count: 2
+					id: "2C1147F1DCE9DAAF"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6157B337A4B73C86"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3D9797ACC935312E"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Any &afive&f of the big weapons on this page."
+			tasks: [
+				{
+					id: "2692B74F56C6654C"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lArmsmaster"
+			x: 20.3d
+			y: -7.0d
+		}
+		{
+			dependencies: ["00719670D2A5F3A1"]
+			description: [
+				"Forty legendary weapons that are never crafted: they drop from the Ender Dragon, the Wither, the Warden and the bosses of other mods, and lie in end-game chests (End cities, ancient cities, the lords' halls)."
+				""
+				"Each one carries a spell of its own that fires as you fight: a whirl of blades, a shockwave, a chain of lightning, a healing pulse."
+			]
+			id: "4AAAF4AA7AE29FCB"
+			rewards: [
+				{
+					id: "124372B1320F74F7"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "4D67C8FF421CF877"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05EF4A25E545AA8C"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0987D29DC307AA94"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "14CD4B84FADE06FA"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "rpg_series:loot_tier/tier_5_weapons" } }
+					title: "Any Arsenal weapon"
+					type: "item"
+				}
+			]
+			title: "&6Arsenal"
+			x: 4.1d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4AAAF4AA7AE29FCB"]
+			description: ["Arsenal's unique weapons are boss and dungeon loot, never crafted. Any three count."]
+			id: "1574906ACDE96D71"
+			optional: true
+			rewards: [
+				{
+					id: "0F6FD9481F21EC71"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "2CA431E844122F2A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6B4F4EE7627AE300"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hold three different Arsenal weapons"
+			tasks: [
+				{
+					count: 3L
+					id: "1DCE7E77B1E8D957"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "rpg_series:loot_tier/tier_5_weapons" } }
+					title: "Three Arsenal weapons"
+					type: "item"
+				}
+			]
+			title: "A Legendary Collection"
+			x: 6.2d
+			y: 3.5d
+		}
+		{
+			dependencies: ["00719670D2A5F3A1"]
+			id: "656FD7FED55AD9AB"
+			optional: true
+			rewards: [
+				{
+					id: "15C167F2F30333FD"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "796AC1942894F069"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7C5D060BA26D8B03"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Skor's and Sirok's drops (Wild Legends)."
+			tasks: [
+				{
+					id: "403BFDEA410DF47B"
+					item: "block_factorys_bosses:ice_gauntlet"
+					type: "item"
+				}
+				{
+					id: "5CC65A3E91F7B92F"
+					item: "block_factorys_bosses:sandworm_gauntlet"
+					type: "item"
+				}
+			]
+			title: "Gauntlets of Ice and Sand"
+			x: 4.1d
+			y: 5.25d
+		}
+		{
+			dependencies: ["656FD7FED55AD9AB"]
+			description: ["&7Made from: &fWooden Rod x2, Kraken Tooth x3"]
+			id: "36115AA0344552C1"
+			optional: true
+			rewards: [
+				{
+					id: "3C6C2A189BE8C49B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "4CF16091140E543D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3F76211B2B1C187B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Made from the Kraken's tooth."
+			tasks: [
+				{
+					id: "042062F3EFD0C763"
+					item: "block_factorys_bosses:kraken_trident"
+					type: "item"
+				}
+			]
+			title: "The Kraken's Trident"
+			x: 6.2d
+			y: 5.25d
+		}
+		{
+			dependencies: ["36115AA0344552C1"]
+			id: "5E6A661538A8C688"
+			optional: true
+			rewards: [
+				{
+					id: "088458C7C34A5EA4"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "505710A7C68D95A6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "378BED320BC1687C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "The knight's sword, and the armour from the arena's vaults."
+			tasks: [
+				{
+					id: "2945E4CB9568C068"
+					item: "block_factorys_bosses:knight_sword"
+					type: "item"
+				}
+				{
+					id: "381D8D67290A7CF5"
+					item: "block_factorys_bosses:knight_chestplate"
+					type: "item"
+				}
+			]
+			title: "The Underworld Knight"
+			x: 8.3d
+			y: 5.25d
+		}
+		{
+			dependencies: ["5E6A661538A8C688"]
+			id: "745315B2185D5B91"
+			optional: true
+			rewards: [
+				{
+					id: "24445082FA6A08D1"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "052D8DC7334A626A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "10FC4E5B29DA3B4F"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "072B527EE703E1D1"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Carved from Ashlord's bones."
+			tasks: [
+				{
+					id: "447E1BA05003196E"
+					item: "block_factorys_bosses:dragon_bones_chestplate"
+					type: "item"
+				}
+			]
+			title: "Dragon Bone Armour"
+			x: 10.4d
+			y: 5.25d
+		}
+	]
+	subtitle: ["Weapons with names, and powers to match"]
+	title: "&6Legendary Arms"
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 779806245,
+    "separation": 42,
+    "spacing": 245,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "shrines:bees",
+      "weight": 1
+    }
+  ]
+}

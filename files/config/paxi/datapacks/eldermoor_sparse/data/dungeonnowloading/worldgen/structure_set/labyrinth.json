@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 5,
+      "other_set": "minecraft:mineshafts"
+    },
+    "salt": 269766545,
+    "separation": 46,
+    "spacing": 184,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "dungeonnowloading:labyrinth",
+      "weight": 1
+    }
+  ]
+}

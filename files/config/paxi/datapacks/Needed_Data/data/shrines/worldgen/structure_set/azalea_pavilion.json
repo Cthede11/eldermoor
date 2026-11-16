@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 635166686,
+    "separation": 56,
+    "spacing": 140,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "shrines:azalea_pavilion",
+      "weight": 1
+    }
+  ]
+}

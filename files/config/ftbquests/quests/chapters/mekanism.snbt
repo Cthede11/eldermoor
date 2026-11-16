@@ -1,0 +1,4146 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism"
+	group: "02AD8609A8FE6EE4"
+	icon: "mekanism:metallurgic_infuser"
+	id: "54BF7B65E321CD1F"
+	images: [ ]
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["204C581D6604925C"]
+			description: [
+				"Mekanism is high-tech, single-block machinery. It starts with &bOsmium&f - a pale blue ore found at almost every depth."
+				""
+				"Also keep an eye out for &eTin&f, &eLead&f, &eUranium&f and &eFluorite&f."
+				"&7Made at: &fArc Furnace &7from &fRaw Osmium Block"
+			]
+			hide_until_deps_complete: true
+			id: "01F3C034504B67E3"
+			rewards: [
+				{
+					id: "44921ED62015ACC1"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "7DAEDC759A8BB481"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "34EFB24A40EBA023"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "29508CC6897ED56C"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "A new ore"
+			tasks: [
+				{
+					count: 8L
+					id: "0EB9823AA86A7C3B"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
+			title: "&6Osmium"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01F3C034504B67E3"]
+			description: [
+				"The heart of Mekanism. Infuses items with redstone, carbon, diamond and more:"
+				""
+				"Iron + Carbon -> Enriched Iron -> (+Carbon) -> &eSteel Dust&f"
+				"Copper + Redstone -> &cInfused Alloy&f"
+				"Osmium + Redstone -> &aBasic Control Circuit&f"
+			]
+			id: "1F97412C4662EC1A"
+			rewards: [
+				{
+					id: "1E6789CD5FB9EE18"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 16
+					id: "6E8865F8CDCAB3C3"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5CF8AE36DEE5F54D"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "25B0501277557B8E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3DDAE3799B218189"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Start here"
+			tasks: [
+				{
+					id: "11BC124201248FE9"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+			]
+			title: "Metallurgic Infuser"
+			x: 1.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F97412C4662EC1A"]
+			description: ["Burns fuel, or makes passive power when touching lava. Or bring FE from an Alternator or IE windmill - it all works."]
+			id: "45733202445B94A7"
+			rewards: [
+				{
+					id: "41EE805BC47E65EE"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3C2C772BF7BAC227"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "06CFAE8C50AD982B"
+					item: "mekanism:basic_universal_cable"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4EBA6058A9C1BC00"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Or use any other FE source"
+			tasks: [
+				{
+					id: "29C481EBBEED72AF"
+					item: "mekanismgenerators:heat_generator"
+					type: "item"
+				}
+			]
+			title: "First Power"
+			x: 3.6d
+			y: 0.05d
+		}
+		{
+			dependencies: ["285EE14B9C16DDD8"]
+			description: ["Steel + osmium + glass. The frame of nearly every machine."]
+			id: "18C12A9C7F9D817B"
+			rewards: [
+				{
+					id: "73245DE100C54B82"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "60B5A7E47A87A073"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0E318FFD9DDC1AAB"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5E4973493A32978E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The machine frame"
+			tasks: [
+				{
+					id: "174F84BCFADEA28C"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+			]
+			title: "Steel Casing"
+			x: 7.85d
+			y: 8.61d
+		}
+		{
+			dependencies: ["1F97412C4662EC1A"]
+			description: [
+				"Basic -> Advanced -> Elite -> Ultimate circuits, each needing the next tier of alloy (Infused, Reinforced, Atomic)."
+				"&7&fBasic Control Circuit&7 - Made at: &fMetallurgic Infuser &7from &fany redstone x20, Osmium Ingot"
+				"&7&fInfused Alloy&7 - Made at: &fMetallurgic Infuser &7from &fany redstone x10, Iron Ingot"
+			]
+			id: "2A6AF9236B66499F"
+			rewards: [
+				{
+					id: "70E7A9C825FE0324"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "12F3E910C0AA9489"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "625626013919CB20"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3061F6BA28405CA8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3ED1D75B469716B7"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "50C8072B47088C31"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+			]
+			title: "Control Circuits"
+			x: 3.6d
+			y: -10.86d
+		}
+		{
+			dependencies: ["18C12A9C7F9D817B"]
+			description: [
+				"&aTier 1 ore processing: x2&f"
+				""
+				"Raw ore -> 2 dust -> smelt. Also turns redstone, coal and diamonds into enriched forms that go 8x further in the Infuser."
+			]
+			id: "1C60C0C3DDDF69A9"
+			rewards: [
+				{
+					id: "30F14FB1555C3580"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "22F98977E25ED8F5"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6A628B4B0E89C2E2"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7E9FE0302CFDF161"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "x2 ores"
+			tasks: [
+				{
+					id: "29FE08D8F79AEB59"
+					item: "mekanism:enrichment_chamber"
+					type: "item"
+				}
+			]
+			title: "Enrichment Chamber"
+			x: 9.6d
+			y: 8.61d
+		}
+		{
+			dependencies: ["1C60C0C3DDDF69A9"]
+			id: "794AA4101225334F"
+			rewards: [
+				{
+					id: "16108D452DFB09C0"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "5FFEF013F1F7E46A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3ACF48D31DB24D68"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "An electric furnace. Takes speed and energy upgrades."
+			tasks: [
+				{
+					id: "6BA4AAFF33BD9F69"
+					item: "mekanism:energized_smelter"
+					type: "item"
+				}
+			]
+			title: "Energized Smelter"
+			x: 13.35d
+			y: 8.8d
+		}
+		{
+			dependencies: ["1C60C0C3DDDF69A9"]
+			description: ["Ingots back to dust, cobble to gravel to sand, and bio fuel from plants."]
+			id: "0D3BAC0736DED5B8"
+			rewards: [
+				{
+					id: "41522B9DBEEFA7E9"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "249728EDE50E66B2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "085538360458BD7F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "087BF5589B42EDDA"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+			]
+			title: "Crusher"
+			x: 13.35d
+			y: 10.3d
+		}
+		{
+			dependencies: ["23B0F9A7DB92F1FF"]
+			description: ["A battery block. Use the &eConfigurator&f to set which sides are inputs and outputs."]
+			id: "7F0B7EA0B7BEC393"
+			rewards: [
+				{
+					id: "0D73C44F1CDFCDF3"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "5180D5F880E1EDAD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "587418BF00E7CE56"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Store power"
+			tasks: [
+				{
+					id: "71872A8A0A7BB3D9"
+					item: "mekanism:basic_energy_cube"
+					type: "item"
+				}
+			]
+			title: "Energy Cube"
+			x: 9.6d
+			y: -1.45d
+		}
+		{
+			dependencies: ["7F0B7EA0B7BEC393"]
+			description: ["Mekanism's wrench. Shift-right-click to cycle modes; click a machine side to change what goes in or out there. Every machine also has a &eSide Config&f tab."]
+			id: "7F08203AE31CC3D2"
+			optional: true
+			rewards: [
+				{
+					id: "2B2F439B9947A02F"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "48B81F3C234EF7B1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "31834EC4CEC08685"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7C5D6BF069A178C4"
+					item: "mekanism:configurator"
+					type: "item"
+				}
+			]
+			title: "The Configurator"
+			x: 13.35d
+			y: -1.45d
+		}
+		{
+			dependencies: ["57B4B2CCC41112D6"]
+			description: [
+				"&aTier 2 ore processing: x3&f"
+				""
+				"Ore + &eOxygen&f -> 3 clumps -> Crusher -> Enrichment -> Smelter."
+				""
+				"Get oxygen by splitting water in an &eElectrolytic Separator&f. Burn the leftover hydrogen in a Gas-Burning Generator."
+			]
+			id: "7E324FDA02C7B2FE"
+			rewards: [
+				{
+					id: "1A086E67BB6AFC5C"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CAA38C912876F52"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					count: 4
+					id: "56BBC133C0905E26"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "05324C60B3036A11"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "x3 ores"
+			tasks: [
+				{
+					id: "70855D1A3B9F9FBC"
+					item: "mekanism:purification_chamber"
+					type: "item"
+				}
+				{
+					id: "667F1A1C4EBCC3EC"
+					item: "mekanism:electrolytic_separator"
+					type: "item"
+				}
+			]
+			title: "Purification Chamber"
+			x: 17.35d
+			y: 7.42d
+		}
+		{
+			dependencies: ["3065F36C9126F0FE"]
+			description: [
+				"&aTier 3 ore processing: x4&f"
+				""
+				"Ore + &eHydrogen Chloride&f -> 4 shards -> Purification -> ... You'll need a Thermal Evaporation Plant for brine and a Chemical Infuser."
+			]
+			id: "43D47C9EA81ADC95"
+			rewards: [
+				{
+					id: "427B62135610DF1D"
+					type: "xp"
+					xp: 300
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75D99D6C03CF310E"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					id: "63DFD2BD9F4EDD7B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1863A0226FAEA70C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "x4 ores"
+			tasks: [
+				{
+					id: "3F03414000F7EA52"
+					item: "mekanism:chemical_injection_chamber"
+					type: "item"
+				}
+			]
+			title: "Chemical Injection Chamber"
+			x: 20.85d
+			y: 5.8d
+		}
+		{
+			dependencies: ["1C61F3379FB3BA3D"]
+			description: [
+				"&aTier 4 ore processing: x5&f"
+				""
+				"Dissolve ore in &eSulfuric Acid&f, wash the slurry, crystallise it, then run the whole chain below. Five ingots per ore."
+			]
+			id: "40F13E518B25549B"
+			rewards: [
+				{
+					id: "4F2EB66C867518A2"
+					type: "xp"
+					xp: 600
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5537A74BA8ABE3E6"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "1FF0E5508278DD38"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 160"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "491466A7B12DFE56"
+					silent: true
+					title: "+160 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0CFC54D5647D1B1D"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "x5 ores"
+			tasks: [
+				{
+					id: "7DF28D4DF8797450"
+					item: "mekanism:chemical_dissolution_chamber"
+					type: "item"
+				}
+				{
+					id: "3F816DE8FF488591"
+					item: "mekanism:chemical_washer"
+					type: "item"
+				}
+				{
+					id: "6A3F199156240E9F"
+					item: "mekanism:chemical_crystallizer"
+					type: "item"
+				}
+			]
+			title: "&6The Full Chain"
+			x: 35.3d
+			y: 5.8d
+		}
+		{
+			dependencies: ["0D3BAC0736DED5B8"]
+			description: ["Right-click a machine with a &eTier Installer&f to turn it into a Factory that processes 3, 5, 7 or 9 stacks at once."]
+			id: "62A929935EF3709E"
+			rewards: [
+				{
+					id: "0B4F4928EAA6AA6C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 2
+					id: "251F0AA3347118B0"
+					item: "mekanism:upgrade_speed"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "22C36E8A73DACE90"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "04BBB899BF91409C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Parallel processing"
+			tasks: [
+				{
+					id: "1EE906263FC0D47E"
+					item: "mekanism:basic_tier_installer"
+					type: "item"
+				}
+			]
+			title: "Factories"
+			x: 15.1d
+			y: 10.3d
+		}
+		{
+			dependencies: ["62A929935EF3709E"]
+			description: ["Up to 8 of each per machine. Speed costs a lot of power - balance with Energy upgrades."]
+			id: "453E39DE7DB6628C"
+			optional: true
+			rewards: [
+				{
+					id: "132D8DECD55DB7F8"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "3317B6124EB38812"
+					item: "mekanism:upgrade_energy"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "431A1C9DDD909DE4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5A3BC03BDEC5583F"
+					item: "mekanism:upgrade_speed"
+					type: "item"
+				}
+				{
+					id: "395CE96F5C6D7D59"
+					item: "mekanism:upgrade_energy"
+					type: "item"
+				}
+			]
+			title: "Upgrades"
+			x: 17.35d
+			y: 10.3d
+		}
+		{
+			dependencies: ["23E717169C24E5AD"]
+			description: [
+				"&7&fReinforced Alloy&7 - Made at: &fMetallurgic Infuser &7from &fany diamond x20, Infused Alloy"
+				"&7&fAdvanced Control Circuit&7 - Made from: &fInfused Alloy x2, Basic Circuit"
+			]
+			id: "7ADC48A7B1060175"
+			rewards: [
+				{
+					id: "598DBEA0A3FEEBFC"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "27A2CFD33650A418"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6E75611E74021359"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Infused Alloy + Diamond."
+			tasks: [
+				{
+					count: 4L
+					id: "7C62EF205256389C"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0CF030AD69697891"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Reinforced Alloy"
+			x: 9.6d
+			y: -12.02d
+		}
+		{
+			dependencies: ["421F0615D5B65998"]
+			description: [
+				"&7&fAtomic Alloy&7 - Made at: &fMetallurgic Infuser &7from &fany refined obsidian x40, Reinforced Alloy"
+				"&7&fElite Control Circuit&7 - Made from: &fReinforced Alloy x2, Advanced Circuit"
+			]
+			id: "565EC57F1CBEF7F1"
+			rewards: [
+				{
+					id: "5AB0A12326479E17"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 16
+					id: "36E49F82822B5E54"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "3284E9EF99846E5A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7C3C125FC3996E24"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Reinforced Alloy + Refined Obsidian."
+			tasks: [
+				{
+					count: 4L
+					id: "422BC8B9DF030F0E"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "723005121B7ACF8A"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Atomic Alloy"
+			x: 15.1d
+			y: -13.33d
+		}
+		{
+			dependencies: ["565EC57F1CBEF7F1"]
+			description: ["&7Made from: &fAtomic Alloy x2, Elite Circuit"]
+			id: "3C6E4A4AC5880B27"
+			rewards: [
+				{
+					id: "04E4A3A5327F86AD"
+					type: "xp"
+					xp: 400
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FD2CDBEC573560C"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "30A31F08DA09A371"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Elite circuit + Atomic Alloy."
+			tasks: [
+				{
+					id: "0E4788C670BE000E"
+					item: "mekanism:ultimate_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Ultimate Circuit"
+			x: 17.35d
+			y: -16.95d
+		}
+		{
+			dependencies: ["45733202445B94A7"]
+			description: ["&eLogistical Transporters&f move items, &eMechanical Pipes&f fluids, &ePressurized Tubes&f chemicals and &eUniversal Cables&f power. Machines can auto-eject into them."]
+			id: "770A4FC5F1AA707D"
+			optional: true
+			rewards: [
+				{
+					id: "0B843F553D487BD2"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 16
+					id: "06F47CCEDC5FA681"
+					item: "mekanism:basic_universal_cable"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3D1CF00844FF308F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "39072756AA3B0B3E"
+					item: "mekanism:basic_logistical_transporter"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "04EB5259808B69D8"
+					item: "mekanism:basic_mechanical_pipe"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "799F9702FADEA96D"
+					item: "mekanism:basic_pressurized_tube"
+					type: "item"
+				}
+			]
+			title: "Pipes for Everything"
+			x: 7.85d
+			y: 4.55d
+		}
+		{
+			dependencies: ["770A4FC5F1AA707D"]
+			id: "46780FAD4504725C"
+			optional: true
+			rewards: [
+				{
+					id: "60518EA69D1549CE"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "0001485D9E0BE631"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "520C69DEEE5AC33D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Holds thousands of one item and keeps it when broken."
+			tasks: [
+				{
+					id: "1C64F7812BAB824D"
+					item: "mekanism:basic_bin"
+					type: "item"
+				}
+			]
+			title: "Bins"
+			x: 9.6d
+			y: 6.05d
+		}
+		{
+			dependencies: ["2C31E135CB43AAE4"]
+			description: [
+				"Teleports ores out of the ground in a radius around it without leaving a single hole. Filter by tag &eforge:ores&f and walk away."
+				""
+				"&cEldermoor recipe:&f the miner's brain is a &eNether Star&f, so the Wither comes first."
+				""
+				"The ultimate companion to a x5 ore line."
+			]
+			id: "27A92138C98758D5"
+			rewards: [
+				{
+					id: "32A08C6957096125"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "468919F449BBB208"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "187F78B29D9E8BD8"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 160"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "3D4C8F11C4219583"
+					silent: true
+					title: "+160 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5DD28CD171653BC6"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Never mine again"
+			tasks: [
+				{
+					id: "53D114EFB0F8A6C0"
+					item: "mekanism:digital_miner"
+					type: "item"
+				}
+			]
+			title: "&6Digital Miner"
+			x: 19.1d
+			y: -6.45d
+		}
+		{
+			dependencies: ["246F39997CAF4155"]
+			description: ["Linked portals across any distance or dimension, set by frequency."]
+			id: "55FFD27E10EE3CBD"
+			optional: true
+			rewards: [
+				{
+					id: "0FEBBCEC51B9D443"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 8
+					id: "77D66E030347DCFE"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "19008738220F6C5B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "03805E7E44803D8B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "206471F0641B225C"
+					item: "mekanism:teleporter"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "274A8206F2BE61D8"
+					item: "mekanism:teleporter_frame"
+					type: "item"
+				}
+			]
+			title: "Teleporter"
+			x: 22.6d
+			y: -6.45d
+		}
+		{
+			dependencies: ["27A92138C98758D5"]
+			description: ["Mekanism's wireless digital storage. A simpler cousin of Applied Energistics."]
+			id: "5887DA381E1FDD1B"
+			optional: true
+			rewards: [
+				{
+					id: "2C8C86D9B489DBB5"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "6F93982A31275316"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "63C2E02A66C4997D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6612A4991A20F815"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+				{
+					id: "4668CC6389CC0361"
+					item: "mekanism:qio_dashboard"
+					type: "item"
+				}
+			]
+			title: "QIO"
+			x: 20.85d
+			y: -4.95d
+		}
+		{
+			dependencies: ["7F0B7EA0B7BEC393"]
+			description: ["More power the higher you build it."]
+			id: "36400A43E12E81AC"
+			rewards: [
+				{
+					id: "37C4696171A604F4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "5C28EB6C856A512C"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "752A2781FE8CADCA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Clean power"
+			tasks: [
+				{
+					id: "768E43393333A6F4"
+					item: "mekanismgenerators:wind_generator"
+					type: "item"
+				}
+			]
+			title: "Wind Generator"
+			x: 13.35d
+			y: 0.05d
+		}
+		{
+			dependencies: ["36400A43E12E81AC"]
+			id: "1D6375559FD1453C"
+			optional: true
+			rewards: [
+				{
+					id: "60C1675978832638"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 3
+					id: "62337FE70DA49302"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5C2BE1FE7A4F81E8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Tracks the sun. Works best in deserts."
+			tasks: [
+				{
+					id: "19118C86C733FB72"
+					item: "mekanismgenerators:advanced_solar_generator"
+					type: "item"
+				}
+			]
+			title: "Solar Power"
+			x: 15.1d
+			y: 0.05d
+		}
+		{
+			dependencies: ["7E324FDA02C7B2FE"]
+			description: ["Burns hydrogen - or far better, &eEthylene&f made from bio fuel in a Pressurized Reaction Chamber."]
+			id: "567F2BA6577ED181"
+			rewards: [
+				{
+					id: "6882B40B61311391"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "6285337DD2BA1F40"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2F67B1791F520D8D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ethylene power"
+			tasks: [
+				{
+					id: "5337404A55047CAC"
+					item: "mekanismgenerators:gas_burning_generator"
+					type: "item"
+				}
+			]
+			title: "Gas-Burning Generator"
+			x: 19.1d
+			y: 9.05d
+		}
+		{
+			dependencies: ["5649AF12A3BFEF22"]
+			description: [
+				"Splits uranium to boil water for an &eIndustrial Turbine&f. Colossal power."
+				""
+				"&cRead the Mekanism wiki first.&f A reactor that runs out of coolant melts down and irradiates the area - keep it far from your colony."
+			]
+			id: "37D6D9189637F38D"
+			rewards: [
+				{
+					id: "0F8983C28D5AAAE9"
+					type: "xp"
+					xp: 600
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5041718D8A7703FB"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "53771C6AFDC2996C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6B3FDA57A6502471"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Handle with care"
+			tasks: [
+				{
+					count: 16L
+					id: "56E5360797DFC5C8"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					id: "7870DF157FDCBD7D"
+					item: "mekanismgenerators:fission_reactor_port"
+					type: "item"
+				}
+			]
+			title: "Fission Reactor"
+			x: 22.6d
+			y: 9.05d
+		}
+		{
+			dependencies: ["0098E695B0B2841D"]
+			description: ["A star in a box. Deuterium + Tritium and a laser kick-start. The end of all power problems."]
+			id: "7BC153F3C78730F1"
+			rewards: [
+				{
+					id: "3009F1DA9A61D2D9"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "361379AF1D747D01"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "6CFF7DF0A1DB229A"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4433F12DB5EC89D4"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Endgame power"
+			tasks: [
+				{
+					id: "45BA59C3FBA43072"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					type: "item"
+				}
+			]
+			title: "&6Fusion Reactor"
+			x: 27.85d
+			y: 9.05d
+		}
+		{
+			dependencies: ["567F2BA6577ED181"]
+			description: [
+				"&eMekanism Additions&f turns HDPE sheets - ethylene, pressed in a Pressurized Reaction Chamber - into glow panels and plastic blocks in sixteen colours:"
+				"smooth, slick, glowing, reinforced, see-through, and plastic roads that speed you up."
+				""
+				"A glow panel is a flat lamp for any face of any block."
+			]
+			id: "21A36EC263DE45C3"
+			optional: true
+			rewards: [
+				{
+					id: "116F4574300FC419"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "598F174C2F5A7865"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7706EBF1C8AB7F21"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3A467D2E3D32C9E9"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mekanism Additions"
+			tasks: [
+				{
+					advancement: "mekanismadditions:glow_in_the_dark"
+					criterion: ""
+					icon: "mekanismadditions:orange_glow_panel"
+					id: "10C91F884EF250D3"
+					title: "Glow in the Dark"
+					type: "advancement"
+				}
+			]
+			title: "Plastic and Light"
+			x: 20.85d
+			y: 12.05d
+		}
+		{
+			dependencies: ["21A36EC263DE45C3"]
+			description: ["Leather, string and a dye. Tie one to a fence post, or to a mob and watch it drift away. Pop it with an arrow."]
+			id: "70B6101368D1B877"
+			optional: true
+			rewards: [
+				{
+					id: "5DBA5DC4227891F6"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "46AC0E82F8F57644"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1B25E666721EC6CC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanismadditions:balloon"
+					criterion: ""
+					icon: "mekanismadditions:aqua_balloon"
+					id: "68847884452746C8"
+					title: "Reach for the Skies"
+					type: "advancement"
+				}
+			]
+			title: "Balloons"
+			x: 22.6d
+			y: 10.55d
+		}
+		{
+			dependencies: ["21A36EC263DE45C3"]
+			id: "0A1E423FAF0EDB27"
+			optional: true
+			rewards: [
+				{
+					id: "7F31B5AF88CF58C7"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "4021B7EBA5E19D10"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "05501A058F3100FA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obsidian and TNT: a much bigger bang. Not near the colony."
+			tasks: [
+				{
+					id: "04080BA711AFA321"
+					item: "mekanismadditions:obsidian_tnt"
+					type: "item"
+				}
+			]
+			title: "Obsidian TNT"
+			x: 22.6d
+			y: 12.05d
+		}
+		{
+			dependencies: ["18C12A9C7F9D817B"]
+			description: ["Mekanism Tools adds bronze, steel, osmium, lapis, refined glowstone and refined obsidian gear - plus the &ePaxel&f: pickaxe, axe and shovel in one."]
+			id: "497E33DB93EE129C"
+			optional: true
+			rewards: [
+				{
+					id: "416741A59D1260FB"
+					type: "xp"
+					xp: 80
+				}
+				{
+					command: "/mastery xp @s forestry 80"
+					elevate_perms: true
+					icon: "minecraft:iron_axe"
+					id: "0A2B2CC15D67D0C8"
+					silent: true
+					title: "+80 Forestry experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "51E65B8356782AD0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "09AE7D9AF14629B3"
+					item: "mekanismtools:steel_paxel"
+					type: "item"
+				}
+			]
+			title: "Paxels"
+			x: 9.6d
+			y: 10.05d
+		}
+		{
+			dependencies: ["565EC57F1CBEF7F1"]
+			description: [
+				"The toughest plate short of the end-game: 31 armour to netherite's 20. Refined obsidian comes from the Osmium Compressor."
+				""
+				"Each piece is forged around the matching &enetherite&f piece, so this is where netherite armour goes next, not a way round it."
+			]
+			id: "58D36F9521942948"
+			optional: true
+			rewards: [
+				{
+					id: "464413C5FFCA3694"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "051D6F8A071D618B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "4B135BC5B4B29367"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3A98A6A143B89CAE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5D95CB5F768E207F"
+					item: "mekanismtools:refined_obsidian_chestplate"
+					type: "item"
+				}
+			]
+			title: "Refined Obsidian Armour"
+			x: 17.35d
+			y: -9.45d
+		}
+		{
+			dependencies: ["7E324FDA02C7B2FE"]
+			id: "7BB83D677E05A024"
+			optional: true
+			rewards: [
+				{
+					id: "332C4DAF33AA71D5"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "34D97EC19A96D36E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 80"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "581675AF270BCAC5"
+					silent: true
+					title: "+80 Exploration experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "05C681A80AC56304"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hydrogen-powered flight. Fill it at a Chemical Tank."
+			tasks: [
+				{
+					id: "051A28DC8E03BEC2"
+					item: "mekanism:jetpack"
+					type: "item"
+				}
+			]
+			title: "Jetpack"
+			x: 19.1d
+			y: 7.3d
+		}
+		{
+			dependencies: ["565EC57F1CBEF7F1"]
+			description: ["One electric tool that mines everything, with vein and area modes."]
+			id: "2B2A6BF3786F13DD"
+			rewards: [
+				{
+					id: "4E40885F855B23F1"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "2485980B0AFBA398"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6ED9FB571FF2CB05"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "283FA9CC81BD46A3"
+					item: "mekanism:atomic_disassembler"
+					type: "item"
+				}
+			]
+			title: "Atomic Disassembler"
+			x: 17.35d
+			y: -12.45d
+		}
+		{
+			dependencies: [
+				"3C6E4A4AC5880B27"
+				"2B2A6BF3786F13DD"
+				"40F13E518B25549B"
+			]
+			description: [
+				"Powered armour that absorbs nearly all damage as energy and takes modules for flight, vision, speed and more. Requires polonium and antimatter - a whole nuclear programme."
+				""
+				"&cEldermoor recipe:&f each piece is built around the matching piece of &6Ignitium&f armour, forged from what &cIgnis&f drops in Act III. The best armour in the pack waits behind one of its hardest fights."
+			]
+			hide_dependency_lines: true
+			id: "16ACEBD6F134350B"
+			rewards: [
+				{
+					id: "051ECBCB2BB6470E"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C28C06FF29F759B"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "5F56652F6F228EC4"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 240"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "1331653EBD4CCC14"
+					silent: true
+					title: "+240 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0E31F8B972409E13"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The ultimate armour"
+			tasks: [
+				{
+					id: "17FCFB0644288862"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					id: "10DA525A478CF59E"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "1EB1132FB3BC9336"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					id: "4CDBB1F473763293"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+			]
+			title: "&6The MekaSuit"
+			x: 37.53d
+			y: 3.63d
+		}
+		{
+			dependencies: [
+				"40F13E518B25549B"
+				"27A92138C98758D5"
+				"567F2BA6577ED181"
+			]
+			description: ["Five ingots per ore, a miner that needs no shafts and clean power. Mekanism: mastered."]
+			hide_dependency_lines: true
+			id: "6C0C0F9380942EA7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D3DB867DEECC80B"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 5
+					id: "7879CD8B151CFD50"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "7AA3AA77F293A8EB"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+				{
+					command: "/mastery xp @s mining 240"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "071EAAEB69F84C97"
+					silent: true
+					title: "+240 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0A522C81E54B9320"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "091852FB153B1089"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lAtomic Age"
+			x: 37.53d
+			y: 5.71d
+		}
+		{
+			dependencies: ["1F97412C4662EC1A"]
+			description: [
+				"Iron infused with carbon is enriched iron; smelt its dust, infuse again, and smelt again."
+				"&7Made at: &fArc Furnace &7from &fSteel Dust"
+			]
+			id: "285EE14B9C16DDD8"
+			rewards: [
+				{
+					id: "4905833591E45824"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "16E57774C0D8E162"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1D247AF6DAFAA66E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "260563B620ED008F"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+			]
+			title: "Steel"
+			x: 3.6d
+			y: 8.61d
+		}
+		{
+			dependencies: ["1C60C0C3DDDF69A9"]
+			description: ["The enrichment chamber makes one coal or one redstone go eight times as far in the infuser."]
+			id: "2D125CCBBBBE4559"
+			rewards: [
+				{
+					id: "6F2323E639B9EC91"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4BA65BF45F1C5EEF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6E13C67C9D27765A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "35A4EEF2639F4958"
+					item: "mekanism:enriched_carbon"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3DF9B5CB460B7BAE"
+					item: "mekanism:enriched_redstone"
+					type: "item"
+				}
+			]
+			title: "Enriched"
+			x: 13.35d
+			y: 7.42d
+		}
+		{
+			dependencies: ["7E324FDA02C7B2FE"]
+			description: ["Oxygen and hydrogen from the separator have to go somewhere. From here on, half your pipes carry gas."]
+			id: "3065F36C9126F0FE"
+			rewards: [
+				{
+					id: "7E566F1D45B92A11"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4A8369C4E795D599"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "11FC965A33E07C42"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "20DE7C204A39FD8E"
+					item: "mekanism:basic_chemical_tank"
+					type: "item"
+				}
+			]
+			title: "Chemical Tanks"
+			x: 19.1d
+			y: 5.8d
+		}
+		{
+			dependencies: ["43D47C9EA81ADC95"]
+			description: ["A tower that boils water down to brine, and brine to lithium. The last tier of ore processing runs on what comes out of it."]
+			id: "1C61F3379FB3BA3D"
+			rewards: [
+				{
+					id: "0AB10742C3E881F7"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3E08A1BCA130C284"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1213211D74980F49"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "46A7207AEE9A8AC4"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "20A3DBC30493C697"
+					item: "mekanism:thermal_evaporation_block"
+					type: "item"
+				}
+			]
+			title: "Thermal Evaporation"
+			x: 22.6d
+			y: 5.8d
+		}
+		{
+			dependencies: ["2A6AF9236B66499F"]
+			description: ["Diamonds through the enrichment chamber. Infused into the alloy you already make."]
+			id: "23E717169C24E5AD"
+			rewards: [
+				{
+					id: "593C9727961BEEB5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "48F0254961A69817"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "03653AC0DF57EE74"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "04C57A6B08651E7A"
+					item: "mekanism:enriched_diamond"
+					type: "item"
+				}
+			]
+			title: "Enriched Diamond"
+			x: 7.85d
+			y: -12.02d
+		}
+		{
+			dependencies: ["7ADC48A7B1060175"]
+			description: ["&7Made at: &fEnrichment Chamber &7from &fRefined Obsidian Dust"]
+			id: "421F0615D5B65998"
+			rewards: [
+				{
+					id: "30101D39E0B7047C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6BDE119980D89D30"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "02E4F630C1FBE016"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obsidian dust infused with diamond, then enriched."
+			tasks: [
+				{
+					count: 4L
+					id: "5603E782451C8E7A"
+					item: "mekanism:enriched_refined_obsidian"
+					type: "item"
+				}
+			]
+			title: "Enriched Obsidian"
+			x: 13.35d
+			y: -13.33d
+		}
+		{
+			dependencies: ["565EC57F1CBEF7F1"]
+			id: "2C31E135CB43AAE4"
+			rewards: [
+				{
+					id: "3CCCFE20DA2F32BE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6FC30C02072D16B4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7B8B6694C7E3AC35"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The Digital Miner is built around both."
+			tasks: [
+				{
+					id: "50273521B014A72B"
+					item: "mekanism:robit"
+					type: "item"
+				}
+				{
+					id: "745635979EE517F1"
+					item: "mekanism:logistical_sorter"
+					type: "item"
+				}
+			]
+			title: "A Robit and a Sorter"
+			x: 17.35d
+			y: -7.95d
+		}
+		{
+			dependencies: ["567F2BA6577ED181"]
+			description: [
+				"Enriched uranium ore. Dissolved, oxidised and centrifuged, it becomes fissile fuel."
+				"&7Made at: &fEnrichment Chamber &7from &fUranium Ingot"
+			]
+			id: "5649AF12A3BFEF22"
+			rewards: [
+				{
+					id: "5BE2AC07A6383936"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3CB726A21492F9A7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "49083CB558699396"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "6551BC174B34AB9F"
+					item: "mekanism:yellow_cake_uranium"
+					type: "item"
+				}
+			]
+			title: "Yellowcake"
+			x: 20.85d
+			y: 9.05d
+		}
+		{
+			dependencies: ["37D6D9189637F38D"]
+			description: ["A reactor only makes steam. The Industrial Turbine turns the steam into power."]
+			id: "35579417BCEE6E80"
+			rewards: [
+				{
+					id: "13459B793692105C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "572E9D53CC65D0AB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1373D02163A3E6B0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1F0427BF12E09E7D"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "62A26DC97C2A8D4F"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+				{
+					id: "7BE1805A67BFBBAA"
+					item: "mekanismgenerators:rotational_complex"
+					type: "item"
+				}
+			]
+			title: "The Turbine"
+			x: 24.35d
+			y: 9.05d
+		}
+		{
+			dependencies: ["35579417BCEE6E80"]
+			description: [
+				"Filled with D-T fuel, it is the match that lights a fusion reactor."
+				"&7Made at: &fMetallurgic Infuser &7from &fany carbon x10, Gold Dust"
+			]
+			id: "0098E695B0B2841D"
+			rewards: [
+				{
+					id: "0605FBF27E4E08F3"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "037DEF823C27604C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2D728EB4B6A60E91"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "27A7B80F189F9F6E"
+					item: "mekanismgenerators:hohlraum"
+					type: "item"
+				}
+			]
+			title: "A Hohlraum"
+			x: 26.1d
+			y: 9.05d
+		}
+		{
+			dependencies: ["45733202445B94A7"]
+			description: [
+				"Mekanism's battery, and the heart of nearly every machine that stores power: &6gold&f, &credstone&f and &binfused alloy&f. Energy Cubes, the Jetpack's electrolysis and the Digital Miner all eat them."
+				"Make a small stack. You will not regret it."
+			]
+			id: "23B0F9A7DB92F1FF"
+			rewards: [
+				{
+					id: "6C68BE91E20879E8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "175D07D192B49C7D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "168E85A5908B0CFA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "534D797602475960"
+					item: "mekanism:energy_tablet"
+					type: "item"
+				}
+			]
+			title: "Energy Tablets"
+			x: 7.85d
+			y: 0.05d
+		}
+		{
+			dependencies: ["27A92138C98758D5"]
+			description: [
+				"&dAtomic alloy&f, lapis, gold and a diamond. The Teleporter, the Portable Teleporter and the &eQuantum Entangloporter&f are each built around one."
+				"The Entangloporter is the one to aim for: items, fluids, gases and power, across any distance, with no pipe."
+			]
+			id: "246F39997CAF4155"
+			optional: true
+			rewards: [
+				{
+					id: "347F62513A7A4BEC"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5A94CEF441B0CB6B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "657357E92D4EDDFF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "6A30C698E47D4E9F"
+					item: "mekanism:teleportation_core"
+					type: "item"
+				}
+			]
+			title: "Teleportation Cores"
+			x: 20.85d
+			y: -6.45d
+		}
+		{
+			dependencies: ["2D125CCBBBBE4559"]
+			description: [
+				"Osmium, iron and gold dust set in infused alloy. It is the working part of the &eElectrolytic Separator&f, which splits water into &bhydrogen&f and &boxygen&f."
+				"Oxygen feeds the Purification Chamber. Hydrogen burns, and fills jetpacks."
+			]
+			id: "57B4B2CCC41112D6"
+			rewards: [
+				{
+					id: "53404A4E09B00C71"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7F500001A4B46B19"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "14A81EAE42956FD4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2CE821C10FB522B7"
+					item: "mekanism:electrolytic_core"
+					type: "item"
+				}
+			]
+			title: "The Electrolytic Core"
+			x: 15.1d
+			y: 7.42d
+		}
+		{
+			dependencies: ["7F0B7EA0B7BEC393"]
+			description: [
+				"A &ehollow box&f of Induction Casing, any size up to 18 blocks a side, with at least two ports: one in, one out. It is the only battery in Mekanism that keeps growing."
+				"Empty, it stores nothing at all. What you put &oinside&f decides everything - that is the next quest."
+			]
+			id: "68506710844F02E6"
+			optional: true
+			rewards: [
+				{
+					id: "2312C67EEE8CBE96"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "11A7D5EF03436925"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "05EB9BC96A9C20DA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A battery the size of a house"
+			tasks: [
+				{
+					count: 8L
+					id: "5D31C2B722EFE762"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7AF2F475B82B27AA"
+					item: "mekanism:induction_port"
+					type: "item"
+				}
+			]
+			title: "The Induction Matrix"
+			x: 13.35d
+			y: -2.95d
+		}
+		{
+			dependencies: ["68506710844F02E6"]
+			description: [
+				"&eCells&f are capacity. &eProviders&f are how fast power gets in and out. A matrix needs at least one of each, placed anywhere inside the box."
+				"Both come in four tiers and can be mixed freely, so start cheap and swap them out later."
+			]
+			id: "657E7CF2F116ED68"
+			optional: true
+			rewards: [
+				{
+					id: "10D7B731535E2BF0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "31A5B66E7A7FE694"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "740DB42DD1015D35"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "58B61B73DB4AF106"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+				{
+					id: "2D387465FBC97D27"
+					item: "mekanism:basic_induction_provider"
+					type: "item"
+				}
+			]
+			title: "Cells and Providers"
+			x: 15.1d
+			y: -2.95d
+		}
+		{
+			dependencies: ["770A4FC5F1AA707D"]
+			description: [
+				"A hollow box again, of any size, that holds &efluids or gases&f. Glass counts as wall, so you can watch it fill."
+				"The cheapest way to store a lake of anything."
+			]
+			id: "62EF463BA8BD4394"
+			optional: true
+			rewards: [
+				{
+					id: "045A705C0672B423"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5399EA3E8D63AC1F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1D6708F86E9A0EB6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "58E1185BFEFD7CE0"
+					item: "mekanism:dynamic_tank"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5ACE6CE1BA3F884E"
+					item: "mekanism:dynamic_valve"
+					type: "item"
+				}
+			]
+			title: "A Dynamic Tank"
+			x: 9.6d
+			y: 4.55d
+		}
+		{
+			dependencies: ["37D6D9189637F38D"]
+			description: [
+				"A reactor makes &cnuclear waste&f, and waste that has nowhere to go leaks &cradiation&f into the world. That does not go away when you do."
+				"Barrels let it decay slowly and safely. Pipe the reactor's waste into them &obefore&f you switch it on."
+			]
+			id: "1E901E4E2A062114"
+			optional: true
+			rewards: [
+				{
+					id: "517ADB1E3EFA0DB5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4F98189CD966E001"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "32ED07DE33B691EA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Before you switch it on"
+			tasks: [
+				{
+					count: 2L
+					id: "44FCB63FDACB6E40"
+					item: "mekanism:radioactive_waste_barrel"
+					type: "item"
+				}
+			]
+			title: "Where the Waste Goes"
+			x: 24.35d
+			y: 7.55d
+		}
+		{
+			dependencies: ["1E901E4E2A062114"]
+			description: [
+				"The &eGeiger Counter&f reads the radiation where you stand. The &eDosimeter&f reads how much is already in &oyou&f."
+				"A full Hazmat suit keeps it out. Nothing takes it back out quickly."
+			]
+			id: "57C1F95DBDB44AE8"
+			optional: true
+			rewards: [
+				{
+					id: "69F1ABD53229BC17"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2B01DD3389019D49"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "355EB0BB849C4753"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "15ACFB038F1EFD52"
+					item: "mekanism:geiger_counter"
+					type: "item"
+				}
+				{
+					id: "5503B445B85CEF71"
+					item: "mekanism:dosimeter"
+					type: "item"
+				}
+			]
+			title: "Know Your Dose"
+			x: 26.1d
+			y: 7.55d
+		}
+		{
+			dependencies: ["57C1F95DBDB44AE8"]
+			description: [
+				"Sunlight in, neutrons out. It turns nuclear waste into &dpolonium&f, and lithium into tritium for the fusion reactor."
+				"It only works under open sky, and best in a desert."
+			]
+			id: "126BE723124255E2"
+			optional: true
+			rewards: [
+				{
+					id: "22C1EF6F979276AC"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "50A09A684B63B0FE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1CA2F3B504596F68"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "32774C407BB57972"
+					item: "mekanism:solar_neutron_activator"
+					type: "item"
+				}
+			]
+			title: "The Solar Neutron Activator"
+			x: 27.85d
+			y: 7.55d
+		}
+		{
+			dependencies: ["126BE723124255E2"]
+			description: ["Waste, through the Activator, then a Pressurized Reaction Chamber. Polonium is what the &eMekaSuit&f's modules, the Modification Station and the SPS are made of."]
+			id: "609A37B14BE97E1B"
+			optional: true
+			rewards: [
+				{
+					id: "688F0CB864343B61"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "39175EC939DB586A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6DE7C82852007FA4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "390B45B7F33697A3"
+					item: "mekanism:pellet_polonium"
+					type: "item"
+				}
+			]
+			title: "Polonium"
+			x: 29.6d
+			y: 7.55d
+		}
+		{
+			dependencies: ["609A37B14BE97E1B"]
+			description: ["Waste again, this time spun in an &eIsotopic Centrifuge&f and pressed with fluorite. Polonium and plutonium together are the casing of the SPS."]
+			id: "03F2F2A6502FD9BD"
+			optional: true
+			rewards: [
+				{
+					id: "6E87C62BF1708DC7"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0A16B225594512C0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4D3C6F2A2E155B88"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "34F5CE0A17F12DBB"
+					item: "mekanism:pellet_plutonium"
+					type: "item"
+				}
+			]
+			title: "Plutonium"
+			x: 31.35d
+			y: 7.55d
+		}
+		{
+			dependencies: ["03F2F2A6502FD9BD"]
+			description: [
+				"A seven-block shell with cut corners. Feed it &dpolonium&f gas and an absurd amount of power through its coils and it produces &5antimatter&f, a few drops at a time."
+				"Nothing else in Mekanism draws this much. Build the Induction Matrix first."
+			]
+			id: "6990DAE95E313BF7"
+			optional: true
+			rewards: [
+				{
+					id: "0884051ED2421B7E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "31DB59F9EE4572DD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4E931341699F0DFE"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The last machine"
+			tasks: [
+				{
+					count: 16L
+					id: "6AA2043B0186F278"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1F4E9A029B6A71F8"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "60E5437DCC9A0DB2"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+			]
+			title: "The Supercritical Phase Shifter"
+			x: 33.2d
+			y: 7.55d
+		}
+		{
+			dependencies: ["6990DAE95E313BF7"]
+			description: ["Crystallise the gas into a pellet. It makes the Antiprotonic Nucleosynthesizer, the MekaSuit's best modules and the QIO's largest drives."]
+			id: "33A5E35742E70A45"
+			optional: true
+			rewards: [
+				{
+					id: "3C0E5677CCB18DA8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "575ED0A4292024C0"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "25536EDA86FE73A3"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A few drops at a time"
+			tasks: [
+				{
+					id: "674A5C4905F274BB"
+					item: "mekanism:pellet_antimatter"
+					type: "item"
+				}
+			]
+			title: "Antimatter"
+			x: 35.3d
+			y: 7.55d
+		}
+		{
+			dependencies: ["21A36EC263DE45C3"]
+			description: [
+				"Ethylene and oxygen in a Pressurized Reaction Chamber make &eHDPE pellets&f; an Enrichment Chamber presses pellets into sheets."
+				"This is the plastic the &eMekaSuit&f, the Jetpack's upgrades and the Modification Station are built from. You will want a lot."
+			]
+			id: "312FE9AD1A8C1DAB"
+			optional: true
+			rewards: [
+				{
+					id: "5A0851AD6D453D02"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "03384C6AD6014322"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4A0453DCAB12EF59"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The plastic everything late is made of"
+			tasks: [
+				{
+					count: 8L
+					id: "6593B654AA9A0759"
+					item: "mekanism:hdpe_sheet"
+					type: "item"
+				}
+			]
+			title: "HDPE Sheets"
+			x: 22.6d
+			y: 13.55d
+		}
+		{
+			dependencies: ["2C31E135CB43AAE4"]
+			description: ["The bench where &emodules&f go into a MekaSuit or a Meka-Tool: jetpack, gravity unit, radiation shielding, vein mining, silk touch. Each module is its own recipe, most of them built on polonium and HDPE."]
+			id: "7ACA9DD3DBC166AD"
+			optional: true
+			rewards: [
+				{
+					id: "3F54A89FE1888602"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "60C323F9F5C3E86A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "26AD8D4B354EB50E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Where the suit gets its tricks"
+			tasks: [
+				{
+					id: "5B25C132D2B53D80"
+					item: "mekanism:modification_station"
+					type: "item"
+				}
+			]
+			title: "The Modification Station"
+			x: 19.1d
+			y: -7.95d
+		}
+		{
+			dependencies: ["7ACA9DD3DBC166AD"]
+			description: [
+				"Keeps chunks loaded around it - up to a 5x5 of them, chosen one by one - so a base keeps working while you are away."
+				"It draws power for every chunk it holds. Use it where it matters."
+			]
+			id: "08245D2BE4E68459"
+			optional: true
+			rewards: [
+				{
+					id: "3B74F3003D947859"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7D32D53E802E0B7D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1142C5CE18790764"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "36ED9BF377E68863"
+					item: "mekanism:dimensional_stabilizer"
+					type: "item"
+				}
+			]
+			title: "A Dimensional Stabilizer"
+			x: 20.85d
+			y: -7.95d
+		}
+		{
+			dependencies: ["08245D2BE4E68459"]
+			description: [
+				"Right-click almost any block with one - a full chest, a spawner, a machine with everything in it - and it becomes a box you can carry."
+				"Cheap, reusable, and the easiest way to move house."
+			]
+			id: "63AB13E781E12034"
+			optional: true
+			rewards: [
+				{
+					id: "78803219C87DBEE7"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4B9E0754B6E5F5B5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "245FA90FCEEE588B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pick up almost anything"
+			tasks: [
+				{
+					count: 4L
+					id: "0BBCFB99D393AF96"
+					item: "mekanism:cardboard_box"
+					type: "item"
+				}
+			]
+			title: "A Cardboard Box"
+			x: 22.6d
+			y: -7.95d
+		}
+		{
+			dependencies: ["1F97412C4662EC1A"]
+			description: ["Holds one fluid and keeps it when you pick the tank up. Upgrades in place to the higher tiers, and Mekanism's chemical machines are built around it."]
+			id: "35B43E664C3444C0"
+			optional: true
+			rewards: [
+				{
+					id: "3072F060A8D279AF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "05151CF78CAC663A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "68C7DA450BBF1982"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Liquids in a block"
+			tasks: [
+				{
+					id: "6174A2013EE57876"
+					item: "mekanism:basic_fluid_tank"
+					type: "item"
+				}
+			]
+			title: "A Fluid Tank"
+			x: 3.6d
+			y: -1.45d
+		}
+		{
+			dependencies: ["285EE14B9C16DDD8"]
+			description: ["Stacks of fuel rods inside the Fission Reactor. More assemblies burn more fuel and make more heat. Each column is capped by a Control Rod Assembly."]
+			id: "36EC3C3C182730F5"
+			optional: true
+			rewards: [
+				{
+					id: "508096BAB51ACF3A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0F9A64A7A921EF89"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3E7D80A9180DF23F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The core of a fission reactor"
+			tasks: [
+				{
+					id: "727AD3DD926D18D4"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+			]
+			title: "Fission Fuel Assemblies"
+			x: 7.85d
+			y: 10.05d
+		}
+		{
+			dependencies: ["2A6AF9236B66499F"]
+			description: ["Reacts two gases into a new one: hydrogen and chlorine into hydrogen chloride, for example. Many of Mekanism's later chemicals start here."]
+			id: "1FCE03C345AD881C"
+			optional: true
+			rewards: [
+				{
+					id: "2CACE78C3EA7B8B3"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6FF4471FF0442711"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "32685B81C79B3826"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Two gases make a third"
+			tasks: [
+				{
+					id: "530BF8EF0E006303"
+					item: "mekanism:chemical_infuser"
+					type: "item"
+				}
+			]
+			title: "The Chemical Infuser"
+			x: 7.85d
+			y: -10.7d
+		}
+		{
+			dependencies: ["2A6AF9236B66499F"]
+			description: ["Grinds almost any food into &eNutritional Paste&f, a fluid you can store in tanks. With the right gear you never have to stop and eat again."]
+			id: "218B306F26A7DB54"
+			optional: true
+			rewards: [
+				{
+					id: "4014E40A7DAB2A44"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6674BE426184C424"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "380DB2D9634359E6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Food as a fluid"
+			tasks: [
+				{
+					id: "517B3A433986195B"
+					item: "mekanism:nutritional_liquifier"
+					type: "item"
+				}
+			]
+			title: "The Nutritional Liquifier"
+			x: 7.85d
+			y: -9.2d
+		}
+		{
+			dependencies: ["2A6AF9236B66499F"]
+			description: ["54 slots that only you can open. Carry it and open it straight from your inventory."]
+			id: "1FF58B212178662E"
+			optional: true
+			rewards: [
+				{
+					id: "6B7636BF44993C49"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7B63E01F8FE17086"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "620E886A694A3552"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A chest only you can open"
+			tasks: [
+				{
+					id: "6EF73E0452464667"
+					item: "mekanism:personal_chest"
+					type: "item"
+				}
+			]
+			title: "The Personal Chest"
+			x: 7.85d
+			y: -7.7d
+		}
+		{
+			dependencies: ["2A6AF9236B66499F"]
+			description: ["Cuts logs into more planks than a crafting table gives, with &eSawdust&f as a bonus. Upgrades into a Sawing Factory."]
+			id: "754DBBBB1A4654A2"
+			optional: true
+			rewards: [
+				{
+					id: "17E93BA675560512"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "18447E37B23A9ED7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "67D6DB1C3043FE4E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More planks per log"
+			tasks: [
+				{
+					id: "602AB885FFF1FC33"
+					item: "mekanism:precision_sawmill"
+					type: "item"
+				}
+			]
+			title: "The Precision Sawmill"
+			x: 7.85d
+			y: -6.45d
+		}
+		{
+			dependencies: ["2A6AF9236B66499F"]
+			description: ["Fill it with &eoxygen&f and wear it with a Scuba Mask to breathe underwater for a long time."]
+			id: "5FF2A1854B907BE2"
+			optional: true
+			rewards: [
+				{
+					id: "094AA96C5FF5C062"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "39CDE0A1529944AB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "533AC1500FF75149"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Air on your back"
+			tasks: [
+				{
+					id: "6B2721AD3055F4A2"
+					item: "mekanism:scuba_tank"
+					type: "item"
+				}
+			]
+			title: "The Scuba Tank"
+			x: 7.85d
+			y: -5.2d
+		}
+		{
+			dependencies: ["2A6AF9236B66499F"]
+			description: ["Silences the machine you put it in. A room full of crushers becomes bearable."]
+			id: "33A724F6043467D6"
+			optional: true
+			rewards: [
+				{
+					id: "4020972FAE519CB2"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5D5C15A980E2D5C3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "23363788E341508B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Peace and quiet"
+			tasks: [
+				{
+					id: "723F56E250A64C44"
+					item: "mekanism:upgrade_muffling"
+					type: "item"
+				}
+			]
+			title: "The Muffling Upgrade"
+			x: 7.85d
+			y: -3.95d
+		}
+		{
+			dependencies: ["7ADC48A7B1060175"]
+			description: ["The Thermoelectric Boiler is fed and drained through these: heat and water in, steam out."]
+			id: "45DECAC31E5E94AB"
+			optional: true
+			rewards: [
+				{
+					id: "7E3A4FAEA0DE3870"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1420EECC7AB9D35A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7E8AB2E58BE71B54"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The way into the boiler"
+			tasks: [
+				{
+					id: "134461B4C81F26FF"
+					item: "mekanism:boiler_valve"
+					type: "item"
+				}
+			]
+			title: "Boiler Valves"
+			x: 13.35d
+			y: -11.95d
+		}
+		{
+			dependencies: ["62EF463BA8BD4394"]
+			description: ["Turns solid materials into gas: sulfur into sulfur dioxide, for instance. The start of several chemical chains."]
+			id: "2789E806ABCFF416"
+			optional: true
+			rewards: [
+				{
+					id: "2FD801153204C01D"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6C3A863A9C9B7512"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "623C15EA0DF9A1AC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Solids into gas"
+			tasks: [
+				{
+					id: "3B6B3A66FC9E750D"
+					item: "mekanism:chemical_oxidizer"
+					type: "item"
+				}
+			]
+			title: "The Chemical Oxidizer"
+			x: 13.35d
+			y: 4.55d
+		}
+		{
+			dependencies: ["7ADC48A7B1060175"]
+			description: ["Fills with &ehydrogen&f and sprays fire. It has modes, switched with the Item Mode key, one of which smelts the blocks it hits."]
+			id: "22AD94F574124F30"
+			optional: true
+			rewards: [
+				{
+					id: "63208BBB17D00538"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2600CF16017EF0AF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "177956237E6D3093"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hydrogen, on fire"
+			tasks: [
+				{
+					id: "27EB54B2F548ABD4"
+					item: "mekanism:flamethrower"
+					type: "item"
+				}
+			]
+			title: "The Flamethrower"
+			x: 13.35d
+			y: -10.45d
+		}
+		{
+			dependencies: ["23B0F9A7DB92F1FF"]
+			description: ["Powered boots: you step up full blocks and take no fall damage while they have charge."]
+			id: "6A539B73BC12B8DD"
+			optional: true
+			rewards: [
+				{
+					id: "5AE9179D5294FA82"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2CBBA5923ACDDA8B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1138A1B627E71907"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Walk up blocks, land safely"
+			tasks: [
+				{
+					id: "2184B46A2948CCE3"
+					item: "mekanism:free_runners"
+					type: "item"
+				}
+			]
+			title: "Free Runners"
+			x: 9.6d
+			y: 0.05d
+		}
+		{
+			dependencies: ["7ADC48A7B1060175"]
+			description: ["Fires a beam that can damage creatures, break blocks and light TNT. Lasers fill a Laser Amplifier, which is how a Fusion Reactor is started."]
+			id: "1AC0434DA39AB8CE"
+			optional: true
+			rewards: [
+				{
+					id: "309CE6444AD89A24"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "50874716BCEEB824"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "096C395D46DBDF04"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pew pew"
+			tasks: [
+				{
+					id: "2909B00681132F8E"
+					item: "mekanism:laser"
+					type: "item"
+				}
+			]
+			title: "The Laser"
+			x: 13.35d
+			y: -8.95d
+		}
+		{
+			dependencies: ["7ADC48A7B1060175"]
+			description: ["Uses liquid osmium to compress materials into refined forms: refined obsidian and refined glowstone come from here."]
+			id: "586E0C957D0084E4"
+			optional: true
+			rewards: [
+				{
+					id: "2960DA99D2500C65"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2C8CC73E82161C5B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0412B29885146FF2"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Refined materials"
+			tasks: [
+				{
+					id: "5A1CD0CDCE0BDC9D"
+					item: "mekanism:osmium_compressor"
+					type: "item"
+				}
+			]
+			title: "The Osmium Compressor"
+			x: 13.35d
+			y: -7.45d
+		}
+		{
+			dependencies: ["7ADC48A7B1060175"]
+			description: ["Paints blocks and items with pigment. Pigments come from dyes, and the machine works through a whole stack at once."]
+			id: "2B88FEB934E9DB97"
+			optional: true
+			rewards: [
+				{
+					id: "79466EBE0CB3C629"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "70AE7849269C3E34"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2A6E1DB5AA8D068D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Colour by machine"
+			tasks: [
+				{
+					id: "65E76A26C70FCE79"
+					item: "mekanism:painting_machine"
+					type: "item"
+				}
+			]
+			title: "The Painting Machine"
+			x: 13.35d
+			y: -5.95d
+		}
+		{
+			dependencies: ["62EF463BA8BD4394"]
+			description: ["Takes a solid, a liquid and a gas together and produces new materials under pressure. Plastic, substrate and polonium are all made here."]
+			id: "29B95B59DA80F86B"
+			optional: true
+			rewards: [
+				{
+					id: "48302B5447AC2756"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1E0F6350505C0398"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7D8756F33CE5462C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Solid, liquid and gas in, something new out"
+			tasks: [
+				{
+					id: "3A9476AF4120E432"
+					item: "mekanism:pressurized_reaction_chamber"
+					type: "item"
+				}
+			]
+			title: "The Reaction Chamber"
+			x: 13.35d
+			y: 6.05d
+		}
+		{
+			dependencies: ["23B0F9A7DB92F1FF"]
+			description: ["Turns gases into their liquid form and liquids back into gas. Use it to store gases as fluids, or to feed a fluid into a gas machine."]
+			id: "28378DA1C78F8797"
+			optional: true
+			rewards: [
+				{
+					id: "2ABFB74248481DA4"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "04B128278A3E6F4B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4050429555FA9692"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Gas to liquid and back"
+			tasks: [
+				{
+					id: "64DBC8C9C3389E33"
+					item: "mekanism:rotary_condensentrator"
+					type: "item"
+				}
+			]
+			title: "The Rotary Condensentrator"
+			x: 9.6d
+			y: 1.55d
+		}
+		{
+			dependencies: ["23B0F9A7DB92F1FF"]
+			description: ["Makes power from sunlight, nothing at night or in rain. Simple, silent, and it never needs feeding."]
+			id: "2B25109FA025196F"
+			optional: true
+			rewards: [
+				{
+					id: "3A5B0925CD3AB544"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4F7F4C8E2E144E09"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "003D9B03430522CB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Daytime power"
+			tasks: [
+				{
+					id: "41E283534664CCCE"
+					item: "mekanismgenerators:solar_generator"
+					type: "item"
+				}
+			]
+			title: "The Solar Generator"
+			x: 9.6d
+			y: 3.05d
+		}
+		{
+			dependencies: ["0D3BAC0736DED5B8"]
+			description: [
+				"Crush plants and food into &eBio Fuel&f and burn it in the Bio-Generator. A farm becomes a power plant."
+				"&7&fBio Fuel&7 - Made at: &fCrusher &7from &fHay Bale"
+			]
+			id: "66AC55242441C7DA"
+			optional: true
+			rewards: [
+				{
+					id: "0677C060E4D10B53"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "21AB4A2325BCF9F1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "71003D7F9B2644E8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Power from plants"
+			tasks: [
+				{
+					id: "718EB43B6F02A9C9"
+					item: "mekanism:bio_fuel"
+					type: "item"
+				}
+				{
+					id: "213278A1CB03BB01"
+					item: "mekanismgenerators:bio_generator"
+					type: "item"
+				}
+			]
+			title: "Bio-Fuel"
+			x: 15.1d
+			y: 11.8d
+		}
+		{
+			dependencies: ["565EC57F1CBEF7F1"]
+			description: ["Combines an item with another, such as raw ore and cobblestone back into ore. Upgrades into a Combining Factory."]
+			id: "7E55F1BF5D424BDE"
+			optional: true
+			rewards: [
+				{
+					id: "0FA83E3A38EADAFB"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "46BD84B57A9D2F9E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2839208FD0E41376"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Two things become one"
+			tasks: [
+				{
+					id: "66B2BC20C6D0217B"
+					item: "mekanism:combiner"
+					type: "item"
+				}
+			]
+			title: "The Combiner"
+			x: 17.35d
+			y: -15.45d
+		}
+		{
+			dependencies: ["565EC57F1CBEF7F1"]
+			description: ["Sits on top of a column of fuel assemblies and lets the reactor control its chain reaction."]
+			id: "05F97C3ED0B3673F"
+			optional: true
+			rewards: [
+				{
+					id: "39D6D23D5C27313C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7F0AC85DBDE816BE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4A55C41BD8DD0335"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The off switch"
+			tasks: [
+				{
+					id: "16B3BCE445B07419"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+			]
+			title: "Control Rods"
+			x: 17.35d
+			y: -13.95d
+		}
+		{
+			dependencies: ["2A6AF9236B66499F"]
+			description: ["Place it above a fluid and it pumps it out, source block by source block, into a pipe or tank above. The Filter Upgrade picks which fluid it takes."]
+			id: "72079AE616ABD2F9"
+			optional: true
+			rewards: [
+				{
+					id: "55600A74093922B3"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1E8F906DFD5EF081"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2823DFBF94758F80"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Empty a lake"
+			tasks: [
+				{
+					id: "244F2A859D5A1449"
+					item: "mekanism:electric_pump"
+					type: "item"
+				}
+				{
+					id: "3BC3092CA79C118C"
+					item: "mekanism:upgrade_filter"
+					type: "item"
+				}
+			]
+			title: "The Electric Pump"
+			x: 7.85d
+			y: -2.45d
+		}
+		{
+			dependencies: ["657E7CF2F116ED68"]
+			description: ["Cells are the capacity of an Induction Matrix. The Advanced cell holds far more than the basic one."]
+			id: "1316E59912858584"
+			optional: true
+			rewards: [
+				{
+					id: "119918D3AD976903"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "640830613D8EB214"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6310EF3B932EA1E1"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A lot more storage"
+			tasks: [
+				{
+					id: "6FD8666333BA679A"
+					item: "mekanism:advanced_induction_cell"
+					type: "item"
+				}
+			]
+			title: "Advanced Induction Cells"
+			x: 17.35d
+			y: -2.95d
+		}
+		{
+			dependencies: ["3C6E4A4AC5880B27"]
+			description: ["Uses antimatter and a huge amount of power to change items into rarer ones. Mekanism's last machine."]
+			id: "615B6EC631012F78"
+			optional: true
+			rewards: [
+				{
+					id: "34B66F44E399121C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7DA15609AA775C45"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3F1D73E23B5557FD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Transmute with antimatter"
+			tasks: [
+				{
+					id: "288978E02ABB23A5"
+					item: "mekanism:antiprotonic_nucleosynthesizer"
+					type: "item"
+				}
+			]
+			title: "The Nucleosynthesizer"
+			x: 19.1d
+			y: -18.45d
+		}
+		{
+			dependencies: ["7ADC48A7B1060175"]
+			description: ["The Advanced cube with reinforced alloy and gold. It stores and moves much more power."]
+			id: "41D07BAEE704C313"
+			optional: true
+			rewards: [
+				{
+					id: "59AC71260DFB3BF9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6DEE21B9D336FCD9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "103E9C04149DEC75"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bigger battery"
+			tasks: [
+				{
+					id: "31BC6912319C2A2B"
+					item: "mekanism:elite_energy_cube"
+					type: "item"
+				}
+			]
+			title: "The Elite Energy Cube"
+			x: 13.35d
+			y: -4.45d
+		}
+		{
+			dependencies: ["565EC57F1CBEF7F1"]
+			description: ["The reactor's shell is built from &eFrames&f, with &ePorts&f where fuel goes in and power comes out. Once lit, it makes enormous amounts of power from deuterium and tritium."]
+			id: "20AAEC1FF1106107"
+			optional: true
+			rewards: [
+				{
+					id: "022B1B84A23FE467"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5082A525D601B198"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6DD8ABB3AD5DE057"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Frame and ports"
+			tasks: [
+				{
+					id: "2EDC9D34AFF11026"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					type: "item"
+				}
+				{
+					id: "58266C71ED71A95A"
+					item: "mekanismgenerators:fusion_reactor_port"
+					type: "item"
+				}
+			]
+			title: "The Fusion Reactor"
+			x: 17.35d
+			y: -10.95d
+		}
+		{
+			dependencies: ["586E0C957D0084E4"]
+			description: ["The Osmium Compressor turns glowstone into &eRefined Glowstone&f and refined obsidian dust into &eRefined Obsidian&f. Both are metals for Mekanism's tools and armour."]
+			id: "5476C363140B485E"
+			optional: true
+			rewards: [
+				{
+					id: "78CF1479EB122CDB"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "435273FBDD224F32"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4AF17466752CD8C8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Glowstone and obsidian, compressed"
+			tasks: [
+				{
+					id: "301CBC7D77B70056"
+					item: "mekanism:ingot_refined_glowstone"
+					type: "item"
+				}
+				{
+					id: "29251B49E9EF2572"
+					item: "mekanism:ingot_refined_obsidian"
+					type: "item"
+				}
+			]
+			title: "Refined Metals"
+			x: 15.1d
+			y: -7.45d
+		}
+		{
+			dependencies: ["3C6E4A4AC5880B27"]
+			description: ["Spins nuclear waste and uranium into the isotopes you need, plutonium among them."]
+			id: "5E87FCFB284A9063"
+			optional: true
+			rewards: [
+				{
+					id: "5865423EDF4DB86A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "16A85DBCACB7BAF0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "25D1E65D4E1DA8C4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "It spins really fast"
+			tasks: [
+				{
+					id: "0BB9CD42D5C72841"
+					item: "mekanism:isotopic_centrifuge"
+					type: "item"
+				}
+			]
+			title: "The Isotopic Centrifuge"
+			x: 19.1d
+			y: -16.95d
+		}
+		{
+			dependencies: ["3C6E4A4AC5880B27"]
+			description: ["QIO is Mekanism's digital storage: no channels, no power for the drives, and reachable from any dimension. Drives go in a QIO Drive Array."]
+			id: "3285B575CC453A46"
+			optional: true
+			rewards: [
+				{
+					id: "294E2E144CD7979B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "67FEFC87F2796707"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7945CFB887D87F7E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Storage across any distance"
+			tasks: [
+				{
+					id: "09B09CA540A28187"
+					item: "mekanism:qio_drive_base"
+					type: "item"
+				}
+			]
+			title: "QIO Drives"
+			x: 19.1d
+			y: -15.45d
+		}
+		{
+			dependencies: ["41D07BAEE704C313"]
+			description: ["The Elite cube with atomic alloy and diamonds. Beyond this, power is stored in an Induction Matrix."]
+			id: "7A0096FC4831B42D"
+			optional: true
+			rewards: [
+				{
+					id: "6DDCBC6E36351B23"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5D804C31554A238B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "77FA68AEA9E1CDE3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The largest cube"
+			tasks: [
+				{
+					id: "7635980DD29714DD"
+					item: "mekanism:ultimate_energy_cube"
+					type: "item"
+				}
+			]
+			title: "The Ultimate Energy Cube"
+			x: 15.1d
+			y: -4.45d
+		}
+		{
+			dependencies: ["2B2A6BF3786F13DD"]
+			description: ["The Atomic Disassembler grown up. It mines everything, and modules from the Modification Station add vein mining, silk touch, teleporting and more."]
+			id: "7AF77E899DFB0C26"
+			optional: true
+			rewards: [
+				{
+					id: "6E08FEBE306DECD0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4AAE03D27C907CAC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0EFBA2DD524A38D2"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The tool of all tools"
+			tasks: [
+				{
+					id: "45C7610523F8D69D"
+					item: "mekanism:meka_tool"
+					type: "item"
+				}
+			]
+			title: "The Meka-Tool"
+			x: 19.1d
+			y: -12.45d
+		}
+	]
+	subtitle: ["Ore multiplication, chemistry and the atom"]
+	title: "&bMekanism"
+}

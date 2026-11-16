@@ -1,0 +1,38 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    },
+    "salt": 430930,
+    "separation": 52,
+    "spacing": 140,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "nova_structures:well_spruce",
+      "weight": 1
+    },
+    {
+      "structure": "nova_structures:well_birch",
+      "weight": 1
+    },
+    {
+      "structure": "nova_structures:well_dark_oak",
+      "weight": 1
+    },
+    {
+      "structure": "nova_structures:well_jungle",
+      "weight": 1
+    },
+    {
+      "structure": "nova_structures:well_oak",
+      "weight": 1
+    },
+    {
+      "structure": "nova_structures:well_savana",
+      "weight": 1
+    }
+  ]
+}

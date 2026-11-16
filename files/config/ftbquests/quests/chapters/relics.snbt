@@ -1,0 +1,1404 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "relics"
+	group: "3368DAD22055D0D9"
+	icon: "relics:leather_belt"
+	id: "4FBCB1530A05D4CC"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["62BE7F6DB1645F9E"]
+			description: [
+				"Relics are &efound, not made&f: each one has a small chance to be lying in the right kind of loot chest - ocean ruins for the swimmer's gear, the Nether for the fiery ones, End cities for the strangest. Every quest here says where to look."
+				"Each relic has abilities that &elevel up&f as you use it. Hold Shift on a relic and click to open its page, spend its points and reroll what you do not like."
+				"This page is a collection. There is no order and no need to find them all: any ten finish it."
+			]
+			hide_until_deps_complete: true
+			id: "7CE95385238A21CE"
+			rewards: [
+				{
+					id: "32B4E16296C51867"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "476E330A99D19238"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3B840A7FEA7B29AE"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "24DD6CA32427A753"
+					title: "I will keep my eyes open"
+					type: "checkmark"
+				}
+			]
+			title: "&e&lFound, Not Made"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D90AC87275659EA"]
+			description: ["&7Found in: &fruined portals, Nether fortresses and bastions&7. A rare find - open every chest."]
+			id: "3DDDD7BD12CE1E6E"
+			rewards: [
+				{
+					id: "73640CE108D09F0A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "261002BC6BCB4003"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1E142158B7FF99F4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Walk on lava."
+			tasks: [
+				{
+					id: "3952D9F0DA881589"
+					item: "relics:magma_walker"
+					type: "item"
+				}
+			]
+			title: "Magma Walker"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7AA4EFC8C11749AB"]
+			description: ["&7Found in: &fshipwrecks, ocean ruins and buried treasure&7. A rare find - open every chest."]
+			id: "7BC02ACE6CB700F7"
+			rewards: [
+				{
+					id: "766AB5D446108328"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6D18C12ED28A9285"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "47446A784A9D4FC3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Walk on water."
+			tasks: [
+				{
+					id: "30B47D37A97CA29A"
+					item: "relics:aqua_walker"
+					type: "item"
+				}
+			]
+			title: "Aqua Walker"
+			x: 0.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1F3D6C402E9DED0B"]
+			description: ["&7Found in: &figloos, village fletchers' chests and the chests of snowy places&7. A rare find - open every chest."]
+			id: "6A5C831F0D68E28D"
+			rewards: [
+				{
+					id: "4DC788D72FF63F36"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "610441287D35365F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "491413B96D835AB1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fast on ice."
+			tasks: [
+				{
+					id: "0C5F420CAC1A9461"
+					item: "relics:ice_skates"
+					type: "item"
+				}
+			]
+			title: "Ice Skates"
+			x: 18.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["62C0007C57505190"]
+			description: ["&7Found in: &fvillages, mineshafts, strongholds, woodland mansions and pillager outposts&7. A rare find - open every chest."]
+			id: "051A922FC7685B89"
+			rewards: [
+				{
+					id: "33BC63B9ECC477E1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4F0A6AA1A2BF29C2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "086BD8DDB33267CE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fast on everything else."
+			tasks: [
+				{
+					id: "4FE532319A1535B7"
+					item: "relics:roller_skates"
+					type: "item"
+				}
+			]
+			title: "Roller Skates"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7AA4EFC8C11749AB"]
+			description: ["&7Found in: &fshipwrecks, ocean ruins and buried treasure&7. A rare find - open every chest."]
+			id: "12D0A22781B64ACE"
+			rewards: [
+				{
+					id: "7FDE86CED0B09841"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2F4A0DE890A7FD94"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "64E234DD8CC0C6AF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Swim like you mean it."
+			tasks: [
+				{
+					id: "7704F20B6634D94E"
+					item: "relics:amphibian_boot"
+					type: "item"
+				}
+			]
+			title: "Amphibian Boot"
+			x: 2.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["62C0007C57505190"]
+			description: ["&7Found in: &fvillage chests&7. A rare find - open every chest."]
+			id: "73B08C290FF11C03"
+			rewards: [
+				{
+					id: "415A1BF8099D29E9"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4A40BB964B202C5B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5FFB8EC39F8715A3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "More curio slots."
+			tasks: [
+				{
+					id: "501DC1170DABCDB6"
+					item: "relics:leather_belt"
+					type: "item"
+				}
+			]
+			title: "Leather Belt"
+			x: 3.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7AA4EFC8C11749AB"]
+			description: ["&7Found in: &fshipwrecks, ocean ruins and buried treasure&7. A rare find - open every chest."]
+			id: "5D72FFA965DCADE2"
+			rewards: [
+				{
+					id: "06505C5D0CC6FB95"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "78F43385C77CD500"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1E4BCFE5FEE6B0E9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Heavy and strong under water."
+			tasks: [
+				{
+					id: "530D912FF9424AE8"
+					item: "relics:drowned_belt"
+					type: "item"
+				}
+			]
+			title: "Drowned Belt"
+			x: 3.8d
+			y: -2.5d
+		}
+		{
+			dependencies: ["62C0007C57505190"]
+			description: ["&7Found in: &fvillage chests&7. A rare find - open every chest."]
+			id: "4271BF7866E414CB"
+			rewards: [
+				{
+					id: "6EBA2E70B086A7BF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "77A95F46F4A32363"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1678288BE615F5DE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Your pets hit harder."
+			tasks: [
+				{
+					id: "10D9B6C07F0BAFD0"
+					item: "relics:hunter_belt"
+					type: "item"
+				}
+			]
+			title: "Hunter Belt"
+			x: 5.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6D90AC87275659EA"]
+			description: ["&7Found in: &fruined portals, Nether fortresses and bastions&7. A rare find - open every chest."]
+			id: "320EC70844C4DEC1"
+			rewards: [
+				{
+					id: "22C024143A555C6B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "253CF2B569661F03"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3EBD72E0BC5E370C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Anger, weaponised."
+			tasks: [
+				{
+					id: "1AB0BFFB21868AF1"
+					item: "relics:rage_glove"
+					type: "item"
+				}
+			]
+			title: "Rage Glove"
+			x: 8.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1F3D6C402E9DED0B"]
+			description: ["&7Found in: &figloos, village fletchers' chests and the chests of snowy places&7. A rare find - open every chest."]
+			id: "1FC46BC8448650B6"
+			rewards: [
+				{
+					id: "63B3BB672F47F3C3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4FBD5C7ACA1639DA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "338B394B605E579C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Snowballs that matter."
+			tasks: [
+				{
+					id: "4D15524EA6954EA6"
+					item: "relics:wool_mitten"
+					type: "item"
+				}
+			]
+			title: "Wool Mitten"
+			x: 19.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5DE3E25372A7FA8C"]
+			description: ["&7Found in: &fEnd cities&7. A rare find - open every chest."]
+			id: "22CAD55C382EE416"
+			rewards: [
+				{
+					id: "15BA00E00980386F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "15E20C86C398103A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "130B4910CFF0BC04"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Swap places with what you look at."
+			tasks: [
+				{
+					id: "766B0D0D5BBD3EFD"
+					item: "relics:enders_hand"
+					type: "item"
+				}
+			]
+			title: "Ender's Hand"
+			x: 11.6d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6D90AC87275659EA"]
+			description: ["&7Found in: &fruined portals, Nether fortresses and bastions&7. A rare find - open every chest."]
+			id: "3E0F315AABB2612A"
+			rewards: [
+				{
+					id: "6A7F2105A812216A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7F009BA7EE2A178D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0AC01EFDB70D2016"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stores damage and throws it back."
+			tasks: [
+				{
+					id: "0526F69AD8C93092"
+					item: "relics:reflection_necklace"
+					type: "item"
+				}
+			]
+			title: "Reflection Necklace"
+			x: 10.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7AA4EFC8C11749AB"]
+			description: ["&7Found in: &fshipwrecks, ocean ruins and buried treasure&7. A rare find - open every chest."]
+			id: "082C6AB965D06F2E"
+			rewards: [
+				{
+					id: "4F7A0ADE1FF1BDAA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "09A981C56811E838"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "70C396741CD7341A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stings attackers."
+			tasks: [
+				{
+					id: "7E026C35BEC12D72"
+					item: "relics:jellyfish_necklace"
+					type: "item"
+				}
+			]
+			title: "Jellyfish Necklace"
+			x: 5.4d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1F3D6C402E9DED0B"]
+			description: ["&7Found in: &fdesert pyramids and other desert chests&7. A rare find - open every chest."]
+			id: "0B37B666D16C2DFD"
+			rewards: [
+				{
+					id: "0C65A1BA0555D5B6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "15E9B626CD294E77"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6769B656130C29FF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Steals healing from your enemies."
+			tasks: [
+				{
+					id: "03612A36E6BD2FEC"
+					item: "relics:holy_locket"
+					type: "item"
+				}
+			]
+			title: "Holy Locket"
+			x: 21.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6D90AC87275659EA"]
+			description: ["&7Found in: &fbastion remnants&7. A rare find - open every chest."]
+			id: "512B55A47FDD8F59"
+			rewards: [
+				{
+					id: "246ABF4FDA058C6B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5954514A9F141114"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "47E895C04349DDB9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Piglins become friends."
+			tasks: [
+				{
+					id: "0262B295C52324A6"
+					item: "relics:bastion_ring"
+					type: "item"
+				}
+			]
+			title: "Bastion Ring"
+			x: 11.8d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5DE3E25372A7FA8C"]
+			description: ["&7Found in: &fEnd cities&7. A rare find - open every chest."]
+			id: "3C774E95DE5AB352"
+			rewards: [
+				{
+					id: "59A4167AEBFDC808"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6DC1E40799D3F118"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "31B796E8EB75BC38"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Chorus fruit goes where you point."
+			tasks: [
+				{
+					id: "2C56BD3A2687C1AA"
+					item: "relics:chorus_inhibitor"
+					type: "item"
+				}
+			]
+			title: "Chorus Inhibitor"
+			x: 13.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["60F5027C7DFC9FC3"]
+			description: ["&7Found in: &fmineshafts, strongholds, woodland mansions and pillager outposts&7. A rare find - open every chest."]
+			id: "2F81C579BA8E1CA6"
+			rewards: [
+				{
+					id: "20ECE8CBBB6F8E53"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "738160D42601A624"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "085B98281EA71132"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fast and unseen in the dark."
+			tasks: [
+				{
+					id: "37B3009A2EE93498"
+					item: "relics:midnight_robe"
+					type: "item"
+				}
+			]
+			title: "Midnight Robe"
+			x: 16.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["62C0007C57505190"]
+			description: ["&7Found in: &fvillage chests&7. A rare find - open every chest."]
+			id: "382795B3D058AB46"
+			rewards: [
+				{
+					id: "047464973BFDAF97"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4DD75DBB8C7B4FBC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "49FBC9C3B919DACB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Holds arrows and fires them faster."
+			tasks: [
+				{
+					id: "3484520F746329F9"
+					item: "relics:arrow_quiver"
+					type: "item"
+				}
+			]
+			title: "Arrow Quiver"
+			x: 6.8d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5DE3E25372A7FA8C"]
+			description: ["&7Found in: &fEnd cities&7. A rare find - open every chest."]
+			id: "14DCE38A39761E04"
+			rewards: [
+				{
+					id: "739F775A9985719B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "54895F9F67681CD3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6BBEAFEC92A8817D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fuelled flight."
+			tasks: [
+				{
+					id: "5EB6613F1326C951"
+					item: "relics:elytra_booster"
+					type: "item"
+				}
+			]
+			title: "Elytra Booster"
+			x: 14.8d
+			y: 2.5d
+		}
+		{
+			dependencies: ["60F5027C7DFC9FC3"]
+			description: ["&7Found in: &fmineshafts, strongholds, woodland mansions and pillager outposts&7. A rare find - open every chest."]
+			id: "0B8AE1ADC35AFE83"
+			rewards: [
+				{
+					id: "5E433DB2C40F1102"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "724C251050CE2168"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "645BC78187CA5988"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Home, from anywhere."
+			tasks: [
+				{
+					id: "545945E68D1D568C"
+					item: "relics:magic_mirror"
+					type: "item"
+				}
+			]
+			title: "Magic Mirror"
+			x: 18.2d
+			y: -2.5d
+		}
+		{
+			dependencies: ["62C0007C57505190"]
+			description: ["&7Found in: &fvillages, mineshafts, strongholds, woodland mansions and pillager outposts&7. A rare find - open every chest."]
+			id: "342170DC6C8EFE39"
+			rewards: [
+				{
+					id: "49872455CBCCDADA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "165485900758872F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "38B37AE6642C1F6B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Your horse, in your pocket."
+			tasks: [
+				{
+					id: "75BED0CA2AF25310"
+					item: "relics:horse_flute"
+					type: "item"
+				}
+			]
+			title: "Horse Flute"
+			x: 8.4d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6D90AC87275659EA"]
+			description: ["&7Found in: &fruined portals, Nether fortresses and bastions&7. A rare find - open every chest."]
+			id: "239AFEBCD680B44F"
+			rewards: [
+				{
+					id: "2D1317B2854AB917"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0E06A0705B3EFE69"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4B332F30B6932CB0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Throw a portal, walk through."
+			tasks: [
+				{
+					id: "769FAD54720ED2F3"
+					item: "relics:space_dissector"
+					type: "item"
+				}
+			]
+			title: "Space Dissector"
+			x: 13.4d
+			y: -2.5d
+		}
+		{
+			dependencies: ["60F5027C7DFC9FC3"]
+			description: ["&7Found in: &fmineshafts, strongholds, woodland mansions and pillager outposts&7. A rare find - open every chest."]
+			id: "5F2114A006762725"
+			rewards: [
+				{
+					id: "0D5E9479577E66D4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "264A2A1B2399B4C1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0D915F940A4A5956"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Rewind your position."
+			tasks: [
+				{
+					id: "34682295AE11779D"
+					item: "relics:spatial_sign"
+					type: "item"
+				}
+			]
+			title: "Spatial Sign"
+			x: 19.8d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5DE3E25372A7FA8C"]
+			description: ["&7Found in: &fEnd cities and ancient cities&7. A rare find - open every chest."]
+			id: "3132DB7AF11A8543"
+			rewards: [
+				{
+					id: "7D7EA5D7473990B1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6CA16FBF9ABA011C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0671697A50B645D2"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bounces between enemies."
+			tasks: [
+				{
+					id: "3D9033E6098A4309"
+					item: "relics:shadow_glaive"
+					type: "item"
+				}
+			]
+			title: "Shadow Glaive"
+			x: 16.4d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6D90AC87275659EA"]
+			description: ["&7Found in: &fruined portals, Nether fortresses and bastions&7. A rare find - open every chest."]
+			id: "57F5BE1FC834BE52"
+			rewards: [
+				{
+					id: "22D4D090B3C569DE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "245FFFCE1FA831D1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3F5C64BAAC4D1580"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hover on fire."
+			tasks: [
+				{
+					id: "326E94D48F11D929"
+					item: "relics:blazing_flask"
+					type: "item"
+				}
+			]
+			title: "Blazing Flask"
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1F3D6C402E9DED0B"]
+			description: ["&7Found in: &fjungle temples&7. A rare find - open every chest."]
+			id: "02D2DFBC72B74EC9"
+			rewards: [
+				{
+					id: "53F488A332B59174"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "41F616CFEA40E259"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "312E19793449CCB1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Poison clouds."
+			tasks: [
+				{
+					id: "6E0A210705C646E0"
+					item: "relics:spore_sack"
+					type: "item"
+				}
+			]
+			title: "Spore Sack"
+			x: 22.8d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1F3D6C402E9DED0B"]
+			description: ["&7Found in: &figloos, village fletchers' chests and the chests of snowy places&7. A rare find - open every chest."]
+			id: "0F9BC07E1183D9ED"
+			rewards: [
+				{
+					id: "5AA44312EC5A7CBB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "247CC2CA3241B136"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "078B8845DA657EA2"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Slam the ground."
+			tasks: [
+				{
+					id: "3A2CF14CCC04A90D"
+					item: "relics:ice_breaker"
+					type: "item"
+				}
+			]
+			title: "Ice Breaker"
+			x: 24.4d
+			y: 2.5d
+		}
+		{
+			dependencies: ["62C0007C57505190"]
+			description: ["&7Found in: &fvillage chests&7. A rare find - open every chest."]
+			id: "5CBD276045480A9E"
+			rewards: [
+				{
+					id: "3CBC2AD9C955D452"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7DE1CD847C7C75B6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2EAADB91A02D6509"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Dinner, for ever."
+			tasks: [
+				{
+					id: "542B62FD80EA5888"
+					item: "relics:infinity_ham"
+					type: "item"
+				}
+			]
+			title: "Infinity Ham"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3DDDD7BD12CE1E6E"
+				"7BC02ACE6CB700F7"
+				"6A5C831F0D68E28D"
+				"051A922FC7685B89"
+				"12D0A22781B64ACE"
+				"73B08C290FF11C03"
+				"5D72FFA965DCADE2"
+				"4271BF7866E414CB"
+				"320EC70844C4DEC1"
+				"1FC46BC8448650B6"
+				"22CAD55C382EE416"
+				"3E0F315AABB2612A"
+				"082C6AB965D06F2E"
+				"0B37B666D16C2DFD"
+				"512B55A47FDD8F59"
+				"3C774E95DE5AB352"
+				"2F81C579BA8E1CA6"
+				"382795B3D058AB46"
+				"14DCE38A39761E04"
+				"0B8AE1ADC35AFE83"
+				"342170DC6C8EFE39"
+				"239AFEBCD680B44F"
+				"5F2114A006762725"
+				"3132DB7AF11A8543"
+				"57F5BE1FC834BE52"
+				"02D2DFBC72B74EC9"
+				"0F9BC07E1183D9ED"
+				"5CBD276045480A9E"
+			]
+			description: ["Find any &aten&f relics."]
+			hide_dependency_lines: true
+			id: "00EB6F025774E3E6"
+			min_required_dependencies: 10
+			rewards: [
+				{
+					id: "5D6434C5C2EF3371"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 5
+					id: "18A3DAA1A1EFA62C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12E5D97AEBCB711C"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "02E77BF5216832BC"
+					table_id: 6140479905622921234L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4A54082AFC00257A"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Any ten"
+			tasks: [
+				{
+					id: "1B19E647BC1CDE1B"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&e&lCurator"
+			x: 27.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CE95385238A21CE"]
+			description: ["The relics found in these places. Any order; each ticks itself off when you hold it."]
+			icon: "relics:aqua_walker"
+			id: "7AA4EFC8C11749AB"
+			rewards: [
+				{
+					id: "715D3C27B1E01517"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2827376BF8C02941"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "5A5794A9F33970B3"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7By the Sea"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7AA4EFC8C11749AB"]
+			description: ["The relics found in these places. Any order; each ticks itself off when you hold it."]
+			icon: "relics:leather_belt"
+			id: "62C0007C57505190"
+			rewards: [
+				{
+					id: "3906BF54093DE88F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7C59BD99AB25A995"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "4C855997295C64D1"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7In Villages"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62C0007C57505190"]
+			description: ["The relics found in these places. Any order; each ticks itself off when you hold it."]
+			icon: "relics:magma_walker"
+			id: "6D90AC87275659EA"
+			rewards: [
+				{
+					id: "33264DDFDE72B73C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1AC9A860BBF968AE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "502D03384AD292DE"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7In the Nether"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D90AC87275659EA"]
+			description: ["The relics found in these places. Any order; each ticks itself off when you hold it."]
+			icon: "relics:chorus_inhibitor"
+			id: "5DE3E25372A7FA8C"
+			rewards: [
+				{
+					id: "1D56718BE32810A4"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "24C710C213787945"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "666CE1D3A5880340"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7In the End"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DE3E25372A7FA8C"]
+			description: ["The relics found in these places. Any order; each ticks itself off when you hold it."]
+			icon: "relics:magic_mirror"
+			id: "60F5027C7DFC9FC3"
+			rewards: [
+				{
+					id: "79A748578DBF6912"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0288EDA6B801EADB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "38A656ACB4401539"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Under and Behind"
+			x: 18.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60F5027C7DFC9FC3"]
+			description: ["The relics found in these places. Any order; each ticks itself off when you hold it."]
+			icon: "relics:ice_skates"
+			id: "1F3D6C402E9DED0B"
+			rewards: [
+				{
+					id: "5B3456C2DA98A367"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "112C2E161DD86171"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "796422D834A6ABBB"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7Snow, Sand and Jungle"
+			x: 21.2d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Strange things from chests that get better with use"]
+	title: "&eRelics \\& Curios"
+}

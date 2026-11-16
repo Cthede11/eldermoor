@@ -1,0 +1,499 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sparks"
+	group: "02AD8609A8FE6EE4"
+	icon: "createaddition:alternator"
+	id: "3CFF2683E646FA87"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["479D4A1C7A61B97C"]
+			description: [
+				"Eldermoor's tech tree has four pillars, and you can tackle them in any order:"
+				""
+				"&aCreate&f - rotation, belts and contraptions (see the &aCreate&f chapter)."
+				"&6Immersive Engineering&f - chunky multiblocks, wires and diesel."
+				"&bMekanism&f - ore multiplication, chemicals, reactors and the MekaSuit."
+				"&dApplied Energistics 2&f - digital storage and auto-crafting."
+				"{@pagebreak}"
+				"Almost all of it runs on &cForge Energy (FE)&f. Every mod's cables and machines accept each other's power, so mix freely."
+				""
+				"This short chapter shows how to turn Create's rotation into FE - the cheapest way to power your first machines."
+			]
+			hide_until_deps_complete: true
+			id: "713BD78E09C09942"
+			rewards: [
+				{
+					id: "1E9FD74AB3204EFD"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "4D266AEB9D83C630"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "2CC70E2A97FBD065"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6DE9ADF03D9534EA"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "The Mechanical path begins"
+			tasks: [
+				{
+					id: "6D78345337803947"
+					title: "Let there be power"
+					type: "checkmark"
+				}
+			]
+			title: "&6The Engineer's Path"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["713BD78E09C09942"]
+			description: ["Rolls ingots into rods and plates into wire using rotation."]
+			id: "6C37192B43DDBF11"
+			rewards: [
+				{
+					id: "30C2F5773120F8E0"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 8
+					id: "658AB69CF58CDBD9"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2D84490D60F3A8CD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Rods and wire"
+			tasks: [
+				{
+					id: "1D22BF9C73D250F1"
+					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+			]
+			title: "The Rolling Mill"
+			x: 1.85d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6C37192B43DDBF11"]
+			description: ["Wind copper wire onto a spool to make connections between Connectors."]
+			id: "2A1E17C19C3CC4C0"
+			rewards: [
+				{
+					id: "40CE020C321F1FB8"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 16
+					id: "7418E26306BC93E6"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5C4138117F623F88"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "0FC1FCA94A596705"
+					item: "immersiveengineering:wire_copper"
+					type: "item"
+				}
+				{
+					id: "0CCA52BE20272BC1"
+					item: "createaddition:copper_spool"
+					type: "item"
+				}
+			]
+			title: "Copper Wire"
+			x: 3.6d
+			y: 1.5d
+		}
+		{
+			dependencies: ["713BD78E09C09942"]
+			description: [
+				"Feed it rotation, get &cFE&f. Faster rotation = more power. A water wheel or windmill bearing is plenty to start."
+				"&7Made at: &fMechanical Crafters &7from &fCapacitor, Iron Plate x6, Iron Rod, Copper Spool x3, Andesite Alloy"
+			]
+			id: "1F52F8F512E5A598"
+			rewards: [
+				{
+					id: "76DCEAF523559827"
+					type: "xp"
+					xp: 80
+				}
+				{
+					exclude_from_claim_all: true
+					id: "251B58C7B32268D5"
+					table_id: 4935671014145890216L
+					type: "loot"
+				}
+				{
+					count: 10
+					id: "5970DEF57EBA3AC4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "66A65823AAD8F0C7"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Rotation -> FE"
+			tasks: [
+				{
+					id: "11AE39003ED3D5E2"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+			]
+			title: "The Alternator"
+			x: 1.85d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1F52F8F512E5A598"
+				"2A1E17C19C3CC4C0"
+			]
+			description: ["Place a Connector on the alternator and another on your machine, then right-click both with a wire spool. Right-click a connector with a wrench to switch it between push and pull."]
+			id: "172E41A82B0BAA03"
+			rewards: [
+				{
+					id: "15BFB8EAD0FC0A8B"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 2
+					id: "2604469E6E61A67C"
+					item: "createaddition:copper_spool"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7914A455B0656D5D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "6785802AD98A06A5"
+					item: "createaddition:connector"
+					type: "item"
+				}
+			]
+			title: "Connectors"
+			x: 5.35d
+			y: 1.5d
+		}
+		{
+			dependencies: ["172E41A82B0BAA03"]
+			description: ["A stackable battery multiblock. Charge it while your windmill spins, drain it when it doesn't."]
+			id: "46DEFA49048421CB"
+			rewards: [
+				{
+					id: "6A31CF26824C856C"
+					type: "xp"
+					xp: 80
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1AB925097088DE88"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "519B1A4EA3E9D116"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Store your power"
+			tasks: [
+				{
+					id: "6EDF446D584C7567"
+					item: "createaddition:modular_accumulator"
+					type: "item"
+				}
+			]
+			title: "Modular Accumulator"
+			x: 7.1d
+			y: 3.0d
+		}
+		{
+			dependencies: ["172E41A82B0BAA03"]
+			description: [
+				"The reverse trick: FE in, rotation out - with speed you can set in its GUI. Power your Create factory from a reactor!"
+				"&7Made at: &fMechanical Crafters &7from &fAndesite Alloy, Capacitor, Brass Plate x6, Iron Rod, Copper Spool x3"
+			]
+			id: "2FEF095F42E49ABF"
+			rewards: [
+				{
+					id: "5C7455F1F1C1BC3D"
+					type: "xp"
+					xp: 80
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2DC486C4B766CC0E"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "46275725E11B98EB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "FE -> rotation"
+			tasks: [
+				{
+					id: "66988A129401EDA6"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+			]
+			title: "The Electric Motor"
+			x: 7.1d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"46DEFA49048421CB"
+				"2FEF095F42E49ABF"
+			]
+			description: [
+				"Charges items passing below it on a belt or depot. Also quite rude to anything standing nearby."
+				"&7Made at: &fMechanical Crafters &7from &fAndesite Alloy, Capacitor x2, Brass Plate x2, Brass Casing, Copper Spool x3 and 1 more"
+			]
+			hide_dependency_lines: true
+			id: "0F4D77E1A93568F7"
+			optional: true
+			rewards: [
+				{
+					id: "753B9560FD601E9D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6FEB43B5FE2807C7"
+					table_id: 3964824304375825551L
+					type: "loot"
+				}
+				{
+					count: 4
+					id: "12780552806256F7"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3D8AADA7E4D10F52"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Zap"
+			tasks: [
+				{
+					id: "292C5116A816FF0A"
+					item: "createaddition:tesla_coil"
+					type: "item"
+				}
+			]
+			title: "Tesla Coil"
+			x: 8.95d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"46DEFA49048421CB"
+				"2FEF095F42E49ABF"
+			]
+			description: ["You can make and store FE. Pick your next pillar: &6Immersive Engineering&f, &bMekanism&f or &dApplied Energistics 2&f."]
+			id: "473E3C788E6EAAC2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "14EB8B4D0561413E"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					id: "70FE1E8EE2E4A377"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 5
+					id: "712F1B8C02B71C41"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "50AF20D003E741E7"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1EF86E0436B80FCE"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&6Power to the People"
+			x: 8.95d
+			y: 4.75d
+		}
+		{
+			dependencies: ["172E41A82B0BAA03"]
+			description: ["Placed between connectors, it lets power through only when it gets a redstone signal."]
+			id: "68455B9439EF8740"
+			optional: true
+			rewards: [
+				{
+					id: "3511D1EDD1C03C3E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7338AE8230ACBB01"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "60AFDF4F8DE99B8F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A switch for power"
+			tasks: [
+				{
+					id: "65986AE2724FFBF6"
+					item: "createaddition:redstone_relay"
+					type: "item"
+				}
+			]
+			title: "The Redstone Relay"
+			x: 7.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C37192B43DDBF11"]
+			description: ["Use it on a Blaze Burner and the burner can take liquid fuel through a pipe instead of solid fuel."]
+			id: "7995DBD06CE3CEB0"
+			optional: true
+			rewards: [
+				{
+					id: "4C83C7E9FDE2DEBF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "65DAE28AFAB4C287"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "29854F964F3C8752"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Liquid fuel for a blaze"
+			tasks: [
+				{
+					id: "7239D884F6B12136"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
+			title: "The Straw"
+			x: 3.6d
+			y: 3.0d
+		}
+	]
+	subtitle: ["Turn rotation into Forge Energy and back again"]
+	title: "&eSparks: Create Meets Electricity"
+}

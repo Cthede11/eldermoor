@@ -1,0 +1,637 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "otherside"
+	group: "2082B1037B9195D1"
+	icon: "deeperdarker:heart_of_the_deep"
+	id: "76613C934F8F1BCB"
+	images: [ ]
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2AEEBC98551617C9"]
+			description: [
+				"The Ancient Cities were built around a portal frame that never worked. The Warden's heart makes it work."
+				""
+				"On the other side: a whole dimension of sculk, quiet creatures that hunt by sound, and the metal the Warden's armour is made of."
+				""
+				"&7Sneak. Wool muffles footsteps. The Stalker can hear you think."
+			]
+			hide_until_deps_complete: true
+			id: "5004CD1670920A2A"
+			rewards: [
+				{
+					id: "3B114BAE9B5E0637"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 2
+					id: "6F06A5533B243A82"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "298E8C6E5A02998B"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3B7C4872281897ED"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2D5D117E3B1C9EA7"
+					title: "Listen"
+					type: "checkmark"
+				}
+			]
+			title: "&3&lBelow the Bedrock"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5004CD1670920A2A"]
+			id: "794FE0172D244AD8"
+			rewards: [
+				{
+					id: "70D79523B48296E2"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "34139EC869EBCAC6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "0148387EF79A1B25"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find an Ancient City"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/find_ancient_city"
+					criterion: ""
+					icon: "minecraft:deepslate_tiles"
+					id: "2935711D9CFC0857"
+					title: "A Metropolis of Restless Souls"
+					type: "advancement"
+				}
+			]
+			title: "A Metropolis of Restless Souls"
+			x: 2.1d
+			y: -1.75d
+		}
+		{
+			dependencies: ["794FE0172D244AD8"]
+			id: "541F4CDA754F126D"
+			rewards: [
+				{
+					id: "7A16425FBE33BF9B"
+					type: "xp"
+					xp: 2500
+				}
+				{
+					count: 5
+					id: "00A91A935FD9D797"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5800BE315666326E"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "4E4546D0E752B556"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Slay the Warden and take its heart"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/kill_warden"
+					criterion: ""
+					icon: "deeperdarker:heart_of_the_deep"
+					id: "554A91AD6EAD3E25"
+					title: "Phantom Thief"
+					type: "advancement"
+				}
+			]
+			title: "Phantom Thief"
+			x: 3.95d
+			y: -1.75d
+		}
+		{
+			dependencies: ["541F4CDA754F126D"]
+			description: ["Reinforced echo shards light the portal frame."]
+			id: "56DF348B170AD664"
+			rewards: [
+				{
+					id: "2B9B74FD8AC6D298"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "3C3BDB39BA867B70"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1B5D80E565E14E9E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Reinforce an Echo Shard"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/obtain_reinforced_echo_shard"
+					criterion: ""
+					icon: "deeperdarker:reinforced_echo_shard"
+					id: "6E126004A86BCEF5"
+					title: "Sculk Engineer"
+					type: "advancement"
+				}
+			]
+			title: "Sculk Engineer"
+			x: 6.05d
+			y: -1.75d
+		}
+		{
+			dependencies: ["56DF348B170AD664"]
+			id: "3C534E9A0AD22E40"
+			rewards: [
+				{
+					id: "03162B84E17BAF9D"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "56D4673F87C82525"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "65A6E9D4D7E90D82"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "61C84AD8027C3A06"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Deep below the bedrock, the darkness awaits"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/enter_otherside"
+					criterion: ""
+					icon: "minecraft:reinforced_deepslate"
+					id: "054F1DB8B48EBD8A"
+					title: "Below the Bedrock"
+					type: "advancement"
+				}
+			]
+			title: "Through the Frame"
+			x: 8.15d
+			y: -1.75d
+		}
+		{
+			dependencies: ["3C534E9A0AD22E40"]
+			id: "6896CCF072C7611F"
+			rewards: [
+				{
+					id: "14274207F9A42E7C"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "3A648B0F3B7B1471"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3FBBAC1E5E25E86D"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Explore all Otherside biomes"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/explore_otherside"
+					criterion: ""
+					icon: "deeperdarker:warden_boots"
+					id: "02D567CA034E4B58"
+					title: "Echolocation"
+					type: "advancement"
+				}
+			]
+			title: "Echolocation"
+			x: 10.25d
+			y: -1.75d
+		}
+		{
+			dependencies: ["5004CD1670920A2A"]
+			id: "0CB02D0F2801BE0E"
+			rewards: [
+				{
+					id: "00F8CC03992EB2EA"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "7337BB343921F4C9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2BEC12290F4877BC"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Explore the depths for a temple"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/find_ancient_temple"
+					criterion: ""
+					icon: "deeperdarker:cut_sculk_stone"
+					id: "4042B95327A418DD"
+					title: "Abyssal Descent"
+					type: "advancement"
+				}
+			]
+			title: "Abyssal Descent"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CB02D0F2801BE0E"]
+			id: "13EF4460858AB84D"
+			rewards: [
+				{
+					id: "77E513FE4F50AFC1"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "73DFDB97E568C979"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1673892828099BE0"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Kill one of every Sculk monster"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/kill_all_sculk_mobs"
+					criterion: ""
+					icon: "deeperdarker:warden_sword"
+					id: "3E0A3446C6F5E5BC"
+					title: "Sculk Slayer"
+					type: "advancement"
+				}
+			]
+			title: "Sculk Slayer"
+			x: 3.95d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13EF4460858AB84D"]
+			description: ["It shoots the Warden's sonic boom."]
+			id: "3152AC6CDA3BA8D9"
+			rewards: [
+				{
+					id: "684BE148ED2F02E0"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 3
+					id: "79B372F4E6E71C0C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03F6683247236026"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "67624E7B8FB4E8CE"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Acquire a Sonorous Staff"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/obtain_sonorous_staff"
+					criterion: ""
+					icon: "deeperdarker:sonorous_staff"
+					id: "6AAA19E034650B4E"
+					title: "Noise Complaint"
+					type: "advancement"
+				}
+			]
+			title: "Noise Complaint"
+			x: 6.05d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3152AC6CDA3BA8D9"]
+			description: ["Links to a chest and opens it from anywhere."]
+			id: "37E1766592E12292"
+			rewards: [
+				{
+					id: "4419381B2618BD86"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "3C429104619F4DE6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "410F02B02E384D6B"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire a Sculk Transmitter"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/obtain_sculk_transmitter"
+					criterion: ""
+					icon: "deeperdarker:sculk_transmitter"
+					id: "017A494CB4208A33"
+					title: "Remote Storage"
+					type: "advancement"
+				}
+			]
+			title: "Remote Storage"
+			x: 8.15d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5004CD1670920A2A"]
+			description: ["&7Dropped by: &fSludge"]
+			id: "6B30BD1EAC29B103"
+			rewards: [
+				{
+					id: "4EDFECF4C3E35ED9"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "4CE627028F0529FE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "265EB7989774ED71"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "A metal that grows in the Otherside's caves."
+			tasks: [
+				{
+					count: 8L
+					id: "5CF387D89816FDBE"
+					item: "deeperdarker:resonarium"
+					type: "item"
+				}
+			]
+			title: "Resonarium"
+			x: 2.1d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B30BD1EAC29B103"]
+			description: ["&7Made at: &fSmithing Table &7from &fResonarium Plate, Iron Chestplate"]
+			id: "4F90C2B5D74DED0C"
+			rewards: [
+				{
+					id: "689D7F944E7C03E1"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 12
+					id: "68DC6E3C034B0347"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "712B5450C354BCF4"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Light armour between diamond and netherite."
+			tasks: [
+				{
+					id: "7652BED1551BBCFD"
+					item: "deeperdarker:resonarium_chestplate"
+					type: "item"
+				}
+			]
+			title: "Resonant Armour"
+			x: 3.95d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4F90C2B5D74DED0C"]
+			description: [
+				"Warden armour: above netherite."
+				"&7Made at: &fSmithing Table &7from &fReinforced Echo Shard, Netherite Helmet, Warden Upgrade Smithing Template"
+			]
+			id: "1A2ED42EDB65DC78"
+			rewards: [
+				{
+					id: "5962BE9916C6C616"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "7C50EE11A6D0651F"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "669FBBE9EA5B70F8"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A50EA7654BD32FD"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "611DDD6AE6F20852"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Protect yourself with a full set of Warden Armor"
+			tasks: [
+				{
+					advancement: "deeperdarker:main/warden_armor"
+					criterion: ""
+					icon: "deeperdarker:warden_chestplate"
+					id: "3EFAEB2F4080B96B"
+					title: "Cover Me with Sculk"
+					type: "advancement"
+				}
+			]
+			title: "Cover Me with Sculk"
+			x: 10.25d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6896CCF072C7611F"
+				"3152AC6CDA3BA8D9"
+				"1A2ED42EDB65DC78"
+			]
+			description: ["Every biome walked, the sonic boom in your hand and the Warden's armour on your back."]
+			hide_dependency_lines: true
+			id: "60D08BDECD2BA84B"
+			rewards: [
+				{
+					id: "5711D7F673F15111"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "25120AF3BAC58B65"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4ECE9F8A460948D5"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "51A3D362E715930A"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "553E9A8FBBB2C64B"
+					title: "Silence"
+					type: "checkmark"
+				}
+			]
+			title: "&3&lVoice of the Deep"
+			x: 12.6d
+			y: -1.75d
+		}
+	]
+	subtitle: ["Below the bedrock, where the sculk comes from"]
+	title: "&3The Otherside"
+}

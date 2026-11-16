@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 54513584,
+    "separation": 46,
+    "spacing": 103,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "iss_magicfromtheeast:taoist_house",
+      "weight": 1
+    }
+  ]
+}

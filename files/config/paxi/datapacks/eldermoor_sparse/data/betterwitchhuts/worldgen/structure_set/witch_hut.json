@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 79297177,
+    "separation": 18,
+    "spacing": 69,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "betterwitchhuts:witch_hut",
+      "weight": 1
+    }
+  ]
+}

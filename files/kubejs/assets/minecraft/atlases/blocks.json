@@ -1,0 +1,514 @@
+{
+ "sources": [
+  {
+   "type": "minecraft:filter",
+   "pattern": {
+    "namespace": "^(?!(nyfsquiver)$).*",
+    "path": "^gui/(?!modifiers/|tinker_pattern/|slots/).*"
+   }
+  },
+  {
+   "type": "minecraft:filter",
+   "pattern": {
+    "namespace": "^(?!(nyfsquiver)$).*",
+    "path": "^back/.*"
+   }
+  },
+  {
+   "type": "minecraft:filter",
+   "pattern": {
+    "namespace": "^(?!(mna)$).*",
+    "path": "^entity/(?!caps/|conduit/).*"
+   }
+  },
+  {
+   "type": "minecraft:filter",
+   "pattern": {
+    "namespace": "^(?!(avaritia)$).*",
+    "path": "^misc/.*"
+   }
+  },
+  {
+   "type": "minecraft:filter",
+   "pattern": {
+    "namespace": "^(?!(avaritia)$).*",
+    "path": "^mask/.*"
+   }
+  },
+  {
+   "type": "minecraft:filter",
+   "pattern": {
+    "namespace": "^(?!(avaritia|bloodmagic)$).*",
+    "path": "^models/.*"
+   }
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "aquaculture:entity/tileentity/neptunes_bounty"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "ars_additions:gui/button"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "ars_nouveau:entity/carbuncle_shades"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "artifacts:entity/mimic"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "artifacts:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "betteradvancements:gui/tabs"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "block_factorys_bosses:entity/crate"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "blockui:gui/button"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "blue_skies:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:entity/pocket_computer_advanced"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:entity/pocket_computer_colour"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:entity/pocket_computer_frame"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:entity/pocket_computer_light"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:entity/pocket_computer_normal"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:entity/printout"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:gui/sprites/turtle_advanced_selected_slot"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:gui/sprites/turtle_normal_selected_slot"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:gui/turtle_upgrade_left"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "computercraft:gui/turtle_upgrade_right"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "configured:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "create:entity/blueprint_large"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "create:entity/blueprint_medium"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "create:entity/blueprint_small"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "create:entity/coupling"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "create:entity/logistics_hat"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "create:entity/train_hat"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "create:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "createaddition:entity/liquid_hat"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "createaddition:entity/soda_can"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "createdieselgenerators:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "distanthorizons:gui/button"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "draconicevolution:gui/hud"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "eidolon:entity/enchanter_book"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "eidolon:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "embers:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "enchantmentmachine:entity/enchanting_table_book"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "endermanoverhaul:entity/badlands/badlands_enderman"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "enigmaticaddons:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "farmersdelight:entity/signs/canvas"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "farmersdelight:entity/signs/hanging/canvas"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "fdbosses:gui/star/singlestar"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "feathers:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "forbidden_arcanus:entity/obsidian_skull_shield"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "forbidden_arcanus:gui/hud"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "goety:entity/haunted_broom"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "immersivepetroleum:models/lubricator"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "immersivepetroleum:models/pumpjack_armature"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "inventorypets:entity/enderman/enderman"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "inventorypets:entity/enderman/enderman_eyes"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "irons_spellbooks:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "jeresources:gui/tabs"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanism:entity/armor/blank"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanism:entity/armor/mekasuit_armor_body"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanism:entity/armor/mekasuit_armor_exoskeleton"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanism:entity/armor/mekasuit_armor_helmet"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanism:entity/armor/mekasuit_armor_modules"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanism:entity/armor/mekasuit_elytra"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanism:entity/armor/mekasuit_gravitational_modulator"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanism:entity/armor/mekasuit_player"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanism:entity/armor/mekatool"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanismadditions:entity/balloon"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mekanismadditions:entity/balloon_string"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecolonies:gui/builderhut/builder_paper"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecolonies:gui/builderhut/builder_paper_sketch_block"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/armorstand/wood"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/banner_base"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/bell/bell_body"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/chest/normal"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/chicken"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/decorated_pot/decorated_pot_side"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/enchanting_table_book"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/end_portal"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/enderman/enderman"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/enderman/enderman_eyes"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/horse/horse_gray"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/piglin/zombified_piglin"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/player/wide/steve"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/shield/base"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:entity/slime/slime"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:misc/underwater"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "minecraft:models/armor/leather_layer_1"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "mowziesmobs:entity/grottol"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "pneumaticcraft:entity/drone/collector_drone"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "pneumaticcraft:entity/drone/default_drone"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "pneumaticcraft:entity/drone/guard_drone"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "pneumaticcraft:entity/drone/harvesting_drone"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "pneumaticcraft:entity/drone/logistics_drone"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/conductor"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/steamcart/loco-back"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/steamcart/loco-front-active"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/steamcart/loco-front-inactive"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/steamcart/loco-powertrain-side"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/steamcart/loco-powertrain-top"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/steamcart/loco-tank"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/steamcart/loco-tank-top"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/steamcart/loco-vent-side"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:entity/steamcart/loco-vent-top"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "railways:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedcore:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedstorage:entity/shulker_box/base_tier"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedstorage:entity/shulker_box/copper_tier"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedstorage:entity/shulker_box/diamond_tier"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedstorage:entity/shulker_box/gold_tier"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedstorage:entity/shulker_box/iron_tier"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedstorage:entity/shulker_box/netherite_tier"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedstorage:entity/shulker_box/no_tint"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedstorage:entity/shulker_box/tintable_accent"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "sophisticatedstorage:entity/shulker_box/tintable_main"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "spell_engine:entity/spell_binding_book"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "supermartijn642corelib:gui/slot"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "supplementaries:entity/enderman_head"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "supplementaries:entity/enderman_head_eyes"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "supplementaries:gui/slot"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "tconstruct:gui/icons"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "tetra:gui/hud"
+  },
+  {
+   "type": "minecraft:single",
+   "resource": "trashslot:gui/slot"
+  }
+ ]
+}

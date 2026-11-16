@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "exclusion_zones": [],
+    "salt": 35122018,
+    "separation": 28,
+    "spacing": 105,
+    "type": "valhelsia_structures:valhelsia_random_spread"
+  },
+  "structures": [
+    {
+      "structure": "valhelsia_structures:big_tree",
+      "weight": 1
+    }
+  ]
+}

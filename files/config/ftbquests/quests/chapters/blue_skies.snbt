@@ -1,0 +1,921 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "blue_skies"
+	group: "2082B1037B9195D1"
+	icon: "blue_skies:everbright_portal"
+	id: "239F4FC23F11BE5C"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["091DDF084FF0B8B5"]
+			description: [
+				"Blue Skies adds two dimensions: the frozen, sunlit &bEverbright&f and the warm, twilit &6Everdawn&f."
+				""
+				"Find a &eGatekeeper's house&f in the Overworld (snowy or mountain biomes are a good bet). Trade with him for a &6Zeal Lighter&f and light the portal in his cellar."
+				"{@pagebreak}"
+				"&cDimension locks:&f"
+				"&bEverbright&f opens once you have obtained &eAncient Debris&f."
+				"&6Everdawn&f opens once you have &esummoned the Wither&f."
+				""
+				"Your vanilla and modded gear is heavily weakened there - you are meant to gear up from the dimension itself."
+			]
+			hide_until_deps_complete: true
+			id: "5E49212A2D433A91"
+			rewards: [
+				{
+					id: "20CB009781B95814"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "49D73686F1261F93"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "4D4E542A8359FC48"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "An Explorer's side-path"
+			tasks: [
+				{
+					id: "692FF054B3378AF5"
+					title: "I'll find him"
+					type: "checkmark"
+				}
+			]
+			title: "&6The Gatekeeper"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E49212A2D433A91"]
+			description: ["Eternal day over snowfields and glowing forests."]
+			id: "138EEF6832AAE528"
+			rewards: [
+				{
+					id: "6B33C9AB72E50AE7"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "1C1173839CF7BE36"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3AE386E95C438A0B"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6DE6DCD047B28108"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Requires: Ancient Debris"
+			tasks: [
+				{
+					advancement: "blue_skies:everbright/enter"
+					criterion: ""
+					icon: "blue_skies:everbright_portal"
+					id: "161A3F2081BAF464"
+					title: "Enter the Everbright"
+					type: "advancement"
+				}
+			]
+			title: "&bEverbright"
+			x: 1.98d
+			y: 0.0d
+		}
+		{
+			dependencies: ["138EEF6832AAE528"]
+			description: ["Start over: wood tools, then stone, then the local ores. Bluebright and Starlit are the common trees."]
+			id: "27ED48B2CF2C1728"
+			rewards: [
+				{
+					id: "7244A0763FC239DD"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "4108C4AB7BA8012A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "75ADEBCF1530AEE3"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "blue_skies:everbright/get_wood"
+					criterion: ""
+					icon: "blue_skies:bluebright_log"
+					id: "4EAA0ECCF5F26158"
+					title: "Get Everbright wood"
+					type: "advancement"
+				}
+			]
+			title: "Local Lumber"
+			x: 3.73d
+			y: -1.5d
+		}
+		{
+			dependencies: ["27ED48B2CF2C1728"]
+			description: ["Blue Skies' upgrade station - spend ore to add durability, speed or damage to Blue Skies gear."]
+			id: "1B527AE48577A094"
+			rewards: [
+				{
+					id: "2449158BD8B405B6"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "5B84DF2CA27EA632"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "68437E0943852701"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "blue_skies:everbright/use_tool_box"
+					criterion: ""
+					icon: "blue_skies:tool_box"
+					id: "5E19F503AA3F88B1"
+					title: "Use a Tool Box"
+					type: "advancement"
+				}
+			]
+			title: "The Tool Box"
+			x: 5.47d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B527AE48577A094"]
+			id: "1B5EC2A5C4923C94"
+			rewards: [
+				{
+					id: "6AF2F643C8A3FA14"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 2
+					id: "7D96C38B84646FF2"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1F34B7A444928EB3"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Found only in the Everbright. Lets you mine the next tier."
+			tasks: [
+				{
+					advancement: "blue_skies:everbright/get_falsite"
+					criterion: ""
+					icon: "blue_skies:falsite_ingot"
+					id: "29DFF6828F315FF0"
+					title: "Get Falsite"
+					type: "advancement"
+				}
+			]
+			title: "Falsite"
+			x: 7.22d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B5EC2A5C4923C94"]
+			id: "48954F118D0DC8EF"
+			optional: true
+			rewards: [
+				{
+					id: "0FE2A0339183207C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "5DD677570543456A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "27442A9D63387A49"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Makes buckets that hold any fluid, and shears."
+			tasks: [
+				{
+					advancement: "blue_skies:everbright/get_ventium"
+					criterion: ""
+					icon: "blue_skies:ventium_ingot"
+					id: "3568A1B1C0C0B634"
+					title: "Get Ventium"
+					type: "advancement"
+				}
+			]
+			title: "Ventium"
+			x: 8.97d
+			y: -1.5d
+		}
+		{
+			dependencies: ["27ED48B2CF2C1728"]
+			description: ["Lord of the &eBlinding Dungeon&f - a tower of trials. Clear the side rooms for keys, then face him at the top."]
+			id: "2B2A30BC9AC602A3"
+			rewards: [
+				{
+					id: "3424EC7CB6775194"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "2F54A36987FB7E38"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15E3DC76E712BD4B"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 160"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7DCE99CF6CE9168E"
+					silent: true
+					title: "+160 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "70BE204ECF6F498D"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Blinding Dungeon"
+			tasks: [
+				{
+					advancement: "blue_skies:everbright/kill_summoner"
+					criterion: ""
+					icon: "blue_skies:blinding_key"
+					id: "79B9BECEF185A6CA"
+					title: "Defeat the Summoner"
+					type: "advancement"
+				}
+			]
+			title: "&cThe Summoner"
+			x: 5.47d
+			y: 0.0d
+		}
+		{
+			dependencies: ["124883E461362550"]
+			description: ["A walking tree in the &eNature Dungeon&f, deep in a maze of roots. The Gatekeeper sells its key once the Summoner falls."]
+			id: "218FCCA8409070DE"
+			rewards: [
+				{
+					id: "0A0FD92D6F98E056"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "0AA934F3B68BEC9E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E179F2665D633EE"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 160"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "74554E437FDD52A8"
+					silent: true
+					title: "+160 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6716ED8699717F87"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Nature Dungeon"
+			tasks: [
+				{
+					advancement: "blue_skies:everbright/kill_starlit_crusher"
+					criterion: ""
+					icon: "blue_skies:nature_key"
+					id: "518F18F9A2EDF36B"
+					title: "Defeat the Starlit Crusher"
+					type: "advancement"
+				}
+			]
+			title: "&cThe Starlit Crusher"
+			x: 8.97d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E49212A2D433A91"]
+			description: ["Endless sunset over savanna, swamp and searing desert."]
+			id: "3E61F8707CBBD07B"
+			rewards: [
+				{
+					id: "42FEDF0337BF98A0"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "09A65F6E2EE36186"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "67A9A79E0DCB2A2C"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "64C797A00D1AD36C"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Requires: Summon the Wither"
+			tasks: [
+				{
+					advancement: "blue_skies:everdawn/enter"
+					criterion: ""
+					icon: "blue_skies:everdawn_portal"
+					id: "21CDF6DDBDEF0587"
+					title: "Enter the Everdawn"
+					type: "advancement"
+				}
+			]
+			title: "&6Everdawn"
+			x: 1.98d
+			y: 1.75d
+		}
+		{
+			dependencies: ["3E61F8707CBBD07B"]
+			description: ["Lunar and dusk trees grow under the Everdawn's sunset. Same job as on your first day: tools, then a table."]
+			id: "1BBB5EC7F44743DF"
+			rewards: [
+				{
+					id: "48D71F2FAE5B9620"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "57A7080057778582"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3C28C785013DF689"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Punch any Everdawn log."
+			tasks: [
+				{
+					advancement: "blue_skies:everdawn/get_wood"
+					criterion: ""
+					icon: "blue_skies:lunar_log"
+					id: "5DA922FD4CD0104A"
+					title: "Get Everdawn wood"
+					type: "advancement"
+				}
+			]
+			title: "Lumber, Again"
+			x: 3.73d
+			y: 1.75d
+		}
+		{
+			dependencies: ["1BBB5EC7F44743DF"]
+			description: ["Everdawn's ore. Horizonite tools smelt what they mine; the armour sets attackers ablaze."]
+			id: "79988808D2BF95B5"
+			rewards: [
+				{
+					id: "26D87A5FD2AC7C9B"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "042C18494AC2CFF3"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "204AF102C754A056"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "blue_skies:everdawn/get_horizonite"
+					criterion: ""
+					icon: "blue_skies:horizonite_ingot"
+					id: "0C910E22E5E0239A"
+					title: "Get Horizonite"
+					type: "advancement"
+				}
+			]
+			title: "Horizonite"
+			x: 5.47d
+			y: 1.75d
+		}
+		{
+			dependencies: ["79988808D2BF95B5"]
+			id: "150EFDCA43DD929A"
+			optional: true
+			rewards: [
+				{
+					id: "5E6A93C27F9608FE"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 3
+					id: "6EE49136B9E2ED8D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "261191D2F8B53D86"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "A furnace that never needs fuel."
+			tasks: [
+				{
+					advancement: "blue_skies:everdawn/craft_horizonite_forge"
+					criterion: ""
+					icon: "blue_skies:horizonite_forge"
+					id: "2EF7BAABB72167B7"
+					title: "Craft a Horizonite Forge"
+					type: "advancement"
+				}
+			]
+			title: "Horizonite Forge"
+			x: 7.22d
+			y: 1.75d
+		}
+		{
+			dependencies: ["1BBB5EC7F44743DF"]
+			description: ["Master of the Everdawn's &eBlinding Dungeon&f. He drinks potions mid-fight - interrupt him."]
+			id: "1EC50C18FD533C58"
+			rewards: [
+				{
+					id: "255CF5EB53335E16"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 3
+					id: "2205F9C7156CE23E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "57CB955D319E0F1A"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 160"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "36FFB22690D4636F"
+					silent: true
+					title: "+160 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1F9A27D276CEBA4E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Blinding Dungeon"
+			tasks: [
+				{
+					advancement: "blue_skies:everdawn/kill_alchemist"
+					criterion: ""
+					icon: "blue_skies:blinding_key"
+					id: "28E9A85B70D656A8"
+					title: "Defeat the Alchemist"
+					type: "advancement"
+				}
+			]
+			title: "&cThe Alchemist"
+			x: 5.47d
+			y: 3.25d
+		}
+		{
+			dependencies: ["1EC50C18FD533C58"]
+			id: "3CC9D4930BA4B041"
+			optional: true
+			rewards: [
+				{
+					id: "0D879956D574CDB9"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "790DE9DB90D15288"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1208AEAF234AF77E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Transmutes materials between the two dimensions - and into gold."
+			tasks: [
+				{
+					advancement: "blue_skies:everdawn/use_alchemy_table"
+					criterion: ""
+					icon: "blue_skies:alchemy_table"
+					id: "3521829BED17109C"
+					title: "Use an Alchemy Table"
+					type: "advancement"
+				}
+			]
+			title: "Alchemy Table"
+			x: 7.22d
+			y: 4.75d
+		}
+		{
+			dependencies: ["71716FE33E82E133"]
+			description: ["A colossal spider in the &ePoison Dungeon&f beneath the swamp. Bring ranged weapons and antidotes."]
+			id: "14AFE2705F45477A"
+			rewards: [
+				{
+					id: "234D5B7F10F843F9"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 4
+					id: "2F5BE7433F2ED9D1"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5FC88C8360B87089"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 240"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2EBD3807F4EDC1AD"
+					silent: true
+					title: "+240 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "71E75AFD3E62019D"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Poison Dungeon"
+			tasks: [
+				{
+					advancement: "blue_skies:everdawn/kill_arachnarch"
+					criterion: ""
+					icon: "blue_skies:poison_key"
+					id: "2AE073FDB7ED69FC"
+					title: "Defeat the Arachnarch"
+					type: "advancement"
+				}
+			]
+			title: "&cThe Arachnarch"
+			x: 8.97d
+			y: 3.25d
+		}
+		{
+			dependencies: ["138EEF6832AAE528"]
+			description: ["Dimension gems: Pyrope gear hits hard, Aquite breathes underwater, Diopside is the best all-rounder, Charoite the most durable."]
+			id: "271CFF290F9F46B7"
+			optional: true
+			rewards: [
+				{
+					id: "3E42E58E72916EEC"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "6FEB339492F66F01"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "23A6F6218534D0DB"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "blue_skies:get_moonstone_shard"
+					criterion: ""
+					icon: "blue_skies:moonstone_shard"
+					id: "2F91022403496181"
+					title: "Get a Moonstone Shard"
+					type: "advancement"
+				}
+				{
+					advancement: "blue_skies:get_pyrope"
+					criterion: ""
+					icon: "blue_skies:pyrope_gem"
+					id: "4687044C3385B79C"
+					title: "Get Pyrope"
+					type: "advancement"
+				}
+			]
+			title: "Moonstone \\& Pyrope"
+			x: 3.73d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"218FCCA8409070DE"
+				"14AFE2705F45477A"
+			]
+			description: ["Four dungeon lords down across two worlds. Blue Skies: conquered."]
+			id: "63660F7E08FD80D0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "11FAA3F3F4E6F3C3"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72F5DDC887A668BC"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "1F8F602A3280EADF"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					id: "5AAFBF7A8C7EA4A5"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+				{
+					command: "/mastery xp @s combat 160"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1A4D01D62BD1415D"
+					silent: true
+					title: "+160 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 160"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "0C9762E88DE6A38C"
+					silent: true
+					title: "+160 Exploration experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "14446B375328E7BE"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "3537581FE7DF84DA"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&b&lSkyfarer"
+			x: 10.95d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B2A30BC9AC602A3"]
+			description: [
+				"&7Generates in: &fSnow Covered Pines"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "124883E461362550"
+			rewards: [
+				{
+					id: "4F7300CFA2A5A617"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4994A69F15DDC882"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "5978289E5BC81A5E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enter a Nature Dungeon."
+			tasks: [
+				{
+					advancement: "blue_skies:everbright/enter_nature_dungeon"
+					criterion: ""
+					icon: "blue_skies:nature_keystone"
+					id: "09964DA046163E52"
+					title: "Heart of Nature"
+					type: "advancement"
+				}
+			]
+			title: "Heart of Nature"
+			x: 7.22d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1EC50C18FD533C58"]
+			description: [
+				"&7Generates in: &fSunset Maple Forest"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "71716FE33E82E133"
+			rewards: [
+				{
+					id: "202D3E0D548AD2C1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5B28DF7819D0B39A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6731053DD6F5A22B"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enter a Poison Dungeon."
+			tasks: [
+				{
+					advancement: "blue_skies:everdawn/enter_poison_dungeon"
+					criterion: ""
+					icon: "blue_skies:poison_keystone"
+					id: "5135F722D0D2178A"
+					title: "The Spider's Lair"
+					type: "advancement"
+				}
+			]
+			title: "The Spider's Lair"
+			x: 7.22d
+			y: 3.25d
+		}
+	]
+	subtitle: ["Two mirrored worlds of endless day and endless dusk"]
+	title: "&bBlue Skies"
+}

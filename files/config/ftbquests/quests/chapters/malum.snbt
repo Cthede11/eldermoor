@@ -1,0 +1,1268 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "malum"
+	group: "3368DAD22055D0D9"
+	icon: "malum:encyclopedia_arcana"
+	id: "6B083F9033221B5B"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6ED3BB3E3EB0271C"]
+			description: [
+				"Kill a living thing with a scythe and its &dspirits&f fall out with its drops. Malum is the craft of what to do with them."
+				""
+				"The Encyclopedia Arcana is the whole manual; read it as you go."
+			]
+			hide_until_deps_complete: true
+			id: "5FD0DDCC81E7297A"
+			rewards: [
+				{
+					id: "641F89ABBEBD6AF7"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "280C6DCC2E5AB5C8"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "49F03CE20B0CC02D"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "4D53EB58BA0C2A89"
+					item: "malum:crude_scythe"
+					type: "item"
+				}
+			]
+			title: "&5&lSpirit Magic"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C9CEB8B2AF92142"]
+			description: ["&7Made from: &fBook, Processed Soulstone"]
+			id: "033FFC1A0C7ACBF8"
+			rewards: [
+				{
+					id: "483484C241626A50"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "51CAEC1ECB081792"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "084ED2325FB1D56F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "073F574E2902D9F2"
+					item: "malum:encyclopedia_arcana"
+					type: "item"
+				}
+			]
+			title: "The Encyclopedia"
+			x: 5.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25B73CBE729F98A2"]
+			id: "63036A19BE25D078"
+			rewards: [
+				{
+					id: "37EABEA30225103C"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "1B8C68B802C0AA64"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "093E372C7FF7CA96"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3E64EC67D588ECA6"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Infuses items with spirits. Most of Malum is made here."
+			tasks: [
+				{
+					id: "03385FE17ED81708"
+					item: "malum:spirit_altar"
+					type: "item"
+				}
+			]
+			title: "The Spirit Altar"
+			x: 9.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63036A19BE25D078"]
+			description: ["&7Made from: &fany glass panes x7, Hallowed Gold Ingot"]
+			id: "1D01D47CC30A1B7E"
+			rewards: [
+				{
+					id: "293AF5319D0C5295"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4F564AD78F9DACD8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2471196B0F6CCCB9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "06D60FA76A4CED8B"
+					item: "malum:spirit_jar"
+					type: "item"
+				}
+			]
+			title: "Somewhere to Put Them"
+			x: 11.05d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D01D47CC30A1B7E"]
+			description: ["&7Made at: &fSpirit Altar &7from &fProcessed Soulstone x4, Iron Ingot"]
+			id: "4BFD66000B7E0A6A"
+			rewards: [
+				{
+					id: "1F7D5C528B02C4B3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "51343671699BA13E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "05649D16584B2F99"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "10CB0460BABF19F8"
+					item: "malum:soul_stained_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "Soul-Stained Steel"
+			x: 12.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BFD66000B7E0A6A"]
+			description: ["&7Made at: &fSpirit Altar &7from &fQuartz x4, Gold Ingot"]
+			id: "288E2829F525C6C5"
+			rewards: [
+				{
+					id: "0611D5027FD801FB"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4C7919D0C613F4C3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "07976273346F20DC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "4873E72113E5BCB0"
+					item: "malum:hallowed_gold_ingot"
+					type: "item"
+				}
+			]
+			title: "Hallowed Gold"
+			x: 14.65d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53F93F2E2101EFA9"]
+			description: ["&7Made at: &fSpirit Altar &7from &fSpirit Fabric x4, Processed Soulstone x4, any leather x2, Leather Cap"]
+			id: "40D9AC3474315482"
+			rewards: [
+				{
+					id: "0F204062CB16D647"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7F88F27B0FF9F5EF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3F86EA848537D593"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Light robes for a spirit hunter."
+			tasks: [
+				{
+					id: "73FAF1D9BBF73999"
+					item: "malum:soul_hunter_cloak"
+					type: "item"
+				}
+			]
+			title: "The Soul Hunter"
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B6E6D456D067DE3"]
+			description: ["&7Made at: &fSpirit Altar &7from &fSoulstained Steel Plating x6, Processed Soulstone x4, Twisted Rock x8, Iron Chestplate"]
+			id: "6F70D29E98904F52"
+			rewards: [
+				{
+					id: "5E9247669F236B67"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "05C6EE414B5B7853"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5E9F25BE1E3C02D7"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "383D6AF48C12F184"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "60432BCC5B938876"
+					item: "malum:soul_stained_steel_chestplate"
+					type: "item"
+				}
+			]
+			title: "Soul-Stained Armour"
+			x: 21.85d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6F70D29E98904F52"]
+			description: ["&7Made at: &fSpirit Altar &7from &fSoulstained Steel Ingot x4, Hex Ash x2, Processed Soulstone x4, Crude Scythe"]
+			id: "12AE511CFA3BF5CF"
+			rewards: [
+				{
+					id: "30C5E9868B5B7F88"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1185ECD166464202"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1C153A26119C7C41"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2302B719A62CB97D"
+					item: "malum:soul_stained_steel_scythe"
+					type: "item"
+				}
+			]
+			title: "A Better Scythe"
+			x: 23.7d
+			y: 1.5d
+		}
+		{
+			dependencies: ["277E8CB47C3E50F7"]
+			description: ["&7Made at: &fSpirit Altar &7from &fFused Consciousness, Auric Embers x8, Void Salts x8, Mnemonic Hex Staff"]
+			id: "0438D6F909323D83"
+			rewards: [
+				{
+					id: "0656A75FEC12C7C8"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5B61F931B8BD40E7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "79F6C85DF374EAC4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A staff that casts with spirits."
+			tasks: [
+				{
+					id: "3E0CC1E3D4EAC261"
+					item: "malum:staff_of_the_auric_flame"
+					type: "item"
+				}
+			]
+			title: "Staff of the Auric Flame"
+			x: 32.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5425D7816CC78F0E"]
+			description: [
+				"Spirit focusing: ores, gems and stranger things from spirits alone."
+				"&7Made at: &fSpirit Altar &7from &fHex Ash x2, Tainted Rock x8, Twisted Rock x8, Furnace"
+			]
+			id: "7D4203A923D07FD3"
+			rewards: [
+				{
+					id: "153F76A2D5AF6D40"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "24A8DC8076FDDA8A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "42CCF43AC5270273"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "414D4018F1D2B248"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "246EE93F59D8D071"
+					item: "malum:spirit_crucible"
+					type: "item"
+				}
+			]
+			title: "The Spirit Crucible"
+			x: 14.65d
+			y: -1.67d
+		}
+		{
+			dependencies: ["7D4203A923D07FD3"]
+			description: ["&7Made at: &fSpirit Altar &7from &fRunewood Planks x6, Hex Ash x2, Runewood Log x4"]
+			id: "5D60183DC1B4AFFE"
+			rewards: [
+				{
+					id: "0B7F575EC4FF5059"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7742166FB53186DA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4799E2576976C91E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Totem poles carved with spirits cast rites over an area."
+			tasks: [
+				{
+					id: "19D3BDBFCA286046"
+					item: "malum:runewood_totem_base"
+					type: "item"
+				}
+			]
+			title: "Rites"
+			x: 16.5d
+			y: -1.67d
+		}
+		{
+			dependencies: ["5D60183DC1B4AFFE"]
+			description: ["&7Made from: &fEncyclopedia Arcana &7(thrown into a Weeping Well)"]
+			id: "782998AA957EBCE7"
+			rewards: [
+				{
+					id: "296B4693FC6EDB65"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "04B7A6900799B369"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "74BC85DEBBB93CBA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The second book: the void, and what lives in it."
+			tasks: [
+				{
+					id: "4F098A40326B2ED2"
+					item: "malum:encyclopedia_esoterica"
+					type: "item"
+				}
+			]
+			title: "Encyclopedia Esoterica"
+			x: 18.25d
+			y: -1.67d
+		}
+		{
+			dependencies: ["782998AA957EBCE7"]
+			description: [
+				"&7&fVoid Salts&7 - Made from: &fHex Ash &7(thrown into a Weeping Well)"
+				"&7&fNull Slate&7 - Made from: &fProcessed Soulstone &7(thrown into a Weeping Well)"
+			]
+			id: "4C0407D5279A3454"
+			rewards: [
+				{
+					id: "11791668BD3952D2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1661D7DE3B5E3E94"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7FBD24F8CA4894EF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3BB68CCF1C52BDC0"
+					item: "malum:void_salts"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7F4A2FBA42DCA173"
+					item: "malum:null_slate"
+					type: "item"
+				}
+			]
+			title: "Void Salts"
+			x: 20.0d
+			y: -1.67d
+		}
+		{
+			dependencies: ["199D83EA746FD3A1"]
+			description: ["&7Made at: &fSpirit Altar &7from &fMalignant Lead, Null Slate x8, Netherite Scrap x3, Iron Ingot x4"]
+			id: "5115FB7BE6945034"
+			rewards: [
+				{
+					id: "6AC35110F4E593CA"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "22EB63FF1A19FC83"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2B87D34C1B7D5101"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "445984D60D1186D3"
+					item: "malum:malignant_pewter_ingot"
+					type: "item"
+				}
+			]
+			title: "Malignant Pewter"
+			x: 23.7d
+			y: -1.67d
+		}
+		{
+			dependencies: ["17732894AA1A356A"]
+			description: ["&7Made at: &fSpirit Altar &7from &fMalignant Pewter Plating x3, Soulstained Steel Chestplate"]
+			id: "21FC3752F3E53DB4"
+			rewards: [
+				{
+					id: "433575B3917308C4"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "406FE4A8BDCD05D7"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F1C03E498B7A1F5"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "237BD7EA640F9960"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Malum's heaviest armour."
+			tasks: [
+				{
+					id: "72F60CA6A8A3D36E"
+					item: "malum:malignant_stronghold_chestplate"
+					type: "item"
+				}
+			]
+			title: "The Malignant Stronghold"
+			x: 27.3d
+			y: -1.67d
+		}
+		{
+			dependencies: ["21FC3752F3E53DB4"]
+			description: ["&7Made at: &fSpirit Altar &7from &fMalignant Pewter Ingot x2, Soulstained Steel Scythe"]
+			id: "53BB911D26232E2B"
+			rewards: [
+				{
+					id: "19D468E329B79B0B"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1F541E8413658A4C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3C89C3A5CAE05455"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "455FF9B9580B3B4B"
+					item: "malum:edge_of_deliverance"
+					type: "item"
+				}
+			]
+			title: "Edge of Deliverance"
+			x: 29.15d
+			y: -1.67d
+		}
+		{
+			dependencies: ["53BB911D26232E2B"]
+			description: ["&7Made at: &fSpirit Altar &7from &fTwisted Rock x16, Soulwood Planks x8, any obsidian x4, Hex Ash x4, Soulstained Steel Sword"]
+			id: "772EBC55793640BE"
+			rewards: [
+				{
+					id: "59678E0DBF55BE40"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "37A306B0877DD583"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "08571C835E66502F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "090EDDE9127A66EB"
+					item: "malum:tyrving"
+					type: "item"
+				}
+			]
+			title: "Tyrving"
+			x: 30.9d
+			y: -1.67d
+		}
+		{
+			dependencies: ["772EBC55793640BE"]
+			description: ["&7Made at: &fSpirit Altar &7from &fMalignant Pewter Ingot x2, Soulstained Steel Axe"]
+			id: "458EC92E9627CE9B"
+			rewards: [
+				{
+					id: "4FA5268E5EEDF8B0"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "4E31353049600C64"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2EB1583F5C626478"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "418DDBB681DE1666"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "An axe with the heft of a planet."
+			tasks: [
+				{
+					id: "44266BFEE2E9D0C5"
+					item: "malum:weight_of_worlds"
+					type: "item"
+				}
+			]
+			title: "The Weight of Worlds"
+			x: 32.75d
+			y: -1.67d
+		}
+		{
+			dependencies: [
+				"21FC3752F3E53DB4"
+				"458EC92E9627CE9B"
+				"0438D6F909323D83"
+			]
+			description: ["Malignant armour, the Weight of Worlds and a staff that burns spirits."]
+			hide_dependency_lines: true
+			id: "149E2EE97C457941"
+			rewards: [
+				{
+					id: "56BC448970DF3BCE"
+					type: "xp"
+					xp: 4000
+				}
+				{
+					id: "6C1C395D883F3F6C"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19DF2B87830708FE"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2AE49F7EC53BE66F"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6D50CCD1B606F98F"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "&5&lSpiritwalker"
+			x: 35.1d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5FD0DDCC81E7297A"]
+			description: ["Orange-leaved trees on plains and hills. Some logs bleed holy sap."]
+			id: "0D5F93E8A8FA325D"
+			rewards: [
+				{
+					id: "31EBE533ED73C174"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6215E00A9A574238"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "119CA8CA24AAB99C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "0604D592D39BA413"
+					item: "malum:runewood_log"
+					type: "item"
+				}
+			]
+			title: "Runewood"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["033FFC1A0C7ACBF8"]
+			description: ["Kill with a scythe and the soul shatters into spirits. Animals are sacred; anything magical is arcane."]
+			id: "25B73CBE729F98A2"
+			rewards: [
+				{
+					id: "0FA9AEF62A8028E6"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "620E3EF6B44D8533"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "07082F7B5ED1684B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "633631EE48A6B82F"
+					item: "malum:sacred_spirit"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "57A3222DA8F4B1DD"
+					item: "malum:arcane_spirit"
+					type: "item"
+				}
+			]
+			title: "First Spirits"
+			x: 7.35d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63036A19BE25D078"]
+			id: "2988373112F4ADB0"
+			rewards: [
+				{
+					id: "3D5B81D86C5C7805"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "052BC8983B397914"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "26AF1EF23FA4EAAB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Gunpowder, infused with arcane spirit at the altar."
+			tasks: [
+				{
+					count: 4L
+					id: "3D2CC81D5B765B62"
+					item: "malum:hex_ash"
+					type: "item"
+				}
+			]
+			title: "Hex Ash"
+			x: 11.05d
+			y: -1.67d
+		}
+		{
+			dependencies: ["0D5F93E8A8FA325D"]
+			description: [
+				"A dark ore found underground. Processed, it is the lens that lets you see a soul at all: the Scythe, the Encyclopedia and the altar all need it."
+				"&7Made at: &fEncased Fan blowing through water &7from &fCrushed Soulstone"
+			]
+			id: "6C9CEB8B2AF92142"
+			rewards: [
+				{
+					id: "2BBA214C63F87B1C"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "495C047A974F429C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1626BB51EB438357"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "05EEA1BB1E6811D6"
+					item: "malum:processed_soulstone"
+					type: "item"
+				}
+			]
+			title: "Soulstone"
+			x: 3.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2988373112F4ADB0"]
+			description: ["Stone, sixteen blocks at a time, infused at the Spirit Altar. Pale, clean, and the building stone of everything that &oholds&f spirits."]
+			id: "5425D7816CC78F0E"
+			rewards: [
+				{
+					id: "7DB5B178DB0A659B"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "68FD542D9219278E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3346304083B46C63"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "2FD8CBF718D4D16B"
+					item: "malum:tainted_rock"
+					type: "item"
+				}
+			]
+			title: "Tainted Rock"
+			x: 12.8d
+			y: -1.67d
+		}
+		{
+			dependencies: ["40D9AC3474315482"]
+			description: [
+				"The same stone, infused with different spirits. Dark where tainted rock is pale, and asked for by the heavier, crueller recipes."
+				"&7Made at: &fSpirit Altar &7from &fany stone tool materials x16"
+			]
+			id: "2A5E1823BECD408E"
+			rewards: [
+				{
+					id: "5A5C26DAFD130FB1"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "20B50D11782B754D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2813401BD3B642DC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4B301EB12C6D775F"
+					item: "malum:twisted_rock"
+					type: "item"
+				}
+			]
+			title: "Twisted Rock"
+			x: 18.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2A5E1823BECD408E"]
+			description: ["An ingot and four nuggets, hammered flat. The armour is made of plating, not bare ingots."]
+			id: "0B6E6D456D067DE3"
+			rewards: [
+				{
+					id: "65D658C169DC73BB"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "68232879F2299E4B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3DF2C670F0C6EBC8"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "64F3D683BD038C36"
+					item: "malum:soul_stained_steel_plating"
+					type: "item"
+				}
+			]
+			title: "Soulstained Plating"
+			x: 20.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4BFD66000B7E0A6A"]
+			description: ["Wool, string and hex ash, infused at the altar. The Soul Hunter's light armour is sewn from it."]
+			id: "53F93F2E2101EFA9"
+			rewards: [
+				{
+					id: "563EF20B0C9C6C55"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4BAAB10B45C19752"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "52EBE01D958861A6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "0392D7B5C5FF9347"
+					item: "malum:spirit_fabric"
+					type: "item"
+				}
+			]
+			title: "Spirit Fabric"
+			x: 14.65d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C0407D5279A3454"]
+			description: [
+				"&eCthonic Gold&f, drowned in the &5Weeping Well&f. Throw it into the void at the Well's centre and the Well gives back what it has made of it."
+				"&7Made from: &fCthonic Gold &7(thrown into a Weeping Well)"
+			]
+			id: "199D83EA746FD3A1"
+			rewards: [
+				{
+					id: "34AFA66D7386CFE2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5471CC58F6A13120"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "35892A1896D57770"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "What the Well gives back"
+			tasks: [
+				{
+					count: 2L
+					id: "54109CD65C98163F"
+					item: "malum:malignant_lead"
+					type: "item"
+				}
+			]
+			title: "Malignant Lead"
+			x: 21.85d
+			y: -1.67d
+		}
+		{
+			dependencies: ["5115FB7BE6945034"]
+			description: ["An ingot and four nuggets of pewter, beaten flat. The Stronghold armour is built of them."]
+			id: "17732894AA1A356A"
+			rewards: [
+				{
+					id: "5B8F882F050B5ACB"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7EF4AF1D4197A58E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3F5295317488D615"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7E808B3DCD634622"
+					item: "malum:malignant_pewter_plating"
+					type: "item"
+				}
+			]
+			title: "Malignant Plating"
+			x: 25.45d
+			y: -1.67d
+		}
+		{
+			dependencies: ["12AE511CFA3BF5CF"]
+			description: ["A Totemic Staff, rebuilt at the altar with soulstained steel, soulwood and eight Mnemonic Fragments. The Auric Flame is made from it."]
+			id: "277E8CB47C3E50F7"
+			rewards: [
+				{
+					id: "182BC98E60A42281"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5AC0906475387125"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "66C44933581F5998"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "638536CACFB4413B"
+					item: "malum:mnemonic_hex_staff"
+					type: "item"
+				}
+			]
+			title: "The Mnemonic Hex Staff"
+			x: 25.45d
+			y: 1.5d
+		}
+	]
+	subtitle: ["Spirits torn from the dying, and what can be made of them"]
+	title: "&5Malum"
+}

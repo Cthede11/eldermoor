@@ -1,0 +1,469 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "atlas"
+	group: "2082B1037B9195D1"
+	icon: "minecraft:filled_map"
+	id: "0FF4F4100F2124D4"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["077D1686E85C6E51"]
+			description: [
+				"The top row is the craft of travelling. The gears below are &edoors&f: do what one asks and a new realm's chapter appears."
+				""
+				"The Twilight Forest, the Nether and the End belong to the main story - look in the &cActs&f."
+			]
+			hide_until_deps_complete: true
+			id: "375EFE9AE5CEDE1D"
+			rewards: [
+				{
+					id: "196244DC4E5FFB5A"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 3
+					id: "5DBA6B63312DCD2A"
+					item: "minecraft:map"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "550820C589601207"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1484A94F53587FE5"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Eldermoor is wide, and it is not the only world."
+			tasks: [
+				{
+					id: "0F4137F5BCF1C231"
+					title: "Unroll the map"
+					type: "checkmark"
+				}
+			]
+			title: "&b&lThe Atlas"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["375EFE9AE5CEDE1D"]
+			description: [
+				"The &eNature's Compass&f finds biomes and is crafted: a compass ringed with logs and saplings."
+				"The &eExplorer's Compass&f finds structures - a village, a stronghold, any boss's hall by name. It has &cno recipe&f in Eldermoor: &2The Merchant&f sells it for 3 gold coins (tick &2The Merchant&f at The Crossroads to open the shop)."
+				"Right-click either one to choose a target."
+			]
+			id: "5D27763A58F1C602"
+			rewards: [
+				{
+					id: "368726175394F529"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4DF3ED96622FB26D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "7DE1ED3AE9B4A50B"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1E89225C1AD110E6"
+					item: "naturescompass:naturescompass"
+					type: "item"
+				}
+				{
+					id: "193336F189C4FE14"
+					item: "explorerscompass:explorerscompass"
+					type: "item"
+				}
+			]
+			title: "Finding Things"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5D27763A58F1C602"]
+			description: ["A Warp Stone travels to any waystone you have activated, from anywhere. Warp Scrolls are single-use versions."]
+			id: "730558D669915148"
+			rewards: [
+				{
+					id: "52E2F68A638E4A89"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "195801DEB2ECD08A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "0F03B116CE205997"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3A93773231C18139"
+					item: "waystones:warp_stone"
+					type: "item"
+				}
+			]
+			title: "A Network"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["730558D669915148"]
+			description: [
+				"A cog carries cargo and has a sail. Any wood will do - this quest wants oak."
+				""
+				"Bigger hulls follow: brigg, galley, drakkar."
+			]
+			id: "22BBF1A48DF52996"
+			rewards: [
+				{
+					id: "4117CD17690AB5E8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1F6E4570B3624FB1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "66FA83EC1C0A2648"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "297F80388810C673"
+					item: "smallships:oak_cog"
+					type: "item"
+				}
+			]
+			title: "By Sea"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["22BBF1A48DF52996"]
+			description: ["Ten thousand blocks on foot. Every one of them feeds your Exploration tree."]
+			icon: "minecraft:leather_boots"
+			id: "37ACB193BA0DBEBA"
+			rewards: [
+				{
+					id: "2E1E94DE170485CD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6BBFAD9FB33CAF1C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "15F84EFC24F2E3E9"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5A7F4BFA6C94CDB1"
+					stat: "minecraft:walk_one_cm"
+					type: "stat"
+					value: 1000000
+				}
+			]
+			title: "A Long Walk"
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["37ACB193BA0DBEBA"]
+			id: "54DBED0DBC70810C"
+			rewards: [
+				{
+					id: "517851DF6C078942"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "24A03ECA5595923E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "406CDA13296065D9"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "37780B2528789A71"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "One points home. One points to where you died."
+			tasks: [
+				{
+					id: "6A9915B4C9602258"
+					item: "minecraft:lodestone"
+					type: "item"
+				}
+				{
+					id: "49F3CA5CF618A357"
+					item: "minecraft:recovery_compass"
+					type: "item"
+				}
+			]
+			title: "Never Lost"
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["375EFE9AE5CEDE1D"]
+			description: [
+				"The Aether's portal will not light until the Night Lich is dead (Act I)."
+				""
+				"Then: a glowstone frame, and a bucket of water."
+				""
+				"&eOpens the chapter: &bThe Aether"
+			]
+			icon: "aether:aether_portal_frame"
+			id: "340CD033AD736E63"
+			rewards: [
+				{
+					id: "3C540AD4BBE3ECDB"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "1481CC17FD116572"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "228275C37C0AFF8C"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens The Aether"
+			tasks: [
+				{
+					advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
+					criterion: ""
+					icon: "minecraft:bone_block"
+					id: "722E600D31591F66"
+					title: "Night Vanquisher"
+					type: "advancement"
+				}
+			]
+			title: "&bThe Night Lich's Key"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["375EFE9AE5CEDE1D"]
+			description: [
+				"The Everbright opens to anyone who has dug Ancient Debris out of the Nether."
+				""
+				"Its mirror, the Everdawn, waits for the Wither to be summoned."
+				""
+				"&eOpens the chapter: &bBlue Skies"
+			]
+			icon: "blue_skies:everbright_portal"
+			id: "091DDF084FF0B8B5"
+			rewards: [
+				{
+					id: "46C67F4B4FA210C0"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "21462207B29CD6AC"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2975FB23DE2928E3"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Blue Skies"
+			tasks: [
+				{
+					advancement: "minecraft:nether/obtain_ancient_debris"
+					criterion: ""
+					icon: "minecraft:ancient_debris"
+					id: "0EE0910DBCDA4723"
+					title: "Hidden in the Depths"
+					type: "advancement"
+				}
+			]
+			title: "&bThe Debris Key"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["375EFE9AE5CEDE1D"]
+			description: [
+				"Found in small cabins underground. Each tablet remembers the way to one of five lost worlds beneath your feet."
+				""
+				"&eOpens the chapter: &2Alex's Caves"
+			]
+			icon: "alexscaves:cave_tablet"
+			id: "4738D74E64F93605"
+			rewards: [
+				{
+					id: "7055BC39ADCF7D3D"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "3F6BF4A5231B955F"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "65522EBFE62DE760"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Alex's Caves"
+			tasks: [
+				{
+					id: "6C1D473BEBADCFBA"
+					item: "alexscaves:cave_tablet"
+					type: "item"
+				}
+			]
+			title: "&2A Stone Tablet"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4738D74E64F93605"]
+			description: [
+				"The Warden's heart. Ancient Cities were built around a portal that only it can open: a whole world below the bedrock."
+				""
+				"&eOpens the chapter: &3The Otherside"
+			]
+			icon: "deeperdarker:heart_of_the_deep"
+			id: "2AEEBC98551617C9"
+			rewards: [
+				{
+					id: "5955C4FAAD4B6EE0"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "4BE53C97A1BD5C2E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "68D838D60A340B2B"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens The Otherside"
+			tasks: [
+				{
+					id: "7F9A82AA229084F5"
+					item: "deeperdarker:heart_of_the_deep"
+					type: "item"
+				}
+			]
+			title: "&3The Heart of the Deep"
+			x: 5.5d
+			y: 3.5d
+		}
+	]
+	subtitle: ["How to travel far, and four worlds to travel to"]
+	title: "&b&lThe Atlas"
+}

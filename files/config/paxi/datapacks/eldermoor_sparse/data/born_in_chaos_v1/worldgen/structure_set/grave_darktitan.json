@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1848596683,
+    "separation": 52,
+    "spacing": 368,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:grave_darktitan",
+      "weight": 1
+    }
+  ]
+}

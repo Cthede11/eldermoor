@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 394,
+    "separation": 315,
+    "spacing": 490,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "nova_structures:conduit_ruin",
+      "weight": 1
+    }
+  ]
+}

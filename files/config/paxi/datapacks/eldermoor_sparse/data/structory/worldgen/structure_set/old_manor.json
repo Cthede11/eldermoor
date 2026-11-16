@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "salt": 22427392,
+    "separation": 56,
+    "spacing": 147,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "structory:old_manor",
+      "weight": 3
+    },
+    {
+      "structure": "structory:dense_forest_ruin",
+      "weight": 1
+    }
+  ]
+}

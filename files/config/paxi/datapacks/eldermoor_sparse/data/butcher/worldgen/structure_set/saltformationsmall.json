@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 2118640782,
+    "separation": 24,
+    "spacing": 60,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "butcher:saltformationsmall",
+      "weight": 1
+    }
+  ]
+}

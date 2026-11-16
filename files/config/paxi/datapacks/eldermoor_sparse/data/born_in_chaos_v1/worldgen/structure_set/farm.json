@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 373118085,
+    "separation": 21,
+    "spacing": 228,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:farm",
+      "weight": 1
+    }
+  ]
+}

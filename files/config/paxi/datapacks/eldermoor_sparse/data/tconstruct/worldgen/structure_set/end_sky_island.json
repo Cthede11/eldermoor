@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "frequency": 0.5,
+    "salt": 368963602,
+    "separation": 14,
+    "spacing": 57,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "tconstruct:end_slime_island",
+      "weight": 1
+    }
+  ]
+}

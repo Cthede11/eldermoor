@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 40669500,
+    "separation": 21,
+    "spacing": 210,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:grave_the_gentleman_frog",
+      "weight": 1
+    }
+  ]
+}

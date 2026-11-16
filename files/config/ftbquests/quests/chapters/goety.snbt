@@ -1,0 +1,2218 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "goety"
+	group: "3368DAD22055D0D9"
+	icon: "goety:dark_wand"
+	id: "5AE3CC7E5AEED1AC"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2781D448A4EB8459"]
+			description: [
+				"Goety runs on &cSoul Energy&f, which a Totem of Souls collects from everything that dies near you."
+				""
+				"A wand casts whatever &eFocus&f is in it. Foci are crafted, and the stronger ones are made in a ritual at the Dark Altar."
+				""
+				"Its books (crafted, and found in its structures) explain each ritual."
+			]
+			hide_until_deps_complete: true
+			id: "5D24D999FA88CF7F"
+			rewards: [
+				{
+					id: "003B8FE33E89F30F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5DE7F51F51D3378F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "274889D9E051EA4A"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "254BF52DC238B2BC"
+					title: "Begin"
+					type: "checkmark"
+				}
+			]
+			title: "&4&lThe Dark Arts"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D24D999FA88CF7F"]
+			description: ["&7Made from: &fSoul Lantern, Spent Totem of Souls"]
+			id: "2610FEE854BCF126"
+			rewards: [
+				{
+					id: "25F19FC297D13DFE"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "618080B8D9FD2E18"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "143BE7F058124B07"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Totem of Souls."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_totem"
+					criterion: ""
+					icon: "goety:totem_of_souls"
+					id: "35E37767138440C7"
+					title: "Make Your Own"
+					type: "advancement"
+				}
+			]
+			title: "Make Your Own"
+			x: 2.1d
+			y: -6.12d
+		}
+		{
+			dependencies: ["3010F6211793874C"]
+			description: ["&7Made from: &fEmpty Focus, Lapis x2, Magic Fabric, any planks"]
+			id: "27F84E7BA962D983"
+			rewards: [
+				{
+					id: "74F2E7674B530259"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "644999D1E01B4F9A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4FAA1D42B81E24FF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Dark Wand"
+			tasks: [
+				{
+					advancement: "goety:goety/craft_dark_wand"
+					criterion: ""
+					icon: "goety:dark_wand"
+					id: "2BC462EE2A7FC296"
+					title: "Oh, the Pointing Again."
+					type: "advancement"
+				}
+			]
+			title: "Oh, the Pointing Again."
+			x: 5.7d
+			y: -6.12d
+		}
+		{
+			dependencies: ["27F84E7BA962D983"]
+			id: "347D0748B08A78F7"
+			rewards: [
+				{
+					id: "08FC0BE0942E9367"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "76507469E9D52958"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0B8FAAAD4A0EE47E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Maybe make a Wand first before anything else."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_empty_focus"
+					criterion: ""
+					icon: "goety:empty_focus"
+					id: "42FDC86444941010"
+					title: "What is This, Thaumcraft?"
+					type: "advancement"
+				}
+			]
+			title: "What is This, Thaumcraft?"
+			x: 7.55d
+			y: -6.12d
+		}
+		{
+			dependencies: ["347D0748B08A78F7"]
+			description: ["&7Made at: &fDark Altar ritual &7from &fAnimation Core, Block of Amethyst, any ender pearls, Anvil, Note Block and 4 more"]
+			id: "5E411B3D9E7552F0"
+			rewards: [
+				{
+					id: "606209A5FC355BCD"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5B3D61D024894B9F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "63DCDC44634C24B6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Look out for any Hermits outside of your windows."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_vexing_focus"
+					criterion: ""
+					icon: "goety:vexing_focus"
+					id: "48FCD3FEFFA660C1"
+					title: "This Vexes Me"
+					type: "advancement"
+				}
+			]
+			title: "This Vexes Me"
+			x: 9.3d
+			y: -6.12d
+		}
+		{
+			dependencies: ["5E411B3D9E7552F0"]
+			description: ["&7Made from: &fBlaze Rod x2, Ignite Focus, Coal Block x2, any gunpowder x2, Dispenser x2"]
+			id: "7035A6C1ED7AE155"
+			rewards: [
+				{
+					id: "63C5C8CF80F091C4"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "400A50A2DB1478D8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6A7CC63F963A5970"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Fireball Focus."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_fireball_focus"
+					criterion: ""
+					icon: "goety:fireball_focus"
+					id: "12BF04905CF9BD97"
+					title: "That's a Spicy Meatball!"
+					type: "advancement"
+				}
+			]
+			title: "That's a Spicy Meatball!"
+			x: 11.15d
+			y: -6.12d
+		}
+		{
+			dependencies: ["7035A6C1ED7AE155"]
+			description: ["&7Made at: &fDark Altar ritual &7from &fThunderbolt Focus, Lightning Rod, Copper Block x2, Prismarine, Prismarine Dust and 1 more"]
+			id: "5B13C4D9F48F487A"
+			rewards: [
+				{
+					id: "2561B6BA4D14DEDD"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0B60CF32FC2925E1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0BAFCB93B07EB05D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Lightning Focus."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_lightning_focus"
+					criterion: ""
+					icon: "goety:lightning_focus"
+					id: "58E436E13EFA31A7"
+					title: "Ka-Chow!"
+					type: "advancement"
+				}
+			]
+			title: "Ka-Chow!"
+			x: 13.25d
+			y: -6.12d
+		}
+		{
+			dependencies: ["5B13C4D9F48F487A"]
+			description: ["&7Made at: &fDark Altar ritual &7from &fWind Core, Bows Tool x4, Fletching Table x4"]
+			id: "4D64C6DCFD1FC4B8"
+			optional: true
+			rewards: [
+				{
+					id: "054E2649A9570179"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "3ADDABF423419285"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2EBA8F6C62EA3514"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "08844BED858E2AE9"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Geez, that's a lotta Focuses!"
+			tasks: [
+				{
+					advancement: "goety:goety/craft_all_focus"
+					criterion: ""
+					icon: "goety:focus_pack"
+					id: "1A5E1175B6DFE184"
+					title: "Hyperfocus"
+					type: "advancement"
+				}
+			]
+			title: "Hyperfocus"
+			x: 15.35d
+			y: -6.12d
+		}
+		{
+			dependencies: ["5D24D999FA88CF7F"]
+			id: "396B41DED9F02FE6"
+			rewards: [
+				{
+					id: "61FB9EB08BC6CF72"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7D32AB505445A513"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "12ABC0F4D69D7564"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Seems to be what Spawners are made out of."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_cursed_ingot"
+					criterion: ""
+					icon: "goety:cursed_ingot"
+					id: "4CADACF2CD965EC8"
+					title: "Profaned Metal"
+					type: "advancement"
+				}
+			]
+			title: "Profaned Metal"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["396B41DED9F02FE6"]
+			id: "41A0BB272CBB5EF1"
+			rewards: [
+				{
+					id: "324FA8DA4B83F948"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1F44646A5F122B35"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "481D214F8D247591"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Totems that holds souls can be placed in it."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_cursed_cage"
+					criterion: ""
+					icon: "goety:cursed_cage"
+					id: "2E8EF685B46A1BCF"
+					title: "Caging Souls"
+					type: "advancement"
+				}
+			]
+			title: "Caging Souls"
+			x: 3.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41A0BB272CBB5EF1"]
+			description: ["Place the Dark Altar onto a Cursed Cage with a Totem of Souls in it."]
+			id: "3D7E033416D6F960"
+			rewards: [
+				{
+					id: "634E747ECEED71C8"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "60D10B4EC6C8687A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "51760298A0DA82BD"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0E90081DD02C8311"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "goety:goety/craft_dark_altar"
+					criterion: ""
+					icon: "goety:dark_altar"
+					id: "49991542952F8603"
+					title: "Ran Out of Essentia"
+					type: "advancement"
+				}
+			]
+			title: "Ran Out of Essentia"
+			x: 5.7d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D7E033416D6F960"]
+			description: ["&7Found in chests: &fChurch Materials"]
+			id: "18CDDAC980FF86E6"
+			rewards: [
+				{
+					id: "5CC79001DB8800BD"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4048D124EB2212D2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3CE62A45FA3D1660"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Acquire a Dark Alloy Ingot."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_dark_ingot"
+					criterion: ""
+					icon: "goety:dark_ingot"
+					id: "74D0B289614C9C8C"
+					title: "Dark, Darker, yet Darker"
+					type: "advancement"
+				}
+			]
+			title: "Dark, Darker, yet Darker"
+			x: 7.55d
+			y: -2.62d
+		}
+		{
+			dependencies: ["583954876A2B003B"]
+			description: ["&7Made at: &fDark Altar ritual &7from &fBlack Iron Helmet, Emerald, Spirit Fabric, Dark Alloy Ingot x2, any bones"]
+			id: "2F363602A375DF8F"
+			rewards: [
+				{
+					id: "208A8E915AD14ADB"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "558454813447DC8C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "25B6D5509992933B"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2BF617F3700E0A7F"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Get a full suit of Dark armor."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_dark_armor"
+					criterion: ""
+					icon: "goety:dark_helmet"
+					id: "4F19AAA2E834C2B5"
+					title: "Forged In Darkness"
+					type: "advancement"
+				}
+			]
+			title: "Forged In Darkness"
+			x: 11.15d
+			y: -2.62d
+		}
+		{
+			dependencies: ["4FC42D3BF529A242"]
+			id: "72404804741DAF08"
+			rewards: [
+				{
+					id: "50C09D3E37CC0920"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "195AF2895D6614B0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "139A90F61754B51B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Dark Hats reduces Casting Time, Dark Robes reduces Soul Costs."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_dark_robe"
+					criterion: ""
+					icon: "goety:dark_robe"
+					id: "2B5E3952BBF5B8C2"
+					title: "Look at Me, I'm the Evoker Now"
+					type: "advancement"
+				}
+			]
+			title: "Look at Me, I'm the Evoker Now"
+			x: 15.35d
+			y: -2.62d
+		}
+		{
+			dependencies: ["3278E341340CC6C1"]
+			description: [
+				"Wearing Necro Crown and Cape causes none boss Undead to be Neutral. Necro Staff powers Necromantic Spells."
+				"&7Made at: &fDark Altar ritual &7from &fConcentrated Emerald, Occult Fabric x2, Spirit Fabric, any bones x2, Ectoplasm x2"
+			]
+			id: "61C382F7A8F11D7D"
+			rewards: [
+				{
+					id: "5FBECDBEF95D0A9A"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3A016EEDE91BE7E3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "328DD5BE04CEFFAC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "goety:goety/craft_necro_set"
+					criterion: ""
+					icon: "goety:necro_crown"
+					id: "78364D347AFF074A"
+					title: "Really Late Healer"
+					type: "advancement"
+				}
+			]
+			title: "Really Late Healer"
+			x: 11.15d
+			y: 2.62d
+		}
+		{
+			dependencies: ["61C382F7A8F11D7D"]
+			id: "1AD3B57F6F879F2C"
+			rewards: [
+				{
+					id: "2AA522386803CE98"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2C84FE7BC8E0769B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "642EA3E7E2830682"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Summon a Zombie Servant."
+			tasks: [
+				{
+					advancement: "goety:goety/summon_zombie"
+					criterion: ""
+					icon: "minecraft:rotten_flesh"
+					id: "1500B3BBD8DB50B0"
+					title: "Night of the Living Dead"
+					type: "advancement"
+				}
+			]
+			title: "Night of the Living Dead"
+			x: 13.25d
+			y: 2.62d
+		}
+		{
+			dependencies: ["1AD3B57F6F879F2C"]
+			id: "5E8C062B081C5516"
+			rewards: [
+				{
+					id: "3B23A0DE9ED4180F"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "599576C22F63CFB4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0DE8020067EF3ABD"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Summon a Skeleton Servant."
+			tasks: [
+				{
+					advancement: "goety:goety/summon_skeleton"
+					criterion: ""
+					icon: "minecraft:bone"
+					id: "35DCBDD993607FFF"
+					title: "A Skeleton Popped Out!"
+					type: "advancement"
+				}
+			]
+			title: "A Skeleton Popped Out!"
+			x: 15.35d
+			y: 2.62d
+		}
+		{
+			dependencies: ["5E8C062B081C5516"]
+			id: "7C900D0D156F8C37"
+			rewards: [
+				{
+					id: "028DEDF282AA07A6"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2162D5963E7F578C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "79D3A7E86DF3CF18"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Summon a Wraith Servant."
+			tasks: [
+				{
+					advancement: "goety:goety/summon_wraith"
+					criterion: ""
+					icon: "goety:ectoplasm"
+					id: "44CCF81F8CC1C7EE"
+					title: "Peek-A-Boo"
+					type: "advancement"
+				}
+			]
+			title: "Peek-A-Boo"
+			x: 17.45d
+			y: 2.62d
+		}
+		{
+			dependencies: ["44B9E06E0C37219F"]
+			description: [
+				"Nameless Crown and Cape have same benefits as the Necro set. Nameless Staff powers Necromantic and certain Spells."
+				"&7Made at: &fDark Altar ritual &7from &fNecro Crown, Iron Ingot x3, Concentrated Emerald, Forbidden Piece x2"
+			]
+			id: "0E45BE0AF3F023B3"
+			rewards: [
+				{
+					id: "7C3995AFD9A04FE0"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "56330409E6258DBB"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6AC7710E6CE2F514"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1228CAA5C262CFC7"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "goety:goety/craft_nameless_set"
+					criterion: ""
+					icon: "goety:nameless_crown"
+					id: "1E182CCAF6AAFBF1"
+					title: "The Great Necromancer"
+					type: "advancement"
+				}
+			]
+			title: "The Great Necromancer"
+			x: 21.15d
+			y: 2.62d
+		}
+		{
+			dependencies: ["3D7E033416D6F960"]
+			id: "106D18A965F37F03"
+			rewards: [
+				{
+					id: "6A1C6D4DE6EE901F"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7C7CCE55BF1700A2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "185ED805A7A97775"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft an Animation Core through a Ritual."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_animation_core"
+					criterion: ""
+					icon: "goety:animation_core"
+					id: "65FA2C90E2B257F6"
+					title: "The Animated Series"
+					type: "advancement"
+				}
+			]
+			title: "The Animated Series"
+			x: 7.55d
+			y: -0.88d
+		}
+		{
+			dependencies: ["106D18A965F37F03"]
+			id: "4176BAF366F65E13"
+			rewards: [
+				{
+					id: "6F3E12E6F79EEE47"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1C776B7ADC87B5ED"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "68CB80DA5C91A297"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Summon a Grave Golem with an Animation Core."
+			tasks: [
+				{
+					advancement: "goety:goety/summon_grave_golem"
+					criterion: ""
+					icon: "goety:skull_pile"
+					id: "59AE4F69C20C5014"
+					title: "Gravedigger"
+					type: "advancement"
+				}
+			]
+			title: "Gravedigger"
+			x: 9.3d
+			y: -0.88d
+		}
+		{
+			dependencies: ["4176BAF366F65E13"]
+			id: "202C9B9253761699"
+			rewards: [
+				{
+					id: "2A35E417B91F353B"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "53562428510320FF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "46C6F6E447C4E843"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Summon a Redstone Golem with an Animation Core."
+			tasks: [
+				{
+					advancement: "goety:goety/summon_redstone_golem"
+					criterion: ""
+					icon: "minecraft:redstone_block"
+					id: "461223538723AF79"
+					title: "Warforged"
+					type: "advancement"
+				}
+			]
+			title: "Warforged"
+			x: 11.15d
+			y: -0.88d
+		}
+		{
+			dependencies: ["202C9B9253761699"]
+			id: "11779AF94C7C1781"
+			rewards: [
+				{
+					id: "63EB543B46D871D6"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "7294ADCFA2D1A2A0"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "73B081F6E1D89158"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4B73911A6299E9FE"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Summon a Redstone Monstrosity with an Animation Core."
+			tasks: [
+				{
+					advancement: "goety:goety/summon_redstone_monstrosity"
+					criterion: ""
+					icon: "goety:redstone_monstrosity_head"
+					id: "1C44FF96C119C15E"
+					title: "The Ultimate War Machine"
+					type: "advancement"
+				}
+			]
+			title: "The Ultimate War Machine"
+			x: 13.25d
+			y: -0.88d
+		}
+		{
+			dependencies: ["11779AF94C7C1781"]
+			id: "23E6F09D2947D4E9"
+			optional: true
+			rewards: [
+				{
+					id: "2879BC72DF6902CF"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "74EAC6D5D0F1A3EC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "35913E676DF73835"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Summon an Ice, Squall, Redstone and Grave Golems."
+			tasks: [
+				{
+					advancement: "goety:goety/summon_golems"
+					criterion: ""
+					icon: "minecraft:diamond_block"
+					id: "4187B347321DA7B9"
+					title: "Golemancy"
+					type: "advancement"
+				}
+			]
+			title: "Golemancy"
+			x: 15.35d
+			y: -0.88d
+		}
+		{
+			dependencies: ["68C1301DC34DB6AF"]
+			description: [
+				"Grants Soul Energy with each hit. Attack Speed increases if not holding anything offhand."
+				"&7Made at: &fDark Altar ritual &7from &fIron Hoe, Savage Tooth, Hunger Core, Pale Steel Ingot, Diamond and 1 more"
+			]
+			id: "1C5C5C950E7342DD"
+			rewards: [
+				{
+					id: "1EC0A1627D5A488E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3894DB3A1796428A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2B90760B0657E3DB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "goety:goety/craft_dark_scythe"
+					criterion: ""
+					icon: "goety:dark_scythe"
+					id: "1D7348746D80C50F"
+					title: "Slice and Dice"
+					type: "advancement"
+				}
+			]
+			title: "Slice and Dice"
+			x: 13.25d
+			y: -4.38d
+		}
+		{
+			dependencies: ["242317636036B2F6"]
+			description: [
+				"At full power, can let loose a projectile that slashes everything in its vicinity."
+				"&7Made at: &fDark Altar ritual &7from &fDark Scythe, any bones x2, any soul fire base blocks, Lapis, Unholy Blood and 3 more"
+			]
+			id: "7D4BBBADB72EAC8A"
+			rewards: [
+				{
+					id: "19B0A3E0E27C5A48"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "78FF484FCAA5A3E7"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E21FEFE6FE2F8AF"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4A74F963EF29F23C"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "goety:goety/craft_death_scythe"
+					criterion: ""
+					icon: "goety:death_scythe"
+					id: "21D90FAD684D8014"
+					title: "Grim Reaper"
+					type: "advancement"
+				}
+			]
+			title: "Grim Reaper"
+			x: 17.45d
+			y: -4.38d
+		}
+		{
+			dependencies: ["7D4BBBADB72EAC8A"]
+			description: [
+				"Obtain a Great Hammer, a powerful weapon or tool. Attack Speed increases if not holding anything offhand."
+				"&7Made at: &fDark Altar ritual &7from &fIron Pickaxe, Iron Block x5, Emerald, any logs"
+			]
+			id: "717F32C5280CDB8E"
+			rewards: [
+				{
+					id: "0EE155E33BC1F30E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "15A5E9950FC146EA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4427218E36307B44"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "goety:goety/get_hammer"
+					criterion: ""
+					icon: "goety:great_hammer"
+					id: "6B8A46DC34AF8938"
+					title: "Hammer Time!"
+					type: "advancement"
+				}
+			]
+			title: "Hammer Time!"
+			x: 19.3d
+			y: -4.38d
+		}
+		{
+			dependencies: ["717F32C5280CDB8E"]
+			description: ["&7Made at: &fDark Altar ritual &7from &fPhilosopher's Stone, Dark Shovel, Dark Pickaxe, Graverobber's Shovel, Eerie Pickaxe and 1 more"]
+			id: "20FB5247AF67EE98"
+			rewards: [
+				{
+					id: "3FE576E83A06FFE8"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0D884BBACD4CDE47"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "614EF9A213402CFE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Can break almost any block and causes Mobs to drop Gold Nuggets."
+			tasks: [
+				{
+					advancement: "goety:goety/craft_philosophers_mace"
+					criterion: ""
+					icon: "goety:philosophers_mace"
+					id: "4A55502D730486EE"
+					title: "Midas Touch"
+					type: "advancement"
+				}
+			]
+			title: "Midas Touch"
+			x: 21.15d
+			y: -4.38d
+		}
+		{
+			dependencies: ["20FB5247AF67EE98"]
+			id: "1288E38432B467C6"
+			rewards: [
+				{
+					id: "2CB13AE19CAE8938"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "5E498FAF7BA2DDA7"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4FA441D16492679A"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1E3F48F1BD82F8EF"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Obtain the Stormlander, the treasure of the Illagers"
+			tasks: [
+				{
+					advancement: "goety:goety/get_stormlander"
+					criterion: ""
+					icon: "goety:stormlander"
+					id: "034A62718635B8AC"
+					title: "Power of the Storm"
+					type: "advancement"
+				}
+			]
+			title: "Power of the Storm"
+			x: 23.25d
+			y: -4.38d
+		}
+		{
+			dependencies: ["0E45BE0AF3F023B3"]
+			description: ["Read the Forbidden Scroll and discover the secrets of Immortality."]
+			id: "434A01483D902E54"
+			rewards: [
+				{
+					id: "52A17D0310247020"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "70749E6FC133587F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4A460D8A13FFC831"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "goety:goety/read_forbidden_scroll"
+					criterion: ""
+					icon: "goety:forbidden_scroll"
+					id: "700631E71F5E7831"
+					title: "Grandma's Secret Recipe"
+					type: "advancement"
+				}
+			]
+			title: "Grandma's Secret Recipe"
+			x: 23.25d
+			y: 2.62d
+		}
+		{
+			dependencies: ["434A01483D902E54"]
+			description: ["Undying, and very hard to undo. Think about it first."]
+			id: "6A96DA59FAE2E753"
+			optional: true
+			rewards: [
+				{
+					id: "7D00C494E3E40FFB"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "36CBAC8F3B98E126"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DB02316C45D5FA7"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "047C203ED7DCF5F6"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Ascend to Lichdom and become truly immortal!"
+			tasks: [
+				{
+					advancement: "goety:goety/become_lich"
+					criterion: ""
+					icon: "goety:undeath_potion"
+					id: "6AE6B98104E5A9E5"
+					title: "I am Beyond Strength"
+					type: "advancement"
+				}
+			]
+			title: "I am Beyond Strength"
+			x: 25.35d
+			y: 2.62d
+		}
+		{
+			dependencies: ["106D18A965F37F03"]
+			description: ["Goety's crafts reach into the Cataclysm lords' halls."]
+			id: "55AA57A5C9082AEC"
+			rewards: [
+				{
+					id: "3A662721C59364E2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7332A24644B1AA92"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "143F0C8B287FEE21"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Of Goety and Cataclysm"
+			tasks: [
+				{
+					advancement: "goety_cataclysm:root"
+					criterion: ""
+					icon: "cataclysm:cursium_helmet"
+					id: "31F9E9A78FFB1E67"
+					title: "The Cataclysm Arts"
+					type: "advancement"
+				}
+			]
+			title: "The Cataclysm Arts"
+			x: 9.3d
+			y: 0.88d
+		}
+		{
+			dependencies: ["55AA57A5C9082AEC"]
+			description: ["&7Made at: &fDark Altar ritual &7from &fFireball Focus, Cursed Cage, Witherite Ingot, Mechanized Iron Block x2, Anvil"]
+			id: "236A0C73956BE34F"
+			rewards: [
+				{
+					id: "637C679938EC269C"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4B3D68980246D9DD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6C3E895F3AA99F58"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Mechanical Fabricator."
+			tasks: [
+				{
+					advancement: "goety_cataclysm:craft_fabricator"
+					criterion: ""
+					icon: "goety_cataclysm:fabricator"
+					id: "079FBAF2760C2F5C"
+					title: "We Have Technology!"
+					type: "advancement"
+				}
+			]
+			title: "We Have Technology!"
+			x: 11.15d
+			y: 0.88d
+		}
+		{
+			dependencies: ["236A0C73956BE34F"]
+			id: "1FB6BDAD5676BD3E"
+			rewards: [
+				{
+					id: "2EB8762A9E4D3372"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "78DF0C00F8E95111"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2D3530D4CB0EE37C"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1BFBD8FD82260EF1"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Summon a Netherite Monstrosity with an Infernal Forge."
+			tasks: [
+				{
+					advancement: "goety_cataclysm:summon_netherite_monstrosity"
+					criterion: ""
+					icon: "cataclysm:monstrous_helm"
+					id: "4559CB4916460FA8"
+					title: "Playing with Firepower"
+					type: "advancement"
+				}
+			]
+			title: "Playing with Firepower"
+			x: 13.25d
+			y: 0.88d
+		}
+		{
+			dependencies: ["1FB6BDAD5676BD3E"]
+			id: "51CA43E2BBA089C5"
+			optional: true
+			rewards: [
+				{
+					id: "62857C4C5263328F"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4F7F877BD9420A9A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7A571882ED10F53A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Convert a Modern Remnant to an Ancient Remnant."
+			tasks: [
+				{
+					advancement: "goety_cataclysm:convert_ancient_remnant"
+					criterion: ""
+					icon: "cataclysm:remnant_skull"
+					id: "3ABA57FF916F552E"
+					title: "Long Live the Monarch!"
+					type: "advancement"
+				}
+			]
+			title: "Long Live the Monarch!"
+			x: 15.35d
+			y: 0.88d
+		}
+		{
+			dependencies: ["51CA43E2BBA089C5"]
+			id: "522DDEA4BA4FED1D"
+			optional: true
+			rewards: [
+				{
+					id: "559E069E3ED3D8CD"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "45F13DBD7AC6A238"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "01F192E7BC824166"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Summon a Clawdian."
+			tasks: [
+				{
+					advancement: "goety_cataclysm:summon_clawdian"
+					criterion: ""
+					icon: "cataclysm:chitin_claw"
+					id: "5A8A4DDA82C36038"
+					title: "The Shrimp that Fried Rice"
+					type: "advancement"
+				}
+			]
+			title: "The Shrimp that Fried Rice"
+			x: 17.45d
+			y: 0.88d
+		}
+		{
+			dependencies: [
+				"0E45BE0AF3F023B3"
+				"11779AF94C7C1781"
+				"7D4BBBADB72EAC8A"
+			]
+			description: [
+				"The Nameless set, a Redstone Monstrosity at your command and the Death Scythe in your hands."
+				""
+				"The Apostle is waiting in Act IV."
+			]
+			hide_dependency_lines: true
+			id: "635C948C6CD52768"
+			rewards: [
+				{
+					id: "3C48DDB7D679F06F"
+					type: "xp"
+					xp: 4000
+				}
+				{
+					id: "5620BBA41333CDD4"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4EB6681C26AE3438"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1A66B232C2335B02"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "31660C5398827A68"
+					title: "Rise"
+					type: "checkmark"
+				}
+			]
+			title: "&4&lLord of the Dead"
+			x: 34.75d
+			y: 2.62d
+		}
+		{
+			dependencies: ["0E45BE0AF3F023B3"]
+			description: ["&7Made at: &fDark Altar ritual &7from &fBlack Iron Helmet, Spider Fang x2, Venomous Fang, Dark Fabric, Occult Fabric x2"]
+			id: "28F637A10841F4AB"
+			rewards: [
+				{
+					id: "02680748501B7501"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4D4E4B0341A97129"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "37E1D5A03505D743"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft the Spider Armor。"
+			tasks: [
+				{
+					advancement: "goety_revelation:spider_set"
+					criterion: ""
+					icon: "goety_revelation:spider_helmet"
+					id: "0134120765D0DECD"
+					title: "Spiderman"
+					type: "advancement"
+				}
+			]
+			title: "Spiderman"
+			x: 23.25d
+			y: 4.38d
+		}
+		{
+			dependencies: ["28F637A10841F4AB"]
+			description: ["&7Made at: &fDark Altar ritual &7from &fBlack Iron Helmet, Echo Shard x2, Sculk, Dark Fabric, Spirit Fabric x2"]
+			id: "6032F28F04D0821E"
+			rewards: [
+				{
+					id: "0F4FBE0049FB92CA"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "78C41956FA6701EB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6EDD93CC32BE7F3F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft the Specter Armor。"
+			tasks: [
+				{
+					advancement: "goety_revelation:spectre_set"
+					criterion: ""
+					icon: "goety_revelation:spectre_helmet"
+					id: "02D92447EE68B797"
+					title: "You once died for this"
+					type: "advancement"
+				}
+			]
+			title: "You once died for this"
+			x: 25.35d
+			y: 4.38d
+		}
+		{
+			dependencies: ["6032F28F04D0821E"]
+			description: ["Study the Godforging Scroll and grasp the secrets of divine craftsmanship."]
+			id: "0541ED518766B759"
+			rewards: [
+				{
+					id: "18CE66360AF416B6"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "75EC8A16F9466CC7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "55BA3B5CD0B05011"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "goety_revelation:read_god_scroll"
+					criterion: ""
+					icon: "goety_revelation:god_forging_scroll"
+					id: "6F0C30B870B6655E"
+					title: "Divine Artifice"
+					type: "advancement"
+				}
+			]
+			title: "Divine Artifice"
+			x: 27.2d
+			y: 4.38d
+		}
+		{
+			dependencies: [
+				"0541ED518766B759"
+				"024622C38193317F"
+			]
+			description: [
+				"Obtain the Apocalyptium Ingot,the ultimate upgraded version of the dark metal ingot."
+				"&7Made at: &fDark Altar ritual &7from &fHalo of Ascension, Dark Alloy Ingot x8"
+			]
+			id: "47C55CC8FC73A679"
+			rewards: [
+				{
+					id: "33E4F2941DA97BE3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3DD01BA0FC48149F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5A08F28F2C4ED0E6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "goety_revelation:apocalyptium_ingot"
+					criterion: ""
+					icon: "goety_revelation:apocalyptium_ingot"
+					id: "586DB3CDE845DC32"
+					title: "Ingots of Divinity Forging."
+					type: "advancement"
+				}
+			]
+			title: "Ingots of Divinity Forging."
+			x: 28.95d
+			y: 4.38d
+		}
+		{
+			dependencies: ["47C55CC8FC73A679"]
+			description: [
+				"The divine metal's armour: Goety Revelation's best."
+				"&7Made at: &fSmithing Table &7from &fApocalyptium Ingot, Dark Helmet, Apocalyptium Upgrade Smithing Template"
+			]
+			id: "0B1215CF6FDAF64A"
+			rewards: [
+				{
+					id: "00A0327948CB7464"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "34A2C243CD1CC3CD"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "18DF1B1229AAEC5A"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "39DA1B6D8DEE3A4F"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Obtain a full set of divine - metal armors."
+			tasks: [
+				{
+					advancement: "goety_revelation:apocalyptium_set"
+					criterion: ""
+					icon: "goety_revelation:apocalyptium_upgrade_smithing_template"
+					id: "1CA1CD0A8ED2895F"
+					title: "Divine Soul Forging"
+					type: "advancement"
+				}
+			]
+			title: "Divine Soul Forging"
+			x: 30.8d
+			y: 4.38d
+		}
+		{
+			dependencies: ["0B1215CF6FDAF64A"]
+			description: ["「So when Jesus had taken the wine he said, All is done. And with his head bent he gave up his spirit.(The Book of John19：30)"]
+			id: "37C0E2A117FF8E89"
+			optional: true
+			rewards: [
+				{
+					id: "02CEB22E082C94F9"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "07B8D8D5B2989D1C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4A76C521C9B3EB89"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "goety_revelation:the_tip_of_the_longinus"
+					criterion: ""
+					icon: "goety_revelation:the_tip_of_the_longinus"
+					id: "73D6FC10CCBCE870"
+					title: "Spear of Longinus"
+					type: "advancement"
+				}
+			]
+			title: "Spear of Longinus"
+			x: 32.65d
+			y: 4.38d
+		}
+		{
+			dependencies: ["3D7E033416D6F960"]
+			description: ["The stuff of ghosts, and the most-used material in the mod: a hundred recipes ask for it. Look it up with &eR&f - there is more than one way to come by it."]
+			id: "4528E38EB17AECF6"
+			rewards: [
+				{
+					id: "6926A78E103364EB"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "78FD9E1EA3802282"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6AECCDFE7FFA9BA6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A hundred recipes want it"
+			tasks: [
+				{
+					count: 8L
+					id: "7BB7C9739A97754E"
+					item: "goety:ectoplasm"
+					type: "item"
+				}
+			]
+			title: "Ectoplasm"
+			x: 7.55d
+			y: 2.62d
+		}
+		{
+			dependencies: ["4528E38EB17AECF6"]
+			description: ["String and lapis, soured with a fermented spider eye. The necromancer's robes are cut from it."]
+			id: "3278E341340CC6C1"
+			rewards: [
+				{
+					id: "11622F90A1E4F878"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "12A49B1D089407F3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "16AFC61A256E1425"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6FB1AAF1419A6C2C"
+					item: "goety:occult_fabric"
+					type: "item"
+				}
+			]
+			title: "Occult Fabric"
+			x: 9.3d
+			y: 2.62d
+		}
+		{
+			dependencies: ["2610FEE854BCF126"]
+			description: ["String, lapis and gold. The first cloth of the craft, and what the wand's grip is wound with."]
+			id: "3010F6211793874C"
+			rewards: [
+				{
+					id: "5A7110963AFE896D"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "16641F5D6BE3D492"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "45D078764E6F36EC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "729F54639D8BD7BF"
+					item: "goety:magic_fabric"
+					type: "item"
+				}
+			]
+			title: "Magic Fabric"
+			x: 3.85d
+			y: -6.12d
+		}
+		{
+			dependencies: ["2F363602A375DF8F"]
+			description: ["String and lapis again, with amethyst this time. The dark robes are cut from it."]
+			id: "4FC42D3BF529A242"
+			rewards: [
+				{
+					id: "497E944E4EE41369"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2566E0BE3D81876B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2916E1E70CE4C88A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3D79B71A86C8AC39"
+					item: "goety:dark_fabric"
+					type: "item"
+				}
+			]
+			title: "Dark Fabric"
+			x: 13.25d
+			y: -2.62d
+		}
+		{
+			dependencies: ["18CDDAC980FF86E6"]
+			description: ["Fabric with ectoplasm in the weave. It lines the armour so that it turns magic as well as blades."]
+			id: "583954876A2B003B"
+			rewards: [
+				{
+					id: "721AF8AA58BF5F57"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "753F1500A33E34A0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "013BB402E77C22D4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "13393912853F424D"
+					item: "goety:spirit_fabric"
+					type: "item"
+				}
+			]
+			title: "Spirit Fabric"
+			x: 9.3d
+			y: -2.62d
+		}
+		{
+			dependencies: ["18CDDAC980FF86E6"]
+			description: ["Cursed metal and iron, worked with lapis and coal. The metal of the reapers."]
+			id: "46908F6258E9112E"
+			rewards: [
+				{
+					id: "048B49D69CB8E9DD"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "72CBF4C2AA3BE4C2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "089C25EE8C1B5051"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "46F8AF9671CA77D7"
+					item: "goety:pale_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "Pale Steel"
+			x: 9.3d
+			y: -4.38d
+		}
+		{
+			dependencies: ["46908F6258E9112E"]
+			description: ["Ravagers carry them. With no raid to hand, bone blocks around a totem will do."]
+			id: "68C1301DC34DB6AF"
+			rewards: [
+				{
+					id: "18EC916A64178A46"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0EF36EFB4F923A3C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3728F0E61DEAA5D6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "79068B6783807D7C"
+					item: "goety:savage_tooth"
+					type: "item"
+				}
+			]
+			title: "A Savage Tooth"
+			x: 11.15d
+			y: -4.38d
+		}
+		{
+			dependencies: ["1C5C5C950E7342DD"]
+			description: ["Taken from the Apostle. Only one thing bleeds this, and it does not bleed easily (Act IV)."]
+			id: "242317636036B2F6"
+			rewards: [
+				{
+					id: "0721409B11FC48CE"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "131DF38E549553D1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4EC6EA7901477031"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3BF46CF9DBDA7B35"
+					item: "goety:unholy_blood"
+					type: "item"
+				}
+			]
+			title: "Unholy Blood"
+			x: 15.35d
+			y: -4.38d
+		}
+		{
+			dependencies: ["7C900D0D156F8C37"]
+			description: ["Made by ritual at the Dark Altar, from an echo shard and a wither skeleton's skull among other things. Put together, the pieces are a crown, a cape and a staff."]
+			id: "44B9E06E0C37219F"
+			rewards: [
+				{
+					id: "7167336D30F2E78B"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6A6DF81B10760F5B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7F18E1BECC212ECA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "4F358784B174A2E3"
+					item: "goety:forbidden_piece"
+					type: "item"
+				}
+			]
+			title: "A Forbidden Piece"
+			x: 19.3d
+			y: 2.62d
+		}
+	]
+	subtitle: ["Necromancy, foci and the souls that power them"]
+	title: "&4Goety"
+}

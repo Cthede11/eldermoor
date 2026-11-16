@@ -1,0 +1,25 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 8,
+      "other_set": [
+        "minecraft:ancient_cities",
+        "minecraft:strongholds"
+      ]
+    },
+    "salt": 746218233,
+    "separation": 21,
+    "spacing": 42,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "tetra:regular_ruin",
+      "weight": 1
+    },
+    {
+      "structure": "tetra:extractor_ruin",
+      "weight": 1
+    }
+  ]
+}

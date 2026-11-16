@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 5,
+      "other_set": "minecraft:villages"
+    },
+    "salt": 345727523,
+    "separation": 70,
+    "spacing": 84,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "realmrpg_quests:lumberjacks",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,2644 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "immersive"
+	group: "02AD8609A8FE6EE4"
+	icon: "immersiveengineering:hammer"
+	id: "528C9EBA36E116C6"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["724EB23920266048"]
+			description: [
+				"Immersive Engineering is tech you can see: multiblocks you build block by block and then &ehit with the hammer&f to form."
+				""
+				"The &6Engineer's Manual&f (your reward) shows every multiblock layer by layer. Keep it handy."
+			]
+			hide_until_deps_complete: true
+			id: "071A664F3F7D778E"
+			rewards: [
+				{
+					id: "603B9433FF2241EF"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "778FF9D75CD300FF"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0A61C885AFC64BB8"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "06AFFB4C81CE093C"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Tool number one"
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/craft_hammer"
+					criterion: ""
+					icon: "immersiveengineering:hammer"
+					id: "6EBB925BFDE9240A"
+					title: "Craft an Engineer's Hammer"
+					type: "advancement"
+				}
+			]
+			title: "&6The Engineer's Hammer"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50FFB011CCC89372"]
+			description: ["Surround a bucket of creosote with planks. Treated wood is the base of every early IE machine - and a lovely building block."]
+			id: "4C33D25E9B354931"
+			rewards: [
+				{
+					id: "28FF3586E2A21D57"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 32
+					id: "66DD5CC1C74B096F"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "10403954E8BAA2EC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/craft_treatedwood"
+					criterion: ""
+					icon: "immersiveengineering:treated_wood_horizontal"
+					id: "76ABEB1B271F326B"
+					title: "Craft Treated Wood"
+					type: "advancement"
+				}
+			]
+			title: "Treated Wood"
+			x: 5.35d
+			y: -3.11d
+		}
+		{
+			dependencies: ["0176A28D1D37F376"]
+			description: [
+				"27 Coke Bricks in a 3x3x3 cube, then hammer the centre of a side. Coal goes in, &eCoal Coke&f and &eCreosote Oil&f come out."
+				""
+				"It's slow. Build several."
+			]
+			id: "50FFB011CCC89372"
+			rewards: [
+				{
+					id: "01C0FF174118AC0C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 32
+					id: "098022B4CECE631B"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "214341ECFB1D7885"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2830BBB918B8B3C7"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "3x3x3 of Coke Bricks"
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/mb_cokeoven"
+					criterion: ""
+					icon: "immersiveengineering:cokebrick"
+					id: "196007C870A6FF0B"
+					title: "Form a Coke Oven"
+					type: "advancement"
+				}
+			]
+			title: "The Coke Oven"
+			x: 3.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50FFB011CCC89372"]
+			description: ["Pull the oil out with a bucket or bottle it. Treated wood and wire insulation both start here."]
+			id: "1734B5AAFD8EEB79"
+			rewards: [
+				{
+					id: "0F69D36A0CAEEE23"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 2
+					id: "4207905DB1CAF95E"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "006EA2CC9666C66A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/creosote"
+					criterion: ""
+					icon: "minecraft:bucket"
+					id: "22620A8EE89DEF04"
+					title: "Collect Creosote Oil"
+					type: "advancement"
+				}
+			]
+			title: "Creosote"
+			x: 5.35d
+			y: 2.11d
+		}
+		{
+			dependencies: ["4D8A1EE359C71A7B"]
+			description: ["Another 3x3x3, this time of Blast Bricks. Iron + coal coke = steel."]
+			id: "4309276D38C3440E"
+			rewards: [
+				{
+					id: "26E76E101667585A"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 16
+					id: "61F111AB0150B931"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "0DF23EC077B1D2A4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7633D8DFEA3DFBE0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "3x3x3 of Blast Bricks"
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/mb_blastfurnace"
+					criterion: ""
+					icon: "immersiveengineering:blastbrick"
+					id: "11454D5C49D9F4A4"
+					title: "Form a Crude Blast Furnace"
+					type: "advancement"
+				}
+			]
+			title: "The Crude Blast Furnace"
+			x: 8.85d
+			y: -0.11d
+		}
+		{
+			dependencies: ["4309276D38C3440E"]
+			description: [
+				"Steel is used by IE, Mekanism, Tinkers and Epic Knights alike. In Eldermoor there is only &eone&f steel ingot: whichever machine makes it, the same item comes out, and every recipe accepts it."
+				"&7Made at: &fArc Furnace &7from &fSteel Dust"
+			]
+			id: "5B8FB5DDDC91703E"
+			rewards: [
+				{
+					id: "4A234CADB7EB3498"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 8
+					id: "32666CE17A6977E8"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "74E3417543FD7163"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "3697084706A68D61"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "72B3CCEC59018D89"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The backbone of industry"
+			tasks: [
+				{
+					id: "2E7747A6074B6154"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+			]
+			title: "&6Steel!"
+			x: 10.6d
+			y: -0.11d
+		}
+		{
+			dependencies: ["4C33D25E9B354931"]
+			description: ["Crafts blueprints into components, moulds and bullets, and modifies IE tools."]
+			id: "3A6B07A7904FC4BA"
+			rewards: [
+				{
+					id: "11D9FBD1B1E4BDCF"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "2C13B2122D111E56"
+					item: "immersiveengineering:treated_wood_horizontal"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7A4F42CA2B5FEE98"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/craft_workbench"
+					criterion: ""
+					icon: "immersiveengineering:workbench"
+					id: "485F7304159ECF3F"
+					title: "Craft an Engineer's Workbench"
+					type: "advancement"
+				}
+			]
+			title: "Engineer's Workbench"
+			x: 7.1d
+			y: -3.11d
+		}
+		{
+			dependencies: ["3A6B07A7904FC4BA"]
+			description: ["Simple, cheap item transport that needs no power. Hammer to rotate."]
+			id: "66BB1B98FBB17380"
+			optional: true
+			rewards: [
+				{
+					id: "6298F5C907770C4C"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "08E5DF64EAF0E2FB"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "54B27C2BE9F07519"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/place_conveyor"
+					criterion: ""
+					icon: "immersiveengineering:conveyor_basic"
+					id: "52FF16B58A76404F"
+					title: "Place a Conveyor Belt"
+					type: "advancement"
+				}
+			]
+			title: "Conveyor Belts"
+			x: 8.85d
+			y: -3.11d
+		}
+		{
+			dependencies: ["1734B5AAFD8EEB79"]
+			description: [
+				"IE moves power through hanging wires between Connectors. &eLV&f, &6MV&f and &cHV&f networks don't mix - use transformers between them."
+				""
+				"Uninsulated wires hurt. Don't run them through doorways."
+			]
+			id: "0AC77C3A26ED809B"
+			rewards: [
+				{
+					id: "33289F14405934B9"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "2E896412607BADA6"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A94F899697F09D6"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0D95A2502778959D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Wires and connectors"
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/connect_wire"
+					criterion: ""
+					icon: "immersiveengineering:wirecoil_copper"
+					id: "5C1505EE36E14BA7"
+					title: "Connect a wire"
+					type: "advancement"
+				}
+			]
+			title: "Connect the Dots"
+			x: 7.1d
+			y: 2.11d
+		}
+		{
+			dependencies: ["2DEC9EE40829D1DB"]
+			id: "17E74AC8434B9D79"
+			rewards: [
+				{
+					id: "01536401A9452CFC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "122F3ABBA3340E06"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "11A32BA9598964A4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Turns the rotation of a water wheel or windmill into FE."
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/place_dynamo"
+					criterion: ""
+					icon: "immersiveengineering:dynamo"
+					id: "0CFC14AC3CB60C65"
+					title: "Place a Kinetic Dynamo"
+					type: "advancement"
+				}
+			]
+			title: "Kinetic Dynamo"
+			x: 10.6d
+			y: 2.11d
+		}
+		{
+			dependencies: ["17E74AC8434B9D79"]
+			description: ["Mount it on a dynamo, high up with clear air in front. Free power forever."]
+			id: "31CE07598556213C"
+			rewards: [
+				{
+					id: "55A48AF1D9945932"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "7DFE107812E01990"
+					item: "immersiveengineering:capacitor_lv"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "16785B93B1A73B50"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5C995EE7228D3AFA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Free power"
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/place_windmill"
+					criterion: ""
+					icon: "immersiveengineering:windmill"
+					id: "5077CAA142A467E0"
+					title: "Place a Windmill"
+					type: "advancement"
+				}
+			]
+			title: "Windmill"
+			x: 12.35d
+			y: 2.11d
+		}
+		{
+			dependencies: ["3A4CE2812CF73D51"]
+			id: "74550C0091D7BBDA"
+			optional: true
+			rewards: [
+				{
+					id: "5F3FFE174EFCC36C"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "521C0A84A5434B40"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7A01B9061F114E15"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Place next to a vanilla furnace to run it on FE instead of fuel."
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/craft_heater"
+					criterion: ""
+					icon: "immersiveengineering:furnace_heater"
+					id: "050704AC1E921FD9"
+					title: "Craft an External Heater"
+					type: "advancement"
+				}
+			]
+			title: "External Heater"
+			x: 16.6d
+			y: 2.39d
+		}
+		{
+			dependencies: [
+				"5B8FB5DDDC91703E"
+				"31CE07598556213C"
+			]
+			description: ["Your first powered multiblock. Stamps ingots into plates, rods, wire and gears depending on the mould inside."]
+			id: "7A75E7C432C48F8D"
+			rewards: [
+				{
+					id: "0AD77C28F54D1CA2"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "0643CCCEAF14A2F8"
+					item: "immersiveengineering:mold_plate"
+					type: "item"
+				}
+				{
+					id: "3A7CCC5B60B15B8C"
+					item: "immersiveengineering:mold_rod"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "55F01896A0635ECD"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "461586A2939FE7A1"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Plates, rods and gears"
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_metalpress"
+					criterion: ""
+					icon: "immersiveengineering:mold_plate"
+					id: "54E232E1681F9113"
+					title: "Form a Metal Press"
+					type: "advancement"
+				}
+			]
+			title: "The Metal Press"
+			x: 14.85d
+			y: -2.17d
+		}
+		{
+			dependencies: ["7A75E7C432C48F8D"]
+			description: ["Plates make sheetmetal - needed for tanks and silos, and a great industrial building block."]
+			id: "06337F637ECCCF96"
+			optional: true
+			rewards: [
+				{
+					id: "7BC595B567CD0EEE"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "2B4AF49C3CED4EDD"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4DC48C550587E442"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/craft_sheetmetal"
+					criterion: ""
+					icon: "immersiveengineering:sheetmetal_iron"
+					id: "393EDE018C08C17C"
+					title: "Craft Sheetmetal"
+					type: "advancement"
+				}
+			]
+			title: "Sheetmetal"
+			x: 16.6d
+			y: -3.86d
+		}
+		{
+			dependencies: ["33EF28A29F9034E3"]
+			description: [
+				"A hulking ore doubler. One raw ore becomes two dusts."
+				""
+				"Do not fall in."
+			]
+			id: "1CF8A6F8BDEE4A93"
+			rewards: [
+				{
+					id: "2E1F642E87EC3F7F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 32
+					id: "7AB499E728C47CD9"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0623145A60F462CA"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E9B4A8780BC1C4A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6C51554F48538437"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Double your ores"
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_crusher"
+					criterion: ""
+					icon: "immersiveengineering:heavy_engineering"
+					id: "7DF8583E4A0E3059"
+					title: "Form a Crusher"
+					type: "advancement"
+				}
+			]
+			title: "The Crusher"
+			x: 18.45d
+			y: 1.02d
+		}
+		{
+			dependencies: ["7A75E7C432C48F8D"]
+			description: ["Accepts hoppers and pipes, and up to two preheaters for much faster steel."]
+			id: "45D213CE6B2F65D4"
+			optional: true
+			rewards: [
+				{
+					id: "73D7358CBAF80773"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 16
+					id: "54F72A6B7D04BB5F"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0C2FAA77076B4BB9"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_improvedblastfurnace"
+					criterion: ""
+					icon: "immersiveengineering:blastbrick_reinforced"
+					id: "31BFD942DFB98B79"
+					title: "Form an Improved Blast Furnace"
+					type: "advancement"
+				}
+			]
+			title: "Improved Blast Furnace"
+			x: 16.6d
+			y: -2.36d
+		}
+		{
+			dependencies: ["7B182E8783929AD9"]
+			description: ["Smelts dusts with bonus slag, makes alloys in bulk and recycles old tools and armour back into ingots. Hungry for power and graphite electrodes."]
+			id: "5E1522EEDCC9B956"
+			rewards: [
+				{
+					id: "56FBF7B3603BB439"
+					type: "xp"
+					xp: 300
+				}
+				{
+					exclude_from_claim_all: true
+					id: "68EFD628D8F518C8"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "508198E04533E4DD"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					id: "076223244CE2F54D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5689015332DCB36F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Alloys and recycling"
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_arcfurnace"
+					criterion: ""
+					icon: "immersiveengineering:graphite_electrode"
+					id: "0E6F4045569E0D3F"
+					title: "Form an Arc Furnace"
+					type: "advancement"
+				}
+			]
+			title: "The Arc Furnace"
+			x: 22.4d
+			y: 1.02d
+		}
+		{
+			dependencies: ["06337F637ECCCF96"]
+			description: ["Bulk storage: the Tank holds 512 buckets of a fluid, the Silo 41,472 of a single item."]
+			id: "7B8B6293AED50BFE"
+			optional: true
+			rewards: [
+				{
+					id: "4DD52D9A920C97A3"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 3
+					id: "408790BAC71C9DB5"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7BB22A4D462C3992"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_tank"
+					criterion: ""
+					icon: "immersiveengineering:sheetmetal_iron"
+					id: "6F3B4EAC986A5EF5"
+					title: "Form a Tank"
+					type: "advancement"
+				}
+				{
+					advancement: "immersiveengineering:multiblocks/mb_silo"
+					criterion: ""
+					icon: "immersiveengineering:sheetmetal_iron"
+					id: "57A216C677A41043"
+					title: "Form a Silo"
+					type: "advancement"
+				}
+			]
+			title: "Tanks and Silos"
+			x: 18.45d
+			y: -3.86d
+		}
+		{
+			dependencies: ["54FF5632A85E44D8"]
+			description: ["Moves fluids through pipes - and pulls them from the world when powered with redstone. The Squeezer, Fermenter and Refinery all need it."]
+			id: "393A371B753C71A2"
+			rewards: [
+				{
+					id: "2B808B9FEBFF23F5"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "466F16782B66F9B2"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "276BE3108E78CF1C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:main/craft_pump"
+					criterion: ""
+					icon: "immersiveengineering:fluid_pump"
+					id: "1B127776CCA218D0"
+					title: "Craft a Fluid Pump"
+					type: "advancement"
+				}
+			]
+			title: "Fluid Pump"
+			x: 18.45d
+			y: 3.89d
+		}
+		{
+			dependencies: [
+				"5E1522EEDCC9B956"
+				"393A371B753C71A2"
+			]
+			description: ["Squeeze seeds into &ePlant Oil&f. Ferment sugar cane, melons or potatoes into &eEthanol&f."]
+			id: "77423A8823357160"
+			rewards: [
+				{
+					id: "5D726FAA41A838E9"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 64
+					id: "7B7D7612CC6C2D62"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6DD0C52DCD7654C3"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "77EF7CCCA520D78E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Plant oil and ethanol"
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_squeezer"
+					criterion: ""
+					icon: "minecraft:wheat_seeds"
+					id: "6A3D9DB672AA0A25"
+					title: "Form a Squeezer"
+					type: "advancement"
+				}
+				{
+					advancement: "immersiveengineering:multiblocks/mb_fermenter"
+					criterion: ""
+					icon: "minecraft:sugar_cane"
+					id: "3C8E1FCC2568FCFF"
+					title: "Form a Fermenter"
+					type: "advancement"
+				}
+			]
+			title: "Squeezer \\& Fermenter"
+			x: 24.15d
+			y: 4.89d
+		}
+		{
+			dependencies: ["77423A8823357160"]
+			description: ["Plant Oil + Ethanol = &6Biodiesel&f."]
+			id: "598648A4FF91857D"
+			rewards: [
+				{
+					id: "55E26E9EF4FD8995"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "22AEE6A11D111CB7"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "79C7D7A6492B6B37"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Biodiesel"
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_refinery"
+					criterion: ""
+					icon: "immersiveengineering:heavy_engineering"
+					id: "590CC6119FB6A539"
+					title: "Form a Refinery"
+					type: "advancement"
+				}
+			]
+			title: "The Refinery"
+			x: 25.9d
+			y: 4.89d
+		}
+		{
+			dependencies: ["598648A4FF91857D"]
+			description: ["Loud, enormous and makes 4096 FE/t at high voltage. This will run anything."]
+			id: "4B3A9401FDFBA779"
+			rewards: [
+				{
+					id: "59EF1AE73F68ED76"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "10DC1777F7554CE5"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "7902E06EBD069BC3"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "58D362D931967CF0"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Serious power"
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_dieselgen"
+					criterion: ""
+					icon: "immersiveengineering:heavy_engineering"
+					id: "1454316E288D7DD1"
+					title: "Form a Diesel Generator"
+					type: "advancement"
+				}
+			]
+			title: "&6Diesel Generator"
+			x: 27.65d
+			y: 4.89d
+		}
+		{
+			dependencies: ["6A09F2C321C8D80A"]
+			description: ["Mineral veins hide under every chunk. Find one with a &eCore Sample Drill&f, then let the Excavator's bucket wheel dig it out - no hole required."]
+			id: "7C622E287E08C386"
+			rewards: [
+				{
+					id: "6005FD21A85052F7"
+					type: "xp"
+					xp: 500
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A674E4437AC8E23"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "6EF59AF498C39029"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2FFC4DB8946D24AF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mine without mining"
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_excavator"
+					criterion: ""
+					icon: "immersiveengineering:heavy_engineering"
+					id: "14ABD37558089DE4"
+					title: "Form an Excavator"
+					type: "advancement"
+				}
+			]
+			title: "The Excavator"
+			x: 27.65d
+			y: 3.39d
+		}
+		{
+			dependencies: ["7B8B6293AED50BFE"]
+			description: ["Mixes solids into fluids. Liquid concrete can be poured into moulds... or over people."]
+			id: "2FEDCED483F74076"
+			optional: true
+			rewards: [
+				{
+					id: "4C1C17E4ECC73966"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 32
+					id: "45FE49394FE3B5C8"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "09AA97AA34B1E108"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "409042A3BA8AA75E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_mixer"
+					criterion: ""
+					icon: "immersiveengineering:light_engineering"
+					id: "76F7CB334641BB18"
+					title: "Form a Mixer"
+					type: "advancement"
+				}
+				{
+					advancement: "immersiveengineering:multiblocks/liquid_concrete"
+					criterion: ""
+					icon: "minecraft:white_concrete"
+					id: "2F914EF443A0550F"
+					title: "Pour Liquid Concrete"
+					type: "advancement"
+				}
+			]
+			title: "The Mixer"
+			x: 20.55d
+			y: -3.86d
+		}
+		{
+			dependencies: ["5E1522EEDCC9B956"]
+			description: ["Runs on biodiesel, digs 3x3 with the right head, and takes upgrades at the Workbench."]
+			id: "6FC4CB691638691A"
+			optional: true
+			rewards: [
+				{
+					id: "6A60BD0FFE0A515B"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "0E184999368376F2"
+					item: "immersiveengineering:drillhead_steel"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 80"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "247F24102A05AE76"
+					silent: true
+					title: "+80 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "16511481613C1F78"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:tools/craft_drill"
+					criterion: ""
+					icon: "immersiveengineering:drill"
+					id: "5E2F8147FCDFD353"
+					title: "Craft a Mining Drill"
+					type: "advancement"
+				}
+			]
+			title: "Mining Drill"
+			x: 24.15d
+			y: -2.61d
+		}
+		{
+			dependencies: ["7469EF0916080431"]
+			description: ["Eight chambers, many bullet types. Craft cartridges at the Workbench using a blueprint."]
+			id: "3979F70C5C3D71C8"
+			optional: true
+			rewards: [
+				{
+					id: "35399DBF1B9EF283"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "005A149D694128F2"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7640630080D1F041"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7CBF1A8A5F24F5CE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "immersiveengineering:tools/craft_revolver"
+					criterion: ""
+					icon: "immersiveengineering:revolver"
+					id: "1B3BBFADF5CC6224"
+					title: "Craft a Revolver"
+					type: "advancement"
+				}
+			]
+			title: "The Revolver"
+			x: 25.9d
+			y: 0.39d
+		}
+		{
+			dependencies: ["742B15081C61B5E4"]
+			id: "345BC512914AB3DC"
+			optional: true
+			rewards: [
+				{
+					id: "6357C8BA0C9CDCF2"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "2C28ABFF5018BB93"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5FF3FB47FF36EC74"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7EDDB2617D512E93"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fires rods at absurd speed. Needs charging."
+			tasks: [
+				{
+					advancement: "immersiveengineering:tools/craft_railgun"
+					criterion: ""
+					icon: "immersiveengineering:railgun"
+					id: "1BE3B0F3049B5ACE"
+					title: "Craft a Railgun"
+					type: "advancement"
+				}
+			]
+			title: "The Railgun"
+			x: 29.75d
+			y: 0.39d
+		}
+		{
+			dependencies: ["3979F70C5C3D71C8"]
+			id: "534F53863F7AECAD"
+			optional: true
+			rewards: [
+				{
+					id: "16D3AC6AC7AAD50D"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "67A47D12FBF89322"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5DDFA187C17F6CAE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sprays any fluid. Creosote is flammable. Just saying."
+			tasks: [
+				{
+					advancement: "immersiveengineering:tools/craft_chemthrower"
+					criterion: ""
+					icon: "immersiveengineering:chemthrower"
+					id: "07A05BD7F931BFF1"
+					title: "Craft a Chemical Thrower"
+					type: "advancement"
+				}
+			]
+			title: "Chemical Thrower"
+			x: 27.65d
+			y: 1.89d
+		}
+		{
+			dependencies: ["6FC4CB691638691A"]
+			id: "2BEB239A3A6AC8DB"
+			optional: true
+			rewards: [
+				{
+					id: "442FCE0E4849919B"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "595B6EB273CDC957"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1E1B4A717F0154CD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fells whole trees in one go."
+			tasks: [
+				{
+					advancement: "immersiveengineering:tools/craft_buzzsaw"
+					criterion: ""
+					icon: "immersiveengineering:buzzsaw"
+					id: "43C471AA599AF706"
+					title: "Craft a Buzzsaw"
+					type: "advancement"
+				}
+			]
+			title: "Buzzsaw"
+			x: 25.9d
+			y: -2.61d
+		}
+		{
+			dependencies: ["6FC4CB691638691A"]
+			id: "1FF33A2385AC22B5"
+			optional: true
+			rewards: [
+				{
+					id: "1874AECD08009775"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "7E10D88FE12A099B"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "375981EEE8FED290"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charges the items you carry while you work."
+			tasks: [
+				{
+					advancement: "immersiveengineering:tools/craft_powerpack"
+					criterion: ""
+					icon: "immersiveengineering:powerpack"
+					id: "2985D25E8C4EC18B"
+					title: "Craft a Capacitor Backpack"
+					type: "advancement"
+				}
+			]
+			title: "Capacitor Backpack"
+			x: 25.9d
+			y: -1.11d
+		}
+		{
+			dependencies: [
+				"4B3A9401FDFBA779"
+				"7C622E287E08C386"
+			]
+			description: ["Steel flows, the excavator turns and the diesel generators roar. Immersive Engineering: mastered."]
+			id: "584794403BA5BF6B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "040AAFFA597EA111"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 4
+					id: "26E615128E635450"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "7F6788D61A9C9BF8"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/mastery xp @s building 160"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "3AB5CE8732C82F14"
+					silent: true
+					title: "+160 Building experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3CC12AE6041962E1"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "6685981DD4CC1D94"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lCaptain of Industry"
+			x: 29.75d
+			y: 4.89d
+		}
+		{
+			dependencies: ["7A75E7C432C48F8D"]
+			description: ["Immersive Petroleum. A Seismic Survey Tool finds the oil reservoirs deep under the ground."]
+			id: "7F36328D50CB51A0"
+			rewards: [
+				{
+					id: "1036F0FBFFAFD1D6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "44BFBC7F79CC143C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "53DA898EC6250E81"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find an Oil Reservoir using the Seismic Survey"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/root"
+					criterion: ""
+					icon: "immersivepetroleum:seismic_survey"
+					id: "5A189B13AF9F9035"
+					title: "Immersive Petroleum"
+					type: "advancement"
+				}
+			]
+			title: "Immersive Petroleum"
+			x: 16.6d
+			y: -5.61d
+		}
+		{
+			dependencies: ["7F36328D50CB51A0"]
+			description: ["A pumpjack over a reservoir pumps crude oil for a very long time."]
+			id: "6F272FC831CBAE56"
+			rewards: [
+				{
+					id: "74C18D3ECDEBF978"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "7E87FC304D9C8367"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0CAC0BB5ADC6B80F"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Form the Pumpjack"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/mb_pumpjack"
+					criterion: ""
+					icon: "immersivepetroleum:pumpjack"
+					id: "6832C59F63663ECA"
+					title: "This sucks!"
+					type: "advancement"
+				}
+			]
+			title: "This sucks!"
+			x: 18.45d
+			y: -5.61d
+		}
+		{
+			dependencies: ["6F272FC831CBAE56"]
+			description: ["Crude oil in; lubricant, diesel, gasoline and naphtha out."]
+			id: "79E7B61A6C26CB05"
+			rewards: [
+				{
+					id: "46407AB65BDFB1E6"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "06CF7E8E88382C00"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0985488FD12C2991"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Form the Distillation Tower"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/mb_distillationtower"
+					criterion: ""
+					icon: "immersivepetroleum:distillation_tower"
+					id: "07D56D1FAE06A280"
+					title: "This is only the Beginning"
+					type: "advancement"
+				}
+			]
+			title: "This is only the Beginning"
+			x: 20.55d
+			y: -5.61d
+		}
+		{
+			dependencies: ["79E7B61A6C26CB05"]
+			id: "171C874C81A2010E"
+			rewards: [
+				{
+					id: "764D5C72BC2EFD98"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1B56CCD3DC0C57C0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "07EB41084EE30688"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade some Naphtha into Gasoline"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/gasoline"
+					criterion: ""
+					icon: "immersivepetroleum:gasoline_bucket"
+					id: "5E14AEAC339EAEB1"
+					title: "Overpowering Octane"
+					type: "advancement"
+				}
+			]
+			title: "Overpowering Octane"
+			x: 22.4d
+			y: -5.61d
+		}
+		{
+			dependencies: ["171C874C81A2010E"]
+			description: ["Portable power: a generator that runs on gasoline."]
+			id: "3ED7644A903ABC76"
+			rewards: [
+				{
+					id: "65C84C44F03D3815"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0E1BE94456EB7B24"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "686683965EABC4E3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Insert some Gasoline into the Portable Generator"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/gas_generator"
+					criterion: ""
+					icon: "immersivepetroleum:gas_generator"
+					id: "4AD51B3E04FD68F7"
+					title: "Power 2 Go"
+					type: "advancement"
+				}
+			]
+			title: "Power 2 Go"
+			x: 24.15d
+			y: -5.61d
+		}
+		{
+			dependencies: ["79E7B61A6C26CB05"]
+			description: ["Lubricant makes Immersive Engineering's machines run faster."]
+			id: "328A04BF75F9C37B"
+			rewards: [
+				{
+					id: "10853E33D6EA5FEE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3476F313CC0D38C0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "60D57DE0D13E5A0D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Place an Automatic Lubricator next to a Machine"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/auto_lubricator"
+					criterion: ""
+					icon: "immersivepetroleum:auto_lubricator"
+					id: "36027760FAC030A0"
+					title: "Automated squirts"
+					type: "advancement"
+				}
+			]
+			title: "Automated squirts"
+			x: 22.4d
+			y: -4.11d
+		}
+		{
+			dependencies: ["328A04BF75F9C37B"]
+			id: "20694AA6EDCEF537"
+			rewards: [
+				{
+					id: "4EDE47B76679242C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "625EBBBA8098A717"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5FD9FAD40EF2CA11"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Form the Coker Unit"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/mb_cokerunit"
+					criterion: ""
+					icon: "immersivepetroleum:coker_unit"
+					id: "1487854CDE6F6D60"
+					title: "This thing is Massive!"
+					type: "advancement"
+				}
+			]
+			title: "This thing is Massive!"
+			x: 24.15d
+			y: -4.11d
+		}
+		{
+			dependencies: ["20694AA6EDCEF537"]
+			id: "6476318859481BCD"
+			rewards: [
+				{
+					id: "44550E3442B26408"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "36A3B37A7D9313B1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4CA8684EB9CF4A72"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Produce duroplast blocks from petroleum"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/duroplast"
+					criterion: ""
+					icon: "immersiveengineering:duroplast"
+					id: "4AB25B62B2CE6875"
+					title: "Nu-Modern Materials"
+					type: "advancement"
+				}
+			]
+			title: "Nu-Modern Materials"
+			x: 25.9d
+			y: -4.11d
+		}
+		{
+			dependencies: ["6476318859481BCD"]
+			id: "6B94B41F8156CBB4"
+			optional: true
+			rewards: [
+				{
+					id: "7CA2C5B2D783059A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5973FEAB32D8A702"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2DB423EB6508E3B6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Form the High-Pressure Refinery Unit"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/mb_hydrotreater"
+					criterion: ""
+					icon: "immersivepetroleum:hydrotreater"
+					id: "7A4B4BA370B4918F"
+					title: "Clean™ Diesel"
+					type: "advancement"
+				}
+			]
+			title: "Clean™ Diesel"
+			x: 27.65d
+			y: -4.11d
+		}
+		{
+			dependencies: ["6B94B41F8156CBB4"]
+			id: "0BDE6F280BB075B4"
+			optional: true
+			rewards: [
+				{
+					id: "0480D6648AD74AC1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "67AC50746B449431"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "525C9109865DCFF6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fill a Motorboat with Gasoline"
+			tasks: [
+				{
+					advancement: "immersivepetroleum:main/motorboat"
+					criterion: ""
+					icon: "immersivepetroleum:speedboat"
+					id: "1941C34C2CC6FA53"
+					title: "Relaxing Adventure"
+					type: "advancement"
+				}
+			]
+			title: "Relaxing Adventure"
+			x: 29.75d
+			y: -4.11d
+		}
+		{
+			dependencies: ["071A664F3F7D778E"]
+			description: ["Clay, brick and sandstone. Twenty-seven of them make a 3x3x3 cube; the hammer does the rest."]
+			id: "0176A28D1D37F376"
+			rewards: [
+				{
+					id: "6F7C7776CD7F3947"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "068575FD2AA50F17"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "22AD84E17A168C3B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 27L
+					id: "693D09A87400473D"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+			]
+			title: "Coke Bricks"
+			x: 1.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50FFB011CCC89372"]
+			description: ["Coal goes in, coke and creosote come out. Coke is the only fuel a blast furnace takes."]
+			id: "10AA05C54205A488"
+			rewards: [
+				{
+					id: "269D358CDB170801"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "243F13174024584D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6948B36968B0CD84"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "6C72F3103BC8569D"
+					item: "immersiveengineering:coal_coke"
+					type: "item"
+				}
+			]
+			title: "Coal Coke"
+			x: 5.35d
+			y: -0.11d
+		}
+		{
+			dependencies: ["10AA05C54205A488"]
+			id: "4D8A1EE359C71A7B"
+			rewards: [
+				{
+					id: "107287576F5042DF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4EE7AB8751A3EBE9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "55496FE5155BC20C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Nether brick, brick and blaze powder. Another 3x3x3."
+			tasks: [
+				{
+					count: 27L
+					id: "4955304841C7A564"
+					item: "immersiveengineering:blastbrick"
+					type: "item"
+				}
+			]
+			title: "Blast Bricks"
+			x: 7.1d
+			y: -0.11d
+		}
+		{
+			dependencies: ["0AC77C3A26ED809B"]
+			description: ["A low-voltage capacitor. Blue faces take power in, orange faces give it out; the hammer changes them."]
+			id: "2DEC9EE40829D1DB"
+			rewards: [
+				{
+					id: "4A89B2EF00D31F60"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "221DA2A8B6FC20B8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "39653BC85BD1776D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "45EFEF90DC09FD8D"
+					item: "immersiveengineering:capacitor_lv"
+					type: "item"
+				}
+			]
+			title: "Somewhere to Keep It"
+			x: 8.85d
+			y: 2.11d
+		}
+		{
+			dependencies: ["7A75E7C432C48F8D"]
+			description: ["Every large machine is a stack of these and steel scaffolding. The manual shows each one layer by layer."]
+			id: "33EF28A29F9034E3"
+			rewards: [
+				{
+					id: "7241B4111981175E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3EAB83DD267C6807"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "00A49F2DEEF566F9"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1092EFE093540353"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "02E33021CF241F8D"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "12346057477DAE8E"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+			]
+			title: "Engineering Blocks"
+			x: 16.6d
+			y: 1.02d
+		}
+		{
+			dependencies: ["1CF8A6F8BDEE4A93"]
+			description: ["HOP graphite, pressed with the rod mould. The arc furnace needs three and wears them down."]
+			id: "7B182E8783929AD9"
+			rewards: [
+				{
+					id: "082C48CEC19F15FF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4B701832F5423E2D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "014141D8F0C3D2C2"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "18CBE012F57096F0"
+					item: "immersiveengineering:graphite_electrode"
+					type: "item"
+				}
+			]
+			title: "Graphite Electrodes"
+			x: 20.55d
+			y: 1.02d
+		}
+		{
+			dependencies: ["6D1EDF02E995DD32"]
+			description: ["Ore veins lie under whole chunks, invisible. The sample drill tells you what an excavator would find there."]
+			id: "6A09F2C321C8D80A"
+			rewards: [
+				{
+					id: "3B7C0B5918C974CF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "15B032E6D1DE0CF8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5D2125158E43CD0A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "41F569D33D20B347"
+					item: "immersiveengineering:sample_drill"
+					type: "item"
+				}
+			]
+			title: "Core Samples"
+			x: 25.9d
+			y: 3.39d
+		}
+		{
+			dependencies: ["31CE07598556213C"]
+			description: [
+				"Iron plates around a copper ingot. Nearly every machine in Immersive Engineering has a few of these inside it."
+				"The &eEngineer's Workbench&f makes them three at a time from a blueprint, for less metal."
+			]
+			id: "1032D602F0E90974"
+			rewards: [
+				{
+					id: "2AC8AFA1B7C6C5D1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3FB0E337D9F42458"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "55B4A4C8AE4A36D4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6DC3D48C6421AB22"
+					item: "immersiveengineering:component_iron"
+					type: "item"
+				}
+			]
+			title: "Iron Mechanical Components"
+			x: 14.85d
+			y: 3.89d
+		}
+		{
+			dependencies: ["1032D602F0E90974"]
+			description: ["Iron plates, eight pipes a craft. They carry fluid on their own for a short way; a &eFluid Pump&f pushes it further and uphill."]
+			id: "54FF5632A85E44D8"
+			rewards: [
+				{
+					id: "5AAECC812742AFB5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2C234DD9152D920F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0561289FF7CD04B0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "0AEA96A70A8CB5D5"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Fluid Pipes"
+			x: 16.6d
+			y: 3.89d
+		}
+		{
+			dependencies: ["5E1522EEDCC9B956"]
+			description: ["The same idea in steel, for everything that has to take a beating: the revolver, the drill, the heavy machines."]
+			id: "7469EF0916080431"
+			optional: true
+			rewards: [
+				{
+					id: "32F67970CB7EE9E9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "697DB8E6781B26EC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "04C29BF9D49792EB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "1D9A62CE23655A4B"
+					item: "immersiveengineering:component_steel"
+					type: "item"
+				}
+			]
+			title: "Steel Mechanical Components"
+			x: 24.15d
+			y: 0.39d
+		}
+		{
+			dependencies: ["31CE07598556213C"]
+			description: [
+				"Power here travels along &ewires you hang yourself&f. Put a connector on each machine, then right-click one and then the other with a coil."
+				"&6Copper&f wire is low voltage, &eelectrum&f medium, &7steel&f high. A wire carrying more than it is rated for burns out."
+			]
+			id: "3A4CE2812CF73D51"
+			optional: true
+			rewards: [
+				{
+					id: "49B1DD4C5400401B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2B31A27451404C1F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3764FF0539757919"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6669E55CC7115877"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "31235A3BD494C9BB"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+			]
+			title: "Wire and Connectors"
+			x: 14.85d
+			y: 2.39d
+		}
+		{
+			dependencies: ["3979F70C5C3D71C8"]
+			description: [
+				"A vacuum tube and aluminium wire on a duroplast plate, made from a blueprint at the Engineer's Workbench. The brains of the Railgun, the turrets and the late machines."
+				"The plate is plastic, from the Refinery line."
+			]
+			id: "742B15081C61B5E4"
+			optional: true
+			rewards: [
+				{
+					id: "5B9E7D4A23618379"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "032D6AD6DA09414B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "54319541DC8A6FCC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "4F8A6CA8D16460D5"
+					item: "immersiveengineering:component_electronic_adv"
+					type: "item"
+				}
+			]
+			title: "Advanced Electronics"
+			x: 27.65d
+			y: 0.39d
+		}
+		{
+			dependencies: ["5E1522EEDCC9B956"]
+			description: ["Steel rods and ingots. It climbs like a ladder from any side and it is what the big multiblocks are framed with."]
+			id: "6D1EDF02E995DD32"
+			rewards: [
+				{
+					id: "680DD312E4C4C898"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "04882E7D57109CD1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "48BA054156090BBA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "6342454C75B41FD1"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+			]
+			title: "Steel Scaffolding"
+			x: 24.15d
+			y: 3.39d
+		}
+		{
+			dependencies: ["3A6B07A7904FC4BA"]
+			description: [
+				"Holds tools, wire, food and ammunition in their own compartments, and can be set down as a block."
+				"One slot for the whole kit."
+			]
+			id: "01CB3BD569455CE5"
+			optional: true
+			rewards: [
+				{
+					id: "3555612F690E55EA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "41AA595FB2AA78D0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "34F2837F1F7ABA2F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "671A3064D7E52476"
+					item: "immersiveengineering:toolbox"
+					type: "item"
+				}
+			]
+			title: "The Toolbox"
+			x: 8.85d
+			y: -1.61d
+		}
+		{
+			dependencies: ["01CB3BD569455CE5"]
+			description: ["Hook onto any hanging wire - power line or steel rope - and &eride it&f. String rope between your buildings and the base has a zip-line network."]
+			id: "14007B1683388914"
+			optional: true
+			rewards: [
+				{
+					id: "0A3B8DFDCC082DB3"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "11E21C1904D2816C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "71F638C1B36224E4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ride your own power lines"
+			tasks: [
+				{
+					id: "28791F17847051B6"
+					item: "immersiveengineering:skyhook"
+					type: "item"
+				}
+			]
+			title: "The Skyhook"
+			x: 10.6d
+			y: -1.61d
+		}
+		{
+			dependencies: ["14007B1683388914"]
+			description: ["A steel shield that takes upgrades at the workbench: a flash that blinds attackers, a shock that punishes them."]
+			id: "02BE16EF72572F1E"
+			optional: true
+			rewards: [
+				{
+					id: "44A093817F17CB8B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5AFE21942C01D183"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7349BA6AC68C4202"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "32378B7537DE7F69"
+					item: "immersiveengineering:shield"
+					type: "item"
+				}
+			]
+			title: "A Heavy Plated Shield"
+			x: 12.35d
+			y: -1.61d
+		}
+		{
+			dependencies: ["1FF33A2385AC22B5"]
+			description: [
+				"Shocks anything that walks near it, as long as it has power. A Faraday suit makes you immune to your own defences."
+				"The cheapest answer to a raid."
+			]
+			id: "575DB04AD1E376E7"
+			optional: true
+			rewards: [
+				{
+					id: "55DE5E77584FBAF4"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4438175302A48A6D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7C275497EE565435"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Home defence, the loud way"
+			tasks: [
+				{
+					id: "4114FDE3510DE61F"
+					item: "immersiveengineering:tesla_coil"
+					type: "item"
+				}
+			]
+			title: "A Tesla Coil"
+			x: 27.65d
+			y: -1.11d
+		}
+		{
+			dependencies: ["575DB04AD1E376E7"]
+			description: ["A gun turret loads revolver cartridges; a chemical turret sprays whatever fluid you pipe in. Both take a whitelist, so they know who lives here."]
+			id: "2CA94235EA28CF0D"
+			optional: true
+			rewards: [
+				{
+					id: "4A5C7E9C4A7D5FEB"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "700882491373E86C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3B2B4451B4DA607B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2EAB9A027419ED5C"
+					item: "immersiveengineering:turret_gun"
+					type: "item"
+				}
+			]
+			title: "Turrets"
+			x: 29.75d
+			y: -1.11d
+		}
+		{
+			dependencies: ["1032D602F0E90974"]
+			description: ["Grows a crop inside it with water and power, and drops the harvest into whatever sits behind it."]
+			id: "5B24944B1B66C9D0"
+			optional: true
+			rewards: [
+				{
+					id: "2FB04E29312CE691"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0D3299F7D6DCB71C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "242E08DE82F49526"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A greenhouse in a block"
+			tasks: [
+				{
+					id: "29C7FAC9E8B0EB83"
+					item: "immersiveengineering:cloche"
+					type: "item"
+				}
+			]
+			title: "The Garden Cloche"
+			x: 16.6d
+			y: 5.39d
+		}
+	]
+	subtitle: ["Steel, wires and very large machines"]
+	title: "&6Immersive Engineering"
+}

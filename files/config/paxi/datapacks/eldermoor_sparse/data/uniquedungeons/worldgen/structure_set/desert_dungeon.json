@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "salt": 324967489,
+    "separation": 70,
+    "spacing": 105,
+    "spread_type": "triangular",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "uniquedungeons:desert_dungeon",
+      "weight": 1
+    }
+  ]
+}

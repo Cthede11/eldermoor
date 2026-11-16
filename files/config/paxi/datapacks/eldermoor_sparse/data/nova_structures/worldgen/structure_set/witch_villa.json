@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "salt": 3042970,
+    "separation": 70,
+    "spacing": 280,
+    "spread_type": "triangular",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "nova_structures:witch_villa",
+      "weight": 1
+    }
+  ]
+}

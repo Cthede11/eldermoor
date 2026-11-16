@@ -1,0 +1,3649 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "irons"
+	group: "3368DAD22055D0D9"
+	icon: "irons_spellbooks:iron_spell_book"
+	id: "53A8ACFCFAEF41D7"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3FFCC2BE71CF1CC5"]
+			description: [
+				"Spells live on &escrolls&f. A scroll casts once. Write it into a &espellbook&f and it is yours for good."
+				""
+				"Casting spends &9mana&f, the blue bar above your hotbar. It refills by itself; rings, robes and skill nodes make it bigger and faster. Ars Nouveau casts from the same bar."
+				""
+				"Hold your spellbook and press &eR&f to choose a spell, right-click to cast. Scrolls turn up in chests all over the world, and each school has a master who sells them."
+				"&7Made at: &fCreate sequenced assembly &7from &fTuff x4"
+			]
+			hide_until_deps_complete: true
+			id: "6FCD43C29A71A6D8"
+			rewards: [
+				{
+					id: "5144CD162A901015"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "4E9F374750F5D698"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "221D1B3A4DBE90A8"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2A3F2B44D0EE1372"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "381D9AC396815501"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					count: 4L
+					id: "36E57DEA526E161C"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+			]
+			title: "&b&lA Book With Empty Pages"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FCD43C29A71A6D8"]
+			description: ["Where scrolls go into books. A spell can be taken back out, but the scroll is lost."]
+			id: "0AD4A6C8D5FD1D0B"
+			rewards: [
+				{
+					id: "6247212C9985EDB4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0F668CEAC45837C1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "09D630D420119341"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5DDD5C0C254771AD"
+					item: "irons_spellbooks:inscription_table"
+					type: "item"
+				}
+			]
+			title: "Inscription Table"
+			x: 2.1d
+			y: 16.5d
+		}
+		{
+			dependencies: ["0AD4A6C8D5FD1D0B"]
+			description: ["&7Made from: &fCopper Ingot x2, String, Paper x6"]
+			id: "4AA277B439EFEBC0"
+			rewards: [
+				{
+					id: "3E34BFFFFCC55994"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6ECB50B0932AF815"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "068F515A9882E780"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Five slots. It will do."
+			tasks: [
+				{
+					id: "72F609C89924CEE7"
+					item: "irons_spellbooks:copper_spell_book"
+					type: "item"
+				}
+			]
+			title: "First Spellbook"
+			x: 4.35d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4AA277B439EFEBC0"]
+			description: ["&7Made from: &fChain x3, Leather x4, Paper x2"]
+			id: "31ED93A526434A42"
+			rewards: [
+				{
+					id: "55246E09A6EF4DE8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "33629D96F0F80912"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5911BCF2B5E248F7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Eight slots."
+			tasks: [
+				{
+					id: "74360304A16A5B05"
+					item: "irons_spellbooks:iron_spell_book"
+					type: "item"
+				}
+			]
+			title: "Iron Spellbook"
+			x: 6.1d
+			y: 16.5d
+		}
+		{
+			dependencies: ["392F3CC9CE4948B2"]
+			description: ["&7Made from: &fGold Ingot x3, Arcane Essence x4, Hogskin x2"]
+			id: "5766E0B67E0E584A"
+			rewards: [
+				{
+					id: "2BF5CC90D280B61F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3175D7AD51F84E29"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "09EDE39C3838441E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ten slots."
+			tasks: [
+				{
+					id: "5508A98FA70F7FAA"
+					item: "irons_spellbooks:gold_spell_book"
+					type: "item"
+				}
+			]
+			title: "Golden Spellbook"
+			x: 9.6d
+			y: 16.5d
+		}
+		{
+			dependencies: ["5766E0B67E0E584A"]
+			id: "4A716EDD17E8D4F6"
+			rewards: [
+				{
+					id: "5D44AC34AB51FF7E"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "5A47E00C327B7F91"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3E90E502247BDB50"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2B340086DF968D42"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Twelve slots and a mana bonus."
+			tasks: [
+				{
+					id: "5E133DB2DBECA0BB"
+					item: "irons_spellbooks:diamond_spell_book"
+					type: "item"
+				}
+			]
+			title: "Diamond Spellbook"
+			x: 12.7d
+			y: 14.87d
+		}
+		{
+			dependencies: ["533A5E5946F5C1B2"]
+			id: "2EC9474635824C98"
+			rewards: [
+				{
+					id: "58D0997B899B9F24"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "1EA3CB58C7284D10"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "638E016F008BE03F"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3FA1825B21FDE4F8"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The most slots a crafted book can hold."
+			tasks: [
+				{
+					id: "0DC6D8527AC64782"
+					item: "irons_spellbooks:netherite_spell_book"
+					type: "item"
+				}
+			]
+			title: "Netherite Spellbook"
+			x: 18.5d
+			y: 13.13d
+		}
+		{
+			dependencies: ["6FCD43C29A71A6D8"]
+			description: ["&7Made at: &fSpout &7from &fGlass Bottle"]
+			id: "0678A28F7D784F15"
+			rewards: [
+				{
+					id: "38A561AB29EDB2B2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "449E09CAD809B5C9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1A172FBBFFDDBDDE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ink sets a scroll's rarity. Better ink, stronger spell."
+			tasks: [
+				{
+					count: 2L
+					id: "6B447DCCFCF41E44"
+					item: "irons_spellbooks:common_ink"
+					type: "item"
+				}
+			]
+			title: "Ink"
+			x: 2.1d
+			y: -15.27d
+		}
+		{
+			dependencies: ["0678A28F7D784F15"]
+			description: ["Ink, paper and a focus - the item that stands for a school, like a blaze rod for fire - make a scroll of your choosing."]
+			id: "4C868DC44A0D8B36"
+			rewards: [
+				{
+					id: "25DB029DC8B742C4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2EE0412270BAECC0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "581B62481688CE6E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7E44D5048CA1B2BF"
+					item: "irons_spellbooks:scroll_forge"
+					type: "item"
+				}
+			]
+			title: "Scroll Forge"
+			x: 4.35d
+			y: -15.27d
+		}
+		{
+			dependencies: ["4C868DC44A0D8B36"]
+			description: ["Boil four scrolls of one rarity to make ink of the next. It also brews and stores potions."]
+			id: "3097D09D24AED5EA"
+			rewards: [
+				{
+					id: "2116BA48E3871FCB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7C3D957455CF510E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "43429D682E8FBE3A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2EEE7D483DB642EA"
+					item: "irons_spellbooks:alchemist_cauldron"
+					type: "item"
+				}
+			]
+			title: "Alchemist's Cauldron"
+			x: 6.1d
+			y: -12.89d
+		}
+		{
+			dependencies: ["2DFB2E55A6C95B23"]
+			description: ["&7Made at: &fAlchemist Cauldron &7from &fGlass Bottle"]
+			id: "5155374AD9810714"
+			rewards: [
+				{
+					id: "4F116D11A8D47CE2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6D6490E9DC1AF9E8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2233B2E7AA95A601"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Uncommon, then rare."
+			tasks: [
+				{
+					id: "3F8D19AD5997E707"
+					item: "irons_spellbooks:rare_ink"
+					type: "item"
+				}
+			]
+			title: "Rare Ink"
+			x: 9.6d
+			y: -12.89d
+		}
+		{
+			dependencies: ["5155374AD9810714"]
+			description: ["&7Made at: &fAlchemist Cauldron &7from &fGlass Bottle"]
+			id: "7806ECBA858F4C38"
+			rewards: [
+				{
+					id: "786B7127AE10F20A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "224FF0D0692AC3C2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "41CD0F808854E68C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Four rare scrolls per bottle. It adds up."
+			tasks: [
+				{
+					id: "17B0891B8419708E"
+					item: "irons_spellbooks:epic_ink"
+					type: "item"
+				}
+			]
+			title: "Epic Ink"
+			x: 12.7d
+			y: -12.89d
+		}
+		{
+			dependencies: ["7806ECBA858F4C38"]
+			description: ["&7Made at: &fSpout &7from &fGlass Bottle"]
+			id: "4D00D6A0ACF5CF5E"
+			rewards: [
+				{
+					id: "649CAE4064DD9290"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "2BB5979E80AAD1DB"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E648593BF81E7C9"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "433D5A94D575C8DD"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The top."
+			tasks: [
+				{
+					id: "6F87F182A9F7E327"
+					item: "irons_spellbooks:legendary_ink"
+					type: "item"
+				}
+			]
+			title: "Legendary Ink"
+			x: 18.5d
+			y: -12.89d
+		}
+		{
+			dependencies: ["6FCD43C29A71A6D8"]
+			description: ["Combine two identical scrolls to raise the spell's level. Also applies upgrade orbs to gear."]
+			id: "3938C331D8070E0A"
+			rewards: [
+				{
+					id: "05ADEC4EE2E4EF60"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1789934BA3605BB1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "41F9097CF8BC2FD3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7939769249BFD774"
+					item: "irons_spellbooks:arcane_anvil"
+					type: "item"
+				}
+			]
+			title: "Arcane Anvil"
+			x: 2.1d
+			y: -3.79d
+		}
+		{
+			dependencies: ["05E3D0D6126BDC1C"]
+			id: "3C99A038B2BB7B55"
+			rewards: [
+				{
+					id: "3F218915A60E8FB9"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3F61203CCA985558"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "74A7AEFFEBBAEABE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A blank orb. Add a rune to give it a purpose."
+			tasks: [
+				{
+					id: "50CC572330A65092"
+					item: "irons_spellbooks:upgrade_orb"
+					type: "item"
+				}
+			]
+			title: "Upgrade Orb"
+			x: 6.1d
+			y: -4.95d
+		}
+		{
+			dependencies: ["311381515C71702F"]
+			id: "7E040C8BEF348329"
+			rewards: [
+				{
+					id: "5CFB749457BBB85E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1CF9B2473C6F246B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "28E94F63126DD9A2"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A blank rune and eight of the school's focus."
+			tasks: [
+				{
+					id: "7AC60C960B2AD0B5"
+					item: "irons_spellbooks:fire_rune"
+					type: "item"
+				}
+				{
+					id: "5AD9099F5906A64F"
+					item: "irons_spellbooks:ice_rune"
+					type: "item"
+				}
+				{
+					id: "43988D47D128489E"
+					item: "irons_spellbooks:lightning_rune"
+					type: "item"
+				}
+			]
+			title: "Elemental Runes"
+			x: 9.6d
+			y: -4.95d
+		}
+		{
+			dependencies: ["7E040C8BEF348329"]
+			id: "764995D44418197D"
+			rewards: [
+				{
+					id: "1FE51F736F1A75CC"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "59D0D0E21E2C3B9D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "71955281E8C79629"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Divine pearls, blood vials and ender pearls."
+			tasks: [
+				{
+					id: "07C99E6AE081CA65"
+					item: "irons_spellbooks:holy_rune"
+					type: "item"
+				}
+				{
+					id: "0A4B2D31A09E1300"
+					item: "irons_spellbooks:blood_rune"
+					type: "item"
+				}
+				{
+					id: "303AFBB99A83D350"
+					item: "irons_spellbooks:ender_rune"
+					type: "item"
+				}
+			]
+			title: "Sacred and Profane"
+			x: 12.7d
+			y: -6.26d
+		}
+		{
+			dependencies: ["764995D44418197D"]
+			description: [
+				"&7&fEvocation Rune&7 - Made from: &fany evocation focus x8, Blank Runestone"
+				"&7&fNature Rune&7 - Made from: &fany nature focus x8, Blank Runestone"
+			]
+			id: "3F79B67A7F0DE61B"
+			rewards: [
+				{
+					id: "293BF2EC5B729E94"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4CE657CC67E0F836"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "491E6D853C6EB9E0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Emeralds, poison and raw essence."
+			tasks: [
+				{
+					id: "07FEFE00A0DEB8F9"
+					item: "irons_spellbooks:evocation_rune"
+					type: "item"
+				}
+				{
+					id: "2D94E0670C043996"
+					item: "irons_spellbooks:nature_rune"
+					type: "item"
+				}
+				{
+					id: "2B77AFD73DCC40BA"
+					item: "irons_spellbooks:arcane_rune"
+					type: "item"
+				}
+			]
+			title: "The Subtle Schools"
+			x: 14.55d
+			y: -7.65d
+		}
+		{
+			dependencies: ["3F79B67A7F0DE61B"]
+			description: ["Each armour piece and spellbook takes a few upgrades. Mana and cooldown suit every school."]
+			id: "5DF28CE342F44FD2"
+			rewards: [
+				{
+					id: "430E0F62E2C2B46E"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "7C510AC15BAD370D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "48FA6886C4EB039A"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7443C1E7A8B7081D"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "641EB43F592A2BAB"
+					item: "irons_spellbooks:mana_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "52D6FA841BAF2985"
+					item: "irons_spellbooks:cooldown_upgrade_orb"
+					type: "item"
+				}
+			]
+			title: "Tuned Gear"
+			x: 16.4d
+			y: -11.15d
+		}
+		{
+			dependencies: ["45A45B20286FA231"]
+			id: "00FFDD9B63EC5AD5"
+			rewards: [
+				{
+					id: "17BEEAAA827FE611"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "788D4AEC5959AF75"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7EB1F1ED520300AF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Magic cloth armour: weak against swords, good for mana."
+			tasks: [
+				{
+					id: "20D889852A745725"
+					item: "irons_spellbooks:wandering_magician_chestplate"
+					type: "item"
+				}
+			]
+			title: "Wandering Magician"
+			x: 4.35d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0E4BFCB40EC0F1C5"]
+			description: ["Every school has its own set that boosts that school. This quest asks for the Pyromancer's; wear whichever suits you."]
+			id: "6333B1C756DE69E7"
+			optional: true
+			rewards: [
+				{
+					id: "26DD46C564F16989"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2DE3E945A03B9C46"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6790322F5819DE0C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "75B0EA656EF40092"
+					item: "irons_spellbooks:pyromancer_chestplate"
+					type: "item"
+				}
+			]
+			title: "Robes of a School"
+			x: 7.85d
+			y: 6.38d
+		}
+		{
+			dependencies: ["00FFDD9B63EC5AD5"]
+			description: [
+				"&7&fRing of Mana&7 - Made from: &fArcane Ingot x4, Diamond"
+				"&7&fRing of Recovery&7 - Made from: &fCopper Ingot x4, Mithril Scrap"
+			]
+			id: "4A4081C8CAB10FC0"
+			rewards: [
+				{
+					id: "3DE37A06D7ACDC1B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "57A66FE558BCD1C0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3EC7E141E0070B1D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Curio slots are free power."
+			tasks: [
+				{
+					id: "3E136DAB7D2B14AA"
+					item: "irons_spellbooks:mana_ring"
+					type: "item"
+				}
+				{
+					id: "42D1ECAC50675D0B"
+					item: "irons_spellbooks:cooldown_ring"
+					type: "item"
+				}
+			]
+			title: "Rings"
+			x: 6.1d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4A4081C8CAB10FC0"]
+			description: ["&7Made at: &fCursed Infuser &7from &fRaw Mithril"]
+			id: "0D0AD823D7AC9712"
+			rewards: [
+				{
+					id: "0AC1712331E03669"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "289D8915F77CBA61"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1EFF67715446DCBC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Found deep underground. The magical equal of ancient debris."
+			tasks: [
+				{
+					id: "5CC120B6FF15B04B"
+					item: "irons_spellbooks:arcane_debris"
+					type: "item"
+				}
+			]
+			title: "Arcane Debris"
+			x: 7.85d
+			y: 5.0d
+		}
+		{
+			dependencies: ["05D3BB48AD1AC2EF"]
+			description: ["&7Made at: &fDeployer &7from &fWizard Robes, Netherite Ingot"]
+			id: "23446C81F419FAC7"
+			rewards: [
+				{
+					id: "63F7B8D788BDFA59"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "191CF0E615CB1D42"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "627B79A3D4B12705"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7A56DC8592ECE042"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Armour that protects like netherite and casts like silk."
+			tasks: [
+				{
+					id: "44609D7B51E1147A"
+					item: "irons_spellbooks:netherite_mage_chestplate"
+					type: "item"
+				}
+			]
+			title: "Netherite Battlemage"
+			x: 12.7d
+			y: 2.62d
+		}
+		{
+			dependencies: ["6FCD43C29A71A6D8"]
+			description: [
+				"Some spellbooks are found, not made, and favour one school. The Blaze book is crafted from the Nether's best."
+				"&7Made at: &fCreate sequenced assembly &7from &fEnchanted Book x5, Netherite Scrap, Blaze Powder"
+			]
+			id: "4923EAB9878C539B"
+			rewards: [
+				{
+					id: "6CC88DEA49104B99"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "27FC763E7514E48A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4AC2D7D776253A26"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "77FEE4417C7BF7E0"
+					item: "irons_spellbooks:blaze_spell_book"
+					type: "item"
+				}
+			]
+			title: "Books with a Past"
+			x: 2.1d
+			y: 11.37d
+		}
+		{
+			dependencies: ["4923EAB9878C539B"]
+			id: "010B16B7914FF1C9"
+			rewards: [
+				{
+					id: "23A989AD37B973E4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "496CCB4D844DF929"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "744D690ECD8F1029"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Evoker Forts keep one."
+			tasks: [
+				{
+					id: "489A3626D4778EB3"
+					item: "irons_spellbooks:evoker_spell_book"
+					type: "item"
+				}
+			]
+			title: "Evoker's Tome"
+			x: 4.35d
+			y: 11.37d
+		}
+		{
+			dependencies: ["3ACE5B11245ACE25"]
+			id: "629DD7EB11ACB145"
+			rewards: [
+				{
+					id: "3C38EF035E261792"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1AB975EDF4DEB931"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "568234D7DF043EAC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Made from the hide of the Ender Dragon."
+			tasks: [
+				{
+					id: "78596AE200EF9021"
+					item: "irons_spellbooks:dragonskin_spell_book"
+					type: "item"
+				}
+			]
+			title: "Dragonskin Tome"
+			x: 7.85d
+			y: 11.37d
+		}
+		{
+			dependencies: ["629DD7EB11ACB145"]
+			description: [
+				"Found in the Catacombs and the Ancient City. They buy what cannot be crafted."
+				"&7Made at: &fCreate sequenced assembly &7from &fPaper x4, Ancient Knowledge Fragment"
+			]
+			id: "598A30F2CDE14418"
+			rewards: [
+				{
+					id: "108EA40D8F51DF50"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1826AD53DAB1ECA6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "255953A219C60C4F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3A3ED3D276599B9D"
+					item: "irons_spellbooks:ancient_knowledge_fragment"
+					type: "item"
+				}
+			]
+			title: "Ancient Knowledge"
+			x: 9.6d
+			y: 11.37d
+		}
+		{
+			dependencies: ["598A30F2CDE14418"]
+			description: ["Guarded by the Dead King in the Catacombs. The strongest blood book there is."]
+			id: "48E5526C14BE8B87"
+			rewards: [
+				{
+					id: "4F76831ED88E1AB3"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "5DAF5ADF9171F423"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "723EF631698667AF"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5A874677D07A555A"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "30A4C7346448FD8B"
+					item: "irons_spellbooks:necronomicon_spell_book"
+					type: "item"
+				}
+			]
+			title: "The Necronomicon"
+			x: 12.7d
+			y: 11.37d
+		}
+		{
+			dependencies: [
+				"2EC9474635824C98"
+				"4D00D6A0ACF5CF5E"
+				"23446C81F419FAC7"
+				"48E5526C14BE8B87"
+			]
+			description: ["Any three of: a netherite spellbook, legendary ink, netherite battlemage armour, the Necronomicon."]
+			hide_dependency_lines: true
+			id: "27A602FB1C84A57A"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					id: "7420D34C652911E2"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 5
+					id: "3F3540E1828FFFF4"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "71B8CF48C3E3F7F4"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6AE35BDD0AC91DC5"
+					table_id: 8298031287037069412L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0235D25AD9638DFE"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "325BD55447D564F6"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&b&lArchmage of Iron"
+			x: 26.6d
+			y: 13.13d
+		}
+		{
+			dependencies: ["6FCD43C29A71A6D8"]
+			id: "45A45B20286FA231"
+			rewards: [
+				{
+					id: "50C1434BE54A0608"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "500F233439E48B74"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "25FCEBBE3F0CB9E9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Wool and arcane essence. Every robe is cut from it."
+			tasks: [
+				{
+					count: 4L
+					id: "43E964715CCFCE0A"
+					item: "irons_spellbooks:magic_cloth"
+					type: "item"
+				}
+			]
+			title: "Magic Cloth"
+			x: 2.1d
+			y: 2.37d
+		}
+		{
+			dependencies: ["3C99A038B2BB7B55"]
+			id: "311381515C71702F"
+			rewards: [
+				{
+					id: "7F49FDCD15E52120"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7A9C42EA20CB40CC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3928A5683C13B0B0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A rune is blank until a school is written into it."
+			tasks: [
+				{
+					count: 3L
+					id: "3908DCAF5A3F1393"
+					item: "irons_spellbooks:blank_rune"
+					type: "item"
+				}
+			]
+			title: "Blank Runes"
+			x: 7.85d
+			y: -4.95d
+		}
+		{
+			dependencies: ["3097D09D24AED5EA"]
+			description: [
+				"Four of one ink in the cauldron boil down to one of the next. It is a long way to legendary."
+				"&7Made at: &fSpout &7from &fGlass Bottle"
+			]
+			id: "2DFB2E55A6C95B23"
+			rewards: [
+				{
+					id: "3A73705AFB0595B3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "687FB6FBD037B1D4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3E82F1E3947730F7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2E467D10B8BE2E7B"
+					item: "irons_spellbooks:uncommon_ink"
+					type: "item"
+				}
+			]
+			title: "Uncommon Ink"
+			x: 7.85d
+			y: -12.89d
+		}
+		{
+			dependencies: ["0D0AD823D7AC9712"]
+			description: ["Arcane debris, smelted. Like netherite, it wants four scraps to an ingot."]
+			id: "05D3BB48AD1AC2EF"
+			rewards: [
+				{
+					id: "5F0AF429379A447C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6AE59E031AC07605"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "09C19EC431D29D12"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5EFAFF8DD555B902"
+					item: "irons_spellbooks:mithril_scrap"
+					type: "item"
+				}
+			]
+			title: "Mithril"
+			x: 9.6d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3938C331D8070E0A"]
+			description: ["An ingot ringed with &9arcane essence&f, and the metal of the craft: the Scroll Forge, the Arcane Anvil, upgrade orbs and every better spellbook need it."]
+			id: "05E3D0D6126BDC1C"
+			rewards: [
+				{
+					id: "0576D81C007E8A9E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "03D50DBF1B686B4B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "154184AFCC926769"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "49C16E5D86A1BEAE"
+					item: "irons_spellbooks:arcane_ingot"
+					type: "item"
+				}
+			]
+			title: "Arcane Ingots"
+			x: 4.35d
+			y: -4.95d
+		}
+		{
+			dependencies: ["31ED93A526434A42"]
+			description: [
+				"Hoglins drop it. Leather is good enough for a first spellbook; the better bindings want something tougher."
+				"&7Made at: &fEncased Fan blowing through soul fire &7from &fany leather"
+			]
+			id: "392F3CC9CE4948B2"
+			rewards: [
+				{
+					id: "66AA180F19BA8760"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4FFFAB83B2823171"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4FA4984D6651B33C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "52AA8BEBA9DC9A3B"
+					item: "irons_spellbooks:hogskin"
+					type: "item"
+				}
+			]
+			title: "Hogskin"
+			x: 7.85d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4A716EDD17E8D4F6"]
+			description: [
+				"Found in &eAncient City&f chests. Whatever was written in it is gone, and the strongest spellbooks are still bound from one. Eldermoor's engineers can also assemble it the Create way."
+				"&7Made at: &fCreate sequenced assembly &7from &fEnchanted Book x5, Sculk Catalyst"
+			]
+			id: "44E287583015D774"
+			rewards: [
+				{
+					id: "6EFC7D2C4495DFCC"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "659B1A7F3CC385DC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "001460DDA6002666"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Whatever it said is gone"
+			tasks: [
+				{
+					id: "0514A9728A8BB08D"
+					item: "irons_spellbooks:ruined_book"
+					type: "item"
+				}
+			]
+			title: "A Ruined Book"
+			x: 14.55d
+			y: 14.87d
+		}
+		{
+			dependencies: ["44E287583015D774"]
+			description: [
+				"A &cBlood Vial&f and a &eBottle o' Lightning&f: two glass bottles, filled with things that do not belong in bottles. A Create &eSpout&f fills either."
+				"Both are ingredients for the top tier of books, robes and upgrade orbs."
+			]
+			id: "533A5E5946F5C1B2"
+			rewards: [
+				{
+					id: "41B574F906FA4FBF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2B350F789B3CEC20"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0519E9D07019F3DF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5F0E625867E861C5"
+					item: "irons_spellbooks:blood_vial"
+					type: "item"
+				}
+				{
+					id: "5BDDA5AFD413F61B"
+					item: "irons_spellbooks:lightning_bottle"
+					type: "item"
+				}
+			]
+			title: "Blood and Lightning"
+			x: 16.4d
+			y: 14.87d
+		}
+		{
+			dependencies: ["010B16B7914FF1C9"]
+			description: ["The Ender Dragon drops it. Eldermoor also has a recipe for the patient: phantom membranes around an End Crystal, by sequenced assembly."]
+			id: "3ACE5B11245ACE25"
+			rewards: [
+				{
+					id: "7418BD748D95E099"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2CAD50D758625662"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "108C133E44348E49"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "31DAF4042A2D92A6"
+					item: "irons_spellbooks:dragonskin"
+					type: "item"
+				}
+			]
+			title: "Dragonskin"
+			x: 6.1d
+			y: 11.37d
+		}
+		{
+			dependencies: ["00FFDD9B63EC5AD5"]
+			description: ["The plain set: more mana and nothing else. Every &eschool's&f own robes are made by adding that school's rune to this set."]
+			id: "0E4BFCB40EC0F1C5"
+			optional: true
+			rewards: [
+				{
+					id: "17C627800E9CE893"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "52F87B84E9DCAB6C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "03CA129849E3D650"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3BFDB93F5DFF16D4"
+					item: "irons_spellbooks:wizard_chestplate"
+					type: "item"
+				}
+			]
+			title: "Wizard Robes"
+			x: 6.1d
+			y: 6.38d
+		}
+		{
+			dependencies: ["05D3BB48AD1AC2EF"]
+			description: ["A necklace of skull, string and mithril. Your summoned creatures hit harder while you wear it."]
+			id: "304A05211FE9EFB5"
+			optional: true
+			rewards: [
+				{
+					id: "1681C5CA62B145B2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "713D2C300582E1D6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "054EE8BE55FBE95C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stronger summons"
+			tasks: [
+				{
+					id: "38373FFA56ABC402"
+					item: "irons_spellbooks:conjurers_talisman"
+					type: "item"
+				}
+			]
+			title: "Conjurer's Talisman"
+			x: 14.8d
+			y: 2.62d
+		}
+		{
+			dependencies: ["598A30F2CDE14418"]
+			description: [
+				"Ancient Knowledge Fragments, from the deep places, bound into a manuscript. Reading one lets you learn one of the &eEldritch&f spells, which no scroll ever teaches."
+				"&7Made at: &fCreate sequenced assembly &7from &fPaper x4, Ancient Knowledge Fragment"
+			]
+			id: "0628BFB77AF78021"
+			optional: true
+			rewards: [
+				{
+					id: "28CB7B3FA107E2E4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3B2D42E7A9AC9EA9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "232FB61E4B8F3F55"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Forbidden knowledge"
+			tasks: [
+				{
+					id: "6A29443B05BB06F9"
+					item: "irons_spellbooks:eldritch_manuscript"
+					type: "item"
+				}
+			]
+			title: "The Eldritch Manuscript"
+			x: 12.7d
+			y: 13.13d
+		}
+		{
+			dependencies: ["4C868DC44A0D8B36"]
+			description: ["A gold ingot and an amethyst shard. Holy magic starts here: Holy scrolls, the Villager Bible and the anti-mana arrow all use it."]
+			id: "65DC42D1A3CB40ED"
+			optional: true
+			rewards: [
+				{
+					id: "1E7CB0F2CA8F23BA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2868F83210752A6A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1303D703C2206FF8"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Gold and amethyst, blessed"
+			tasks: [
+				{
+					id: "739A34A4C056E638"
+					item: "irons_spellbooks:divine_pearl"
+					type: "item"
+				}
+			]
+			title: "The Divine Pearl"
+			x: 6.1d
+			y: -17.4d
+		}
+		{
+			dependencies: ["533A5E5946F5C1B2"]
+			description: ["A scroll holds a single spell at a set level. Read it to cast the spell once; scrolls turn up in chests and on enemies. They are also ingredients for the Spellbinding parts of the mod."]
+			id: "4C4E638997C49A9A"
+			optional: true
+			rewards: [
+				{
+					id: "7EA68FE40AC64628"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4444F562466F9555"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5BC35226A047EA77"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "One spell, one use"
+			tasks: [
+				{
+					id: "248E05A3B2A52B1B"
+					item: "irons_spellbooks:scroll"
+					type: "item"
+				}
+			]
+			title: "Spell Scrolls"
+			x: 18.5d
+			y: 14.87d
+		}
+		{
+			dependencies: ["4AA277B439EFEBC0"]
+			description: ["Leather and amethyst, worn as a charm. It speeds up your mana regeneration."]
+			id: "4D006995E29794E3"
+			optional: true
+			rewards: [
+				{
+					id: "5B2D8F5736729A57"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3BE095F8DBED2BEA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "058D4F5F86765915"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mana comes back faster"
+			tasks: [
+				{
+					id: "60BABCDBBF1324D2"
+					item: "irons_spellbooks:amethyst_resonance_charm"
+					type: "item"
+				}
+			]
+			title: "Amethyst Resonance Charm"
+			x: 6.1d
+			y: 17.88d
+		}
+		{
+			dependencies: ["05D3BB48AD1AC2EF"]
+			description: ["Mithril Scrap smelts into ingots. Mithril makes the weapon parts, rings and amulets of Iron's Spells, and the mage armour's best upgrades."]
+			id: "588491D7A6D72F8A"
+			optional: true
+			rewards: [
+				{
+					id: "63199039CF034F09"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6AC7CD55934B5CE9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "70481612D0F36A0D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The metal of magic weapons"
+			tasks: [
+				{
+					id: "38B9550143CB3158"
+					item: "irons_spellbooks:mithril_ingot"
+					type: "item"
+				}
+			]
+			title: "Mithril: Mithril Ingot"
+			x: 12.7d
+			y: -0.37d
+		}
+		{
+			dependencies: ["05D3BB48AD1AC2EF"]
+			description: ["A mithril ring for casters who do not keep to one school of magic."]
+			id: "6E58A2DF41C61AD0"
+			optional: true
+			rewards: [
+				{
+					id: "71F47BD208CD06C4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4EEB7982651FBBD4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "60C8D29B02EC7A0E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Free of any school"
+			tasks: [
+				{
+					id: "40F296DB90852C80"
+					item: "irons_spellbooks:affinity_ring"
+					type: "item"
+				}
+			]
+			title: "Ring of Affinity"
+			x: 14.8d
+			y: 4.12d
+		}
+		{
+			dependencies: ["3938C331D8070E0A"]
+			description: ["A casting implement of crimson wood, gold and amethyst. It speeds up casting, shortens cooldowns and adds spell power. It is later made into the Void Staff."]
+			id: "48C5FCACA1D108A4"
+			optional: true
+			rewards: [
+				{
+					id: "63D18F14B7BAEB91"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2E820A6355A83211"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6F568B44B43ECEB7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A walking stick that casts"
+			tasks: [
+				{
+					id: "5B28BA43EF89482A"
+					item: "irons_spellbooks:artificer_cane"
+					type: "item"
+				}
+			]
+			title: "The Artificer's Cane"
+			x: 4.35d
+			y: -3.63d
+		}
+		{
+			dependencies: ["05D3BB48AD1AC2EF"]
+			description: ["A mithril ring that cuts the time spells take to cast."]
+			id: "0687217C0A19F70B"
+			optional: true
+			rewards: [
+				{
+					id: "3AE36D0F64CB492D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4D22D1D3C8169D4F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "62CFED9557908607"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Cast faster"
+			tasks: [
+				{
+					id: "2348B033B90C8F89"
+					item: "irons_spellbooks:cast_time_ring"
+					type: "item"
+				}
+			]
+			title: "Ring of Expediency"
+			x: 12.7d
+			y: 5.12d
+		}
+		{
+			dependencies: ["588491D7A6D72F8A"]
+			description: ["Long casts can no longer be interrupted. Taking a hit while channelling does not stop the spell."]
+			id: "732D26513A980425"
+			optional: true
+			rewards: [
+				{
+					id: "327A86059DA59A99"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5E51817058EDEC7E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2D05CCD17648A45D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Long spells, unbroken"
+			tasks: [
+				{
+					id: "63478C4B2D90F98A"
+					item: "irons_spellbooks:concentration_amulet"
+					type: "item"
+				}
+			]
+			title: "Amulet of Concentration"
+			x: 14.55d
+			y: -0.37d
+		}
+		{
+			dependencies: ["05D3BB48AD1AC2EF"]
+			description: ["A mithril and chain necklace that raises your spell resistance."]
+			id: "43D655F8D1DF241F"
+			optional: true
+			rewards: [
+				{
+					id: "34A8309ECD622DD0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "34EE1266AEFFBF97"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4981051C6DBFD352"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Shrug off hostile magic"
+			tasks: [
+				{
+					id: "06A1D3E538D60327"
+					item: "irons_spellbooks:heavy_chain_necklace"
+					type: "item"
+				}
+			]
+			title: "The Heavy Chain"
+			x: 12.7d
+			y: 6.62d
+		}
+		{
+			dependencies: ["05D3BB48AD1AC2EF"]
+			description: ["Lets you see invisible creatures. Worth wearing anywhere that has them."]
+			id: "00B8BE74DE2300EF"
+			optional: true
+			rewards: [
+				{
+					id: "07845AE2ADA568E8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "43D5634EF9EDBE99"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "54539ABB8CB893A3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "See what hides"
+			tasks: [
+				{
+					id: "55637244AE4D8178"
+					item: "irons_spellbooks:visibility_ring"
+					type: "item"
+				}
+			]
+			title: "Ring of Visibility"
+			x: 12.7d
+			y: 8.13d
+		}
+		{
+			dependencies: ["6FCD43C29A71A6D8"]
+			description: ["Leather armour soaked in Arcane Essence. Light protection, but it adds to your maximum mana, and it is upgraded later into Apprentice robes."]
+			id: "30D6D7538B6F0E54"
+			optional: true
+			rewards: [
+				{
+					id: "5FF9DD665A847E48"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2B1F48A6B11DA4B8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "27F9076FAD031856"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Your first mage clothes"
+			tasks: [
+				{
+					id: "5CAA1CB4E6FD4468"
+					item: "irons_spellbooks:wandering_magician_boots"
+					type: "item"
+				}
+				{
+					id: "0C88B5AC9B7DB92E"
+					item: "irons_spellbooks:wandering_magician_helmet"
+					type: "item"
+				}
+				{
+					id: "266963C11E2B0455"
+					item: "irons_spellbooks:wandering_magician_leggings"
+					type: "item"
+				}
+			]
+			title: "The Wandering Magician"
+			x: 2.1d
+			y: -2.12d
+		}
+		{
+			dependencies: ["6FCD43C29A71A6D8"]
+			description: ["Arcane Essence, iron and a soul lantern. It points to a place of magical significance, so you know where to explore next."]
+			id: "3F3D8EA0055EECDE"
+			optional: true
+			rewards: [
+				{
+					id: "17DC1EED03D91DF8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "35CD7DBA7F287825"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1DD85DC62C1D01DC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A compass for the lost"
+			tasks: [
+				{
+					id: "57A55AE45FFBC4F1"
+					item: "irons_spellbooks:wayward_compass"
+					type: "item"
+				}
+			]
+			title: "The Wayward Compass"
+			x: 2.1d
+			y: -0.63d
+		}
+		{
+			dependencies: ["588491D7A6D72F8A"]
+			description: ["Mithril and Arcane Ingot, worked into parts. Every crafted magic weapon in Iron's Spells starts with them: rapier, spellbreaker, Twilight Gale."]
+			id: "18E44A07CB586A67"
+			optional: true
+			rewards: [
+				{
+					id: "29CA29418E68AAB1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "532BD0AD5EE337A5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6D1DD256D3AF7C75"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Dwarven-made"
+			tasks: [
+				{
+					id: "0DEE613D8B41A941"
+					item: "irons_spellbooks:weapon_parts"
+					type: "item"
+				}
+			]
+			title: "Weapon Parts"
+			x: 14.55d
+			y: 1.12d
+		}
+		{
+			dependencies: ["18E44A07CB586A67"]
+			description: ["A light, quick blade built on Weapon Parts. It comes with &eEchoing Strikes&f already imbued, and can hold one more spell."]
+			id: "53510183EA9971F2"
+			optional: true
+			rewards: [
+				{
+					id: "2CB40A34219979F5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1DDF2A23FA19086C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2726312717C2436B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A blade that strikes twice"
+			tasks: [
+				{
+					id: "5E525189BA9F057B"
+					item: "irons_spellbooks:amethyst_rapier"
+					type: "item"
+				}
+			]
+			title: "The Amethyst Rapier"
+			x: 16.4d
+			y: 1.12d
+		}
+		{
+			dependencies: ["05D3BB48AD1AC2EF"]
+			description: ["Creatures you kill drop a quarter more experience while you wear it."]
+			id: "115B5A153A903205"
+			optional: true
+			rewards: [
+				{
+					id: "71F21A888686DE6E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4D454677EDEDD4A6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2E730D7AB84BCFC0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "More experience per kill"
+			tasks: [
+				{
+					id: "482EFC8DA3D2B329"
+					item: "irons_spellbooks:emerald_stoneplate_ring"
+					type: "item"
+				}
+			]
+			title: "Emerald Stoneplate Ring"
+			x: 12.7d
+			y: 9.62d
+		}
+		{
+			dependencies: ["4C868DC44A0D8B36"]
+			description: [
+				"Strays drop them. Frozen bones are what Ice scrolls and the Ice Rune are made from."
+				"&7Made at: &fSpout &7from &fany bones"
+			]
+			id: "525E37763FE2F55E"
+			optional: true
+			rewards: [
+				{
+					id: "6AFE598A73C5ADE7"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "55E1EA86D2BDB47B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2E2ED8DAC6CD7065"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bone with the cold in it"
+			tasks: [
+				{
+					id: "4D119CCB05B46396"
+					item: "irons_spellbooks:frozen_bone"
+					type: "item"
+				}
+			]
+			title: "Frozen Bone"
+			x: 6.1d
+			y: -15.89d
+		}
+		{
+			dependencies: ["18E44A07CB586A67"]
+			description: ["Mithril, diamond and Weapon Parts. It is imbued with &eCounterspell&f, which cancels the magic around its target."]
+			id: "1440E78351C305A2"
+			optional: true
+			rewards: [
+				{
+					id: "2310D66B2FE59C9B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "30270ADA64F71041"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1ED8CEEA4EF8E313"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A sword for duelling mages"
+			tasks: [
+				{
+					id: "1D8B7B90E2FDB654"
+					item: "irons_spellbooks:spellbreaker"
+					type: "item"
+				}
+			]
+			title: "The Spellbreaker"
+			x: 16.4d
+			y: 2.63d
+		}
+		{
+			dependencies: ["6FCD43C29A71A6D8"]
+			description: ["A staff you right-click to cast your chosen spell. It speeds up mana regeneration and strengthens scrolls. One of the easiest staves to make."]
+			id: "49172B1E114BF641"
+			optional: true
+			rewards: [
+				{
+					id: "5C264EAED4C46470"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6B168261AB6D020A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4835B7320A819239"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A first casting implement"
+			tasks: [
+				{
+					id: "40158354C9C9F2CD"
+					item: "irons_spellbooks:graybeard_staff"
+					type: "item"
+				}
+			]
+			title: "The Graybeard Staff"
+			x: 2.1d
+			y: 0.88d
+		}
+		{
+			dependencies: ["4C868DC44A0D8B36"]
+			description: [
+				"A Lightning Rod fixed to an Energized Core. It shortens cooldowns and strengthens lightning spells."
+				"&7Made from: &fLightning Rod, Energized Core &7(applied by hand)"
+			]
+			id: "0B5332C4A120CD2C"
+			optional: true
+			rewards: [
+				{
+					id: "3ADB1E13CE39AFB4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "497DE4E333645010"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "76D44C1E275270E2"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "For lightning casters"
+			tasks: [
+				{
+					id: "5493F56A3856FE18"
+					item: "irons_spellbooks:lightning_rod"
+					type: "item"
+				}
+			]
+			title: "The Rod o' Lightning"
+			x: 6.1d
+			y: -14.4d
+		}
+		{
+			dependencies: ["533A5E5946F5C1B2"]
+			description: ["Mithril, Weapon Parts, a Bottle o' Lightning and a crystal. A lightning weapon, and in some packs it can grow stronger still."]
+			id: "689EB91861E43A8E"
+			optional: true
+			rewards: [
+				{
+					id: "5D13C254293CB558"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "17B022815C27C2A8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6AE4FCC87F39A459"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A storm in a blade"
+			tasks: [
+				{
+					id: "43EDA7C95102ECC0"
+					item: "irons_spellbooks:twilight_gale"
+					type: "item"
+				}
+			]
+			title: "The Twilight Gale"
+			x: 18.5d
+			y: 16.38d
+		}
+		{
+			dependencies: ["5766E0B67E0E584A"]
+			description: [
+				"Blaze powder and netherite scrap, mixed superheated. Cinder Essence makes Upgrade Orbs, the Alchemist Cauldron and the Fireward Ring."
+				"&7Made at: &fMechanical Mixer &7from &fBlaze Powder x2, Netherite Scrap"
+			]
+			id: "5FFA7CC47E06E5F7"
+			optional: true
+			rewards: [
+				{
+					id: "20A71C77A75DD373"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4A559F6EA1DB1DAE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "301089C6B825FE9C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fire, refined"
+			tasks: [
+				{
+					id: "562F7D9743EB1F4D"
+					item: "irons_spellbooks:cinder_essence"
+					type: "item"
+				}
+			]
+			title: "Cinder Essence"
+			x: 12.7d
+			y: 16.62d
+		}
+		{
+			dependencies: ["392F3CC9CE4948B2"]
+			description: ["Arcane Cloth and hogskin. Apply it to a spell book to give it another slot."]
+			id: "51F8F9C36BB1F638"
+			optional: true
+			rewards: [
+				{
+					id: "79835E2B4BA294DD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6B79D8D76904D2C0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5D8AC4863B157E5E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Room for one more spell"
+			tasks: [
+				{
+					id: "189D3A9627708656"
+					item: "irons_spellbooks:lesser_spell_slot_upgrade"
+					type: "item"
+				}
+			]
+			title: "More Spell Slots"
+			x: 9.6d
+			y: 17.87d
+		}
+		{
+			dependencies: ["5FFA7CC47E06E5F7"]
+			description: ["Cinder Essence set in mithril. It makes you immune to fire."]
+			id: "1AD7FFF8430B5F26"
+			optional: true
+			rewards: [
+				{
+					id: "63760A1D3322E7E0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "31B9982415CE7161"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "56989CE0E8388F08"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fire cannot touch you"
+			tasks: [
+				{
+					id: "0F70F2A09FE05EDC"
+					item: "irons_spellbooks:fireward_ring"
+					type: "item"
+				}
+			]
+			title: "Fireward Ring"
+			x: 14.55d
+			y: 16.62d
+		}
+		{
+			dependencies: ["45A45B20286FA231"]
+			description: ["A pumpkin hat, a straw coat and the rest. It looks silly and gives a good amount of maximum mana. It is upgraded into the Enchantress set."]
+			id: "1F5BB3B472B6BA95"
+			optional: true
+			rewards: [
+				{
+					id: "78E34F15BA24448B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3838014293E23412"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "01B6EE336C48B380"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Odd armour, real mana"
+			tasks: [
+				{
+					id: "36B8B21DB0956C7B"
+					item: "irons_spellbooks:pumpkin_helmet"
+					type: "item"
+				}
+				{
+					id: "69A4194D87BF57C4"
+					item: "irons_spellbooks:pumpkin_boots"
+					type: "item"
+				}
+				{
+					id: "598088E7B97A48B4"
+					item: "irons_spellbooks:pumpkin_chestplate"
+					type: "item"
+				}
+				{
+					id: "444DB99F071BA28F"
+					item: "irons_spellbooks:pumpkin_leggings"
+					type: "item"
+				}
+			]
+			title: "The Scarecrow"
+			x: 4.35d
+			y: 2.37d
+		}
+		{
+			dependencies: ["4923EAB9878C539B"]
+			description: [
+				"Your hits deal extra damage based on how much mana the target has. Deadly against other casters."
+				"&7Made at: &fCreate sequenced assembly &7from &fNetherite Ingot, Gold Ingot x4, Divine Soulshard"
+			]
+			id: "5F6A58448779FA1B"
+			optional: true
+			rewards: [
+				{
+					id: "73ADF5BE24AFCEF9"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7F1B619020F29691"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "085844655B46F65C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Strikes at mana"
+			tasks: [
+				{
+					id: "58951C23C1F3E71D"
+					item: "irons_spellbooks:betrayer_signet"
+					type: "item"
+				}
+			]
+			title: "Signet of the Betrayer"
+			x: 4.35d
+			y: 12.87d
+		}
+		{
+			dependencies: ["00B8BE74DE2300EF"]
+			description: [
+				"It does not make you invisible. The ring itself is invisible. That is the joke."
+				"&7Made at: &fCreate sequenced assembly &7from &fRing of Visibility x4"
+			]
+			id: "3E483A9310CAE2C0"
+			optional: true
+			rewards: [
+				{
+					id: "47834EE6D48CBFFB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "01A53F54E4C67B64"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "433D641C753D015C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Read the fine print"
+			tasks: [
+				{
+					id: "7764C67A38FBDEAD"
+					item: "irons_spellbooks:invisibility_ring"
+					type: "item"
+				}
+			]
+			title: "Ring of Invisibility"
+			x: 14.55d
+			y: 8.13d
+		}
+		{
+			dependencies: ["3938C331D8070E0A"]
+			description: [
+				"The two-handed sword of the Ancient Knights. It is the base of the Monstrous and Legionnaire flamberges."
+				"&7Made at: &fCreate sequenced assembly &7from &fNetherite Sword x3"
+			]
+			id: "14B36A1EA5FED466"
+			optional: true
+			rewards: [
+				{
+					id: "4AD241C05E003616"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "741BB252928DD2C0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "41B91909FF6480BA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "An old knight's greatsword"
+			tasks: [
+				{
+					id: "78E0BE6B899251EA"
+					item: "irons_spellbooks:keeper_flamberge"
+					type: "item"
+				}
+			]
+			title: "The Decrepit Flamberge"
+			x: 4.35d
+			y: -2.13d
+		}
+		{
+			dependencies: ["3938C331D8070E0A"]
+			description: [
+				"A sword made to fight spellcasters. A Vindicator carries one in the Archevoker's fort; you can also make it."
+				"&7Made at: &fCreate sequenced assembly &7from &fIron Sword, Netherite Sword x4, Diamond"
+			]
+			id: "39779ADFAB06F86F"
+			optional: true
+			rewards: [
+				{
+					id: "625B229FEE1B5C17"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0CEF519DAA218049"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5D262CDEDF014DFE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A sword against mages"
+			tasks: [
+				{
+					id: "05F3E8CE368ED629"
+					item: "irons_spellbooks:magehunter"
+					type: "item"
+				}
+			]
+			title: "The Magehunter"
+			x: 4.35d
+			y: -0.63d
+		}
+		{
+			dependencies: ["5766E0B67E0E584A"]
+			description: [
+				"A rotting book with plenty of spell slots and a lot of extra mana, but it makes you weaker to hostile magic. It is the base of the Druidic Tome."
+				"&7Made at: &fCreate sequenced assembly &7from &fEnchanted Book x7, Rotten Flesh, Bone Meal, Dirt"
+			]
+			id: "01868C9F1F3A89EE"
+			optional: true
+			rewards: [
+				{
+					id: "57C2051947587C2A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7934F94F3B7E2FFD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "55F39EFC24D1392B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Many slots, at a price"
+			tasks: [
+				{
+					id: "5BCB06400466E817"
+					item: "irons_spellbooks:rotten_spell_book"
+					type: "item"
+				}
+			]
+			title: "The Rotten Spell Book"
+			x: 12.7d
+			y: 18.13d
+		}
+		{
+			dependencies: ["65DC42D1A3CB40ED"]
+			description: [
+				"The spell book of Holy magic: many slots, more holy spell power and faster casting."
+				"&7Made at: &fCreate sequenced assembly &7from &fEnchanted Book x6, Divine Pearl, Block of Emerald"
+			]
+			id: "77ECFE77113E3106"
+			optional: true
+			rewards: [
+				{
+					id: "70FC0FF1F1E2A09F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2F418C347AD6BC93"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "78038C1784D383D5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The holy spell book"
+			tasks: [
+				{
+					id: "1ECA8770D874CD36"
+					item: "irons_spellbooks:villager_spell_book"
+					type: "item"
+				}
+			]
+			title: "The Villager Bible"
+			x: 7.85d
+			y: -17.4d
+		}
+		{
+			dependencies: ["3938C331D8070E0A"]
+			description: ["Built with Create's Mechanical Crafters. It loads the next arrow or firework from your inventory on its own; sneak-click to stop it."]
+			id: "11A01D1A7A36620B"
+			optional: true
+			rewards: [
+				{
+					id: "14376E18F3D509D1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "31711A44EE979126"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "08673522EB8F9E69"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "It reloads itself"
+			tasks: [
+				{
+					id: "663B769C9087417F"
+					item: "irons_spellbooks:autoloader_crossbow"
+					type: "item"
+				}
+			]
+			title: "The Autoloader Crossbow"
+			x: 4.35d
+			y: 0.87d
+		}
+		{
+			dependencies: ["01868C9F1F3A89EE"]
+			description: ["The Rotten Spell Book, healed with amethyst and a Spore Blossom. A Nature spell book with plenty of slots and mana."]
+			id: "63C52139F7BAF152"
+			optional: true
+			rewards: [
+				{
+					id: "44A3B978CF31E2BA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "796ED00BA494688E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6C30CD4D70B0EC47"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The nature spell book"
+			tasks: [
+				{
+					id: "562CE3EEFAEB5D68"
+					item: "irons_spellbooks:druidic_spell_book"
+					type: "item"
+				}
+			]
+			title: "The Druidic Tome"
+			x: 14.55d
+			y: 18.13d
+		}
+		{
+			dependencies: ["525E37763FE2F55E"]
+			description: ["The &eFrostward Ring&f makes you immune to freezing. The &eIce Staff&f, from a Frosted Helve and a Permafrost Shard, is a casting implement for cold magic."]
+			id: "1C014E7310E014CA"
+			optional: true
+			rewards: [
+				{
+					id: "732CE3845E810238"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7C8BF74D8E3C5CE2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "14A5017E8DB995B9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A ring and a staff"
+			tasks: [
+				{
+					id: "2DCCD900A4E9A93E"
+					item: "irons_spellbooks:frostward_ring"
+					type: "item"
+				}
+				{
+					id: "2993E6C7C9903619"
+					item: "irons_spellbooks:ice_staff"
+					type: "item"
+				}
+			]
+			title: "Frost and Ice"
+			x: 7.85d
+			y: -15.89d
+		}
+		{
+			dependencies: ["3F79B67A7F0DE61B"]
+			description: ["Wizard armour reworked with an &eEvocation Rune&f, the school of fangs and vexes."]
+			id: "0C0E9610E3B22D11"
+			optional: true
+			rewards: [
+				{
+					id: "26836BBF20B8759A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5E12426AF23E04CE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "19E90DB517D4F676"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mage armour of evocation"
+			tasks: [
+				{
+					id: "192EDF518F112094"
+					item: "irons_spellbooks:archevoker_boots"
+					type: "item"
+				}
+				{
+					id: "440A6BF9223F131A"
+					item: "irons_spellbooks:archevoker_chestplate"
+					type: "item"
+				}
+				{
+					id: "1E149E99C16109AC"
+					item: "irons_spellbooks:archevoker_helmet"
+					type: "item"
+				}
+				{
+					id: "7800015A3A257212"
+					item: "irons_spellbooks:archevoker_leggings"
+					type: "item"
+				}
+			]
+			title: "The Archevoker"
+			x: 16.4d
+			y: -9.39d
+		}
+		{
+			dependencies: ["7E040C8BEF348329"]
+			description: ["Wizard armour reworked with an &eIce Rune&f, for ice casters."]
+			id: "725E3E09DCB53261"
+			optional: true
+			rewards: [
+				{
+					id: "2D1165777D7C911F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "102CEDA4AFA1E882"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "41D56D63ED7463E2"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mage armour of ice"
+			tasks: [
+				{
+					id: "6CB55134B8DCFA60"
+					item: "irons_spellbooks:cryomancer_boots"
+					type: "item"
+				}
+				{
+					id: "05CC546FBBA2F27F"
+					item: "irons_spellbooks:cryomancer_chestplate"
+					type: "item"
+				}
+				{
+					id: "40927505E60A1785"
+					item: "irons_spellbooks:cryomancer_helmet"
+					type: "item"
+				}
+				{
+					id: "0FC57DEF4125CE11"
+					item: "irons_spellbooks:cryomancer_leggings"
+					type: "item"
+				}
+			]
+			title: "The Cryomancer"
+			x: 12.7d
+			y: -4.89d
+		}
+		{
+			dependencies: ["764995D44418197D"]
+			description: ["Wizard armour reworked with a &eBlood Rune&f, for blood magic."]
+			id: "30079B360C915D46"
+			optional: true
+			rewards: [
+				{
+					id: "0919EA8A901907DB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "67918E911F2845F2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "712397FBB7936E8B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mage armour of blood"
+			tasks: [
+				{
+					id: "4A3D1CF0DAF34AE6"
+					item: "irons_spellbooks:cultist_boots"
+					type: "item"
+				}
+				{
+					id: "495BDC371F537FC3"
+					item: "irons_spellbooks:cultist_chestplate"
+					type: "item"
+				}
+				{
+					id: "0C38A2402AF983ED"
+					item: "irons_spellbooks:cultist_helmet"
+					type: "item"
+				}
+				{
+					id: "5432204F490AE942"
+					item: "irons_spellbooks:cultist_leggings"
+					type: "item"
+				}
+			]
+			title: "The Cultist"
+			x: 14.55d
+			y: -6.13d
+		}
+		{
+			dependencies: ["7E040C8BEF348329"]
+			description: ["Wizard armour reworked with a &eLightning Rune&f, for lightning casters."]
+			id: "6B120FAC67C2A191"
+			optional: true
+			rewards: [
+				{
+					id: "0A737EF9D62125A0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1687630297E1D0ED"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "464DFB0239A24BC7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mage armour of lightning"
+			tasks: [
+				{
+					id: "7161CB2DD806F334"
+					item: "irons_spellbooks:electromancer_boots"
+					type: "item"
+				}
+				{
+					id: "1DC2F540E2F0BC67"
+					item: "irons_spellbooks:electromancer_chestplate"
+					type: "item"
+				}
+				{
+					id: "51EB6E1A7F0276D0"
+					item: "irons_spellbooks:electromancer_helmet"
+					type: "item"
+				}
+				{
+					id: "1EC34F0027827BAF"
+					item: "irons_spellbooks:electromancer_leggings"
+					type: "item"
+				}
+			]
+			title: "The Electromancer"
+			x: 12.7d
+			y: -3.38d
+		}
+		{
+			dependencies: ["3F79B67A7F0DE61B"]
+			description: ["The Conjurer's Talisman, improved. When a summoned creature runs out of time, the spell does not go on cooldown."]
+			id: "237F8FC84135E95E"
+			optional: true
+			rewards: [
+				{
+					id: "33F7A8A39D00925F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5BCCCB53C7E77405"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "52B5DB6793AE7B13"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Summons without the wait"
+			tasks: [
+				{
+					id: "37E35BD16EE92B29"
+					item: "irons_spellbooks:greater_conjurers_talisman"
+					type: "item"
+				}
+			]
+			title: "The Greater Talisman"
+			x: 18.0d
+			y: -9.39d
+		}
+		{
+			dependencies: ["3F79B67A7F0DE61B"]
+			description: ["Wizard armour reworked with a &eNature Rune&f. Later it becomes the Bloom Stone set."]
+			id: "130D3D0B2A7AF119"
+			optional: true
+			rewards: [
+				{
+					id: "686664A98DD9A244"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "61BD17B3EB8FC8AF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6032D9B56EA22381"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mage armour of nature"
+			tasks: [
+				{
+					id: "5EB1F9FB69078CB4"
+					item: "irons_spellbooks:plagued_boots"
+					type: "item"
+				}
+				{
+					id: "43BBADBDD1D1A45E"
+					item: "irons_spellbooks:plagued_chestplate"
+					type: "item"
+				}
+				{
+					id: "6B5696BE463821D2"
+					item: "irons_spellbooks:plagued_helmet"
+					type: "item"
+				}
+				{
+					id: "1AC8A87D4F7CDF6A"
+					item: "irons_spellbooks:plagued_leggings"
+					type: "item"
+				}
+			]
+			title: "The Plagued"
+			x: 18.0d
+			y: -7.89d
+		}
+		{
+			dependencies: ["3F79B67A7F0DE61B"]
+			description: ["It makes you immune to poison."]
+			id: "03DC70D3D4C352D5"
+			optional: true
+			rewards: [
+				{
+					id: "0FA332D66B14AA2A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3B8DC3901F4EC059"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "64C9A9E899FF874B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Poison cannot touch you"
+			tasks: [
+				{
+					id: "7C4573C940AD1D3B"
+					item: "irons_spellbooks:poisonward_ring"
+					type: "item"
+				}
+			]
+			title: "Poisonward Ring"
+			x: 16.4d
+			y: -7.14d
+		}
+		{
+			dependencies: ["764995D44418197D"]
+			description: ["Wizard armour reworked with a &eHoly Rune&f, for healers and holy casters."]
+			id: "27FC7FF3BBEE0D39"
+			optional: true
+			rewards: [
+				{
+					id: "2CAB7D88B3C48AAD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "018F76A4E8CA831C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4F479C918E2D3C22"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mage armour of light"
+			tasks: [
+				{
+					id: "7C2AC6E68EC401B7"
+					item: "irons_spellbooks:priest_boots"
+					type: "item"
+				}
+				{
+					id: "342F06A8D06AE711"
+					item: "irons_spellbooks:priest_chestplate"
+					type: "item"
+				}
+				{
+					id: "7B32EEB583D2E1A4"
+					item: "irons_spellbooks:priest_helmet"
+					type: "item"
+				}
+				{
+					id: "6601752B1359D484"
+					item: "irons_spellbooks:priest_leggings"
+					type: "item"
+				}
+			]
+			title: "The Priest"
+			x: 14.55d
+			y: -4.64d
+		}
+		{
+			dependencies: ["7E040C8BEF348329"]
+			description: ["Wizard armour reworked with a &eFire Rune&f. More mana and more power for fire spells. Each school has its own set; pick the one you cast."]
+			id: "75AAEB34BBFD8780"
+			optional: true
+			rewards: [
+				{
+					id: "687A3962405A658C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "22C36059D3BF0CAA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7324D8BA86EEBD99"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mage armour of fire"
+			tasks: [
+				{
+					id: "2FD96C06B313BA1F"
+					item: "irons_spellbooks:pyromancer_boots"
+					type: "item"
+				}
+				{
+					id: "1B9BE5409B02E73D"
+					item: "irons_spellbooks:pyromancer_helmet"
+					type: "item"
+				}
+				{
+					id: "5EDDAFE86B2C48E6"
+					item: "irons_spellbooks:pyromancer_leggings"
+					type: "item"
+				}
+			]
+			title: "The Pyromancer"
+			x: 12.7d
+			y: -1.89d
+		}
+		{
+			dependencies: ["764995D44418197D"]
+			description: ["Wizard armour reworked with an &eEnder Rune&f, for ender spells."]
+			id: "65B873AFCF8EF356"
+			optional: true
+			rewards: [
+				{
+					id: "3047F4BC049E48CA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1D8B9FFB0ABF954C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "341F5E02BE738004"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mage armour of the End"
+			tasks: [
+				{
+					id: "00837823B1D64A0F"
+					item: "irons_spellbooks:shadowwalker_boots"
+					type: "item"
+				}
+				{
+					id: "708A5CEFA4317798"
+					item: "irons_spellbooks:shadowwalker_chestplate"
+					type: "item"
+				}
+				{
+					id: "1EAD4066C927521E"
+					item: "irons_spellbooks:shadowwalker_helmet"
+					type: "item"
+				}
+				{
+					id: "2B4C5B391BC689DA"
+					item: "irons_spellbooks:shadowwalker_leggings"
+					type: "item"
+				}
+			]
+			title: "The Shadow-Walker"
+			x: 14.55d
+			y: -3.13d
+		}
+		{
+			dependencies: ["5DF28CE342F44FD2"]
+			description: [
+				"Each time you teleport by spell, you gain Evasion for three seconds."
+				"&7Made at: &fCreate sequenced assembly &7from &fChain x5, Mithril Nugget, Ender Pearl"
+			]
+			id: "011D46CF6CD99631"
+			optional: true
+			rewards: [
+				{
+					id: "328E53C07B45DFEE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "54458F0CFB5817DD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7DE6444895B24C43"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A cracked pearl on a chain"
+			tasks: [
+				{
+					id: "48C74EE6BA4BE1F8"
+					item: "irons_spellbooks:teleportation_amulet"
+					type: "item"
+				}
+			]
+			title: "Amulet of Teleportation"
+			x: 18.5d
+			y: -11.15d
+		}
+	]
+	subtitle: ["Spellbooks, scrolls and nine schools of magic"]
+	title: "&bIron's Spells"
+}

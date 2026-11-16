@@ -1,0 +1,1813 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "apprentice"
+	group: "3368DAD22055D0D9"
+	icon: "apprenticecodex:zenith_staff"
+	id: "5AFAE21D5DA665D8"
+	images: [ ]
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["45F3E9040A13D856"]
+			description: [
+				"Two add-ons to Iron's Spells, both about casting without the book in your hand."
+				""
+				"&eApprentice's Codex&f puts spells into tools: scrolls loaded into spellguns, staves that cast as they swing, shields that answer a block with a spell, robes for every school and the workbenches that make them."
+				""
+				"&6Create: Wizardry&f does it with machinery: lightning and mana as fluids, pumped and bottled. &7Needs Create."
+			]
+			hide_until_deps_complete: true
+			id: "1CA140D4D8DE97A4"
+			rewards: [
+				{
+					id: "1779078EFFF6BFCA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "2A539B9724C6F46F"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "098E110518853158"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "143C12135C4E971D"
+					title: "Open the codex"
+					type: "checkmark"
+				}
+			]
+			title: "&e&lThe Apprentice's Codex"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CA140D4D8DE97A4"]
+			id: "7E69B071CE8CAD13"
+			rewards: [
+				{
+					id: "42E81C22436AF432"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "01FFB34777DC9776"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "744F4F7E3CDBDD59"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Decide to walk the path of an apprentice mage."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/root"
+					criterion: ""
+					icon: "apprenticecodex:sky_edge_sword"
+					id: "435F6F26EC92EF66"
+					title: "Apprentice's Codex"
+					type: "advancement"
+				}
+			]
+			title: "Apprentice's Codex"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E69B071CE8CAD13"]
+			description: ["&7Made from: &fArcane Essence, Copper Ingot x2, any wooden fences x2, any wooden slabs x3"]
+			id: "4F02427F61272C95"
+			rewards: [
+				{
+					id: "509E270B0A239465"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4FB9857B20A52FC6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "21A4676CBE6B0657"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft an Apprentice Desk."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_apprentice_desk"
+					criterion: ""
+					icon: "apprenticecodex:apprentice_desk"
+					id: "1707F59B8A785420"
+					title: "99% Inspiration, 1% Effort"
+					type: "advancement"
+				}
+			]
+			title: "99% Inspiration, 1% Effort"
+			x: 3.95d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F02427F61272C95"]
+			description: ["&7Made from: &fArcane Ingot, any wooden fences x2, Arcane Cloth, any wooden slabs x3"]
+			id: "45A749AC1C804730"
+			rewards: [
+				{
+					id: "1399C182A69178F7"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6BBA2A70D04F10BE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6BEF83FCCE8A2D1F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Spellcaster Workbench."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_spellcaster_workbench"
+					criterion: ""
+					icon: "apprenticecodex:spellcaster_workbench"
+					id: "6632BD6FC2D93591"
+					title: "Immersion, or Crayfish"
+					type: "advancement"
+				}
+			]
+			title: "Immersion, or Crayfish"
+			x: 5.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45A749AC1C804730"]
+			description: ["&7Made from: &fSpellcaster's Flask, any wooden fences x2, Arcane Cloth, Blaze Rod, any wooden slabs x3"]
+			id: "131D760D6B17C3FC"
+			rewards: [
+				{
+					id: "447A209F72783EA3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "62AFF912A42DF3A8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3FD8FCAF1FF3E13F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft an Atelier Station"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_atelier_station"
+					criterion: ""
+					icon: "apprenticecodex:atelier_station"
+					id: "373FA07F435721BD"
+					title: "Atelier Iron"
+					type: "advancement"
+				}
+			]
+			title: "Atelier Iron"
+			x: 7.55d
+			y: -3.5d
+		}
+		{
+			dependencies: ["131D760D6B17C3FC"]
+			description: ["&7Made from: &fAmethyst Shard, Arcane Cloth, any wooden fences x2, Scroll, any wooden slabs x3"]
+			id: "0ABE8333E080EFF7"
+			rewards: [
+				{
+					id: "075A799A0D7422D9"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "7E7B63E4D73B2F0F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16BFFDC90F55C77A"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4F7C8248F33A1427"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft a Spell Calibration Bench."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_spell_calibration_bench"
+					criterion: ""
+					icon: "apprenticecodex:spell_calibration_bench"
+					id: "3B0496D3A8E2B3D5"
+					title: "Magic is no use unless you equip it"
+					type: "advancement"
+				}
+			]
+			title: "Magic is no use unless you equip it"
+			x: 9.4d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0ABE8333E080EFF7"]
+			id: "62AD988056BF66FE"
+			rewards: [
+				{
+					id: "2BD8A44B29816A6C"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "218A9094F7CD4D07"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4C391CBDFE099E90"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Use the Spell Calibration Bench to extract a scroll."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/extract_spellcaster_gun_scroll"
+					criterion: ""
+					icon: "irons_spellbooks:scroll"
+					id: "39313A05BD5EA8CA"
+					title: "Isn't this basically a wand foci?"
+					type: "advancement"
+				}
+			]
+			title: "Isn't this basically a wand foci?"
+			x: 11.25d
+			y: -3.5d
+		}
+		{
+			dependencies: ["45A749AC1C804730"]
+			description: ["&7Made from: &fArcane Ingot, any buttons, Copper Ingot x3, Bottle o' Lightning, Redstone Dust"]
+			id: "1BBE3F647D644592"
+			rewards: [
+				{
+					id: "01334ACF24C28641"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "63A29B767E38E2AD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "251830964BFF42DE"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Copper Chantcast Spellgun."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_copper_spellcaster_gun"
+					criterion: ""
+					icon: "apprenticecodex:copper_spellcaster_gun"
+					id: "07ACC80881E1846A"
+					title: "Like Lightning"
+					type: "advancement"
+				}
+			]
+			title: "Like Lightning"
+			x: 7.55d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BBE3F647D644592"]
+			description: ["&7Made from: &fArcane Ingot, any buttons, Ender Pearl, Iron Ingot x3, Redstone Dust"]
+			id: "139D7CD85DDE4261"
+			rewards: [
+				{
+					id: "20524F9555E441F4"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "70318307F057A565"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "44B1769D0FF5872C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft an Iron Quickcast Spellgun"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_iron_spellcaster_gun"
+					criterion: ""
+					icon: "apprenticecodex:iron_spellcaster_gun"
+					id: "7C2A32601DEC9CD5"
+					title: "Sasuga, Onii-sama!"
+					type: "advancement"
+				}
+			]
+			title: "Sasuga, Onii-sama!"
+			x: 9.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["139D7CD85DDE4261"]
+			description: ["&7Made from: &fArcane Ingot, any buttons, Recovery Rune, Gold Ingot x3, Redstone Dust"]
+			id: "58C52C796C8CE54A"
+			rewards: [
+				{
+					id: "039B1B1A9CE1EC8E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "118E2DB711F5FF6A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "78876E7832BC17C1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Gold Heavycast Spellgun"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_gold_spellcaster_gun"
+					criterion: ""
+					icon: "apprenticecodex:gold_spellcaster_gun"
+					id: "6D280F92069F1409"
+					title: "Not Exactly a One-Shot Kill"
+					type: "advancement"
+				}
+			]
+			title: "Not Exactly a One-Shot Kill"
+			x: 11.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58C52C796C8CE54A"]
+			description: ["&7Made from: &fArcane Ingot, any buttons, Diamond x3, Mithril Scrap, Redstone Dust"]
+			id: "6F2371F299E14728"
+			rewards: [
+				{
+					id: "3FD4D741878616E4"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "3A3FFD00844A2BAB"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "059911E0223E00DA"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5F0DE9CE0917A98A"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft a Diamond Grandcast Spellgun"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_diamond_spellcaster_gun"
+					criterion: ""
+					icon: "apprenticecodex:diamond_spellcaster_gun"
+					id: "7C36CA046BCD5273"
+					title: "The Price and the Reward"
+					type: "advancement"
+				}
+			]
+			title: "The Price and the Reward"
+			x: 13.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F2371F299E14728"]
+			description: ["&7Made from: &fany buttons, Mithril Ingot x3, Redstone Dust, Divine Soulshard, Weapon Parts"]
+			id: "4202E05BBF160C6F"
+			rewards: [
+				{
+					id: "629C4C2ED6490AE3"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "62C538DB6E570A97"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6FD1C113826DBCE0"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "567BDA1EF388B481"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft a Full-auto Rapidcast Spellrifle"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_fullauto_rapidcast_spellrifle"
+					criterion: ""
+					icon: "apprenticecodex:fullauto_rapidcast_spellrifle"
+					id: "452F59003BACE0EE"
+					title: "Survive"
+					type: "advancement"
+				}
+			]
+			title: "Survive"
+			x: 15.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4202E05BBF160C6F"]
+			description: ["&7Made from: &fany buttons, Mithril Scrap x3, Redstone Dust, Spell-stained Diamond, Weapon Parts"]
+			id: "75DDD59A2BC1B8A9"
+			optional: true
+			rewards: [
+				{
+					id: "3837531FDED1849E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "44A947E815180E55"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5AE16BD74CE47D27"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Multipurpose Staffrifle"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_multipurpose_staffrifle"
+					criterion: ""
+					icon: "apprenticecodex:multipurpose_staffrifle"
+					id: "42FB59330A812C44"
+					title: "It's a staff, that's what I said!"
+					type: "advancement"
+				}
+			]
+			title: "It's a staff, that's what I said!"
+			x: 17.3d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45A749AC1C804730"]
+			description: ["&7Made from: &fDiamond, Gold Ingot, Iron Ingot x2, Leather, any planks"]
+			id: "0E1B8E050D13C849"
+			rewards: [
+				{
+					id: "7785C584E8E93450"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6AFC543CA079707E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "50E320E66EB6E112"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft an Iron Swingcast Staff"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_iron_swingcast_staff"
+					criterion: ""
+					icon: "apprenticecodex:iron_swingcast_staff"
+					id: "3C337EB9F2569955"
+					title: "Somatic Staff"
+					type: "advancement"
+				}
+			]
+			title: "Somatic Staff"
+			x: 7.55d
+			y: 1.75d
+		}
+		{
+			dependencies: ["0E1B8E050D13C849"]
+			description: ["&7Made from: &fArcane Ingot x2, Spell-stained Diamond, Leather, Silver Ring, any planks"]
+			id: "405E4D98B475183E"
+			rewards: [
+				{
+					id: "2954BEDC9836A985"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7CFB8B7E45C094D5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0A387E13CAB77AC1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Silver Swingcast Staff"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_silver_swingcast_staff"
+					criterion: ""
+					icon: "apprenticecodex:silver_swingcast_staff"
+					id: "40A3104743066AA9"
+					title: "Skip Incantation"
+					type: "advancement"
+				}
+			]
+			title: "Skip Incantation"
+			x: 9.4d
+			y: 1.75d
+		}
+		{
+			dependencies: ["405E4D98B475183E"]
+			description: ["&7Made from: &fArcane Ingot, Spell-stained Diamond x2, Diamond Sword, any planks"]
+			id: "79A485276F81192E"
+			rewards: [
+				{
+					id: "422D119B9FDE6E19"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4764F9B6039FE58A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "72A95802CAACED9E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Crystal Bladed Staff."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_crystal_bladed_staff"
+					criterion: ""
+					icon: "apprenticecodex:crystal_bladed_staff"
+					id: "1BD3A75DDDCCAC1C"
+					title: "Power Is Power"
+					type: "advancement"
+				}
+			]
+			title: "Power Is Power"
+			x: 11.25d
+			y: 1.75d
+		}
+		{
+			dependencies: ["79A485276F81192E"]
+			description: ["&7Made from: &fEcho Shard, Mithril Ingot, Netherite Ingot x2, Weapon Parts, any planks"]
+			id: "427E02C472AECE12"
+			rewards: [
+				{
+					id: "3B17B3BE43A2B6BF"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "43007B06FCCA4F0D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3B54E9AF73112615"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Multicast Echo Staff."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_multicast_echo_staff"
+					criterion: ""
+					icon: "apprenticecodex:multicast_echo_staff"
+					id: "635F80D688AB587F"
+					title: "Diacute!"
+					type: "advancement"
+				}
+			]
+			title: "Diacute!"
+			x: 13.1d
+			y: 1.75d
+		}
+		{
+			dependencies: ["427E02C472AECE12"]
+			description: ["&7Made from: &fSpell-stained Diamond, Nether Star, Netherite Sword, Yellow Stained Glass x2"]
+			id: "1F8E170F1ECA6465"
+			rewards: [
+				{
+					id: "55D4EA6B5FE4B79B"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "009B619F9356D8E5"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "148D71EA4E169C5C"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "35573723E0492E61"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft an Illuminate Stellar Staff."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_illuminate_stellar_staff"
+					criterion: ""
+					icon: "apprenticecodex:illuminate_stellar_staff"
+					id: "085494F32861A80A"
+					title: "She illuminates you all with her magic."
+					type: "advancement"
+				}
+			]
+			title: "She illuminates you all with her magic."
+			x: 15.2d
+			y: 1.75d
+		}
+		{
+			dependencies: ["1F8E170F1ECA6465"]
+			description: ["&7Made from: &fSpell-stained Diamond, Purple Stained Glass x2, Silver Ring, Netherite Sword"]
+			id: "31091C0F0F5F4424"
+			rewards: [
+				{
+					id: "350762396C214CFC"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "17B1E690487653E9"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0C6427FED0E216CD"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "60B568A74E7E1BEA"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft a Unite Luna Staff."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_unite_luna_staff"
+					criterion: ""
+					icon: "apprenticecodex:unite_luna_staff"
+					id: "38C548C7CBC6A826"
+					title: "She unites you all with her magic."
+					type: "advancement"
+				}
+			]
+			title: "She unites you all with her magic."
+			x: 17.3d
+			y: 1.75d
+		}
+		{
+			dependencies: ["31091C0F0F5F4424"]
+			description: ["The last staff in the codex, and the strongest."]
+			id: "5E768E5E73C05B3C"
+			rewards: [
+				{
+					id: "483CEAF1C425AF99"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "1F3C0817A21B517A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21F92B20C2AE73B2"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "56415E082CC56BE3"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft a Zenith Staff."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_zenith_staff"
+					criterion: ""
+					icon: "apprenticecodex:zenith_staff"
+					id: "44254F5D44D2F614"
+					title: "Journey's End"
+					type: "advancement"
+				}
+			]
+			title: "Journey's End"
+			x: 19.4d
+			y: 1.75d
+		}
+		{
+			dependencies: ["131D760D6B17C3FC"]
+			id: "7528C506C350F67E"
+			rewards: [
+				{
+					id: "7A87AE1562CD3AEE"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "786057E4031285A3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "789932431360A42E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Equip a full set of Apprentice Mage Robes."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/equip_apprentice_mage_robe"
+					criterion: ""
+					icon: "apprenticecodex:apprentice_mage_scarf"
+					id: "2CA1A274F95B1350"
+					title: "If You're a Mage, You Might as Well Be a Glass Cannon"
+					type: "advancement"
+				}
+			]
+			title: "If You're a Mage, You Might as Well Be a Glass Cannon"
+			x: 9.4d
+			y: -1.75d
+		}
+		{
+			dependencies: ["7528C506C350F67E"]
+			id: "503063199BB19BFC"
+			rewards: [
+				{
+					id: "4F0F75CEFC8FC319"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0C058CBE7007EB3E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6D0D0C10707B0BBB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Equip a full set of Enchantress Robes"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/equip_enchantress_robe"
+					criterion: ""
+					icon: "apprenticecodex:enchantress_hat"
+					id: "6ACAD38415758B6E"
+					title: "\"Original Magic\""
+					type: "advancement"
+				}
+			]
+			title: "\"Original Magic\""
+			x: 11.25d
+			y: -1.75d
+		}
+		{
+			dependencies: ["503063199BB19BFC"]
+			id: "252C7AEF62F406F0"
+			rewards: [
+				{
+					id: "6956FF00BDFA5CB8"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "45BF8F76340C2600"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1F69AC678415EA43"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Equip a full set of Maiden of the Elements robes"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/equip_element_maiden_robe"
+					criterion: ""
+					icon: "apprenticecodex:element_maiden_robe_ribbon"
+					id: "6F7B3A30958ECDF3"
+					title: "All-Knowing, All-Powerful... Me!"
+					type: "advancement"
+				}
+			]
+			title: "All-Knowing, All-Powerful... Me!"
+			x: 13.1d
+			y: -1.75d
+		}
+		{
+			dependencies: ["252C7AEF62F406F0"]
+			id: "272E84512465F83E"
+			rewards: [
+				{
+					id: "21C4EEA83C4C6A6D"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3567D2EDE9F68F91"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0D29218D58E027AB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Equip a full set of Chromatic Magia Dress"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/equip_chromatic_magia_dress"
+					criterion: ""
+					icon: "apprenticecodex:chromatic_magia_dress_hat"
+					id: "52F9D094609299BF"
+					title: "CMYK"
+					type: "advancement"
+				}
+			]
+			title: "CMYK"
+			x: 15.2d
+			y: -1.75d
+		}
+		{
+			dependencies: ["272E84512465F83E"]
+			id: "742843A1273A5A26"
+			rewards: [
+				{
+					id: "01777D835F3C277F"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "41A686546595AAD6"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "24134827FC4C9777"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7DFE109BC08FBBBC"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Equip a full set of Magi-Agent's Suits"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/equip_magi_agent_suit"
+					criterion: ""
+					icon: "apprenticecodex:magi_agent_suit_hood"
+					id: "5856911F643B488F"
+					title: "Were it so easy."
+					type: "advancement"
+				}
+			]
+			title: "Were it so easy."
+			x: 19.4d
+			y: -1.75d
+		}
+		{
+			dependencies: ["45A749AC1C804730"]
+			description: ["&7Made from: &fArcane Ingot x2, Mithril Scrap x2, Netherite Sword"]
+			id: "31F45A09DBD602C0"
+			rewards: [
+				{
+					id: "08A716D30143A724"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "56160E5A7D305394"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5658BDF7AE1075BF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Mana Force Blade."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_mana_force_blade"
+					criterion: ""
+					icon: "apprenticecodex:mana_force_blade"
+					id: "4F0F23E66F2FDF4A"
+					title: "Sandevistan"
+					type: "advancement"
+				}
+			]
+			title: "Sandevistan"
+			x: 7.55d
+			y: 3.5d
+		}
+		{
+			dependencies: ["31F45A09DBD602C0"]
+			description: ["&7Made from: &fArcane Ingot x2, Mithril Scrap, Netherite Ingot x2"]
+			id: "6234A5CD62FD2526"
+			rewards: [
+				{
+					id: "0CB60DBCE18EE61F"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2923B17D170AC3D4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4452E20AF6AC4827"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Spell-Charged Greatsword."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_spellcharged_greatsword"
+					criterion: ""
+					icon: "apprenticecodex:spellcharged_greatsword"
+					id: "154FA5F461C461BC"
+					title: "Not interested"
+					type: "advancement"
+				}
+			]
+			title: "Not interested"
+			x: 9.4d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6234A5CD62FD2526"]
+			description: ["&7Made from: &fArcane Ingot, Mithril Scrap x2, Ember-stained Netherite Ingot, any planks"]
+			id: "6DE4646E24871E76"
+			rewards: [
+				{
+					id: "6FFB89F0EC19FA82"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1C17F7DE3883A8C7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "74ACD745DA7775AF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Spell-Reaper's Scythe."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_spell_reaper_scythe"
+					criterion: ""
+					icon: "apprenticecodex:spell_reaper_scythe"
+					id: "0C24075ADB0A7670"
+					title: "Bloody Tears"
+					type: "advancement"
+				}
+			]
+			title: "Bloody Tears"
+			x: 11.25d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6DE4646E24871E76"]
+			description: ["&7Made from: &fSpell-stained Arcane Ingot, Mithril Scrap, Netherite Ingot x6, Shield"]
+			id: "75E45085F38F31E8"
+			rewards: [
+				{
+					id: "00896C891042228D"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "65870E705D9E918A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "11A7C2E486576BE6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Greatshield of Spellcaster-Bulwark."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_bulwark_greatshield"
+					criterion: ""
+					icon: "apprenticecodex:bulwark_greatshield"
+					id: "3F565977FF6BC8E4"
+					title: "A Shield Renowned for Its Defense"
+					type: "advancement"
+				}
+			]
+			title: "A Shield Renowned for Its Defense"
+			x: 13.1d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75E45085F38F31E8"]
+			description: ["&7Made from: &fSpell-stained Arcane Ingot x4, Diamond x2, Glass Pane x2, Shield"]
+			id: "2DE2E6336BB63ED2"
+			rewards: [
+				{
+					id: "75FC6D42087FF2A8"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2EDF689B9379388C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2C5436617849B85A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Reflectcast Shield."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_reflectcast_shield"
+					criterion: ""
+					icon: "apprenticecodex:reflectcast_shield"
+					id: "4CDCB9197C9A93A4"
+					title: "Attack is the best form of defense"
+					type: "advancement"
+				}
+			]
+			title: "Attack is the best form of defense"
+			x: 15.2d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2DE2E6336BB63ED2"]
+			description: ["&7Made from: &fArcane Ingot x2, Crystalline Arcane Shard x2, Diamond x2, Weapon Parts"]
+			id: "1A7C58A2A31552CE"
+			rewards: [
+				{
+					id: "77ACD0BFCD4D80DE"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "20FE63D52BBB36C1"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "218AADA103BD134D"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "678435E2A01762BA"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft the Gauntlets of Psychic-drive"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_psychic_drive_gauntlets"
+					criterion: ""
+					icon: "apprenticecodex:psychic_drive_gauntlets"
+					id: "03D9B12B90CC1697"
+					title: "You'll Float Too!"
+					type: "advancement"
+				}
+			]
+			title: "You'll Float Too!"
+			x: 19.4d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4F02427F61272C95"]
+			description: ["&7Made from: &fBlaze Rod, Ender Rune, Hay Bale, Arcane Ingot, Phantom Membrane, any planks x2"]
+			id: "00FFCA543C617C52"
+			rewards: [
+				{
+					id: "48215E8A694CC652"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2599230381A6BECA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4DE060B75D04AEA9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Broom of Floatmount"
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_floatmount_broom"
+					criterion: ""
+					icon: "apprenticecodex:floatmount_broom"
+					id: "05A266A860AA2BCA"
+					title: "Yes, that's me!"
+					type: "advancement"
+				}
+			]
+			title: "Yes, that's me!"
+			x: 5.8d
+			y: -5.25d
+		}
+		{
+			dependencies: ["00FFCA543C617C52"]
+			id: "280A24D17AFF982A"
+			rewards: [
+				{
+					id: "2F47229334759FC4"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3DC43BA018745381"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "442F837C804A865F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Mantle of Shooting Star."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_shooting_star_mantle"
+					criterion: ""
+					icon: "apprenticecodex:shooting_star_mantle"
+					id: "2604C9FC767DDD1E"
+					title: "Milky Way Wishes"
+					type: "advancement"
+				}
+			]
+			title: "Milky Way Wishes"
+			x: 7.55d
+			y: -5.25d
+		}
+		{
+			dependencies: ["280A24D17AFF982A"]
+			id: "3D89ACEB91751D1C"
+			rewards: [
+				{
+					id: "062DAE3D04EEB3E5"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6D3D60085906A051"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "60DE8D5667196EA4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft an Arcanum in a Jar."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_arcanum_in_a_jar"
+					criterion: ""
+					icon: "apprenticecodex:arcanum_in_a_jar"
+					id: "1FED1539775188A6"
+					title: "If Fairies and Clouds Work, Then This Will Too"
+					type: "advancement"
+				}
+			]
+			title: "If Fairies and Clouds Work, Then This Will Too"
+			x: 9.4d
+			y: -5.25d
+		}
+		{
+			dependencies: ["3D89ACEB91751D1C"]
+			description: ["&7Made from: &fRuined Book, any chests x2, Spell-stained Diamond, Mithril Scrap x4, Mithril Weave"]
+			id: "48A5D8AD584EE3FD"
+			rewards: [
+				{
+					id: "59E2AC2A9638E74E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4C114A09006C73BD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "04A8850D7B6EC33A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft an Archivist's Grimoire."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/craft_archivists_grimoire"
+					criterion: ""
+					icon: "apprenticecodex:archivists_grimoire"
+					id: "0F75EAD1355CCCAA"
+					title: "Library in the pocket"
+					type: "advancement"
+				}
+			]
+			title: "Library in the pocket"
+			x: 11.25d
+			y: -5.25d
+		}
+		{
+			dependencies: ["48A5D8AD584EE3FD"]
+			id: "6F505A94DC336BE3"
+			optional: true
+			rewards: [
+				{
+					id: "11650F823349938C"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "439B56619E6FB73B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "16BC968E12321642"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain an Ender Grimoire using a Grimoire Manifest."
+			tasks: [
+				{
+					advancement: "apprenticecodex:apprentice_codex/get_ender_grimoire"
+					criterion: ""
+					icon: "apprenticecodex:ender_grimoire"
+					id: "2D4F412B58A02DF4"
+					title: "A Simple Application of Dimensional Linking"
+					type: "advancement"
+				}
+			]
+			title: "A Simple Application of Dimensional Linking"
+			x: 13.1d
+			y: -5.25d
+		}
+		{
+			dependencies: ["1CA140D4D8DE97A4"]
+			description: ["Create: Wizardry. Iron's Spells' lightning, mana and blood become fluids that pipes and pumps can move."]
+			id: "2719DBEC6E159568"
+			rewards: [
+				{
+					id: "74AC4838ECACD639"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1071B9E5F1B8F5C8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "429743304AC3C8E3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mechanical Sorcery"
+			tasks: [
+				{
+					advancement: "create_wizardry:root"
+					criterion: ""
+					icon: "create_wizardry:lightning_bucket"
+					id: "77B341E5EEA455E8"
+					title: "Welcome to Create: Wizardry"
+					type: "advancement"
+				}
+			]
+			title: "Welcome to Create: Wizardry"
+			x: 2.1d
+			y: -6.75d
+		}
+		{
+			dependencies: ["2719DBEC6E159568"]
+			description: ["&7Made at: &fMechanical Crafters &7from &fBottle o' Lightning, Copper Plate x2, Energized Core, Hopper, Iron Plate x2"]
+			id: "234A3F75C75DC8EC"
+			rewards: [
+				{
+					id: "37FCBCD5748BA879"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "50E8739748AD4F71"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34F371F77659CD0B"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0ACA993066F4A822"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft and Place Down a Channeler to harvest Liquid Lightning."
+			tasks: [
+				{
+					advancement: "create_wizardry:channeler"
+					criterion: ""
+					icon: "create_wizardry:channeler"
+					id: "00FE55F073C50326"
+					title: "Harvest the Heavens"
+					type: "advancement"
+				}
+			]
+			title: "Harvest the Heavens"
+			x: 3.95d
+			y: -6.75d
+		}
+		{
+			dependencies: ["234A3F75C75DC8EC"]
+			id: "67061E607508B44F"
+			rewards: [
+				{
+					id: "55F9D0CED53616D9"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "42C292249C164427"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4C53919B26122118"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mana as a fluid, in a bucket."
+			tasks: [
+				{
+					id: "6DA5B8EA37B2231F"
+					item: "create_wizardry:mana_bucket"
+					type: "item"
+				}
+			]
+			title: "Liquid Mana"
+			x: 5.8d
+			y: -6.75d
+		}
+		{
+			dependencies: ["67061E607508B44F"]
+			description: [
+				"Create's crushing wheels break Iron's Spells' mithril ore into crushed mithril, and that into nuggets."
+				"&7Made at: &fEncased Fan blowing through water &7from &fCrushed Raw Mithril"
+			]
+			id: "44A6B58CB815969C"
+			rewards: [
+				{
+					id: "64919FB5C49CA7EF"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1792D699C416A250"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3FDD17F7E81ED07C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 9L
+					id: "02E47ADF05BDB516"
+					item: "create_wizardry:mithril_nugget"
+					type: "item"
+				}
+			]
+			title: "Mithril"
+			x: 7.55d
+			y: -6.75d
+		}
+		{
+			dependencies: ["44A6B58CB815969C"]
+			id: "0CB9B1E3F9EE115A"
+			optional: true
+			rewards: [
+				{
+					id: "528B3A765E4AEBC4"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "59F07569628F1B11"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "69E9C024FFE890B5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Safe? No. Fun? Yes."
+			tasks: [
+				{
+					advancement: "create_wizardry:unlimited_power"
+					criterion: ""
+					icon: "create_wizardry:lightning_bucket"
+					id: "3B3D2FA28144EFBB"
+					title: "UNLIMITED POWER!!!"
+					type: "advancement"
+				}
+			]
+			title: "UNLIMITED POWER!!!"
+			x: 9.4d
+			y: -6.75d
+		}
+		{
+			dependencies: [
+				"5E768E5E73C05B3C"
+				"742843A1273A5A26"
+				"1A7C58A2A31552CE"
+				"4202E05BBF160C6F"
+				"234A3F75C75DC8EC"
+			]
+			description: ["Any &afour&f of: the Zenith Staff, the Magi-Agent's suit, the Psychic-drive Gauntlets, the Full-auto Spellrifle, a Channeler."]
+			hide_dependency_lines: true
+			id: "7433F9660A2A407C"
+			min_required_dependencies: 4
+			rewards: [
+				{
+					id: "18274310CCE5BF4A"
+					type: "xp"
+					xp: 4000
+				}
+				{
+					id: "5693AFD8C8A7173D"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "027F035F75F35825"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5FF8054CB7417827"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "40D63587A409080B"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "&e&lMaster of the Codex"
+			x: 21.75d
+			y: 1.55d
+		}
+	]
+	subtitle: ["Spellguns, staves and mage's robes for Iron's Spells"]
+	title: "&eThe Apprentice's Codex"
+}

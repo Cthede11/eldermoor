@@ -1,0 +1,2441 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "aether:mimic",
+   "required": false
+  },
+  {
+   "id": "aether:sentry",
+   "required": false
+  },
+  {
+   "id": "aether:valkyrie",
+   "required": false
+  },
+  {
+   "id": "alexscaves:boundroid",
+   "required": false
+  },
+  {
+   "id": "alexscaves:boundroid_winch",
+   "required": false
+  },
+  {
+   "id": "alexscaves:brainiac",
+   "required": false
+  },
+  {
+   "id": "alexscaves:caniac",
+   "required": false
+  },
+  {
+   "id": "alexscaves:caramel_cube",
+   "required": false
+  },
+  {
+   "id": "alexscaves:corrodent",
+   "required": false
+  },
+  {
+   "id": "alexscaves:deep_one",
+   "required": false
+  },
+  {
+   "id": "alexscaves:deep_one_knight",
+   "required": false
+  },
+  {
+   "id": "alexscaves:deep_one_mage",
+   "required": false
+  },
+  {
+   "id": "alexscaves:ferrouslime",
+   "required": false
+  },
+  {
+   "id": "alexscaves:gingerbread_man",
+   "required": false
+  },
+  {
+   "id": "alexscaves:gumbeeper",
+   "required": false
+  },
+  {
+   "id": "alexscaves:licowitch",
+   "required": false
+  },
+  {
+   "id": "alexscaves:magnetron",
+   "required": false
+  },
+  {
+   "id": "alexscaves:mine_guardian",
+   "required": false
+  },
+  {
+   "id": "alexscaves:nucleeper",
+   "required": false
+  },
+  {
+   "id": "alexscaves:teletor",
+   "required": false
+  },
+  {
+   "id": "alexscaves:underzealot",
+   "required": false
+  },
+  {
+   "id": "alexscaves:vesper",
+   "required": false
+  },
+  {
+   "id": "alexscaves:watcher",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:bone_serpent",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:crimson_mosquito",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:dropbear",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:farseer",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:guster",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:mimicube",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:murmur",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:rocky_roller",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:skelewag",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:soul_vulture",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:straddler",
+   "required": false
+  },
+  {
+   "id": "alexsmobs:warped_mosco",
+   "required": false
+  },
+  {
+   "id": "aquamirae:maw",
+   "required": false
+  },
+  {
+   "id": "aquamirae:pillagers_patrol",
+   "required": false
+  },
+  {
+   "id": "aquamirae:tortured_soul",
+   "required": false
+  },
+  {
+   "id": "ars_nouveau:wilden_guardian",
+   "required": false
+  },
+  {
+   "id": "ars_nouveau:wilden_hunter",
+   "required": false
+  },
+  {
+   "id": "ars_nouveau:wilden_stalker",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:cinematic_kraken",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:crossbow_pirate",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:dragon_guard_sword",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:flaming_skeleton_guard_fireball",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:flaming_skeleton_guard_sword",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:ghost_tentacle",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:kraken_tentacle",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:pile_of_bones",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:pirate_captain",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:pirate_rook",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:soul_knight_wither_skeleton",
+   "required": false
+  },
+  {
+   "id": "block_factorys_bosses:soul_skeleton",
+   "required": false
+  },
+  {
+   "id": "blue_skies:artificial_golem",
+   "required": false
+  },
+  {
+   "id": "blue_skies:crynocerous",
+   "required": false
+  },
+  {
+   "id": "blue_skies:diophyde_prowler",
+   "required": false
+  },
+  {
+   "id": "blue_skies:emberback",
+   "required": false
+  },
+  {
+   "id": "blue_skies:infested_swarmer",
+   "required": false
+  },
+  {
+   "id": "blue_skies:nested_spider",
+   "required": false
+  },
+  {
+   "id": "blue_skies:nyctofly",
+   "required": false
+  },
+  {
+   "id": "blue_skies:polargeist",
+   "required": false
+  },
+  {
+   "id": "blue_skies:seclam",
+   "required": false
+  },
+  {
+   "id": "blue_skies:shrumpty",
+   "required": false
+  },
+  {
+   "id": "blue_skies:spewter",
+   "required": false
+  },
+  {
+   "id": "blue_skies:stonelet",
+   "required": false
+  },
+  {
+   "id": "blue_skies:supporter_pet",
+   "required": false
+  },
+  {
+   "id": "blue_skies:venom_spider",
+   "required": false
+  },
+  {
+   "id": "blue_skies:whistleshell_crab",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:baby_skeleton",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:baby_spider",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:barrel_zombie",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:bloody_gadfly",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:bone_imp",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:bonescaller",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:bonescaller_not_despawn",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:controlled_baby_skeleton",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:controlled_spiritual_assistant",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:corpse_fly",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:dark_vortex",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:decaying_zombie",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:decaying_zombie_not_despawn",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:decrepit_skeleton",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:diamond_termite",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:dire_hound_leader",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:door_knight",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:door_knight_not_despawn",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:dread_hound",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:dread_hound_not_despawn",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:fallen_chaos_knight",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:felsteed",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:firelight",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:firelight_not_despawn",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:krampus_henchman",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:lifestealer",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:lifestealer_true_form",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:maggot",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:mother_spider",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:mr_pumpkin",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:mr_pumpkin_controlled",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:mrs_pumpkin",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:nightmare_stalker",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:pumpkin_bomb",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:pumpkin_bruiser",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:pumpkin_dunce",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:pumpkinhead",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:riding_felsteed",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:riding_lords_felsteed",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:scarlet_persecutor",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:seared_spirit_not_despawn",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:senor_pumpkin",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:siamese_skeletons",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:siamese_skeletonsleft",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:siamese_skeletonsright",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:sir_pumpkinhead_without_horse",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:sir_the_headless",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:skeleton_demoman",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:skeleton_thrasher",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:skeleton_thrasher_not_despawn",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:spirit_guide",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:spirit_guide_assistant",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:spiritof_chaos",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:supreme_bonescaller",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:supreme_bonescaller_not_despawn",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:supreme_bonescaller_stage_2",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:swarmer",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:zombie_bruiser",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:zombie_clown",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:zombie_clown_not_despawn",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:zombie_fisherman",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:zombie_lumberjack",
+   "required": false
+  },
+  {
+   "id": "butcher:shell_boat",
+   "required": false
+  },
+  {
+   "id": "butcher:zombie_cow",
+   "required": false
+  },
+  {
+   "id": "butcher:zombiecat",
+   "required": false
+  },
+  {
+   "id": "butcher:zombiechicken",
+   "required": false
+  },
+  {
+   "id": "butcher:zombiefox",
+   "required": false
+  },
+  {
+   "id": "butcher:zombiegoat",
+   "required": false
+  },
+  {
+   "id": "butcher:zombiellama",
+   "required": false
+  },
+  {
+   "id": "butcher:zombiepanda",
+   "required": false
+  },
+  {
+   "id": "butcher:zombiepig",
+   "required": false
+  },
+  {
+   "id": "butcher:zombiewolf",
+   "required": false
+  },
+  {
+   "id": "cataclysm:cindaria",
+   "required": false
+  },
+  {
+   "id": "cataclysm:coral_golem",
+   "required": false
+  },
+  {
+   "id": "cataclysm:deepling",
+   "required": false
+  },
+  {
+   "id": "cataclysm:deepling_angler",
+   "required": false
+  },
+  {
+   "id": "cataclysm:deepling_brute",
+   "required": false
+  },
+  {
+   "id": "cataclysm:deepling_priest",
+   "required": false
+  },
+  {
+   "id": "cataclysm:deepling_warlock",
+   "required": false
+  },
+  {
+   "id": "cataclysm:draugr",
+   "required": false
+  },
+  {
+   "id": "cataclysm:drowned_host",
+   "required": false
+  },
+  {
+   "id": "cataclysm:elite_draugr",
+   "required": false
+  },
+  {
+   "id": "cataclysm:endermaptera",
+   "required": false
+  },
+  {
+   "id": "cataclysm:hippocamtus",
+   "required": false
+  },
+  {
+   "id": "cataclysm:ignited_berserker",
+   "required": false
+  },
+  {
+   "id": "cataclysm:ignited_revenant",
+   "required": false
+  },
+  {
+   "id": "cataclysm:koboleton",
+   "required": false
+  },
+  {
+   "id": "cataclysm:lionfish",
+   "required": false
+  },
+  {
+   "id": "cataclysm:nameless_sorcerer",
+   "required": false
+  },
+  {
+   "id": "cataclysm:royal_draugr",
+   "required": false
+  },
+  {
+   "id": "cataclysm:symbiocto",
+   "required": false
+  },
+  {
+   "id": "cataclysm:the_watcher",
+   "required": false
+  },
+  {
+   "id": "cataclysm:urchinkin",
+   "required": false
+  },
+  {
+   "id": "celestisynth:star_monolith",
+   "required": false
+  },
+  {
+   "id": "celestisynth:traverser",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:badlands_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:bamboo_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:beach_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:cave_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:dark_oak_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:desert_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:dripstone_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:hills_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:jungle_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:ocean_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:savannah_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:snowy_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:spruce_creeper",
+   "required": false
+  },
+  {
+   "id": "creeperoverhaul:swamp_creeper",
+   "required": false
+  },
+  {
+   "id": "deeperdarker:sculk_centipede",
+   "required": false
+  },
+  {
+   "id": "deeperdarker:sculk_leech",
+   "required": false
+  },
+  {
+   "id": "deeperdarker:sculk_snapper",
+   "required": false
+  },
+  {
+   "id": "deeperdarker:shattered",
+   "required": false
+  },
+  {
+   "id": "deeperdarker:shriek_worm",
+   "required": false
+  },
+  {
+   "id": "deeperdarker:sludge",
+   "required": false
+  },
+  {
+   "id": "dried_ghast:ghastling",
+   "required": false
+  },
+  {
+   "id": "dried_ghast:happy_ghast",
+   "required": false
+  },
+  {
+   "id": "dungeonnowloading:ballista_golem",
+   "required": false
+  },
+  {
+   "id": "dungeonnowloading:broken_garhold",
+   "required": false
+  },
+  {
+   "id": "dungeonnowloading:garhold",
+   "required": false
+  },
+  {
+   "id": "dungeonnowloading:hollow",
+   "required": false
+  },
+  {
+   "id": "dungeonnowloading:scuttle",
+   "required": false
+  },
+  {
+   "id": "dungeonnowloading:spawner_carrier",
+   "required": false
+  },
+  {
+   "id": "eeeabsmobs:corpse",
+   "required": false
+  },
+  {
+   "id": "eeeabsmobs:corpse_villager",
+   "required": false
+  },
+  {
+   "id": "eeeabsmobs:guling_sentinel",
+   "required": false
+  },
+  {
+   "id": "eeeabsmobs:immortal_executioner",
+   "required": false
+  },
+  {
+   "id": "eeeabsmobs:immortal_golem",
+   "required": false
+  },
+  {
+   "id": "eeeabsmobs:immortal_knight",
+   "required": false
+  },
+  {
+   "id": "eeeabsmobs:immortal_shaman",
+   "required": false
+  },
+  {
+   "id": "eeeabsmobs:immortal_skeleton",
+   "required": false
+  },
+  {
+   "id": "eidolon:giant_skeleton",
+   "required": false
+  },
+  {
+   "id": "eidolon:necromancer",
+   "required": false
+  },
+  {
+   "id": "eidolon:wraith",
+   "required": false
+  },
+  {
+   "id": "eidolon:zombie_brute",
+   "required": false
+  },
+  {
+   "id": "embers:ancient_golem",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:badlands_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:cave_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:coral_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:crimson_forest_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:dark_oak_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:desert_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:end_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:end_islands_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:flower_fields_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:ice_spikes_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:nether_wastes_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:savanna_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:scarab",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:snowy_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:soulsand_valley_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:spirit",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:swamp_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:warped_forest_enderman",
+   "required": false
+  },
+  {
+   "id": "endermanoverhaul:windswept_hills_enderman",
+   "required": false
+  },
+  {
+   "id": "fdbosses:fire_malkuth_warrior",
+   "required": false
+  },
+  {
+   "id": "fdbosses:ice_malkuth_warrior",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:bard",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:bartender_goblin",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:blacksmith_goblin",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:champion_goblin",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:chubby_glitteron",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:droblin",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:engineer_goblin",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:engineeress_goblin",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:goblin_hunter",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:goblin_huntsman",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:grobot",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:knight_goblin",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:leader_goblin",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:merchant",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:mini_drunk_gob_1",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:mini_drunk_gob_2",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:mini_drunk_gob_3",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:mini_goblin_1",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:mini_goblin_2",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:mini_goblin_3",
+   "required": false
+  },
+  {
+   "id": "goblins_tyranny:shaman_goblin",
+   "required": false
+  },
+  {
+   "id": "goety:armored_ravager",
+   "required": false
+  },
+  {
+   "id": "goety:black_beast",
+   "required": false
+  },
+  {
+   "id": "goety:black_wolf",
+   "required": false
+  },
+  {
+   "id": "goety:blastling",
+   "required": false
+  },
+  {
+   "id": "goety:bone_lord",
+   "required": false
+  },
+  {
+   "id": "goety:bone_spider",
+   "required": false
+  },
+  {
+   "id": "goety:border_wraith",
+   "required": false
+  },
+  {
+   "id": "goety:bound_cryologer",
+   "required": false
+  },
+  {
+   "id": "goety:bound_evoker",
+   "required": false
+  },
+  {
+   "id": "goety:bound_geomancer",
+   "required": false
+  },
+  {
+   "id": "goety:bound_iceologer",
+   "required": false
+  },
+  {
+   "id": "goety:bound_storm_caster",
+   "required": false
+  },
+  {
+   "id": "goety:bound_wind_caller",
+   "required": false
+  },
+  {
+   "id": "goety:brood_mother",
+   "required": false
+  },
+  {
+   "id": "goety:burning_hoglin",
+   "required": false
+  },
+  {
+   "id": "goety:cairn_necromancer",
+   "required": false
+  },
+  {
+   "id": "goety:carrion_fly",
+   "required": false
+  },
+  {
+   "id": "goety:carrion_maggot",
+   "required": false
+  },
+  {
+   "id": "goety:conquillager",
+   "required": false
+  },
+  {
+   "id": "goety:crusher",
+   "required": false
+  },
+  {
+   "id": "goety:cryologer",
+   "required": false
+  },
+  {
+   "id": "goety:crypt_slime",
+   "required": false
+  },
+  {
+   "id": "goety:damned",
+   "required": false
+  },
+  {
+   "id": "goety:envioker",
+   "required": false
+  },
+  {
+   "id": "goety:flame_construct",
+   "required": false
+  },
+  {
+   "id": "goety:frayed",
+   "required": false
+  },
+  {
+   "id": "goety:glacial_wall",
+   "required": false
+  },
+  {
+   "id": "goety:gnasher",
+   "required": false
+  },
+  {
+   "id": "goety:grave_cube",
+   "required": false
+  },
+  {
+   "id": "goety:haunt",
+   "required": false
+  },
+  {
+   "id": "goety:haunted_armor",
+   "required": false
+  },
+  {
+   "id": "goety:haunted_skull",
+   "required": false
+  },
+  {
+   "id": "goety:hellhound",
+   "required": false
+  },
+  {
+   "id": "goety:heretic",
+   "required": false
+  },
+  {
+   "id": "goety:hostile_black_wolf",
+   "required": false
+  },
+  {
+   "id": "goety:hostile_skeleton_pillager",
+   "required": false
+  },
+  {
+   "id": "goety:hostile_zombie_vindicator",
+   "required": false
+  },
+  {
+   "id": "goety:ice_golem",
+   "required": false
+  },
+  {
+   "id": "goety:icy_spider",
+   "required": false
+  },
+  {
+   "id": "goety:inferno",
+   "required": false
+  },
+  {
+   "id": "goety:inquillager",
+   "required": false
+  },
+  {
+   "id": "goety:insect_swarm",
+   "required": false
+  },
+  {
+   "id": "goety:irk",
+   "required": false
+  },
+  {
+   "id": "goety:leapleaf",
+   "required": false
+  },
+  {
+   "id": "goety:malghast",
+   "required": false
+  },
+  {
+   "id": "goety:maverick",
+   "required": false
+  },
+  {
+   "id": "goety:mini_ghast",
+   "required": false
+  },
+  {
+   "id": "goety:mossy_necromancer",
+   "required": false
+  },
+  {
+   "id": "goety:muck_wraith",
+   "required": false
+  },
+  {
+   "id": "goety:necromancer",
+   "required": false
+  },
+  {
+   "id": "goety:neollager",
+   "required": false
+  },
+  {
+   "id": "goety:obsidian_monolith",
+   "required": false
+  },
+  {
+   "id": "goety:piker",
+   "required": false
+  },
+  {
+   "id": "goety:poison_anemone",
+   "required": false
+  },
+  {
+   "id": "goety:poison_quill_vine",
+   "required": false
+  },
+  {
+   "id": "goety:preacher",
+   "required": false
+  },
+  {
+   "id": "goety:quick_growing_kelp",
+   "required": false
+  },
+  {
+   "id": "goety:quick_growing_vine",
+   "required": false
+  },
+  {
+   "id": "goety:rattled",
+   "required": false
+  },
+  {
+   "id": "goety:ravaged",
+   "required": false
+  },
+  {
+   "id": "goety:ravager",
+   "required": false
+  },
+  {
+   "id": "goety:reaper",
+   "required": false
+  },
+  {
+   "id": "goety:redstone_cube",
+   "required": false
+  },
+  {
+   "id": "goety:redstone_ministrosity",
+   "required": false
+  },
+  {
+   "id": "goety:reprobate",
+   "required": false
+  },
+  {
+   "id": "goety:ripper",
+   "required": false
+  },
+  {
+   "id": "goety:skeleton_pillager",
+   "required": false
+  },
+  {
+   "id": "goety:skeleton_wolf",
+   "required": false
+  },
+  {
+   "id": "goety:snapper",
+   "required": false
+  },
+  {
+   "id": "goety:snareling",
+   "required": false
+  },
+  {
+   "id": "goety:sorcerer",
+   "required": false
+  },
+  {
+   "id": "goety:spider_egg",
+   "required": false
+  },
+  {
+   "id": "goety:sprite",
+   "required": false
+  },
+  {
+   "id": "goety:squall_golem",
+   "required": false
+  },
+  {
+   "id": "goety:stone_ministrosity",
+   "required": false
+  },
+  {
+   "id": "goety:storm_caster",
+   "required": false
+  },
+  {
+   "id": "goety:stormhound",
+   "required": false
+  },
+  {
+   "id": "goety:tormentor",
+   "required": false
+  },
+  {
+   "id": "goety:totemic_bomb",
+   "required": false
+  },
+  {
+   "id": "goety:totemic_wall",
+   "required": false
+  },
+  {
+   "id": "goety:trampler",
+   "required": false
+  },
+  {
+   "id": "goety:twilight_goat",
+   "required": false
+  },
+  {
+   "id": "goety:vampire_bat",
+   "required": false
+  },
+  {
+   "id": "goety:warlock",
+   "required": false
+  },
+  {
+   "id": "goety:wartling",
+   "required": false
+  },
+  {
+   "id": "goety:watchling",
+   "required": false
+  },
+  {
+   "id": "goety:wavewhisperer",
+   "required": false
+  },
+  {
+   "id": "goety:web_spider",
+   "required": false
+  },
+  {
+   "id": "goety:whisperer",
+   "required": false
+  },
+  {
+   "id": "goety:wildfire",
+   "required": false
+  },
+  {
+   "id": "goety:winter_wolf",
+   "required": false
+  },
+  {
+   "id": "goety:wraith",
+   "required": false
+  },
+  {
+   "id": "goety:zombie_ravager",
+   "required": false
+  },
+  {
+   "id": "goety:zombie_vindicator",
+   "required": false
+  },
+  {
+   "id": "goety_cataclysm:coral_golem",
+   "required": false
+  },
+  {
+   "id": "goety_cataclysm:draugr_necromancer",
+   "required": false
+  },
+  {
+   "id": "goety_cataclysm:hippocamtus",
+   "required": false
+  },
+  {
+   "id": "goety_cataclysm:ignited_berserker",
+   "required": false
+  },
+  {
+   "id": "goety_cataclysm:ignited_revenant",
+   "required": false
+  },
+  {
+   "id": "goety_cataclysm:lionfish",
+   "required": false
+  },
+  {
+   "id": "hunters_return:hunter",
+   "required": false
+  },
+  {
+   "id": "immersiveengineering:bulwark",
+   "required": false
+  },
+  {
+   "id": "immersiveengineering:commando",
+   "required": false
+  },
+  {
+   "id": "immersiveengineering:fusilier",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:apothecarist",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:archevoker",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:catacombs_zombie",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:citadel_keeper",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:cryomancer",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:cultist",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:cursed_armor_stand",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:debug_wizard",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:ice_spider",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:magehunter_vindicator",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:necromancer",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:pyromancer",
+   "required": false
+  },
+  {
+   "id": "iss_magicfromtheeast:jiangshi",
+   "required": false
+  },
+  {
+   "id": "iss_magicfromtheeast:onmyoji",
+   "required": false
+  },
+  {
+   "id": "iss_magicfromtheeast:taoist",
+   "required": false
+  },
+  {
+   "id": "kobolds:kobold_skeleton",
+   "required": false
+  },
+  {
+   "id": "kobolds:kobold_zombie",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:ambusher",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:bomber",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:chorusling",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:dark_cloud_golem",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:guard",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:haunted_guard",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:haunted_knight",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:hovering_hurricane",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:knights_armor",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:mossy_golem",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:spiky_bug",
+   "required": false
+  },
+  {
+   "id": "legendary_monsters:stratling",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:bullfrog",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:corpse_eater",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:desert_mojo",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:fairy",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:forest_mojo",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:frogman",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:hound",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:jinx",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:partridge",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:peacock_spider",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:scarecrow",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:scorpion",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:scorpion_baby",
+   "required": false
+  },
+  {
+   "id": "legendarycreatures:skunk",
+   "required": false
+  },
+  {
+   "id": "majruszsdifficulty:creeperling",
+   "required": false
+  },
+  {
+   "id": "majruszsdifficulty:cursed_armor",
+   "required": false
+  },
+  {
+   "id": "majruszsdifficulty:illusioner",
+   "required": false
+  },
+  {
+   "id": "majruszsdifficulty:tank",
+   "required": false
+  },
+  {
+   "id": "mekanismadditions:baby_creeper",
+   "required": false
+  },
+  {
+   "id": "mekanismadditions:baby_enderman",
+   "required": false
+  },
+  {
+   "id": "mekanismadditions:baby_skeleton",
+   "required": false
+  },
+  {
+   "id": "mekanismadditions:baby_stray",
+   "required": false
+  },
+  {
+   "id": "mekanismadditions:baby_wither_skeleton",
+   "required": false
+  },
+  {
+   "id": "minecolonies:amazon",
+   "required": false
+  },
+  {
+   "id": "minecolonies:amazonchief",
+   "required": false
+  },
+  {
+   "id": "minecolonies:amazonspearman",
+   "required": false
+  },
+  {
+   "id": "minecolonies:archerbarbarian",
+   "required": false
+  },
+  {
+   "id": "minecolonies:archermummy",
+   "required": false
+  },
+  {
+   "id": "minecolonies:archerpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:barbarian",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campamazon",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campamazonchief",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campamazonspearman",
+   "required": false
+  },
+  {
+   "id": "minecolonies:camparcherbarbarian",
+   "required": false
+  },
+  {
+   "id": "minecolonies:camparchermummy",
+   "required": false
+  },
+  {
+   "id": "minecolonies:camparcherpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campbarbarian",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campchiefbarbarian",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campchiefpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campdrownedarcherpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campdrownedchiefpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campdrownedpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campmummy",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campnorsemenarcher",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campnorsemenchief",
+   "required": false
+  },
+  {
+   "id": "minecolonies:camppharao",
+   "required": false
+  },
+  {
+   "id": "minecolonies:camppirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:campshieldmaiden",
+   "required": false
+  },
+  {
+   "id": "minecolonies:chiefbarbarian",
+   "required": false
+  },
+  {
+   "id": "minecolonies:chiefpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:drownedarcherpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:drownedchiefpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:drownedpirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:mummy",
+   "required": false
+  },
+  {
+   "id": "minecolonies:norsemenarcher",
+   "required": false
+  },
+  {
+   "id": "minecolonies:norsemenchief",
+   "required": false
+  },
+  {
+   "id": "minecolonies:pharao",
+   "required": false
+  },
+  {
+   "id": "minecolonies:pirate",
+   "required": false
+  },
+  {
+   "id": "minecolonies:shieldmaiden",
+   "required": false
+  },
+  {
+   "id": "minecraft:blaze",
+   "required": false
+  },
+  {
+   "id": "minecraft:cave_spider",
+   "required": false
+  },
+  {
+   "id": "minecraft:creeper",
+   "required": false
+  },
+  {
+   "id": "minecraft:drowned",
+   "required": false
+  },
+  {
+   "id": "minecraft:elder_guardian",
+   "required": false
+  },
+  {
+   "id": "minecraft:enderman",
+   "required": false
+  },
+  {
+   "id": "minecraft:endermite",
+   "required": false
+  },
+  {
+   "id": "minecraft:evoker",
+   "required": false
+  },
+  {
+   "id": "minecraft:ghast",
+   "required": false
+  },
+  {
+   "id": "minecraft:giant",
+   "required": false
+  },
+  {
+   "id": "minecraft:guardian",
+   "required": false
+  },
+  {
+   "id": "minecraft:hoglin",
+   "required": false
+  },
+  {
+   "id": "minecraft:husk",
+   "required": false
+  },
+  {
+   "id": "minecraft:illusioner",
+   "required": false
+  },
+  {
+   "id": "minecraft:magma_cube",
+   "required": false
+  },
+  {
+   "id": "minecraft:phantom",
+   "required": false
+  },
+  {
+   "id": "minecraft:piglin",
+   "required": false
+  },
+  {
+   "id": "minecraft:piglin_brute",
+   "required": false
+  },
+  {
+   "id": "minecraft:pillager",
+   "required": false
+  },
+  {
+   "id": "minecraft:ravager",
+   "required": false
+  },
+  {
+   "id": "minecraft:shulker",
+   "required": false
+  },
+  {
+   "id": "minecraft:silverfish",
+   "required": false
+  },
+  {
+   "id": "minecraft:skeleton",
+   "required": false
+  },
+  {
+   "id": "minecraft:slime",
+   "required": false
+  },
+  {
+   "id": "minecraft:spider",
+   "required": false
+  },
+  {
+   "id": "minecraft:stray",
+   "required": false
+  },
+  {
+   "id": "minecraft:vex",
+   "required": false
+  },
+  {
+   "id": "minecraft:vindicator",
+   "required": false
+  },
+  {
+   "id": "minecraft:witch",
+   "required": false
+  },
+  {
+   "id": "minecraft:wither_skeleton",
+   "required": false
+  },
+  {
+   "id": "minecraft:zoglin",
+   "required": false
+  },
+  {
+   "id": "minecraft:zombie",
+   "required": false
+  },
+  {
+   "id": "minecraft:zombie_villager",
+   "required": false
+  },
+  {
+   "id": "minecraft:zombified_piglin",
+   "required": false
+  },
+  {
+   "id": "mna:barkling",
+   "required": false
+  },
+  {
+   "id": "mna:blood_golem",
+   "required": false
+  },
+  {
+   "id": "mna:blood_tendril",
+   "required": false
+  },
+  {
+   "id": "mna:chatterer",
+   "required": false
+  },
+  {
+   "id": "mna:demon_imp",
+   "required": false
+  },
+  {
+   "id": "mna:faction_war",
+   "required": false
+  },
+  {
+   "id": "mna:hulking_zombie",
+   "required": false
+  },
+  {
+   "id": "mna:illusion_creeper",
+   "required": false
+  },
+  {
+   "id": "mna:insect_swarm",
+   "required": false
+  },
+  {
+   "id": "mna:lantern_wraith",
+   "required": false
+  },
+  {
+   "id": "mna:living_ward",
+   "required": false
+  },
+  {
+   "id": "mna:mushroom_soldier",
+   "required": false
+  },
+  {
+   "id": "mna:pixie",
+   "required": false
+  },
+  {
+   "id": "mna:skeleton_assassin",
+   "required": false
+  },
+  {
+   "id": "mna:spell_breaker",
+   "required": false
+  },
+  {
+   "id": "mna:witch_hunter",
+   "required": false
+  },
+  {
+   "id": "mobs_of_mythology:chupacabra",
+   "required": false
+  },
+  {
+   "id": "mobs_of_mythology:kobold",
+   "required": false
+  },
+  {
+   "id": "mobs_of_mythology:kobold_warrior",
+   "required": false
+  },
+  {
+   "id": "monsterplus:abyssologer",
+   "required": false
+  },
+  {
+   "id": "monsterplus:crystal_zombie",
+   "required": false
+  },
+  {
+   "id": "monsterplus:glow_skeleton",
+   "required": false
+  },
+  {
+   "id": "monsterplus:lava_squid",
+   "required": false
+  },
+  {
+   "id": "monsterplus:mother_lava_squid",
+   "required": false
+  },
+  {
+   "id": "monsterplus:opalescent_eye",
+   "required": false
+  },
+  {
+   "id": "monsterplus:overgrown_skeleton",
+   "required": false
+  },
+  {
+   "id": "monsterplus:spectral_skeleton",
+   "required": false
+  },
+  {
+   "id": "monsterplus:swamp_zombie",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:baby_foliaath",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:bluff",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:elokosa_follower_howler",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:elokosa_howler",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:foliaath",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:grottol",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:naga",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:umvuthana",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:umvuthana_crane",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:umvuthana_crane_player",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:umvuthana_follower_player",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:umvuthana_follower_raptor",
+   "required": false
+  },
+  {
+   "id": "mowziesmobs:umvuthana_raptor",
+   "required": false
+  },
+  {
+   "id": "pots_and_mimics:end_pot_crab",
+   "required": false
+  },
+  {
+   "id": "pots_and_mimics:nether_pot_crab",
+   "required": false
+  },
+  {
+   "id": "pots_and_mimics:poison_pot_crab",
+   "required": false
+  },
+  {
+   "id": "pots_and_mimics:pot_crab",
+   "required": false
+  },
+  {
+   "id": "quark:forgotten",
+   "required": false
+  },
+  {
+   "id": "quark:wraith",
+   "required": false
+  },
+  {
+   "id": "realmrpg_demons:chort",
+   "required": false
+  },
+  {
+   "id": "realmrpg_demons:demon",
+   "required": false
+  },
+  {
+   "id": "realmrpg_demons:demon_lord",
+   "required": false
+  },
+  {
+   "id": "realmrpg_demons:imp",
+   "required": false
+  },
+  {
+   "id": "realmrpg_demons:imp_guard",
+   "required": false
+  },
+  {
+   "id": "realmrpg_quests:angler",
+   "required": false
+  },
+  {
+   "id": "realmrpg_quests:cook",
+   "required": false
+  },
+  {
+   "id": "realmrpg_quests:headless_skeleton",
+   "required": false
+  },
+  {
+   "id": "realmrpg_quests:monster_hunter",
+   "required": false
+  },
+  {
+   "id": "realmrpg_quests:piglin_gambler",
+   "required": false
+  },
+  {
+   "id": "realmrpg_quests:trigger_zone_old_hut",
+   "required": false
+  },
+  {
+   "id": "royalvariations:royal_creeper",
+   "required": false
+  },
+  {
+   "id": "royalvariations:royal_skeleton",
+   "required": false
+  },
+  {
+   "id": "royalvariations:royal_zombie",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:betrayed_guzzler",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:blud_aggressive",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:blud_trade",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:devourer",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:devourer_organs",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:ditched",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:ether_ghost",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:grub",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:grub_organs",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:gulber",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:gulber_organs",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:guzzler",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:guzzler_organs",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:nibbler",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:nibbler_organs",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:prowler",
+   "required": false
+  },
+  {
+   "id": "sons_of_sins:wistiver_jaw",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:big_chungus",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:dark_sorcerer",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:evil_forlorn",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:forlorn",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:frost_giant",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:remnant",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:rime_spectre",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:soul_reaper_ghost",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:soulmass",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:warmth_entity",
+   "required": false
+  },
+  {
+   "id": "soulsweapons:withered_demon",
+   "required": false
+  },
+  {
+   "id": "tconstruct:ender_slime",
+   "required": false
+  },
+  {
+   "id": "tconstruct:sky_slime",
+   "required": false
+  },
+  {
+   "id": "tconstruct:terracube",
+   "required": false
+  },
+  {
+   "id": "twilightforest:adherent",
+   "required": false
+  },
+  {
+   "id": "twilightforest:armored_giant",
+   "required": false
+  },
+  {
+   "id": "twilightforest:blockchain_goblin",
+   "required": false
+  },
+  {
+   "id": "twilightforest:carminite_broodling",
+   "required": false
+  },
+  {
+   "id": "twilightforest:carminite_ghastguard",
+   "required": false
+  },
+  {
+   "id": "twilightforest:carminite_ghastling",
+   "required": false
+  },
+  {
+   "id": "twilightforest:carminite_golem",
+   "required": false
+  },
+  {
+   "id": "twilightforest:death_tome",
+   "required": false
+  },
+  {
+   "id": "twilightforest:fire_beetle",
+   "required": false
+  },
+  {
+   "id": "twilightforest:giant_miner",
+   "required": false
+  },
+  {
+   "id": "twilightforest:harbinger_cube",
+   "required": false
+  },
+  {
+   "id": "twilightforest:hedge_spider",
+   "required": false
+  },
+  {
+   "id": "twilightforest:helmet_crab",
+   "required": false
+  },
+  {
+   "id": "twilightforest:hostile_wolf",
+   "required": false
+  },
+  {
+   "id": "twilightforest:ice_crystal",
+   "required": false
+  },
+  {
+   "id": "twilightforest:king_spider",
+   "required": false
+  },
+  {
+   "id": "twilightforest:knight_phantom",
+   "required": false
+  },
+  {
+   "id": "twilightforest:kobold",
+   "required": false
+  },
+  {
+   "id": "twilightforest:lich",
+   "required": false
+  },
+  {
+   "id": "twilightforest:lower_goblin_knight",
+   "required": false
+  },
+  {
+   "id": "twilightforest:loyal_zombie",
+   "required": false
+  },
+  {
+   "id": "twilightforest:maze_slime",
+   "required": false
+  },
+  {
+   "id": "twilightforest:minoshroom",
+   "required": false
+  },
+  {
+   "id": "twilightforest:minotaur",
+   "required": false
+  },
+  {
+   "id": "twilightforest:mist_wolf",
+   "required": false
+  },
+  {
+   "id": "twilightforest:mosquito_swarm",
+   "required": false
+  },
+  {
+   "id": "twilightforest:naga",
+   "required": false
+  },
+  {
+   "id": "twilightforest:pinch_beetle",
+   "required": false
+  },
+  {
+   "id": "twilightforest:plateau_boss",
+   "required": false
+  },
+  {
+   "id": "twilightforest:redcap",
+   "required": false
+  },
+  {
+   "id": "twilightforest:redcap_sapper",
+   "required": false
+  },
+  {
+   "id": "twilightforest:rising_zombie",
+   "required": false
+  },
+  {
+   "id": "twilightforest:roving_cube",
+   "required": false
+  },
+  {
+   "id": "twilightforest:skeleton_druid",
+   "required": false
+  },
+  {
+   "id": "twilightforest:slime_beetle",
+   "required": false
+  },
+  {
+   "id": "twilightforest:snow_guardian",
+   "required": false
+  },
+  {
+   "id": "twilightforest:stable_ice_core",
+   "required": false
+  },
+  {
+   "id": "twilightforest:swarm_spider",
+   "required": false
+  },
+  {
+   "id": "twilightforest:towerwood_borer",
+   "required": false
+  },
+  {
+   "id": "twilightforest:troll",
+   "required": false
+  },
+  {
+   "id": "twilightforest:unstable_ice_core",
+   "required": false
+  },
+  {
+   "id": "twilightforest:upper_goblin_knight",
+   "required": false
+  },
+  {
+   "id": "twilightforest:winter_wolf",
+   "required": false
+  },
+  {
+   "id": "twilightforest:wraith",
+   "required": false
+  },
+  {
+   "id": "twilightforest:yeti",
+   "required": false
+  }
+ ]
+}

@@ -1,0 +1,1316 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "grudges"
+	group: "2082B1037B9195D1"
+	icon: "minecraft:knowledge_book"
+	id: "223F7C4B6325B28C"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["184768A56985E56B"]
+			description: [
+				"Eight strange bosses hide in ordinary places: a zombie that drank the wrong potion, a pig that is not a pig, a phantom that is never alone."
+				""
+				"None of them is part of the main story. Each line on this page is one grudge, start to finish. The quest names and hints are the bosses' own."
+			]
+			hide_until_deps_complete: true
+			id: "722D20B372070E95"
+			rewards: [
+				{
+					id: "6FDF40A60DDB5127"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 4
+					id: "4579E2A303B53882"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "78880CF6DEDE9D75"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "42B1132580425672"
+					title: "Tell me more"
+					type: "checkmark"
+				}
+			]
+			title: "&5&lOld Grudges"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["722D20B372070E95"]
+			description: ["Throw a strength potion at a zombie and turn it into the Ultris Boss, the Giant."]
+			id: "43733D863DE70F1B"
+			rewards: [
+				{
+					id: "1FE8CDA8403455A0"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0CB9AAB66E9E8B07"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6D9B9A03035B5F84"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/giantrevive"
+					criterion: ""
+					icon: "minecraft:splash_potion"
+					id: "406234B0B4F8D749"
+					title: "Green Giant"
+					type: "advancement"
+				}
+			]
+			title: "Green Giant"
+			x: 2.35d
+			y: -6.0d
+		}
+		{
+			dependencies: ["43733D863DE70F1B"]
+			id: "0593FB7EB1B253BD"
+			rewards: [
+				{
+					id: "7918CFF20C62C081"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "2BBBCC1D1BA5C1CD"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F1BE27E90BBA6A3"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5044F70B623B3E0A"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Giant"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/giantdefeat"
+					criterion: ""
+					icon: "minecraft:zombie_head"
+					id: "3C208FDE28F3E279"
+					title: "No Giant Is Stronger Than Me!"
+					type: "advancement"
+				}
+			]
+			title: "No Giant Is Stronger Than Me!"
+			x: 9.8d
+			y: -6.0d
+		}
+		{
+			dependencies: ["722D20B372070E95"]
+			id: "3FF018DD08B54DE3"
+			rewards: [
+				{
+					id: "5FCCA177752367C9"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0E00BB96B4FEE4FF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1CFD56CDDB8A8924"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find a pig with strange purple particles..."
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/illusioner"
+					criterion: ""
+					icon: "minecraft:porkchop"
+					id: "19557F2B5FDED133"
+					title: "What Species is That?"
+					type: "advancement"
+				}
+			]
+			title: "What Species is That?"
+			x: 2.35d
+			y: -2.62d
+		}
+		{
+			dependencies: ["3FF018DD08B54DE3"]
+			id: "229C2EECB9C0DEDE"
+			rewards: [
+				{
+					id: "44EA0A65E5DD4F20"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1458928F50AB7D44"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6D23A1E8FC8E32BA"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Encounter the magical Ultris Boss, the Illusioner."
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/illusioner2"
+					criterion: ""
+					icon: "minecraft:player_head"
+					id: "3D84F1F53E1460E8"
+					title: "Porky Illusions"
+					type: "advancement"
+				}
+			]
+			title: "Porky Illusions"
+			x: 4.1d
+			y: -2.62d
+		}
+		{
+			dependencies: ["229C2EECB9C0DEDE"]
+			id: "0C985D848250B5E3"
+			rewards: [
+				{
+					id: "14FB5735BE3FD6C8"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "47AD0FC22CF61896"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19BA4C49CDC5DB04"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "60FBF43D316BCDED"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Illusioner"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/illusionerkill"
+					criterion: ""
+					icon: "minecraft:enchanted_book"
+					id: "758018C0E09A4461"
+					title: "Shows Over!"
+					type: "advancement"
+				}
+			]
+			title: "Shows Over!"
+			x: 9.8d
+			y: -2.62d
+		}
+		{
+			dependencies: ["722D20B372070E95"]
+			id: "007ABF08981785E4"
+			rewards: [
+				{
+					id: "5FC40C589C6A9679"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "65A73A526799F137"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4F45D79D09A44505"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enter the Blaze Kings Tower inside a nether fortress"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/blazepath/blazetower"
+					criterion: ""
+					icon: "minecraft:red_nether_bricks"
+					id: "38935BF6EC1EB848"
+					title: "The Kings Residence"
+					type: "advancement"
+				}
+			]
+			title: "The Kings Residence"
+			x: 2.35d
+			y: -0.88d
+		}
+		{
+			dependencies: ["007ABF08981785E4"]
+			id: "1CAFC61631E32E22"
+			rewards: [
+				{
+					id: "46E2D1E34AC6F846"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4452B965A4574027"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "740D43FED3DB119D"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Awaken the blazing Ultris Boss, Blaze King"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/blazepath/kingblaze"
+					criterion: ""
+					icon: "minecraft:blaze_powder"
+					id: "6023F460B8D2A658"
+					title: "Awaken"
+					type: "advancement"
+				}
+			]
+			title: "Awaken"
+			x: 4.1d
+			y: -0.88d
+		}
+		{
+			dependencies: ["1CAFC61631E32E22"]
+			id: "7F2C1F0F9B84361E"
+			rewards: [
+				{
+					id: "56920A0A88D14802"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "2C2F0FF241C33452"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50F05801E1F889E8"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4D563A9C3E06BDB5"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Blaze King"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/blazepath/kingblazekill"
+					criterion: ""
+					icon: "minecraft:iron_helmet"
+					id: "35855FD48C6DC4BE"
+					title: "Into Ashes"
+					type: "advancement"
+				}
+			]
+			title: "Into Ashes"
+			x: 9.8d
+			y: -0.88d
+		}
+		{
+			dependencies: ["722D20B372070E95"]
+			description: ["Forge a Ominous Eye Of Ender in a Smithing Table with an ominous pearl and blaze powder"]
+			id: "20E161ED1F7B65FB"
+			rewards: [
+				{
+					id: "33BA7B7C4640A9F2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "737E5062907DEE90"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "271A54B06AD9EE91"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/sanctum/eye_of_ender"
+					criterion: ""
+					icon: "minecraft:ender_eye"
+					id: "7B61DC1134901104"
+					title: "Ominous Compass"
+					type: "advancement"
+				}
+			]
+			title: "Ominous Compass"
+			x: 2.35d
+			y: -4.38d
+		}
+		{
+			dependencies: ["20E161ED1F7B65FB"]
+			id: "53CC7D632AC4629B"
+			rewards: [
+				{
+					id: "1BEBC480EC0BB135"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2428E6B62352B7A1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7EAD3E6A762446B8"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the sacred stronghold of trapped souls, the Sanctum"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/sanctum/soul_find"
+					criterion: ""
+					icon: "minecraft:warped_planks"
+					id: "316369A8709D3EA1"
+					title: "Lost and Forgotten"
+					type: "advancement"
+				}
+			]
+			title: "Lost and Forgotten"
+			x: 4.1d
+			y: -4.38d
+		}
+		{
+			dependencies: ["53CC7D632AC4629B"]
+			id: "2D282CA0B7D962BB"
+			rewards: [
+				{
+					id: "471ED64365117B7B"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "54F8CF8C4F9F1279"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1184D9081021DA61"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Ultris Boss, Sanctum Keeper"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/sanctum/keeper1"
+					criterion: ""
+					icon: "minecraft:player_head"
+					id: "286A8B03293D7AD0"
+					title: "Collector of Souls"
+					type: "advancement"
+				}
+			]
+			title: "Collector of Souls"
+			x: 5.85d
+			y: -4.38d
+		}
+		{
+			dependencies: ["2D282CA0B7D962BB"]
+			id: "721D33787F34A45D"
+			rewards: [
+				{
+					id: "585C8B75C6EBE441"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "2E11E2A54778F93A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E74BDC8B339FAAB"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2D52E3CB267FB591"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Sanctum Keeper"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/sanctum/keeper2"
+					criterion: ""
+					icon: "minecraft:bow"
+					id: "2FC40DEFC30AF9BC"
+					title: "Free the Sanctum"
+					type: "advancement"
+				}
+			]
+			title: "Free the Sanctum"
+			x: 7.7d
+			y: -4.38d
+		}
+		{
+			dependencies: ["722D20B372070E95"]
+			id: "2028244D78116D39"
+			rewards: [
+				{
+					id: "17D49623317A1E76"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0558B66C33E9FCF8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "167EF9D1DEA538CB"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Corruption lab inside the Sanctum"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/sanctum/lab"
+					criterion: ""
+					icon: "minecraft:soul_lantern"
+					id: "19860F03DA59328A"
+					title: "Corruptions Birthplace"
+					type: "advancement"
+				}
+			]
+			title: "Corruptions Birthplace"
+			x: 2.35d
+			y: 0.88d
+		}
+		{
+			dependencies: ["2028244D78116D39"]
+			id: "218ED68FDDDBF97F"
+			rewards: [
+				{
+					id: "6A8A619B335251BC"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0CAF2CC3A1147554"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "239313DDEA24B40B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Create some corrupt dust within the Corruption Lab"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/sanctum/lab2"
+					criterion: ""
+					icon: "minecraft:glowstone_dust"
+					id: "1FC51787F6A3BD20"
+					title: "Mad Scienctist"
+					type: "advancement"
+				}
+			]
+			title: "Mad Scienctist"
+			x: 4.1d
+			y: 0.88d
+		}
+		{
+			dependencies: ["218ED68FDDDBF97F"]
+			description: ["Throw corrupt dust on a enderman and convert it into a Corrupted Enderman."]
+			id: "26E84E243922319C"
+			rewards: [
+				{
+					id: "7C81AC5B94F4AB3A"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "74A94A2BFCBB15A3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3EA970924CE14120"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/sanctum/lab3"
+					criterion: ""
+					icon: "minecraft:player_head"
+					id: "2F750AC2BA9700A8"
+					title: "The Sanctum's Corrupter"
+					type: "advancement"
+				}
+			]
+			title: "The Sanctum's Corrupter"
+			x: 5.85d
+			y: 0.88d
+		}
+		{
+			dependencies: ["26E84E243922319C"]
+			id: "5C949C10704FEB8D"
+			rewards: [
+				{
+					id: "3D923EA54176C440"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "6BD1809AB5035815"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5318C9BB59338202"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4EA172D55AB39631"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Corrupted Enderman"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/enderkill"
+					criterion: ""
+					icon: "minecraft:ender_pearl"
+					id: "103A25CE0FAA9E9B"
+					title: "Weakened"
+					type: "advancement"
+				}
+			]
+			title: "Weakened"
+			x: 9.8d
+			y: 0.88d
+		}
+		{
+			dependencies: ["722D20B372070E95"]
+			id: "704F990C272D0AF4"
+			rewards: [
+				{
+					id: "14BA81ADE5D04668"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3EF3E1C0E1EB8C2F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5DD4DB89E5EE3ECE"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find a phantom all alone by itself in the vastness of the end..."
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/phantom"
+					criterion: ""
+					icon: "minecraft:end_stone"
+					id: "0797ED1020D38319"
+					title: "Alone In The Dark..?"
+					type: "advancement"
+				}
+			]
+			title: "Alone In The Dark..?"
+			x: 2.35d
+			y: 2.62d
+		}
+		{
+			dependencies: ["704F990C272D0AF4"]
+			description: ["Bring out the friends of the lone phantom and discover the Phantom Swarm"]
+			id: "034F5A045BB5D15B"
+			rewards: [
+				{
+					id: "5D232BD8CF610C88"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "27B41B05290A603C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4B5E5DDC21E8BAF6"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/phantom_fight"
+					criterion: ""
+					icon: "minecraft:end_stone"
+					id: "0C617AC4980B998C"
+					title: "Together In The Dark"
+					type: "advancement"
+				}
+			]
+			title: "Together In The Dark"
+			x: 4.1d
+			y: 2.62d
+		}
+		{
+			dependencies: ["034F5A045BB5D15B"]
+			description: ["Set flame to a phantom in the end and remove its abillity to summon other phantoms"]
+			id: "34D4093510F93740"
+			rewards: [
+				{
+					id: "439BE9FF21D171B1"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0462A8DBEEB87C97"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "693E4EEE7EA83D96"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/phantom2"
+					criterion: ""
+					icon: "minecraft:flint_and_steel"
+					id: "61819EB9D8992C6F"
+					title: "Flame Out!"
+					type: "advancement"
+				}
+			]
+			title: "Flame Out!"
+			x: 5.85d
+			y: 2.62d
+		}
+		{
+			dependencies: ["34D4093510F93740"]
+			id: "236AD2030211EA79"
+			rewards: [
+				{
+					id: "4B825C139D85C80D"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "4533F380730BF94A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B2C69744C83EAD4"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0488E95FC1B88669"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Phantom Swarm"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/phantom_fight2"
+					criterion: ""
+					icon: "minecraft:diamond_sword"
+					id: "46D58FB5BF6C8792"
+					title: "Phantom Slayer"
+					type: "advancement"
+				}
+			]
+			title: "Phantom Slayer"
+			x: 9.8d
+			y: 2.62d
+		}
+		{
+			dependencies: ["722D20B372070E95"]
+			id: "42793E0FE79D99E9"
+			rewards: [
+				{
+					id: "74004FF7822A1039"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1D75D6CADD43F06C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6D37BB539EB8C7F5"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Discover a mysterious pyramid high above an end city"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/blazepath/endpyramid"
+					criterion: ""
+					icon: "minecraft:shulker_shell"
+					id: "2440B35C4B682B4E"
+					title: "High Sky Pyramid"
+					type: "advancement"
+				}
+			]
+			title: "High Sky Pyramid"
+			x: 2.35d
+			y: 4.38d
+		}
+		{
+			dependencies: ["42793E0FE79D99E9"]
+			description: ["Reach the top of the pyramid and insert an Endstone Key to the pedestal by right clicking its shimmering end rod"]
+			id: "48B1B9DBD3B4FEC0"
+			rewards: [
+				{
+					id: "3ADAAAE212EE92A8"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "74532926442D498F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "480A210A2AB8FF60"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/blazepath/shulkerstone"
+					criterion: ""
+					icon: "minecraft:stick"
+					id: "6CE2D84D3AA41B6E"
+					title: "Sealed Secrets"
+					type: "advancement"
+				}
+			]
+			title: "Sealed Secrets"
+			x: 4.1d
+			y: 4.38d
+		}
+		{
+			dependencies: ["48B1B9DBD3B4FEC0"]
+			id: "5CDBAB94C61A1B91"
+			rewards: [
+				{
+					id: "0CBE10EA93A2736F"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2E74BBD104640991"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "19C90FB795E5AAE1"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Awaken the Ultris boss, ruler of the shulkers, the Shulker Stone"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/blazepath/shulkerstone2"
+					criterion: ""
+					icon: "minecraft:shulker_shell"
+					id: "5EF2A0D11089C8D2"
+					title: "Awaken at Kingdom's End"
+					type: "advancement"
+				}
+			]
+			title: "Awaken at Kingdom's End"
+			x: 5.85d
+			y: 4.38d
+		}
+		{
+			dependencies: ["5CDBAB94C61A1B91"]
+			id: "1268A17E56E498EF"
+			rewards: [
+				{
+					id: "41C47431F24AD67B"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "7A1F54F16A364723"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6EDAB79DB7435A1E"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4F9460CD9F5E7ED5"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Shulker Stone"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/blazepath/shulkerstonekill"
+					criterion: ""
+					icon: "minecraft:diamond_helmet"
+					id: "381F574F6CEE9EFD"
+					title: "Back to Eternal Sleep"
+					type: "advancement"
+				}
+			]
+			title: "Back to Eternal Sleep"
+			x: 9.8d
+			y: 4.38d
+		}
+		{
+			dependencies: ["722D20B372070E95"]
+			description: ["Forge a Command Block in a Smithing Table with an ominous pearl and a gold block"]
+			id: "4023A3141958D4AF"
+			rewards: [
+				{
+					id: "62124E37CD9D1694"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3AF2C0BD2A1B2E2A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0A56B833FDED567C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/command"
+					criterion: ""
+					icon: "minecraft:command_block"
+					id: "6C1D830DDF9183F8"
+					title: "Mysterious Power"
+					type: "advancement"
+				}
+			]
+			title: "Mysterious Power"
+			x: 2.35d
+			y: 6.12d
+		}
+		{
+			dependencies: ["4023A3141958D4AF"]
+			description: ["Throw an Enchanted Command Block at a Wither, summon the Ultris Boss, Ultra Wither"]
+			id: "5C20142AA93B1A49"
+			rewards: [
+				{
+					id: "3E551D0BC4B8DB40"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0F29133D2ED2790C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7700DAAD7F3560F2"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/ultrawither"
+					criterion: ""
+					icon: "minecraft:nether_star"
+					id: "325BBD7059DC0657"
+					title: "Ultra Withering Heights"
+					type: "advancement"
+				}
+			]
+			title: "Ultra Withering Heights"
+			x: 4.1d
+			y: 6.12d
+		}
+		{
+			dependencies: ["5C20142AA93B1A49"]
+			id: "732FE15F2CB3CBF0"
+			rewards: [
+				{
+					id: "59B9FCBDC7C91B62"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "1633A31AD6C58138"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05ED69FB6A2CA4FC"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "078D8CBA099CAA74"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Ultra Wither"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/ultrawitherkill"
+					criterion: ""
+					icon: "minecraft:player_head"
+					id: "4153F0E17739BDA8"
+					title: "Ultra Demise"
+					type: "advancement"
+				}
+			]
+			title: "Ultra Demise"
+			x: 9.8d
+			y: 6.12d
+		}
+		{
+			dependencies: ["721D33787F34A45D"]
+			id: "3691752244BF2483"
+			optional: true
+			rewards: [
+				{
+					id: "4F9B3507A0E57E2E"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "47A6ECA8BB6C9CDB"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "53155C67F5EBD7DE"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Release all trapped souls from the Sanctum"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/sanctum/soul_trapped"
+					criterion: ""
+					icon: "minecraft:soul_lantern"
+					id: "6B6174A4F3A16A6B"
+					title: "Released"
+					type: "advancement"
+				}
+				{
+					advancement: "1_splatus:ultris/sanctum/soul_trapped_all"
+					criterion: ""
+					icon: "minecraft:soul_lantern"
+					id: "26BEC3ED3070A619"
+					title: "Savior of the Souls"
+					type: "advancement"
+				}
+			]
+			title: "Savior of the Souls"
+			x: 9.8d
+			y: -4.38d
+		}
+		{
+			dependencies: [
+				"0593FB7EB1B253BD"
+				"0C985D848250B5E3"
+				"7F2C1F0F9B84361E"
+				"721D33787F34A45D"
+				"5C949C10704FEB8D"
+				"236AD2030211EA79"
+				"1268A17E56E498EF"
+				"732FE15F2CB3CBF0"
+			]
+			hide_dependency_lines: true
+			id: "35170F7132A056E5"
+			rewards: [
+				{
+					id: "628F4A042B9253B7"
+					type: "xp"
+					xp: 4000
+				}
+				{
+					count: 2
+					id: "571B4FDF1F23A3BB"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FC8BB627E7817D1"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0AB6F085E1F52E77"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0022D79DEF8FD113"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Defeat every Ultris Boss"
+			tasks: [
+				{
+					advancement: "1_splatus:ultris/completed"
+					criterion: ""
+					icon: "minecraft:knowledge_book"
+					id: "4A9A7AD9B73AF91A"
+					title: "Ultris Conqueror"
+					type: "advancement"
+				}
+			]
+			title: "&5&lUltris Conqueror"
+			x: 13.4d
+			y: -5.88d
+		}
+	]
+	subtitle: ["Eight bosses that are nobody's business but yours"]
+	title: "&5Old Grudges"
+}

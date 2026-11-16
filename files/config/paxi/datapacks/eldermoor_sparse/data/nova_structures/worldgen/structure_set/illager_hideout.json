@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 3094032,
+    "separation": 42,
+    "spacing": 700,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "nova_structures:illager_hideout",
+      "weight": 1
+    }
+  ]
+}

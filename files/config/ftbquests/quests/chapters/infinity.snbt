@@ -1,0 +1,1056 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "infinity"
+	group: "478F493742D3F387"
+	icon: "avaritia:infinity_sword"
+	id: "06756DE02D288232"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["189F03AC93B421FF"]
+			description: [
+				"Avaritia's gear ignores the rules: a sword that kills anything, armour nothing gets through, tools that dig a mountain at a time."
+				""
+				"The road is long on purpose. Neutronium trickles out of a collector for hours; singularities eat thousands of ingots each; the &eInfinity Catalyst&f at the end needs all of them, and in Eldermoor it also needs a trophy from every boss of &6World Eater&f (Act IV):"
+				""
+				"&7- the Harbinger of Moonlight's, the Day Stalker's, the Night Prowler's and the Monarch of Chaos's Lord Souls"
+				"&7- Malkuth's, Chesed's and Geburah's trophies"
+				"&7- the Ender Keeper's Void Echo"
+				"&7- a Broken Halo (made by sacrificing an Apostle, see the Goety chapter)"
+				"&7- the Warden's Heart of the Deep"
+				"&7- a Chaos Shard from the Chaos Guardian's island"
+				""
+				"Start the collectors now. The Catalyst waits for World Eater."
+			]
+			hide_until_deps_complete: true
+			id: "25974CF1A699CE26"
+			rewards: [
+				{
+					id: "16D8D5C0E94DCE44"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 4
+					id: "00ED449CE40D9198"
+					item: "avaritia:neutron_pile"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 250"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1134DC61C8C4BE9F"
+					silent: true
+					title: "+250 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "22D9A191E9322549"
+					title: "Everything?"
+					type: "checkmark"
+				}
+			]
+			title: "&f&lInfinity"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25974CF1A699CE26"]
+			description: ["&7Made from: &fNetherite Scrap, Diamond x8"]
+			id: "036DDAA606077C64"
+			rewards: [
+				{
+					id: "5B5C3B10902903CB"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "7A79F6A92EDE32F4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "5F2A27B17935798B"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft diamond lattice"
+			tasks: [
+				{
+					advancement: "avaritia:main/diamond_lattice"
+					criterion: ""
+					icon: "avaritia:diamond_lattice"
+					id: "7A2BF00E4772FB24"
+					title: "Brilliant New Life"
+					type: "advancement"
+				}
+			]
+			title: "Brilliant New Life"
+			x: 2.1d
+			y: -1.75d
+		}
+		{
+			dependencies: ["036DDAA606077C64"]
+			description: ["Diamond lattices and nether stars."]
+			id: "7A4443A18066EADD"
+			rewards: [
+				{
+					id: "72505646A966579D"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "730031822FC7DB5C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "14CBF5757D21D4E2"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft Crystal Matrix Ingot"
+			tasks: [
+				{
+					advancement: "avaritia:main/crystal_matrix_ingot"
+					criterion: ""
+					icon: "avaritia:crystal_matrix_ingot"
+					id: "7DAA37B81CD77470"
+					title: "Crystal Energy Emergence"
+					type: "advancement"
+				}
+			]
+			title: "Crystal Energy Emergence"
+			x: 3.85d
+			y: -1.75d
+		}
+		{
+			dependencies: ["7A4443A18066EADD"]
+			id: "4F38B1EBFA56D98C"
+			rewards: [
+				{
+					id: "1DFF61CB5C26A9C6"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "0F8393D4E9A62EB7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "2A052E4FA6CD3ADC"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft Compressed Crafting Table"
+			tasks: [
+				{
+					advancement: "avaritia:main/compressed_crafting_table"
+					criterion: ""
+					icon: "avaritia:compressed_crafting_table"
+					id: "04A847C5A92AF421"
+					title: "First Contact"
+					type: "advancement"
+				}
+			]
+			title: "First Contact"
+			x: 5.6d
+			y: -1.75d
+		}
+		{
+			dependencies: ["4F38B1EBFA56D98C"]
+			description: ["A 9x9 crafting grid. Everything big is made here."]
+			id: "14C6A2A66C806D35"
+			rewards: [
+				{
+					id: "486788933704D9EE"
+					type: "xp"
+					xp: 360
+				}
+				{
+					count: 5
+					id: "74D35587E9153104"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "23839A4003874DC7"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "5DA035CB343E40F5"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft Extreme Crafting Table"
+			tasks: [
+				{
+					advancement: "avaritia:main/extreme_crafting_table"
+					criterion: ""
+					icon: "avaritia:extreme_crafting_table"
+					id: "487C8149B634397B"
+					title: "The Beginning of a Nightmare"
+					type: "advancement"
+				}
+			]
+			title: "The Beginning of a Nightmare"
+			x: 7.45d
+			y: -1.75d
+		}
+		{
+			dependencies: ["25974CF1A699CE26"]
+			description: [
+				"It makes neutron dust from nothing, very slowly. Build several."
+				"&7Made at: &fExtreme Crafting Table &7from &fCrystal Matrix Ingot x7, Iron Block x21, Block of Quartz x10, Block of Redstone x20"
+			]
+			id: "124957DB7A512B07"
+			rewards: [
+				{
+					id: "7A4C76260008C5FE"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "1071F7BA3081D22D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "2F7690E6BC1D0AEA"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft Neutron Collector"
+			tasks: [
+				{
+					advancement: "avaritia:main/neutron_collector"
+					criterion: ""
+					icon: "avaritia:neutron_collector"
+					id: "406F5DFA57B2F041"
+					title: "Long Wait"
+					type: "advancement"
+				}
+			]
+			title: "Long Wait"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["124957DB7A512B07"]
+			id: "028A088B71D77F2B"
+			rewards: [
+				{
+					id: "6022D3FD51871861"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "449A5DA0F5DF61B5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "583B74DC39265DD5"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Get neutron dust!"
+			tasks: [
+				{
+					advancement: "avaritia:main/neutron_pile"
+					criterion: ""
+					icon: "avaritia:neutron_pile"
+					id: "46D2057B0815E584"
+					title: "Endless hang up"
+					type: "advancement"
+				}
+			]
+			title: "Endless hang up"
+			x: 3.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["028A088B71D77F2B"]
+			description: ["&7Made at: &fExtreme Crafting Table &7from &fCrystal Matrix Ingot x10, Hopper x3, Iron Block x17, Neutronium Ingot x16, Neutronium Block and 1 more"]
+			id: "6FD0C5BEFFCC3FB0"
+			rewards: [
+				{
+					id: "2790AB17EF38597B"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "0AE8322CB5D36ECF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "79074F57F3519873"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft Neutronium Compressor"
+			tasks: [
+				{
+					advancement: "avaritia:main/neutron_compressor"
+					criterion: ""
+					icon: "avaritia:neutron_compressor"
+					id: "79456C055BA3E881"
+					title: "Zero to whole"
+					type: "advancement"
+				}
+			]
+			title: "Zero to whole"
+			x: 5.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FD0C5BEFFCC3FB0"]
+			id: "00D6E432E5BD1096"
+			rewards: [
+				{
+					id: "14B79550BBD3BC76"
+					type: "xp"
+					xp: 360
+				}
+				{
+					count: 5
+					id: "6234C3AB17FFA286"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FA7A2DB28347694"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "7FC3C0D3815DF922"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft Neutron Ingot"
+			tasks: [
+				{
+					advancement: "avaritia:main/neutron_ingot"
+					criterion: ""
+					icon: "avaritia:neutron_ingot"
+					id: "0B8C1A0634AB5289"
+					title: "Very hard to get"
+					type: "advancement"
+				}
+			]
+			title: "Very hard to get"
+			x: 7.45d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FD0C5BEFFCC3FB0"]
+			description: ["A compressor fed thousands of one material makes its singularity. The Catalyst needs one of every kind."]
+			id: "6FE88B5C57B2A0DA"
+			rewards: [
+				{
+					id: "0010247E08044C50"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "61A9948240D62E2B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "0E0F272ED569885F"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "get a singularity"
+			tasks: [
+				{
+					advancement: "avaritia:main/singularity"
+					criterion: ""
+					icon: "avaritia:singularity"
+					id: "0B3B9644A2374A55"
+					title: "Running low on stock"
+					type: "advancement"
+				}
+			]
+			title: "Running low on stock"
+			x: 7.45d
+			y: 1.75d
+		}
+		{
+			dependencies: ["6FE88B5C57B2A0DA"]
+			id: "6760CDA4EE1D3BF3"
+			rewards: [
+				{
+					id: "41FCA72C18517E43"
+					type: "xp"
+					xp: 360
+				}
+				{
+					count: 5
+					id: "2960417199726727"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3A340C65F9949E93"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "57E95E773C63D5D1"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft Eternal Singularity"
+			tasks: [
+				{
+					advancement: "avaritia:singularity/eternal_singularity"
+					criterion: ""
+					icon: "avaritia:eternal_singularity"
+					id: "673068A5324DC25C"
+					title: "Zero to Whole - Twice"
+					type: "advancement"
+				}
+			]
+			title: "Zero to Whole - Twice"
+			x: 9.55d
+			y: 1.75d
+		}
+		{
+			dependencies: ["6760CDA4EE1D3BF3"]
+			description: [
+				"Two meals made of every food there is. Both go into the Catalyst."
+				"&7&fUltimate Stew&7 - Made at: &fExtreme Crafting Table &7from &fApple, Golden Apple, Melon Slice, Glistering Melon Slice, Sweet Berries and 22 more"
+				"&7&fCosmic Meatballs&7 - Made at: &fExtreme Crafting Table &7from &fRaw Porkchop, Raw Beef, Raw Mutton, Raw Cod, Raw Salmon and 8 more"
+			]
+			id: "48977521BA694911"
+			rewards: [
+				{
+					id: "3DEABA0B6DFE94D4"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "5100E04D1DAF5A2A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "04AF8191155BF731"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "67B6D18B1FE60C07"
+					item: "avaritia:ultimate_stew"
+					type: "item"
+				}
+				{
+					id: "5CD3BA552BEEE1E2"
+					item: "avaritia:cosmic_meatballs"
+					type: "item"
+				}
+			]
+			title: "The Ultimate Feast"
+			x: 11.4d
+			y: 1.75d
+		}
+		{
+			dependencies: ["48977521BA694911"]
+			description: [
+				"&7&fEndest Pearl&7 - Made at: &fExtreme Crafting Table &7from &fany end stones x24, Neutronium Ingot x4, any ender pearls x32, any nether stars"
+				"&7&fRecord Fragment&7 - Made at: &fExtreme Crafting Table &7from &fPile of Neutrons x4, any music discs"
+			]
+			id: "09E05B358CB20ECE"
+			rewards: [
+				{
+					id: "7E851E94FB45F862"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "575B641B87788F16"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1B8B4838ECCC0AFA"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "562B111B56ED6812"
+					item: "avaritia:endest_pearl"
+					type: "item"
+				}
+				{
+					id: "6014C3D10214040F"
+					item: "avaritia:record_fragment"
+					type: "item"
+				}
+			]
+			title: "The Endest Pearl"
+			x: 13.15d
+			y: 1.75d
+		}
+		{
+			dependencies: [
+				"09E05B358CB20ECE"
+				"39297A54C0E47563"
+			]
+			description: [
+				"One from each boss of World Eater. In Eldermoor the Infinity Catalyst is made around them."
+				""
+				"The quest only looks; it keeps nothing."
+				"&7&fBroken Halo&7 - Made at: &fDark Altar ritual &7from &fHalo of Ascension, Philosopher's Mace"
+			]
+			id: "2A3EA7900D651954"
+			rewards: [
+				{
+					id: "43ECE176033ABC8C"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					id: "47B7A0ED9F1998F0"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "3CCF17F5DC977A7A"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "15C71AB7EED966C8"
+					item: "soulsweapons:lord_soul_white"
+					type: "item"
+				}
+				{
+					id: "1925F07388CCC23E"
+					item: "soulsweapons:lord_soul_day_stalker"
+					type: "item"
+				}
+				{
+					id: "46136975AF0B5E40"
+					item: "soulsweapons:lord_soul_night_prowler"
+					type: "item"
+				}
+				{
+					id: "628F659B715250A9"
+					item: "soulsweapons:lord_soul_void"
+					type: "item"
+				}
+				{
+					id: "74A98A3B1529D960"
+					item: "fdbosses:malkuth_trophy"
+					type: "item"
+				}
+				{
+					id: "0C7A0BC1BCA1A9AF"
+					item: "fdbosses:chesed_trophy"
+					type: "item"
+				}
+				{
+					id: "1E395E7582D8CEB4"
+					item: "fdbosses:geburah_trophy"
+					type: "item"
+				}
+				{
+					id: "645132D41A36D0DC"
+					item: "goety:void_echo"
+					type: "item"
+				}
+				{
+					id: "0F6E8C3C416E457B"
+					item: "goety_revelation:broken_halo"
+					type: "item"
+				}
+				{
+					id: "07679D7F37A0BD14"
+					item: "deeperdarker:heart_of_the_deep"
+					type: "item"
+				}
+				{
+					id: "718250AAB56289F9"
+					item: "draconicevolution:chaos_shard"
+					type: "item"
+				}
+			]
+			title: "&6Trophies of World Eater"
+			x: 15.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2A3EA7900D651954"]
+			description: ["Made in the Extreme Crafting Table from every singularity, the feast, the pearl and the eleven trophies."]
+			id: "488875349AE9621C"
+			rewards: [
+				{
+					id: "18542421EAAE0F74"
+					type: "xp"
+					xp: 5000
+				}
+				{
+					id: "531CA297F1E3B627"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "61883C37EC1AFBA1"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "441BBD85C8431FD5"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "37EAB22C2D90BDF9"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft Infinity Catalyst"
+			tasks: [
+				{
+					advancement: "avaritia:singularity/infinity_catalyst"
+					criterion: ""
+					icon: "avaritia:infinity_catalyst"
+					id: "518EBAF4E0BB52C5"
+					title: "-all is one,one is all-"
+					type: "advancement"
+				}
+			]
+			title: "-all is one,one is all-"
+			x: 17.1d
+			y: 1.75d
+		}
+		{
+			dependencies: ["488875349AE9621C"]
+			description: ["&7Made at: &fExtreme Crafting Table &7from &fCrystal Matrix Ingot x10, Neutronium Ingot x24, Infinity Catalyst x11"]
+			id: "4AA74BB51B1FD5A1"
+			rewards: [
+				{
+					id: "4C0E95660CE03C90"
+					type: "xp"
+					xp: 5000
+				}
+				{
+					id: "3A256773B30CB07E"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "31FF02F27D603EF2"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1329EFC1AAE9DAB6"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "634CD6EDE0B5C2B2"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Get Infinity Ingot"
+			tasks: [
+				{
+					advancement: "avaritia:infinity/infinity_ingot"
+					criterion: ""
+					icon: "avaritia:infinity_ingot"
+					id: "264F39C1909E960A"
+					title: "Sweet are the uses of adversity？"
+					type: "advancement"
+				}
+			]
+			title: "Sweet are the uses of adversity？"
+			x: 19.2d
+			y: 1.75d
+		}
+		{
+			dependencies: ["4AA74BB51B1FD5A1"]
+			description: ["&7Made at: &fExtreme Crafting Table &7from &fCrystal Matrix x5, Crystal Matrix Ingot x8, Infinity Ingot x15, Neutronium Ingot x2, Infinity Catalyst"]
+			id: "677D8D7D7D61E821"
+			rewards: [
+				{
+					id: "69003D8B30AE5686"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "415DE3F63781D5F4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "5BA0D8462E16A6CD"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft Infinity Sword"
+			tasks: [
+				{
+					advancement: "avaritia:infinity/infinity_sword"
+					criterion: ""
+					icon: "avaritia:infinity_sword"
+					id: "4259DA750124B207"
+					title: "World domination!"
+					type: "advancement"
+				}
+			]
+			title: "World domination!"
+			x: 21.05d
+			y: 1.75d
+		}
+		{
+			dependencies: ["677D8D7D7D61E821"]
+			description: ["&7Made at: &fExtreme Crafting Table &7from &fCrystal Matrix x7, Neutronium Block, Infinity Ingot x16, Neutronium Ingot x4, Infinity Catalyst"]
+			id: "282E985A25FEAC4B"
+			rewards: [
+				{
+					id: "71626D703ED5D773"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "023C967C0C5E8ADB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "18E3C5DBD43B7E85"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft Infinity Pickaxe"
+			tasks: [
+				{
+					advancement: "avaritia:infinity/infinity_pickaxe"
+					criterion: ""
+					icon: "avaritia:infinity_pickaxe"
+					id: "361C7D66247308BC"
+					title: "World falling apart!"
+					type: "advancement"
+				}
+			]
+			title: "World falling apart!"
+			x: 23.4d
+			y: 2.0d
+		}
+		{
+			dependencies: ["282E985A25FEAC4B"]
+			description: ["&7Made at: &fExtreme Crafting Table &7from &fCrystal Matrix x6, Crystal Matrix Ingot x6, Infinity Ingot x10, Neutronium Ingot x4, Pile of Neutrons x2 and 1 more"]
+			id: "2B1952606AA87A66"
+			rewards: [
+				{
+					id: "7DC53737FF384534"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "4B2F43CA25AD9F70"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "758257F672EB2407"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft Infinity Bow"
+			tasks: [
+				{
+					advancement: "avaritia:infinity/infinity_bow"
+					criterion: ""
+					icon: "avaritia:infinity_bow"
+					id: "49B43925959B0B3E"
+					title: "Heaven falls"
+					type: "advancement"
+				}
+			]
+			title: "Heaven falls"
+			x: 25.75d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2B1952606AA87A66"]
+			description: ["&7Made at: &fExtreme Crafting Table &7from &fCrystal Matrix x4, Crystal Matrix Ingot x20, Neutronium Ingot x12, Pile of Neutrons x4, Infinity Catalyst x8 and 1 more"]
+			id: "7FBC8E6C90CCB629"
+			optional: true
+			rewards: [
+				{
+					id: "0365338A91EE70AD"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "6B814470325B7632"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "2F651B7ED7504A39"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft Sublimation Template"
+			tasks: [
+				{
+					advancement: "avaritia:infinity/upgrade_smithing_template"
+					criterion: ""
+					icon: "avaritia:upgrade_smithing_template"
+					id: "2EB84E3388440346"
+					title: "Wandering the Ends of the Earth"
+					type: "advancement"
+				}
+			]
+			title: "Wandering the Ends of the Earth"
+			x: 27.5d
+			y: 1.75d
+		}
+		{
+			dependencies: ["677D8D7D7D61E821"]
+			description: [
+				"The whole Infinity armour. There is nothing left in Eldermoor that can hurt you."
+				"&7Made at: &fExtreme Crafting Table &7from &fInfinity Ingot x19, Neutronium Ingot x15, Infinity Catalyst x2"
+			]
+			id: "3EB7746E7E0C9CC1"
+			rewards: [
+				{
+					id: "749702A363668291"
+					type: "xp"
+					xp: 30000
+				}
+				{
+					count: 5
+					id: "555AAEE22915B28F"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					id: "11F6CC0966121FE0"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "309E14F23FD13096"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 250"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "4BC5CC554F24DAF8"
+					silent: true
+					title: "+250 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.5d
+			tasks: [
+				{
+					advancement: "avaritia:infinity/infinity_armor"
+					criterion: ""
+					icon: "avaritia:infinity_chestplate"
+					id: "7129FC84A542AF01"
+					title: "INFINITY"
+					type: "advancement"
+				}
+			]
+			title: "&f&lINFINITY"
+			x: 23.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A3EA7900D651954"]
+			description: ["A shining gem for the Moonlight blades: the Bluemoon swords and the Skofnung Stone."]
+			id: "69FF879111DE5FD7"
+			optional: true
+			rewards: [
+				{
+					id: "7E33E6F82D661E7A"
+					type: "xp"
+					xp: 90
+				}
+				{
+					count: 18
+					id: "34FBC9B0776F611E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "175C4AA600212082"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "A full moon in your pocket"
+			tasks: [
+				{
+					id: "36AEBFC526077FB8"
+					item: "soulsweapons:moonstone"
+					type: "item"
+				}
+			]
+			title: "Moonstone"
+			x: 17.1d
+			y: 3.5d
+		}
+	]
+	subtitle: ["What comes after everything"]
+	title: "&f&lInfinity"
+}

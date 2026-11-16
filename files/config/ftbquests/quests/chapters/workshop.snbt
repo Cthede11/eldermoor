@@ -1,0 +1,1384 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "workshop"
+	group: "02AD8609A8FE6EE4"
+	icon: "create:wrench"
+	id: "51956680326C6F18"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4858C3A8E8B424FF"]
+			description: [
+				"Eldermoor has sixteen schools of engineering, and showing you all of them at once would be cruel."
+				""
+				"Each gear on this page is a &edoor&f. Bring it what it asks for and a new chapter appears in &cThe Mechanical&f."
+				""
+				"The doors go from left to right: hand tools and waterwheels first, electricity next, and the machines that eat a mountain last."
+				""
+				"&7One metal, one item: whichever mod's machine makes steel, it is the same steel."
+			]
+			hide_until_deps_complete: true
+			id: "6369B33338F3C4EC"
+			rewards: [
+				{
+					id: "4D07FF7122EBC932"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "127AB0C2C1A7F7C4"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0B92BD0BE3D1DE8F"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2A8BDD5DD5E2B912"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "4D38DA5C8EFB769D"
+					title: "Open the doors"
+					type: "checkmark"
+				}
+			]
+			title: "&e&lThe Workshop"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6369B33338F3C4EC"]
+			description: [
+				"Andesite and iron nuggets, mixed. Everything in Create is made of this or turns because of it."
+				""
+				"&eOpens the chapter: &aCreate"
+			]
+			icon: "create:cogwheel"
+			id: "00E21B5F73B637C9"
+			rewards: [
+				{
+					id: "02BE08C06E0B298E"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "50DAFAA25851765D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6C617905362F1A94"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Create"
+			tasks: [
+				{
+					count: 8L
+					id: "7A688B544E5B4459"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			title: "&aRotation"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6369B33338F3C4EC"]
+			description: [
+				"Clay, sand and gravel make grout; grout makes the bricks of a smeltery."
+				""
+				"&eOpens the chapter: &eTinkers' Construct"
+			]
+			icon: "tconstruct:seared_brick"
+			id: "5DFDD2E878D3C9DA"
+			rewards: [
+				{
+					id: "0B6EF7DD10AABB91"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "53E60432C4DF6363"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "19C227BB8C53C867"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Tinkers' Construct"
+			tasks: [
+				{
+					count: 8L
+					id: "3BFA64D60FE8C163"
+					item: "tconstruct:grout"
+					type: "item"
+				}
+			]
+			title: "&eMolten Metal"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6369B33338F3C4EC"]
+			description: [
+				"Two sticks and two planks. Hit a crafting table with it and the table becomes a workbench that can rebuild any tool piece by piece."
+				""
+				"&eOpens the chapter: &fTetra"
+			]
+			icon: "tetra:basic_workbench"
+			id: "74EA463EB51D4F9E"
+			rewards: [
+				{
+					id: "04C87233708128F8"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "38F51BE943474DFE"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6F72E0A06454AFA7"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Tetra"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/root"
+					criterion: ""
+					icon: "tetra:basic_workbench"
+					id: "09B66D1174974B16"
+					title: "Basic Tinkering (Tetra)"
+					type: "advancement"
+				}
+			]
+			title: "&fThe Mallet"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6369B33338F3C4EC"]
+			description: [
+				"Rolled a Broken sword? The station rerolls an item's quality."
+				""
+				"&eOpens the chapter: &6The Reforger"
+			]
+			icon: "tieredreforge:reforge_station"
+			id: "335AEAC209505364"
+			rewards: [
+				{
+					id: "0E339DE87FF209BF"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "4C1D3693E32B6945"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3E3B19532A262798"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens The Reforger"
+			tasks: [
+				{
+					id: "42F5CACB49BCF31D"
+					item: "tieredreforge:reforge_station"
+					type: "item"
+				}
+			]
+			title: "&6A Second Chance"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00E21B5F73B637C9"]
+			description: [
+				"A hammer of the old dwarven kind. Their machines run on the ember that seeps up from bedrock."
+				""
+				"&eOpens the chapter: &6Embers"
+			]
+			icon: "embers:tinker_hammer"
+			id: "66AD283B190ABC89"
+			rewards: [
+				{
+					id: "0EEB5D9D593AC813"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "0F3ACCD1AB318F3A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1866C45FB9BCFF5F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Embers"
+			tasks: [
+				{
+					id: "02182823C73B2CFB"
+					item: "embers:tinker_hammer"
+					type: "item"
+				}
+			]
+			title: "&6Dwarven Fire"
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00E21B5F73B637C9"]
+			description: [
+				"Copper and zinc, mixed over heat. Brass is where Create gets clever - and where it starts making electricity."
+				""
+				"&eOpens the chapter: &eSparks: Create Meets Electricity"
+				"&7Made at: &fMechanical Mixer &7from &fCopper Ingot, Zinc Ingot"
+			]
+			icon: "create:brass_ingot"
+			id: "479D4A1C7A61B97C"
+			rewards: [
+				{
+					id: "6DF167BEEDDE9397"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "76CEED262291A9EA"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3CE6097428C59316"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Sparks: Create Meets Electricity"
+			tasks: [
+				{
+					count: 8L
+					id: "56F268FF65EE135E"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
+			title: "&eBrass"
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["00E21B5F73B637C9"]
+			description: [
+				"Enough iron for a hull and something that floats. Tugboats and tiny trains carry cargo while you do something else."
+				""
+				"&eOpens the chapter: &3Tugs \\& Tracks"
+			]
+			icon: "littlelogistics:tug"
+			id: "2C8AED1A60F66438"
+			rewards: [
+				{
+					id: "0677C958030745C2"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "069E5ADA7C538096"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "32C582D92F26D89E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Tugs \\& Tracks"
+			tasks: [
+				{
+					count: 2L
+					id: "56635EAB07CEDA66"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					id: "0F45309BCFC48547"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:boats" } }
+					title: "Any boat"
+					type: "item"
+				}
+			]
+			title: "&3Deep Water"
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["479D4A1C7A61B97C"]
+			description: [
+				"Coke ovens, blast furnaces, water wheels the size of a barn and wires strung between poles."
+				""
+				"&eOpens the chapter: &6Immersive Engineering"
+			]
+			icon: "immersiveengineering:hammer"
+			id: "724EB23920266048"
+			rewards: [
+				{
+					id: "6068DA8027805F2E"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "74EBBEC3755A0780"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "02036A65706A381C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Immersive Engineering"
+			tasks: [
+				{
+					id: "2F0976A1C3C460BF"
+					item: "immersiveengineering:hammer"
+					type: "item"
+				}
+			]
+			title: "&6The Engineer's Hammer"
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["479D4A1C7A61B97C"]
+			description: [
+				"A pale blue metal found everywhere and good for one thing: Mekanism. Ore doubling, then tripling, then five ingots from one ore."
+				""
+				"&eOpens the chapter: &bMekanism"
+				"&7Made at: &fArc Furnace &7from &fRaw Osmium Block"
+			]
+			icon: "mekanism:ingot_osmium"
+			id: "204C581D6604925C"
+			rewards: [
+				{
+					id: "3712D9CC98ACE952"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "3C5549D138DF1AED"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6D685D85A3A37034"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Mekanism"
+			tasks: [
+				{
+					count: 8L
+					id: "1DA2C75C2163780C"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
+			title: "&bOsmium"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"724EB23920266048"
+				"204C581D6604925C"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Found in meteorites, which a Meteorite Compass points to. Every item you own in one searchable network."
+				""
+				"&eOpens the chapter: &dApplied Energistics 2"
+				"&7Made from: &fany water, Charged Certus Quartz Crystal, Certus Quartz Dust &7(dropped in water together)"
+			]
+			icon: "ae2:certus_quartz_crystal"
+			id: "30F75583C47DEC3F"
+			rewards: [
+				{
+					id: "3B8DF2B202913ABB"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "7611585D489D2E35"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "69E659E7E7B771C6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Applied Energistics 2"
+			tasks: [
+				{
+					count: 8L
+					id: "52EDA43EB7AFD3E3"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "&dCertus Quartz"
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6369B33338F3C4EC"]
+			description: [
+				"Throw iron on the ground and blow it up. What is left is compressed iron, and everything in PneumaticCraft is built from it."
+				""
+				"&eOpens the chapter: &7PneumaticCraft"
+				"&7Made at: &fPressure Chamber &7from &fIron Ingot"
+			]
+			icon: "pneumaticcraft:ingot_iron_compressed"
+			id: "40883FC58E940BBA"
+			rewards: [
+				{
+					id: "604698EC0EC8DE38"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "1D2387F7A4E423A3"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "44ACD5BEB0B098E3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens PneumaticCraft"
+			tasks: [
+				{
+					advancement: "pneumaticcraft:root"
+					criterion: ""
+					icon: "pneumaticcraft:ingot_iron_compressed"
+					id: "4C1B06EAACA97E44"
+					title: "The First Explosion (of many?)"
+					type: "advancement"
+				}
+			]
+			title: "&7The First Explosion"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6369B33338F3C4EC"]
+			description: [
+				"Stone, redstone and a glass pane. Program it in Lua, or just use the programs it comes with."
+				""
+				"&eOpens the chapter: &bComputers"
+			]
+			icon: "computercraft:computer_normal"
+			id: "0582CCC6DC37E011"
+			rewards: [
+				{
+					id: "316DBE8F02402D18"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "5839FED028579F70"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "057E15D69C9765B6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Computers"
+			tasks: [
+				{
+					id: "116286C2C2A1F178"
+					item: "computercraft:computer_normal"
+					type: "item"
+				}
+			]
+			title: "&bA Computer"
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["00E21B5F73B637C9"]
+			description: [
+				"Brass on wood: the shell of Create's cleverer machines, and the way into its add-ons - trains, oil, engines and a jetpack."
+				""
+				"&eOpens the chapter: &aCreate: The Wider Works"
+				"&7Made from: &fany stripped logs, Brass Ingot &7(applied by hand)"
+			]
+			icon: "create:brass_casing"
+			id: "1ABE3B8BB58CD5DA"
+			rewards: [
+				{
+					id: "0CE70F474899B4DA"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "0D6917D8E72467EE"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "645F13DC4B8CA065"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Create: The Wider Works"
+			tasks: [
+				{
+					count: 4L
+					id: "06AC745DA1451973"
+					item: "create:brass_casing"
+					type: "item"
+				}
+			]
+			title: "&aBrass Casing"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["479D4A1C7A61B97C"]
+			description: [
+				"Clay, coal and lava, worked into a paste that insulates. Generators, batteries and a reactor in seven tiers."
+				""
+				"&eOpens the chapter: &dPowah"
+			]
+			icon: "powah:dielectric_paste"
+			id: "2D28BD1F19EAC719"
+			rewards: [
+				{
+					id: "3B7878EE880103D4"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "4CB8F18BD678511A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "192EC7C8E8DFA68D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Powah"
+			tasks: [
+				{
+					count: 8L
+					id: "0589A64810FB1BCA"
+					item: "powah:dielectric_paste"
+					type: "item"
+				}
+			]
+			title: "&dDielectric Paste"
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1ABE3B8BB58CD5DA"]
+			description: [
+				"Enough powder and iron for a first cannon. Create Big Cannons builds artillery from Create parts."
+				""
+				"&eOpens the chapter: &cSiegeworks"
+			]
+			icon: "createbigcannons:cannon_mount"
+			id: "61AD760F453ED88D"
+			rewards: [
+				{
+					id: "5EEED04A6C625B22"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "7C9A8E10A4AD339C"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1539A6C8D56CF0A6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Siegeworks"
+			tasks: [
+				{
+					count: 16L
+					id: "7DDA656C3DE0045A"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7F59D060F098B8F3"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+			]
+			title: "&cGunpowder"
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D28BD1F19EAC719"]
+			description: [
+				"An ore deep in the overworld, richer in the Nether and the End. Fusion crafting, energy shields, flight - and, at the end, a dragon to kill."
+				""
+				"&eOpens the chapter: &5Draconic Evolution"
+			]
+			icon: "draconicevolution:draconium_ingot"
+			id: "295CE42425413F4A"
+			rewards: [
+				{
+					id: "06BEA8C2BAD735E7"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "03B332C16470449E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "581F0799DD207595"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Opens Draconic Evolution"
+			tasks: [
+				{
+					count: 8L
+					id: "46A5BE84360FBC89"
+					item: "draconicevolution:draconium_ingot"
+					type: "item"
+				}
+			]
+			title: "&5Draconium"
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6369B33338F3C4EC"]
+			description: [
+				"Sixteen mods, one workshop. Every machine behind these doors hands over &eitems&f, &bfluids&f and &cenergy&f in the same three ways, so any of them can feed any other."
+				""
+				"This row is the glue: pipes that fit everything, the converters between the kinds of power, and what to do when one mod's output is another mod's input."
+				""
+				"&7You do not need a mod's own pipes to use its machines. Use whichever you already have."
+			]
+			icon: "pipez:universal_pipe"
+			id: "2CE822F0862AB78C"
+			rewards: [
+				{
+					id: "3C0A653BB3BFAEEB"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "248BC3DF1EC8DCBF"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "41E9B946F579FD63"
+					item: "pipez:wrench"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "79590CF7AF22845E"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "Any machine can feed any other"
+			tasks: [
+				{
+					id: "055A7E88A0E0FE3E"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lOne Workshop"
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2CE822F0862AB78C"]
+			description: [
+				"&6Pipez&f item pipes join any two blocks that hold items: a Mekanism Crusher to a Create depot, an Immersive Engineering crusher to a Storage Drawer, a furnace to a chest."
+				""
+				"A pipe only &oinserts&f at first. &eSneak and right-click&f a connection with the &6Pipez Wrench&f and that end starts to &opull&f. Right-click the pulling end to open it: filters, round-robin, redstone."
+				""
+				"Upgrades (Basic to Ultimate) go in that screen and make it faster."
+			]
+			id: "6956D5FA58022554"
+			rewards: [
+				{
+					id: "462A8BC185BAE5CC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "27B5E90240A180DB"
+					item: "pipez:basic_upgrade"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "67CFEFB607D36DDD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "419C9D4C69DCB78B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sneak-click with the wrench to pull"
+			tasks: [
+				{
+					count: 8L
+					id: "10EA3567CCFAC993"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "0E846DF13706BD9B"
+					item: "pipez:wrench"
+					type: "item"
+				}
+			]
+			title: "A Pipe That Fits Everything"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6956D5FA58022554"]
+			description: [
+				"Fluid pipes do the same for tanks: a Create fluid tank into a Mekanism machine, a PneumaticCraft refinery into an Immersive Engineering barrel, a Tinkers' smeltery drain into anything."
+				""
+				"Create's pipes, Mekanism's Mechanical Pipes and Immersive Engineering's Fluid Pipes all connect to the same tanks too."
+			]
+			id: "0D0479E813F45172"
+			rewards: [
+				{
+					id: "4910BFAB967E44F6"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "061882D1BF43310B"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0C8AD60C581DB79C"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "28156ACAD8C50DBB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Tank to tank"
+			tasks: [
+				{
+					count: 8L
+					id: "5FAE54D4D480E7D7"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Anything That Flows"
+			x: 7.25d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0D0479E813F45172"]
+			description: [
+				"Mekanism counts Joules, Immersive Engineering Flux, Powah and Applied Energistics their own units. Underneath it is one energy, &cFE&f, and every cable carries all of it."
+				""
+				"An Immersive Engineering water wheel can run a Mekanism Enrichment Chamber; a Powah reactor can charge an ME network (through an &eEnergy Acceptor&f) and a Draconic Energy Core."
+				""
+				"Wires that work everywhere: Pipez Energy Pipes, Mekanism Universal Cables, Immersive Engineering wires, Powah cables."
+			]
+			id: "4D52A133CFB35F62"
+			rewards: [
+				{
+					id: "1C7261AD4239A6F9"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 16
+					id: "2434E49EE6D48DEF"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "135533AB1701F3B1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3C32C59997AEE5F3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "FE: every cable carries it"
+			tasks: [
+				{
+					count: 8L
+					id: "767C7E7682D8C44A"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+			]
+			title: "One Kind of Electricity"
+			x: 9.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4D52A133CFB35F62"]
+			description: [
+				"Items, fluids, energy and gases through one block. Each kind has its own filters and its own pull setting on the same connection."
+				""
+				"One line of these along a row of machines replaces three."
+			]
+			id: "64BA16CC61D78996"
+			rewards: [
+				{
+					id: "0762FCD5E7E66E3D"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 2
+					id: "0B02229403405803"
+					item: "pipez:improved_upgrade"
+					type: "item"
+				}
+				{
+					id: "364D175699D2E860"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "141B396815B0F154"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "All of it, in one pipe"
+			tasks: [
+				{
+					count: 4L
+					id: "221AB6DF0C9BC517"
+					item: "pipez:universal_pipe"
+					type: "item"
+				}
+			]
+			title: "The Universal Pipe"
+			x: 11.75d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6956D5FA58022554"]
+			description: [
+				"Mekanism's hydrogen, oxygen, chlorine and the rest are neither items nor fluids. A &6Gas Pipe&f (or Mekanism's Pressurized Tube) carries them."
+				""
+				"To &ostore&f them with everything else, Applied Mekanistics puts them in the ME network: see &dApplied Energistics 2&f."
+			]
+			hide_dependency_lines: true
+			id: "024AEBC2A0706D3A"
+			optional: true
+			rewards: [
+				{
+					id: "1DBF8EA47CE3AD62"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 3
+					id: "7496547C678DA5A9"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6B839F89F8E27742"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "For Mekanism's chemicals"
+			tasks: [
+				{
+					count: 4L
+					id: "6FA275ADB7805182"
+					item: "pipez:gas_pipe"
+					type: "item"
+				}
+			]
+			title: "Gases"
+			x: 14.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2CE822F0862AB78C"]
+			description: [
+				"There is one of each metal, so every ore-doubling machine takes every ore:"
+				""
+				"&aCreate&f Crushing Wheels, &6Immersive Engineering&f's Crusher and Arc Furnace, &eTinkers'&f Smeltery and &bMekanism&f's Enrichment Chamber all take iron, gold, copper, tin, lead, osmium, uranium, silver, nickel, aluminium and zinc."
+				""
+				"&7Mekanism could not process silver, nickel, aluminium or zinc before 1.5.0, and Immersive Engineering's Crusher could not take zinc. Now they do. (Zinc comes out as Create's crushed zinc: smelt it.)"
+				"{@pagebreak}"
+				"Only Mekanism's own metals go past doubling to its x3, x4 and x5 lines. For the rest, the Enrichment Chamber's x2 is the best any machine gives."
+				""
+				"Cobalt is Tinkers' alone: melt it in the Smeltery."
+			]
+			id: "5897F2E91C01EE2D"
+			rewards: [
+				{
+					id: "2540180AED64B6A8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "22D84FE8F8C88FB6"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4D203A9500FD1C1F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Every doubler takes every metal"
+			tasks: [
+				{
+					id: "7F5990C1604FBCA7"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Any Ore, Any Machine"
+			x: 5.0d
+			y: -7.25d
+		}
+		{
+			dependencies: ["2CE822F0862AB78C"]
+			description: [
+				"Three mods drill for oil: PneumaticCraft's lakes, Immersive Petroleum's reservoirs and Create: Diesel Generators' oil chunks. It is the same crude oil."
+				""
+				"Any of the three refineries takes any of the three crudes, and the diesel, gasoline, kerosene, lubricant, ethanol, biodiesel and plant oil that come out run each other's engines."
+				""
+				"Pump it wherever you found it; refine it in whichever mod you like best."
+			]
+			id: "4E5D0BFB80B03CA0"
+			rewards: [
+				{
+					id: "03B8FC07FF25B9B6"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "5C839B7C493CFDD7"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5A58114C3A9A8199"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Three drills, one crude"
+			tasks: [
+				{
+					id: "2C0BB7EA672D92DC"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "One Oil"
+			x: 7.25d
+			y: -7.25d
+		}
+		{
+			dependencies: ["2CE822F0862AB78C"]
+			description: [
+				"Create's machines turn; everything else wants FE. The &eAlternator&f makes FE from a spinning shaft, and the &eElectric Motor&f spins a shaft from FE."
+				""
+				"So a windmill can charge a Mekanism Energy Cube, and a reactor can drive a row of Crushing Wheels. Both are in &eSparks&f."
+				"&7&fAlternator&7 - Made at: &fMechanical Crafters &7from &fCapacitor, Iron Plate x6, Iron Rod, Copper Spool x3, Andesite Alloy"
+				"&7&fElectric Motor&7 - Made at: &fMechanical Crafters &7from &fAndesite Alloy, Capacitor, Brass Plate x6, Iron Rod, Copper Spool x3"
+			]
+			hide_dependency_lines: true
+			id: "00C9F5A24A3CF1A1"
+			rewards: [
+				{
+					id: "118732EE3EE35EA6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "1E2517DE6297FA9D"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "72993CD8E553446D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "11F5D398B640CC8F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Create and the rest, joined"
+			tasks: [
+				{
+					id: "7768D834B7240760"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					id: "0CA3866E75351F2C"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+			]
+			title: "Rotation to Electricity"
+			x: 9.5d
+			y: -7.25d
+		}
+		{
+			dependencies: ["2CE822F0862AB78C"]
+			description: [
+				"PneumaticCraft runs on compressed air. The &7Flux Compressor&f makes air from FE; the &7Pneumatic Dynamo&f makes FE from air."
+				""
+				"With these, a PneumaticCraft workshop needs no coal at all once another mod makes your power."
+			]
+			hide_dependency_lines: true
+			id: "58CA512F8825E853"
+			optional: true
+			rewards: [
+				{
+					id: "50008FE860621BC9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "0B3AD0083538E4F3"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "525617D83CB86D9B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Air in, FE out"
+			tasks: [
+				{
+					id: "2C1998004BC8EB27"
+					item: "pneumaticcraft:pneumatic_dynamo"
+					type: "item"
+				}
+				{
+					id: "754ECBBA422A9EDF"
+					item: "pneumaticcraft:flux_compressor"
+					type: "item"
+				}
+			]
+			title: "Pressure to Electricity"
+			x: 11.75d
+			y: -7.25d
+		}
+		{
+			dependencies: ["2CE822F0862AB78C"]
+			description: [
+				"The ME network is the workshop's spine. A &dStorage Bus&f on a Storage Drawer, a Sophisticated chest or a Mekanism Bin makes that block part of the network. Import and Export Buses feed and empty any machine of any mod."
+				""
+				"It holds more than items: fluids, Mekanism gases (Applied Mekanistics) and Ars Nouveau source (Ars Energistique) each have their own cells."
+				""
+				"A Pattern Provider against a machine turns it into a step of an automatic recipe, whichever mod the machine is from."
+			]
+			hide_dependency_lines: true
+			id: "5A662603F87AED28"
+			rewards: [
+				{
+					id: "2FF3456AEC97AE4A"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "477B9EFCEAEF9025"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "77B636C975030810"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "268F9799779D3DE7"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "AE2 holds every mod's output"
+			tasks: [
+				{
+					id: "718733C509E0CED7"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+				{
+					id: "2DE5DD96783F850C"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+				{
+					id: "498AA20CCF61A3E2"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+			]
+			title: "One Place for Everything"
+			x: 14.0d
+			y: -7.25d
+		}
+	]
+	subtitle: ["Sixteen kinds of machinery, each behind its own door"]
+	title: "&e&lThe Workshop"
+}

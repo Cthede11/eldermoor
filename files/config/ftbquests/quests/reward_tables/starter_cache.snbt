@@ -1,0 +1,49 @@
+{
+	icon: "minecraft:chest"
+	id: "6390CD7CF1C3EF16"
+	loot_size: 1
+	order_index: 32
+	rewards: [
+		{
+			count: 6
+			item: "minecraft:iron_ingot"
+			weight: 3.0f
+		}
+		{
+			count: 16
+			item: "minecraft:coal"
+			weight: 3.0f
+		}
+		{
+			count: 12
+			item: "minecraft:bread"
+			weight: 3.0f
+		}
+		{
+			count: 6
+			item: "minecraft:leather"
+			weight: 2.0f
+		}
+		{
+			count: 24
+			item: "minecraft:arrow"
+			weight: 2.0f
+		}
+		{
+			count: 32
+			item: "minecraft:torch"
+			weight: 3.0f
+		}
+		{
+			count: 8
+			item: "minecraft:string"
+			weight: 2.0f
+		}
+		{
+			count: 3
+			item: "coinsje:iron_coin"
+			weight: 2.0f
+		}
+	]
+	title: "Settler's Cache"
+}

@@ -1,0 +1,10 @@
+{
+ "type": "forge:remove_features",
+ "biomes": {
+  "type": "forge:any"
+ },
+ "features": [
+  "butcher:butcherhouse_2",
+  "butcher:butchershouse"
+ ]
+}

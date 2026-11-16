@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 992963,
+    "separation": 35,
+    "spacing": 105,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "structory:jungle_ruin",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "exclusion_zones": [],
+    "salt": 601654390,
+    "separation": 15,
+    "spacing": 36,
+    "type": "valhelsia_structures:valhelsia_random_spread"
+  },
+  "structures": [
+    {
+      "structure": "valhelsia_structures:deep_spawner_room",
+      "weight": 1
+    }
+  ]
+}

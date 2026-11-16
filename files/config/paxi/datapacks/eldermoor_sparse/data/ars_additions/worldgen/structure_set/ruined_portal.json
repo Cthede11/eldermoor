@@ -1,0 +1,28 @@
+{
+  "forge:conditions": [
+    {
+      "config": "ruined_warp_portals_enabled",
+      "type": "ars_additions:config"
+    }
+  ],
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:ruined_portals"
+    },
+    "salt": 30981980,
+    "separation": 34,
+    "spacing": 92,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "ars_additions:ruined_portal",
+      "weight": 1
+    },
+    {
+      "structure": "ars_additions:ruined_portal_large",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 5546645,
+    "separation": 18,
+    "spacing": 45,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "legendary_monsters:warped_fungussus_nest",
+      "weight": 1
+    }
+  ]
+}

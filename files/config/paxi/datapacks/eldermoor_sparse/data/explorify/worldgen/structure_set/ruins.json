@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "frequency": 0.8,
+    "salt": 1428017473,
+    "separation": 84,
+    "spacing": 168,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "explorify:ruins",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,1004 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "harder_world"
+	group: "20F67971AC218528"
+	icon: "minecraft:wither_skeleton_skull"
+	id: "0F1DDAC1EDCFBD59"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["05F98494C7647371"]
+			description: [
+				"This world is &chard&f, and it gets harder &oas you succeed&f. It moves through four stages, shared by everyone on the server:"
+				""
+				"&fNormal&f - from the start. Already nastier than vanilla."
+				"&c&lExpert&f - the moment anyone first sets foot in the Nether, the End, the Aether or a Blue Skies realm."
+				"&5&lMaster&f - the moment the Ender Dragon dies."
+				"&6&lLegend&f - the moment the Dark Doppelganger dies."
+				"{@pagebreak}"
+				"Each stage makes monsters tougher (&c+50% health and +35% damage&f in Expert, &5+100% and +70%&f in Master, &6+150% and +100%&f in Legend), unlocks new enemies and tricks, and raises the rewards: more experience and a chance of doubled loot."
+				""
+				"There is no going back. Talk to your friends before somebody lights that portal."
+			]
+			hide_until_deps_complete: true
+			id: "453621F5B9157CAE"
+			rewards: [
+				{
+					id: "1D1CB0CC4157B085"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 4
+					id: "2CB8CFF2D3ECAA63"
+					item: "majruszsdifficulty:bandage"
+					type: "item"
+				}
+				{
+					id: "16F06285234DA9EC"
+					item: "minecraft:shield"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 250"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "47BC869C49167DD1"
+					silent: true
+					title: "+250 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Four stages. No way back."
+			tasks: [
+				{
+					id: "213BD19A97E53FA9"
+					title: "I have been warned"
+					type: "checkmark"
+				}
+			]
+			title: "&4&lEldermoor Fights Back"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["453621F5B9157CAE"]
+			description: [
+				"Blades, bites, arrows and cactus can make you &cbleed&f: damage over time that stacks and ignores armour."
+				""
+				"&6Bandages&f (cloth + paper/string - see JEI) stop it and grant Regeneration. Carry some. Armour reduces the chance."
+			]
+			id: "60FBB707248614EC"
+			rewards: [
+				{
+					id: "2905ECEB0DB98777"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 4
+					id: "7DD7AE4FBFE18337"
+					item: "majruszsdifficulty:bandage"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "69A49E3B5984646C"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "5E53A069CFD5B926"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Carry bandages"
+			tasks: [
+				{
+					count: 2L
+					id: "3D09F80001A6D654"
+					item: "majruszsdifficulty:bandage"
+					type: "item"
+				}
+			]
+			title: "Bleeding"
+			x: 2.1d
+			y: -3.63d
+		}
+		{
+			dependencies: ["60FBB707248614EC"]
+			description: ["Golden Bandages also grant bleeding immunity for a while. You can bandage friends and animals with right-click."]
+			id: "4CF1EF865B9814F9"
+			optional: true
+			rewards: [
+				{
+					id: "6E1BB79CC3423EF9"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 10
+					id: "0F8115E5E3749275"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "44E5A1C3A932EAC4"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0AA628F6099A1E84"
+					item: "majruszsdifficulty:golden_bandage"
+					type: "item"
+				}
+			]
+			title: "Field Surgeon"
+			x: 3.95d
+			y: -3.63d
+		}
+		{
+			dependencies: ["453621F5B9157CAE"]
+			description: [
+				"Creepers can spawn charged, their blasts are bigger and start fires, and some split into a swarm of tiny &aCreeperlings&f when they go off."
+				""
+				"In Expert they also explode when you hide behind a wall, and set each other off in chains."
+			]
+			id: "08EA1931CC36342E"
+			rewards: [
+				{
+					id: "3F74718A5FFD0A69"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "20391D3E9FBD78E1"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "1DCDEA7FB37FD45A"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "0BDD4D15E6E3261C"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "They brought friends"
+			tasks: [
+				{
+					entity: "majruszsdifficulty:creeperling"
+					id: "5894BFCA1B3DC575"
+					type: "kill"
+					value: 5L
+				}
+			]
+			title: "Creepers, Improved"
+			x: 2.1d
+			y: -2.12d
+		}
+		{
+			dependencies: ["453621F5B9157CAE"]
+			description: [
+				"Monsters travel in led groups: skeleton squads with an armoured captain, undead warbands, and in Expert - zombie miners underground and piglin hunting parties."
+				""
+				"Kill the leader first; it carries the good gear."
+			]
+			id: "54257C07A6DE4904"
+			rewards: [
+				{
+					id: "5BC181C6F8EEDB37"
+					type: "xp"
+					xp: 80
+				}
+				{
+					exclude_from_claim_all: true
+					id: "77693B4504B334CA"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "34C73AB857488F02"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "7B1873EA200F3203"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Leaders and sidekicks"
+			tasks: [
+				{
+					entity: "minecraft:skeleton"
+					id: "0C3F0376EC4A94F0"
+					type: "kill"
+					value: 20L
+				}
+				{
+					entity: "minecraft:zombie"
+					id: "2997501F5200889B"
+					type: "kill"
+					value: 20L
+				}
+			]
+			title: "Patrols"
+			x: 2.1d
+			y: -0.63d
+		}
+		{
+			dependencies: ["54257C07A6DE4904"]
+			description: [
+				"Some treasure chests in dungeons and strongholds are guarded: opening them wakes a suit of &5Cursed Armour&f."
+				""
+				"Beat it and it drops what it was wearing - often enchanted."
+			]
+			id: "1D75734F9338873C"
+			rewards: [
+				{
+					id: "35B22F098F734FB3"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "1B91E52A3D9DFD5E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06A4EEFF67558EB8"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "5CAC071A18C1282B"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "61316A47ED5E3A05"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "That chest was not unguarded"
+			tasks: [
+				{
+					entity: "majruszsdifficulty:cursed_armor"
+					id: "3C6B6FCE412EA481"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Cursed Armour"
+			x: 3.95d
+			y: -0.63d
+		}
+		{
+			dependencies: ["08EA1931CC36342E"]
+			description: ["A huge skeletal brute that leads the Undead Army and, from Expert, wanders the night. Its ground slam hits everything in front of it - stay behind it."]
+			id: "6519EC68956DB3E8"
+			optional: true
+			rewards: [
+				{
+					id: "150050675780E308"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "53CE35AC82EF7FB2"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "739CB314594C9A22"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "5FA0BB06B4BE31A8"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Big bones"
+			tasks: [
+				{
+					entity: "majruszsdifficulty:tank"
+					id: "17BA07010E0C0A06"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Tank"
+			x: 3.95d
+			y: -2.12d
+		}
+		{
+			dependencies: ["1D75734F9338873C"]
+			description: [
+				"Kill enough undead and they notice. One night the sky darkens, a horn sounds, and an &carmy&f marches on wherever you are standing - several waves, ending with a Tank."
+				""
+				"Survivors loot an &6Undead Army Treasure Bag&f with tattered armour and an &6Undead Battle Standard&f - which summons the next army on purpose."
+				""
+				"&7Hint: do not be standing in your colony when it happens. Or do, if your guards need the exercise."
+			]
+			id: "44C6C7BD1B54B3F5"
+			rewards: [
+				{
+					id: "7A677F1644108D16"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "7215805DF717165E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "10784875F50BF264"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 160"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "068474A05E00C060"
+					silent: true
+					title: "+160 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 160"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "0460AA7928D9C188"
+					silent: true
+					title: "+160 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 100"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "598D34389944BC0F"
+					silent: true
+					title: "+100 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "You will hear the horn"
+			tasks: [
+				{
+					advancement: "majruszsdifficulty:undead_army"
+					criterion: ""
+					icon: "majruszsdifficulty:undead_battle_standard"
+					id: "79AC30BF5524E7E4"
+					title: "Defeat an Undead Army"
+					type: "advancement"
+				}
+			]
+			title: "&cThe Undead Army"
+			x: 5.8d
+			y: -0.63d
+		}
+		{
+			dependencies: ["453621F5B9157CAE"]
+			description: [
+				"Somebody stepped through. The whole server is now in &cExpert&f."
+				""
+				"New: tougher mobs, jockeys, &6Illusioners&f, poison spiders, lightning-calling drowned, piglin parties, and the three-headed &4Cerberus&f in the Nether."
+			]
+			id: "102AAAA101D74A64"
+			rewards: [
+				{
+					id: "0224CB8213E0CF4D"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "01C09A326EF8842C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5722991365C96C0F"
+					item: "majruszsdifficulty:golden_bandage"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "48EF60EB24A3286C"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 100"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "518A4891F6A78A1E"
+					silent: true
+					title: "+100 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Triggered by the first new dimension"
+			tasks: [
+				{
+					advancement: "majruszsdifficulty:game_stage_expert"
+					criterion: ""
+					icon: "majruszsdifficulty:advancement_expert"
+					id: "6936852A914A0594"
+					title: "The world enters Expert"
+					type: "advancement"
+				}
+			]
+			title: "&c&lExpert"
+			x: 2.1d
+			y: 3.88d
+		}
+		{
+			dependencies: ["102AAAA101D74A64"]
+			description: [
+				"Roams the Nether in Expert and beyond. Fast, fireproof and it bites three times."
+				""
+				"Its fang makes the &6Infernal Sponge&f, which soaks up lava the way a sponge soaks water."
+			]
+			id: "5DC2E9E63CAFAFCA"
+			rewards: [
+				{
+					id: "7FC434BA9A1251F2"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "4BFDFFD2A506B761"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0309D7B868013D63"
+					table_id: 204473276367781652L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 160"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "52B435F86202C810"
+					silent: true
+					title: "+160 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "5D3CC90CB73B72D9"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Three heads, one bad temper"
+			tasks: [
+				{
+					entity: "majruszsdifficulty:cerberus"
+					id: "06075A1125E104F2"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "7B567F85E80E668A"
+					item: "majruszsdifficulty:cerberus_fang"
+					type: "item"
+				}
+			]
+			title: "&4Cerberus"
+			x: 3.95d
+			y: 2.37d
+		}
+		{
+			dependencies: ["102AAAA101D74A64"]
+			description: ["The lost illager. Blinds you, fills the air with copies of itself and shoots from the real one."]
+			id: "2E1CE4E3A72D7F96"
+			optional: true
+			rewards: [
+				{
+					id: "1916D80B67240EEA"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 5
+					id: "00C15DF29F8267A1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3DDA12002FE28AA2"
+					table_id: 8298031287037069412L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "66664E205BB7416E"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					entity: "majruszsdifficulty:illusioner"
+					id: "4636FE3509CEF9AD"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Illusioner"
+			x: 3.95d
+			y: 3.88d
+		}
+		{
+			dependencies: ["44C6C7BD1B54B3F5"]
+			description: [
+				"Raids, the Elder Guardian, the Warden, the Wither and the Ender Dragon now drop a personal &6Treasure Bag&f for every player who helped. Even fishing can pull one up."
+				""
+				"Bags get better with the world stage."
+			]
+			id: "0D0A19B4C7EFEAD7"
+			optional: true
+			rewards: [
+				{
+					id: "6F9F421D458255CF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "7103037EC06EC04F"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "4AE674D433BE9B5D"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6370B5F59FF02CCD"
+					title: "Got one"
+					type: "checkmark"
+				}
+			]
+			title: "Treasure Bags"
+			x: 7.9d
+			y: -0.63d
+		}
+		{
+			dependencies: ["102AAAA101D74A64"]
+			description: [
+				"The Dragon is dead and the world is furious about it. &5Master&f: +100% health and +70% damage on everything, endermen that drag you around, firework pillagers, and every earlier trick at full strength."
+				""
+				"It also opens the best loot table in the pack - and &dEnderium&f."
+			]
+			id: "12AF8E7511E6BF3C"
+			rewards: [
+				{
+					id: "050FA146B46692C6"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "3633B6A013428A02"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5706B9D8A578B9C1"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "355E40594DDDA478"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 100"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "5AF85A512384FA8E"
+					silent: true
+					title: "+100 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Triggered by the Ender Dragon's death"
+			tasks: [
+				{
+					advancement: "majruszsdifficulty:game_stage_master"
+					criterion: ""
+					icon: "majruszsdifficulty:advancement_master"
+					id: "7C0F800BBBD15EFC"
+					title: "The world enters Master"
+					type: "advancement"
+				}
+			]
+			title: "&5&lMaster"
+			x: 3.95d
+			y: 5.37d
+		}
+		{
+			dependencies: ["12AF8E7511E6BF3C"]
+			description: [
+				"In Master, &dEnderium Shards&f appear in the End's outer islands, hidden inside end stone that looks almost ordinary. An &6Enderium Shard Locator&f points the way."
+				""
+				"Shards + netherite = Enderium ingots."
+			]
+			id: "4EFD6F9F85A000D2"
+			rewards: [
+				{
+					id: "0DE6A1827A2C1009"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 4
+					id: "637580B3F6FB6B23"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 160"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "54E139312CE9D58A"
+					silent: true
+					title: "+160 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "37857E9CE76A4F69"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Only in Master"
+			tasks: [
+				{
+					advancement: "majruszsdifficulty:enderium_ingot"
+					criterion: ""
+					icon: "majruszsdifficulty:enderium_ingot"
+					id: "496B06A19C6CE8F8"
+					title: "Forge an Enderium Ingot"
+					type: "advancement"
+				}
+			]
+			title: "&dEnderium"
+			x: 5.8d
+			y: 5.37d
+		}
+		{
+			dependencies: ["4EFD6F9F85A000D2"]
+			description: [
+				"Upgrade netherite gear with an Enderium Upgrade template at a smithing table. The armour set shrugs off the void and the tools are the fastest vanilla-style tools in the pack."
+				""
+				"You earned it."
+			]
+			id: "7D4F6AB8162E8A5D"
+			rewards: [
+				{
+					id: "7451700B837FC2E8"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 2
+					id: "69AAFC9735A0FC24"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1827996A09D8E1C4"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 240"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "09B06B03F746F0C5"
+					silent: true
+					title: "+240 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 240"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "1FB2956E5B1F350D"
+					silent: true
+					title: "+240 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s defense 250"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "76A2A867FFDD7022"
+					silent: true
+					title: "+250 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "The hard-mode reward"
+			tasks: [
+				{
+					id: "08A1AFA6EF92A518"
+					item: "majruszsdifficulty:enderium_chestplate"
+					type: "item"
+				}
+				{
+					id: "59B4F87302EEE86B"
+					item: "majruszsdifficulty:enderium_sword"
+					type: "item"
+				}
+			]
+			title: "&d&lBeyond Netherite"
+			x: 7.9d
+			y: 5.37d
+		}
+		{
+			dependencies: ["453621F5B9157CAE"]
+			description: [
+				"Where you stand decides how hard a monster hits, before any stage is counted:"
+				""
+				"&fUnder open sky&f - twice the health, twice the damage."
+				"&7Caves and dungeons&f - half again of both."
+				"&cThe Nether&f - x1.75 health, x1.5 damage."
+				"&dThe End&f - x2.5 health, x2 damage."
+				"&3The Otherside&f - x3 health, x2.5 damage."
+				"{@pagebreak}"
+				"The world stage is added on top. A zombie in the End during Legend has more than six times the health of the one you met on your first night."
+				""
+				"More monsters are &echampions&f than before, too: about one in two, with the glowing ranks more common. They no longer stay out of the End."
+			]
+			id: "79BB4C0542753D61"
+			rewards: [
+				{
+					id: "2344CEC55C5D3082"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 4
+					id: "7D3ACF90DF3BFD08"
+					item: "majruszsdifficulty:bandage"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0991B92D0927A209"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "254FCB00B1B38E35"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sky, cave, Nether, End"
+			tasks: [
+				{
+					id: "705EEDDEC6890B54"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "The Further, the Worse"
+			x: 2.1d
+			y: 0.88d
+		}
+		{
+			dependencies: ["79BB4C0542753D61"]
+			description: [
+				"Every boss the quest book sends you to is scaled to the chapter that sends you there."
+				""
+				"The beasts of &aWild Legends&f have four to six times the health their mods gave them. The lords of &5Act IV&f have eight to twelve times: the Returning Knight has 5,000, the Monarch of Chaos 5,400."
+				""
+				"If a boss from an old guide dies in three hits on a video, it will not here."
+			]
+			id: "54FDD4AAD8EE9F2C"
+			optional: true
+			rewards: [
+				{
+					id: "274B9F59140AE221"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "6A44095940ECD2A2"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 35"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "271918E82948F89C"
+					silent: true
+					title: "+35 Defense experience"
+					type: "command"
+				}
+			]
+			subtitle: "No more glass bosses"
+			tasks: [
+				{
+					id: "759B0BF71BD68F8D"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Lords Keep Pace"
+			x: 3.95d
+			y: 0.88d
+		}
+		{
+			dependencies: [
+				"12AF8E7511E6BF3C"
+				"2CE1981212E382B1"
+			]
+			description: [
+				"The Dark Doppelganger is dead, and the world has one stage left to give. &6Legend&f: +150% health and +100% damage on everything, more monsters, seven creeperlings to a creeper."
+				""
+				"It pays, too: +60% experience and a 15% chance of doubled loot."
+				""
+				"This is the stage Act IV is fought in. There is nothing after it."
+			]
+			id: "47EBBB39C8611799"
+			rewards: [
+				{
+					id: "6F96109D52867F9B"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 2
+					id: "41E7AA67F91EF317"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "37E95908BA2BE983"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "458CF39661AAB6CA"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s defense 100"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "7B49FCE277875B3E"
+					silent: true
+					title: "+100 Defense experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Triggered by the Dark Doppelganger's death"
+			tasks: [
+				{
+					id: "3B73DDC47B1D102B"
+					title: "The mirror is broken"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lLegend"
+			x: 5.8d
+			y: 6.88d
+		}
+	]
+	subtitle: ["Eldermoor fights back. Read this before it does."]
+	title: "&4A Harder World"
+}

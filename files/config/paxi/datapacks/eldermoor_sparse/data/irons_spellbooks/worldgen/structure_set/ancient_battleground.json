@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1111569999,
+    "separation": 28,
+    "spacing": 80,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "irons_spellbooks:ancient_battleground",
+      "weight": 1
+    }
+  ]
+}

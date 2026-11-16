@@ -1,0 +1,1449 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tinkers"
+	group: "02AD8609A8FE6EE4"
+	icon: "tconstruct:sledge_hammer"
+	id: "6EDF1434386648DF"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5DFDD2E878D3C9DA"]
+			description: [
+				"Tinkers' Construct tools are assembled from &eparts&f, and every material gives each part different stats and a different trait. They never break for good, and they take &emodifiers&f."
+				""
+				"You were handed &6Materials and You&f when you arrived. It, and the books that follow, are the real manual."
+				""
+				"&7Tetra reshapes a tool piece by piece; Tinkers builds one from a recipe of parts and then stacks modifiers on it. Use either. Use both."
+			]
+			hide_until_deps_complete: true
+			id: "4C67A64907836382"
+			rewards: [
+				{
+					id: "77FEA6926AB8F740"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 4
+					id: "76FCAB2F3F3544D9"
+					item: "tconstruct:pattern"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1CAF6590E13731B2"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 250"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "42D9DA68DFC20D88"
+					silent: true
+					title: "+250 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "The Smith's other path"
+			tasks: [
+				{
+					id: "169E6BAE973DD79F"
+					item: "tconstruct:materials_and_you"
+					type: "item"
+				}
+			]
+			title: "&6Materials and You"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C67A64907836382"]
+			description: [
+				"&ePart Builder&f: pattern + material = part (wood, stone, flint, bone to begin)."
+				"&eTinker Station&f: parts = tool. Also where you rename, repair and modify."
+			]
+			id: "7852EAB0D34E5EFF"
+			rewards: [
+				{
+					id: "022D81C87E8F928D"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "6051AAF575C912CA"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "506C96D1754CF143"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "3AD2297BC020A0E1"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tconstruct:tools/part_builder"
+					criterion: ""
+					icon: "tconstruct:part_builder"
+					id: "1AA76D4B263420DC"
+					title: "Craft a Part Builder"
+					type: "advancement"
+				}
+				{
+					advancement: "tconstruct:tools/tinker_station"
+					criterion: ""
+					icon: "tconstruct:tinker_station"
+					id: "4081CB9171CB211B"
+					title: "Craft a Tinker Station"
+					type: "advancement"
+				}
+			]
+			title: "Part Builder \\& Station"
+			x: 1.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47CE2F8D708BD6A2"]
+			description: ["A pickaxe wants a head, a handle and a binding. Try a flint head for the damage bonus, or bone for free extra luck."]
+			id: "00BE6C43D14C0EC6"
+			rewards: [
+				{
+					id: "5A729E9683AADE3B"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 16
+					id: "3978E8771882C888"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 80"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "1436EC2DC4173E9A"
+					silent: true
+					title: "+80 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "0FC7635A7F3830E9"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Head, handle, binding"
+			tasks: [
+				{
+					advancement: "tconstruct:tools/tinker_tool"
+					criterion: ""
+					icon: "tconstruct:pickaxe"
+					id: "6921770D7A8F7EC5"
+					title: "Build a tool"
+					type: "advancement"
+				}
+			]
+			title: "Your First Tool"
+			x: 5.35d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00BE6C43D14C0EC6"]
+			description: [
+				"&eTinkers' Levelling&f: every Tinkers tool, bow, staff and armour piece earns experience as you use it, up to level 5."
+				""
+				"Each level adds a modifier slot - three upgrade slots, then an ability slot, then one more upgrade. A well-used pickaxe is worth more than a new one."
+				""
+				"The tooltip shows a tool's level and how far it is to the next. Broad tools take three times as long."
+			]
+			id: "49DB31C8C448617E"
+			rewards: [
+				{
+					id: "4535C59A8CBA8F29"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 16
+					id: "57F474D99AD7EDE6"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "6B185AD4DAF9DBD7"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Tinkers' Levelling Addon"
+			tasks: [
+				{
+					id: "347C619F5DA1F196"
+					title: "Got it"
+					type: "checkmark"
+				}
+			]
+			title: "Tools That Learn"
+			x: 7.1d
+			y: 4.31d
+		}
+		{
+			dependencies: ["00BE6C43D14C0EC6"]
+			description: ["Redstone = haste. Quartz = sharpness. Lapis = fortune. Emerald + diamond = durability. Each uses an upgrade slot; the tool's tooltip counts them."]
+			id: "7742BB6459E7F693"
+			rewards: [
+				{
+					id: "376DE2B3648CD610"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 32
+					id: "488B8E84FBC80CDD"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "77D2E66B97263D7D"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1AA7CBE39707570D"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tconstruct:tools/modified"
+					criterion: ""
+					icon: "minecraft:redstone"
+					id: "5AFC0F8AFCFB552C"
+					title: "Modify a tool"
+					type: "advancement"
+				}
+			]
+			title: "Modifiers"
+			x: 7.1d
+			y: -0.19d
+		}
+		{
+			dependencies: ["7742BB6459E7F693"]
+			description: ["Several rare items each add one slot, once per tool. The books list them."]
+			id: "7D7884A5C14C90BE"
+			optional: true
+			rewards: [
+				{
+					id: "6F33E164927DF1B4"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "0C18A759AFAD1685"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "6332D66A50210373"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tconstruct:tools/upgrade_slots"
+					criterion: ""
+					icon: "minecraft:nether_star"
+					id: "00B3CCA8CDE74E81"
+					title: "Add an extra upgrade slot"
+					type: "advancement"
+				}
+			]
+			title: "More Slots"
+			x: 8.85d
+			y: -0.19d
+		}
+		{
+			dependencies: ["00BE6C43D14C0EC6"]
+			description: [
+				"&eGrout&f (clay + sand + gravel) fires into Seared Brick. A &6Melter&f on a &6Heater&f melts ore into molten metal - a third more than a furnace gives (4 ingots from 3 raw ore)."
+				""
+				"Add a Faucet, and a Casting Table or Basin underneath."
+			]
+			id: "2868622E61D803E3"
+			rewards: [
+				{
+					id: "5EC0CB0C8D43A077"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "1DCEB3F3CBB25918"
+					item: "tconstruct:grout"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "0327B862461AC2CA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "2338C89A9DE1AF13"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Molten metal"
+			tasks: [
+				{
+					advancement: "tconstruct:smeltery/melter"
+					criterion: ""
+					icon: "tconstruct:seared_melter"
+					id: "4B2AD2E0972DD003"
+					title: "Build a Melter"
+					type: "advancement"
+				}
+				{
+					id: "20AB328E8EE8BCD1"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+			]
+			title: "The Melter"
+			x: 7.1d
+			y: -1.56d
+		}
+		{
+			dependencies: ["2868622E61D803E3"]
+			description: ["Press a part into sand for a one-use cast, or pour gold around it for a permanent one. Metal parts are cast, not carved."]
+			id: "3EF2D076115041C0"
+			rewards: [
+				{
+					id: "788CBBE823131AB9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "76FD24966715C0D8"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6B76F6A7DCB62768"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "77C394F892A16307"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tconstruct:smeltery/sand_casting"
+					criterion: ""
+					icon: "tconstruct:seared_table"
+					id: "5911751942E091F8"
+					title: "Make a sand cast"
+					type: "advancement"
+				}
+				{
+					advancement: "tconstruct:smeltery/gold_casting"
+					criterion: ""
+					icon: "minecraft:gold_ingot"
+					id: "5AB5608C3CCFDBB4"
+					title: "Make a gold cast"
+					type: "advancement"
+				}
+			]
+			title: "Casts"
+			x: 8.85d
+			y: -2.94d
+		}
+		{
+			dependencies: ["4A08800A7F734E63"]
+			description: [
+				"A hollow box of seared blocks with a Controller, a fuel Tank and Drains. Melts whole stacks at the same bonus as the Melter (4 ingots from 3 raw ore) - and &ealloys&f whatever liquids share the tank."
+				""
+				"&7Mind the contents: molten iron + lava-fed anything can make you an alloy you did not order."
+			]
+			id: "7E534A4378D7C75A"
+			rewards: [
+				{
+					id: "7663BCD337EF4A93"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 32
+					id: "51E3744BFE0427CB"
+					item: "tconstruct:seared_brick"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3E4E3FC27B787B9E"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					count: 4
+					id: "089493583BD244DF"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "30274C4C8BD15402"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "A multiblock furnace"
+			tasks: [
+				{
+					advancement: "tconstruct:smeltery/structure"
+					criterion: ""
+					icon: "tconstruct:smeltery_controller"
+					id: "45F8A142D841667E"
+					title: "Build a Smeltery"
+					type: "advancement"
+				}
+			]
+			title: "&6The Smeltery"
+			x: 10.6d
+			y: -1.56d
+		}
+		{
+			dependencies: ["7E534A4378D7C75A"]
+			description: [
+				"&bSlimesteel&f (iron + slime + seared stone) - regenerating durability."
+				"&dAmethyst Bronze&f (copper + amethyst) - bonus damage with full health."
+				"&cRose Gold&f (copper + gold) - more modifier-friendly."
+			]
+			id: "57589A8F175D6195"
+			rewards: [
+				{
+					id: "0472D84E217D4122"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "717477EA02A56644"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "2092878F457F943E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "3DB8C1B78BC7E05B"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5F23A610FEDA86ED"
+					item: "tconstruct:slimesteel_ingot"
+					type: "item"
+				}
+				{
+					id: "4591B26F68942EDE"
+					item: "tconstruct:amethyst_bronze_ingot"
+					type: "item"
+				}
+				{
+					id: "794CE6435FFCA297"
+					item: "tconstruct:rose_gold_ingot"
+					type: "item"
+				}
+			]
+			title: "First Alloys"
+			x: 12.35d
+			y: -2.94d
+		}
+		{
+			dependencies: ["7E534A4378D7C75A"]
+			description: ["The upgraded Tinker Station. Needed for &ebroad tools&f - the big four-part ones."]
+			id: "25816E9517D6F6A9"
+			rewards: [
+				{
+					id: "4D86802ACF56F9E0"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "15E3A4270445F67D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 80"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "7EA7D7261245FEC6"
+					silent: true
+					title: "+80 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "23DF555B3FE7EA09"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Unlocks broad tools"
+			tasks: [
+				{
+					advancement: "tconstruct:smeltery/tinkers_anvil"
+					criterion: ""
+					icon: "tconstruct:tinkers_anvil"
+					id: "4A9A884BA1EF6624"
+					title: "Craft a Tinker's Anvil"
+					type: "advancement"
+				}
+			]
+			title: "Tinker's Anvil"
+			x: 12.35d
+			y: -1.56d
+		}
+		{
+			dependencies: ["25816E9517D6F6A9"]
+			description: ["&eSledge Hammer&f 3x3 mining. &eVein Hammer&f whole ore veins. &eExcavator&f 3x3 digging. &eBroad Axe&f whole trees. &eCleaver&f heads will roll. &eScythe&f fields in a swing."]
+			id: "4CABE7953441E666"
+			rewards: [
+				{
+					id: "6F7DD1647F73CC1C"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 4
+					id: "7B93F23FAF64836D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A9249806CD6FE8D"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s mining 80"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "7C667419DB953FA5"
+					silent: true
+					title: "+80 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "760A5B631A33E8CA"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "3x3 and beyond"
+			tasks: [
+				{
+					advancement: "tconstruct:smeltery/tool_forge"
+					criterion: ""
+					icon: "tconstruct:sledge_hammer"
+					id: "0422B72BD4FE5688"
+					title: "Build a broad tool"
+					type: "advancement"
+				}
+			]
+			title: "Broad Tools"
+			x: 14.1d
+			y: -2.94d
+		}
+		{
+			dependencies: ["25816E9517D6F6A9"]
+			description: ["Ability slots hold the big ones: silky, autosmelt, luck, expanded (bigger area), glowing, melting, and unbreakable."]
+			id: "0768B7EFE4340316"
+			optional: true
+			rewards: [
+				{
+					id: "191FD6371A1CA981"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "3C7722E06DD05B07"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "36F938B059E46BBB"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tconstruct:smeltery/abilities"
+					criterion: ""
+					icon: "minecraft:glowstone"
+					id: "13E06262EF78C4BE"
+					title: "Add an ability modifier"
+					type: "advancement"
+				}
+			]
+			title: "Abilities"
+			x: 14.1d
+			y: -1.44d
+		}
+		{
+			dependencies: ["00BE6C43D14C0EC6"]
+			description: ["Islands of slimy grass float over oceans, the sky, the Nether's lava and the End. Each grows a different slime - and each slime makes different gear."]
+			id: "6A0AE33BD4FC5E54"
+			rewards: [
+				{
+					id: "764763DF4AB5AFBE"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 16
+					id: "5BA27832A171C841"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 80"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "5BBBD4862FD84B29"
+					silent: true
+					title: "+80 Exploration experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "31BC7A878391BD84"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Look up. And out to sea."
+			tasks: [
+				{
+					advancement: "tconstruct:world/earth_island"
+					criterion: ""
+					icon: "minecraft:slime_ball"
+					id: "133B8D2601708AD0"
+					title: "Find an earthslime island"
+					type: "advancement"
+				}
+			]
+			title: "Slime Islands"
+			x: 7.1d
+			y: 2.81d
+		}
+		{
+			dependencies: ["6A0AE33BD4FC5E54"]
+			description: ["&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."]
+			id: "25166675196AEC57"
+			optional: true
+			rewards: [
+				{
+					id: "0B2EB602AD4B07C2"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 3
+					id: "14E1D10437CA2442"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "44B1A101E28A6B22"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tconstruct:world/sky_island"
+					criterion: ""
+					icon: "tconstruct:sky_staff"
+					id: "2201E757D128DD1E"
+					title: "Find a skyslime island"
+					type: "advancement"
+				}
+			]
+			title: "Sky Islands"
+			x: 8.85d
+			y: 2.81d
+		}
+		{
+			dependencies: ["6A0AE33BD4FC5E54"]
+			description: [
+				"Slime skull, wings, shell and boots: bounce, glide and carry mobs on your head. Each slime type changes the bonus."
+				"&7Made at: &fCasting Basin &7from &fRabbit's Foot"
+			]
+			id: "0332BEA7D8030810"
+			optional: true
+			rewards: [
+				{
+					id: "09BCC3F6B9939FB0"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 4
+					id: "5D55189BA34B56C6"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 80"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6B271C763C0B39A5"
+					silent: true
+					title: "+80 Exploration experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "2077623037E33081"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tconstruct:world/slimesuit"
+					criterion: ""
+					icon: "tconstruct:slime_helmet"
+					id: "78F5A3FEF26A82BB"
+					title: "Wear a full Slimesuit"
+					type: "advancement"
+				}
+			]
+			title: "Slimesuit"
+			x: 8.85d
+			y: 4.31d
+		}
+		{
+			dependencies: ["25816E9517D6F6A9"]
+			description: ["&eTraveler's Gear&f is light and utility-minded. &ePlate Armour&f is cast from metal and built to take hits. Both accept defence modifiers and abilities."]
+			id: "5D22744FCFA95637"
+			rewards: [
+				{
+					id: "20A29B098F3A9B4E"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "5C6FFA1DD64E5CA6"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 160"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "14EFD921C193A5DC"
+					silent: true
+					title: "+160 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "6C2F4EE7BF4DF73C"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Traveler's and Plate"
+			tasks: [
+				{
+					advancement: "tconstruct:tools/travelers_gear"
+					criterion: ""
+					icon: "tconstruct:travelers_chestplate"
+					id: "57B8D8D3727DC715"
+					title: "Craft Traveler's Gear"
+					type: "advancement"
+				}
+				{
+					advancement: "tconstruct:foundry/plate_armor"
+					criterion: ""
+					icon: "tconstruct:plate_chestplate"
+					id: "612950F0C4D921B9"
+					title: "Craft Plate Armor"
+					type: "advancement"
+				}
+			]
+			title: "Armour That Takes Modifiers"
+			x: 14.1d
+			y: 0.06d
+		}
+		{
+			dependencies: ["611C2EC92478C914"]
+			description: [
+				"The Nether-tier smeltery, built from &eScorched&f bricks (grout with soul sand). It does not alloy by accident, and instead of bonus metal it gives a &ebyproduct&f - a little of a second metal from every ore."
+				""
+				"Alloying moves to the dedicated &6Alloyer&f."
+			]
+			id: "3F180DC4A15CEF0B"
+			rewards: [
+				{
+					id: "0D628E08B85482C3"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "29ADCCB4D57E6D8F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06580B333707F698"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "4A93F86B4F9C1DF3"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Scorched, not seared"
+			tasks: [
+				{
+					advancement: "tconstruct:foundry/structure"
+					criterion: ""
+					icon: "tconstruct:foundry_controller"
+					id: "2AA0D4982C2F6A1C"
+					title: "Build a Foundry"
+					type: "advancement"
+				}
+			]
+			title: "&6The Foundry"
+			x: 17.6d
+			y: -2.94d
+		}
+		{
+			dependencies: ["3F180DC4A15CEF0B"]
+			description: [
+				"An alloyer, a fuel tank, tanks for the metals going in, a faucet, and a casting table and basin for what comes out."
+				"It mixes molten metals without a full smeltery: bronze, rose gold, and the alloys the better tools need."
+			]
+			id: "04E3292606090EEA"
+			rewards: [
+				{
+					id: "15B64E5569A75EDE"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "6873A0D6B16F3921"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "2679E4AC6D53045D"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Build a basic alloying setup."
+			tasks: [
+				{
+					advancement: "tconstruct:foundry/alloyer"
+					criterion: ""
+					icon: "tconstruct:scorched_alloyer"
+					id: "59BA6DFA21388E5B"
+					title: "Build an Alloyer"
+					type: "advancement"
+				}
+			]
+			title: "The Alloyer"
+			x: 19.35d
+			y: -4.44d
+		}
+		{
+			dependencies: ["3F180DC4A15CEF0B"]
+			id: "4764496DE330914B"
+			optional: true
+			rewards: [
+				{
+					id: "182C5647C893A329"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "76DD711A9FDC6A49"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "669ACE03D728FF27"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Melt blazes (yes) for a fuel hot enough for the top-tier metals."
+			tasks: [
+				{
+					advancement: "tconstruct:foundry/blaze"
+					criterion: ""
+					icon: "minecraft:blaze_rod"
+					id: "68D9BE42FFD4254F"
+					title: "Fuel a foundry with blazing blood"
+					type: "advancement"
+				}
+			]
+			title: "Blazing Blood"
+			x: 19.35d
+			y: -1.44d
+		}
+		{
+			dependencies: ["3F180DC4A15CEF0B"]
+			description: [
+				"Blue ore in the Nether. Fast and light - and the base of the endgame alloys."
+				"&7Made at: &fCasting Table &7from &fIngot Cast"
+			]
+			id: "1F2EC1D903E00FCB"
+			rewards: [
+				{
+					id: "60BEC24E368E5AB5"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "5863B741A5EEC4DF"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 80"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "37954B3BB8C974C2"
+					silent: true
+					title: "+80 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "3D6B9CA58CC5BCDC"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "167E8D1C85F77670"
+					item: "tconstruct:cobalt_ingot"
+					type: "item"
+				}
+			]
+			title: "Cobalt"
+			x: 19.35d
+			y: -2.94d
+		}
+		{
+			dependencies: [
+				"1F2EC1D903E00FCB"
+				"04E3292606090EEA"
+			]
+			description: [
+				"&5Manyullyn&f (cobalt + netherite scrap) - raw damage."
+				"&8Hepatizon&f (copper + cobalt + obsidian) - speed and reach."
+				"&aQueen's Slime&f (cobalt + gold + magma) - durability that feeds on overheal."
+			]
+			id: "55A29B6E530DF86D"
+			rewards: [
+				{
+					id: "14ADCEA2A205265B"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 3
+					id: "5D1908B8BEDFE208"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46329B1D4BB61BE9"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "73F8A6A1D43663F2"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Tier four"
+			tasks: [
+				{
+					id: "630D8BF492FC2F6B"
+					item: "tconstruct:manyullyn_ingot"
+					type: "item"
+				}
+				{
+					id: "33F56677E012FF4D"
+					item: "tconstruct:hepatizon_ingot"
+					type: "item"
+				}
+				{
+					id: "0431351BF0AE1EB6"
+					item: "tconstruct:queens_slime_ingot"
+					type: "item"
+				}
+			]
+			title: "Manyullyn, Hepatizon, Queen's Slime"
+			x: 21.1d
+			y: -2.94d
+		}
+		{
+			dependencies: ["55A29B6E530DF86D"]
+			description: ["A head of a netherite-tier material, or the netherite modifier on a tool you already love, mines everything there is."]
+			id: "78D631D8530C14E1"
+			rewards: [
+				{
+					id: "42D8D907D06EB4B8"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "1FCD0FFA62990D57"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s mining 160"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "288F23AF90695B49"
+					silent: true
+					title: "+160 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "04ABB297AA7F8065"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make a tool with the netherite mining tier."
+			tasks: [
+				{
+					advancement: "tconstruct:tools/netherite_tier"
+					criterion: ""
+					icon: "minecraft:netherite_ingot"
+					id: "5F12AF3E9DD682E7"
+					title: "Upgrade a tool to netherite tier"
+					type: "advancement"
+				}
+			]
+			title: "Netherite Tier"
+			x: 22.85d
+			y: -2.94d
+		}
+		{
+			dependencies: ["00BE6C43D14C0EC6"]
+			description: ["War picks, battlesigns, melting pans, swashers... strange tools that can not be crafted, only found in structure chests - then repaired and modified like any other."]
+			id: "10A1A4C31A9E534E"
+			optional: true
+			rewards: [
+				{
+					id: "383726DE87BD7C87"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "7A4C064623BECF28"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "188B59B90BAF8D13"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Loot only"
+			tasks: [
+				{
+					advancement: "tconstruct:world/ancient_tools"
+					criterion: ""
+					icon: "tconstruct:war_pick"
+					id: "72ECBFB6014C85BF"
+					title: "Find an ancient tool"
+					type: "advancement"
+				}
+			]
+			title: "Ancient Tools"
+			x: 7.1d
+			y: 1.31d
+		}
+		{
+			dependencies: ["78D631D8530C14E1"]
+			description: ["Build a tool part from every material in the books."]
+			id: "7B8F7CAE6CEABA0A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7F08344975810B0B"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					count: 4
+					id: "694B506D58311089"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "5F7041E28EF846A0"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/mastery xp @s mining 240"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "670E1C5FFB9A5608"
+					silent: true
+					title: "+240 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s forging 250"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "6474ECEB6E25DD87"
+					silent: true
+					title: "+250 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					advancement: "tconstruct:tools/material_master"
+					criterion: ""
+					icon: "tconstruct:tinkers_anvil"
+					id: "57953C75098AAC33"
+					title: "Use every kind of material"
+					type: "advancement"
+				}
+			]
+			title: "&e&lMaster Tinker"
+			x: 24.83d
+			y: -2.94d
+		}
+		{
+			dependencies: ["7852EAB0D34E5EFF"]
+			description: ["A blank pattern in the part builder turns wood, stone, flint or bone into a tool part."]
+			id: "47CE2F8D708BD6A2"
+			rewards: [
+				{
+					id: "71A072FD57EBD362"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "00D0A5C925F5B492"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1985443B3C98823D"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5D279579D38D6376"
+					item: "tconstruct:pattern"
+					type: "item"
+				}
+			]
+			title: "Patterns"
+			x: 3.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2868622E61D803E3"]
+			description: [
+				"Grout, cooked. Build a box of them with the controller in one wall."
+				"&7&fSeared Bricks&7 - Made at: &fCasting Basin &7from &fStone Bricks"
+				"&7&fSmeltery Controller&7 - Made at: &fCasting Basin &7from &fany smeltery bricks"
+			]
+			id: "4A08800A7F734E63"
+			rewards: [
+				{
+					id: "0EE67192858EE9DE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1A4EF142A228B79D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "71FB18E5AAD8585D"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 24L
+					id: "07878555BEE33014"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+				{
+					id: "0EC429A59FBCDE96"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+			]
+			title: "Seared Bricks"
+			x: 8.85d
+			y: -1.56d
+		}
+		{
+			dependencies: ["4CABE7953441E666"]
+			description: [
+				"&7&fScorched Bricks&7 - Made at: &fStonecutter &7from &fany scorched blocks, Scorched Bricks"
+				"&7&fFoundry Controller&7 - Made at: &fCasting Basin &7from &fany foundry bricks"
+			]
+			id: "611C2EC92478C914"
+			rewards: [
+				{
+					id: "3C6E363AD9BC77B9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5AEF4C18656B38A2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "47D7838ADD891100"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Nether grout this time: magma cream, soul sand and gravel."
+			tasks: [
+				{
+					count: 24L
+					id: "06E80206C2B08A6F"
+					item: "tconstruct:scorched_bricks"
+					type: "item"
+				}
+				{
+					id: "76E7843B10AC0D26"
+					item: "tconstruct:foundry_controller"
+					type: "item"
+				}
+			]
+			title: "Scorched Bricks"
+			x: 15.85d
+			y: -2.94d
+		}
+		{
+			dependencies: ["4A08800A7F734E63"]
+			description: ["Fixed to a smeltery drain or tank, it pours the molten metal out into a casting table or basin below."]
+			id: "22230BCCBB3849BA"
+			optional: true
+			rewards: [
+				{
+					id: "158BC7F44817B581"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "23346087940D0ACF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "2653FF0B68F10A9E"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pour from the smeltery"
+			tasks: [
+				{
+					id: "4C5D7BEDA822E00D"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+			]
+			title: "The Seared Faucet"
+			x: 10.6d
+			y: 0.06d
+		}
+	]
+	subtitle: ["Build tools from parts. Melt everything else."]
+	title: "&eTinkers' Construct"
+}

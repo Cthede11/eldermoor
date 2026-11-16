@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 93781234,
+    "separation": 18,
+    "spacing": 45,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "legendary_monsters:skeletosaurus_nest",
+      "weight": 1
+    }
+  ]
+}

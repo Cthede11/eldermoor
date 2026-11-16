@@ -1,0 +1,47 @@
+{
+  "schema_version": "2",
+  "failed_reloads_per_session": 5,
+  "default_packs": [
+    "vanilla",
+    "mod_resources",
+    "Moonlight Mods Dynamic Assets",
+    "builtin/aether_tips",
+    "builtin/builtin_resource_packs/legacy_dead_king_resource_pack",
+    "LoE_resources_1.zip",
+    "loeresources"
+  ],
+  "pack_overrides": {
+    "1": [
+      "vanilla",
+      "mod_resources",
+      "Moonlight Mods Dynamic Assets",
+      "builtin/aether_tips",
+      "builtin/builtin_resource_packs/legacy_dead_king_resource_pack",
+      "LoE_resources_1.zip",
+      "loeresources"
+    ],
+    "2": [
+      "high_contrast",
+      "programmer_art",
+      "white_icons",
+      "supplementaries:darker_ropes",
+      "file/Quark Programmer Art.zip",
+      "create:legacy_copper",
+      "classic_icons",
+      "builtin/aether_tooltips",
+      "builtin/aether_colorblind",
+      "builtin/aether_b173_art",
+      "builtin/aether_125_art",
+      "blue_skies:legacy_pack",
+      "black_icons"
+    ],
+    "$$1": {
+      "required": true,
+      "fixed_position": true,
+      "force_compatible": true
+    },
+    "$$2": {
+      "hidden": true
+    }
+  }
+}

@@ -1,0 +1,1238 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "home"
+	group: "478F493742D3F387"
+	icon: "minecraft:red_bed"
+	id: "297D0608B71C327F"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["63D583F00BADD799"]
+			description: [
+				"You will spend more time at home than anywhere else. It may as well work properly and look good doing it."
+				""
+				"Four rows: staying safe, the workshop corner, furniture, and the finishing touches."
+			]
+			hide_until_deps_complete: true
+			id: "2803A5163716A6D6"
+			rewards: [
+				{
+					id: "6C0742A6E96DBAD9"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 9
+					id: "39F8A86C09A70DFE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "310C35BEB143268E"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 250"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "065B05F54A0981A8"
+					silent: true
+					title: "+250 Building experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2B5A60CD457F66B4"
+					title: "Home sweet home"
+					type: "checkmark"
+				}
+			]
+			title: "&a&lA Place of Your Own"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2803A5163716A6D6"]
+			description: [
+				"Open the claim map from the buttons at the top-left of your inventory and drag over your base. Claimed chunks cannot be griefed or blown up."
+				""
+				"Force-loading a claimed chunk keeps machines and farms running while you are away."
+			]
+			icon: "minecraft:oak_fence"
+			id: "3FC8889351B59E07"
+			rewards: [
+				{
+					id: "11A4201EE9B8FB05"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "66D6BB1983A24B27"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "0E97AB451186EC04"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5AC5A775CE902D47"
+					title: "Claimed"
+					type: "checkmark"
+				}
+			]
+			title: "Stake a Claim"
+			x: 2.1d
+			y: -4.81d
+		}
+		{
+			dependencies: ["3FC8889351B59E07"]
+			id: "58FBB9F766E6F5A4"
+			rewards: [
+				{
+					id: "440A626462409525"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "65BE5D72A734472F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "20EA7449529B5F66"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Place one at your door and name it."
+			tasks: [
+				{
+					id: "51BC750ACC52AE0D"
+					item: "waystones:waystone"
+					type: "item"
+				}
+			]
+			title: "The Way Home"
+			x: 3.85d
+			y: -4.81d
+		}
+		{
+			dependencies: ["25690CA5FF3F8E7C"]
+			description: ["A Magnum Torch stops monsters appearing in a wide area around it. Emerald and amethyst versions do the same for animals and water creatures."]
+			id: "50681BE6C7D1A477"
+			rewards: [
+				{
+					id: "1B497E9A7EF5F30A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "115AE4EE4B289829"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "1D9F22C7016EADA3"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "540796E6EAFB368D"
+					item: "magnumtorch:diamond_magnum_torch"
+					type: "item"
+				}
+			]
+			title: "No Monsters Here"
+			x: 7.35d
+			y: -4.81d
+		}
+		{
+			dependencies: ["50681BE6C7D1A477"]
+			id: "4EDEE2498B4B407A"
+			rewards: [
+				{
+					id: "5F1A44A12A09B6FF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "751B54ECBFCE77F9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "7C61B3FDB3F42D48"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sleeps the night away without moving your respawn point."
+			tasks: [
+				{
+					id: "474AE45FB63AAE3E"
+					item: "valhelsia_structures:white_sleeping_bag"
+					type: "item"
+				}
+			]
+			title: "For the Road"
+			x: 9.1d
+			y: -4.81d
+		}
+		{
+			dependencies: ["15A605E93C642C71"]
+			id: "1BEE7D06F46A6939"
+			rewards: [
+				{
+					id: "6A41F6840AC118EE"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "1D4F580914527172"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0307D57AAB96A039"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s building 100"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "1FFC17596BB5ECD2"
+					silent: true
+					title: "+100 Building experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Obsidian and an Eye of Ender."
+			tasks: [
+				{
+					id: "2CF6FF593C715D52"
+					item: "minecraft:ender_chest"
+					type: "item"
+				}
+			]
+			title: "The Same Chest, Everywhere"
+			x: 12.7d
+			y: -4.81d
+		}
+		{
+			dependencies: ["2803A5163716A6D6"]
+			id: "0F5C3F1766FE3AA3"
+			rewards: [
+				{
+					id: "696D06AD79DAB2D5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6259B58F90264EA8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "2043EE74D25F4D98"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Repair, upgrade, and scrub off bad enchantments."
+			tasks: [
+				{
+					id: "5CE544643CC21693"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+				{
+					id: "48DACE65E137A004"
+					item: "minecraft:smithing_table"
+					type: "item"
+				}
+				{
+					id: "30D88165CF5AB82E"
+					item: "minecraft:grindstone"
+					type: "item"
+				}
+			]
+			title: "The Workshop Corner"
+			x: 2.1d
+			y: -3.06d
+		}
+		{
+			dependencies: ["0F5C3F1766FE3AA3"]
+			description: ["One block in, exactly the shape you wanted out. The woodcutter does for planks what the stonecutter does for stone."]
+			id: "45926C0BAF0A9FFE"
+			rewards: [
+				{
+					id: "49186790A990C72B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5564B2454C6F7A77"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "2198B14348C6C33F"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "25B821E26904F658"
+					item: "minecraft:stonecutter"
+					type: "item"
+				}
+				{
+					id: "14DB41BAFB5B9E7D"
+					item: "corail_woodcutter:oak_woodcutter"
+					type: "item"
+				}
+			]
+			title: "Cutters"
+			x: 3.85d
+			y: -3.06d
+		}
+		{
+			dependencies: ["45926C0BAF0A9FFE"]
+			description: ["Makes framed blocks, shingles and panels out of any two materials. It is also what colony buildings are made of."]
+			id: "7F1D6D747FD78D65"
+			rewards: [
+				{
+					id: "390264B24025BC0E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "15C098CD8AC86059"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "68352C08CFF1FB0E"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3DC40BCC0CC40442"
+					item: "domum_ornamentum:architectscutter"
+					type: "item"
+				}
+			]
+			title: "The Architect's Cutter"
+			x: 5.6d
+			y: -3.06d
+		}
+		{
+			dependencies: ["7F1D6D747FD78D65"]
+			description: ["Thousands of variants of ordinary blocks. Put a block in, pick a pattern."]
+			id: "7E4F6442FD77F300"
+			rewards: [
+				{
+					id: "7E00E0A315318C41"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "46232383154E492C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "1072BC20658F2D93"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1FD9D23341DB3453"
+					item: "chipped:carpenters_table"
+					type: "item"
+				}
+				{
+					id: "0C14B9AEB8364AB6"
+					item: "chipped:mason_table"
+					type: "item"
+				}
+			]
+			title: "Chipped Benches"
+			x: 7.35d
+			y: -3.06d
+		}
+		{
+			dependencies: ["36742B9E16CC4DA3"]
+			description: ["Fifteen shelves for a full table. Enchanting anything feeds your Magic tree and opens the way to the Twilight Forest."]
+			icon: "minecraft:bookshelf"
+			id: "7FCB71E0A6EE51A7"
+			rewards: [
+				{
+					id: "3C2F5554A2C3805D"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "507BD344B41F9D1D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "68236F9FF0004CE3"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s building 100"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "35A337004A49BE25"
+					silent: true
+					title: "+100 Building experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7237BEFBC2BFE4B3"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "2D8590C1BC019B4E"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "forge:bookshelves" } }
+					title: "15 bookshelves"
+					type: "item"
+				}
+			]
+			title: "The Library"
+			x: 12.7d
+			y: -3.06d
+		}
+		{
+			dependencies: ["2803A5163716A6D6"]
+			description: ["Handcrafted furniture comes in every wood. You can actually sit on it."]
+			id: "5ED8E8134BE682AF"
+			rewards: [
+				{
+					id: "1900BD24AAD23918"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "03754CB8D5A44C34"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "3FE745DA52B68DE6"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0EE2884B4FF15468"
+					item: "handcrafted:oak_chair"
+					type: "item"
+				}
+				{
+					id: "2E267B172E51C1F1"
+					item: "handcrafted:oak_table"
+					type: "item"
+				}
+			]
+			title: "Somewhere to Sit"
+			x: 2.1d
+			y: -1.31d
+		}
+		{
+			dependencies: ["5ED8E8134BE682AF"]
+			id: "05FC4A285A521EC6"
+			rewards: [
+				{
+					id: "1394244DB3DA4864"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "362F7DB2DC825A4C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "79BE938426D331D9"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Change the sheets with a dyed sheet item."
+			tasks: [
+				{
+					id: "4A6BCBD3EE08D6F7"
+					item: "handcrafted:oak_fancy_bed"
+					type: "item"
+				}
+			]
+			title: "A Proper Bed"
+			x: 3.85d
+			y: -1.31d
+		}
+		{
+			dependencies: ["05FC4A285A521EC6"]
+			description: [
+				"&7&fOak Wardrobe&7 - Made from: &fOak Log x8, Cabinet Door"
+				"&7&fOak Shelf&7 - Made from: &fOak Planks x2, Oak Slab x6, any chests"
+			]
+			id: "306C83CE69FF0578"
+			rewards: [
+				{
+					id: "15033AFE27A5DCED"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "50D573D419D887ED"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "6CC2FDF29136170F"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Macaw's furniture holds items too."
+			tasks: [
+				{
+					id: "1332B53FDB05B3A3"
+					item: "mcwfurnitures:oak_wardrobe"
+					type: "item"
+				}
+				{
+					id: "14AD6B5DEF98AC57"
+					item: "handcrafted:oak_shelf"
+					type: "item"
+				}
+			]
+			title: "Storage that Looks Like Furniture"
+			x: 5.6d
+			y: -1.31d
+		}
+		{
+			dependencies: ["306C83CE69FF0578"]
+			id: "49891D2D10D22819"
+			rewards: [
+				{
+					id: "71EE9D363CC8B470"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "04BF09A00216A7A0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "00F89861CE6D11E3"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Shutters, blinds, barn doors, garage doors."
+			tasks: [
+				{
+					count: 4L
+					id: "18335731152CC03B"
+					item: "mcwwindows:oak_window"
+					type: "item"
+				}
+				{
+					id: "448FF9E90943D500"
+					item: "mcwdoors:oak_barn_door"
+					type: "item"
+				}
+			]
+			title: "Doors and Windows"
+			x: 7.35d
+			y: -1.31d
+		}
+		{
+			dependencies: ["49891D2D10D22819"]
+			id: "42D70781045F9CC1"
+			rewards: [
+				{
+					id: "00CB96D151460FB3"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "388EE95955B9FE06"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A85372B1C0E9A2D"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s building 100"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "068125307E925AB6"
+					silent: true
+					title: "+100 Building experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Timber framing, braziers and chandeliers."
+			tasks: [
+				{
+					count: 8L
+					id: "13FFFF962B847DB8"
+					item: "decorative_blocks:oak_beam"
+					type: "item"
+				}
+				{
+					id: "483313D4A6F97C96"
+					item: "decorative_blocks:chandelier"
+					type: "item"
+				}
+			]
+			title: "Beams and Light"
+			x: 12.7d
+			y: -1.31d
+		}
+		{
+			dependencies: ["2803A5163716A6D6"]
+			description: ["Jars show what is inside them. A sack is a small bag you can place."]
+			id: "6DDD5FAA38302BBA"
+			rewards: [
+				{
+					id: "29DBBC5F8F095A22"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "19F786CBCFE57FE2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "423BE39243A2816C"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "662B470E52830B71"
+					item: "supplementaries:jar"
+					type: "item"
+				}
+				{
+					id: "059D117DCFE14D09"
+					item: "supplementaries:sack"
+					type: "item"
+				}
+			]
+			title: "Jars and Sacks"
+			x: 2.1d
+			y: 3.56d
+		}
+		{
+			dependencies: ["6DDD5FAA38302BBA"]
+			description: ["Only its owner can open it, and it keeps its contents when broken."]
+			id: "009086C130F62BA6"
+			rewards: [
+				{
+					id: "6E51A59A7BB75E5B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "088C5998E47751CB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "3D0E30B04B26A1E1"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5391943BD0F9DFE2"
+					item: "supplementaries:safe"
+					type: "item"
+				}
+			]
+			title: "A Safe"
+			x: 3.85d
+			y: 2.19d
+		}
+		{
+			dependencies: ["009086C130F62BA6"]
+			id: "4676440368634FFD"
+			rewards: [
+				{
+					id: "319057FA55E70D79"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4E5AA7F762C7D24B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "13EAC841996F79B9"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pin a book or a map to it for the whole party."
+			tasks: [
+				{
+					id: "265A6D1970FA744C"
+					item: "supplementaries:notice_board"
+					type: "item"
+				}
+				{
+					id: "1AFA53CC3781473A"
+					item: "supplementaries:clock_block"
+					type: "item"
+				}
+			]
+			title: "Notice Board"
+			x: 5.6d
+			y: 0.69d
+		}
+		{
+			dependencies: ["4676440368634FFD"]
+			id: "283424AFE97DE747"
+			rewards: [
+				{
+					id: "2FC71795072064C5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4E5B2D08C39A91C2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "03B5DBB169C65636"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "It is the right shape. It is your world."
+			tasks: [
+				{
+					id: "180A55211F7EF157"
+					item: "supplementaries:globe"
+					type: "item"
+				}
+			]
+			title: "A Globe"
+			x: 7.35d
+			y: 0.69d
+		}
+		{
+			dependencies: ["283424AFE97DE747"]
+			id: "3332A1F8DA9525C7"
+			rewards: [
+				{
+					id: "1D7EE8453EB20339"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "156D5BB8B441E56A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "446AB43C03D53F83"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s building 100"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "666E6845AE74046A"
+					silent: true
+					title: "+100 Building experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Sell to other players while you are out adventuring."
+			tasks: [
+				{
+					id: "4C6CBF01047EA0E6"
+					item: "simpleshops:simple_shop"
+					type: "item"
+				}
+			]
+			title: "Open for Business"
+			x: 12.7d
+			y: 0.69d
+		}
+		{
+			dependencies: [
+				"1BEE7D06F46A6939"
+				"7FCB71E0A6EE51A7"
+				"42D70781045F9CC1"
+				"3332A1F8DA9525C7"
+			]
+			id: "08D3ECE4852BEA0C"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					id: "754532284EF4BF65"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "59A21E947F87F76B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5FF0D86F53930276"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "231671CC9ABF5167"
+					table_id: 7679661309800464934L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s building 250"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "12E855881705F816"
+					silent: true
+					title: "+250 Building experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Finish any three rows."
+			tasks: [
+				{
+					id: "3BCFF6E19AF4F0AD"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&a&lHomeowner"
+			x: 15.05d
+			y: -4.69d
+		}
+		{
+			dependencies: ["58FBB9F766E6F5A4"]
+			description: ["Monsters appear in the dark. Until you can afford a Magnum Torch, light does the job."]
+			id: "25690CA5FF3F8E7C"
+			rewards: [
+				{
+					id: "4CA871C792941D70"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7C5E11D271ACC9DC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "7422EB24483F5EDA"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "10ABA781ACC58BB6"
+					item: "minecraft:lantern"
+					type: "item"
+				}
+			]
+			title: "Light the Yard"
+			x: 5.6d
+			y: -4.81d
+		}
+		{
+			dependencies: ["4EDEE2498B4B407A"]
+			description: ["An ender pearl and blaze powder make the eye. Eight obsidian go around it."]
+			id: "15A605E93C642C71"
+			rewards: [
+				{
+					id: "64DCB36897735843"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3D483D62EC510F29"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "37458253566EEC8B"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "658423C6A4C693FB"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4453CF8C20D45CE1"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+			]
+			title: "An Eye of Ender"
+			x: 10.85d
+			y: -4.81d
+		}
+		{
+			dependencies: ["7E4F6442FD77F300"]
+			description: ["Sugar cane by the water, leather from cows. Fifteen books, for fifteen shelves."]
+			id: "36742B9E16CC4DA3"
+			rewards: [
+				{
+					id: "73A46D63B74D1F66"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3260FD5F915E47F6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "4B65B4A0DFC008ED"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 15L
+					id: "528B2172D907FB33"
+					item: "minecraft:book"
+					type: "item"
+				}
+			]
+			title: "Paper and Leather"
+			x: 9.1d
+			y: -3.06d
+		}
+		{
+			dependencies: ["009086C130F62BA6"]
+			description: ["Grows tall like a crop. Flax becomes string and awnings, and bales for storage."]
+			id: "1BBA448933483A1D"
+			optional: true
+			rewards: [
+				{
+					id: "78E00350E174AFC4"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3210E0EADFD2ABF9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "23F65D97E9BED041"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "A crop for string"
+			tasks: [
+				{
+					id: "1269413017728E1C"
+					item: "supplementaries:flax"
+					type: "item"
+				}
+			]
+			title: "Flax"
+			x: 5.6d
+			y: 2.19d
+		}
+		{
+			dependencies: ["009086C130F62BA6"]
+			description: ["Rotates blocks in place. It also works on many machines from other mods."]
+			id: "756B88B4AAFBB49E"
+			optional: true
+			rewards: [
+				{
+					id: "6A18CD50ECD275A8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "78AF1F824D57C985"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "0443684B045C7BF7"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Turn blocks around"
+			tasks: [
+				{
+					id: "5C2F900AAA342B75"
+					item: "supplementaries:wrench"
+					type: "item"
+				}
+			]
+			title: "A Wrench"
+			x: 5.6d
+			y: 3.69d
+		}
+		{
+			dependencies: ["6DDD5FAA38302BBA"]
+			description: ["Catches a small creature, such as a baby animal or a bird, so you can carry it and set it free elsewhere."]
+			id: "26FD6C29B5A01174"
+			optional: true
+			rewards: [
+				{
+					id: "086DBC5C94E2C1A4"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3E87F6E5CED708CD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "546858F7ED01F9D5"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Carry a small creature"
+			tasks: [
+				{
+					id: "05A88F3F117DA06B"
+					item: "supplementaries:cage"
+					type: "item"
+				}
+			]
+			title: "A Cage"
+			x: 3.85d
+			y: 3.69d
+		}
+		{
+			dependencies: ["6DDD5FAA38302BBA"]
+			description: ["Washes dye off things: wool, glass and more. Do not eat it."]
+			id: "1EB026EC6A4679F5"
+			optional: true
+			rewards: [
+				{
+					id: "63255D41563D3A85"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "13F0E05129306581"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "32079CCFD94F28A3"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Clean it up"
+			tasks: [
+				{
+					id: "40C2BD406555409E"
+					item: "supplementaries:soap"
+					type: "item"
+				}
+			]
+			title: "Soap"
+			x: 3.85d
+			y: 5.19d
+		}
+	]
+	subtitle: ["A base worth coming back to"]
+	title: "&aHearth \\& Home"
+}

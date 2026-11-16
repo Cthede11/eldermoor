@@ -1,0 +1,2283 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pneumatic"
+	group: "02AD8609A8FE6EE4"
+	icon: "pneumaticcraft:air_compressor"
+	id: "2855776D787CCD83"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["40883FC58E940BBA"]
+			description: [
+				"PneumaticCraft: Repressurized runs on &ecompressed air&f, measured in bar. Compressors make it, pressure tubes carry it, and machines spend it."
+				""
+				"Every machine has a pressure it works at and a pressure it bursts at. Watch the gauge."
+				""
+				"The chapter follows the mod's own path: air, the Pressure Chamber, oil and plastic, circuit boards, then the clever things - an assembly line, powered armour and programmable drones."
+				""
+				"The &emanual&f (your reward) covers every block."
+			]
+			hide_until_deps_complete: true
+			id: "7918464719147538"
+			rewards: [
+				{
+					id: "6F479B382689CE1B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "3F3C12C5E21B4CFD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "22A248600069C2CF"
+					item: "pneumaticcraft:ingot_iron_compressed"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3DF55BD4779F15A3"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "5E8A059FF54902D3"
+					title: "Read the manual"
+					type: "checkmark"
+				}
+			]
+			title: "&7&lUnder Pressure"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1416268785F5F6C0"]
+			id: "5B014ED2D1F450C9"
+			rewards: [
+				{
+					id: "39815110D7E911D0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "18EA51E29FE1F11B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "06427F7948DD8B33"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make some Pressure Tubes to move air around."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:pressure_tube"
+					criterion: ""
+					icon: "pneumaticcraft:pressure_tube"
+					id: "0666EC9F49C81376"
+					title: "Totally Tubular Transfer"
+					type: "advancement"
+				}
+			]
+			title: "Totally Tubular Transfer"
+			x: 3.85d
+			y: -2.13d
+		}
+		{
+			dependencies: ["5B014ED2D1F450C9"]
+			description: ["Burns furnace fuel. Later compressors run on heat, liquid fuel or FE."]
+			id: "01CB7A74E84B6CE7"
+			rewards: [
+				{
+					id: "6BF0B0A87EFD146A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "69573990BD8A8985"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0F0EA13A0F79A112"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make an Air Compressor."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:air_compressor"
+					criterion: ""
+					icon: "pneumaticcraft:air_compressor"
+					id: "65B819FE04D7DDDC"
+					title: "Building up the Pressure!"
+					type: "advancement"
+				}
+			]
+			title: "Building up the Pressure!"
+			x: 5.6d
+			y: -2.13d
+		}
+		{
+			dependencies: ["0150987BF05A9423"]
+			description: ["&7Made from: &fAir Canister, Orange Dye, Compressed Iron Ingot x4, Lever"]
+			id: "6AA45B276AA2EA5A"
+			rewards: [
+				{
+					id: "22B77FEF053503D0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3F1692422CF6B663"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2701B9596C1071BA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make a Pneumatic Wrench."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:pneumatic_wrench"
+					criterion: ""
+					icon: "pneumaticcraft:pneumatic_wrench"
+					id: "2A5AF29A430E56F6"
+					title: "Let's Torque About Tools"
+					type: "advancement"
+				}
+			]
+			title: "Let's Torque About Tools"
+			x: 9.1d
+			y: -2.13d
+		}
+		{
+			dependencies: ["6AA45B276AA2EA5A"]
+			description: [
+				"Charge up your Pneumatic Wrench in a Charging Station to at least 3 bar."
+				""
+				"The Charging Station fills anything that holds air: tools, armour and drones."
+			]
+			id: "4602842C31E1DECA"
+			rewards: [
+				{
+					id: "159D0182C5438EFF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "15171D2A777F152E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "625A76D840CD9EA0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:pneumatic_wrench_charged"
+					criterion: ""
+					icon: "pneumaticcraft:pneumatic_wrench"
+					id: "0640C561491D65FD"
+					title: "You spin me right round"
+					type: "advancement"
+				}
+			]
+			title: "You spin me right round"
+			x: 10.85d
+			y: -2.13d
+		}
+		{
+			dependencies: ["58430B9EAE31F80D"]
+			description: ["&7Made from: &fAir Canister, Cannon Barrel, Wooden Chest, Copper Ingot, Compressed Iron Ingot, Lever"]
+			id: "3343A66F1958E63F"
+			optional: true
+			rewards: [
+				{
+					id: "3B29B76CEF732FBA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "411D81CFAD7CAE00"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4532B2598EE37150"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Minigun."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:minigun"
+					criterion: ""
+					icon: "pneumaticcraft:minigun"
+					id: "50C5D823C80BA4A0"
+					title: "Say Hello to my Little Friend"
+					type: "advancement"
+				}
+			]
+			title: "Say Hello to my Little Friend"
+			x: 14.55d
+			y: -2.13d
+		}
+		{
+			dependencies: ["1BFDCFB64AF8BA7B"]
+			description: ["Walls from 3x3x3 to 5x5x5, a Valve to let air in and Interfaces to move items. Things left inside change under pressure: iron into compressed iron, coal into diamonds."]
+			id: "14C5D6120916A339"
+			rewards: [
+				{
+					id: "31CC79DA7A8EB8B1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "330F9A1004E6008F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "465E029A6DBF4ADB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Assemble a multiblock Pressure Chamber"
+			tasks: [
+				{
+					advancement: "pneumaticcraft:pressure_chamber"
+					criterion: ""
+					icon: "pneumaticcraft:pressure_chamber_wall"
+					id: "7420B5073CA0D492"
+					title: "Balanced Crafting System"
+					type: "advancement"
+				}
+			]
+			title: "Balanced Crafting System"
+			x: 3.85d
+			y: -0.38d
+		}
+		{
+			dependencies: ["14C5D6120916A339"]
+			description: [
+				"Acquire an Etching Acid Bucket. You can use this nasty stuff to make PCB's."
+				"&7Made at: &fPressure Chamber &7from &fBucket of Molten Plastic, Rotten Flesh x2, Spider Eye x2, any gunpowder x2"
+			]
+			id: "4733B972EF4573B5"
+			rewards: [
+				{
+					id: "226B7E1AEF826340"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1E942470DAE0891B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4E9563280172F65F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:etchacid_bucket"
+					criterion: ""
+					icon: "pneumaticcraft:etching_acid_bucket"
+					id: "2C473802EC6D8996"
+					title: "Don't Spill It On Your Shirt!"
+					type: "advancement"
+				}
+			]
+			title: "Don't Spill It On Your Shirt!"
+			x: 5.6d
+			y: -0.38d
+		}
+		{
+			dependencies: ["4733B972EF4573B5"]
+			id: "467EA49EB4CD7755"
+			rewards: [
+				{
+					id: "421B641EC9BBB4A6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "36EC14B5020FC307"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "606E6E77C174460C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make an Empty PCB in the Pressure Chamber."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:empty_pcb"
+					criterion: ""
+					icon: "pneumaticcraft:empty_pcb"
+					id: "1E81240645C1DE4A"
+					title: "Doesn't Do Much By Itself"
+					type: "advancement"
+				}
+			]
+			title: "Doesn't Do Much By Itself"
+			x: 7.35d
+			y: -0.38d
+		}
+		{
+			dependencies: ["7918464719147538"]
+			description: ["Oil lakes lie on the surface and underground."]
+			id: "69E09AC0D053DD61"
+			rewards: [
+				{
+					id: "627CB5B7F82DE6B8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1B7C83728FA539F1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3FBD5066B864F18F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Scoop up a bucket of Oil."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:oil_bucket"
+					criterion: ""
+					icon: "pneumaticcraft:oil_bucket"
+					id: "4D74D352041E0DCF"
+					title: "Black Gold"
+					type: "advancement"
+				}
+			]
+			title: "Black Gold"
+			x: 2.1d
+			y: 4.38d
+		}
+		{
+			dependencies: ["1A8B16B4892CD2A9"]
+			description: ["Heat makes a refinery work; more outputs split more fractions."]
+			id: "268F9509E3A4EE78"
+			rewards: [
+				{
+					id: "352736C0761125BA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "53A41101FF88ADEE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "342BA38C942D0561"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make a Refinery Controller and 2-4 Refinery Outputs."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:refinery"
+					criterion: ""
+					icon: "pneumaticcraft:refinery"
+					id: "5C31B70A1B1B906A"
+					title: "A Little Refinement"
+					type: "advancement"
+				}
+			]
+			title: "A Little Refinement"
+			x: 5.6d
+			y: 4.38d
+		}
+		{
+			dependencies: ["268F9509E3A4EE78"]
+			id: "05524AE4462BE744"
+			rewards: [
+				{
+					id: "03AD3D4A8FC2F2E5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "19B12EFC8F6258F4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "45BED7D546E45462"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make a Vortex Tube to manipulate heat"
+			tasks: [
+				{
+					advancement: "pneumaticcraft:vortex_tube"
+					criterion: ""
+					icon: "pneumaticcraft:vortex_tube"
+					id: "0D7AE0CE680BF6A4"
+					title: "'Cause you're hot then you're cold"
+					type: "advancement"
+				}
+			]
+			title: "'Cause you're hot then you're cold"
+			x: 7.35d
+			y: 4.38d
+		}
+		{
+			dependencies: ["05524AE4462BE744"]
+			id: "3635A9629FEB5229"
+			rewards: [
+				{
+					id: "5D476DEA76BF2F38"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1FCC667454CC8231"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "05BFCCE4DAD2B990"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "(It's a liquid). Get a bucket of LPG from the Refinery."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:lpg_bucket"
+					criterion: ""
+					icon: "pneumaticcraft:lpg_bucket"
+					id: "73457D3190026CDD"
+					title: "Is it a Liquid? Is it a Gas?"
+					type: "advancement"
+				}
+			]
+			title: "Is it a Liquid? Is it a Gas?"
+			x: 9.1d
+			y: 4.38d
+		}
+		{
+			dependencies: ["3635A9629FEB5229"]
+			id: "127CCD26FD426E20"
+			rewards: [
+				{
+					id: "6BDD703D07408A59"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "27D4A1C65EF41DE6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2CA6192829DFBE98"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make a Thermopneumatic Processing Plant. Call it a TPP."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:tp_plant"
+					criterion: ""
+					icon: "pneumaticcraft:thermopneumatic_processing_plant"
+					id: "5F962C4F3AC735B6"
+					title: "Try saying that three times fast"
+					type: "advancement"
+				}
+			]
+			title: "Try saying that three times fast"
+			x: 10.85d
+			y: 4.38d
+		}
+		{
+			dependencies: ["127CCD26FD426E20"]
+			description: ["Create Molten Plastic by putting LPG and Coal in a TPP, then pour it out into the world."]
+			id: "723D90AD06B8A0A1"
+			rewards: [
+				{
+					id: "5571630E30442E5D"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "04F436A4D943E8D1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1756833A0E9AE530"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6362D4B98B5B5408"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "pneumaticcraft:plastic"
+					criterion: ""
+					icon: "pneumaticcraft:plastic"
+					id: "54D2412FEB4471B3"
+					title: "Plastic Fantastic"
+					type: "advancement"
+				}
+			]
+			title: "Plastic Fantastic"
+			x: 12.7d
+			y: 4.38d
+		}
+		{
+			dependencies: ["4A8D77376B32AEA1"]
+			description: ["Amadron sells by drone: orders arrive by air."]
+			id: "5D0D5B1D7C366780"
+			rewards: [
+				{
+					id: "5D2C2C573F32E11D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5685B953AAE46E1B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "592D45F77A930F32"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make an Amadron Tablet for some trading flexibility."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:amadron_tablet"
+					criterion: ""
+					icon: "pneumaticcraft:amadron_tablet"
+					id: "07CC576204349F47"
+					title: "Better Than Villagers"
+					type: "advancement"
+				}
+			]
+			title: "Better Than Villagers"
+			x: 16.3d
+			y: 4.38d
+		}
+		{
+			dependencies: ["5D0D5B1D7C366780"]
+			description: ["(You're not, really). Use the Amadron Tablet to order a PCB Blueprint."]
+			id: "5E11F53BD562B94C"
+			rewards: [
+				{
+					id: "3E4929F091C83FEE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "71DCA57C35F54FF6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7759344C17CC7610"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:pcb_blueprint"
+					criterion: ""
+					icon: "pneumaticcraft:pcb_blueprint"
+					id: "337B0DD1600F6BB6"
+					title: "And You're Done"
+					type: "advancement"
+				}
+			]
+			title: "And You're Done"
+			x: 18.05d
+			y: 4.38d
+		}
+		{
+			dependencies: ["5E11F53BD562B94C"]
+			description: ["&7Made from: &fPCB Blueprint, Compressed Iron Ingot x4, Redstone Lamp x3, Pressure Tube"]
+			id: "6DFBB63E3AA7AB39"
+			rewards: [
+				{
+					id: "7A59363D666432FD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3DAEEA81BDE6DA5E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "56AEBEAE6C6C5DFA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make a UV Light Box."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:uv_light_box"
+					criterion: ""
+					icon: "pneumaticcraft:uv_light_box"
+					id: "58158962E8063340"
+					title: "Don't Forget Your Sunglasses!"
+					type: "advancement"
+				}
+			]
+			title: "Don't Forget Your Sunglasses!"
+			x: 19.8d
+			y: 4.38d
+		}
+		{
+			dependencies: [
+				"6DFBB63E3AA7AB39"
+				"467EA49EB4CD7755"
+			]
+			description: ["Expose an Empty PCB in a UV Lightbox, then put it in an Etching Tank with some Etching Acid."]
+			id: "4A460765B55E43F3"
+			rewards: [
+				{
+					id: "2281CE88774A481E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "082733DBC0ADC5FF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "75824ABCD6185EE1"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:unassembled_pcb"
+					criterion: ""
+					icon: "pneumaticcraft:unassembled_pcb"
+					id: "374883A040187EA6"
+					title: "Still Doesn't Do Much By Itself"
+					type: "advancement"
+				}
+			]
+			title: "Still Doesn't Do Much By Itself"
+			x: 21.55d
+			y: 4.38d
+		}
+		{
+			dependencies: ["56012FC9CEF6E6E2"]
+			description: ["Two transistors and two capacitors around the etched board, in a crafting grid."]
+			id: "47C9243294E6B199"
+			rewards: [
+				{
+					id: "3A58C45F278D5824"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "687FF35758525969"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "23EB6C9BFC199F07"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7E262562F9CEDB24"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Assemble a Finished PCB."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:printed_circuit_board"
+					criterion: ""
+					icon: "pneumaticcraft:printed_circuit_board"
+					id: "3B03F883C0959E45"
+					title: "Now The Fun Starts"
+					type: "advancement"
+				}
+			]
+			title: "Now The Fun Starts"
+			x: 25.15d
+			y: 4.38d
+		}
+		{
+			dependencies: ["127CCD26FD426E20"]
+			id: "5D3F6568C4E1D45D"
+			rewards: [
+				{
+					id: "6AFC7D235ADE3524"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5A59A71060D54E36"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "30A7E25D6E04A7FD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make a bucket of Lubricant in the TPP."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:lubricant_bucket"
+					criterion: ""
+					icon: "pneumaticcraft:lubricant_bucket"
+					id: "18F1369B7760F3CB"
+					title: "Born Slippy"
+					type: "advancement"
+				}
+			]
+			title: "Born Slippy"
+			x: 12.7d
+			y: 7.37d
+		}
+		{
+			dependencies: ["5D3F6568C4E1D45D"]
+			description: ["&7Made from: &fany lubricant x1000, any upgrade components x4, Sugar x4"]
+			id: "7C56CAC3C5DDBAD8"
+			rewards: [
+				{
+					id: "7732FF46FA23BE76"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "69198A540259F6BB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7ADF10C67D23074F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft some Speed Upgrades."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:speed_upgrade"
+					criterion: ""
+					icon: "pneumaticcraft:speed_upgrade"
+					id: "4E162D6DE926554C"
+					title: "Don't Feel Like Waiting"
+					type: "advancement"
+				}
+			]
+			title: "Don't Feel Like Waiting"
+			x: 14.55d
+			y: 7.37d
+		}
+		{
+			dependencies: ["47C9243294E6B199"]
+			description: ["Build an Assembly Controller. You'll also need two Assembly IO Units, an Assembly Laser, an Assembly Drill \\& an Assembly Platform."]
+			id: "581BBF3AAA9FCEC2"
+			rewards: [
+				{
+					id: "6B9AFC51F1A6E5FA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4F89F235C73C1DCD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "02F5320D34331493"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:assembly_controller"
+					criterion: ""
+					icon: "pneumaticcraft:assembly_controller"
+					id: "34695EC607DE48ED"
+					title: "Production Line!"
+					type: "advancement"
+				}
+			]
+			title: "Production Line!"
+			x: 27.25d
+			y: 2.62d
+		}
+		{
+			dependencies: ["581BBF3AAA9FCEC2"]
+			description: ["Make some Advanced Pressure Tubes with the Assembly Controller and related machines."]
+			id: "21A569F58DC3CC2B"
+			rewards: [
+				{
+					id: "3F982B6B878DC1DA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1FB40940CEB116A6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0E1D6037F3AEAB8C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:advanced_pressure_tube"
+					criterion: ""
+					icon: "pneumaticcraft:advanced_pressure_tube"
+					id: "0FC8A1376E4B794F"
+					title: "Tiering It Up"
+					type: "advancement"
+				}
+			]
+			title: "Tiering It Up"
+			x: 29.1d
+			y: 2.62d
+		}
+		{
+			dependencies: ["2AC5C47BBD520233"]
+			description: ["Make a Flux Compressor so you can use Forge Energy from other mods for your compression needs."]
+			id: "67F023121C0A705E"
+			rewards: [
+				{
+					id: "21DF20A928D8130E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1896092F0A27D8CB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6872005075372DA0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:flux_compressor"
+					criterion: ""
+					icon: "pneumaticcraft:flux_compressor"
+					id: "66C9059EB92AAF8D"
+					title: "Make a Flux Compressor"
+					type: "advancement"
+				}
+			]
+			title: "Flux Compressor"
+			x: 32.8d
+			y: 2.62d
+		}
+		{
+			dependencies: ["67F023121C0A705E"]
+			description: ["Build an Aerial Interface to manage your inventory from anywhere in any dimension."]
+			id: "11BB6EB51F122A7C"
+			rewards: [
+				{
+					id: "268FBDA53A964E04"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "114CDC437973382C"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21DFEBBF24D94F2D"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3E840B0AE89CE5EF"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "pneumaticcraft:aerial_interface"
+					criterion: ""
+					icon: "pneumaticcraft:aerial_interface"
+					id: "629D61888812722C"
+					title: "Interdimensional Convenience"
+					type: "advancement"
+				}
+			]
+			title: "Interdimensional Convenience"
+			x: 39.9d
+			y: 2.62d
+		}
+		{
+			dependencies: ["723D90AD06B8A0A1"]
+			description: ["&7Follows &fPlastic Fantastic&7: the Jackhammer is built from plastic."]
+			hide_dependency_lines: true
+			id: "205DA8CC487FC299"
+			rewards: [
+				{
+					id: "7CB5FD2197373E0E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5D53C5AE3BDEFBFB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "306B2F7E9E50FFCD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make yourself a Jackhammer and go digging!"
+			tasks: [
+				{
+					advancement: "pneumaticcraft:jackhammer"
+					criterion: ""
+					icon: "pneumaticcraft:jackhammer"
+					id: "74AB2BD0E688A76B"
+					title: "Digging with Jack"
+					type: "advancement"
+				}
+			]
+			title: "Digging with Jack"
+			x: 14.55d
+			y: 1.38d
+		}
+		{
+			dependencies: ["205DA8CC487FC299"]
+			description: ["&7Made at: &fAssembly Line (drill) &7from &fUnassembled Netherite Drill Bit"]
+			id: "2E099C1163DCA6B0"
+			optional: true
+			rewards: [
+				{
+					id: "65E9A4D9314BD685"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7FF79B640562D0C2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1871E346E73FA797"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make a Netherite Drill Bit for your Jackhammer"
+			tasks: [
+				{
+					advancement: "pneumaticcraft:drill_bit_netherite"
+					criterion: ""
+					icon: "pneumaticcraft:drill_bit_netherite"
+					id: "3ED54CBC9546FF68"
+					title: "This is the Best Bit"
+					type: "advancement"
+				}
+			]
+			title: "This is the Best Bit"
+			x: 16.3d
+			y: 1.38d
+		}
+		{
+			dependencies: ["47C9243294E6B199"]
+			description: [
+				"Wear a full suit of Pneumatic Armor. You can upgrade each piece with a Charging Station."
+				""
+				"Upgrades go in at the Charging Station: night vision, entity tracking, speed, jump boost, jet boots."
+			]
+			id: "1008246E301175B4"
+			rewards: [
+				{
+					id: "415879065AAFD10E"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "32FE17B059579E0F"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "43409FF39966387A"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1A476BE4CA652EBA"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "pneumaticcraft:pneumatic_armor"
+					criterion: ""
+					icon: "pneumaticcraft:pneumatic_helmet"
+					id: "1647227BC8135C9F"
+					title: "Compressed Iron Man"
+					type: "advancement"
+				}
+			]
+			title: "Compressed Iron Man"
+			x: 27.25d
+			y: 4.38d
+		}
+		{
+			dependencies: ["1008246E301175B4"]
+			description: ["Use the Jet Boots Upgrade in your Pneumatic Boots to take to the skies."]
+			id: "36DF9280A3BFA149"
+			rewards: [
+				{
+					id: "3BC18F81DAE39973"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "26F4F0397F0D0337"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "774CC4EE12F6D123"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:flight"
+					criterion: ""
+					icon: "pneumaticcraft:jet_boots_upgrade_1"
+					id: "46DE9A69DF8FA32E"
+					title: "Up And Away!"
+					type: "advancement"
+				}
+			]
+			title: "Up And Away!"
+			x: 29.1d
+			y: 4.38d
+		}
+		{
+			dependencies: ["36DF9280A3BFA149"]
+			description: ["Hack a block with your Pneumatic Helmet. You'll need Block Tracker and Security Upgrades."]
+			id: "324E4DFC53E93799"
+			optional: true
+			rewards: [
+				{
+					id: "31B672547EC8529F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "57E8A7CA8799CB6E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "218027A12F41E756"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:block_hack"
+					criterion: ""
+					icon: "pneumaticcraft:block_tracker_upgrade"
+					id: "444722C170AC7416"
+					title: "Plausible Deniability"
+					type: "advancement"
+				}
+			]
+			title: "Plausible Deniability"
+			x: 30.95d
+			y: 4.38d
+		}
+		{
+			dependencies: ["324E4DFC53E93799"]
+			description: ["Hack an entity with your Pneumatic Helmet. You'll need Entity Tracker and Security Upgrades."]
+			id: "7BFA308E955A76CD"
+			optional: true
+			rewards: [
+				{
+					id: "62C417252EE70813"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "732735106ADBD6AF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "34268E09CF957BA2"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:entity_hack"
+					criterion: ""
+					icon: "pneumaticcraft:entity_tracker_upgrade"
+					id: "1056DAEC9AFCB2A7"
+					title: "Won't Know What Hit 'em"
+					type: "advancement"
+				}
+			]
+			title: "Won't Know What Hit 'em"
+			x: 32.8d
+			y: 4.38d
+		}
+		{
+			dependencies: ["47C9243294E6B199"]
+			description: ["Build a Programmer. You can use this to program Drones to automate all your tedious tasks."]
+			id: "07C1828877A7A99E"
+			rewards: [
+				{
+					id: "7F77EB36769C06CA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "246277A06ECF5F11"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1802272F9BD6E4FF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:programmer"
+					criterion: ""
+					icon: "pneumaticcraft:programmer"
+					id: "1B88D202781BF022"
+					title: "Coding 101"
+					type: "advancement"
+				}
+			]
+			title: "Coding 101"
+			x: 27.25d
+			y: 6.12d
+		}
+		{
+			dependencies: ["07C1828877A7A99E"]
+			description: ["&7Made from: &fFinished PCB, any plastic sheets x8"]
+			id: "2715C614E1D8814A"
+			rewards: [
+				{
+					id: "4D293B0800606279"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "301CEA8E866598BC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3C7CDD70274AE39D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Make some Programming Puzzle pieces."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:programming_puzzle"
+					criterion: ""
+					icon: "pneumaticcraft:programming_puzzle"
+					id: "46DEA8980B68DC7C"
+					title: "Not a Jigsaw"
+					type: "advancement"
+				}
+			]
+			title: "Not a Jigsaw"
+			x: 29.1d
+			y: 6.12d
+		}
+		{
+			dependencies: ["2715C614E1D8814A"]
+			description: ["Programs are built from puzzle pieces: go to an area, dig it, pick up items, drop them in a chest. A harvesting drone tends crops without any programming."]
+			id: "2E982B2A96F0805B"
+			rewards: [
+				{
+					id: "3B43B8A39C7FA899"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "1AB4A3C43C03939B"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "71C0F8772BD87624"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4B06033A4805DD6B"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Program your first Drone. Doesn't matter what you make it do."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:program_drone"
+					criterion: ""
+					icon: "pneumaticcraft:drone"
+					id: "10057D2CA86FFFF6"
+					title: "Software Engineer"
+					type: "advancement"
+				}
+			]
+			title: "Software Engineer"
+			x: 30.95d
+			y: 6.12d
+		}
+		{
+			dependencies: ["2E982B2A96F0805B"]
+			id: "7EB0A92EAC9C1909"
+			rewards: [
+				{
+					id: "4EEEBF1FF6681883"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "51B791DADFC7F52B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5AA38E6A207C9B53"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Build a Programmable Controller to run your Drone programs."
+			tasks: [
+				{
+					advancement: "pneumaticcraft:programmable_controller"
+					criterion: ""
+					icon: "pneumaticcraft:programmable_controller"
+					id: "0F21CDCCCE9FC2DD"
+					title: "Drone In A Box"
+					type: "advancement"
+				}
+			]
+			title: "Drone In A Box"
+			x: 32.8d
+			y: 6.12d
+		}
+		{
+			dependencies: ["12F11708BE54B8C7"]
+			description: ["Create some Logistics Passive Provider and Requester Frames for smart item and fluid storage and transfer."]
+			id: "214975A505B28378"
+			rewards: [
+				{
+					id: "00D6A6D5B9B760A3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "52C36BAD8A05E957"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "69E609ED60B8B344"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:logistics_frame"
+					criterion: ""
+					icon: "pneumaticcraft:logistics_frame_passive_provider"
+					id: "050CEC33FE79ACD9"
+					title: "Smart Storage"
+					type: "advancement"
+				}
+			]
+			title: "Smart Storage"
+			x: 36.3d
+			y: 6.12d
+		}
+		{
+			dependencies: ["214975A505B28378"]
+			description: ["Make a Logistics Configurator to manage your Logistics frames. This tool also works on attachments like the Heat Frame, Spawner Agitator and Crop Supports."]
+			id: "5ABC91A5501E3F5E"
+			rewards: [
+				{
+					id: "6C17B7358B5A88B7"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6601CBB086FD2896"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2DBB2C42F9B6829E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:logistics_configurator"
+					criterion: ""
+					icon: "pneumaticcraft:logistics_configurator"
+					id: "05C1F84054463354"
+					title: "Smart Configuration"
+					type: "advancement"
+				}
+			]
+			title: "Smart Configuration"
+			x: 38.05d
+			y: 6.12d
+		}
+		{
+			dependencies: ["5ABC91A5501E3F5E"]
+			description: ["Create and deploy a Logistics Drone to move items around your logistics network."]
+			id: "0356A34F764A30EE"
+			rewards: [
+				{
+					id: "2D26A2C7DAC6C268"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "74E71FB89D0B5DB3"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "121114FB4F9F4B6C"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6131049FFDCC7265"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "pneumaticcraft:logistics_drone"
+					criterion: ""
+					icon: "pneumaticcraft:logistics_drone"
+					id: "5A372D192C29C0CD"
+					title: "Clever Little Helper"
+					type: "advancement"
+				}
+			]
+			title: "Clever Little Helper"
+			x: 39.9d
+			y: 6.12d
+		}
+		{
+			dependencies: [
+				"11BB6EB51F122A7C"
+				"36DF9280A3BFA149"
+				"0356A34F764A30EE"
+			]
+			description: ["Any two of: an Aerial Interface, flight in Pneumatic armour, a Logistics Drone at work."]
+			hide_dependency_lines: true
+			id: "0BA934BADA9A0DE7"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "22AD8734B51F25FC"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "33F6F46D7FB15A6F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72A62F42ADFA96E2"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0310B7CE921CED03"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "1A4C8FA893E1329B"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&7&lMaster of Pressure"
+			x: 42.25d
+			y: 2.63d
+		}
+		{
+			dependencies: ["7918464719147538"]
+			description: [
+				"Drop iron ingots on the ground beside TNT and light it. Most survive, and come out stronger."
+				"&7Made at: &fPressure Chamber &7from &fIron Ingot"
+			]
+			id: "1416268785F5F6C0"
+			rewards: [
+				{
+					id: "04EAF3BCDDA0D86E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1BD9DFFFE0C09196"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "45C95B25D22825B5"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "5A0FD071E5883C45"
+					item: "pneumaticcraft:ingot_iron_compressed"
+					type: "item"
+				}
+			]
+			title: "Compressed Iron"
+			x: 2.1d
+			y: -2.13d
+		}
+		{
+			dependencies: ["7918464719147538"]
+			description: ["A hollow 3x3x3 of walls, with a valve to let air in and two interfaces to pass items through."]
+			id: "1BFDCFB64AF8BA7B"
+			rewards: [
+				{
+					id: "414A4075D0D46985"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "126E0EDE73FD5778"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "458747BEE73EF156"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 20L
+					id: "4A964E5734428AA2"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					type: "item"
+				}
+				{
+					id: "5D4BA051A32F8D7B"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "542E221523144433"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					type: "item"
+				}
+			]
+			title: "Chamber Walls"
+			x: 2.1d
+			y: -0.38d
+		}
+		{
+			dependencies: ["01CB7A74E84B6CE7"]
+			description: [
+				"Compressed iron around a little redstone. Every &epneumatic tool&f - wrench, drill, minigun, armour - is built on one and holds its air there."
+				"Tools are recharged in a Charging Station on a pressurised line."
+			]
+			id: "0150987BF05A9423"
+			rewards: [
+				{
+					id: "24B663D1D695F7DA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "69884B31A91678AC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "75FFB8DFEC94955C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "6EA2138D52F3E44A"
+					item: "pneumaticcraft:air_canister"
+					type: "item"
+				}
+			]
+			title: "Air Canisters"
+			x: 7.35d
+			y: -2.13d
+		}
+		{
+			dependencies: ["21A569F58DC3CC2B"]
+			description: ["Compressed iron blades. Compressors that run on &cFE&f and dynamos that make it are both built around rotors."]
+			id: "2AC5C47BBD520233"
+			rewards: [
+				{
+					id: "524189E4832F72DE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "69EBC22EB0D735F0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "51AD7458704D9723"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "6F704BDB33D2B712"
+					item: "pneumaticcraft:turbine_rotor"
+					type: "item"
+				}
+			]
+			title: "A Turbine Rotor"
+			x: 30.95d
+			y: 2.62d
+		}
+		{
+			dependencies: ["69E09AC0D053DD61"]
+			description: ["Glass and compressed iron. Stack them and they join into one tall tank. Oil, and each of the four things oil is split into, wants its own."]
+			id: "1A8B16B4892CD2A9"
+			rewards: [
+				{
+					id: "06179E8B1CDD43E6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0E1138C9944DF5AA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "27BD46BE9D0BD096"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "263CD8F6E2366383"
+					item: "pneumaticcraft:small_tank"
+					type: "item"
+				}
+			]
+			title: "Small Fluid Tanks"
+			x: 3.85d
+			y: 4.38d
+		}
+		{
+			dependencies: ["7EB0A92EAC9C1909"]
+			description: ["Reinforced brick tiles around redstone. Each &eLogistics Frame&f - provider, requester, storage - is built around one."]
+			id: "12F11708BE54B8C7"
+			rewards: [
+				{
+					id: "0F465C4309DBEA4B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "733B29AC7BB2C0BF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "74F7A9C396DAC43F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "725196884A86946A"
+					item: "pneumaticcraft:logistics_core"
+					type: "item"
+				}
+			]
+			title: "A Logistics Core"
+			x: 34.55d
+			y: 6.12d
+		}
+		{
+			dependencies: ["723D90AD06B8A0A1"]
+			description: ["Right-click a block to remember where it is. Drones, the Amadron Tablet and the Aerial Interface are all told &owhere&f with one of these."]
+			id: "4A8D77376B32AEA1"
+			rewards: [
+				{
+					id: "368D2BE1901ED466"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2EB5EF6F162A397F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "12E1B371AD6A9CAE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7E028E56C880E28F"
+					item: "pneumaticcraft:gps_tool"
+					type: "item"
+				}
+			]
+			title: "A GPS Tool"
+			x: 14.55d
+			y: 4.38d
+		}
+		{
+			dependencies: ["4A460765B55E43F3"]
+			description: [
+				"Plastic, wiring and redstone, squeezed together in the &ePressure Chamber&f. They go onto an etched board to finish it."
+				"The Assembly Line makes them far more cheaply than a crafting grid; early on, Amadron sells them."
+			]
+			id: "56012FC9CEF6E6E2"
+			rewards: [
+				{
+					id: "27034B02A64277F3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3B63D7F935BF675B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0F9FBF62BF2D7FD8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "1B8BE3D98D369F33"
+					item: "pneumaticcraft:transistor"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "72BFFD06AD2E7591"
+					item: "pneumaticcraft:capacitor"
+					type: "item"
+				}
+			]
+			title: "Transistors and Capacitors"
+			x: 23.3d
+			y: 4.38d
+		}
+		{
+			dependencies: ["4602842C31E1DECA"]
+			description: ["Reinforced brick around a pressure tube. The Air Cannon has one; the Minigun has a bundle."]
+			id: "58430B9EAE31F80D"
+			optional: true
+			rewards: [
+				{
+					id: "710F065165B35982"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "50283CCB5ED6343B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5CDAF2237AB6FA4A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "28DB7DC2D3489F96"
+					item: "pneumaticcraft:cannon_barrel"
+					type: "item"
+				}
+			]
+			title: "A Cannon Barrel"
+			x: 12.7d
+			y: -2.13d
+		}
+		{
+			dependencies: ["5B014ED2D1F450C9"]
+			description: ["Fills or drains pneumatic items with air: drones, wrenches, the Vortex Cannon, the armour. It is also where you fit upgrades into them."]
+			id: "712AD6FE95751F0D"
+			optional: true
+			rewards: [
+				{
+					id: "04C5ABB00AA827CB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "56335FC6C8955E62"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "63D9C11115FAFA4B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fill your tools with air"
+			tasks: [
+				{
+					id: "241D904B575F103F"
+					item: "pneumaticcraft:charging_station"
+					type: "item"
+				}
+			]
+			title: "The Charging Station"
+			x: 5.6d
+			y: -3.63d
+		}
+		{
+			dependencies: ["01CB7A74E84B6CE7"]
+			description: ["Makes compressed air from fuels such as oil products and lava. Its fuel tab lists them from best to worst."]
+			id: "1A13E412FBA355AB"
+			optional: true
+			rewards: [
+				{
+					id: "7F1C3F6EE3746185"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "35CC5FD126A5D6B3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3D1D51BB51E5465C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Air from liquid fuel"
+			tasks: [
+				{
+					id: "6ACDE08FD96D48DD"
+					item: "pneumaticcraft:liquid_compressor"
+					type: "item"
+				}
+			]
+			title: "The Liquid Compressor"
+			x: 7.35d
+			y: -3.62d
+		}
+		{
+			dependencies: ["723D90AD06B8A0A1"]
+			description: ["A cylinder that turns air pressure into a push. Assembly lines, pneumatic doors and elevators are built on it."]
+			id: "14249AC025FAA344"
+			optional: true
+			rewards: [
+				{
+					id: "0CA6C34808E19732"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "532035F2AF406134"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5018082D325C4470"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Air becomes motion"
+			tasks: [
+				{
+					id: "4079A0C00954BC5D"
+					item: "pneumaticcraft:pneumatic_cylinder"
+					type: "item"
+				}
+			]
+			title: "The Pneumatic Cylinder"
+			x: 14.55d
+			y: 5.88d
+		}
+		{
+			dependencies: ["14249AC025FAA344"]
+			description: ["Stack bases to raise how high the elevator goes, give it air, and call it between floors with its controller."]
+			id: "327F4A55F0C3A3FA"
+			optional: true
+			rewards: [
+				{
+					id: "52CBE2EFBCD6100C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "02E6E688A36FFD6B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7F9186936C49B5CE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A lift on air"
+			tasks: [
+				{
+					id: "5B1E0CF562E85846"
+					item: "pneumaticcraft:elevator_base"
+					type: "item"
+				}
+			]
+			title: "The Pneumatic Elevator"
+			x: 16.3d
+			y: 5.88d
+		}
+		{
+			dependencies: ["0150987BF05A9423"]
+			description: ["Shoots harmless vortices that push creatures back, shear sheep and cut through leaves and plants. Aim down and fire to fling yourself, carefully."]
+			id: "697AE58EF497459F"
+			optional: true
+			rewards: [
+				{
+					id: "1A3B4D6D8CC0A2EB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3A413F8370F034E2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "08C56289D2CFB1A8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fire air"
+			tasks: [
+				{
+					id: "49DCE7FE49A892FD"
+					item: "pneumaticcraft:vortex_cannon"
+					type: "item"
+				}
+			]
+			title: "The Vortex Cannon"
+			x: 9.1d
+			y: -0.62d
+		}
+	]
+	subtitle: ["Air pressure, oil, circuit boards and drones"]
+	title: "&7PneumaticCraft"
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 6942069,
+    "separation": 35,
+    "spacing": 80,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "structory:swamp_ruin",
+      "weight": 1
+    }
+  ]
+}

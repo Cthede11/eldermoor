@@ -1,0 +1,26 @@
+{
+  "placement": {
+    "salt": 7346154,
+    "separation": 46,
+    "spacing": 57,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "mna:faction/council_library",
+      "weight": 1
+    },
+    {
+      "structure": "mna:faction/demon_fortress",
+      "weight": 1
+    },
+    {
+      "structure": "mna:faction/fairy_glade",
+      "weight": 1
+    },
+    {
+      "structure": "mna:faction/undead_crypt",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 12512867,
+    "separation": 92,
+    "spacing": 184,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "eidolon:catacomb",
+      "weight": 3
+    }
+  ]
+}

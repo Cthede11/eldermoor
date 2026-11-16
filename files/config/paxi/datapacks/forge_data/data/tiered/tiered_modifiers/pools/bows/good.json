@@ -1,0 +1,21 @@
+{
+  "weight": 2,
+  "verifiers": [
+    {
+      "tag": "forge:tools/bows"
+    },
+    {
+      "tag": "forge:bows"
+    },
+    {
+      "tag": "too_many_bows:bows"
+    }
+  ],
+  "tiers": [
+    "tiered:bows/elastic",
+    "tiered:bows/epic",
+    "tiered:bows/legendary",
+    "tiered:bows/light",
+    "tiered:bows/rare"
+  ]
+}

@@ -1,0 +1,1459 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act_ii"
+	group: "2082B1037B9195D1"
+	icon: "minecraft:dragon_head"
+	id: "757F69AECFB71AA7"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["59C113D9964EF785"]
+			description: [
+				"Four fronts are open and none of them is polite:"
+				""
+				"&2The deep Twilight&f - the Dark Forest, the Snow and the Queen above it."
+				"&5The End&f - the dragon, and what lives past her."
+				"&bThe frozen sea&f - a graveyard of ships and the captain who will not leave."
+				"&4The Immortals&f - an altar that should not be visited."
+				""
+				"Take them in any order."
+			]
+			hide_until_deps_complete: true
+			id: "3E24EEE56814B690"
+			rewards: [
+				{
+					id: "0948942F9F13E2AD"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "74DBEF7B0BE6C0E6"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "25A513E2B7B413E5"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "276736F4258FEC4B"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Four fronts"
+			tasks: [
+				{
+					id: "2F11DA66057096ED"
+					title: "I accept"
+					type: "checkmark"
+				}
+			]
+			title: "&c&lThe Hero Evolves"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B0A81F1998A661C"]
+			description: [
+				"Settle the restless phantoms in the knight's tomb and the carminite tower's devices will obey you"
+				""
+				"A stronghold under the Dark Forest. Six phantoms, one tomb."
+			]
+			id: "4F2D7680567CF7A3"
+			rewards: [
+				{
+					id: "5FBA7B40668BF263"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "115CC3445B8D35CA"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0658432AC8428F6C"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2D6D9BFB81F5A77D"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_knights"
+					criterion: ""
+					icon: "twilightforest:knight_phantom_trophy"
+					id: "66F25DAFA6355D33"
+					title: "Carminite Acclimation"
+					type: "advancement"
+				}
+			]
+			title: "The Knight Phantoms"
+			x: 3.85d
+			y: 4.38d
+		}
+		{
+			dependencies: ["720F6C2908957F90"]
+			description: ["At the top of the Dark Tower. Use the tower's own ghast traps to bring it down."]
+			id: "16A41394B73B4EAA"
+			rewards: [
+				{
+					id: "7CF0469ECD527603"
+					type: "xp"
+					xp: 700
+				}
+				{
+					count: 3
+					id: "4F8D20CA95865080"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C9A73F455D1966A"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "36B16B5FB970153E"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Touch the fiery red tears of the Ur-Ghast"
+			tasks: [
+				{
+					advancement: "twilightforest:progress_ur_ghast"
+					criterion: ""
+					icon: "twilightforest:ur_ghast_trophy"
+					id: "0AA00359BC666C0A"
+					title: "Tears of Fire"
+					type: "advancement"
+				}
+			]
+			title: "The Ur-Ghast"
+			x: 7.8d
+			y: 4.38d
+		}
+		{
+			dependencies: ["741A5CE67DFEA2AF"]
+			description: [
+				"Line your garments with the soft fur from the Alpha Yeti, keeping you safe from the Glacier's cold"
+				""
+				"A cave in the Snowy Forest."
+			]
+			id: "08665BFA84AAE3EB"
+			rewards: [
+				{
+					id: "013CF22F7DD29F67"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "4ACD0EA68DD9679C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5107D6CD47BBB56E"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6EACDD868F441D04"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_yeti"
+					criterion: ""
+					icon: "twilightforest:alpha_yeti_fur"
+					id: "48F76C0855E45F3F"
+					title: "Alpha Fur"
+					type: "advancement"
+				}
+			]
+			title: "The Alpha Yeti"
+			x: 11.4d
+			y: 4.38d
+		}
+		{
+			dependencies: ["07B95420291CF566"]
+			description: ["The Aurora Palace stands on the Glacier. Break her ice shield first."]
+			id: "29B724BAF5DB632B"
+			rewards: [
+				{
+					id: "7A4179DD88002E08"
+					type: "xp"
+					xp: 900
+				}
+				{
+					count: 4
+					id: "32C37C10C9126149"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "59DE4DB411D402F2"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1F47710AD26CC9E5"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Snow Queen atop the Aurora Palace"
+			tasks: [
+				{
+					advancement: "twilightforest:progress_glacier"
+					criterion: ""
+					icon: "twilightforest:snow_queen_trophy"
+					id: "05ADC9FF63F26688"
+					title: "Clear Skies"
+					type: "advancement"
+				}
+			]
+			title: "The Snow Queen"
+			x: 15.0d
+			y: 4.38d
+		}
+		{
+			dependencies: ["29B724BAF5DB632B"]
+			description: ["Find the Lamp of Cinders in the troll caves, and you can burn away the thorn barriers"]
+			id: "48D9811F02EA9E70"
+			optional: true
+			rewards: [
+				{
+					id: "0E58DE56B9CEDBE7"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3500538222BC3C49"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1311971EC51ED47A"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_troll"
+					criterion: ""
+					icon: "twilightforest:lamp_of_cinders"
+					id: "3997D375B60CEE05"
+					title: "I Wish For More Burning"
+					type: "advancement"
+				}
+			]
+			title: "The Lamp of Cinders"
+			x: 16.85d
+			y: 4.38d
+		}
+		{
+			dependencies: ["3671FEB3960C1DDE"]
+			description: [
+				"Eyes of Ender lead to a stronghold. With the Gauntlet dead, its portal will open."
+				""
+				"&4The first step into the End raises the world to Expert if nothing else has."
+			]
+			icon: "minecraft:end_stone"
+			id: "119138B680C719C2"
+			rewards: [
+				{
+					id: "20E8C3C443854AAB"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "2AC590F712B1D4E4"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5427321671B71431"
+					table_id: 7005991227151607963L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "526D091463376220"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "4E583F61EDF65F0E"
+					type: "dimension"
+				}
+			]
+			title: "The End"
+			x: 5.7d
+			y: -3.63d
+		}
+		{
+			dependencies: ["119138B680C719C2"]
+			description: [
+				"Break the crystals first."
+				""
+				"&4Her death raises the world to Master."
+			]
+			id: "70B999AC8A2D279B"
+			rewards: [
+				{
+					id: "5E64AD9BB79BC0DC"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 6
+					id: "0B9DA2371CA10E92"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "198E40984945C75A"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "040405C8FC3C9A90"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Good luck"
+			tasks: [
+				{
+					advancement: "minecraft:end/kill_dragon"
+					criterion: ""
+					icon: "minecraft:dragon_head"
+					id: "18310BAFEC33D00C"
+					title: "Free the End"
+					type: "advancement"
+				}
+			]
+			title: "The Ender Dragon"
+			x: 7.8d
+			y: -3.63d
+		}
+		{
+			dependencies: ["70B999AC8A2D279B"]
+			id: "3893982E87629195"
+			rewards: [
+				{
+					id: "6290BCA2EF373233"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "0A19B1674E5DE83E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5B88EF17D212BEDB"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Escape the island"
+			tasks: [
+				{
+					advancement: "minecraft:end/enter_end_gateway"
+					criterion: ""
+					icon: "minecraft:ender_pearl"
+					id: "59471FC447BADED7"
+					title: "Remote Getaway"
+					type: "advancement"
+				}
+			]
+			title: "The Outer Islands"
+			x: 9.65d
+			y: -3.63d
+		}
+		{
+			dependencies: ["274A5199BFEA6AB9"]
+			description: ["In the ships beside End Cities."]
+			id: "1834DDE980B4FA0A"
+			rewards: [
+				{
+					id: "577AC85F13AB94D6"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4F766AACB26FDF3F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7464085B7533FFF2"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find Elytra"
+			tasks: [
+				{
+					advancement: "minecraft:end/elytra"
+					criterion: ""
+					icon: "minecraft:elytra"
+					id: "7484A6A59D211B60"
+					title: "Sky's the Limit"
+					type: "advancement"
+				}
+			]
+			title: "Wings"
+			x: 13.15d
+			y: -3.63d
+		}
+		{
+			dependencies: ["1834DDE980B4FA0A"]
+			description: ["An obsidian pillar on the outer islands. It changes colour, and each colour is a different fight."]
+			id: "52A67C48384C4C80"
+			rewards: [
+				{
+					id: "4112F8C4ABD02009"
+					type: "xp"
+					xp: 900
+				}
+				{
+					count: 4
+					id: "51BF76B3F31C0D7E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15081E015F3ECCF9"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6C2376AEEDA45D2C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Obsidilith Boss"
+			tasks: [
+				{
+					advancement: "bosses_of_mass_destruction:end/obsidilith_defeat"
+					criterion: ""
+					icon: "bosses_of_mass_destruction:obsidilith_rune"
+					id: "6C9C7F7B351E4AD8"
+					title: "Obsidian Obliterator"
+					type: "advancement"
+				}
+			]
+			title: "The Obsidilith"
+			x: 15.0d
+			y: -3.63d
+		}
+		{
+			dependencies: ["3E24EEE56814B690"]
+			id: "6FF26D9C2854B1F4"
+			rewards: [
+				{
+					id: "00F27E65A6AF979A"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "750744042574FF64"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3F938D89B796288B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Ice Maze location in the Frozen Ocean biome."
+			tasks: [
+				{
+					advancement: "aquamirae:adventure/find_ice_maze"
+					criterion: ""
+					icon: "minecraft:blue_ice"
+					id: "14AE0A41A74A586A"
+					title: "Ice Maze"
+					type: "advancement"
+				}
+			]
+			title: "The Ice Maze"
+			x: 2.1d
+			y: -0.63d
+		}
+		{
+			dependencies: ["6FF26D9C2854B1F4"]
+			description: ["&7Dropped by: &fMaze Captain"]
+			id: "67B21E3A7E77F15D"
+			rewards: [
+				{
+					id: "40C4387511136F3E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "24A565714449438E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6B7019FEFBA10A5B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find an important item while exploring frozen ships"
+			tasks: [
+				{
+					advancement: "aquamirae:adventure/obtain_shell_horn"
+					criterion: ""
+					icon: "aquamirae:shell_horn"
+					id: "7287D28DFE8FFE2A"
+					title: "Exploration"
+					type: "advancement"
+				}
+			]
+			title: "A Horn from the Wreck"
+			x: 3.85d
+			y: -0.63d
+		}
+		{
+			dependencies: ["7A6483907626169E"]
+			description: ["Blow the Shell Horn at the water's edge among the frozen ships. She comes up angry."]
+			id: "6FD392F8BC650F50"
+			rewards: [
+				{
+					id: "4CFCBB7D3D1C4EFA"
+					type: "xp"
+					xp: 900
+				}
+				{
+					count: 4
+					id: "2398E81956D69B25"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1785AB2CFA3EA7B7"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "135EEF6EA8FB096E"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "aquamirae:captain_cornelia"
+					id: "2F2C25E99B0081D5"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Captain Cornelia"
+			x: 7.8d
+			y: -0.63d
+		}
+		{
+			dependencies: ["6FD392F8BC650F50"]
+			description: ["Use the Shell Horn near the water and take the key from the captain's ghost"]
+			id: "2F4B530D3BEAC4D3"
+			rewards: [
+				{
+					id: "3063673071337DC6"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "286D6B4E882CD6F9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5822BC8A6E351648"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "aquamirae:adventure/obtain_frozen_key"
+					criterion: ""
+					icon: "aquamirae:frozen_key"
+					id: "39E8211982AD6352"
+					title: "The Dead Sea"
+					type: "advancement"
+				}
+			]
+			title: "The Frozen Key"
+			x: 9.65d
+			y: -0.63d
+		}
+		{
+			dependencies: ["2F4B530D3BEAC4D3"]
+			id: "5D4EB2ED702494ED"
+			rewards: [
+				{
+					id: "783352DCB0AA8B97"
+					type: "xp"
+					xp: 700
+				}
+				{
+					count: 3
+					id: "5BADA6318F8DA445"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6137A5B0E476D94F"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "29E63EF12840B975"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Under the Ice Maze. The key opens the way down."
+			tasks: [
+				{
+					entity: "aquamirae:maze_mother"
+					id: "1EA40BBCB0985809"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Maze Mother"
+			x: 11.4d
+			y: -0.63d
+		}
+		{
+			dependencies: ["3E24EEE56814B690"]
+			description: ["&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."]
+			id: "0521E51D5A287A24"
+			rewards: [
+				{
+					id: "60F74953B64856C3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2C273CCF78723545"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5FCA46CFA5ACE1D4"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Arrive at the Bloody Altar"
+			tasks: [
+				{
+					advancement: "eeeabsmobs:eeeabsmobs/bloody_altar"
+					criterion: ""
+					icon: "minecraft:blackstone"
+					id: "57559CF303B9E7BE"
+					title: "The Bloody Altar"
+					type: "advancement"
+				}
+			]
+			title: "The Bloody Altar"
+			x: 2.1d
+			y: 0.88d
+		}
+		{
+			dependencies: ["0521E51D5A287A24"]
+			id: "31DBA2D71B3AEE68"
+			rewards: [
+				{
+					id: "25AEBEED9A73530F"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 3
+					id: "4EE19B9DA3D02943"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "56A7C3A2C490101C"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "22F53061F728FFAC"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Kill a Corpse Warlock"
+			tasks: [
+				{
+					advancement: "eeeabsmobs:eeeabsmobs/kill_corpse_warlock"
+					criterion: ""
+					icon: "eeeabsmobs:heart_of_pagan"
+					id: "38482DB110DA0AE6"
+					title: "Pagan"
+					type: "advancement"
+				}
+			]
+			title: "The Corpse Warlock"
+			x: 15.0d
+			y: 0.88d
+		}
+		{
+			dependencies: ["3E24EEE56814B690"]
+			description: ["&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."]
+			id: "24004D40AC4BD290"
+			rewards: [
+				{
+					id: "20CC45A835FB1838"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "264A8E4500A587B4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7E829A12AABAD43B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Arrive at the Guling"
+			tasks: [
+				{
+					advancement: "eeeabsmobs:eeeabsmobs/guling"
+					criterion: ""
+					icon: "minecraft:deepslate_bricks"
+					id: "35058EB6218AE972"
+					title: "The Guling"
+					type: "advancement"
+				}
+			]
+			title: "The Guling"
+			x: 2.1d
+			y: 2.62d
+		}
+		{
+			dependencies: ["24004D40AC4BD290"]
+			id: "569762E3860689E1"
+			rewards: [
+				{
+					id: "784D2C37272EFBA2"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 4
+					id: "7788F005C375258E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "097D1D50A5DB892B"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4E2C8E5F4C264514"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Kill a Nameless Guardian"
+			tasks: [
+				{
+					advancement: "eeeabsmobs:eeeabsmobs/kill_nameless_guardian"
+					criterion: ""
+					icon: "eeeabsmobs:guardian_axe"
+					id: "24135D117EF47C3A"
+					title: "Bad omen..."
+					type: "advancement"
+				}
+			]
+			title: "The Nameless Guardian"
+			x: 15.0d
+			y: 2.62d
+		}
+		{
+			dependencies: ["70B999AC8A2D279B"]
+			description: ["Create a Mysterious Worm by putting a Crimson Mosquito Larva in a Capsid."]
+			id: "407ABAF8A09BCD97"
+			optional: true
+			rewards: [
+				{
+					id: "6CF53F417564C2FC"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "666894CDA55B58F5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5859624115185577"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/mysterious_worm"
+					criterion: ""
+					icon: "alexsmobs:mysterious_worm"
+					id: "6F9C784E1CDAD630"
+					title: "Destroy The Child"
+					type: "advancement"
+				}
+			]
+			title: "A Mysterious Worm"
+			x: 9.65d
+			y: -2.12d
+		}
+		{
+			dependencies: ["407ABAF8A09BCD97"]
+			description: ["Throw the worm into the void of the End and wait."]
+			id: "06A4BF1DF63ADDC0"
+			optional: true
+			rewards: [
+				{
+					id: "2E4D688C79FBD357"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 5
+					id: "08CE398BFBE40282"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D6AEF7B1DF2860E"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7CE5B7B7DBE7B545"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Destroy the Void Worm."
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/void_worm_kill"
+					criterion: ""
+					icon: "alexsmobs:void_worm_beak"
+					id: "2CE7334A5F55F568"
+					title: "Wormy"
+					type: "advancement"
+				}
+			]
+			title: "The Void Worm"
+			x: 11.4d
+			y: -2.12d
+		}
+		{
+			dependencies: [
+				"6FD392F8BC650F50"
+				"31DBA2D71B3AEE68"
+				"569762E3860689E1"
+				"52A67C48384C4C80"
+				"16A41394B73B4EAA"
+			]
+			description: ["Any two of: Captain Cornelia, the Corpse Warlock, the Nameless Guardian, the Obsidilith or the Ur-Ghast."]
+			hide_dependency_lines: true
+			icon: "minecraft:iron_sword"
+			id: "0D15F53D73AA11CB"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "610D02DE85C2E0CB"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 3
+					id: "51B74B866084F64A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2AB348A8AD3DA717"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "03ED93F8BBB00C7C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0958220C8F626BBB"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "Two More Trials"
+			x: 16.85d
+			y: 0.88d
+		}
+		{
+			dependencies: [
+				"70B999AC8A2D279B"
+				"29B724BAF5DB632B"
+				"0D15F53D73AA11CB"
+			]
+			description: [
+				"The Dragon and the Snow Queen are dead, and two more besides."
+				""
+				"Something older has noticed. &4Act III&f has been added to your book."
+			]
+			hide_dependency_lines: true
+			id: "35FE140DAE03BB36"
+			rewards: [
+				{
+					id: "42B5BA7C11DA1F18"
+					type: "xp"
+					xp: 2500
+				}
+				{
+					id: "7E80E65A1BB06F63"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C96E62D0544FD61"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F9F6653585FADEE"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A522990E28D6023"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7E5BFB396A23D317"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Opens Act III"
+			tasks: [
+				{
+					id: "207508E448A51AAA"
+					title: "Onwards"
+					type: "checkmark"
+				}
+			]
+			title: "&c&lThe Hero Evolved"
+			x: 18.95d
+			y: 0.79d
+		}
+		{
+			dependencies: ["3E24EEE56814B690"]
+			description: [
+				"Claim your title by placing a trophy on the pedestal in the Dark Forest ruins"
+				""
+				"The Knights' stronghold is sealed until a boss trophy stands on the pedestal in its ruins."
+			]
+			id: "0B0A81F1998A661C"
+			rewards: [
+				{
+					id: "3C3D56722120CD84"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "60C8D745BC015D70"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "76CE5863E5D44A81"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_trophy_pedestal"
+					criterion: ""
+					icon: "twilightforest:trophy_pedestal"
+					id: "579E1C3F5A93C763"
+					title: "Trophied Champion"
+					type: "advancement"
+				}
+			]
+			title: "A Trophy on the Pedestal"
+			x: 2.1d
+			y: 4.38d
+		}
+		{
+			dependencies: ["4F2D7680567CF7A3"]
+			description: [
+				"Slay the Carminite Ghastlings around a Ghast Trap and activate to wrench the Ur-Ghast from the sky!"
+				""
+				"Carminite ghastlings charge the traps on the Dark Tower's roof. Nothing else will bring the Ur-Ghast down."
+			]
+			id: "720F6C2908957F90"
+			rewards: [
+				{
+					id: "0963935AA18276E2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "46438A72666AFBBF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "62E26B08ABE78D93"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:ghast_trap"
+					criterion: ""
+					icon: "twilightforest:ghast_trap"
+					id: "34EA1571E73EBF20"
+					title: "Something Strange in Towerwood"
+					type: "advancement"
+				}
+			]
+			title: "Ghast Traps"
+			x: 5.7d
+			y: 4.38d
+		}
+		{
+			dependencies: ["16A41394B73B4EAA"]
+			description: ["What the Ur-Ghast weeps. With iron it makes fiery ingots - and its death lets you walk the snow."]
+			id: "741A5CE67DFEA2AF"
+			rewards: [
+				{
+					id: "37BAE762BEFD8A1A"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1792D23E8983021B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "51127230B1A327AF"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "28668227308899B8"
+					item: "twilightforest:fiery_tears"
+					type: "item"
+				}
+			]
+			title: "Fiery Tears"
+			x: 9.65d
+			y: 4.38d
+		}
+		{
+			dependencies: ["08665BFA84AAE3EB"]
+			description: ["The Glacier's cold stops anyone who has not taken this from the Alpha Yeti."]
+			id: "07B95420291CF566"
+			rewards: [
+				{
+					id: "369630F8E8854D78"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1146924A465F8A6E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6EBDF5C5211B4ED1"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "267182BA13A028B2"
+					item: "twilightforest:alpha_yeti_fur"
+					type: "item"
+				}
+			]
+			title: "Alpha Fur"
+			x: 13.15d
+			y: 4.38d
+		}
+		{
+			dependencies: ["3E24EEE56814B690"]
+			description: ["Blaze powder and ender pearls. Some frames already hold an eye; bring twelve and you will not have to go back."]
+			id: "24715627FFEB1520"
+			rewards: [
+				{
+					id: "38D300C0AACAA04B"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "122CF1E172E84032"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "72455BEB595D5EFF"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "6C9AEFBF0A174E05"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+			]
+			title: "Twelve Eyes"
+			x: 2.1d
+			y: -3.63d
+		}
+		{
+			dependencies: ["24715627FFEB1520"]
+			description: ["Throw an eye, walk where it went, throw again. When it sinks into the ground, dig."]
+			id: "3671FEB3960C1DDE"
+			rewards: [
+				{
+					id: "2C5B04E1D8FBA1B1"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "603AF98EB1CDBC4B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7D7B3D37D8ACB1CD"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Follow an Eye of Ender"
+			tasks: [
+				{
+					advancement: "minecraft:story/follow_ender_eye"
+					criterion: ""
+					icon: "minecraft:ender_eye"
+					id: "2B946186AE7406F0"
+					title: "Eye Spy"
+					type: "advancement"
+				}
+			]
+			title: "The Stronghold"
+			x: 3.85d
+			y: -3.63d
+		}
+		{
+			dependencies: ["3893982E87629195"]
+			description: ["Tall purple towers on the outer islands. The ones with a ship moored beside them hold the prize."]
+			id: "274A5199BFEA6AB9"
+			rewards: [
+				{
+					id: "286CE17F57790DEE"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5985092CA94C4560"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1DC8563D125BD769"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Go on in, what could happen?"
+			tasks: [
+				{
+					advancement: "minecraft:end/find_end_city"
+					criterion: ""
+					icon: "minecraft:purpur_block"
+					id: "595B153ACC98E4E8"
+					title: "The City at the End of the Game"
+					type: "advancement"
+				}
+			]
+			title: "The City at the Edge"
+			x: 11.4d
+			y: -3.63d
+		}
+		{
+			dependencies: ["67B21E3A7E77F15D"]
+			description: ["The frozen sea kills by cold as much as by teeth. An old diving suit, three bolts at the collar, was made for it."]
+			id: "7A6483907626169E"
+			rewards: [
+				{
+					id: "5E615E2FE482DE41"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "481EEE49D9CE7C1C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "095FEEDF874FE7C4"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft and equip a full set of Three-Bolt Armor"
+			tasks: [
+				{
+					advancement: "aquamirae:adventure/three_bolt_armor"
+					criterion: ""
+					icon: "aquamirae:three_bolt_helmet"
+					id: "6ED7A53008097F84"
+					title: "Three-Bolt Suit"
+					type: "advancement"
+				}
+			]
+			title: "Three-Bolt Suit"
+			x: 5.7d
+			y: -0.63d
+		}
+	]
+	subtitle: ["Colder forests, emptier skies and a sea with no living crew"]
+	title: "&cAct II - &7&oThe Hero Evolves"
+}

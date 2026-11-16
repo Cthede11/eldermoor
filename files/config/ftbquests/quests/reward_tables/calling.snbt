@@ -1,0 +1,34 @@
+{
+	icon: "minecraft:compass"
+	id: "3C7EB4D1985C8857"
+	loot_size: 1
+	order_index: 30
+	rewards: [
+		{
+			item: "minecolonies:blockhutbuilder"
+		}
+		{
+			count: 32
+			item: "create:andesite_alloy"
+		}
+		{
+			count: 16
+			item: "irons_spellbooks:arcane_essence"
+		}
+		{
+			count: 12
+			item: "mekanism:ingot_steel"
+		}
+		{
+			item: "waystones:waystone"
+		}
+		{
+			item: "sophisticatedbackpacks:backpack"
+		}
+		{
+			count: 3
+			item: "coinsje:gold_coin"
+		}
+	]
+	title: "Choose Your Calling"
+}

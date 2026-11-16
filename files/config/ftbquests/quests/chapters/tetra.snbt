@@ -1,0 +1,1450 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tetra"
+	group: "02AD8609A8FE6EE4"
+	icon: "tetra:basic_workbench"
+	id: "5B338F74127CB160"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["74EA463EB51D4F9E"]
+			description: [
+				"Hit a crafting table with your mallet and it becomes a &eworkbench&f."
+				""
+				"Put any sword, tool, bow or shield on it and you can replace it one piece at a time: head, handle, binding, guard, pommel. Each material brings its own strengths."
+				""
+				"Used items &ehone&f: after enough use, a part can be improved for free at the bench."
+				""
+				"&7The Holosphere you were given shows every schematic you know."
+			]
+			hide_until_deps_complete: true
+			id: "01F6DE8D0D0469E0"
+			rewards: [
+				{
+					id: "517BBEC79F5568B7"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "0A4D46C42797E866"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3ED7A59889F0899F"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0273EEF25FB48659"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 250"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "146DEAE622BFE39E"
+					silent: true
+					title: "+250 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "tetra:upgrades/workbench"
+					criterion: ""
+					icon: "tetra:basic_workbench"
+					id: "537A69EF97E57B5C"
+					title: "Bench mk II"
+					type: "advancement"
+				}
+			]
+			title: "&f&lBasic Tinkering"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01F6DE8D0D0469E0"]
+			description: ["Place a vanilla tool such as a pickaxe, an axe or a hoe in a workbench and upgrade it"]
+			id: "0CAEF31BF51EC71C"
+			rewards: [
+				{
+					id: "55FEFD7BD9E7D5EE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "68641C07874BAC9A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1A52521F1DBCFA5C"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:upgrades/tool_upgrade"
+					criterion: ""
+					icon: "minecraft:iron_pickaxe"
+					id: "757BF91D0E9E69B7"
+					title: "Getting Another Upgrade"
+					type: "advancement"
+				}
+			]
+			title: "Getting Another Upgrade"
+			x: 2.1d
+			y: -4.38d
+		}
+		{
+			dependencies: ["0CAEF31BF51EC71C"]
+			id: "1C225C1C8F6E349D"
+			rewards: [
+				{
+					id: "37BB2FC46D99B85C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6BD88D105DACC043"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "24688719CCF646DE"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Place a vanilla sword in a workbench and upgrade it"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/sword_upgrade"
+					criterion: ""
+					icon: "minecraft:iron_sword"
+					id: "7B2EC0E479DD403A"
+					title: "Cutting a New One"
+					type: "advancement"
+				}
+			]
+			title: "Cutting a New One"
+			x: 3.85d
+			y: -4.38d
+		}
+		{
+			dependencies: ["1C225C1C8F6E349D"]
+			id: "0E618F5E0A20F0D5"
+			rewards: [
+				{
+					id: "31DFC1B3F1E4659D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3FDB46478D238CF8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "03D0222283BBFABB"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade a bow in a workbench"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/bow_upgrade"
+					criterion: ""
+					icon: "minecraft:bow"
+					id: "7F6E259804A66BF0"
+					title: "Archer's Adjustments"
+					type: "advancement"
+				}
+			]
+			title: "Archer's Adjustments"
+			x: 5.6d
+			y: -4.38d
+		}
+		{
+			dependencies: ["0E618F5E0A20F0D5"]
+			id: "56DBDF106436DCEC"
+			rewards: [
+				{
+					id: "54E6C2E86ED6966D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2C970E233AC814F0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "0BD8C38A1CD11CED"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade a shield in a workbench"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/shield_upgrade"
+					criterion: ""
+					icon: "minecraft:shield"
+					id: "1EC432D3E7E285A6"
+					title: "Adaptive Protection"
+					type: "advancement"
+				}
+			]
+			title: "Adaptive Protection"
+			x: 7.45d
+			y: -4.38d
+		}
+		{
+			dependencies: ["56DBDF106436DCEC"]
+			id: "65248CE9AA316F6D"
+			rewards: [
+				{
+					id: "0FBC2D3C7DCB0E1A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7DE4073F0C382DD6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "3E09CAF2C8DD90D9"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a very basic toolbelt from four pieces of string"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/toolbelt"
+					criterion: ""
+					icon: "minecraft:leather"
+					id: "7C718F5616FB6513"
+					title: "Simple Utilities"
+					type: "advancement"
+				}
+			]
+			title: "Simple Utilities"
+			x: 9.55d
+			y: -4.38d
+		}
+		{
+			dependencies: ["65248CE9AA316F6D"]
+			id: "49A2C0F697BD511A"
+			rewards: [
+				{
+					id: "105A07AE8951DD33"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "0566A5F34EC8C792"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "77DA64FC5C815D90"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "754A836AC776B323"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Place a rack near a workbench for easy access to your tools"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/rack"
+					criterion: ""
+					icon: "tetra:rack"
+					id: "31B6577F9DF85361"
+					title: "Within Reach"
+					type: "advancement"
+				}
+			]
+			title: "Within Reach"
+			x: 11.65d
+			y: -4.38d
+		}
+		{
+			dependencies: ["01F6DE8D0D0469E0"]
+			description: [
+				"Upgrade your hammer to a double-sided stone hammer (any type of stone), the stone hammer provides tier two hammering capabilities"
+				"Can be crafted in a crafting table in the same way as wooden hammers"
+			]
+			id: "5A5117FD02A3062A"
+			rewards: [
+				{
+					id: "46C72907F0BCD974"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "11BE466535BB15A1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "53CD47AE28FC124D"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:upgrades/hammer_2"
+					criterion: ""
+					icon: "minecraft:cobblestone"
+					id: "0439A518E031009C"
+					title: "Hammer II (Stone)"
+					type: "advancement"
+				}
+			]
+			title: "Hammer II (Stone)"
+			x: 2.1d
+			y: -0.88d
+		}
+		{
+			dependencies: ["5A5117FD02A3062A"]
+			description: [
+				"Craft a double-sided iron hammer, the iron hammer provides tier three hammering capabilities"
+				"Can only be crafted in a workbench, requires a secondary hammer in your inventory to craft"
+			]
+			id: "58CC93BB96EAE91E"
+			rewards: [
+				{
+					id: "68BD40AF9FAD47B5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3F20F6E803438118"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "091EE5BC7E9B52A0"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:upgrades/hammer_3"
+					criterion: ""
+					icon: "minecraft:iron_ingot"
+					id: "1EBD871BBD0B9689"
+					title: "Hammer III (Iron)"
+					type: "advancement"
+				}
+			]
+			title: "Hammer III (Iron)"
+			x: 3.85d
+			y: -0.88d
+		}
+		{
+			dependencies: ["58CC93BB96EAE91E"]
+			description: [
+				"Craft a double-sided blackstone hammer, the blackstone hammer provides tier four hammering capabilities"
+				"An upgraded handle or a binding will provide enough integrity to support a blackstone hammer"
+			]
+			id: "15918F77042EB99F"
+			rewards: [
+				{
+					id: "7257415BC8042458"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "047CC1E10D6573B8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "72C1E14F1DB7D5E0"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:upgrades/hammer_4"
+					criterion: ""
+					icon: "minecraft:blackstone"
+					id: "38511235761B2725"
+					title: "Hammer IV (Blackstone)"
+					type: "advancement"
+				}
+			]
+			title: "Hammer IV (Blackstone)"
+			x: 5.6d
+			y: -0.88d
+		}
+		{
+			dependencies: ["15918F77042EB99F"]
+			description: [
+				"Craft a double-sided obsidian hammer using an upgraded forge hammer, the obsidian hammer provides tier five hammering capabilities"
+				"Information about the forge hammer can be found in the spelunking advancements tab"
+			]
+			id: "4EA5EA5874CF27D0"
+			rewards: [
+				{
+					id: "60E69DFAF2465E19"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "0F3B93BF4F396795"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "425C3DA7F6A45879"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "2B29EA9D3D9035EA"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "tetra:upgrades/hammer_5"
+					criterion: ""
+					icon: "minecraft:obsidian"
+					id: "64E1943A3636029F"
+					title: "Hammer V (Obsidian)"
+					type: "advancement"
+				}
+			]
+			title: "Hammer V (Obsidian)"
+			x: 7.45d
+			y: -0.88d
+		}
+		{
+			dependencies: ["4EA5EA5874CF27D0"]
+			description: ["Craft a double-sided netherite hammer using a fully upgraded forge hammer, the netherite hammer provides tier six hammering capabilities"]
+			id: "6EA653641C7E9B02"
+			rewards: [
+				{
+					id: "2A736F2652DB589A"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "09890D9B9B275802"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "37DB3F613348A4F2"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "763A963D55523300"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "tetra:upgrades/hammer_6"
+					criterion: ""
+					icon: "minecraft:netherite_ingot"
+					id: "4301C671C0A3D7D3"
+					title: "Hammer VI (Netherite)"
+					type: "advancement"
+				}
+			]
+			title: "Hammer VI (Netherite)"
+			x: 13.75d
+			y: -0.88d
+		}
+		{
+			dependencies: ["1C225C1C8F6E349D"]
+			id: "1F3363AC5DA01EFF"
+			rewards: [
+				{
+					id: "647345944EDFD9BB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "32B8E918BE4FD545"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "573B10476278376D"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Use a sword until it can be honed, then hone it at a workbench"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/sword_hone"
+					criterion: ""
+					icon: "minecraft:grindstone"
+					id: "043ED43A4B9BEA1D"
+					title: "Honed Blade"
+					type: "advancement"
+				}
+			]
+			title: "Honed Blade"
+			x: 5.6d
+			y: -2.62d
+		}
+		{
+			dependencies: ["1F3363AC5DA01EFF"]
+			description: ["Upgrade a sword's hilt or strengthen the sword with a binding to increase its integrity"]
+			id: "7B8EEF72DA105799"
+			rewards: [
+				{
+					id: "1813C0717486F189"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "20FC17C27A2817B9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "75FC8A5C0A42AF9A"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:upgrades/sword_integrity"
+					criterion: ""
+					icon: "minecraft:smithing_table"
+					id: "5F9FC054DC8E8A1A"
+					title: "Tightly Wrought"
+					type: "advancement"
+				}
+			]
+			title: "Tightly Wrought"
+			x: 7.45d
+			y: -2.62d
+		}
+		{
+			dependencies: ["7B8EEF72DA105799"]
+			description: ["Use a bolt to bind a tool or a sword, then use the tweak tab in a workbench to change the stats of the item"]
+			id: "5502D5FFAE93FB74"
+			rewards: [
+				{
+					id: "1127DA9E7513F291"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "510D511F3090995F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "4F31A79BBB34DEFB"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:spelunking/use_bolt"
+					criterion: ""
+					icon: "tetra:forged_bolt"
+					id: "14080A344B7AA4F4"
+					title: "Tweaked to Perfection"
+					type: "advancement"
+				}
+			]
+			title: "Tweaked to Perfection"
+			x: 9.55d
+			y: -2.62d
+		}
+		{
+			dependencies: ["5502D5FFAE93FB74"]
+			description: ["Apply an improvement to a sword module, and then hone that improvement to increase its effect"]
+			id: "450C212D90D54F33"
+			rewards: [
+				{
+					id: "3FADF0F20E16DC33"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0F009BB37483B390"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "6F4C49401367D436"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:upgrades/sword_improvement_hone"
+					criterion: ""
+					icon: "minecraft:diamond_sword"
+					id: "7A0C5160D10951C9"
+					title: "Double Up!"
+					type: "advancement"
+				}
+			]
+			title: "Double Up!"
+			x: 11.65d
+			y: -2.62d
+		}
+		{
+			dependencies: ["450C212D90D54F33"]
+			id: "723F450FD248DA56"
+			rewards: [
+				{
+					id: "6C2634D31C633F01"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "5CC847AE045F0C6B"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5EEA15CBCD1061C6"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "7AC5A2D8D44580EA"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Hone the speed or damage of a hilt or a blade to level 5"
+			tasks: [
+				{
+					advancement: "tetra:upgrades/sword_hone_peak"
+					criterion: ""
+					icon: "minecraft:netherite_sword"
+					id: "13837CC6C544FE45"
+					title: "Tall Build"
+					type: "advancement"
+				}
+			]
+			title: "Tall Build"
+			x: 13.75d
+			y: -2.62d
+		}
+		{
+			dependencies: ["01F6DE8D0D0469E0"]
+			description: ["Deepslate containing geodes glimmer in the presence of light"]
+			id: "0BFE2E2A3AE6299B"
+			rewards: [
+				{
+					id: "287B2D76F6249BCC"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5848CD9B554D9BD3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "69375FC47BFBF8FC"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find a geode when mining deepslate"
+			tasks: [
+				{
+					advancement: "tetra:spelunking/geode"
+					criterion: ""
+					icon: "tetra:geode"
+					id: "26AE2B59066B4DAB"
+					title: "Hollow Solids"
+					type: "advancement"
+				}
+			]
+			title: "Hollow Solids"
+			x: 2.1d
+			y: 4.13d
+		}
+		{
+			dependencies: ["0BFE2E2A3AE6299B"]
+			id: "0319A30E4377C72F"
+			rewards: [
+				{
+					id: "055BFAF26801CBE2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0F7922883C4C29F8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "404F988FB554BF52"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade a mallet and use it to break open a geode at a workbench"
+			tasks: [
+				{
+					advancement: "tetra:spelunking/geode_open"
+					criterion: ""
+					icon: "minecraft:raw_gold"
+					id: "539882667F53190D"
+					title: "Mineral Crackers"
+					type: "advancement"
+				}
+			]
+			title: "Mineral Crackers"
+			x: 3.85d
+			y: 4.13d
+		}
+		{
+			dependencies: ["0319A30E4377C72F"]
+			description: ["Find a pristine gem in a geode and use it to socket a sword or a tool"]
+			id: "4A26E80E4BD6276E"
+			rewards: [
+				{
+					id: "4AB129F786068F32"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7FFB403280942983"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "0CB4FA49948812BC"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:spelunking/pristine_socket"
+					criterion: ""
+					icon: "tetra:pristine_lapis"
+					id: "7A1B8AB3C9D4A8C2"
+					title: "Expensive Maintenance"
+					type: "advancement"
+				}
+			]
+			title: "Expensive Maintenance"
+			x: 5.6d
+			y: 4.13d
+		}
+		{
+			dependencies: ["4A26E80E4BD6276E"]
+			id: "37899223461F6EAE"
+			rewards: [
+				{
+					id: "3EAC49EEF836B40F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0BA2DF64A5843003"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "0AE198BAD78CC16A"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find a scroll in the world or purchase one from a villager"
+			tasks: [
+				{
+					advancement: "tetra:spelunking/find_scroll"
+					criterion: ""
+					icon: "tetra:scroll_rolled"
+					id: "10D8F22E0BF06C0D"
+					title: "Acquired Knowledge"
+					type: "advancement"
+				}
+			]
+			title: "Acquired Knowledge"
+			x: 7.45d
+			y: 4.13d
+		}
+		{
+			dependencies: ["37899223461F6EAE"]
+			id: "14CCBB5FB17618E2"
+			rewards: [
+				{
+					id: "720E0D0A4A978C46"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "4BF9A4A690760B33"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2835555FEFDB7B2D"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "6BE4835856BCC8D6"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Find a gilding scroll in a nether fortress"
+			tasks: [
+				{
+					advancement: "tetra:spelunking/find_scroll_gild"
+					criterion: ""
+					icon: "tetra:scroll_rolled"
+					id: "42FBBF63D7A23361"
+					title: "Arcane Additions"
+					type: "advancement"
+				}
+			]
+			title: "Arcane Additions"
+			x: 9.55d
+			y: 4.13d
+		}
+		{
+			dependencies: ["01F6DE8D0D0469E0"]
+			description: ["A map to one can be bought from a cartographer."]
+			id: "2F02DD0EA48E5CDF"
+			rewards: [
+				{
+					id: "018523600F08685A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7BD6901E8C840B61"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1EF2E3174A1B4F94"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find ancient ruins deep down in cold or mountainous biomes"
+			tasks: [
+				{
+					advancement: "tetra:spelunking/ancient_ruins"
+					criterion: ""
+					icon: "tetra:forged_pillar"
+					id: "155E82D33EDC65D8"
+					title: "Long Gone"
+					type: "advancement"
+				}
+			]
+			title: "Long Gone"
+			x: 2.1d
+			y: 0.88d
+		}
+		{
+			dependencies: ["2F02DD0EA48E5CDF"]
+			description: ["Hit the highlighted areas on crates and containers with the correct tools to break them open"]
+			id: "1B70D69E21DA2336"
+			rewards: [
+				{
+					id: "0EC1421EE039E826"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "764554FD4D9646D2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1A3FA02CF798B428"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:spelunking/containers"
+					criterion: ""
+					icon: "tetra:forged_crate"
+					id: "20741EFEE89BB0DE"
+					title: "\"Salvage\""
+					type: "advancement"
+				}
+			]
+			title: "\"Salvage\""
+			x: 3.85d
+			y: 0.88d
+		}
+		{
+			dependencies: ["1B70D69E21DA2336"]
+			id: "4B4B2E70F53DFD0E"
+			rewards: [
+				{
+					id: "57FF43AD3F026576"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6ABE6B0D436A6B04"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "26B0D6B9A6E08262"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find a thermal cell in the ancient ruins"
+			tasks: [
+				{
+					advancement: "tetra:spelunking/find_cell"
+					criterion: ""
+					icon: "tetra:thermal_cell"
+					id: "11D3B2A8B5CE4063"
+					title: "Thermal Container"
+					type: "advancement"
+				}
+			]
+			title: "Thermal Container"
+			x: 5.6d
+			y: 0.88d
+		}
+		{
+			dependencies: ["4B4B2E70F53DFD0E"]
+			description: [
+				"Fix up a forge hammer by attaching two charged thermal cells and two upgrades"
+				"The sides of the hammer will be lit up when it's functional"
+			]
+			id: "3EB18922F5386020"
+			rewards: [
+				{
+					id: "6AB8F82FCF391BA1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "19F1653580BDD0C7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "3BD2ECDFA1A033A9"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:spelunking/hammer_fix"
+					criterion: ""
+					icon: "tetra:hammer_base"
+					id: "5B9E29B926F1CC25"
+					title: "Restored Machinery"
+					type: "advancement"
+				}
+			]
+			title: "Restored Machinery"
+			x: 7.45d
+			y: 0.88d
+		}
+		{
+			dependencies: ["3EB18922F5386020"]
+			description: [
+				"Attach a combustion chamber to a forge hammer to increase its hammer tier by 1"
+				"Hammer upgrades like the combustion chamber can be found in crates and containers"
+			]
+			id: "23332F0BD93FBFAA"
+			rewards: [
+				{
+					id: "3D4E283FB141EDB9"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3F17CB5089159F97"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "3C9BA70F8E09DF26"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:spelunking/hammer_power"
+					criterion: ""
+					icon: "tetra:combustion_chamber"
+					id: "3AC2AD96AA16197C"
+					title: "Combustion Power-up"
+					type: "advancement"
+				}
+			]
+			title: "Combustion Power-up"
+			x: 9.55d
+			y: 0.88d
+		}
+		{
+			dependencies: ["23332F0BD93FBFAA"]
+			id: "3B493FEC3A74FD61"
+			rewards: [
+				{
+					id: "65721141CF413DC6"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "584E71AF4DD43781"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6708A28FF331148C"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "4941FF619F292A3D"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Use a forge hammer to craft a module requiring tier 5+ hammering"
+			tasks: [
+				{
+					advancement: "tetra:spelunking/hammer_craft"
+					criterion: ""
+					icon: "tetra:forged_workbench"
+					id: "7E9CE53D4B1F04FE"
+					title: "Magmatic Press Channel"
+					type: "advancement"
+				}
+			]
+			title: "Magmatic Press Channel"
+			x: 13.75d
+			y: 0.88d
+		}
+		{
+			dependencies: ["1B70D69E21DA2336"]
+			description: ["Find a stonecutter in a container and attach it to a hilt, the stonecutter can cut through stone in wide swathes"]
+			id: "7C20632C97875E01"
+			rewards: [
+				{
+					id: "6DB38FDF322464CD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0D8B023E6AEC921D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1E33D35C8477B208"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:spelunking/stonecutter"
+					criterion: ""
+					icon: "tetra:stonecutter"
+					id: "1212EE58E3C8D414"
+					title: "Like Butter"
+					type: "advancement"
+				}
+			]
+			title: "Like Butter"
+			x: 5.6d
+			y: 2.37d
+		}
+		{
+			dependencies: ["7C20632C97875E01"]
+			description: ["Find an earthpiercer in a container and attach it to a handle, the earthpiercer can break several blocks in a line"]
+			id: "0E47E9040848D393"
+			rewards: [
+				{
+					id: "1FDE270B44319442"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "34A62EC27DB0D410"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1559F598BBAB08B5"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "tetra:spelunking/earthpiercer"
+					criterion: ""
+					icon: "tetra:earthpiercer"
+					id: "410B0397EDE5A066"
+					title: "Planetary Piercing"
+					type: "advancement"
+				}
+			]
+			title: "Planetary Piercing"
+			x: 7.45d
+			y: 2.37d
+		}
+		{
+			dependencies: ["0E47E9040848D393"]
+			id: "79C532C571FC2A46"
+			rewards: [
+				{
+					id: "48E787B75A509E70"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "01275AD173F632F9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "0CF9961A3DF84788"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find a chthonic extractor in a crate or a container"
+			tasks: [
+				{
+					advancement: "tetra:spelunking/chthonic_extractor"
+					criterion: ""
+					icon: "tetra:chthonic_extractor"
+					id: "5F1E59D4856F7302"
+					title: "Deep Extraction"
+					type: "advancement"
+				}
+			]
+			title: "Deep Extraction"
+			x: 9.55d
+			y: 2.37d
+		}
+		{
+			dependencies: ["79C532C571FC2A46"]
+			id: "46A910AA05C47E28"
+			rewards: [
+				{
+					id: "5B143DBDC5056558"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "19009CA98228109D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2DC9118D4F6DF971"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "1B360642A08466A1"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Find a planar stabilizer in the ancient ruins"
+			tasks: [
+				{
+					advancement: "tetra:spelunking/find_planar"
+					criterion: ""
+					icon: "tetra:planar_stabilizer"
+					id: "4FA989E82B46C545"
+					title: "Intradimensional Technology"
+					type: "advancement"
+				}
+			]
+			title: "Intradimensional Technology"
+			x: 11.65d
+			y: 2.37d
+		}
+		{
+			dependencies: [
+				"6EA653641C7E9B02"
+				"3B493FEC3A74FD61"
+				"723F450FD248DA56"
+			]
+			description: ["Any two of: a netherite hammer, a module made on a restored forge hammer, a part honed to level 5."]
+			id: "626B82BE1E85B79C"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "37DBB5E724CE4FFA"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "6ECD5A2F731C20EE"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "314605F4501F7DD9"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32B7CE81053C3BF1"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 250"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "45FDA3650D7AFEAC"
+					silent: true
+					title: "+250 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "16672F59B03187F9"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&f&lMaster Tinker"
+			x: 16.1d
+			y: -0.88d
+		}
+	]
+	subtitle: ["Take any tool apart and build a better one"]
+	title: "&fTetra"
+}

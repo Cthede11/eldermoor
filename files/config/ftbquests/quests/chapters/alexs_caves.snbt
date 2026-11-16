@@ -1,0 +1,1107 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "alexs_caves"
+	group: "2082B1037B9195D1"
+	icon: "alexscaves:cave_map"
+	id: "6400ED4CC93226C7"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4738D74E64F93605"]
+			description: [
+				"Far below the Overworld lie five gigantic, rare cave biomes, each a world of its own."
+				""
+				"Loot &6Cave Tablets&f from underground cabins, mineshafts and other structure chests. Each tablet names one biome."
+			]
+			hide_until_deps_complete: true
+			id: "6DBCC890656CD1A3"
+			rewards: [
+				{
+					id: "0A4FA2E0BA424F5A"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 32
+					id: "71505B765DE0C564"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "687ED22D569DADD6"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "69B42FFBD8E80C78"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "An Explorer's side-path"
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/cave_tablet"
+					criterion: ""
+					icon: "alexscaves:cave_tablet"
+					id: "7048B38B8E7D0A33"
+					title: "Find a Cave Tablet"
+					type: "advancement"
+				}
+			]
+			title: "&6Cave Tablets"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6DBCC890656CD1A3"]
+			description: ["Tablet + map + a few odds and ends = a &6Cave Map&f that leads to that biome. Dig down at the X - carefully."]
+			id: "53F98C5D89A5DAC4"
+			rewards: [
+				{
+					id: "77555902C7D8F7C7"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "54CBC1E3BA495FCA"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forestry 80"
+					elevate_perms: true
+					icon: "minecraft:iron_axe"
+					id: "0EF22D095C20444E"
+					silent: true
+					title: "+80 Forestry experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "02D19BD06141C106"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "X marks the spot"
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/cave_map"
+					criterion: ""
+					icon: "alexscaves:cave_map"
+					id: "1849D4BA623F39E0"
+					title: "Craft a Cave Map"
+					type: "advancement"
+				}
+			]
+			title: "Cave Map"
+			x: 1.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6DBCC890656CD1A3"]
+			description: ["The mod's guide book. Find &eCave Codices&f in each biome to unlock its pages."]
+			id: "15C09A0E9485260C"
+			optional: true
+			rewards: [
+				{
+					id: "4286D47A70AD1777"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "44E3A1B884FE799C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6D8550AC5FBBA97F"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/cave_book"
+					criterion: ""
+					icon: "alexscaves:cave_book"
+					id: "22C2F9692D85B191"
+					title: "Obtain the Cave Compendium"
+					type: "advancement"
+				}
+			]
+			title: "Cave Compendium"
+			x: 1.85d
+			y: 1.5d
+		}
+		{
+			dependencies: ["53F98C5D89A5DAC4"]
+			description: ["Floating metal, robots and two warring minerals: scarlet and azure neodymium. Iron armour gets pulled around by magnets here."]
+			id: "705679860E4C9E62"
+			rewards: [
+				{
+					id: "6D5E7E2D9918EA05"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "16E384D3E319F004"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "713C8C354FC2E9A2"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "48DEB9306911AE9C"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/discover_magnetic_caves"
+					criterion: ""
+					icon: "alexscaves:scarlet_neodymium_ingot"
+					id: "68C4F2A43582203C"
+					title: "Discover the Magnetic Caves"
+					type: "advancement"
+				}
+			]
+			title: "&9Magnetic Caves"
+			x: 4.6d
+			y: -4.75d
+		}
+		{
+			dependencies: ["705679860E4C9E62"]
+			id: "399D1FB74BFD9BF4"
+			rewards: [
+				{
+					id: "7F082310C740668F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "2FC012C6FF71C5BE"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2A16AEE115FF9094"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Makes magnets, levitation rails and the Galena Gauntlet."
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/neodymium_ingot"
+					criterion: ""
+					icon: "alexscaves:azure_neodymium_ingot"
+					id: "4AC9EC6BA71C38AA"
+					title: "Smelt Neodymium"
+					type: "advancement"
+				}
+			]
+			title: "Neodymium"
+			x: 6.35d
+			y: -4.75d
+		}
+		{
+			dependencies: ["399D1FB74BFD9BF4"]
+			id: "4C8FE44BBF4F9CAD"
+			optional: true
+			rewards: [
+				{
+					id: "2B1F41AAA5203F31"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "709DA81CC2CBBF21"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6608812C82363F08"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1EAD58A6C9EA1223"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "A whirling construct of scrap. Break it apart."
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/defeat_magnetron"
+					criterion: ""
+					icon: "alexscaves:heavyweight"
+					id: "3F56A62B76B99593"
+					title: "Defeat a Magnetron"
+					type: "advancement"
+				}
+			]
+			title: "Magnetron"
+			x: 8.1d
+			y: -4.75d
+		}
+		{
+			dependencies: ["53F98C5D89A5DAC4"]
+			id: "237E32E16973E2E4"
+			rewards: [
+				{
+					id: "0F8116A5244D3B71"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "3953411885FCA0F9"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03CDD3152C5A582E"
+					table_id: 4324331771948795312L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "5387346BEE3FA498"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "A sunlit jungle under the earth. Dinosaurs. Tameable dinosaurs."
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/discover_primordial_caves"
+					criterion: ""
+					icon: "alexscaves:amber"
+					id: "273AD852ACE03E96"
+					title: "Discover the Primordial Caves"
+					type: "advancement"
+				}
+			]
+			title: "&aPrimordial Caves"
+			x: 4.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["237E32E16973E2E4"]
+			description: ["Feed them dinosaur chops. They hunt in packs - better with you than against you."]
+			id: "0B0EE29D65EC2A9B"
+			optional: true
+			rewards: [
+				{
+					id: "5545C09521EE2DEB"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "2E7DC9C51033399F"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6ABF803B2A05E4AB"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/tame_vallumraptor"
+					criterion: ""
+					icon: "alexscaves:dinosaur_chop"
+					id: "7B2746F8B103168C"
+					title: "Tame a Vallumraptor"
+					type: "advancement"
+				}
+			]
+			title: "Clever Girl"
+			x: 6.35d
+			y: -1.5d
+		}
+		{
+			dependencies: ["237E32E16973E2E4"]
+			id: "1F0893AAA9DF7364"
+			optional: true
+			rewards: [
+				{
+					id: "6D6BE74434B80B8C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "7D038E0E5EFE250A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 80"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "60251F4A75785DCB"
+					silent: true
+					title: "+80 Exploration experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "619FFF4E19537FE4"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ride it, or let it carry you by the shoulders."
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/tame_subterranodon"
+					criterion: ""
+					icon: "minecraft:cod"
+					id: "5E62F272FC50F65A"
+					title: "Tame a Subterranodon"
+					type: "advancement"
+				}
+			]
+			title: "Air Mail"
+			x: 6.35d
+			y: 1.5d
+		}
+		{
+			dependencies: ["237E32E16973E2E4"]
+			description: ["Offer an &eOminous Catalyst&f to a volcano's core to wake the flaming titan. Its Tectonic Shards make the Primordial armour and the Extinction Spear."]
+			id: "223529A017171EB1"
+			rewards: [
+				{
+					id: "3190085BC3BF5DB8"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "136F26DC7DF194B2"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "673D508EACFF5A1E"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 240"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "16E4EBCEE2CECF8C"
+					silent: true
+					title: "+240 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "130F4FDF55A3C05A"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Boss"
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/defeat_luxtructosaurus"
+					criterion: ""
+					icon: "alexscaves:tectonic_shard"
+					id: "2B54EE0BD24DEB3B"
+					title: "Defeat the Luxtructosaurus"
+					type: "advancement"
+				}
+			]
+			title: "&cLuxtructosaurus"
+			x: 6.35d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53F98C5D89A5DAC4"]
+			description: ["Acid lakes and glowing uranium. &cRadiation is real&f - craft a Hazmat suit before you linger."]
+			id: "0E011709DB2D7598"
+			rewards: [
+				{
+					id: "4DE52585DB6E0F5F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "32272C7ADAF49225"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "633E87D65EB1DD11"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/discover_toxic_caves"
+					criterion: ""
+					icon: "alexscaves:uranium"
+					id: "064ED23DD008A6D7"
+					title: "Discover the Toxic Caves"
+					type: "advancement"
+				}
+			]
+			title: "&eToxic Caves"
+			x: 4.6d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E011709DB2D7598"]
+			description: ["&7Found in chests: &fToxic Ruins"]
+			id: "41E4FBC90978EE2A"
+			rewards: [
+				{
+					id: "2561FE1ECE706AAA"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "4E82A83525E966BD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 80"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "554FDD8529E7E0AE"
+					silent: true
+					title: "+80 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "169D313B41487F51"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/hazmat_armor"
+					criterion: ""
+					icon: "alexscaves:hazmat_chestplate"
+					id: "33FC2AD7800705CC"
+					title: "Wear a Hazmat suit"
+					type: "advancement"
+				}
+			]
+			title: "Hazmat Suit"
+			x: 6.35d
+			y: -3.0d
+		}
+		{
+			dependencies: ["41E4FBC90978EE2A"]
+			description: ["&7Made from: &fPolymer Plate x4, Uranium Rod x2, Fissile Core"]
+			id: "6D5648BEC26D0FD4"
+			optional: true
+			rewards: [
+				{
+					id: "3979EAD6A998FB42"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "72B043EEBB699D8F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6658122996E3A81D"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "4D11AFBD339CE8FD"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pew. Runs on uranium."
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/raygun"
+					criterion: ""
+					icon: "alexscaves:raygun"
+					id: "64EFAB401EDA892A"
+					title: "Obtain a Raygun"
+					type: "advancement"
+				}
+			]
+			title: "Raygun"
+			x: 8.1d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6D5648BEC26D0FD4"]
+			description: ["Detonate a nuclear bomb next to the right egg and raise what hatches. Yes, really."]
+			id: "4D0AEC3A292C5D1F"
+			optional: true
+			rewards: [
+				{
+					id: "3DF8660D74521154"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 2
+					id: "0646C4E2EDB664AD"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "135654A7D4890E61"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6FFC2C335FC6390B"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Your own kaiju"
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/tame_tremorzilla"
+					criterion: ""
+					icon: "alexscaves:tremorzilla_egg"
+					id: "7F629957E25D721C"
+					title: "Tame a Tremorzilla"
+					type: "advancement"
+				}
+			]
+			title: "&cKing of the Monsters"
+			x: 9.85d
+			y: -3.0d
+		}
+		{
+			dependencies: ["53F98C5D89A5DAC4"]
+			description: ["A lightless trench beneath the deep ocean. Bring water breathing - or build a submarine."]
+			id: "488822269EF0BBE8"
+			rewards: [
+				{
+					id: "59BC6809DFC27D12"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "73077AA9C49B5692"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "287A52433E797E65"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/discover_abyssal_chasm"
+					criterion: ""
+					icon: "alexscaves:pearl"
+					id: "0765E31CEDA29376"
+					title: "Discover the Abyssal Chasm"
+					type: "advancement"
+				}
+			]
+			title: "&3Abyssal Chasm"
+			x: 4.6d
+			y: 3.0d
+		}
+		{
+			dependencies: ["488822269EF0BBE8"]
+			description: ["&7Found in chests: &fAbyssal Ruins"]
+			id: "6A5517573C710863"
+			rewards: [
+				{
+					id: "38BFADEB83198DE5"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "17F4DB4B90F4D759"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "75454DF0532085A8"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/diving_armor"
+					criterion: ""
+					icon: "alexscaves:diving_chestplate"
+					id: "6E1EDDEFD4F093F6"
+					title: "Wear a Diving suit"
+					type: "advancement"
+				}
+			]
+			title: "Diving Suit"
+			x: 6.35d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A5517573C710863"]
+			description: ["The Abyssal Chasm is too deep and too dark to swim. A Submarine carries its own air and its own lights; look the recipe up with &eR&f."]
+			id: "4B987BC994C6C7AE"
+			optional: true
+			rewards: [
+				{
+					id: "4926BC773AE328BF"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "70E92D90D2CEEE90"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "45B8E32B6BE544F3"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Take a ride in a Submarine."
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/ride_submarine"
+					criterion: ""
+					icon: "alexscaves:submarine"
+					id: "7DFC6C816C896D29"
+					title: "Pilot a Submarine"
+					type: "advancement"
+				}
+			]
+			title: "Submarine"
+			x: 8.1d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A5517573C710863"]
+			description: ["Offer treasures at their altars to earn their trust. Befriended, they trade unique gear like the Ortholance and Sea Staff."]
+			id: "0E31FF73F9AA809B"
+			optional: true
+			rewards: [
+				{
+					id: "2549890E0A1EDC35"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 2
+					id: "1A56B626A7D7D9E0"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "7EE27A7EE8CC6103"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/trade_with_deep_one"
+					criterion: ""
+					icon: "alexscaves:pearl"
+					id: "0660D9A69C940A4C"
+					title: "Trade with a Deep One"
+					type: "advancement"
+				}
+			]
+			title: "The Deep Ones"
+			x: 8.1d
+			y: 4.5d
+		}
+		{
+			dependencies: ["53F98C5D89A5DAC4"]
+			description: ["Darkness itself. Cultists, moths and things that only move when you are not looking."]
+			id: "57613B8591F6C7CA"
+			rewards: [
+				{
+					id: "4EC75E312005711B"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "158A3FA2D9C00FFC"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "04182317E6BA11B6"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/discover_forlorn_hollows"
+					criterion: ""
+					icon: "alexscaves:dark_tatters"
+					id: "2475E9F9B88492CC"
+					title: "Discover the Forlorn Hollows"
+					type: "advancement"
+				}
+			]
+			title: "&8Forlorn Hollows"
+			x: 4.6d
+			y: 6.0d
+		}
+		{
+			dependencies: ["57613B8591F6C7CA"]
+			description: ["Underzealots in the Forlorn Hollows summon it by sacrificing a Gloomoth. It can possess its targets."]
+			id: "3FF3D535F366FD3C"
+			rewards: [
+				{
+					id: "7F3B5A6B7AB44A96"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "3BA125F4CB3EBC6B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1537F41B38C3D796"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "00DE8BC1E80E8197"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat a Watcher."
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/defeat_watcher"
+					criterion: ""
+					icon: "alexscaves:occult_gem"
+					id: "432A6C7CB8425823"
+					title: "Defeat a Watcher"
+					type: "advancement"
+				}
+			]
+			title: "Don't Blink"
+			x: 6.35d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3FF3D535F366FD3C"]
+			description: ["Let the Underzealots finish their ritual, then kill what they summon."]
+			id: "31F8E448105CD3CF"
+			rewards: [
+				{
+					id: "1711E0C76BE3AE71"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "5179F17B62BA88CA"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34A245FE6E069C11"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 240"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "59383A66F32287BF"
+					silent: true
+					title: "+240 Combat experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "090BBAFE87821746"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Boss"
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/defeat_forsaken"
+					criterion: ""
+					icon: "alexscaves:pure_darkness"
+					id: "7449CB357511D076"
+					title: "Defeat the Forsaken"
+					type: "advancement"
+				}
+			]
+			title: "&cThe Forsaken"
+			x: 8.1d
+			y: 6.0d
+		}
+		{
+			dependencies: ["53F98C5D89A5DAC4"]
+			description: ["A sixth, secret biome. Purple soda rivers, gingerbread towns, and a dental emergency waiting to happen."]
+			id: "7297500D7F01FA17"
+			optional: true
+			rewards: [
+				{
+					id: "4738252D0EA9CEB1"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "256CEEBAA0D00C36"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B89CD34DB483775"
+					table_id: 4324331771948795312L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "09A53B03D0B4EB5A"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bonus biome"
+			tasks: [
+				{
+					advancement: "alexscaves:alexscaves/discover_candy_cavity"
+					criterion: ""
+					icon: "alexscaves:candy_cane"
+					id: "2DD848A373F4AD56"
+					title: "Discover the Candy Cavity"
+					type: "advancement"
+				}
+			]
+			title: "&dCandy Cavity"
+			x: 4.6d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"705679860E4C9E62"
+				"237E32E16973E2E4"
+				"0E011709DB2D7598"
+				"488822269EF0BBE8"
+				"57613B8591F6C7CA"
+			]
+			description: ["You have stood in all five great caves beneath Eldermoor."]
+			hide_dependency_lines: true
+			id: "728A7F73B32B80DD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3E0ACAB25D423BF8"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B007CB02942261C"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "16B305DFB8F99743"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					id: "69957B9E70978CA5"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+				{
+					command: "/mastery xp @s forestry 240"
+					elevate_perms: true
+					icon: "minecraft:iron_axe"
+					id: "50F2161EC6BB5629"
+					silent: true
+					title: "+240 Forestry experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "16809B5C0E490B18"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Discover all five"
+			tasks: [
+				{
+					id: "3C0F2F7B3049DC37"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&2&lSpelunker Supreme"
+			x: 11.82d
+			y: -4.75d
+		}
+	]
+	subtitle: ["Five lost worlds hidden deep beneath your feet"]
+	title: "&2Alex's Caves"
+}

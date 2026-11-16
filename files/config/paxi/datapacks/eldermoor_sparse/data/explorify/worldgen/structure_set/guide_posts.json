@@ -1,0 +1,20 @@
+{
+  "placement": {
+    "frequency": 0.75,
+    "salt": 31205983,
+    "separation": 35,
+    "spacing": 112,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "explorify:guide_post_cold",
+      "weight": 1
+    },
+    {
+      "structure": "explorify:guide_post_warm",
+      "weight": 1
+    }
+  ]
+}

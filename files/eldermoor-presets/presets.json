@@ -1,0 +1,1040 @@
+{
+ "default": "potato",
+ "order": [
+  "potato",
+  "low",
+  "balanced",
+  "high"
+ ],
+ "managed": [
+  "AdvancementPlaques-",
+  "AmbientSounds_",
+  "BiomeParticleWeather-",
+  "DistantHorizons-",
+  "ExtraSoundsNext-",
+  "ImmersiveUI-",
+  "ItemPhysicLite_",
+  "PresenceFootsteps-",
+  "RyoamicLights-",
+  "SimpleRPC-",
+  "TravelersTitles-",
+  "blur-",
+  "drippyloadingscreen_",
+  "fallingleaves-",
+  "fancymenu_",
+  "farsight-",
+  "notenoughanimations-",
+  "oculus-"
+ ],
+ "labels": {
+  "oculus-": "shaders (Oculus)",
+  "AmbientSounds_": "ambient sound engine",
+  "PresenceFootsteps-": "footstep sounds per material",
+  "ExtraSoundsNext-": "inventory sounds",
+  "fallingleaves-": "falling leaves",
+  "blur-": "blurred background behind menus",
+  "notenoughanimations-": "extra player animations",
+  "ItemPhysicLite_": "dropped items lying flat",
+  "RyoamicLights-": "light from held torches",
+  "ImmersiveUI-": "animated inventory",
+  "TravelersTitles-": "biome titles on screen",
+  "AdvancementPlaques-": "advancement plaques",
+  "farsight-": "keeping far chunks loaded",
+  "SimpleRPC-": "Discord status",
+  "fancymenu_": "custom animated menus",
+  "drippyloadingscreen_": "custom loading screen",
+  "DistantHorizons-": "distant terrain (Distant Horizons)",
+  "BiomeParticleWeather-": "biome weather particles"
+ },
+ "presets": {
+  "potato": {
+   "title": "Potato",
+   "for": "Old laptops, integrated graphics, 8 GB of RAM. The pack starts on this one.",
+   "what": "Vanilla-style menus and textures, no shaders or distant terrain, shortest view and fewest effects.",
+   "memory_mb": 5120,
+   "edits": [
+    {
+     "file": "options.txt",
+     "find": "(?m)^renderDistance:.*$",
+     "line": "renderDistance:5",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^renderDistance:.*$",
+     "line": "renderDistance:5",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^simulationDistance:.*$",
+     "line": "simulationDistance:5",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^simulationDistance:.*$",
+     "line": "simulationDistance:5",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^graphicsMode:.*$",
+     "line": "graphicsMode:0",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^graphicsMode:.*$",
+     "line": "graphicsMode:0",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^particles:.*$",
+     "line": "particles:2",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^particles:.*$",
+     "line": "particles:2",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^mipmapLevels:.*$",
+     "line": "mipmapLevels:0",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^mipmapLevels:.*$",
+     "line": "mipmapLevels:0",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^biomeBlendRadius:.*$",
+     "line": "biomeBlendRadius:0",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^biomeBlendRadius:.*$",
+     "line": "biomeBlendRadius:0",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^entityShadows:.*$",
+     "line": "entityShadows:false",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^entityShadows:.*$",
+     "line": "entityShadows:false",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^entityDistanceScaling:.*$",
+     "line": "entityDistanceScaling:0.5",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^entityDistanceScaling:.*$",
+     "line": "entityDistanceScaling:0.5",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^ao:.*$",
+     "line": "ao:false",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^ao:.*$",
+     "line": "ao:false",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^maxFps:.*$",
+     "line": "maxFps:60",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^maxFps:.*$",
+     "line": "maxFps:60",
+     "add": true
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*rendererMode[ \\t]*=.*$",
+     "line": "rendererMode = \"DISABLED\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*enableDistantGeneration[ \\t]*=.*$",
+     "line": "enableDistantGeneration = false"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*numberOfThreads[ \\t]*=.*$",
+     "line": "numberOfThreads = 1"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*threadRunTimeRatio[ \\t]*=.*$",
+     "line": "threadRunTimeRatio = \"0.25\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*lodChunkRenderDistanceRadius[ \\t]*=.*$",
+     "line": "lodChunkRenderDistanceRadius = 32"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*horizontalQuality[ \\t]*=.*$",
+     "line": "horizontalQuality = \"LOW\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*verticalQuality[ \\t]*=.*$",
+     "line": "verticalQuality = \"LOW\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*enableSsao[ \\t]*=.*$",
+     "line": "enableSsao = false"
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"leaves_quality\"[ \\t]*:.*$",
+     "line": "\"leaves_quality\": \"FAST\""
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"weather_quality\"[ \\t]*:.*$",
+     "line": "\"weather_quality\": \"FAST\""
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"enable_vignette\"[ \\t]*:.*$",
+     "line": "\"enable_vignette\": false"
+    },
+    {
+     "file": "config/oculus.properties",
+     "find": "(?m)^enableShaders=.*$",
+     "line": "enableShaders=false",
+     "add": true
+    },
+    {
+     "file": "config/ryoamiclights.toml",
+     "find": "(?m)^[ \\t]*entities[ \\t]*=.*$",
+     "line": "entities = false",
+     "after": "(?m)^\\[light_sources\\]"
+    },
+    {
+     "file": "config/ryoamiclights.toml",
+     "find": "(?m)^[ \\t]*block_entities[ \\t]*=.*$",
+     "line": "block_entities = false",
+     "after": "(?m)^\\[light_sources\\]"
+    },
+    {
+     "file": "config/subtle_effects/general.toml",
+     "find": "(?m)^[ \\t]*particleRenderDistance[ \\t]*=.*$",
+     "line": "particleRenderDistance = 2"
+    },
+    {
+     "file": "config/fallingleaves-client.toml",
+     "find": "(?m)^[ \\t]*leafSpawnRate[ \\t]*=.*$",
+     "line": "leafSpawnRate = 3"
+    },
+    {
+     "file": "config/entityculling.json",
+     "find": "(?m)^[ \\t]*\"tracingDistance\"[ \\t]*:.*$",
+     "line": "\"tracingDistance\": 48"
+    },
+    {
+     "file": "config/particle_core_config.toml",
+     "find": "(?m)^[ \\t]*reduceAllChance[ \\t]*=.*$",
+     "line": "reduceAllChance = 0.5"
+    },
+    {
+     "file": "config/immersiveui.yaml",
+     "find": "(?m)^enableRarityParticles:.*$",
+     "line": "enableRarityParticles: false"
+    }
+   ],
+   "disable": [
+    "AdvancementPlaques-",
+    "AmbientSounds_",
+    "ExtraSoundsNext-",
+    "ImmersiveUI-",
+    "ItemPhysicLite_",
+    "PresenceFootsteps-",
+    "RyoamicLights-",
+    "SimpleRPC-",
+    "TravelersTitles-",
+    "blur-",
+    "drippyloadingscreen_",
+    "fallingleaves-",
+    "fancymenu_",
+    "farsight-",
+    "notenoughanimations-",
+    "oculus-",
+    "DistantHorizons-"
+   ],
+   "resource_packs": [
+    "vanilla",
+    "mod_resources",
+    "Moonlight Mods Dynamic Assets",
+    "builtin/aether_tips",
+    "builtin/builtin_resource_packs/legacy_dead_king_resource_pack",
+    "LoE_resources_1.zip",
+    "loeresources"
+   ]
+  },
+  "low": {
+   "title": "Low",
+   "for": "Older gaming laptops and PCs (GTX 10/16 series, 16 GB of RAM)",
+   "what": "A middle ground: no shaders or distant terrain, modest view and lean textures; lightweight cosmetics stay on.",
+   "memory_mb": 6144,
+   "edits": [
+    {
+     "file": "options.txt",
+     "find": "(?m)^renderDistance:.*$",
+     "line": "renderDistance:6",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^renderDistance:.*$",
+     "line": "renderDistance:6",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^simulationDistance:.*$",
+     "line": "simulationDistance:5",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^simulationDistance:.*$",
+     "line": "simulationDistance:5",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^graphicsMode:.*$",
+     "line": "graphicsMode:0",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^graphicsMode:.*$",
+     "line": "graphicsMode:0",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^particles:.*$",
+     "line": "particles:1",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^particles:.*$",
+     "line": "particles:1",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^mipmapLevels:.*$",
+     "line": "mipmapLevels:2",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^mipmapLevels:.*$",
+     "line": "mipmapLevels:2",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^biomeBlendRadius:.*$",
+     "line": "biomeBlendRadius:1",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^biomeBlendRadius:.*$",
+     "line": "biomeBlendRadius:1",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^entityShadows:.*$",
+     "line": "entityShadows:false",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^entityShadows:.*$",
+     "line": "entityShadows:false",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^entityDistanceScaling:.*$",
+     "line": "entityDistanceScaling:0.75",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^entityDistanceScaling:.*$",
+     "line": "entityDistanceScaling:0.75",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^ao:.*$",
+     "line": "ao:true",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^ao:.*$",
+     "line": "ao:true",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^maxFps:.*$",
+     "line": "maxFps:75",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^maxFps:.*$",
+     "line": "maxFps:75",
+     "add": true
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*rendererMode[ \\t]*=.*$",
+     "line": "rendererMode = \"DISABLED\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*enableDistantGeneration[ \\t]*=.*$",
+     "line": "enableDistantGeneration = false"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*numberOfThreads[ \\t]*=.*$",
+     "line": "numberOfThreads = 1"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*threadRunTimeRatio[ \\t]*=.*$",
+     "line": "threadRunTimeRatio = \"0.25\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*lodChunkRenderDistanceRadius[ \\t]*=.*$",
+     "line": "lodChunkRenderDistanceRadius = 48"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*horizontalQuality[ \\t]*=.*$",
+     "line": "horizontalQuality = \"LOW\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*verticalQuality[ \\t]*=.*$",
+     "line": "verticalQuality = \"LOW\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*enableSsao[ \\t]*=.*$",
+     "line": "enableSsao = false"
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"leaves_quality\"[ \\t]*:.*$",
+     "line": "\"leaves_quality\": \"FAST\""
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"weather_quality\"[ \\t]*:.*$",
+     "line": "\"weather_quality\": \"FAST\""
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"enable_vignette\"[ \\t]*:.*$",
+     "line": "\"enable_vignette\": true"
+    },
+    {
+     "file": "config/oculus.properties",
+     "find": "(?m)^enableShaders=.*$",
+     "line": "enableShaders=false",
+     "add": true
+    },
+    {
+     "file": "config/ryoamiclights.toml",
+     "find": "(?m)^[ \\t]*entities[ \\t]*=.*$",
+     "line": "entities = false",
+     "after": "(?m)^\\[light_sources\\]"
+    },
+    {
+     "file": "config/ryoamiclights.toml",
+     "find": "(?m)^[ \\t]*block_entities[ \\t]*=.*$",
+     "line": "block_entities = false",
+     "after": "(?m)^\\[light_sources\\]"
+    },
+    {
+     "file": "config/subtle_effects/general.toml",
+     "find": "(?m)^[ \\t]*particleRenderDistance[ \\t]*=.*$",
+     "line": "particleRenderDistance = 3"
+    },
+    {
+     "file": "config/fallingleaves-client.toml",
+     "find": "(?m)^[ \\t]*leafSpawnRate[ \\t]*=.*$",
+     "line": "leafSpawnRate = 5"
+    },
+    {
+     "file": "config/entityculling.json",
+     "find": "(?m)^[ \\t]*\"tracingDistance\"[ \\t]*:.*$",
+     "line": "\"tracingDistance\": 64"
+    },
+    {
+     "file": "config/particle_core_config.toml",
+     "find": "(?m)^[ \\t]*reduceAllChance[ \\t]*=.*$",
+     "line": "reduceAllChance = 0.25"
+    },
+    {
+     "file": "config/immersiveui.yaml",
+     "find": "(?m)^enableRarityParticles:.*$",
+     "line": "enableRarityParticles: false"
+    }
+   ],
+   "disable": [
+    "oculus-",
+    "AmbientSounds_",
+    "blur-",
+    "fallingleaves-",
+    "RyoamicLights-",
+    "farsight-",
+    "SimpleRPC-",
+    "DistantHorizons-"
+   ],
+   "resource_packs": [
+    "vanilla",
+    "mod_resources",
+    "Moonlight Mods Dynamic Assets",
+    "builtin/aether_tips",
+    "builtin/builtin_resource_packs/legacy_dead_king_resource_pack",
+    "LoE_resources_1.zip",
+    "loeresources"
+   ]
+  },
+  "balanced": {
+   "title": "Balanced",
+   "for": "Most PCs (RTX 20 series or better, 16 GB of RAM)",
+   "what": "Everything on except shaders. Distant terrain at reduced detail.",
+   "memory_mb": 8192,
+   "edits": [
+    {
+     "file": "options.txt",
+     "find": "(?m)^renderDistance:.*$",
+     "line": "renderDistance:8",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^renderDistance:.*$",
+     "line": "renderDistance:8",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^simulationDistance:.*$",
+     "line": "simulationDistance:6",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^simulationDistance:.*$",
+     "line": "simulationDistance:6",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^graphicsMode:.*$",
+     "line": "graphicsMode:1",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^graphicsMode:.*$",
+     "line": "graphicsMode:1",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^particles:.*$",
+     "line": "particles:1",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^particles:.*$",
+     "line": "particles:1",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^mipmapLevels:.*$",
+     "line": "mipmapLevels:4",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^mipmapLevels:.*$",
+     "line": "mipmapLevels:4",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^biomeBlendRadius:.*$",
+     "line": "biomeBlendRadius:2",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^biomeBlendRadius:.*$",
+     "line": "biomeBlendRadius:2",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^entityShadows:.*$",
+     "line": "entityShadows:true",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^entityShadows:.*$",
+     "line": "entityShadows:true",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^entityDistanceScaling:.*$",
+     "line": "entityDistanceScaling:1.0",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^entityDistanceScaling:.*$",
+     "line": "entityDistanceScaling:1.0",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^ao:.*$",
+     "line": "ao:true",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^ao:.*$",
+     "line": "ao:true",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^maxFps:.*$",
+     "line": "maxFps:120",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^maxFps:.*$",
+     "line": "maxFps:120",
+     "add": true
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*rendererMode[ \\t]*=.*$",
+     "line": "rendererMode = \"DEFAULT\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*enableDistantGeneration[ \\t]*=.*$",
+     "line": "enableDistantGeneration = true"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*numberOfThreads[ \\t]*=.*$",
+     "line": "numberOfThreads = 2"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*threadRunTimeRatio[ \\t]*=.*$",
+     "line": "threadRunTimeRatio = \"0.5\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*lodChunkRenderDistanceRadius[ \\t]*=.*$",
+     "line": "lodChunkRenderDistanceRadius = 64"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*horizontalQuality[ \\t]*=.*$",
+     "line": "horizontalQuality = \"MEDIUM\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*verticalQuality[ \\t]*=.*$",
+     "line": "verticalQuality = \"MEDIUM\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*enableSsao[ \\t]*=.*$",
+     "line": "enableSsao = false"
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"leaves_quality\"[ \\t]*:.*$",
+     "line": "\"leaves_quality\": \"DEFAULT\""
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"weather_quality\"[ \\t]*:.*$",
+     "line": "\"weather_quality\": \"DEFAULT\""
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"enable_vignette\"[ \\t]*:.*$",
+     "line": "\"enable_vignette\": true"
+    },
+    {
+     "file": "config/oculus.properties",
+     "find": "(?m)^enableShaders=.*$",
+     "line": "enableShaders=false",
+     "add": true
+    },
+    {
+     "file": "config/ryoamiclights.toml",
+     "find": "(?m)^[ \\t]*entities[ \\t]*=.*$",
+     "line": "entities = false",
+     "after": "(?m)^\\[light_sources\\]"
+    },
+    {
+     "file": "config/ryoamiclights.toml",
+     "find": "(?m)^[ \\t]*block_entities[ \\t]*=.*$",
+     "line": "block_entities = true",
+     "after": "(?m)^\\[light_sources\\]"
+    },
+    {
+     "file": "config/subtle_effects/general.toml",
+     "find": "(?m)^[ \\t]*particleRenderDistance[ \\t]*=.*$",
+     "line": "particleRenderDistance = 5"
+    },
+    {
+     "file": "config/fallingleaves-client.toml",
+     "find": "(?m)^[ \\t]*leafSpawnRate[ \\t]*=.*$",
+     "line": "leafSpawnRate = 10"
+    },
+    {
+     "file": "config/entityculling.json",
+     "find": "(?m)^[ \\t]*\"tracingDistance\"[ \\t]*:.*$",
+     "line": "\"tracingDistance\": 96"
+    },
+    {
+     "file": "config/particle_core_config.toml",
+     "find": "(?m)^[ \\t]*reduceAllChance[ \\t]*=.*$",
+     "line": "reduceAllChance = 0.0"
+    },
+    {
+     "file": "config/immersiveui.yaml",
+     "find": "(?m)^enableRarityParticles:.*$",
+     "line": "enableRarityParticles: true"
+    }
+   ],
+   "disable": [],
+   "resource_packs": [
+    "vanilla",
+    "mod_resources",
+    "Moonlight Mods Dynamic Assets",
+    "builtin/aether_tips",
+    "builtin/builtin_resource_packs/legacy_dead_king_resource_pack",
+    "file/CreateSophisticatedBackpacks.zip",
+    "file/EmbellishedStone-1.20.1-1.0.0.zip",
+    "file/JICKLUS Modded Ores.zip",
+    "file/JICKLUS.zip",
+    "file/WDA-NoFlyingStructures-1.18.2-1.19.2.zip",
+    "file/LowOnFire_1.20.1.zip",
+    "LoE_resources_1.zip",
+    "loeresources",
+    "file/SmoothFont_1.20.zip",
+    "file/EclecticTrove-1.20.1-1.3.0.zip",
+    "file/SKYPACK-20240628.zip"
+   ]
+  },
+  "high": {
+   "title": "High",
+   "for": "Strong PCs (RTX 3060 / RX 6700 or better, 32 GB of RAM)",
+   "what": "Complementary shaders, full distant terrain, long view, every effect.",
+   "memory_mb": 10240,
+   "edits": [
+    {
+     "file": "options.txt",
+     "find": "(?m)^renderDistance:.*$",
+     "line": "renderDistance:12",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^renderDistance:.*$",
+     "line": "renderDistance:12",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^simulationDistance:.*$",
+     "line": "simulationDistance:6",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^simulationDistance:.*$",
+     "line": "simulationDistance:6",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^graphicsMode:.*$",
+     "line": "graphicsMode:1",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^graphicsMode:.*$",
+     "line": "graphicsMode:1",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^particles:.*$",
+     "line": "particles:0",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^particles:.*$",
+     "line": "particles:0",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^mipmapLevels:.*$",
+     "line": "mipmapLevels:4",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^mipmapLevels:.*$",
+     "line": "mipmapLevels:4",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^biomeBlendRadius:.*$",
+     "line": "biomeBlendRadius:2",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^biomeBlendRadius:.*$",
+     "line": "biomeBlendRadius:2",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^entityShadows:.*$",
+     "line": "entityShadows:true",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^entityShadows:.*$",
+     "line": "entityShadows:true",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^entityDistanceScaling:.*$",
+     "line": "entityDistanceScaling:1.0",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^entityDistanceScaling:.*$",
+     "line": "entityDistanceScaling:1.0",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^ao:.*$",
+     "line": "ao:true",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^ao:.*$",
+     "line": "ao:true",
+     "add": true
+    },
+    {
+     "file": "options.txt",
+     "find": "(?m)^maxFps:.*$",
+     "line": "maxFps:260",
+     "add": true
+    },
+    {
+     "file": "config/defaultoptions/options.txt",
+     "find": "(?m)^maxFps:.*$",
+     "line": "maxFps:260",
+     "add": true
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*rendererMode[ \\t]*=.*$",
+     "line": "rendererMode = \"DEFAULT\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*enableDistantGeneration[ \\t]*=.*$",
+     "line": "enableDistantGeneration = true"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*numberOfThreads[ \\t]*=.*$",
+     "line": "numberOfThreads = 4"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*threadRunTimeRatio[ \\t]*=.*$",
+     "line": "threadRunTimeRatio = \"1.0\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*lodChunkRenderDistanceRadius[ \\t]*=.*$",
+     "line": "lodChunkRenderDistanceRadius = 128"
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*horizontalQuality[ \\t]*=.*$",
+     "line": "horizontalQuality = \"HIGH\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*verticalQuality[ \\t]*=.*$",
+     "line": "verticalQuality = \"HIGH\""
+    },
+    {
+     "file": "config/DistantHorizons.toml",
+     "find": "(?m)^[ \\t]*enableSsao[ \\t]*=.*$",
+     "line": "enableSsao = true"
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"leaves_quality\"[ \\t]*:.*$",
+     "line": "\"leaves_quality\": \"DEFAULT\""
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"weather_quality\"[ \\t]*:.*$",
+     "line": "\"weather_quality\": \"DEFAULT\""
+    },
+    {
+     "file": "config/embeddium-options.json",
+     "find": "(?m)^[ \\t]*\"enable_vignette\"[ \\t]*:.*$",
+     "line": "\"enable_vignette\": true"
+    },
+    {
+     "file": "config/oculus.properties",
+     "find": "(?m)^enableShaders=.*$",
+     "line": "enableShaders=true",
+     "add": true
+    },
+    {
+     "file": "config/ryoamiclights.toml",
+     "find": "(?m)^[ \\t]*entities[ \\t]*=.*$",
+     "line": "entities = true",
+     "after": "(?m)^\\[light_sources\\]"
+    },
+    {
+     "file": "config/ryoamiclights.toml",
+     "find": "(?m)^[ \\t]*block_entities[ \\t]*=.*$",
+     "line": "block_entities = true",
+     "after": "(?m)^\\[light_sources\\]"
+    },
+    {
+     "file": "config/subtle_effects/general.toml",
+     "find": "(?m)^[ \\t]*particleRenderDistance[ \\t]*=.*$",
+     "line": "particleRenderDistance = 5"
+    },
+    {
+     "file": "config/fallingleaves-client.toml",
+     "find": "(?m)^[ \\t]*leafSpawnRate[ \\t]*=.*$",
+     "line": "leafSpawnRate = 10"
+    },
+    {
+     "file": "config/entityculling.json",
+     "find": "(?m)^[ \\t]*\"tracingDistance\"[ \\t]*:.*$",
+     "line": "\"tracingDistance\": 128"
+    },
+    {
+     "file": "config/particle_core_config.toml",
+     "find": "(?m)^[ \\t]*reduceAllChance[ \\t]*=.*$",
+     "line": "reduceAllChance = 0.0"
+    },
+    {
+     "file": "config/immersiveui.yaml",
+     "find": "(?m)^enableRarityParticles:.*$",
+     "line": "enableRarityParticles: true"
+    }
+   ],
+   "disable": [],
+   "resource_packs": [
+    "vanilla",
+    "mod_resources",
+    "Moonlight Mods Dynamic Assets",
+    "builtin/aether_tips",
+    "builtin/builtin_resource_packs/legacy_dead_king_resource_pack",
+    "file/CreateSophisticatedBackpacks.zip",
+    "file/EmbellishedStone-1.20.1-1.0.0.zip",
+    "file/JICKLUS Modded Ores.zip",
+    "file/JICKLUS.zip",
+    "file/WDA-NoFlyingStructures-1.18.2-1.19.2.zip",
+    "file/LowOnFire_1.20.1.zip",
+    "LoE_resources_1.zip",
+    "loeresources",
+    "file/SmoothFont_1.20.zip",
+    "file/EclecticTrove-1.20.1-1.3.0.zip",
+    "file/SKYPACK-20240628.zip"
+   ]
+  }
+ }
+}

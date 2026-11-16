@@ -1,0 +1,1576 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act_i"
+	group: "2082B1037B9195D1"
+	icon: "twilightforest:naga_trophy"
+	id: "312B14F19642F7D4"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["63D583F00BADD799"]
+			description: [
+				"The other worlds are &csealed&f. A portal will not light until you have done the deed that opens it:"
+				""
+				"&2Twilight Forest&f - enchant an item."
+				"&cThe Nether&f - slay the Naga and mine a diamond."
+				"&bThe Aether&f - defeat the Night Lich."
+				"&5The End&f - defeat the Nether Gauntlet."
+				""
+				"This Act walks that road. Finish it and Act II appears."
+			]
+			hide_until_deps_complete: true
+			id: "79A042FB70FB1B89"
+			rewards: [
+				{
+					id: "5E50B334AC5ECD3F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 3
+					id: "495FEB282E17A495"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "327E1F4BC86CF803"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "445EBC8A97AA95F9"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "The main story starts here"
+			tasks: [
+				{
+					id: "1779BBB890D7C03B"
+					title: "I accept"
+					type: "checkmark"
+				}
+			]
+			title: "&a&lRites of Passage"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["293D87B13B740E80"]
+			description: [
+				"An enchanting table needs obsidian, diamonds and a book. Any enchantment will do."
+				""
+				"&2This is the key to the Twilight Forest."
+			]
+			id: "150EDDB4F270797B"
+			rewards: [
+				{
+					id: "51BC953653C87DF0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2DBCF5B919274AC7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0FE90ABF624AE95E"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enchant an item at an Enchanting Table"
+			tasks: [
+				{
+					advancement: "minecraft:story/enchant_item"
+					criterion: ""
+					icon: "minecraft:enchanted_book"
+					id: "4A5AE0357DF303C1"
+					title: "Enchanter"
+					type: "advancement"
+				}
+			]
+			title: "The First Key"
+			x: 3.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1676AF5A8FA5B123"]
+			description: [
+				"Dig a 2x2 pool one block deep, fill it with water, ring it with flowers and throw in a diamond. Step back."
+				""
+				"The Twilight Forest has no night and no day. Its bosses must be beaten in order - the forest itself keeps you out of the later ones."
+			]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "06EA31B6597161F6"
+			rewards: [
+				{
+					id: "392F21221267D243"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "672A941D118777D0"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "364A135F252050E8"
+					table_id: 3034821864176397678L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "662C2C2812EA4018"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					dimension: "twilightforest:twilight_forest"
+					id: "38DC8E074B5D69C7"
+					type: "dimension"
+				}
+			]
+			title: "Into the Twilight"
+			x: 7.45d
+			y: 1.63d
+		}
+		{
+			dependencies: ["0C67AD20D9F39753"]
+			description: [
+				"Slay the Naga in its forest courtyard and obtain a Naga Scale to overcome the barrier magic surrounding the Lich's tower"
+				""
+				"Look for a walled courtyard in the open forest. Keep moving: it charges."
+				""
+				"&cThe Naga is half of the key to the Nether."
+			]
+			id: "328F4EAC17D42CC7"
+			rewards: [
+				{
+					id: "256B614BD4457FA6"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 6
+					id: "0E198CADBFA3D08B"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "329BF782477BFF72"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "012FB0B80F867912"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "twilightforest:progress_naga"
+					criterion: ""
+					icon: "twilightforest:naga_courtyard_miniature_structure"
+					id: "495A8331B0023F10"
+					title: "Time To Even The Scales"
+					type: "advancement"
+				}
+			]
+			title: "The Naga"
+			x: 13.25d
+			y: 1.63d
+		}
+		{
+			dependencies: ["7EC588B6D3591F78"]
+			description: [
+				"Slay the Lich at top of his tower and retrieve a scepter to clear poisonous mosquitoes from the Swamp, see through blinding darkness of the Dark Forest's curse, and resist the Snowy Forest's chill"
+				""
+				"A tall tower in the forest. Knock his shields away by hitting his own bolts back at him."
+			]
+			id: "3F58D241552396F9"
+			rewards: [
+				{
+					id: "5E9D5E922DF28C3A"
+					type: "xp"
+					xp: 350
+				}
+				{
+					id: "011556447EF12301"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "10EB9F8FDBF7DC4A"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7641EEC64116906A"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "twilightforest:progress_lich"
+					criterion: ""
+					icon: "twilightforest:lich_tower_miniature_structure"
+					id: "12215115145F64B6"
+					title: "Bring Out Your Dead"
+					type: "advancement"
+				}
+			]
+			title: "The Twilight Lich"
+			x: 16.95d
+			y: 1.63d
+		}
+		{
+			dependencies: ["3F58D241552396F9"]
+			description: [
+				"Eat the Meef Stroganoff to acclimatize your body to the dangerous heat of the Fire Swamp"
+				""
+				"A maze under a mound in the swamp, with a Minoshroom at the bottom. He drops the stew."
+			]
+			id: "49DE2FAF4CC6C737"
+			rewards: [
+				{
+					id: "48BC53F54E67EA20"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6FF1B2262FD9CAD3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "31C1F10473282543"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_labyrinth"
+					criterion: ""
+					icon: "twilightforest:meef_stroganoff"
+					id: "57FF952D058FD4BB"
+					title: "Mighty Stroganoff"
+					type: "advancement"
+				}
+			]
+			title: "The Labyrinth"
+			x: 18.8d
+			y: 1.63d
+		}
+		{
+			dependencies: ["36D46176FDE56580"]
+			description: ["In the Fire Swamp. Aim for the heads when their mouths are open."]
+			id: "1F817EBD854CE896"
+			rewards: [
+				{
+					id: "4D2A47A335881CB0"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "23830B602E176AFD"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5EEFB011329373B9"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "74B10EDC8C64067C"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the mighty Hydra and empower yourself"
+			tasks: [
+				{
+					advancement: "twilightforest:progress_hydra"
+					criterion: ""
+					icon: "twilightforest:hydra_trophy"
+					id: "34EB04B0DF57FF82"
+					title: "Hydra Slayer"
+					type: "advancement"
+				}
+			]
+			title: "The Hydra"
+			x: 22.4d
+			y: 1.63d
+		}
+		{
+			dependencies: ["4D3B66C3F7525F0B"]
+			description: [
+				"With the Naga dead and a diamond mined, an obsidian portal will finally light."
+				""
+				"&4The first step into the Nether raises the world to Expert. For everyone. Permanently."
+			]
+			icon: "minecraft:netherrack"
+			id: "7EAF536D08FA272B"
+			rewards: [
+				{
+					id: "30D2480D53F878F9"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "63831B2E516524BF"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0519CBB547313874"
+					table_id: 3034821864176397678L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7070E9615F1DDA8F"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "7135931CF957AB77"
+					type: "dimension"
+				}
+			]
+			title: "The Nether"
+			x: 16.95d
+			y: -0.13d
+		}
+		{
+			dependencies: ["7EAF536D08FA272B"]
+			id: "27F26FB1BDADB68E"
+			rewards: [
+				{
+					id: "0CBEF8022245CCA1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3617FD3982DC4E20"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "02D47CF6248E8846"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Break your way into a Nether Fortress"
+			tasks: [
+				{
+					advancement: "minecraft:nether/find_fortress"
+					criterion: ""
+					icon: "minecraft:nether_bricks"
+					id: "57C1796D6610C65F"
+					title: "A Terrible Fortress"
+					type: "advancement"
+				}
+			]
+			title: "A Fortress"
+			x: 18.8d
+			y: -0.13d
+		}
+		{
+			dependencies: ["27F26FB1BDADB68E"]
+			description: ["Blaze rods are brewing, Eyes of Ender and a good deal of machinery."]
+			id: "0E5672C15662EECB"
+			rewards: [
+				{
+					id: "17BDF2F5608F2881"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0331EC8863F4106B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "733539A2AA688DF7"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Relieve a Blaze of its rod"
+			tasks: [
+				{
+					advancement: "minecraft:nether/obtain_blaze_rod"
+					criterion: ""
+					icon: "minecraft:blaze_rod"
+					id: "2DF909018EE8785E"
+					title: "Into Fire"
+					type: "advancement"
+				}
+			]
+			title: "Blaze Rods"
+			x: 20.55d
+			y: -0.13d
+		}
+		{
+			dependencies: ["59743CD4482F7BF5"]
+			description: [
+				"A blackstone arena in the Nether. Hit the eye in its palm; nothing else counts."
+				""
+				"&5This is the key to the End."
+			]
+			id: "49C3CC9C2EA70F36"
+			rewards: [
+				{
+					id: "3A85596DCE865765"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "4FEBCF101DBED861"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "616FB55E2B8B024E"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "71EFD73C58704F74"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Nether Gauntlet Boss"
+			tasks: [
+				{
+					advancement: "bosses_of_mass_destruction:nether/gauntlet_defeat"
+					criterion: ""
+					icon: "bosses_of_mass_destruction:gauntlet_blackstone"
+					id: "3993635E4AE651AA"
+					title: "Through the Gauntlet"
+					type: "advancement"
+				}
+			]
+			title: "The Gauntlet"
+			x: 26.1d
+			y: -0.13d
+		}
+		{
+			dependencies: ["7EAF536D08FA272B"]
+			description: [
+				"Deep in the Nether, around Y 15. Beds explode here, which is one way to dig."
+				""
+				"&bAncient Debris is the key to the Everbright (Blue Skies)."
+			]
+			id: "2CE2E16103E0BA17"
+			rewards: [
+				{
+					id: "700097D55B9D3FEB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "017918AF6D6778D1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "431F1CEBD3405ACE"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain Ancient Debris"
+			tasks: [
+				{
+					advancement: "minecraft:nether/obtain_ancient_debris"
+					criterion: ""
+					icon: "minecraft:ancient_debris"
+					id: "1118FF4FC901C540"
+					title: "Hidden in the Depths"
+					type: "advancement"
+				}
+			]
+			title: "Ancient Debris"
+			x: 18.8d
+			y: -1.87d
+		}
+		{
+			dependencies: ["2CE2E16103E0BA17"]
+			description: ["Wither skeletons in fortresses drop them. Rarely. You need three."]
+			id: "3FB26C00D1E4D948"
+			rewards: [
+				{
+					id: "279C62EB25999BDB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5E5B8BE323C2BF24"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "04357DC533F770D7"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Obtain a Wither Skeleton's skull"
+			tasks: [
+				{
+					advancement: "minecraft:nether/get_wither_skull"
+					criterion: ""
+					icon: "minecraft:wither_skeleton_skull"
+					id: "1F144DF173FBA663"
+					title: "Spooky Scary Skeleton"
+					type: "advancement"
+				}
+			]
+			title: "Three Skulls"
+			x: 20.55d
+			y: -1.87d
+		}
+		{
+			dependencies: ["052A4D9C46267B8A"]
+			description: [
+				"Four soul sand in a T, three skulls on top. Do it somewhere you do not mind losing."
+				""
+				"&bSummoning the Wither is the key to the Everdawn (Blue Skies)."
+			]
+			id: "6DDBB13E85D91D9D"
+			rewards: [
+				{
+					id: "2A26FDFD68D99032"
+					type: "xp"
+					xp: 700
+				}
+				{
+					count: 3
+					id: "706B66F85A83AA65"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "242E2F1B057BF1B7"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3805A386569483F6"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minecraft:nether/summon_wither"
+					criterion: ""
+					icon: "minecraft:nether_star"
+					id: "45D47D99321985CC"
+					title: "Withering Heights"
+					type: "advancement"
+				}
+				{
+					entity: "minecraft:wither"
+					id: "4C8ABD25A6AC40E3"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Wither"
+			x: 26.1d
+			y: -1.87d
+		}
+		{
+			dependencies: ["150EDDB4F270797B"]
+			description: ["Soul Stars turn up in loot chests - there is no recipe for them. Use one and it flies towards the nearest &eLich Tower&f in a cold biome, the way an Eye of Ender finds a stronghold."]
+			id: "75F6020301DE5252"
+			rewards: [
+				{
+					id: "1258E1B45133693B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "65B4BF80C112CB74"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6FE89FFD027944E0"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4D3D64AB4EB7AD8E"
+					item: "bosses_of_mass_destruction:soul_star"
+					type: "item"
+				}
+			]
+			title: "A Star for the Dead"
+			x: 5.6d
+			y: -1.62d
+		}
+		{
+			dependencies: ["16B805ACC2681D57"]
+			description: [
+				"Place four Soul Stars in the tower's altars. He only comes at night."
+				""
+				"&bThis is the key to the Aether."
+			]
+			id: "6966FA4F96CD214A"
+			rewards: [
+				{
+					id: "1A8BE31F4CCA4ED3"
+					type: "xp"
+					xp: 450
+				}
+				{
+					id: "0B2AE05DAE35AA45"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "52AE4E3FF1A12D3B"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "76CC89E9C298D7EB"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Night Lich Boss"
+			tasks: [
+				{
+					advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
+					criterion: ""
+					icon: "minecraft:bone_block"
+					id: "3BF217D25B00BD2B"
+					title: "Night Vanquisher"
+					type: "advancement"
+				}
+			]
+			title: "The Night Lich"
+			x: 9.55d
+			y: -1.62d
+		}
+		{
+			dependencies: ["6966FA4F96CD214A"]
+			description: ["A cavern at the very bottom of the world, under a ring of thorns."]
+			id: "5A3CAA52D22669FA"
+			rewards: [
+				{
+					id: "61C9EBBE5FDD2D8A"
+					type: "xp"
+					xp: 450
+				}
+				{
+					id: "21E9D233BE15739B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C0ECA6B613DA8D1"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "26E4AA8EEBED4D19"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Void Blossom Boss"
+			tasks: [
+				{
+					advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
+					criterion: ""
+					icon: "bosses_of_mass_destruction:void_lily"
+					id: "2D80BADDB3D67963"
+					title: "Extreme Weeding"
+					type: "advancement"
+				}
+			]
+			title: "The Void Blossom"
+			x: 11.4d
+			y: -1.62d
+		}
+		{
+			dependencies: ["150EDDB4F270797B"]
+			description: [
+				"&7Generates in: &fMeadow, Wooded Badlands, Cherry Grove, Stony Peaks, Snowy Slopes, Grove, Jagged Peaks, Frozen Peaks"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "78A7B46A14AB3DE1"
+			rewards: [
+				{
+					id: "1213BBBB64E034C0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "78EAC77FD6E21C89"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6ACD860C00F488FD"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Locate The Abandoned Crypt"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_abandoned_crypt"
+					criterion: ""
+					icon: "legendary_monsters:eye_of_ghost"
+					id: "40777D0E73F72D2F"
+					title: "A Terrifying Entrance"
+					type: "advancement"
+				}
+			]
+			title: "The Abandoned Crypt"
+			x: 5.6d
+			y: -3.13d
+		}
+		{
+			dependencies: ["78A7B46A14AB3DE1"]
+			id: "07221732D0293817"
+			rewards: [
+				{
+					id: "3F37871527681FD9"
+					type: "xp"
+					xp: 350
+				}
+				{
+					id: "07491A6328E91C85"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "073E5BD009A7CC36"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1CDE942006E9B8FD"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Posessed Paladin"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_posessed_paladin"
+					criterion: ""
+					icon: "legendary_monsters:soul_great_sword"
+					id: "57D77A685155F0D3"
+					title: "The Fallen Knight"
+					type: "advancement"
+				}
+			]
+			title: "The Possessed Paladin"
+			x: 7.45d
+			y: -3.13d
+		}
+		{
+			dependencies: ["150EDDB4F270797B"]
+			description: ["High in the mountains."]
+			id: "1720090C9BAA7C03"
+			rewards: [
+				{
+					id: "37168E69C4024864"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "64BC7E54DED332DE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "515416C9E50DB1F9"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Locate the Cloudy Temple"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_cloudy_temple"
+					criterion: ""
+					icon: "legendary_monsters:eye_of_air"
+					id: "03F8C025172A51C1"
+					title: "Made From Clouds..."
+					type: "advancement"
+				}
+			]
+			title: "The Cloudy Temple"
+			x: 5.6d
+			y: -0.13d
+		}
+		{
+			dependencies: ["1720090C9BAA7C03"]
+			id: "29A0526CAF159F0F"
+			rewards: [
+				{
+					id: "056DAEA7F514B5EC"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "0F6B01861CFBB50A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08212572BF0F7927"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7CD690381EB46C72"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Cloud Golem"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_cloud_golem"
+					criterion: ""
+					icon: "legendary_monsters:axe_of_lightning"
+					id: "16CA4F559C3A9FA0"
+					title: "Against The Gods"
+					type: "advancement"
+				}
+			]
+			title: "The Cloud Golem"
+			x: 7.45d
+			y: -0.13d
+		}
+		{
+			dependencies: ["1F817EBD854CE896"]
+			id: "3A593D85050D96D0"
+			optional: true
+			rewards: [
+				{
+					id: "64E1FC7290EFC42A"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "0AFD755A066C89E8"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "607735B8ECFBE5DF"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6909246626B22FC8"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ocean monuments are larger here than you remember."
+			tasks: [
+				{
+					entity: "minecraft:elder_guardian"
+					id: "19A2E182AD8E718A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "In the Depths"
+			x: 24.25d
+			y: 1.63d
+		}
+		{
+			dependencies: ["3A593D85050D96D0"]
+			id: "6A91677E46A5472B"
+			optional: true
+			rewards: [
+				{
+					id: "0376130453168370"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 3
+					id: "294B8640593A5566"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "574D1850CE729A6F"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "50D2557995C6BB60"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "You do not have to. Nobody has to."
+			tasks: [
+				{
+					entity: "minecraft:warden"
+					id: "736BFA249FB27B99"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Echoes of the Past"
+			x: 26.1d
+			y: 1.63d
+		}
+		{
+			dependencies: [
+				"3F58D241552396F9"
+				"49C3CC9C2EA70F36"
+				"6966FA4F96CD214A"
+				"6DDBB13E85D91D9D"
+			]
+			description: [
+				"The Twilight Lich, the Gauntlet, the Night Lich and the Wither are down, and three new worlds stand open."
+				""
+				"&cAct II&f has been added to your book."
+			]
+			hide_dependency_lines: true
+			id: "59C113D9964EF785"
+			rewards: [
+				{
+					id: "5006CDCC68023DA1"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 5
+					id: "291AE4847EF71E31"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "091BA74E28981F61"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "323057B5043A5B66"
+					table_id: 7005991227151607963L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4166E0E2ED8C38EF"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Opens Act II"
+			tasks: [
+				{
+					id: "22084C1F264BA5BF"
+					title: "Onwards"
+					type: "checkmark"
+				}
+			]
+			title: "&a&lA Hero Stands"
+			x: 28.45d
+			y: -0.19d
+		}
+		{
+			dependencies: ["79A042FB70FB1B89"]
+			description: [
+				"Four obsidian, two diamonds and a book make the table. Lapis is what it eats."
+				""
+				"Obsidian is lava that water has touched, and only a diamond pick will lift it."
+			]
+			id: "293D87B13B740E80"
+			rewards: [
+				{
+					id: "3D82CA5841A8C95A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6BE42AB0A2A5DF9B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4ED8957C059FD746"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "71F7CD713203C7C6"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6F62E33BCAC45F8B"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			title: "Obsidian, Diamonds, a Book"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["150EDDB4F270797B"]
+			description: ["Everything the portal needs: four squares of water, a flower on every block around them, and one diamond to throw in."]
+			id: "1676AF5A8FA5B123"
+			rewards: [
+				{
+					id: "73925026BB570E95"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "01671A864E42AC84"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "39EE5D67F0203266"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "021FDAD1334E2BD3"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:small_flowers" } }
+					title: "12 flowers"
+					type: "item"
+				}
+				{
+					id: "413CE76A9CC0DB97"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "11C27F119E9DC2D0"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "A Ring of Flowers"
+			x: 5.6d
+			y: 1.63d
+		}
+		{
+			dependencies: ["06EA31B6597161F6"]
+			description: ["The forest's wildlife is not all friendly. Find out what your gear is worth before you find a boss."]
+			id: "2A971FFB1A20593C"
+			rewards: [
+				{
+					id: "5011ABB0F92F0B5E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3756FAB0753AF991"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "45C125394A5459DD"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hunt some of the local wildlife"
+			tasks: [
+				{
+					advancement: "twilightforest:twilight_hunter"
+					criterion: ""
+					icon: "twilightforest:raven_feather"
+					id: "3E1E10DB5F297B70"
+					title: "The Silence of the Forest"
+					type: "advancement"
+				}
+			]
+			title: "The Silence of the Forest"
+			x: 9.55d
+			y: 1.63d
+		}
+		{
+			dependencies: ["2A971FFB1A20593C"]
+			description: ["The Magic Map draws every landmark of the forest for a long way around - boss lairs included."]
+			id: "0C67AD20D9F39753"
+			rewards: [
+				{
+					id: "4516DF3F4D68AFAA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7C7209318DA308D2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4FF219912C26ED36"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft the Magic Map"
+			tasks: [
+				{
+					advancement: "twilightforest:magic_map"
+					criterion: ""
+					icon: "twilightforest:filled_magic_map"
+					id: "24F5C6C2B94162A5"
+					title: "I Can See Forever"
+					type: "advancement"
+				}
+			]
+			title: "I Can See Forever"
+			x: 11.4d
+			y: 1.63d
+		}
+		{
+			dependencies: ["328F4EAC17D42CC7"]
+			description: ["The Naga's scales make light armour that is better than iron. Its trophy is worth keeping too."]
+			id: "7EC588B6D3591F78"
+			rewards: [
+				{
+					id: "638D0980B0B10558"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2EA1CF4BFE5D81C6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0B2097D4311E2F5F"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "66F18641B6F4351A"
+					item: "twilightforest:naga_scale"
+					type: "item"
+				}
+			]
+			title: "Scales"
+			x: 15.1d
+			y: 1.63d
+		}
+		{
+			dependencies: ["49DE2FAF4CC6C737"]
+			description: ["The Labyrinth has a hidden vault. What is inside it makes short work of maze walls."]
+			id: "36D46176FDE56580"
+			rewards: [
+				{
+					id: "2497217CB916A749"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "205EEAC06ACCFC10"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2AF8A55FE1447215"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Mazebreaker pickaxe in the secret labyrinth vault"
+			tasks: [
+				{
+					advancement: "twilightforest:mazebreaker"
+					criterion: ""
+					icon: "twilightforest:mazebreaker_pickaxe"
+					id: "26ACC9BA34391E86"
+					title: "Breaking the Maze"
+					type: "advancement"
+				}
+			]
+			title: "Breaking the Maze"
+			x: 20.55d
+			y: 1.63d
+		}
+		{
+			dependencies: ["328F4EAC17D42CC7"]
+			id: "4D3B66C3F7525F0B"
+			rewards: [
+				{
+					id: "7964F1A6DF3459CD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "66285C3A3B1E4DCF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "65021BD1C58CC090"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "A frame four wide and five tall; the corners can be left out."
+			tasks: [
+				{
+					count: 10L
+					id: "16090DEC383D073C"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "45E82A6D8B665B6D"
+					item: "minecraft:flint_and_steel"
+					type: "item"
+				}
+			]
+			title: "Ten Obsidian and a Spark"
+			x: 15.1d
+			y: -0.13d
+		}
+		{
+			dependencies: ["0E5672C15662EECB"]
+			description: ["A brewing stand is a blaze rod and three cobblestone. Nether wart first, then magma cream: Fire Resistance, for the Gauntlet's lasers."]
+			id: "59743CD4482F7BF5"
+			rewards: [
+				{
+					id: "5B52FE0D6AF0E826"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "676671799F2CBC57"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7822FDFCE5A7286C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Brew a Potion"
+			tasks: [
+				{
+					advancement: "minecraft:nether/brew_potion"
+					criterion: ""
+					icon: "minecraft:potion"
+					id: "26E9E667FFF5121E"
+					title: "Local Brewery"
+					type: "advancement"
+				}
+			]
+			title: "Something for the Heat"
+			x: 22.4d
+			y: -0.13d
+		}
+		{
+			dependencies: ["3FB26C00D1E4D948"]
+			description: ["All three skulls and four soul sand in hand. Now choose the place, and bring milk."]
+			id: "052A4D9C46267B8A"
+			rewards: [
+				{
+					id: "563A1748B39C8CF6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "21211F008CCF731A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6E0CE58FD67D62C7"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "1E24F68D5267D6FF"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7B59E83CF1488972"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+			]
+			title: "A Grave for Three"
+			x: 22.4d
+			y: -1.87d
+		}
+		{
+			dependencies: ["75F6020301DE5252"]
+			id: "16B805ACC2681D57"
+			rewards: [
+				{
+					id: "3EB7C83708E9C9F1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "75527C9EBAA48FE9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "34EF45472C91D928"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "One to find the tower, four to wake what sleeps in it."
+			tasks: [
+				{
+					count: 4L
+					id: "2757FC3BA3B6BA7E"
+					item: "bosses_of_mass_destruction:soul_star"
+					type: "item"
+				}
+			]
+			title: "Four Stars"
+			x: 7.45d
+			y: -1.62d
+		}
+	]
+	subtitle: ["Every door in Eldermoor has a key. Most of the keys have teeth."]
+	title: "&aAct I - &7&oRites of Passage"
+}

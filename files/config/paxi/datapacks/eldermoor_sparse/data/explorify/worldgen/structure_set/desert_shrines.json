@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "frequency": 1.0,
+    "salt": 89294828,
+    "separation": 28,
+    "spacing": 84,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "explorify:desert_shrine",
+      "weight": 1
+    }
+  ]
+}

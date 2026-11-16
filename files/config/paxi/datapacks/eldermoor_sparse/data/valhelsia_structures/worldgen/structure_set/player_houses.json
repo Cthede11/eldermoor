@@ -1,0 +1,24 @@
+{
+  "placement": {
+    "exclusion_zones": [
+      {
+        "chunk_count": 10,
+        "other_set": "valhelsia_structures:tower_ruins"
+      },
+      {
+        "chunk_count": 10,
+        "other_set": "valhelsia_structures:big_trees"
+      }
+    ],
+    "salt": 292107367,
+    "separation": 24,
+    "spacing": 108,
+    "type": "valhelsia_structures:valhelsia_random_spread"
+  },
+  "structures": [
+    {
+      "structure": "valhelsia_structures:player_house",
+      "weight": 1
+    }
+  ]
+}

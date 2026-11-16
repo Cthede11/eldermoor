@@ -1,0 +1,857 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "computers"
+	group: "02AD8609A8FE6EE4"
+	icon: "computercraft:computer_advanced"
+	id: "7C8B21594AAF0C36"
+	images: [ ]
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0582CCC6DC37E011"]
+			description: [
+				"&eCC: Tweaked&f adds computers, monitors and turtles that you program in Lua. Right-click a computer and type &ehelp&f; &eprograms&f lists what is built in; &eedit startup&f writes a program that runs every time it boots."
+				""
+				"&eAdvanced Peripherals&f wires them into the rest of Eldermoor: your AE2 network, your colony, the weather, the ores under your feet."
+				""
+				"No programming? The built-in programs (&eexcavate&f, &etunnel&f, &emonitor&f) are a good start."
+			]
+			hide_until_deps_complete: true
+			id: "51A7D3CCE1E90C6C"
+			rewards: [
+				{
+					id: "5F4BBC81E5756ED9"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "33C3355031A97088"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "7C5601CC1B20D738"
+					item: "computercraft:disk"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7246C7F412EEE99F"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5513B19F1AC95185"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "781427DBB60D07F9"
+					title: "help"
+					type: "checkmark"
+				}
+			]
+			title: "&b&lHello, World"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51A7D3CCE1E90C6C"]
+			description: ["Stone, redstone and a glass pane. It keeps its files when you pick it up if you label it first: &elabel set <name>&f."]
+			id: "3599465D86DA640D"
+			rewards: [
+				{
+					id: "53C1BA00C2A3ED2B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "48F1026894756101"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "155FB605B0404DDE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3DCCA939E6AAB5B2"
+					item: "computercraft:computer_normal"
+					type: "item"
+				}
+			]
+			title: "A Computer"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3599465D86DA640D"]
+			description: ["Monitors placed together become one big screen. &emonitor right <program>&f runs a program on the one to the right."]
+			id: "396E7B7B5377AA79"
+			rewards: [
+				{
+					id: "07C8D63B761D04C7"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "54339A88164AF3A1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "747845B747C25D3D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5639B2BFCE8C386C"
+					item: "computercraft:monitor_normal"
+					type: "item"
+				}
+			]
+			title: "Monitors"
+			x: 3.95d
+			y: -2.37d
+		}
+		{
+			dependencies: ["396E7B7B5377AA79"]
+			description: ["Carry programs between computers. A disk with a &estartup&f program on it runs that program on any computer it is put in."]
+			id: "3A146F259437E73F"
+			rewards: [
+				{
+					id: "149CF1135D016ACF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "315B9EF86AA2815F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3627BC4AB73CEA47"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "643961851AB28E97"
+					item: "computercraft:disk_drive"
+					type: "item"
+				}
+			]
+			title: "Floppy Disks"
+			x: 6.05d
+			y: -2.37d
+		}
+		{
+			dependencies: ["3A146F259437E73F"]
+			id: "37D775A4DB48584A"
+			optional: true
+			rewards: [
+				{
+					id: "79206DC04B0A8A3A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "55A0D43CA0074EB2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "10787B0F96324CEA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Paper, ink, and a program to write the pages."
+			tasks: [
+				{
+					id: "38C81427C8FF998E"
+					item: "computercraft:printer"
+					type: "item"
+				}
+			]
+			title: "Printer"
+			x: 7.9d
+			y: -2.37d
+		}
+		{
+			dependencies: ["37D775A4DB48584A"]
+			id: "5ED1A06B00F5611B"
+			optional: true
+			rewards: [
+				{
+					id: "704EA377C277DDBC"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4EA3AC57B3F6E2A0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "61FA03E11E0ACEF5"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Plays notes, any game sound - and, from a program, audio files."
+			tasks: [
+				{
+					id: "7A447D01A6F062E9"
+					item: "computercraft:speaker"
+					type: "item"
+				}
+			]
+			title: "Speaker"
+			x: 9.65d
+			y: -2.37d
+		}
+		{
+			dependencies: ["3599465D86DA640D"]
+			description: ["A computer that moves. Craft it with a diamond pickaxe for a mining turtle, give it coal and type &eexcavate 8&f: it digs an 8x8 hole down to bedrock and comes back."]
+			id: "6D48487E29C7D7B6"
+			rewards: [
+				{
+					id: "60111C3FCFEF6F43"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "777CD5873E7246E8"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7302250D22279F87"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "500CDC0BEA0DB121"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "58C68CC450009D03"
+					item: "computercraft:turtle_normal"
+					type: "item"
+				}
+			]
+			title: "Turtles"
+			x: 3.95d
+			y: 2.62d
+		}
+		{
+			dependencies: ["6D48487E29C7D7B6"]
+			description: ["Computers talk over rednet: &erednet.open&f, &erednet.send&f, &erednet.receive&f."]
+			id: "70020CFD419E7FCD"
+			rewards: [
+				{
+					id: "2841F412EED076D6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4DA62EA95BA07919"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0B8069653A3FDCD6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "756599D8FD25B7BA"
+					item: "computercraft:wireless_modem_normal"
+					type: "item"
+				}
+			]
+			title: "Wireless"
+			x: 6.05d
+			y: 2.62d
+		}
+		{
+			dependencies: ["70020CFD419E7FCD"]
+			description: ["A computer you carry. With a modem, a remote for everything else."]
+			id: "791CD89FB1740067"
+			rewards: [
+				{
+					id: "6179421ED4F46304"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "43AC11365EADA208"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "75A3E7685E6E5694"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6B82B2D79D8E520A"
+					item: "computercraft:pocket_computer_normal"
+					type: "item"
+				}
+			]
+			title: "Pocket Computer"
+			x: 7.9d
+			y: 2.62d
+		}
+		{
+			dependencies: ["791CD89FB1740067"]
+			id: "10B03F4812CFABF1"
+			rewards: [
+				{
+					id: "6F69016022057D93"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5586D5A7028999F0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "115302AA826E2909"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Colour, and you can click on the screen."
+			tasks: [
+				{
+					id: "51002DC8B09191DD"
+					item: "computercraft:computer_advanced"
+					type: "item"
+				}
+				{
+					id: "5CA74A96AB9E0376"
+					item: "computercraft:monitor_advanced"
+					type: "item"
+				}
+			]
+			title: "Advanced"
+			x: 9.65d
+			y: 2.62d
+		}
+		{
+			dependencies: ["10B03F4812CFABF1"]
+			description: ["Put a modem on a machine far away, run cable back to the computer and right-click the modem: the machine is now a peripheral."]
+			id: "37D5C9F6C8648337"
+			rewards: [
+				{
+					id: "2D48AEBB5CD2C5D6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5686ABD64168AA5A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "74D278948464218A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "32635A8A2FCA7615"
+					item: "computercraft:cable"
+					type: "item"
+				}
+				{
+					id: "786308C2279F54D9"
+					item: "computercraft:wired_modem"
+					type: "item"
+				}
+			]
+			title: "Wired Networks"
+			x: 11.5d
+			y: 2.62d
+		}
+		{
+			dependencies: ["3599465D86DA640D"]
+			id: "009301E306D69FC8"
+			rewards: [
+				{
+					id: "27CEAE1E0A3D34D8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4164F2BE245F79D7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "04CE33536AF5DAF3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The shell of most of Advanced Peripherals' blocks."
+			tasks: [
+				{
+					id: "0D0015CF3054F2A0"
+					item: "advancedperipherals:peripheral_casing"
+					type: "item"
+				}
+			]
+			title: "Peripheral Casing"
+			x: 3.95d
+			y: -0.88d
+		}
+		{
+			dependencies: ["009301E306D69FC8"]
+			description: [
+				"Collect a redstone integrator, inventory manager and energy detector. How did you even play without this?"
+				""
+				"The Redstone Integrator gives a computer redstone on every side; the Inventory Manager reaches into your own inventory; the Energy Detector measures power flowing past."
+			]
+			id: "502E35A4C013013B"
+			rewards: [
+				{
+					id: "5A73BE9377DE7848"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3D8089180B4B38F3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "57067D5C34058240"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "advancedperipherals:base_toolkit"
+					criterion: ""
+					icon: "advancedperipherals:redstone_integrator"
+					id: "54BEA03C836DED9D"
+					title: "Gentleman's set!"
+					type: "advancement"
+				}
+			]
+			title: "Gentleman's set!"
+			x: 6.05d
+			y: -0.88d
+		}
+		{
+			dependencies: ["502E35A4C013013B"]
+			description: [
+				"Collect a geo scanner and environmental detector. There are no limits for observability!"
+				""
+				"The Geo Scanner lists the ores around it. The Environment Detector reads weather, light, time and biome."
+			]
+			id: "12F2FF68A2CB94FB"
+			rewards: [
+				{
+					id: "1D873286136E1E33"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7B5BCC9A9886309C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "187E696867D40C83"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "advancedperipherals:sense_toolkit"
+					criterion: ""
+					icon: "advancedperipherals:geo_scanner"
+					id: "1B531B8F3CDA96F6"
+					title: "The truth can't hide forever"
+					type: "advancement"
+				}
+			]
+			title: "The truth can't hide forever"
+			x: 7.9d
+			y: -0.88d
+		}
+		{
+			dependencies: ["12F2FF68A2CB94FB"]
+			description: ["A computer that greets friends as they arrive, or messages you when the smelting is done."]
+			id: "3480A661D429B51C"
+			rewards: [
+				{
+					id: "1AD3E65528ABF0E5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "60078C53B6F5FF19"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "573736FDFFF905E3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2CF4AE98F024D105"
+					item: "advancedperipherals:chat_box"
+					type: "item"
+				}
+				{
+					id: "702D964CC41D8D3F"
+					item: "advancedperipherals:player_detector"
+					type: "item"
+				}
+			]
+			title: "Chat Box \\& Player Detector"
+			x: 9.65d
+			y: -0.88d
+		}
+		{
+			dependencies: ["3480A661D429B51C"]
+			description: ["Your Applied Energistics network from a program: list what is stored, order crafts, export items."]
+			id: "0F3392309F2E236F"
+			rewards: [
+				{
+					id: "4BEECF4B4F67884D"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "52F42C8407A9B450"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "287C5DDDFDCB1547"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2A17E3D5017687A8"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "20DF311359561C73"
+					item: "advancedperipherals:me_bridge"
+					type: "item"
+				}
+			]
+			title: "ME Bridge"
+			x: 11.5d
+			y: -0.88d
+		}
+		{
+			dependencies: ["009301E306D69FC8"]
+			description: ["MineColonies from a program: citizens, jobs, happiness, buildings, work orders and requests. A wall of monitors makes a town hall dashboard."]
+			id: "19FAD86913159D56"
+			rewards: [
+				{
+					id: "7B88DB8587A9CAB6"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "6EAFB69741074B16"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "59F0DBF128BFC1A7"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "518F8FC0F50A4B53"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "16D2AC74BF365422"
+					item: "advancedperipherals:colony_integrator"
+					type: "item"
+				}
+			]
+			title: "Colony Integrator"
+			x: 6.05d
+			y: 0.88d
+		}
+		{
+			dependencies: ["19FAD86913159D56"]
+			description: ["Automata cores make a turtle something closer to a robot."]
+			id: "4C32374F293BC363"
+			optional: true
+			rewards: [
+				{
+					id: "6A4E7BD337981A9C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "399B9DDE41702E1D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3DEE43D326D72278"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Does the afterlife exist in minecraft?"
+			tasks: [
+				{
+					advancement: "advancedperipherals:weak_automata_core"
+					criterion: ""
+					icon: "advancedperipherals:weak_automata_core"
+					id: "3AE26DFE423D0541"
+					title: "First automata core"
+					type: "advancement"
+				}
+			]
+			title: "First automata core"
+			x: 7.9d
+			y: 0.88d
+		}
+		{
+			dependencies: ["4C32374F293BC363"]
+			description: ["Collect a NBT storage and block reader. Now, all the world's secrets are open to you!"]
+			id: "2F6C91B68B4B7DEC"
+			optional: true
+			rewards: [
+				{
+					id: "4B04C2BE9977D708"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "44274277C0876CF9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "63A7ACABFCBB7543"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "advancedperipherals:nbt_toolkit"
+					criterion: ""
+					icon: "advancedperipherals:nbt_storage"
+					id: "3AB87338998B73EA"
+					title: "No secrets"
+					type: "advancement"
+				}
+			]
+			title: "No secrets"
+			x: 9.65d
+			y: 0.88d
+		}
+		{
+			dependencies: [
+				"6D48487E29C7D7B6"
+				"0F3392309F2E236F"
+				"19FAD86913159D56"
+				"12F2FF68A2CB94FB"
+			]
+			description: ["Any two of: a turtle, an ME Bridge, a Colony Integrator, the Geo Scanner and Environment Detector."]
+			hide_dependency_lines: true
+			id: "5EC55DD526B3F79E"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "0519FA83186BA35D"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "7191944E26308153"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "228FBFD1EC1F25C9"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "14ED43EFB4243402"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "763D286E3C31CC43"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&b&lSysadmin"
+			x: 13.85d
+			y: -0.81d
+		}
+	]
+	subtitle: ["Program it in Lua, and the rest of the pack does what it is told"]
+	title: "&bComputers"
+}

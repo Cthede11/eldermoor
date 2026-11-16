@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 15437620,
+    "separation": 21,
+    "spacing": 91,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "hunters_return:hunter_house",
+      "weight": 1
+    }
+  ]
+}

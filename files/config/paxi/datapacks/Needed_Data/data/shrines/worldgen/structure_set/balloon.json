@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 143665,
+    "separation": 28,
+    "spacing": 175,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "shrines:balloon",
+      "weight": 1
+    }
+  ]
+}

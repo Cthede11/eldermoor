@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "minecraft:villages"
+    },
+    "salt": 653594149,
+    "separation": 70,
+    "spacing": 119,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "realmrpg_quests:miners",
+      "weight": 1
+    }
+  ]
+}

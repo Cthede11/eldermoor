@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "frequency": 1.0,
+    "salt": 30184232,
+    "separation": 63,
+    "spacing": 140,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "explorify:black_spiral",
+      "weight": 1
+    }
+  ]
+}

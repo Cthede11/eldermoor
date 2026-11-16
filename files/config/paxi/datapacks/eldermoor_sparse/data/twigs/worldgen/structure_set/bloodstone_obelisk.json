@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "salt": 4206914,
+    "separation": 18,
+    "spacing": 60,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "twigs:bloodstone_obelisk",
+      "weight": 1
+    }
+  ]
+}

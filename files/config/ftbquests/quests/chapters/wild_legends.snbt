@@ -1,0 +1,3059 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wild_legends"
+	group: "2082B1037B9195D1"
+	icon: "mowziesmobs:sol_visage"
+	id: "7030DA01B63D8578"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["59C113D9964EF785"]
+			description: [
+				"Not every monster in Eldermoor is part of a story. These ones keep to their own corners of the world, and some of them give gifts no smith can make:"
+				"the Sun's Blessing, the Earthrend Gauntlet, a Frostmaw's crystal."
+				""
+				"Nothing here is required. The Nether and End rows open when you have been there in the Acts."
+			]
+			hide_until_deps_complete: true
+			id: "1A275F60D5BCEC45"
+			rewards: [
+				{
+					id: "539F151057E457B5"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7916DFA01425FC1D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "48F7764395943A05"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "21EDFEDD09ADA7A6"
+					title: "Where?"
+					type: "checkmark"
+				}
+			]
+			title: "&2&lWild Legends"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			description: ["A chamber of iron underground. Hit its back after a swing misses. Drops its axe and helmet."]
+			id: "77820BDF18DD34CC"
+			rewards: [
+				{
+					id: "63815AAAB0E4F62F"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 3
+					id: "721718DEB28C8EA3"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1CAF93AA353E97F5"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4FBBF4C486A9EC9B"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Kill a Ferrous Wroughtnaut"
+			tasks: [
+				{
+					advancement: "mowziesmobs:kill_ferrous_wroughtnaut"
+					criterion: ""
+					icon: "mowziesmobs:wrought_helmet"
+					id: "0BBD22D1DC360901"
+					title: "Just a Flesh Wound"
+					type: "advancement"
+				}
+			]
+			title: "Just a Flesh Wound"
+			x: 5.35d
+			y: -12.74d
+		}
+		{
+			dependencies: ["77820BDF18DD34CC"]
+			description: ["Snowy biomes. It sleeps; you do not have to wake it."]
+			id: "3BFDDE1EE25D1440"
+			rewards: [
+				{
+					id: "4626FE8BAC4520BA"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "7A25590A2833EE4E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7BF3A8DA73200E36"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2D9765FD77A26D6B"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Kill a Frostmaw"
+			tasks: [
+				{
+					advancement: "mowziesmobs:kill_frostmaw"
+					criterion: ""
+					icon: "mowziesmobs:ice_crystal"
+					id: "7885293323FF383C"
+					title: "Rude Awakening"
+					type: "advancement"
+				}
+			]
+			title: "Rude Awakening"
+			x: 7.45d
+			y: -12.74d
+		}
+		{
+			dependencies: ["3BFDDE1EE25D1440"]
+			description: ["Or take the crystal while it sleeps. It breathes ice when you hold it up."]
+			id: "17629CB93FE1D9F3"
+			optional: true
+			rewards: [
+				{
+					id: "3EC126CE91B349CC"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "38A237DE892A4010"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5DF3A29892123DE4"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Steal an ice crystal from a Frostmaw"
+			tasks: [
+				{
+					advancement: "mowziesmobs:steal_ice_crystal"
+					criterion: ""
+					icon: "minecraft:potion"
+					id: "03A562475E70AB74"
+					title: "Big Brain™ Time"
+					type: "advancement"
+				}
+			]
+			title: "Big Brain™ Time"
+			x: 9.55d
+			y: -11.12d
+		}
+		{
+			dependencies: ["3BFDDE1EE25D1440"]
+			description: ["The Sunbird rules the savanna groves. Its mask, the Sol Visage, calls down sunfire."]
+			id: "78882912C7B59A7F"
+			rewards: [
+				{
+					id: "4713FA7AAF722709"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 4
+					id: "4AE6780CB4ACF91A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "52ABEE7BBF552267"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "321841F38244E152"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Kill Umvuthi, the Sunbird"
+			tasks: [
+				{
+					advancement: "mowziesmobs:kill_umvuthi"
+					criterion: ""
+					icon: "mowziesmobs:sol_visage"
+					id: "7BCD68E20A1BB54F"
+					title: "Praise the Sun"
+					type: "advancement"
+				}
+			]
+			title: "Praise the Sun"
+			x: 9.55d
+			y: -12.74d
+		}
+		{
+			dependencies: ["78882912C7B59A7F"]
+			description: ["Earn Umvuthi's favour instead of killing it (wear a mask in its grove) and it blesses you: solar flares on a key."]
+			id: "3E0A43BB736D903E"
+			rewards: [
+				{
+					id: "73549D7D266A71A2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3344FCDC8340D3CC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0DDE4D22E62CC6C0"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Receive the Sun's Blessing"
+			tasks: [
+				{
+					advancement: "mowziesmobs:suns_blessing"
+					criterion: ""
+					icon: "mowziesmobs:grant_suns_blessing"
+					id: "531AF9FB992B6F72"
+					title: "Heliomancer"
+					type: "advancement"
+				}
+			]
+			title: "Heliomancer"
+			x: 11.65d
+			y: -12.74d
+		}
+		{
+			dependencies: ["3E0A43BB736D903E"]
+			description: ["Climb the Sculptor's pillar in a monastery high in the mountains. The prize is the Earthrend Gauntlet: geomancy."]
+			id: "5258F136B85F3535"
+			rewards: [
+				{
+					id: "795BE53B0CE70E42"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 4
+					id: "1E63D35FA4671798"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2CE1BCA688A8D8B6"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "57E8E478FF5E2E7A"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Complete the Sculptor's challenge"
+			tasks: [
+				{
+					advancement: "mowziesmobs:sculptor_challenge"
+					criterion: ""
+					icon: "mowziesmobs:earthrend_gauntlet"
+					id: "59DBCBF6CE09E6E7"
+					title: "You Must Believe"
+					type: "advancement"
+				}
+			]
+			title: "You Must Believe"
+			x: 17.1d
+			y: -12.74d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			id: "5654C06292771A7A"
+			rewards: [
+				{
+					id: "449AA08A92FBB405"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "391B742D1B7F3810"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0DA27EA163976425"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Get a Fossil Bait to summon Swampjaw"
+			tasks: [
+				{
+					advancement: "meetyourfight:main/swampjaw_summon"
+					criterion: ""
+					icon: "meetyourfight:fossil_bait"
+					id: "0C2206B139368977"
+					title: "The Mire's Maw"
+					type: "advancement"
+				}
+			]
+			title: "The Mire's Maw"
+			x: 5.35d
+			y: -9.62d
+		}
+		{
+			dependencies: ["5654C06292771A7A"]
+			description: ["&7Dropped by: &fSwampjaw"]
+			id: "74E04B6BBD7ACEC5"
+			rewards: [
+				{
+					id: "565ABCA1DCD163C6"
+					type: "xp"
+					xp: 700
+				}
+				{
+					count: 2
+					id: "5652B63B57EFAFB5"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "378D4AA98F072988"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "414DC4EBCCA3E09E"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat Swampjaw to get a Mossy Tooth"
+			tasks: [
+				{
+					advancement: "meetyourfight:main/swampjaw_kill"
+					criterion: ""
+					icon: "meetyourfight:mossy_tooth"
+					id: "578A1083CBFE83B6"
+					title: "Bog Champion"
+					type: "advancement"
+				}
+			]
+			title: "Bog Champion"
+			x: 7.45d
+			y: -9.62d
+		}
+		{
+			dependencies: ["74E04B6BBD7ACEC5"]
+			id: "45782FDE6D341AF1"
+			rewards: [
+				{
+					id: "0939F6BE8BC6C342"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "35C1581DE2EC9964"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "2CAAA41546C69E37"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Get a Haunted Bell to summon Bellringer"
+			tasks: [
+				{
+					advancement: "meetyourfight:main/bellringer_summon"
+					criterion: ""
+					icon: "meetyourfight:haunted_bell"
+					id: "58E4D95B1AA3FE92"
+					title: "Toll the Bell"
+					type: "advancement"
+				}
+			]
+			title: "Toll the Bell"
+			x: 9.55d
+			y: -9.62d
+		}
+		{
+			dependencies: ["45782FDE6D341AF1"]
+			description: ["&7Dropped by: &fBellringer"]
+			id: "1FE8983B74F4C244"
+			rewards: [
+				{
+					id: "1DD6161912964E57"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 3
+					id: "17F12BDA8F6C3671"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "57D535914795D3AD"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5CE2550D57C1A25B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat Bellringer to get Phantoplasm"
+			tasks: [
+				{
+					advancement: "meetyourfight:main/bellringer_kill"
+					criterion: ""
+					icon: "meetyourfight:phantoplasm"
+					id: "1E7DEEE950346191"
+					title: "Immaterial and Missing Power"
+					type: "advancement"
+				}
+			]
+			title: "Immaterial and Missing Power"
+			x: 17.1d
+			y: -9.62d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			id: "189881EFD2F21183"
+			rewards: [
+				{
+					id: "11E580CC9E06508A"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4636E3F63F35FB81"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5B935AE18340C2E3"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Get a Dusk Key to summon Rosalyne, Blade of Dusk"
+			tasks: [
+				{
+					advancement: "meetyourfight:main/rosalyne_summon"
+					criterion: ""
+					icon: "meetyourfight:dusk_key"
+					id: "38D7B738B5E28EBA"
+					title: "Flowering Knight"
+					type: "advancement"
+				}
+			]
+			title: "Flowering Knight"
+			x: 5.35d
+			y: -7.88d
+		}
+		{
+			dependencies: ["189881EFD2F21183"]
+			description: ["&7Dropped by: &fRosalyne, Blade of Dusk"]
+			id: "7AC4AEA3D61FBF9F"
+			rewards: [
+				{
+					id: "47EF6CFCF74F052E"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "5A4CAB52FF0C02D0"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "70DC621796B6506D"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "7BAA84010B8F3E64"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat Rosalyne, Blade of Dusk to get a Violet Bloom"
+			tasks: [
+				{
+					advancement: "meetyourfight:main/rosalyne_kill"
+					criterion: ""
+					icon: "meetyourfight:violet_bloom"
+					id: "2FB94DDDAE00DA3E"
+					title: "Great Enemy Felled"
+					type: "advancement"
+				}
+			]
+			title: "Great Enemy Felled"
+			x: 7.45d
+			y: -7.88d
+		}
+		{
+			dependencies: ["7AC4AEA3D61FBF9F"]
+			id: "0178D3F22139B2A4"
+			rewards: [
+				{
+					id: "7CD2A9266A922071"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "041CF98C30C392B5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "05EFEAD07C9528DE"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Get the Devil's Ante to summon Dame Fortuna"
+			tasks: [
+				{
+					advancement: "meetyourfight:main/dame_fortuna_summon"
+					criterion: ""
+					icon: "meetyourfight:devils_ante"
+					id: "29C30E9EAE987A84"
+					title: "The Devil has its Price"
+					type: "advancement"
+				}
+			]
+			title: "The Devil has its Price"
+			x: 9.55d
+			y: -7.88d
+		}
+		{
+			dependencies: ["0178D3F22139B2A4"]
+			description: ["The Devil's Ante is played in the Nether. Fortune's Favour is the prize."]
+			id: "669E1672490705FD"
+			rewards: [
+				{
+					id: "46D601A6C84B4F22"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 4
+					id: "1BE35AB2AD5D8FBE"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D82358160886FD4"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0BCC5A977F916577"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat Dame Fortuna to get a Fortune's Favor"
+			tasks: [
+				{
+					advancement: "meetyourfight:main/dame_fortuna_kill"
+					criterion: ""
+					icon: "meetyourfight:fortunes_favor"
+					id: "7EFD48B1D01C6F96"
+					title: "Jackpot"
+					type: "advancement"
+				}
+			]
+			title: "Jackpot"
+			x: 17.1d
+			y: -7.88d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			id: "2815977831121078"
+			rewards: [
+				{
+					id: "230D86733B92989E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6F24B565D9B9246E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "391D874FA2CDC643"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find a Blighted Shack, home to an old, powerful witch."
+			tasks: [
+				{
+					advancement: "goety:goety/find_blighted_shack"
+					criterion: ""
+					icon: "goety:rotten_log"
+					id: "4F61D8531C682AC6"
+					title: "Rotten Cottagecore"
+					type: "advancement"
+				}
+			]
+			title: "Rotten Cottagecore"
+			x: 5.35d
+			y: 13.12d
+		}
+		{
+			dependencies: ["2815977831121078"]
+			id: "2CF22F9A378E73E2"
+			rewards: [
+				{
+					id: "222683E680ED7C15"
+					type: "xp"
+					xp: 700
+				}
+				{
+					count: 2
+					id: "7BD19E2F99794619"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D3AA1FAC6F74F9F"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3AD2148BEE46C807"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeated a Crone, the old brewer of the bogs."
+			tasks: [
+				{
+					advancement: "goety:goety/kill_a_crone"
+					criterion: ""
+					icon: "goety:crone_hat"
+					id: "4B6CA9B817346EC5"
+					title: "It's a Fair Cop"
+					type: "advancement"
+				}
+			]
+			title: "It's a Fair Cop"
+			x: 7.45d
+			y: 13.12d
+		}
+		{
+			dependencies: ["2CF22F9A378E73E2"]
+			id: "515847FE75B4F51F"
+			rewards: [
+				{
+					id: "1EC71A51E8C8B7D8"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2305DF083612AB7B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "13DC1E84A5ACEE73"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find a big haunted tree that leads to the Spider Den."
+			tasks: [
+				{
+					advancement: "goety:goety/find_spider_den"
+					criterion: ""
+					icon: "goety:spider_sac"
+					id: "55C583D5862935A6"
+					title: "Arachnophobia"
+					type: "advancement"
+				}
+			]
+			title: "Arachnophobia"
+			x: 9.55d
+			y: 13.12d
+		}
+		{
+			dependencies: ["515847FE75B4F51F"]
+			id: "65AA6127110C1EF3"
+			rewards: [
+				{
+					id: "0942077AB7F76735"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 3
+					id: "250EE70A929DA749"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "44125D485E7AF6D3"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "58FAFD3EF8C10AA6"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeated a Brood Mother, the eight-legged matriarch of spiders."
+			tasks: [
+				{
+					advancement: "goety:goety/kill_a_brood_mother"
+					criterion: ""
+					icon: "minecraft:cobweb"
+					id: "4A03CB64078F55FB"
+					title: "Been Brooding"
+					type: "advancement"
+				}
+			]
+			title: "Been Brooding"
+			x: 11.65d
+			y: 13.12d
+		}
+		{
+			dependencies: ["65AA6127110C1EF3"]
+			id: "44D1C2AB3E978019"
+			rewards: [
+				{
+					id: "680212A217F18C39"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5D6053D74C61589B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "29F57F5C44A36D02"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find your way into the Crypts."
+			tasks: [
+				{
+					advancement: "goety:goety/find_crypt"
+					criterion: ""
+					icon: "goety:crypt_stone_chiseled"
+					id: "4DCF5AB5912E6DD5"
+					title: "Pretty Creepy"
+					type: "advancement"
+				}
+			]
+			title: "Pretty Creepy"
+			x: 13.5d
+			y: 13.12d
+		}
+		{
+			dependencies: ["44D1C2AB3E978019"]
+			id: "70ED8AB07474A3A6"
+			rewards: [
+				{
+					id: "0ED6BC723964A24A"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "3699588BD9F9FA88"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22E7F3917B29F968"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "22E606EDB2D3A743"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeated a Skull Lord, the ancient lord of the Crypt."
+			tasks: [
+				{
+					advancement: "goety:goety/kill_a_skull_lord"
+					criterion: ""
+					icon: "minecraft:skeleton_skull"
+					id: "51FC13EEE79EAC7F"
+					title: "Skull Basher"
+					type: "advancement"
+				}
+			]
+			title: "Skull Basher"
+			x: 17.1d
+			y: 13.12d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			id: "2E1297E90D6A0395"
+			rewards: [
+				{
+					id: "0A43E9E694D5C7EF"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 3
+					id: "1F6E1221CFDC5658"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B7152419CA1DF51"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1D0A51BBF88B1DA9"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeated a Wight, a strange horror that lurks."
+			tasks: [
+				{
+					advancement: "goety:goety/kill_a_wight"
+					criterion: ""
+					icon: "goety:shadow_essence"
+					id: "5C91FC999D19767A"
+					title: "Wight Out"
+					type: "advancement"
+				}
+			]
+			title: "Wight Out"
+			x: 5.35d
+			y: -6.12d
+		}
+		{
+			dependencies: ["2E1297E90D6A0395"]
+			description: ["The Illagers' vizier, who travels with their raids and fights with copies of himself."]
+			id: "60690158367FCC22"
+			rewards: [
+				{
+					id: "17F522F924F20E1F"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "681FDD509C6CE135"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "38AC51815060D135"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "06567F9CEAA6FB1A"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeated a Vizier, royal official of the Illagers."
+			tasks: [
+				{
+					advancement: "goety:goety/kill_a_vizier"
+					criterion: ""
+					icon: "goety:soul_ruby"
+					id: "1568973872D8C68F"
+					title: "Arubian Nights"
+					type: "advancement"
+				}
+			]
+			title: "Arubian Nights"
+			x: 7.45d
+			y: -6.12d
+		}
+		{
+			dependencies: ["60690158367FCC22"]
+			id: "0FD5EB9A0A12A0F6"
+			rewards: [
+				{
+					id: "50CDB2A8F0833779"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 4
+					id: "43DA60AC953C1F96"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5562799061C5CAAE"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0BEA2A15A2A08529"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeated a Minister, the greedy and charismatic Illager chief."
+			tasks: [
+				{
+					advancement: "goety:goety/kill_a_minister"
+					criterion: ""
+					icon: "goety:ominous_orb"
+					id: "505A0A2228A7B48C"
+					title: "Cornelia Fudged"
+					type: "advancement"
+				}
+			]
+			title: "Cornelia Fudged"
+			x: 17.1d
+			y: -6.12d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			description: [
+				"&7Generates in: &fDark Forest, Taiga, Old Growth Spruce Taiga"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "4B3DBF676CCBA825"
+			rewards: [
+				{
+					id: "482DCD945C9A4058"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "69D7007C516F406B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1B42F488458519A5"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "locate the Ancient Stronghold"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_ancient_stronghold"
+					criterion: ""
+					icon: "legendary_monsters:ancient_dripstone_bricks"
+					id: "435D3D222D6873A6"
+					title: "Dripstone Everywhere"
+					type: "advancement"
+				}
+			]
+			title: "Dripstone Everywhere"
+			x: 5.35d
+			y: -4.38d
+		}
+		{
+			dependencies: ["4B3DBF676CCBA825"]
+			id: "4C9387D29C53A849"
+			rewards: [
+				{
+					id: "7BCCC0D412CE38D9"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "49B5F93E974DDD98"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "54B8173F4FD2186C"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "571759C4567EEA0D"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Spiky Worm"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_spiky_bug"
+					criterion: ""
+					icon: "legendary_monsters:ancient_spike"
+					id: "7A5A93FF94F8D86D"
+					title: "A Disgusting Worm"
+					type: "advancement"
+				}
+			]
+			title: "A Disgusting Worm"
+			x: 7.45d
+			y: -4.38d
+		}
+		{
+			dependencies: ["4C9387D29C53A849"]
+			id: "6876A76B9D1CCFB6"
+			rewards: [
+				{
+					id: "6E7C96BB5DC47271"
+					type: "xp"
+					xp: 700
+				}
+				{
+					count: 2
+					id: "4F7A74DB09D03367"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08644CD15B898BBC"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6325D90F8D6B420E"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Ambusher"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_ambusher"
+					criterion: ""
+					icon: "legendary_monsters:ambushers_skin"
+					id: "5DC4ADB99B48DA04"
+					title: "An Imposter"
+					type: "advancement"
+				}
+			]
+			title: "An Imposter"
+			x: 9.55d
+			y: -4.38d
+		}
+		{
+			dependencies: ["6876A76B9D1CCFB6"]
+			id: "7B5FD33E6A282E90"
+			rewards: [
+				{
+					id: "4FAD2FAA7E866851"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "4E829E3577B2C7F8"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A3921D3484EEBEA"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "17CCA5C93ECD7EA1"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Ancient Guardian"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_the_ancient_guardian"
+					criterion: ""
+					icon: "legendary_monsters:monstrous_anchor"
+					id: "11A179A5781A45A4"
+					title: "The One - Armed Monster"
+					type: "advancement"
+				}
+			]
+			title: "The One - Armed Monster"
+			x: 17.1d
+			y: -4.38d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			description: [
+				"&7Generates in: &fDesert"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "5889F254FA53D4A1"
+			rewards: [
+				{
+					id: "288BE215F9A9D58F"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "21C9AC1DB0A16D74"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3CD806501DB7A2DF"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Locate The Ruined Pyramid"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_ruined_pyramid"
+					criterion: ""
+					icon: "legendary_monsters:eye_of_sandstorm"
+					id: "56D882E8579A706B"
+					title: "Another Desert Temple!"
+					type: "advancement"
+				}
+			]
+			title: "Another Desert Temple!"
+			x: 5.35d
+			y: -2.62d
+		}
+		{
+			dependencies: ["5889F254FA53D4A1"]
+			id: "793B01E20C7B6B57"
+			rewards: [
+				{
+					id: "2A04EA240D361DAC"
+					type: "xp"
+					xp: 600
+				}
+				{
+					count: 2
+					id: "5695485152D39013"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "494E239CCC93B712"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "6A473E5BCFB95B45"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat Bomber"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_bomber"
+					criterion: ""
+					icon: "legendary_monsters:ancient_sandstone_shard"
+					id: "7EAF5D86792B9CE3"
+					title: "Sandstone Bomb"
+					type: "advancement"
+				}
+			]
+			title: "Sandstone Bomb"
+			x: 7.45d
+			y: -2.62d
+		}
+		{
+			dependencies: ["793B01E20C7B6B57"]
+			id: "4A83A5E02408B944"
+			rewards: [
+				{
+					id: "7131AFBD22C80E2E"
+					type: "xp"
+					xp: 900
+				}
+				{
+					count: 3
+					id: "79EB6BD8F654BA21"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "64FFAE10FA6BCBF1"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "08E6B6B12E54D665"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat Dune Sentinel"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_dune_sentinel"
+					criterion: ""
+					icon: "legendary_monsters:crystal_of_sandstorm"
+					id: "0E5B2F9915F9F6D0"
+					title: "Ancient War Machine"
+					type: "advancement"
+				}
+			]
+			title: "Ancient War Machine"
+			x: 9.55d
+			y: -2.62d
+		}
+		{
+			dependencies: ["4A83A5E02408B944"]
+			description: [
+				"&7Generates in: &fSnowy Plains, Snowy Taiga, Ice Spikes"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "1E5595B2A4CE7E77"
+			rewards: [
+				{
+					id: "6AAE4FE021359094"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5515435B009AC686"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "30F0FF723D4E2F67"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Locate The Frostbitten Temple"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_frostbitten_temple"
+					criterion: ""
+					icon: "legendary_monsters:eye_of_frost"
+					id: "6DEE4B908DDAFB7E"
+					title: "A Freezing Place"
+					type: "advancement"
+				}
+			]
+			title: "A Freezing Place"
+			x: 11.65d
+			y: -2.62d
+		}
+		{
+			dependencies: ["1E5595B2A4CE7E77"]
+			id: "201CAB4911812C1D"
+			rewards: [
+				{
+					id: "53E4E99D15B6020B"
+					type: "xp"
+					xp: 900
+				}
+				{
+					count: 3
+					id: "59E8A72AC0073E1F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B1F1852841416BC"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "34A6115419661AE5"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Frostbitten Golem"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_frostbitten_golem"
+					criterion: ""
+					icon: "legendary_monsters:the_great_frost"
+					id: "03CBA0F723365CD1"
+					title: "The Coldest Golem"
+					type: "advancement"
+				}
+			]
+			title: "The Coldest Golem"
+			x: 13.5d
+			y: -2.62d
+		}
+		{
+			dependencies: ["201CAB4911812C1D"]
+			description: [
+				"&7Generates in: &fSparse Jungle, Jungle"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "0363E44301A7A505"
+			rewards: [
+				{
+					id: "0B5BDD14891233F0"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1FDBE4E77C10D94B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1F4037011ACE8EDC"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "locate the Mossy Temple"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_mossy_temple"
+					criterion: ""
+					icon: "legendary_monsters:mossy_chestplate"
+					id: "4A616F7F35DC45F4"
+					title: "Covered in Moss"
+					type: "advancement"
+				}
+			]
+			title: "Covered in Moss"
+			x: 15.25d
+			y: -2.62d
+		}
+		{
+			dependencies: ["0363E44301A7A505"]
+			id: "09A57E7F27C34920"
+			rewards: [
+				{
+					id: "2BED8B91D1946BF9"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "256CA0086542AC72"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04AA4599399EA335"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "546D3C3F9679F1FA"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Overgrown Colossus"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_overgrown_colossus"
+					criterion: ""
+					icon: "legendary_monsters:mossy_hammer"
+					id: "4CD47359624173B5"
+					title: "The Mossy Beast"
+					type: "advancement"
+				}
+			]
+			title: "The Mossy Beast"
+			x: 17.1d
+			y: -2.62d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			description: ["Plain monster rooms underground now hold a map in their chest."]
+			id: "5B923A419EF36863"
+			rewards: [
+				{
+					id: "4210CFD36C0729A6"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "37A76C74C69B9619"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "462A0321F172276B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find a labyrinth map from the monster room chest"
+			tasks: [
+				{
+					advancement: "dungeonnowloading:story/labyrinth/loot_simple_dungeon"
+					criterion: ""
+					icon: "minecraft:spawner"
+					id: "6A4AAF6919DB6014"
+					title: "Simple Dungeon Room"
+					type: "advancement"
+				}
+			]
+			title: "Simple Dungeon Room"
+			x: 5.35d
+			y: 11.38d
+		}
+		{
+			dependencies: ["5B923A419EF36863"]
+			description: ["The map marks the spot. The Labyrinth is far below it."]
+			id: "7F0863CC831D5640"
+			rewards: [
+				{
+					id: "380B15803974581C"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "20A8D8B6D2DB2483"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "36F036D8B8F259DB"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Dig straight down to the Labyrinth"
+			tasks: [
+				{
+					advancement: "dungeonnowloading:story/labyrinth/find_labyrinth"
+					criterion: ""
+					icon: "dungeonnowloading:labyrinth_trophy"
+					id: "374FC6B280FAACC6"
+					title: "Labyrinth"
+					type: "advancement"
+				}
+			]
+			title: "Labyrinth"
+			x: 7.45d
+			y: 11.38d
+		}
+		{
+			dependencies: ["7F0863CC831D5640"]
+			id: "29DC327B7D1E7523"
+			rewards: [
+				{
+					id: "6617A660B941CCA3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6F507F8EA3091FD0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "79E069F94B17DF3B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft and use the Skull of Chaos to awaken the sealed one"
+			tasks: [
+				{
+					advancement: "dungeonnowloading:story/labyrinth/awaken_chaos_spawner"
+					criterion: ""
+					icon: "dungeonnowloading:skull_of_chaos"
+					id: "0C4D6386CF1014FA"
+					title: "Breaking the Seal"
+					type: "advancement"
+				}
+			]
+			title: "Breaking the Seal"
+			x: 9.55d
+			y: 11.38d
+		}
+		{
+			dependencies: ["29DC327B7D1E7523"]
+			description: ["A spawner that fights back: it calls monsters, throws chaos and moves. Break it and keep the Chaotic Hexahedron."]
+			id: "3CC4C84C6429637E"
+			rewards: [
+				{
+					id: "7B0A38ED074104F4"
+					type: "xp"
+					xp: 900
+				}
+				{
+					count: 3
+					id: "0E3B22C7D0F6E685"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50981626584E1542"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3F6BD2B92210FDEE"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Destroy the Chaos Spawner"
+			tasks: [
+				{
+					advancement: "dungeonnowloading:story/labyrinth/obtain_chaotic_hexahedron"
+					criterion: ""
+					icon: "dungeonnowloading:chaotic_hexahedron"
+					id: "296D23EE040704B1"
+					title: "Chaos Spawner"
+					type: "advancement"
+				}
+			]
+			title: "Chaos Spawner"
+			x: 17.1d
+			y: 11.38d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			description: ["Every jungle temple hides a way down."]
+			id: "453CF6A3B7A2D398"
+			rewards: [
+				{
+					id: "7EE803C98AB5303C"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4F33C237E91B76E3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5FAA37FB3127D62B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find the Jungle Temple"
+			tasks: [
+				{
+					advancement: "dungeonnowloading:story/temple_of_duality/find_jungle_pyramid"
+					criterion: ""
+					icon: "minecraft:mossy_cobblestone"
+					id: "13DC2565E6EE8875"
+					title: "Jungle Temple"
+					type: "advancement"
+				}
+			]
+			title: "Jungle Temple"
+			x: 5.35d
+			y: -0.88d
+		}
+		{
+			dependencies: ["453CF6A3B7A2D398"]
+			description: [
+				"&7Generates in: &fBamboo Jungle, Jungle"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "373F25D336E0B2D8"
+			rewards: [
+				{
+					id: "5ADDC4AB3875FA55"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6E92624982C44263"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4CFE76F09F302473"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enter the Temple of Duality"
+			tasks: [
+				{
+					advancement: "dungeonnowloading:story/temple_of_duality/find_temple_of_duality"
+					criterion: ""
+					icon: "dungeonnowloading:temple_of_duality_trophy"
+					id: "51DA27E689CAAA31"
+					title: "Temple of Duality"
+					type: "advancement"
+				}
+			]
+			title: "Temple of Duality"
+			x: 7.45d
+			y: -0.88d
+		}
+		{
+			dependencies: ["373F25D336E0B2D8"]
+			description: ["Two serpents wake together, one of fire and one of redstone. Bring a friend for the second."]
+			id: "721AB8F89D73FDD9"
+			rewards: [
+				{
+					id: "21D13467C69C62E4"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "307A0961C648B5B7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "5049BF189D8A4095"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft and use the Redstone Idol to awaken the Fairkeepers"
+			tasks: [
+				{
+					advancement: "dungeonnowloading:story/temple_of_duality/awaken_fairkeepers"
+					criterion: ""
+					icon: "dungeonnowloading:redstone_idol"
+					id: "7AE7D33CEE383F26"
+					title: "Duel of Duality"
+					type: "advancement"
+				}
+			]
+			title: "Duel of Duality"
+			x: 9.55d
+			y: -0.88d
+		}
+		{
+			dependencies: ["721AB8F89D73FDD9"]
+			description: ["&7Dropped by: &fOuros"]
+			id: "710F07E4601EC538"
+			rewards: [
+				{
+					id: "267B293D03774ABD"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "4D2E90B7417A3852"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "67CC67834FA5D2C5"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "11A0CFB4DF371546"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Close the fight by defeating Ouros"
+			tasks: [
+				{
+					advancement: "dungeonnowloading:story/temple_of_duality/obtain_catalyzed_redstone"
+					criterion: ""
+					icon: "dungeonnowloading:catalyzed_redstone"
+					id: "6BC0E5264AF15F84"
+					title: "Fairkeeper - Ouros"
+					type: "advancement"
+				}
+			]
+			title: "Fairkeeper - Ouros"
+			x: 11.65d
+			y: -0.88d
+		}
+		{
+			dependencies: ["721AB8F89D73FDD9"]
+			description: ["The fire half. Its Combustion Cell is the prize."]
+			id: "12E6CFE5BF976B53"
+			rewards: [
+				{
+					id: "3778D15F555D7C8F"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "3B4D62B4AE4B4654"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A4B8DFFBA24C95D"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "35E4D0CD16CCF66A"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Close the fight by defeating Boros"
+			tasks: [
+				{
+					advancement: "dungeonnowloading:story/temple_of_duality/obtain_combustion_cell"
+					criterion: ""
+					icon: "dungeonnowloading:combustion_cell"
+					id: "2AB8949E6C91C3ED"
+					title: "Fairkeeper - Boros"
+					type: "advancement"
+				}
+			]
+			title: "Fairkeeper - Boros"
+			x: 11.65d
+			y: 0.88d
+		}
+		{
+			dependencies: [
+				"1A275F60D5BCEC45"
+				"7EAF536D08FA272B"
+			]
+			description: [
+				"&7Generates in: &fSoul Sand Valley, Nether Wastes"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "7D63F89299208A4B"
+			rewards: [
+				{
+					id: "5C2652CDF956E416"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "76E509B35D05590B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3CEE81B251382167"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "locate the soul fortress remains"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_soul_fortress_remains"
+					criterion: ""
+					icon: "legendary_monsters:withered_bone"
+					id: "1581B0C368E15908"
+					title: "The Soul Fortress"
+					type: "advancement"
+				}
+			]
+			title: "The Soul Fortress"
+			x: 5.35d
+			y: 2.62d
+		}
+		{
+			dependencies: ["7D63F89299208A4B"]
+			id: "4FD75A2A9B207190"
+			rewards: [
+				{
+					id: "4F1EEBD49E2DE273"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 4
+					id: "68C2C2FA94EDA93E"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66D9E84F1EFB4AF3"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "46B8250C795CDFE1"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Withered Abomination"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_withered_abomination"
+					criterion: ""
+					icon: "legendary_monsters:withered_scythe"
+					id: "4763E922AE108520"
+					title: "The Soul Eater"
+					type: "advancement"
+				}
+			]
+			title: "The Soul Eater"
+			x: 7.45d
+			y: 2.62d
+		}
+		{
+			dependencies: ["4FD75A2A9B207190"]
+			description: [
+				"&7Generates in: &fSoul Sand Valley"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "362AA17757958C99"
+			rewards: [
+				{
+					id: "221048885B91B960"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "30339E774D6D7A02"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "45A1F192032D2E00"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "locate the skeletosaurus nest"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_skeletosaurus_nest"
+					criterion: ""
+					icon: "legendary_monsters:dinosaur_bone"
+					id: "0631B2701DDDACD2"
+					title: "Long Time Ago"
+					type: "advancement"
+				}
+			]
+			title: "Long Time Ago"
+			x: 9.55d
+			y: 2.62d
+		}
+		{
+			dependencies: ["362AA17757958C99"]
+			id: "27D26761D48CCD71"
+			rewards: [
+				{
+					id: "3363E395EDB518C9"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "7046584844AF55FF"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "136BCF278CBCE1D0"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1D9193E89E9FEF56"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Skeletosaurus"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_skeletosaurus"
+					criterion: ""
+					icon: "legendary_monsters:dinosaur_bone_club"
+					id: "593833F8F4ECF0E3"
+					title: "The Ancient Skeleton"
+					type: "advancement"
+				}
+			]
+			title: "The Ancient Skeleton"
+			x: 11.65d
+			y: 2.62d
+		}
+		{
+			dependencies: ["27D26761D48CCD71"]
+			description: [
+				"&7Generates in: &fNether Wastes"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "5BA2DAF57D49BC6E"
+			rewards: [
+				{
+					id: "5A53B4F03D7ACA58"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2B10F6E0FA409A81"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3B8E9C36012E2A9C"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Find The Lava Eater's Nest"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_lava_eater"
+					criterion: ""
+					icon: "legendary_monsters:eye_of_magma"
+					id: "1E8F9FB6E988CF1E"
+					title: "A Voltanic Place"
+					type: "advancement"
+				}
+			]
+			title: "A Voltanic Place"
+			x: 13.5d
+			y: 2.62d
+		}
+		{
+			dependencies: ["5BA2DAF57D49BC6E"]
+			id: "4B0CE8BB05D3CEAF"
+			rewards: [
+				{
+					id: "61719854CCCEBEAB"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "2FE80DA52AA69545"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E861BD3C505FFDD"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "053CAF8853ABD634"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Lava Eater"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_lava_eater"
+					criterion: ""
+					icon: "legendary_monsters:fiery_jaw"
+					id: "0C56CB92FD7771EE"
+					title: "Fiery Beast"
+					type: "advancement"
+				}
+			]
+			title: "Fiery Beast"
+			x: 15.25d
+			y: 2.62d
+		}
+		{
+			dependencies: ["4B0CE8BB05D3CEAF"]
+			id: "1ED8789C551A4896"
+			rewards: [
+				{
+					id: "0E995C2174938343"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "4D627DADA79C71F5"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B64B4A07A1A7E38"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "55BFBD54E5894244"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Warped Fungussus"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_warped_fungussus"
+					criterion: ""
+					icon: "legendary_monsters:warped_mushroom_cap_part"
+					id: "4687D928F89298C3"
+					title: "It's Teleporting!"
+					type: "advancement"
+				}
+			]
+			title: "It's Teleporting!"
+			x: 17.1d
+			y: 2.62d
+		}
+		{
+			dependencies: [
+				"1A275F60D5BCEC45"
+				"70B999AC8A2D279B"
+			]
+			description: [
+				"&7Generates in: &fEnd Highlands, End Midlands"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "0D0E5C1D8C4920EB"
+			rewards: [
+				{
+					id: "41A48C482D093068"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "729EBA136A7C66AE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "4725831CAED1E22E"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Locate the Shulker Tower"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_shulker_tower"
+					criterion: ""
+					icon: "legendary_monsters:large_shulker_shell"
+					id: "1425669AC09717AF"
+					title: "There Is No Gravity Here!"
+					type: "advancement"
+				}
+			]
+			title: "There Is No Gravity Here!"
+			x: 5.35d
+			y: 4.38d
+		}
+		{
+			dependencies: ["0D0E5C1D8C4920EB"]
+			id: "522DEB456324A499"
+			rewards: [
+				{
+					id: "7AA7F454D300783F"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 4
+					id: "708B3398D6B7F967"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0345375A799D10EA"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0B4A55F9A129DC27"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the Shulker Mimic"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_shulker_mimic"
+					criterion: ""
+					icon: "legendary_monsters:shulker_shield"
+					id: "79C15EE5DD370542"
+					title: "Spooky Scary Shulker Box"
+					type: "advancement"
+				}
+			]
+			title: "Spooky Scary Shulker Box"
+			x: 7.45d
+			y: 4.38d
+		}
+		{
+			dependencies: ["522DEB456324A499"]
+			description: [
+				"&7Generates in: &fEnd Highlands, End Midlands"
+				"&7An &fExplorer's Compass&7 (sold by The Merchant) points to the nearest one."
+			]
+			id: "3DB7FD4F6773A791"
+			rewards: [
+				{
+					id: "7DD3A589C0749D8B"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "48E055F7B24DFA10"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "111C1DE1BAB0A9F5"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Locate the ancient tower remains"
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_ancient_tower_remains"
+					criterion: ""
+					icon: "legendary_monsters:infected_chorus_fruit"
+					id: "1DFA394FF808AC64"
+					title: "Far Away From Home"
+					type: "advancement"
+				}
+			]
+			title: "Far Away From Home"
+			x: 9.55d
+			y: 4.38d
+		}
+		{
+			dependencies: ["3DB7FD4F6773A791"]
+			id: "622126A12AB407F8"
+			rewards: [
+				{
+					id: "3E8970BE94BE5DF6"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "0964EA1330F1CCE7"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D6A0E5A593DFA6C"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "24D303E750480286"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat the Endersent"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_endersent"
+					criterion: ""
+					icon: "legendary_monsters:chorus_blade"
+					id: "1F5D4418441164EB"
+					title: "The Tall Guy"
+					type: "advancement"
+				}
+			]
+			title: "The Tall Guy"
+			x: 11.65d
+			y: 4.38d
+		}
+		{
+			dependencies: ["622126A12AB407F8"]
+			id: "066936A767D2FAC7"
+			rewards: [
+				{
+					id: "7C0A593BAF369BCE"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 4
+					id: "22A411C590AEC63C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34AAD65A4F0AD316"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "3C60D22272E5CEB1"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat the chorusling"
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_chorusling"
+					criterion: ""
+					icon: "legendary_monsters:chorus_mask"
+					id: "72482796707EE0A8"
+					title: "The Chorus Infection"
+					type: "advancement"
+				}
+			]
+			title: "The Chorus Infection"
+			x: 17.1d
+			y: 4.38d
+		}
+		{
+			dependencies: [
+				"77820BDF18DD34CC"
+				"3BFDDE1EE25D1440"
+				"78882912C7B59A7F"
+				"5258F136B85F3535"
+				"74E04B6BBD7ACEC5"
+				"1FE8983B74F4C244"
+				"7AC4AEA3D61FBF9F"
+				"669E1672490705FD"
+				"2CF22F9A378E73E2"
+				"65AA6127110C1EF3"
+				"70ED8AB07474A3A6"
+				"2E1297E90D6A0395"
+				"60690158367FCC22"
+				"0FD5EB9A0A12A0F6"
+				"7B5FD33E6A282E90"
+				"4A83A5E02408B944"
+				"201CAB4911812C1D"
+				"09A57E7F27C34920"
+				"4FD75A2A9B207190"
+				"27D26761D48CCD71"
+				"4B0CE8BB05D3CEAF"
+				"1ED8789C551A4896"
+				"522DEB456324A499"
+				"622126A12AB407F8"
+				"066936A767D2FAC7"
+				"3CC4C84C6429637E"
+				"710F07E4601EC538"
+				"12E6CFE5BF976B53"
+				"4C14DCB28E7DBFEB"
+				"4E9C1A0DB8BED3CD"
+				"01D156938C91E618"
+				"282B0819E4624B37"
+				"26046EBDD02AA200"
+				"33306F5B13D53A14"
+			]
+			description: ["Any &athirteen&f of the bosses on this page."]
+			hide_dependency_lines: true
+			id: "57605EE31B461570"
+			min_required_dependencies: 13
+			rewards: [
+				{
+					id: "4F33E30A01502E16"
+					type: "xp"
+					xp: 5000
+				}
+				{
+					count: 2
+					id: "504D1F3AE1E8BCC2"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2EEF575DBAF77F66"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C2106CA27C9B769"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 250"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "50FB2C9D70532932"
+					silent: true
+					title: "+250 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Any thirteen"
+			tasks: [
+				{
+					id: "5A5BFF819C4B7F9D"
+					title: "Every corner"
+					type: "checkmark"
+				}
+			]
+			title: "&2&lLegend of the Wilds"
+			x: 24.45d
+			y: -12.62d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			description: ["Skor's hideout is in snowy mountains. It drops the Ice Gauntlet."]
+			id: "4C14DCB28E7DBFEB"
+			rewards: [
+				{
+					id: "60AE9CF371254A35"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 3
+					id: "568512A6FD8206CD"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58D52AE6A830BEAA"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0516B2B4EC355A8E"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat Skor, the Yeti"
+			tasks: [
+				{
+					advancement: "block_factorys_bosses:kill_yeti"
+					criterion: ""
+					icon: "block_factorys_bosses:achievement_icons"
+					id: "58FCE7735C545841"
+					title: "Lost in the Snow"
+					type: "advancement"
+				}
+			]
+			title: "Lost in the Snow"
+			x: 5.35d
+			y: 6.12d
+		}
+		{
+			dependencies: ["4C14DCB28E7DBFEB"]
+			description: ["Sirok's nest is under the desert. It drops the Sandworm Gauntlet."]
+			id: "4E9C1A0DB8BED3CD"
+			rewards: [
+				{
+					id: "1254CD6B7C2984E0"
+					type: "xp"
+					xp: 1100
+				}
+				{
+					count: 3
+					id: "651EE848765B5D91"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E515E36CF1EB1F0"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1BF3A81029B4BA2D"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat Sirok, the Sandworm"
+			tasks: [
+				{
+					advancement: "block_factorys_bosses:kill_sandworm"
+					criterion: ""
+					icon: "block_factorys_bosses:achievement_icons"
+					id: "76AA1D0146DCE48E"
+					title: "The Beast Below"
+					type: "advancement"
+				}
+			]
+			title: "The Beast Below"
+			x: 7.45d
+			y: 6.12d
+		}
+		{
+			dependencies: ["4E9C1A0DB8BED3CD"]
+			description: ["A wrecked pirate ship at sea. The Kraken comes when its crew is dead."]
+			id: "01D156938C91E618"
+			rewards: [
+				{
+					id: "708869A11D608CFD"
+					type: "xp"
+					xp: 1300
+				}
+				{
+					count: 4
+					id: "27C720D50E69F8DC"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0CF914ED540A7DDF"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1E9DD450675DFA70"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat Nerakyss, the Kraken"
+			tasks: [
+				{
+					advancement: "block_factorys_bosses:kill_kraken"
+					criterion: ""
+					icon: "block_factorys_bosses:achievement_icons"
+					id: "21E2B28BB29D2244"
+					title: "Terror of the Depths"
+					type: "advancement"
+				}
+			]
+			title: "Terror of the Depths"
+			x: 17.1d
+			y: 6.12d
+		}
+		{
+			dependencies: [
+				"1A275F60D5BCEC45"
+				"7EAF536D08FA272B"
+			]
+			description: ["An arena in the Nether, behind a locked door. Its guards carry the key."]
+			id: "282B0819E4624B37"
+			rewards: [
+				{
+					id: "022D85CE727FB71D"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "5D2D722F62B935B4"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6FA63D862B98000F"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "364B6A78C45FEABA"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat Helvar, the Underworld Knight"
+			tasks: [
+				{
+					advancement: "block_factorys_bosses:kill_underworld_knight"
+					criterion: ""
+					icon: "block_factorys_bosses:achievement_icons"
+					id: "1A1E6AC6989488E7"
+					title: "Back Into Hell!"
+					type: "advancement"
+				}
+			]
+			title: "Back Into Hell!"
+			x: 5.35d
+			y: 7.88d
+		}
+		{
+			dependencies: ["282B0819E4624B37"]
+			description: ["Ashlord nests on top of a ruined tower. Bring fire resistance."]
+			id: "26046EBDD02AA200"
+			rewards: [
+				{
+					id: "754DA0086E6B6CEE"
+					type: "xp"
+					xp: 1800
+				}
+				{
+					count: 5
+					id: "6B462EE29E0D7F95"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "53099C676A2EF495"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "0CB4F29D8148D315"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Defeat Ashlord, the Infernal Dragon"
+			tasks: [
+				{
+					advancement: "block_factorys_bosses:kill_dragon"
+					criterion: ""
+					icon: "block_factorys_bosses:achievement_icons"
+					id: "1434BA91F9695D8B"
+					title: "Dragon Slayer"
+					type: "advancement"
+				}
+			]
+			title: "Dragon Slayer"
+			x: 7.45d
+			y: 7.88d
+		}
+		{
+			dependencies: ["26046EBDD02AA200"]
+			id: "42864A2600E8F4F7"
+			optional: true
+			rewards: [
+				{
+					id: "56D28BB07CD18BFB"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					id: "21B8CCCBB1040796"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0A74596D52ACF3B3"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "37463DBA9F07FCDD"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Defeat all Bosses"
+			tasks: [
+				{
+					advancement: "block_factorys_bosses:kill_all_bosses"
+					criterion: ""
+					icon: "block_factorys_bosses:achievement_icons"
+					id: "7720D32B3E943F8C"
+					title: "Unbound"
+					type: "advancement"
+				}
+			]
+			title: "Unbound"
+			x: 9.55d
+			y: 7.88d
+		}
+		{
+			dependencies: ["1A275F60D5BCEC45"]
+			description: [
+				"Break into the Frostsleep Court, a courtyard commemorating the fallen."
+				""
+				"Goety Revelation: a frozen courtyard in snowy lands, built for the fallen."
+			]
+			id: "4248063CC4B50209"
+			rewards: [
+				{
+					id: "1F584EAA8A4CD33F"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "39C507988270BAF2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "56D5CEAD8C7ABA1B"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "goety_revelation:find_the_frostyard"
+					criterion: ""
+					icon: "goety:freezing_lamp"
+					id: "5663DA2C0F9648CA"
+					title: "Chronicle of Wind and Snow"
+					type: "advancement"
+				}
+			]
+			title: "Chronicle of Wind and Snow"
+			x: 5.35d
+			y: 9.62d
+		}
+		{
+			dependencies: ["4248063CC4B50209"]
+			id: "33306F5B13D53A14"
+			rewards: [
+				{
+					id: "4DCF9851AAD81B51"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "78C8710F7FFF86D9"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "59FDEAF3F5BD4788"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s combat 100"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "693EE836C2DA8FE8"
+					silent: true
+					title: "+100 Combat experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Witness the last iceologer turning into wind and snow."
+			tasks: [
+				{
+					advancement: "goety_revelation:kill_ice_hermit"
+					criterion: ""
+					icon: "goety_revelation:ice_heart"
+					id: "6A8625FC91A0A183"
+					title: "A Flower Never Blooms Again"
+					type: "advancement"
+				}
+			]
+			title: "A Flower Never Blooms Again"
+			x: 7.45d
+			y: 9.62d
+		}
+		{
+			dependencies: ["33306F5B13D53A14"]
+			description: ["&7Made at: &fDark Altar ritual &7from &fFrost Staff, Cryogenic Core"]
+			id: "7376E4057C15E170"
+			optional: true
+			rewards: [
+				{
+					id: "3AE0BB66342A4988"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "48C1A66C01EC4273"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s combat 35"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "008F9A96240500B4"
+					silent: true
+					title: "+35 Combat experience"
+					type: "command"
+				}
+			]
+			subtitle: "Let the Frostbloom blossom, in your own way."
+			tasks: [
+				{
+					advancement: "goety_revelation:get_frostbloom"
+					criterion: ""
+					icon: "goety_revelation:frostbloom_staff"
+					id: "4439D39B45DA15F8"
+					title: "Ice Dissolves the Fleeting Years"
+					type: "advancement"
+				}
+			]
+			title: "Ice Dissolves the Fleeting Years"
+			x: 9.55d
+			y: 9.62d
+		}
+	]
+	subtitle: ["Bosses that keep to their own corners of the world"]
+	title: "&2Wild Legends"
+}

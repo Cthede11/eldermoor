@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 169476080,
+    "separation": 41,
+    "spacing": 57,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "irons_spellbooks:mangrove_hut",
+      "weight": 1
+    }
+  ]
+}

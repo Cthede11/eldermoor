@@ -1,0 +1,1458 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "first_days"
+	group: "20F67971AC218528"
+	icon: "minecraft:oak_sapling"
+	id: "7C7EBC131873CCE9"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"You have a starter kit, a skill tree to choose and no roof. This chapter fixes the last one and a few other things."
+				""
+				"Follow the main line. The side branches are worth the detour."
+			]
+			id: "51FA889338407516"
+			rewards: [
+				{
+					id: "7CA5779E7AB48DAB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 4
+					id: "07D542C0A3CC9EF8"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3937546F81DE053F"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Start here"
+			tasks: [
+				{
+					id: "688042DCAD681D92"
+					title: "Let's go"
+					type: "checkmark"
+				}
+			]
+			title: "&a&lA New Arrival"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51FA889338407516"]
+			icon: "minecraft:oak_log"
+			id: "640BCB94936EDC5C"
+			rewards: [
+				{
+					id: "28F090179F278901"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "642D68285EB19529"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "0D01CB94713C869C"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Everything starts with wood."
+			tasks: [
+				{
+					count: 8L
+					id: "7E1AE09861920AFB"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:logs" } }
+					title: "Any logs"
+					type: "item"
+				}
+			]
+			title: "Punch a Tree"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73BD682DA241F2B1"]
+			id: "0280B3CC8C122E71"
+			rewards: [
+				{
+					id: "002141364D7F148E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "186523C466D6220F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3C2DDBCD75A6177A"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hover an item and press &eR&f to see its recipe."
+			tasks: [
+				{
+					id: "34B1DD11859B1EB6"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
+			title: "A Place to Work"
+			x: 5.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E208115D523F20E"]
+			id: "036D81671FC1485F"
+			rewards: [
+				{
+					id: "19EF955EFF4DA1C8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2B06E04BEC64F834"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "5A3324B5A0B6465E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stone tools will do until you find iron."
+			tasks: [
+				{
+					id: "2B35E38BAB1D0A69"
+					item: "minecraft:stone_pickaxe"
+					type: "item"
+				}
+				{
+					id: "53510A12FDF37BB5"
+					item: "minecraft:stone_axe"
+					type: "item"
+				}
+			]
+			title: "Stone Age"
+			x: 10.85d
+			y: 2.37d
+		}
+		{
+			dependencies: ["4605B790625FB66A"]
+			description: ["Light keeps monsters from appearing. Carry more torches than you think you need."]
+			id: "0F22C6BE35FF83D3"
+			rewards: [
+				{
+					id: "55A4A34DC1C668C8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2322E138C3F50A75"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1FCA96BE848B2890"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3FE351466CC41717"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1D4564BF901BECD5"
+					item: "minecraft:torch"
+					type: "item"
+				}
+			]
+			title: "Fire"
+			x: 14.35d
+			y: 2.37d
+		}
+		{
+			dependencies: ["140315AAA179B331"]
+			description: ["&7Ore and stone you mine feed your Mining tree; the smelting feeds Forging."]
+			id: "56C8928534FD57EF"
+			rewards: [
+				{
+					id: "191E9BF28A2C14E6"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "5C602FC71AAF88EC"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E00921DF1955D20"
+					table_id: 7174460142916988694L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "13B5B15568C620BA"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Iron is in hillsides and caves. Smelt the raw ore."
+			tasks: [
+				{
+					count: 6L
+					id: "448D975BE496562A"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Iron"
+			x: 17.95d
+			y: 2.37d
+		}
+		{
+			dependencies: ["56C8928534FD57EF"]
+			description: ["An iron pickaxe mines everything you will need for a good while, including diamonds."]
+			id: "766DB20743C35E7E"
+			rewards: [
+				{
+					id: "25D1B5E1EBF4979F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "71B48D13516B466E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "37D3507A6D5AE1A3"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3AFAAD4E6FA368FC"
+					item: "minecraft:iron_pickaxe"
+					type: "item"
+				}
+			]
+			title: "Proper Tools"
+			x: 19.8d
+			y: 0.88d
+		}
+		{
+			dependencies: ["55BD0266E7BDC9EE"]
+			id: "449075508F64B84F"
+			rewards: [
+				{
+					id: "74573ED31830D447"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "68BC00C1FF92C9F7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "19D19D7C40C3356A"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Both are found deep. Bring a water bucket and a way back up."
+			tasks: [
+				{
+					count: 8L
+					id: "1F5F4921A51EF7F4"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6931B82CD9C8A408"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			title: "Going Down"
+			x: 23.3d
+			y: 0.88d
+		}
+		{
+			dependencies: ["0B3C0D138F60FB51"]
+			id: "2E5F8B6C7DF6E814"
+			rewards: [
+				{
+					id: "28EB5524D52D1986"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "64B8DD2CA8A11B6B"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D2FDE8B67E57928"
+					table_id: 7174460142916988694L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "61651F2532BEA51B"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Deepest of all, near the bottom of the world."
+			tasks: [
+				{
+					count: 3L
+					id: "61026D855E1974B1"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Diamonds"
+			x: 26.9d
+			y: 0.88d
+		}
+		{
+			dependencies: ["17C5D98BCCAABCB8"]
+			icon: "minecraft:red_bed"
+			id: "66EA6E22AE833E60"
+			rewards: [
+				{
+					id: "49F58E7B268CCD05"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7CF0142CD2A46F47"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "10C654330B7D5A1A"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Three wool and three planks. A bed also sets your respawn point."
+			tasks: [
+				{
+					id: "1D57D6400778EC3C"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:beds" } }
+					title: "Any bed"
+					type: "item"
+				}
+			]
+			title: "Somewhere to Sleep"
+			x: 9.1d
+			y: -0.88d
+		}
+		{
+			dependencies: ["66EA6E22AE833E60"]
+			id: "7FC0831260BA6942"
+			rewards: [
+				{
+					id: "13D41DFC2B72F2B9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4068C9B147542A5B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "7B248F4EEB32C9C0"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sleeping skips the night and leaves you Well Rested."
+			tasks: [
+				{
+					advancement: "minecraft:adventure/sleep_in_bed"
+					criterion: ""
+					icon: "minecraft:red_bed"
+					id: "7D5D56AA1C830D6F"
+					title: "Sleep in a bed"
+					type: "advancement"
+				}
+			]
+			title: "A Good Night"
+			x: 10.85d
+			y: -0.88d
+		}
+		{
+			dependencies: ["7FC0831260BA6942"]
+			icon: "minecraft:oak_door"
+			id: "536452565B51A4B4"
+			rewards: [
+				{
+					id: "4AE4017EDC3C1CDF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1B08CA6CB1D56C0F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "43379476650CA69F"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "A door, a chest and a roof make a base."
+			tasks: [
+				{
+					id: "6F2B4C56EF277D3A"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:doors" } }
+					title: "Any door"
+					type: "item"
+				}
+				{
+					id: "742327F326FD5366"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			title: "Four Walls"
+			x: 12.6d
+			y: -0.88d
+		}
+		{
+			dependencies: ["51AC38B42632CEB9"]
+			description: ["A backpack is a chest you wear. Press &eB&f to open it. It takes upgrades later."]
+			id: "4942134DCFB4526E"
+			rewards: [
+				{
+					id: "0EEBBBD265C4C95A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5C68B194A16CA119"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2C6B24868084A24D"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "67B0811E77789E42"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+			]
+			title: "More Pockets"
+			x: 26.9d
+			y: -0.88d
+		}
+		{
+			dependencies: ["0280B3CC8C122E71"]
+			id: "2FBB5BB3A459DAB6"
+			rewards: [
+				{
+					id: "5951A6A6F3914424"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7266B4B42BEEC1F9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1E7E26660DBC166E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Cook on the campfire for free, and stand near it to heal."
+			tasks: [
+				{
+					id: "6CB29EEDA287B1C9"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7F83F53FC019A9A1"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			title: "A Hot Meal"
+			x: 7.35d
+			y: -2.37d
+		}
+		{
+			dependencies: ["2FBB5BB3A459DAB6"]
+			description: ["Till soil near water and plant. Every ripe crop you harvest feeds your Farming tree."]
+			icon: "minecraft:wooden_hoe"
+			id: "02FA5231170BB438"
+			rewards: [
+				{
+					id: "56C25E5BF0503F13"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4CD70B6FBA63E275"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "268EFB1FF7A98381"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4AA53BDC3510CC85"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "5B6B3C807CBF3B25"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:hoes" } }
+					title: "Any hoe"
+					type: "item"
+				}
+			]
+			title: "A Small Farm"
+			x: 9.1d
+			y: -2.37d
+		}
+		{
+			dependencies: ["0D903E4A7DBCF447"]
+			id: "1ED7F6324F72EE04"
+			rewards: [
+				{
+					id: "235B2F7414CBBAB1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7EB9C2C490F6592C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2AEB155707FB6770"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Feed two of the same animal their favourite food."
+			tasks: [
+				{
+					advancement: "minecraft:husbandry/breed_an_animal"
+					criterion: ""
+					icon: "minecraft:wheat"
+					id: "4C8FC9CAEC4005BA"
+					title: "Breed two animals"
+					type: "advancement"
+				}
+			]
+			title: "Livestock"
+			x: 12.6d
+			y: -2.37d
+		}
+		{
+			dependencies: ["56C8928534FD57EF"]
+			description: ["A shield blocks almost anything from the front - for a stamina price."]
+			id: "477A2A532965D2B3"
+			rewards: [
+				{
+					id: "30C0DF8EEC1114E5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "07BE37C09709FF3F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "70D13CEBEBFCC2D1"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "541868ECCB0CF37D"
+					item: "minecraft:iron_chestplate"
+					type: "item"
+				}
+				{
+					id: "615581BA0D15CB6F"
+					item: "minecraft:shield"
+					type: "item"
+				}
+			]
+			title: "Armoured"
+			x: 19.8d
+			y: 2.37d
+		}
+		{
+			dependencies: ["34A72469203AB33D"]
+			description: ["Nights are dangerous here. These two are the gentlest things you will meet."]
+			icon: "minecraft:iron_sword"
+			id: "03F340877C73299A"
+			rewards: [
+				{
+					id: "266623CC01321815"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3D0DC62B8FA568DE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "15FCDB5D24B0CF44"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "08A28BD22BB6D936"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "minecraft:skeleton"
+					id: "1DB1245275AB8982"
+					type: "kill"
+					value: 5L
+				}
+			]
+			title: "First Blood"
+			x: 23.3d
+			y: 2.37d
+		}
+		{
+			dependencies: ["03F340877C73299A"]
+			id: "2C22AC7BADDC78EB"
+			rewards: [
+				{
+					id: "00D0DBE97D37F241"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7A3DC7A9BD9CDBD8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "5326D67D73B7948B"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Monsters drop coins. Keep them - they buy things."
+			tasks: [
+				{
+					count: 10L
+					id: "5024177AB9FC32E2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+			]
+			title: "Spoils"
+			x: 25.05d
+			y: 2.37d
+		}
+		{
+			dependencies: ["56C8928534FD57EF"]
+			id: "01F3B5A49F45029C"
+			rewards: [
+				{
+					id: "6EA234B26E797625"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "29E0D3A81B98301B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2AEFE658259A222E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Water saves you from lava and from long falls."
+			tasks: [
+				{
+					id: "443ABA13DFAE83E6"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			title: "A Bucket"
+			x: 19.8d
+			y: 3.88d
+		}
+		{
+			dependencies: ["3A4A455A6032EAA8"]
+			description: ["Craft one for your base, or find one in a village. Right-click to activate it; after that you can travel to it from any other waystone."]
+			id: "1039024DB096C258"
+			rewards: [
+				{
+					id: "22FB1675E76AC1F4"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "09CEBF41EF242515"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3BB50B47FDD1F687"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1988D61E8C848EA6"
+					item: "waystones:waystone"
+					type: "item"
+				}
+			]
+			title: "Waystone"
+			x: 23.3d
+			y: 3.88d
+		}
+		{
+			dependencies: ["1039024DB096C258"]
+			description: [
+				"Tall stone towers stand here and there in the wild. Climb one: the chest at the top holds a &eParaglider&f."
+				""
+				"Jump, then jump again in the air to open it."
+			]
+			id: "6ADB309947C73FB4"
+			rewards: [
+				{
+					id: "2CD330A0977713D8"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "260FD3F148094DEE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "68A2C695260A760D"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "46C615B61473FF43"
+					item: "paraglider:paraglider"
+					type: "item"
+				}
+			]
+			title: "The Tower's Gift"
+			x: 25.05d
+			y: 3.88d
+		}
+		{
+			dependencies: [
+				"2E5F8B6C7DF6E814"
+				"4942134DCFB4526E"
+				"477A2A532965D2B3"
+			]
+			description: [
+				"You have tools, armour, a bed and a pack. You are no longer a new arrival."
+				""
+				"Finishing this adds new chapters to your book:"
+				"&c Act I&f - the main story begins."
+				"&a Hearth \\& Home&f, &a Field \\& Kitchen&f and &7 The Deep&f - everyday life."
+				""
+				"For anything more specialised, choose a path at &6The Crossroads&f."
+			]
+			hide_dependency_lines: true
+			id: "63D583F00BADD799"
+			rewards: [
+				{
+					id: "30B08070A3FD25D7"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 6
+					id: "3000E5E52CA52C65"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "13BE38484AD1FE18"
+					table_id: 7174460142916988694L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6D8D4EE7B69B22FA"
+					table_id: 7174460142916988694L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3ED353AB1B37C8AA"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Opens the story and the everyday chapters"
+			tasks: [
+				{
+					id: "0E7F28AB474A3764"
+					title: "I am ready for more"
+					type: "checkmark"
+				}
+			]
+			title: "&a&lSettled In"
+			x: 29.25d
+			y: 0.88d
+		}
+		{
+			dependencies: ["640BCB94936EDC5C"]
+			description: ["One log is four planks; two planks are four sticks. Nearly everything you make this week starts as one or the other."]
+			id: "73BD682DA241F2B1"
+			rewards: [
+				{
+					id: "7FA803785F4D4A89"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3F3FB259F6F6C889"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "0F50120D8205AF50"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "110866ABBFBC9689"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:planks" } }
+					title: "16 planks"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2BD58061308BE594"
+					item: "minecraft:stick"
+					type: "item"
+				}
+			]
+			title: "Planks and Sticks"
+			x: 3.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0280B3CC8C122E71"]
+			id: "7489F717843757C1"
+			rewards: [
+				{
+					id: "189084D3ECA97AC6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6041386332930BDE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1902267495B86608"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "It will not last. It only has to last until you have stone."
+			tasks: [
+				{
+					id: "75D7C05FD730B535"
+					item: "minecraft:wooden_pickaxe"
+					type: "item"
+				}
+			]
+			title: "A Wooden Pick"
+			x: 7.35d
+			y: 2.37d
+		}
+		{
+			dependencies: ["7489F717843757C1"]
+			id: "7E208115D523F20E"
+			rewards: [
+				{
+					id: "1A0F53D2D6AE1384"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "79BCF83752EDDDAB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "4232F0512CF9764E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Enough for tools, a furnace, and a few spare."
+			tasks: [
+				{
+					count: 20L
+					id: "66A0360216DCA4CB"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
+			title: "Cobblestone"
+			x: 9.1d
+			y: 2.37d
+		}
+		{
+			dependencies: ["036D81671FC1485F"]
+			description: ["Coal shows as black flecks in hillsides. No coal? Burn logs in a furnace, with planks as fuel, for charcoal."]
+			id: "4605B790625FB66A"
+			rewards: [
+				{
+					id: "67D1FF09BDA15912"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "140AF1E4E9140116"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3C278959A8FA4D95"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4356A9DB92B7F82B"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:coals" } }
+					title: "8 coal or charcoal"
+					type: "item"
+				}
+			]
+			title: "Something to Burn"
+			x: 12.6d
+			y: 2.37d
+		}
+		{
+			dependencies: ["0F22C6BE35FF83D3"]
+			description: ["Tan flecks in stone, common in hills and shallow caves. It needs a stone pick."]
+			id: "140315AAA179B331"
+			rewards: [
+				{
+					id: "6FB12AA587E197DD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5FF570B0C59B040A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "7C0EEF3CD0CBF831"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "4E492ABC94321395"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+			]
+			title: "Pale Ore"
+			x: 16.1d
+			y: 2.37d
+		}
+		{
+			dependencies: ["766DB20743C35E7E"]
+			description: ["Below sea level the stone darkens and slows you down. Bring torches, food and a way back up."]
+			id: "55BD0266E7BDC9EE"
+			rewards: [
+				{
+					id: "3E520F255BC029EA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "59C2BD3EF594C1BF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "0BF315A4E05AD5BD"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "5A563C09BB44BBE6"
+					item: "minecraft:cobbled_deepslate"
+					type: "item"
+				}
+			]
+			title: "Where the Stone Turns Dark"
+			x: 21.55d
+			y: 0.88d
+		}
+		{
+			dependencies: ["449075508F64B84F"]
+			description: ["Diamonds sit at lava level. A bucket of water turns a lava pool into a floor."]
+			id: "0B3C0D138F60FB51"
+			rewards: [
+				{
+					id: "62FD2230A7750253"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "745F05EE69AB8760"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "7996CF553DF1FF21"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fill a Bucket with lava"
+			tasks: [
+				{
+					advancement: "minecraft:story/lava_bucket"
+					criterion: ""
+					icon: "minecraft:lava_bucket"
+					id: "6A72D05ABB469A64"
+					title: "Hot Stuff"
+					type: "advancement"
+				}
+			]
+			title: "Mind the Lava"
+			x: 25.05d
+			y: 0.88d
+		}
+		{
+			dependencies: ["0280B3CC8C122E71"]
+			description: ["Shear sheep, or kill them. Four string also makes a block of wool."]
+			id: "17C5D98BCCAABCB8"
+			rewards: [
+				{
+					id: "0EEE4CF40555A8B5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "48EC96A8D1E626C5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "218D5B13E9000D3C"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "6F088688BBF63EC8"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:wool" } }
+					title: "3 wool"
+					type: "item"
+				}
+			]
+			title: "Three Tufts of Wool"
+			x: 7.35d
+			y: -0.88d
+		}
+		{
+			dependencies: ["536452565B51A4B4"]
+			description: ["Cows for the leather, spiders for the string. A backpack takes both, and a chest."]
+			id: "51AC38B42632CEB9"
+			rewards: [
+				{
+					id: "20EF8EC8A7B91E72"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6AA08C1FD72D3339"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "289F838F5C447861"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "0EBBC709047510CF"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "43590F1CE51A372F"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			title: "Leather and String"
+			x: 14.35d
+			y: -0.88d
+		}
+		{
+			dependencies: ["02FA5231170BB438"]
+			id: "0D903E4A7DBCF447"
+			rewards: [
+				{
+					id: "5D15B079B7E18916"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0E2797C1C83842C8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "059B0D5A0B60D5FC"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Wheat is bread, and it is also what cows and sheep follow."
+			tasks: [
+				{
+					count: 9L
+					id: "02FD5E8CE0E4B64C"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+			]
+			title: "First Harvest"
+			x: 10.85d
+			y: -2.37d
+		}
+		{
+			dependencies: ["477A2A532965D2B3"]
+			id: "34A72469203AB33D"
+			rewards: [
+				{
+					id: "4934355E2D0BD727"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "75846A0DA30BD97F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "424CCFD052A094CB"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Two ingots and a stick. Hold a shield in the other hand."
+			tasks: [
+				{
+					id: "3F7E6BE872146947"
+					item: "minecraft:iron_sword"
+					type: "item"
+				}
+			]
+			title: "An Edge"
+			x: 21.55d
+			y: 2.37d
+		}
+		{
+			dependencies: ["01F3B5A49F45029C"]
+			description: ["The heart of a waystone. Look it up with &eR&f: it wants an ender pearl."]
+			id: "3A4A455A6032EAA8"
+			rewards: [
+				{
+					id: "4F0FB08C0A20B9E1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0AEFA1D1EE98FC34"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "635EF748D409B6F5"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0DDB5C26FA9E62D5"
+					item: "waystones:warp_stone"
+					type: "item"
+				}
+			]
+			title: "A Warp Stone"
+			x: 21.55d
+			y: 3.88d
+		}
+	]
+	subtitle: ["From your first tree to your first diamonds"]
+	title: "&a&lFirst Days"
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1667243702,
+    "separation": 35,
+    "spacing": 350,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:grave_euthymia",
+      "weight": 1
+    }
+  ]
+}

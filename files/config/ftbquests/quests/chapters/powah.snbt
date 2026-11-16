@@ -1,0 +1,4144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powah"
+	group: "02AD8609A8FE6EE4"
+	icon: "powah:reactor_basic"
+	id: "21591D1C0DBA639D"
+	images: [ ]
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2D28BD1F19EAC719"]
+			description: [
+				"Powah is power and only power: generators, cells, cables, wireless chargers and a reactor, all speaking Forge Energy."
+				""
+				"Everything comes in seven tiers - Starter, Basic, Hardened, Blazing, Niotic, Spirited, Nitro - and the step from one tier to the next is the &eEnergizing Orb&f."
+				""
+				"The Powah book (your reward) explains each block."
+			]
+			hide_until_deps_complete: true
+			id: "0BB10B3BC59ADC94"
+			rewards: [
+				{
+					id: "13DB2CCF477A8E67"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "5A824A76F1122620"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					id: "4E04815733DBA657"
+					item: "powah:book"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6047BB5DE7DC3961"
+					item: "powah:dielectric_paste"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "10220F9436B8D81B"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "71954FB7197437AB"
+					title: "More power"
+					type: "checkmark"
+				}
+			]
+			title: "&d&lPowah!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["688EF74E0AB343F6"]
+			description: ["Place the Orb with Energizing Rods near it; they link by themselves. The rods must sit on cables or another power block - the orb needs none. Put ingredients into the orb and they are energized into something new. More rods, and better ones, work faster."]
+			id: "5D84EB96BBCA7574"
+			rewards: [
+				{
+					id: "63EB2A2E10BE4B40"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "7479A712F2FC2CA5"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19FADA1B6C5E7750"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "00C7B3CA49F5003E"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "004707A4805699B6"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2B30E588593BF31E"
+					item: "powah:energizing_rod_starter"
+					type: "item"
+				}
+			]
+			title: "Energizing"
+			x: 6.7d
+			y: -4.25d
+		}
+		{
+			dependencies: ["5D84EB96BBCA7574"]
+			description: ["&7Made at: &fEnergizing Orb &7from &fIron Ingot, Gold Ingot"]
+			id: "359516C9163336A5"
+			rewards: [
+				{
+					id: "42F543510B379CA0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3885937A1E535AE3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0581828EB97ACDE2"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "An iron ingot and a gold ingot, energized together."
+			tasks: [
+				{
+					count: 8L
+					id: "5D65E6773B730249"
+					item: "powah:steel_energized"
+					type: "item"
+				}
+			]
+			title: "Energized Steel"
+			x: 8.55d
+			y: -2.75d
+		}
+		{
+			dependencies: ["359516C9163336A5"]
+			description: ["&7Made at: &fEnergizing Orb &7from &fBlaze Powder x4"]
+			id: "39254EC8A908897F"
+			rewards: [
+				{
+					id: "5FB9F4EC3AABAD63"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6E255549027B07E4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0613269384D99789"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "From a blaze rod, or four blaze powder."
+			tasks: [
+				{
+					count: 4L
+					id: "42476440A92270D4"
+					item: "powah:crystal_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Crystal"
+			x: 10.65d
+			y: -2.75d
+		}
+		{
+			dependencies: ["39254EC8A908897F"]
+			description: ["&7Made at: &fEnergizing Orb &7from &fDiamond"]
+			id: "3DB713CD2B69E3F7"
+			rewards: [
+				{
+					id: "71A4C9D72A551060"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "47610D8E6FC36185"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4B227C45B8DDDE59"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "From a diamond."
+			tasks: [
+				{
+					count: 4L
+					id: "183889B84C296F59"
+					item: "powah:crystal_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Crystal"
+			x: 12.5d
+			y: -2.75d
+		}
+		{
+			dependencies: ["3DB713CD2B69E3F7"]
+			description: ["&7Made at: &fEnergizing Orb &7from &fEmerald"]
+			id: "56529599AE3857CE"
+			rewards: [
+				{
+					id: "60A96243F083DCE7"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "32CA2CC4DC48482E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3920F0D2AE5CCE5E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "From an emerald."
+			tasks: [
+				{
+					count: 4L
+					id: "5551D9AAB5F14F72"
+					item: "powah:crystal_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Crystal"
+			x: 14.25d
+			y: -2.75d
+		}
+		{
+			dependencies: ["56529599AE3857CE"]
+			description: [
+				"A nether star, two redstone blocks and a block of blazing crystal make sixteen. The top tier waits on the Wither."
+				"&7Made at: &fEnergizing Orb &7from &fNether Star, Block of Redstone x2, Block Of Blazing Crystal"
+			]
+			id: "120C8AAD93F3E232"
+			rewards: [
+				{
+					id: "657FF864C651E430"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "5F15DC3C3E89D004"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A7C0653EBE50C4E"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "62B4DA64B4E11127"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "728E7B4967283EA8"
+					item: "powah:crystal_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Crystal"
+			x: 23.1d
+			y: -2.75d
+		}
+		{
+			dependencies: ["0BB10B3BC59ADC94"]
+			description: ["&7Made from: &fBasic Capacitor (Tiny) x2, Dielectric Paste x5, Furnace, Dielectric Casing"]
+			id: "6F2CBE92882CF007"
+			rewards: [
+				{
+					id: "6CB3DCA55B559D10"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1BBECB457B1C3B2A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1CB04E2B79DDCD74"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Burns anything a furnace burns."
+			tasks: [
+				{
+					id: "1D1096297CE5A4C9"
+					item: "powah:furnator_starter"
+					type: "item"
+				}
+			]
+			title: "Furnator"
+			x: 2.1d
+			y: -25.5d
+		}
+		{
+			dependencies: ["6F2CBE92882CF007"]
+			description: ["&7Made from: &fBasic Capacitor x2, Iron Ingot x5, Magmator (Starter), Dielectric Casing"]
+			id: "1C25F07C63EDEB1A"
+			rewards: [
+				{
+					id: "01CAEC6E11E648BD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5F0858F75902B63B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "54E315EEF0739FD0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Burns lava."
+			tasks: [
+				{
+					id: "1CCC8670308C662F"
+					item: "powah:magmator_basic"
+					type: "item"
+				}
+			]
+			title: "Magmator"
+			x: 4.35d
+			y: -25.5d
+		}
+		{
+			dependencies: ["08E9D23E345DDA6E"]
+			id: "3F9F5B11B8D2586C"
+			rewards: [
+				{
+					id: "122DC8752A0B30E1"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2C95287FC69D6E02"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3BB9A45775D8A75E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sits on a heat source and drinks coolant - water to begin with."
+			tasks: [
+				{
+					id: "1B0D91B98366F4AA"
+					item: "powah:thermo_generator_basic"
+					type: "item"
+				}
+			]
+			title: "Thermo Generator"
+			x: 8.55d
+			y: -25.5d
+		}
+		{
+			dependencies: ["621BCAABFF863139"]
+			description: ["&7Made from: &fBasic Capacitor (Tiny) x2, Dielectric Paste x3, Photoelectric Pane x3, Dielectric Casing"]
+			id: "768B4E83A3030E2A"
+			rewards: [
+				{
+					id: "1A948230483A0867"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4ECFE46C70E02202"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6BF8751464C66463"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Quiet, slow and free."
+			tasks: [
+				{
+					id: "4425294629AC2FCA"
+					item: "powah:solar_panel_starter"
+					type: "item"
+				}
+			]
+			title: "Solar Panel"
+			x: 12.5d
+			y: -25.5d
+		}
+		{
+			dependencies: ["0BB10B3BC59ADC94"]
+			id: "13653A6F9814DA91"
+			rewards: [
+				{
+					id: "0856444A4E0BE949"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0CF2A7B78A13C87A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "13F253EF0EB9B809"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stores power and keeps it when picked up."
+			tasks: [
+				{
+					id: "329074957E42C932"
+					item: "powah:energy_cell_basic"
+					type: "item"
+				}
+			]
+			title: "Energy Cell"
+			x: 2.1d
+			y: -15.0d
+		}
+		{
+			dependencies: ["13653A6F9814DA91"]
+			description: ["&7Made from: &fDielectric Rod (Horizontal) x6, Basic Capacitor, Energy Cable (Starter) x2"]
+			id: "0377D0A95148C5BC"
+			rewards: [
+				{
+					id: "12C490E26D7878D0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1C96B3B27AADA9D8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5C7F28BDC7A4DF25"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Higher tiers carry more."
+			tasks: [
+				{
+					count: 8L
+					id: "05713E97CA1659E0"
+					item: "powah:energy_cable_basic"
+					type: "item"
+				}
+			]
+			title: "Energy Cable"
+			x: 4.35d
+			y: -15.0d
+		}
+		{
+			dependencies: ["0377D0A95148C5BC"]
+			description: ["Bind it to yourself with a Binding Card and it charges the tools and armour you carry, anywhere in the same dimension."]
+			id: "0FCB707CCB8A51EE"
+			rewards: [
+				{
+					id: "756CB2B944C7F149"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1BF9B23F8A668B50"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4B181627FCF6FF74"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "76E7F83BE0A5CD61"
+					item: "powah:player_transmitter_basic"
+					type: "item"
+				}
+				{
+					id: "7D704E708A4000D8"
+					item: "powah:binding_card"
+					type: "item"
+				}
+			]
+			title: "Player Transmitter"
+			x: 6.7d
+			y: -15.0d
+		}
+		{
+			dependencies: ["135C7E33A2760C5E"]
+			description: ["Shared storage on channels: power put into one ender cell comes out of any other on the same channel."]
+			id: "6E8E90ABDC63D523"
+			rewards: [
+				{
+					id: "28580DBDCA91B889"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "755826ADCA6A9551"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3765077C138026DE"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7E525E708D05BE80"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3960097BC3DC3526"
+					item: "powah:ender_cell_basic"
+					type: "item"
+				}
+				{
+					id: "6E85B2714D81BBF0"
+					item: "powah:ender_gate_basic"
+					type: "item"
+				}
+			]
+			title: "Ender Cells"
+			x: 10.65d
+			y: -18.5d
+		}
+		{
+			dependencies: ["0BB10B3BC59ADC94"]
+			description: [
+				"A green ore underground, and Powah's reactor fuel. Not the same thing as Mekanism's uranium."
+				"&7Made at: &fEnergizing Orb &7from &fUraninite Ore (Poor)"
+			]
+			id: "43222B70D4C05CA6"
+			rewards: [
+				{
+					id: "3855D4C97606B93D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2D41B8870D9139B7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7C5CBD627F2F7AB6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "25E46B9B39C3E309"
+					item: "powah:uraninite"
+					type: "item"
+				}
+			]
+			title: "Uraninite"
+			x: 2.1d
+			y: 18.5d
+		}
+		{
+			dependencies: ["43222B70D4C05CA6"]
+			description: [
+				"A solid coolant, colder than ice. Found underground, or energized from blue ice. Solid coolant still needs water alongside it."
+				"&7Made at: &fEnergizing Orb &7from &fBlue Ice x2"
+			]
+			id: "337F173288B76615"
+			rewards: [
+				{
+					id: "186ED4EE2E12B6E2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1266E8A19CC3B9E4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2A07493693E11E53"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "5A45DFFA2AF696EF"
+					item: "powah:dry_ice"
+					type: "item"
+				}
+			]
+			title: "Keep It Cool"
+			x: 4.35d
+			y: 18.5d
+		}
+		{
+			dependencies: ["337F173288B76615"]
+			description: ["Hold all thirty-six reactor blocks and place one with a clear 3x4 space around it: the reactor builds itself. Feed it uraninite and water; heat makes it burn fuel faster for less power, so add ice or dry ice. Coal stretches the fuel, redstone speeds it up, and both add heat."]
+			id: "78DD9204ED9327B6"
+			rewards: [
+				{
+					id: "50D9DEED930FFEAA"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "4077C4448D6831D4"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E7EFBAD9B4CC33D"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "690D9051BC6F8EB9"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 36L
+					id: "7C0DED988B2FFCC8"
+					item: "powah:reactor_basic"
+					type: "item"
+				}
+			]
+			title: "The Reactor"
+			x: 6.7d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"120C8AAD93F3E232"
+				"6E8E90ABDC63D523"
+				"78DD9204ED9327B6"
+			]
+			hide_dependency_lines: true
+			id: "7A93565C7515EC59"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "031BAB1F242E6837"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "131E3DA55FF61793"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D0A831FF52BEEB6"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "58E52DE1CD70234D"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Any two of: nitro crystals, ender cells, a working reactor."
+			tasks: [
+				{
+					id: "4657C048016A5EE7"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&d&lUnlimited Powah"
+			x: 25.45d
+			y: -2.75d
+		}
+		{
+			dependencies: ["0BB10B3BC59ADC94"]
+			description: ["Paste becomes rods and casings, and nearly every Powah block is a casing with something in it."]
+			id: "17C7A1717EB77AA8"
+			rewards: [
+				{
+					id: "153ABCF44C11336A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4F275BFAC8B627CC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5D916AA9612720CD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1DB23B7ABE3D97E7"
+					item: "powah:dielectric_casing"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "49558D8A4129480F"
+					item: "powah:dielectric_rod"
+					type: "item"
+				}
+				{
+					id: "3F27537281C8F568"
+					item: "powah:capacitor_basic"
+					type: "item"
+				}
+			]
+			title: "Dielectric Parts"
+			x: 2.1d
+			y: 3.19d
+		}
+		{
+			dependencies: ["17C7A1717EB77AA8"]
+			description: ["Capacitors are in every Powah block, and their &etier&f is what makes a machine Basic, Hardened, Blazing and so on."]
+			id: "688EF74E0AB343F6"
+			rewards: [
+				{
+					id: "445F050C71574F62"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3957F0A3D1F09B44"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0824E96E330EAAD4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "4611C3EC991B0B5C"
+					item: "powah:capacitor_basic_tiny"
+					type: "item"
+				}
+			]
+			title: "A First Capacitor"
+			x: 4.35d
+			y: -8.38d
+		}
+		{
+			dependencies: ["0FCB707CCB8A51EE"]
+			description: ["An ender eye in dielectric casing, finished in the Energizing Orb. Ender Cells and Ender Gates share one pool of power on a &echannel&f, anywhere in any world."]
+			id: "135C7E33A2760C5E"
+			rewards: [
+				{
+					id: "6BD487E4BE0BBF4C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7394DD629DFECF0B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "61B11097ACA5FEDD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3946547183FDE4C2"
+					item: "powah:ender_core"
+					type: "item"
+				}
+			]
+			title: "An Ender Core"
+			x: 8.55d
+			y: -15.0d
+		}
+		{
+			dependencies: ["1C25F07C63EDEB1A"]
+			description: ["The working face of the Thermo Generator. Set the generator on a &6heat source&f - lava, a magma block, blazing crystal - and keep it fed with water."]
+			id: "08E9D23E345DDA6E"
+			rewards: [
+				{
+					id: "2D59499459A09A1D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "76CD2EBE73681CF1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "543EACFC091364CC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "30F17B0DC334A932"
+					item: "powah:thermoelectric_plate"
+					type: "item"
+				}
+			]
+			title: "A Thermoelectric Plate"
+			x: 6.7d
+			y: -25.5d
+		}
+		{
+			dependencies: ["3F9F5B11B8D2586C"]
+			description: ["Glass, lapis and paste. Three make a panel. Panels only need the sky above them; they join into one sheet when placed side by side."]
+			id: "621BCAABFF863139"
+			rewards: [
+				{
+					id: "53D1A3559C3F9EDE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7CF04E1A1B9A9B0C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "49CB110632D9F220"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "1EA2A0AB76C203EB"
+					item: "powah:photoelectric_pane"
+					type: "item"
+				}
+			]
+			title: "Photoelectric Panes"
+			x: 10.65d
+			y: -25.5d
+		}
+		{
+			dependencies: ["5D84EB96BBCA7574"]
+			description: ["A snowball charged on the &eEnergizing Orb&f. Throw it and lightning strikes where it lands. Half a million FE for one bolt, and worth it once."]
+			id: "1A14ADCAAACB780A"
+			optional: true
+			rewards: [
+				{
+					id: "250D2146A03C0F7C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "73AE658349CCD0A1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "133970AAF906BC61"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Throw a thunderstorm"
+			tasks: [
+				{
+					id: "5282F62B46CC4F6A"
+					item: "powah:charged_snowball"
+					type: "item"
+				}
+			]
+			title: "Charged Snowball"
+			x: 8.55d
+			y: -5.75d
+		}
+		{
+			dependencies: ["5D84EB96BBCA7574"]
+			description: ["Dielectric paste, an ender pearl and iron bars. Use it on a zombie or husk to turn it into a &ePlayer Aerial Pearl&f, the part that lets a Player Transmitter find you."]
+			id: "0F174756F01B2006"
+			optional: true
+			rewards: [
+				{
+					id: "27C8292416AC1B3A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "20BAF2AC388F5FB3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5C00F56AFA277D6D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Half of a wireless link"
+			tasks: [
+				{
+					id: "797E5BD87280C57C"
+					item: "powah:aerial_pearl"
+					type: "item"
+				}
+			]
+			title: "Aerial Pearl"
+			x: 8.55d
+			y: -4.25d
+		}
+		{
+			dependencies: ["17C7A1717EB77AA8"]
+			description: ["A battery you keep in your inventory or a curio slot. Sneak and use it to switch it on, and it tops up the powered tools you carry."]
+			id: "657A9472B87DAD54"
+			optional: true
+			rewards: [
+				{
+					id: "5D639CF107BBCFA3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "21794521B296DE9E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5FDEC89E54AE33BA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Power you can carry"
+			tasks: [
+				{
+					id: "166A037764C8EF8E"
+					item: "powah:battery_starter"
+					type: "item"
+				}
+			]
+			title: "Starter Battery"
+			x: 4.35d
+			y: -1.25d
+		}
+		{
+			dependencies: ["17C7A1717EB77AA8"]
+			description: ["A blank card is made into a &eBinding Card&f, which ties a Player Transmitter to you so it knows whose gear to charge."]
+			id: "7E5EC3C4CF5BE38C"
+			optional: true
+			rewards: [
+				{
+					id: "3A7F5041EDAB51B0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "531188DD8540B3BF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "17967490301D6299"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Name a player"
+			tasks: [
+				{
+					id: "2802D73E6A2D9D2B"
+					item: "powah:blank_card"
+					type: "item"
+				}
+			]
+			title: "Blank Card"
+			x: 4.35d
+			y: 0.25d
+		}
+		{
+			dependencies: ["657A9472B87DAD54"]
+			description: ["The Starter Battery upgraded with a Basic Capacitor. It holds and passes on more power."]
+			id: "69E66564A06CFA54"
+			optional: true
+			rewards: [
+				{
+					id: "5DDD4D8053218923"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7EC37EFEB44D0AC0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0C6AE97A86204301"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bigger battery"
+			tasks: [
+				{
+					id: "216DCF9E4E033F8A"
+					item: "powah:battery_basic"
+					type: "item"
+				}
+			]
+			title: "Basic Battery"
+			x: 6.7d
+			y: -1.25d
+		}
+		{
+			dependencies: ["17C7A1717EB77AA8"]
+			description: ["A large Basic Capacitor with a Blazing Crystal and dielectric paste. Every Blazing generator, cell, cable and battery is built around one, so make a few."]
+			id: "678343CEAB24A261"
+			optional: true
+			rewards: [
+				{
+					id: "04DD6FE63388C713"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2117650E0A9C158B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7C4780D4ED208566"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The heart of every Blazing machine"
+			tasks: [
+				{
+					id: "2CA8ADFACBC342AE"
+					item: "powah:capacitor_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Capacitor"
+			x: 4.35d
+			y: 1.75d
+		}
+		{
+			dependencies: ["17C7A1717EB77AA8"]
+			description: ["A large Basic Capacitor with Energized Steel and dielectric paste. Every Hardened generator, cell, cable and battery is built around one, so make a few."]
+			id: "4A88E991555EC26F"
+			optional: true
+			rewards: [
+				{
+					id: "4B812C6F8DD1FF42"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "64D459FD38C666A6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7E0DA5DF2AE184E8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The heart of every Hardened machine"
+			tasks: [
+				{
+					id: "6C8381451175ECED"
+					item: "powah:capacitor_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Capacitor"
+			x: 4.35d
+			y: 4.75d
+		}
+		{
+			dependencies: ["17C7A1717EB77AA8"]
+			description: ["A large Basic Capacitor with a Niotic Crystal and dielectric paste. Every Niotic generator, cell, cable and battery is built around one, so make a few."]
+			id: "7A92B4DE5AA331D3"
+			optional: true
+			rewards: [
+				{
+					id: "7F2824A281F82A1B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "075F4C6E6F408B96"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "039545DCABDE70A6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The heart of every Niotic machine"
+			tasks: [
+				{
+					id: "6A22A40D8A0EA0E8"
+					item: "powah:capacitor_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Capacitor"
+			x: 4.35d
+			y: 15.25d
+		}
+		{
+			dependencies: ["17C7A1717EB77AA8"]
+			description: ["A large Basic Capacitor with a Nitro Crystal and dielectric paste. Every Nitro generator, cell, cable and battery is built around one, so make a few."]
+			id: "7FAAA9679C05BC8C"
+			optional: true
+			rewards: [
+				{
+					id: "5A66C7139202A6B9"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1E9860E21275FF36"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5EC9151993C81D1F"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The heart of every Nitro machine"
+			tasks: [
+				{
+					id: "7E6CF947EE092C1B"
+					item: "powah:capacitor_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Capacitor"
+			x: 4.35d
+			y: 7.75d
+		}
+		{
+			dependencies: ["17C7A1717EB77AA8"]
+			description: ["A large Basic Capacitor with a Spirited Crystal and dielectric paste. Every Spirited generator, cell, cable and battery is built around one, so make a few."]
+			id: "76A786FC6497047B"
+			optional: true
+			rewards: [
+				{
+					id: "76AB497486DB8CAA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6D61A6002A95E33A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7081DB11AF2FB6EF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The heart of every Spirited machine"
+			tasks: [
+				{
+					id: "66461A418D143516"
+					item: "powah:capacitor_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Capacitor"
+			x: 4.35d
+			y: 10.75d
+		}
+		{
+			dependencies: ["688EF74E0AB343F6"]
+			description: ["Powah's power storage: a block that takes FE in and lets it out, so generators can run while nothing is using the power."]
+			id: "08DAFEC575E77A7C"
+			optional: true
+			rewards: [
+				{
+					id: "6EAD530CDEFCAC35"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "052B6B9F27D166E3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0D843D5A2D3A4E6A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A block that stores power"
+			tasks: [
+				{
+					id: "22418F74C8DF7C09"
+					item: "powah:energy_cell_starter"
+					type: "item"
+				}
+			]
+			title: "Starter Energy Cell"
+			x: 6.7d
+			y: -13.5d
+		}
+		{
+			dependencies: ["17C7A1717EB77AA8"]
+			description: ["A discharger with a Basic Capacitor: it empties items faster than the tier below."]
+			id: "652663D1E8443A48"
+			optional: true
+			rewards: [
+				{
+					id: "51F9CF1735610BAB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "56303F473DA279A5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "54E0209E27E1AFAF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster draining"
+			tasks: [
+				{
+					id: "2DD1C95354D3C540"
+					item: "powah:energy_discharger_basic"
+					type: "item"
+				}
+			]
+			title: "Basic Discharger"
+			x: 4.35d
+			y: 3.25d
+		}
+		{
+			dependencies: ["688EF74E0AB343F6"]
+			description: ["Put a charged item or battery in it and the discharger empties it into your network. Batteries filled elsewhere come home this way."]
+			id: "001C4A7864C2744D"
+			optional: true
+			rewards: [
+				{
+					id: "0F3FB3A9DBB193DF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5DB870211D4254A5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "197B8299F28D3E96"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Drain items into the grid"
+			tasks: [
+				{
+					id: "79D1B7DB36573898"
+					item: "powah:energy_discharger_starter"
+					type: "item"
+				}
+			]
+			title: "Energy Discharger"
+			x: 6.7d
+			y: -12.0d
+		}
+		{
+			dependencies: ["688EF74E0AB343F6"]
+			description: ["Point it into a chest or other inventory and it charges the powered items inside. A cheap charging station for tools."]
+			id: "7250B8CF31571731"
+			optional: true
+			rewards: [
+				{
+					id: "483F6CFD6F5565BA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "49620C595528EEE9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7D3249140EE5ECF3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charge what is in a chest"
+			tasks: [
+				{
+					id: "2BD4AAD81FF4085E"
+					item: "powah:energy_hopper_starter"
+					type: "item"
+				}
+			]
+			title: "Energy Hopper"
+			x: 6.7d
+			y: -10.5d
+		}
+		{
+			dependencies: ["688EF74E0AB343F6"]
+			description: ["The Magmator turns lava, or another hot fluid, into FE. The Starter tier is small; each tier above it is built from the one before."]
+			id: "29D9C1CDFF9E8260"
+			optional: true
+			rewards: [
+				{
+					id: "4D20BABEC901FDCE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7FF5272D69A614D9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "34EC00C1D752217A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Power from lava"
+			tasks: [
+				{
+					id: "7888012C283C35AB"
+					item: "powah:magmator_starter"
+					type: "item"
+				}
+			]
+			title: "Magmator: Magmator (Starter)"
+			x: 6.7d
+			y: -9.0d
+		}
+		{
+			dependencies: ["688EF74E0AB343F6"]
+			description: ["Power in from your network, out to you wherever you are. Bind it to yourself with a &eBinding Card&f and it keeps the powered items you carry charged."]
+			id: "26438D46D4495FF9"
+			optional: true
+			rewards: [
+				{
+					id: "7C3E157BE8F06832"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "79C9019628A89E6D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7C0CC4DE38464F66"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charge your gear from home"
+			tasks: [
+				{
+					id: "05AD7997351A945F"
+					item: "powah:player_transmitter_starter"
+					type: "item"
+				}
+			]
+			title: "Player Transmitter: Player Transmitter (Starter)"
+			x: 6.7d
+			y: -7.5d
+		}
+		{
+			dependencies: ["688EF74E0AB343F6"]
+			description: ["The Reactor burns Uraninite in a multiblock: redstone slows its fuel use, carbon raises its output and ice keeps it cool. The Starter tier is small; each tier above it is built from the one before."]
+			id: "45C033460059FCFE"
+			optional: true
+			rewards: [
+				{
+					id: "3BCC065A2675C0C7"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1F626574B690B577"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2D1CE85C85A6ECA3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Power from Uraninite"
+			tasks: [
+				{
+					id: "01ADEA09221EB26D"
+					item: "powah:reactor_starter"
+					type: "item"
+				}
+			]
+			title: "Reactor"
+			x: 6.7d
+			y: -6.0d
+		}
+		{
+			dependencies: ["69E66564A06CFA54"]
+			description: ["The Basic Battery upgraded with a Hardened Capacitor and Energized Steel. It holds and passes on more power."]
+			id: "08290F5D399B84F9"
+			optional: true
+			rewards: [
+				{
+					id: "062C28BE814E5FDA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "004FC850D5865373"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6306CFEAFD93E204"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bigger battery"
+			tasks: [
+				{
+					id: "53680483BC05AA26"
+					item: "powah:battery_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Battery"
+			x: 8.55d
+			y: -1.25d
+		}
+		{
+			dependencies: ["135C7E33A2760C5E"]
+			description: ["An Ender Core and obsidian with a Blazing Crystal. A higher tier moves more power through the shared ender store."]
+			id: "6E83DC4C40CC3544"
+			optional: true
+			rewards: [
+				{
+					id: "505F9EF96AB27DB6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "35ED4A385B58BE5B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "11B0B61B26CD4D6B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A wider ender link"
+			tasks: [
+				{
+					id: "7DF296909643D195"
+					item: "powah:ender_cell_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Ender Cell"
+			x: 12.75d
+			y: -19.5d
+		}
+		{
+			dependencies: ["135C7E33A2760C5E"]
+			description: ["An Ender Core and obsidian with Energized Steel. A higher tier moves more power through the shared ender store."]
+			id: "60361A814DC8CD49"
+			optional: true
+			rewards: [
+				{
+					id: "62063DDE27A63515"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "65563D082FA3F02F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0E6E49D3A8923C4C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A wider ender link"
+			tasks: [
+				{
+					id: "61A944547D3F6099"
+					item: "powah:ender_cell_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Ender Cell"
+			x: 12.75d
+			y: -18.0d
+		}
+		{
+			dependencies: ["135C7E33A2760C5E"]
+			description: ["An Ender Core and obsidian with a Niotic Crystal. A higher tier moves more power through the shared ender store."]
+			id: "3D84F8D4515CC0A0"
+			optional: true
+			rewards: [
+				{
+					id: "02F2A7DCD909BE69"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7DF2F4EC20159AD3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7BDFAEAD9C6E41C6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A wider ender link"
+			tasks: [
+				{
+					id: "4AC0908E9858D765"
+					item: "powah:ender_cell_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Ender Cell"
+			x: 12.75d
+			y: -16.5d
+		}
+		{
+			dependencies: ["135C7E33A2760C5E"]
+			description: ["An Ender Core and obsidian with a Nitro Crystal. A higher tier moves more power through the shared ender store."]
+			id: "2016FE8728A2DC8B"
+			optional: true
+			rewards: [
+				{
+					id: "0E4737BF73AAC9FE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5AB3BAC9DA0DF5D4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5EDC0684ED0662A6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A wider ender link"
+			tasks: [
+				{
+					id: "2385B51271FF9351"
+					item: "powah:ender_cell_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Ender Cell"
+			x: 12.75d
+			y: -15.0d
+		}
+		{
+			dependencies: ["135C7E33A2760C5E"]
+			description: ["An Ender Core and obsidian with a Spirited Crystal. A higher tier moves more power through the shared ender store."]
+			id: "243A6C7C27957C8A"
+			optional: true
+			rewards: [
+				{
+					id: "47C9753DAD72F03E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0887F1C23AB0C7DF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7B4C70EF10B3B329"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A wider ender link"
+			tasks: [
+				{
+					id: "0C0CA7A99F9B94EA"
+					item: "powah:ender_cell_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Ender Cell"
+			x: 10.65d
+			y: -14.25d
+		}
+		{
+			dependencies: ["135C7E33A2760C5E"]
+			description: ["Every &eEnder Cell&f set to the same channel shares one store of power, wherever it is placed. Put power in at home and take it out at the mine."]
+			id: "3638E340202953DD"
+			optional: true
+			rewards: [
+				{
+					id: "73BAB29A6DBE148A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2767571B9C9D1F9E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "178C4149C3C04C9B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Power shared across distance"
+			tasks: [
+				{
+					id: "143DE9456CCAE10B"
+					item: "powah:ender_cell_starter"
+					type: "item"
+				}
+			]
+			title: "Ender Cell"
+			x: 10.65d
+			y: -12.75d
+		}
+		{
+			dependencies: ["13653A6F9814DA91"]
+			description: ["Built on top of the Basic cell, so nothing is wasted as you climb the tiers. It holds and moves more power than the Basic one."]
+			id: "15BBF309644E1C32"
+			optional: true
+			rewards: [
+				{
+					id: "44C12C945B1D90B2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6C216115E0D8D129"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "256A3CF9E70F8580"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More room for power"
+			tasks: [
+				{
+					id: "7F08661162F0A756"
+					item: "powah:energy_cell_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Energy Cell"
+			x: 4.35d
+			y: -22.5d
+		}
+		{
+			dependencies: ["678343CEAB24A261"]
+			description: ["A discharger with a Blazing Capacitor: it empties items faster than the tier below."]
+			id: "008E83F32558205D"
+			optional: true
+			rewards: [
+				{
+					id: "137B1FF51D644367"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "23F5775C3BC20A96"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "13DEED8A2A94114D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster draining"
+			tasks: [
+				{
+					id: "1202A166343450EA"
+					item: "powah:energy_discharger_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Discharger"
+			x: 6.7d
+			y: 1.75d
+		}
+		{
+			dependencies: ["4A88E991555EC26F"]
+			description: ["A discharger with a Hardened Capacitor: it empties items faster than the tier below."]
+			id: "494A70001B340CD2"
+			optional: true
+			rewards: [
+				{
+					id: "744119D7A5472B8A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "429FB13FA9D3202E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "659BCF36D6052E0D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster draining"
+			tasks: [
+				{
+					id: "48079971AF7E6C7E"
+					item: "powah:energy_discharger_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Discharger"
+			x: 6.7d
+			y: 4.75d
+		}
+		{
+			dependencies: ["7A92B4DE5AA331D3"]
+			description: ["A discharger with a Niotic Capacitor: it empties items faster than the tier below."]
+			id: "1D5D6BF4C51B6B93"
+			optional: true
+			rewards: [
+				{
+					id: "2ECD6AC7C7C27BF2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4CA5C13FF64E0EF3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "50CFDBCBDDBDBE96"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster draining"
+			tasks: [
+				{
+					id: "42F2F6C6FDD24C2F"
+					item: "powah:energy_discharger_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Discharger"
+			x: 6.7d
+			y: 13.75d
+		}
+		{
+			dependencies: ["7FAAA9679C05BC8C"]
+			description: ["A discharger with a Nitro Capacitor: it empties items faster than the tier below."]
+			id: "6C1C243959C0395C"
+			optional: true
+			rewards: [
+				{
+					id: "2E5702DE11D09189"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1864384195CB3755"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6E01EF430927EA5C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster draining"
+			tasks: [
+				{
+					id: "48743E6F46CF90DB"
+					item: "powah:energy_discharger_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Discharger"
+			x: 6.7d
+			y: 7.75d
+		}
+		{
+			dependencies: ["76A786FC6497047B"]
+			description: ["A discharger with a Spirited Capacitor: it empties items faster than the tier below."]
+			id: "33C6B1F002517083"
+			optional: true
+			rewards: [
+				{
+					id: "103909D91A7B621F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5D20A46D7329928D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "444D2613E73B745E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster draining"
+			tasks: [
+				{
+					id: "4B25C44295DAEE0F"
+					item: "powah:energy_discharger_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Discharger"
+			x: 6.7d
+			y: 10.75d
+		}
+		{
+			dependencies: ["7250B8CF31571731"]
+			description: ["The Starter hopper upgraded with a Basic Capacitor. It charges items faster."]
+			id: "161F4B4FA6369D80"
+			optional: true
+			rewards: [
+				{
+					id: "60D0B99B1DB4097C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7349706E08EF2600"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "52553F423C086CC8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charges faster"
+			tasks: [
+				{
+					id: "33B1FE1219265BC1"
+					item: "powah:energy_hopper_basic"
+					type: "item"
+				}
+			]
+			title: "Basic Energy Hopper"
+			x: 8.55d
+			y: -10.5d
+		}
+		{
+			dependencies: ["6F2CBE92882CF007"]
+			description: ["The Starter Furnator upgraded with a Basic Capacitor. It produces more power from the same source."]
+			id: "0661F11C04A8ED23"
+			optional: true
+			rewards: [
+				{
+					id: "4A0EC6BE2E3346AE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6B38C78B6F6DA0FC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6695D79A9D2B408D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Furnator, tier 2"
+			tasks: [
+				{
+					id: "476A71B398D558E5"
+					item: "powah:furnator_basic"
+					type: "item"
+				}
+			]
+			title: "Basic Furnator"
+			x: 4.35d
+			y: -28.5d
+		}
+		{
+			dependencies: ["768B4E83A3030E2A"]
+			description: ["The Starter Solar Panel upgraded with a Basic Capacitor. It produces more power from the same source."]
+			id: "7128E0E6B77A1BC3"
+			optional: true
+			rewards: [
+				{
+					id: "0BE39A224FCCFA11"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "06C9F2B168428DB8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4527EEF29AEDA53E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Solar Panel, tier 2"
+			tasks: [
+				{
+					id: "62AB53515FD53755"
+					item: "powah:solar_panel_basic"
+					type: "item"
+				}
+			]
+			title: "Basic Solar Panel"
+			x: 14.25d
+			y: -25.5d
+		}
+		{
+			dependencies: ["08E9D23E345DDA6E"]
+			description: ["The Thermo Generator makes FE from a heat source under it, such as lava, cooled with water. The Starter tier is small; each tier above it is built from the one before."]
+			id: "13791B4DF87AADCB"
+			optional: true
+			rewards: [
+				{
+					id: "5573DEF6F278D8FA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0D53A1304FAB8903"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "19227737852D8D5A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Power from heat"
+			tasks: [
+				{
+					id: "0987DF493D43C675"
+					item: "powah:thermo_generator_starter"
+					type: "item"
+				}
+			]
+			title: "Thermo Generator: Thermo Generator (Starter)"
+			x: 8.55d
+			y: -24.0d
+		}
+		{
+			dependencies: ["08290F5D399B84F9"]
+			description: ["The Hardened Battery upgraded with a Blazing Capacitor and a Blazing Crystal. It holds and passes on more power."]
+			id: "320F9DBA0AEF7B0C"
+			optional: true
+			rewards: [
+				{
+					id: "02C6B9C5812D796F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0E7E1AF9358FDBDE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "70644D6EFEDC4502"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bigger battery"
+			tasks: [
+				{
+					id: "38DB8C43E6FE072C"
+					item: "powah:battery_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Battery"
+			x: 10.65d
+			y: -1.25d
+		}
+		{
+			dependencies: ["15BBF309644E1C32"]
+			description: ["Built on top of the Hardened cell, so nothing is wasted as you climb the tiers. It holds and moves more power than the Hardened one."]
+			id: "678593C39C6275FF"
+			optional: true
+			rewards: [
+				{
+					id: "43B753A7EBD67360"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5BEA1F20576FD65B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "63A28164960429D6"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More room for power"
+			tasks: [
+				{
+					id: "2BEF31D0AABAB714"
+					item: "powah:energy_cell_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Energy Cell"
+			x: 6.7d
+			y: -22.5d
+		}
+		{
+			dependencies: ["161F4B4FA6369D80"]
+			description: ["The Basic hopper upgraded with a Hardened Capacitor. It charges items faster."]
+			id: "5A077E712EAB9348"
+			optional: true
+			rewards: [
+				{
+					id: "0D1A9259A86B7711"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "38137F28DD1CA171"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "03FC7DF6FBC64A85"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charges faster"
+			tasks: [
+				{
+					id: "6DA65A52DB01AA85"
+					item: "powah:energy_hopper_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Energy Hopper"
+			x: 10.65d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0661F11C04A8ED23"]
+			description: ["The Basic Furnator upgraded with Energized Steel and a Hardened Capacitor. It produces more power from the same source."]
+			id: "357F68A52A69C38E"
+			optional: true
+			rewards: [
+				{
+					id: "7B8B0211F2B16A71"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6A18C041A3D20A4C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "03C3F05AA954AA83"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Furnator, tier 3"
+			tasks: [
+				{
+					id: "156AF45BE6E00618"
+					item: "powah:furnator_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Furnator"
+			x: 6.7d
+			y: -28.5d
+		}
+		{
+			dependencies: ["1C25F07C63EDEB1A"]
+			description: ["The Basic Magmator upgraded with Energized Steel and a Hardened Capacitor. It produces more power from the same source."]
+			id: "40478FF756A0A9D5"
+			optional: true
+			rewards: [
+				{
+					id: "7848C2310B91A044"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "226A57AF4C2CE9D6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2281EF1E40E2590D"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Magmator, tier 3"
+			tasks: [
+				{
+					id: "309E3BE110980688"
+					item: "powah:magmator_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Magmator"
+			x: 6.7d
+			y: -27.0d
+		}
+		{
+			dependencies: ["0FCB707CCB8A51EE"]
+			description: ["The Basic transmitter rebuilt around a Hardened Capacitor. It sends more power to you per tick."]
+			id: "354939C983E712B7"
+			optional: true
+			rewards: [
+				{
+					id: "518DA8AC7273E401"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0557A9983088F121"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6BD200D7491DE920"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More power, sent further"
+			tasks: [
+				{
+					id: "668A0A2C2F6CC987"
+					item: "powah:player_transmitter_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Transmitter"
+			x: 8.55d
+			y: -21.0d
+		}
+		{
+			dependencies: ["78DD9204ED9327B6"]
+			description: ["The Basic Reactor upgraded with Energized Steel and a Hardened Capacitor. It produces more power from the same source."]
+			id: "7590AE114A67BBE0"
+			optional: true
+			rewards: [
+				{
+					id: "04DDFDDED491AFCB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "11CF6FB1D75127C7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "58DA8FCA1C9C0813"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Reactor, tier 3"
+			tasks: [
+				{
+					id: "230C1334CAD5E5F9"
+					item: "powah:reactor_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Reactor"
+			x: 8.55d
+			y: 18.5d
+		}
+		{
+			dependencies: ["7128E0E6B77A1BC3"]
+			description: ["The Basic Solar Panel upgraded with Energized Steel and a Hardened Capacitor. It produces more power from the same source."]
+			id: "218C49F44ED7D283"
+			optional: true
+			rewards: [
+				{
+					id: "6D4B2770353566E0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "53B4C56E66160603"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "02E0FAAF6A5AE377"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Solar Panel, tier 3"
+			tasks: [
+				{
+					id: "27A0E6A2AC4FD550"
+					item: "powah:solar_panel_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Solar Panel"
+			x: 16.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["320F9DBA0AEF7B0C"]
+			description: ["The Blazing Battery upgraded with a Niotic Capacitor and a Niotic Crystal. It holds and passes on more power."]
+			id: "3A6B6CBDF3769975"
+			optional: true
+			rewards: [
+				{
+					id: "74FBEA5BD9F21DE8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6E5B1142188977AF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "087B9743BB05516B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bigger battery"
+			tasks: [
+				{
+					id: "604DDA57729D6022"
+					item: "powah:battery_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Battery"
+			x: 12.5d
+			y: -1.25d
+		}
+		{
+			dependencies: ["678593C39C6275FF"]
+			description: ["Built on top of the Blazing cell, so nothing is wasted as you climb the tiers. It holds and moves more power than the Blazing one."]
+			id: "77C93A2CC6C36085"
+			optional: true
+			rewards: [
+				{
+					id: "78B05732E64794D2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "219A5508E91697D7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0659138239EB6F24"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More room for power"
+			tasks: [
+				{
+					id: "1E4F5D5D69E2F90B"
+					item: "powah:energy_cell_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Energy Cell"
+			x: 8.55d
+			y: -22.5d
+		}
+		{
+			dependencies: ["5A077E712EAB9348"]
+			description: ["The Hardened hopper upgraded with a Blazing Capacitor. It charges items faster."]
+			id: "639324186FD21F0E"
+			optional: true
+			rewards: [
+				{
+					id: "704526007DE1F894"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4C05C7D1B0BAF275"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "21ACF1FAC58F6949"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charges faster"
+			tasks: [
+				{
+					id: "2275C8C2C9466C3C"
+					item: "powah:energy_hopper_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Energy Hopper"
+			x: 12.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["357F68A52A69C38E"]
+			description: ["The Hardened Furnator upgraded with a Blazing Crystal and a Blazing Capacitor. It produces more power from the same source."]
+			id: "036DFC4DF25416E3"
+			optional: true
+			rewards: [
+				{
+					id: "40A0A0043503925C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0FC0E0B55526ECFD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "08F199E799A0E401"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Furnator, tier 4"
+			tasks: [
+				{
+					id: "1BA360D5C1588391"
+					item: "powah:furnator_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Furnator"
+			x: 8.55d
+			y: -28.5d
+		}
+		{
+			dependencies: ["40478FF756A0A9D5"]
+			description: ["The Hardened Magmator upgraded with a Blazing Crystal and a Blazing Capacitor. It produces more power from the same source."]
+			id: "35C13CD72F0EAB4D"
+			optional: true
+			rewards: [
+				{
+					id: "33964F2C379280B5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "46DECA46F5FA3096"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4A8DD2423880D1FD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Magmator, tier 4"
+			tasks: [
+				{
+					id: "420F2CCD1FAAB7F2"
+					item: "powah:magmator_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Magmator"
+			x: 8.55d
+			y: -27.0d
+		}
+		{
+			dependencies: ["354939C983E712B7"]
+			description: ["The Hardened transmitter rebuilt around a Blazing Capacitor. It sends more power to you per tick."]
+			id: "184743F463D27553"
+			optional: true
+			rewards: [
+				{
+					id: "1BE9ADBC1F5031FB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1ADE258839B73554"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0BB2EAAEF48E3CFE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More power, sent further"
+			tasks: [
+				{
+					id: "2F9D1815278E41E1"
+					item: "powah:player_transmitter_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Transmitter"
+			x: 10.65d
+			y: -21.0d
+		}
+		{
+			dependencies: ["7590AE114A67BBE0"]
+			description: ["The Hardened Reactor upgraded with a Blazing Crystal and a Blazing Capacitor. It produces more power from the same source."]
+			id: "6BF91D7CF02F6C85"
+			optional: true
+			rewards: [
+				{
+					id: "688664A146140C0D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0EDBD1A6C7841690"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "607E567157F76D64"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Reactor, tier 4"
+			tasks: [
+				{
+					id: "031449AA7E745C45"
+					item: "powah:reactor_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Reactor"
+			x: 10.65d
+			y: 18.5d
+		}
+		{
+			dependencies: ["218C49F44ED7D283"]
+			description: ["The Hardened Solar Panel upgraded with a Blazing Crystal and a Blazing Capacitor. It produces more power from the same source."]
+			id: "151D9D3E2576F7C3"
+			optional: true
+			rewards: [
+				{
+					id: "659AEB85F613DBC3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7C43F9090D03DEAA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "68B601DC178519CB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Solar Panel, tier 4"
+			tasks: [
+				{
+					id: "44892BB66E8B84B9"
+					item: "powah:solar_panel_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Solar Panel"
+			x: 17.75d
+			y: -25.5d
+		}
+		{
+			dependencies: ["4A88E991555EC26F"]
+			description: ["The Basic Thermo Generator upgraded with Energized Steel and a Hardened Capacitor. It produces more power from the same source."]
+			id: "76BE727E9AB9E387"
+			optional: true
+			rewards: [
+				{
+					id: "1BECAC81FC8E3B15"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "790132D50F217CE5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "37F6EC58E89C0C48"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Thermo Generator, tier 3"
+			tasks: [
+				{
+					id: "05E4FC3E3776DE11"
+					item: "powah:thermo_generator_hardened"
+					type: "item"
+				}
+			]
+			title: "Hardened Thermo Generator"
+			x: 6.7d
+			y: 6.25d
+		}
+		{
+			dependencies: ["3A6B6CBDF3769975"]
+			description: ["The Niotic Battery upgraded with a Spirited Capacitor and a Spirited Crystal. It holds and passes on more power."]
+			id: "722BC7FE9EBBF218"
+			optional: true
+			rewards: [
+				{
+					id: "591B92C658964352"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "099AEE7F97ADEFCC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3FDA443EBD907AEE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bigger battery"
+			tasks: [
+				{
+					id: "22355F736B6968E6"
+					item: "powah:battery_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Battery"
+			x: 14.25d
+			y: -1.25d
+		}
+		{
+			dependencies: ["7A92B4DE5AA331D3"]
+			description: ["Rods feed power to the &eEnergizing Orb&f. A Niotic rod carries much more than the Blazing one, so every orb recipe finishes faster."]
+			id: "36D27B5D326D003A"
+			optional: true
+			rewards: [
+				{
+					id: "28C195BB7E1D6687"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "486F81B6460DF86B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "441DE246745D1C82"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster energizing"
+			tasks: [
+				{
+					id: "30F1D19523A29BE0"
+					item: "powah:energizing_rod_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Energizing Rod"
+			x: 6.7d
+			y: 15.25d
+		}
+		{
+			dependencies: ["77C93A2CC6C36085"]
+			description: ["Built on top of the Niotic cell, so nothing is wasted as you climb the tiers. It holds and moves more power than the Niotic one."]
+			id: "7599251417537E21"
+			optional: true
+			rewards: [
+				{
+					id: "77B2403928FDEB66"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4CCA5ED4155708DF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "354D14831E271FF0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More room for power"
+			tasks: [
+				{
+					id: "33B6F908A2895F1D"
+					item: "powah:energy_cell_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Energy Cell"
+			x: 10.65d
+			y: -22.5d
+		}
+		{
+			dependencies: ["639324186FD21F0E"]
+			description: ["The Blazing hopper upgraded with a Niotic Capacitor. It charges items faster."]
+			id: "2FEC1473EA10F32F"
+			optional: true
+			rewards: [
+				{
+					id: "2A31B932C075BEAC"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "170BFDEB3F2FF5B2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "00A236CE492DAAB2"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charges faster"
+			tasks: [
+				{
+					id: "3CB40D5FBA0A4816"
+					item: "powah:energy_hopper_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Energy Hopper"
+			x: 14.25d
+			y: -10.5d
+		}
+		{
+			dependencies: ["036DFC4DF25416E3"]
+			description: ["The Blazing Furnator upgraded with a Niotic Crystal and a Niotic Capacitor. It produces more power from the same source."]
+			id: "2379A6BF21027FE7"
+			optional: true
+			rewards: [
+				{
+					id: "0253C3993321B4F8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "295B3ED100867136"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "111186AF75F94345"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Furnator, tier 5"
+			tasks: [
+				{
+					id: "32086F777EA9B71D"
+					item: "powah:furnator_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Furnator"
+			x: 10.65d
+			y: -28.5d
+		}
+		{
+			dependencies: ["35C13CD72F0EAB4D"]
+			description: ["The Blazing Magmator upgraded with a Niotic Crystal and a Niotic Capacitor. It produces more power from the same source."]
+			id: "4A6FA1FB74196B3B"
+			optional: true
+			rewards: [
+				{
+					id: "24062051071C4721"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0EAE51553A8956CC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "236A69AA8B754E57"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Magmator, tier 5"
+			tasks: [
+				{
+					id: "788B1400F7770556"
+					item: "powah:magmator_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Magmator"
+			x: 10.65d
+			y: -27.0d
+		}
+		{
+			dependencies: ["184743F463D27553"]
+			description: ["The Blazing transmitter rebuilt around a Niotic Capacitor. It sends more power to you per tick."]
+			id: "6B516FCE3D60D181"
+			optional: true
+			rewards: [
+				{
+					id: "64CADB3AEF487DBA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "23B3DB6946723940"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0FE917BBDE515594"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More power, sent further"
+			tasks: [
+				{
+					id: "68328D59E0FF022B"
+					item: "powah:player_transmitter_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Transmitter"
+			x: 12.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["6BF91D7CF02F6C85"]
+			description: ["The Blazing Reactor upgraded with a Niotic Crystal and a Niotic Capacitor. It produces more power from the same source."]
+			id: "00CC4604FF942EC7"
+			optional: true
+			rewards: [
+				{
+					id: "3B56A40E88D05635"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "21D7AACD2786E08F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1320D44E7C67520B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Reactor, tier 5"
+			tasks: [
+				{
+					id: "63129FD0740A9855"
+					item: "powah:reactor_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Reactor"
+			x: 12.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["151D9D3E2576F7C3"]
+			description: ["The Blazing Solar Panel upgraded with a Niotic Crystal and a Niotic Capacitor. It produces more power from the same source."]
+			id: "389E48862C36AAAD"
+			optional: true
+			rewards: [
+				{
+					id: "4CEF59EA16080358"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5A8797CB4DC55A7C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "205B70BF38AE333B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Solar Panel, tier 5"
+			tasks: [
+				{
+					id: "3BE8148DD4DE5892"
+					item: "powah:solar_panel_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Solar Panel"
+			x: 19.5d
+			y: -25.5d
+		}
+		{
+			dependencies: ["678343CEAB24A261"]
+			description: ["The Hardened Thermo Generator upgraded with a Blazing Crystal and a Blazing Capacitor. It produces more power from the same source."]
+			id: "54DE7BE2658764DF"
+			optional: true
+			rewards: [
+				{
+					id: "148C5A1BDFD332DF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0376EBD7D6991957"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "79E468A77DEA5312"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Thermo Generator, tier 4"
+			tasks: [
+				{
+					id: "0E09090C445528C6"
+					item: "powah:thermo_generator_blazing"
+					type: "item"
+				}
+			]
+			title: "Blazing Thermo Generator"
+			x: 6.7d
+			y: 3.25d
+		}
+		{
+			dependencies: ["722BC7FE9EBBF218"]
+			description: ["The Spirited Battery upgraded with a Nitro Capacitor and a Nitro Crystal. It holds and passes on more power, and it is the largest Powah makes."]
+			id: "6FB1EAAE618823EE"
+			optional: true
+			rewards: [
+				{
+					id: "257B6BD85D9F620B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "709C4772C6B8EEB3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4B14906755650BF9"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last battery"
+			tasks: [
+				{
+					id: "2EFA86F45A5521C7"
+					item: "powah:battery_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Battery"
+			x: 16.0d
+			y: -1.25d
+		}
+		{
+			dependencies: ["36D27B5D326D003A"]
+			description: ["Rods feed power to the &eEnergizing Orb&f. A Spirited rod carries much more than the Niotic one, so every orb recipe finishes faster."]
+			id: "3BA547D85CFEE90C"
+			optional: true
+			rewards: [
+				{
+					id: "6E62D557D9F3D6A3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "40FD82ED117CC94F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "02E5F53F2DC284C5"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster energizing"
+			tasks: [
+				{
+					id: "76411159DE4C9FD9"
+					item: "powah:energizing_rod_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Energizing Rod"
+			x: 8.55d
+			y: 15.25d
+		}
+		{
+			dependencies: ["7599251417537E21"]
+			description: ["Built on top of the Spirited cell, so nothing is wasted as you climb the tiers. The Nitro cell is Powah's largest store of power."]
+			id: "61EB68E0B06E2805"
+			optional: true
+			rewards: [
+				{
+					id: "59F3C117E40DCF64"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4B3522A4A4107D59"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "241C54ED42D469CD"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The biggest cell"
+			tasks: [
+				{
+					id: "2FAC4B76AE19B3C5"
+					item: "powah:energy_cell_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Energy Cell"
+			x: 12.5d
+			y: -22.5d
+		}
+		{
+			dependencies: ["2FEC1473EA10F32F"]
+			description: ["The Niotic hopper upgraded with a Spirited Capacitor. It charges items faster."]
+			id: "6C7A6C5D6875E057"
+			optional: true
+			rewards: [
+				{
+					id: "562990AEAA98F9F0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5D9D612495BF8B01"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "70BA92F0DA4BA6BB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charges faster"
+			tasks: [
+				{
+					id: "1DA2332B8CA660A5"
+					item: "powah:energy_hopper_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Energy Hopper"
+			x: 16.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2379A6BF21027FE7"]
+			description: ["The Niotic Furnator upgraded with a Spirited Crystal and a Spirited Capacitor. It produces more power from the same source."]
+			id: "1BBEF4361016ABEF"
+			optional: true
+			rewards: [
+				{
+					id: "5C3F54911FA2F941"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2D66820945834B51"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "41C9FBCD3894B07C"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Furnator, tier 6"
+			tasks: [
+				{
+					id: "1D894D7B0A9E9FC0"
+					item: "powah:furnator_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Furnator"
+			x: 12.5d
+			y: -28.5d
+		}
+		{
+			dependencies: ["4A6FA1FB74196B3B"]
+			description: ["The Niotic Magmator upgraded with a Spirited Crystal and a Spirited Capacitor. It produces more power from the same source."]
+			id: "797593D22F2844FD"
+			optional: true
+			rewards: [
+				{
+					id: "24D0798CEF8598CE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "05F8AAF197DD849E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "740BC50BF7297EA1"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Magmator, tier 6"
+			tasks: [
+				{
+					id: "6FC74CD96CD0CEE1"
+					item: "powah:magmator_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Magmator"
+			x: 12.5d
+			y: -27.0d
+		}
+		{
+			dependencies: ["6B516FCE3D60D181"]
+			description: ["The Niotic transmitter rebuilt around a Spirited Capacitor. It sends more power to you per tick."]
+			id: "4E87051986499121"
+			optional: true
+			rewards: [
+				{
+					id: "7A21E569A9ABD2C8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "71DC6A78E3FB0C4C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6AE3E591146313DC"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "More power, sent further"
+			tasks: [
+				{
+					id: "0E3D7942AADC68E3"
+					item: "powah:player_transmitter_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Transmitter"
+			x: 14.25d
+			y: -21.0d
+		}
+		{
+			dependencies: ["00CC4604FF942EC7"]
+			description: ["The Niotic Reactor upgraded with a Spirited Crystal and a Spirited Capacitor. It produces more power from the same source."]
+			id: "1F41EDDEBAE07CB8"
+			optional: true
+			rewards: [
+				{
+					id: "393394C562CB65FA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1F5FDEE7965CB7E5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6DF31B46B3DA4CCF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Reactor, tier 6"
+			tasks: [
+				{
+					id: "6B10F35932DB6FC5"
+					item: "powah:reactor_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Reactor"
+			x: 14.25d
+			y: 18.5d
+		}
+		{
+			dependencies: ["389E48862C36AAAD"]
+			description: ["The Niotic Solar Panel upgraded with a Spirited Crystal and a Spirited Capacitor. It produces more power from the same source."]
+			id: "45464D572BD9C2F9"
+			optional: true
+			rewards: [
+				{
+					id: "5802D71164210CE5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2EA96533928BA5FC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1338E8616286E7D8"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Solar Panel, tier 6"
+			tasks: [
+				{
+					id: "79C676D125E36210"
+					item: "powah:solar_panel_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Solar Panel"
+			x: 21.25d
+			y: -25.5d
+		}
+		{
+			dependencies: ["7A92B4DE5AA331D3"]
+			description: ["The Blazing Thermo Generator upgraded with a Niotic Crystal and a Niotic Capacitor. It produces more power from the same source."]
+			id: "5962E6AD770FC91A"
+			optional: true
+			rewards: [
+				{
+					id: "337C97D9A5E30BA0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1BF81E9B9B2F47AB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "02300E655E2A84A3"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Thermo Generator, tier 5"
+			tasks: [
+				{
+					id: "0949078AE82BCA7A"
+					item: "powah:thermo_generator_niotic"
+					type: "item"
+				}
+			]
+			title: "Niotic Thermo Generator"
+			x: 6.7d
+			y: 16.75d
+		}
+		{
+			dependencies: ["3BA547D85CFEE90C"]
+			description: ["Rods feed power to the &eEnergizing Orb&f. A Nitro rod carries much more than the Spirited one, so every orb recipe finishes faster."]
+			id: "0B2813BC74ACC3FF"
+			optional: true
+			rewards: [
+				{
+					id: "78F9EC1004595730"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "112D5A275FE46EF6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "79DFD8330F9DC2F0"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster energizing"
+			tasks: [
+				{
+					id: "1DAB73651E54AAA6"
+					item: "powah:energizing_rod_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Energizing Rod"
+			x: 10.65d
+			y: 15.25d
+		}
+		{
+			dependencies: ["6C7A6C5D6875E057"]
+			description: ["The Spirited hopper upgraded with a Nitro Capacitor. It charges items faster."]
+			id: "52AE394EBD1713EA"
+			optional: true
+			rewards: [
+				{
+					id: "5922FDE9AB28EC20"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5FF4C6F18F0B4031"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "399086A11BE13926"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charges faster"
+			tasks: [
+				{
+					id: "671690F71B109AB9"
+					item: "powah:energy_hopper_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Energy Hopper"
+			x: 17.75d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1BBEF4361016ABEF"]
+			description: ["The Spirited Furnator upgraded with a Nitro Crystal and a Nitro Capacitor. It produces more power from the same source, and it is as strong as this generator gets."]
+			id: "6A57802796C42B81"
+			optional: true
+			rewards: [
+				{
+					id: "7813060CADE133F0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "69D82CF24DCEA5ED"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "195DB59B5DF2D513"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last Furnator"
+			tasks: [
+				{
+					id: "4CCADA7DD118E1B7"
+					item: "powah:furnator_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Furnator"
+			x: 14.25d
+			y: -28.5d
+		}
+		{
+			dependencies: ["797593D22F2844FD"]
+			description: ["The Spirited Magmator upgraded with a Nitro Crystal and a Nitro Capacitor. It produces more power from the same source, and it is as strong as this generator gets."]
+			id: "2F595E3B8F536397"
+			optional: true
+			rewards: [
+				{
+					id: "0B32EE768FB7A868"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6CEDF183B3A176B9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "085E1A9333CD895B"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last Magmator"
+			tasks: [
+				{
+					id: "2AE55AE4CD8841A9"
+					item: "powah:magmator_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Magmator"
+			x: 14.25d
+			y: -27.0d
+		}
+		{
+			dependencies: ["4E87051986499121"]
+			description: ["The Spirited transmitter rebuilt around a Nitro Capacitor. It sends more power to you per tick."]
+			id: "7A9B1E2C6DBE032B"
+			optional: true
+			rewards: [
+				{
+					id: "6CC03B2D97C7F3F0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6BA8C1B1C1D735F5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6DC4C4F2FE50E814"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The strongest transmitter"
+			tasks: [
+				{
+					id: "5E7CCFAB443D9E32"
+					item: "powah:player_transmitter_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Transmitter"
+			x: 16.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["1F41EDDEBAE07CB8"]
+			description: ["The Spirited Reactor upgraded with a Nitro Crystal and a Nitro Capacitor. It produces more power from the same source, and it is as strong as this generator gets."]
+			id: "433AF988F834F2E6"
+			optional: true
+			rewards: [
+				{
+					id: "237912BAEC4C0B2B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7D94B66EAD11FA84"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "4C3E73122FC1D251"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last Reactor"
+			tasks: [
+				{
+					id: "3FB1DE17C26C8819"
+					item: "powah:reactor_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Reactor"
+			x: 16.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["45464D572BD9C2F9"]
+			description: ["The Spirited Solar Panel upgraded with a Nitro Crystal and a Nitro Capacitor. It produces more power from the same source, and it is as strong as this generator gets."]
+			id: "109164AF07E0F3BB"
+			optional: true
+			rewards: [
+				{
+					id: "130EA0119536E9DA"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "5C579FAEF138E872"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0BABF272B547407A"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last Solar Panel"
+			tasks: [
+				{
+					id: "0380C1E6A4ABF6A4"
+					item: "powah:solar_panel_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Solar Panel"
+			x: 23.1d
+			y: -25.5d
+		}
+		{
+			dependencies: ["76A786FC6497047B"]
+			description: ["The Niotic Thermo Generator upgraded with a Spirited Crystal and a Spirited Capacitor. It produces more power from the same source."]
+			id: "1C336557EE597B9E"
+			optional: true
+			rewards: [
+				{
+					id: "0145C8D7DA30E38D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1F43C999317F2434"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "194F9F715D1CF05E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Thermo Generator, tier 6"
+			tasks: [
+				{
+					id: "2BFA813B3882CD69"
+					item: "powah:thermo_generator_spirited"
+					type: "item"
+				}
+			]
+			title: "Spirited Thermo Generator"
+			x: 6.7d
+			y: 12.25d
+		}
+		{
+			dependencies: ["7FAAA9679C05BC8C"]
+			description: ["The Spirited Thermo Generator upgraded with a Nitro Crystal and a Nitro Capacitor. It produces more power from the same source, and it is as strong as this generator gets."]
+			id: "0041CC338D511542"
+			optional: true
+			rewards: [
+				{
+					id: "45693D4F85C1DA45"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7F0B70ED1A843466"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "6F5C1B5C8DA9D8B9"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last Thermo Generator"
+			tasks: [
+				{
+					id: "2239464133FDDC82"
+					item: "powah:thermo_generator_nitro"
+					type: "item"
+				}
+			]
+			title: "Nitro Thermo Generator"
+			x: 6.7d
+			y: 9.25d
+		}
+	]
+	subtitle: ["Power and nothing else: seven tiers of it"]
+	title: "&dPowah"
+}

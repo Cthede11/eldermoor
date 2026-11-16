@@ -1,0 +1,1816 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "blood_magic"
+	group: "3368DAD22055D0D9"
+	icon: "bloodmagic:altar"
+	id: "131C1F87465C4CBE"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7E4FFF18A18C06E5"]
+			description: [
+				"Blood Magic trades &clife&f for power. Craft a &6Sacrificial Knife&f and a &6Blood Altar&f, stand next to the altar and right-click the knife. One heart = 200 LP in the altar."
+				""
+				"It hurts. Keep food, or a regeneration source, nearby. &7(The knife will not kill you... usually.)"
+			]
+			hide_until_deps_complete: true
+			id: "12DE933BA69E4A2D"
+			rewards: [
+				{
+					id: "7A6354BA9412A5CF"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "06854773686E0F41"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3BB894687EF5F941"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5F8711A265B752CD"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "The Blood Mage's path begins"
+			tasks: [
+				{
+					id: "126FE9C6E1265054"
+					item: "bloodmagic:sacrificialdagger"
+					type: "item"
+				}
+				{
+					id: "44A259F3B8289053"
+					item: "bloodmagic:altar"
+					type: "item"
+				}
+			]
+			title: "&6A Small Sacrifice"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12DE933BA69E4A2D"]
+			description: ["Drop smooth stone into an altar holding 1,000 LP. Slates are the mod's basic crafting material; each tier needs a bigger altar."]
+			id: "10FEB54FE92617A9"
+			rewards: [
+				{
+					id: "12ED547AAD7EEC9E"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 16
+					id: "5824606F821D6E08"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "300817B1C64CFDD8"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "4788102E8DB023C8"
+					item: "bloodmagic:blankslate"
+					type: "item"
+				}
+			]
+			title: "Blank Slates"
+			x: 2.35d
+			y: -1.37d
+		}
+		{
+			dependencies: ["12DE933BA69E4A2D"]
+			description: [
+				"Place a diamond in an altar holding 2,000 LP. Right-click the orb to &ebind it to you&f - it becomes your personal &cSoul Network&f."
+				""
+				"Leave the orb in the altar and LP flows into your network. Sigils and rituals spend from that network - and from your health if it runs dry."
+			]
+			id: "5C1903423CF35F8B"
+			rewards: [
+				{
+					id: "1CE601E539204D11"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "7A73603DB15D4365"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "527A744822D7D235"
+					table_id: 9078944763667157318L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "058DF9FF67F1E330"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Your Soul Network"
+			tasks: [
+				{
+					id: "71ABD3EF034654BB"
+					item: "bloodmagic:weakbloodorb"
+					type: "item"
+				}
+			]
+			title: "Weak Blood Orb"
+			x: 2.35d
+			y: 0.12d
+		}
+		{
+			dependencies: ["12DE933BA69E4A2D"]
+			description: [
+				"Throw &6Rudimentary Snares&f at monsters, then kill them while they sparkle. They drop &eDemonic Will&f - Blood Magic's second resource."
+				"&7Made at: &fBlood Altar &7from &fany string"
+			]
+			id: "2E60DE8A7F6FAEC2"
+			rewards: [
+				{
+					id: "0EF441A4A045E23C"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 8
+					id: "63276F8AF4E657BE"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "74E3DA8A0B311C03"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "538A466AF17BFF8C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4596BD3AC37B010F"
+					item: "bloodmagic:soulsnare"
+					type: "item"
+				}
+			]
+			title: "Demon Will"
+			x: 2.35d
+			y: 1.62d
+		}
+		{
+			dependencies: ["2E60DE8A7F6FAEC2"]
+			description: [
+				"Crafts with Demon Will. Your first project: a &6Petty Tartaric Gem&f to store Will from every kill you make with a sentient weapon."
+				"&7&fPetty Tartaric Gem&7 - Made at: &fHellfire Forge &7from &fRedstone Dust, Gold Ingot, any glass, Lapis"
+			]
+			id: "3F06379C6F739169"
+			rewards: [
+				{
+					id: "13A18224204C8E65"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 10
+					id: "5CC02D133545A620"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "24EC7C8F6889B0E4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Crafting with Will"
+			tasks: [
+				{
+					id: "6FF570300ECDF1C3"
+					item: "bloodmagic:soulforge"
+					type: "item"
+				}
+				{
+					id: "31EB372DB53F2AFF"
+					item: "bloodmagic:soulgempetty"
+					type: "item"
+				}
+			]
+			title: "Hellfire Forge"
+			x: 4.1d
+			y: 1.62d
+		}
+		{
+			dependencies: ["3F06379C6F739169"]
+			description: [
+				"Gets stronger the more Will you carry, and makes every kill drop Will. The Sentient Bow, Axe, Pickaxe, Shovel and Scythe work the same way."
+				"&7Made at: &fHellfire Forge &7from &fPetty Tartaric Gem, Iron Sword"
+			]
+			id: "13EB75675737A3C2"
+			rewards: [
+				{
+					id: "3A2690958B3D35A1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/mastery xp @s combat 80"
+					elevate_perms: true
+					icon: "minecraft:iron_sword"
+					id: "1D6A7CF51D0E3ADB"
+					silent: true
+					title: "+80 Combat experience"
+					type: "command"
+				}
+				{
+					count: 10
+					id: "7BDB3BEBD41EB390"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "239F18D5B272E722"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Harvest Will"
+			tasks: [
+				{
+					id: "4094D1DED36E2768"
+					item: "bloodmagic:soulsword"
+					type: "item"
+				}
+			]
+			title: "Sentient Sword"
+			x: 5.85d
+			y: 1.62d
+		}
+		{
+			dependencies: ["10FEB54FE92617A9"]
+			description: [
+				"Draw a circle with &6Arcane Ashes&f, right-click it with the reagent, then the catalyst. That is how sigils are made."
+				""
+				"The &6Divination Sigil&f shows your network's LP and an altar's tier, capacity and contents. Never leave home without it."
+				"&7&fArcane Ashes&7 - Made at: &fAlchemy Table &7from &fRedstone Dust, White Dye, any gunpowder, any coals"
+				"&7&fDivination Sigil&7 - Made at: &fAlchemy Array &7from &fBlank Slate, Redstone Dust"
+			]
+			id: "4674F153812ED7D6"
+			rewards: [
+				{
+					id: "5DCBD68FC5C537A8"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 10
+					id: "1A836DDF1D0F9FD8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7D4F1599642572DA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Draw your first circle"
+			tasks: [
+				{
+					id: "6D925FC352CDEB83"
+					item: "bloodmagic:arcaneashes"
+					type: "item"
+				}
+				{
+					id: "1A6BE693831C90D6"
+					item: "bloodmagic:divinationsigil"
+					type: "item"
+				}
+			]
+			title: "Alchemy Arrays"
+			x: 4.1d
+			y: -1.37d
+		}
+		{
+			dependencies: ["4674F153812ED7D6"]
+			description: [
+				"Place &e8 Blank Runes&f in a ring one block below the altar. The Divination Sigil confirms the tier."
+				""
+				"Then make an &6Apprentice Blood Orb&f (block of redstone, 5,000 LP)."
+			]
+			id: "16242048190E101C"
+			rewards: [
+				{
+					id: "3A2FC0873103CC88"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "24C6242CE3D89E76"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "31AACAA72BBD5789"
+					table_id: 9078944763667157318L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1314E0848FA045EF"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "8 runes"
+			tasks: [
+				{
+					count: 8L
+					id: "3640D8F30C430EBC"
+					item: "bloodmagic:blankrune"
+					type: "item"
+				}
+				{
+					id: "62BBB5F060E417A2"
+					item: "bloodmagic:apprenticebloodorb"
+					type: "item"
+				}
+			]
+			title: "&6Tier 2 Altar"
+			x: 5.85d
+			y: -1.37d
+		}
+		{
+			dependencies: ["16242048190E101C"]
+			description: [
+				"Infinite water and lava for a little LP. Lava + a Heat Generator or furnace = cheap fuel."
+				"&7&fWater Sigil&7 - Made at: &fAlchemy Array &7from &fBlank Slate, Water Reagent"
+				"&7&fLava Sigil&7 - Made at: &fAlchemy Array &7from &fBlank Slate, Lava Reagent"
+			]
+			id: "24D598C8396644AD"
+			optional: true
+			rewards: [
+				{
+					id: "1BEF6412B09E58C1"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "001BC6340F3B1D9F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "38D84BF5CFA7D4B2"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "61753B3A04232866"
+					item: "bloodmagic:watersigil"
+					type: "item"
+				}
+				{
+					id: "6482AD6FBBF08D65"
+					item: "bloodmagic:lavasigil"
+					type: "item"
+				}
+			]
+			title: "Water \\& Lava Sigils"
+			x: 7.7d
+			y: -1.13d
+		}
+		{
+			dependencies: ["16242048190E101C"]
+			description: [
+				"Launches you in the direction you are looking. Pairs wonderfully with a paraglider."
+				"&7Made at: &fAlchemy Array &7from &fReinforced Slate, Air Reagent"
+			]
+			id: "40FFF3A0A3641391"
+			optional: true
+			rewards: [
+				{
+					id: "2D6B418BD4E65020"
+					type: "xp"
+					xp: 80
+				}
+				{
+					command: "/mastery xp @s exploration 80"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "08FEF2EFE510E600"
+					silent: true
+					title: "+80 Exploration experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5D86247254992985"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1F3F363E7483F32A"
+					item: "bloodmagic:airsigil"
+					type: "item"
+				}
+			]
+			title: "Air Sigil"
+			x: 7.7d
+			y: 0.37d
+		}
+		{
+			dependencies: ["16242048190E101C"]
+			description: [
+				"Toggle sigils: Haste while active, and crops that grow around you as you walk."
+				"&7&fSigil of the Fast Miner&7 - Made at: &fAlchemy Array &7from &fReinforced Slate, Mining Reagent"
+				"&7&fSigil of the Green Grove&7 - Made at: &fAlchemy Array &7from &fReinforced Slate, Growth Reagent"
+			]
+			id: "4A4F689DC8895926"
+			optional: true
+			rewards: [
+				{
+					id: "05F68B004B497769"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/mastery xp @s mining 80"
+					elevate_perms: true
+					icon: "minecraft:iron_pickaxe"
+					id: "1B736B856DA8B99C"
+					silent: true
+					title: "+80 Mining experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s farming 80"
+					elevate_perms: true
+					icon: "minecraft:wheat"
+					id: "1298313B3CE4F9B8"
+					silent: true
+					title: "+80 Farming experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "12CD5D2A31BACED7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "27B31288F8322BF0"
+					item: "bloodmagic:miningsigil"
+					type: "item"
+				}
+				{
+					id: "4973AC8ADE48AEFB"
+					item: "bloodmagic:growthsigil"
+					type: "item"
+				}
+			]
+			title: "Fast Miner \\& Green Grove"
+			x: 7.7d
+			y: 5.62d
+		}
+		{
+			dependencies: ["16242048190E101C"]
+			description: ["Swap blank runes for specialised ones: Speed (faster crafting), Self-Sacrifice (more LP from you), Sacrifice (more LP from mobs), Capacity, Displacement..."]
+			id: "2B05344E762F8A68"
+			optional: true
+			rewards: [
+				{
+					id: "4BAD0C837227F8D0"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "4FE28D6ECB84C463"
+					item: "bloodmagic:blankslate"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6A901EE206EB3F6D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "6B3C42757223CA96"
+					item: "bloodmagic:speedrune"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "32EAEA2182E91E89"
+					item: "bloodmagic:selfsacrificerune"
+					type: "item"
+				}
+			]
+			title: "Speed \\& Sacrifice Runes"
+			x: 7.7d
+			y: 3.37d
+		}
+		{
+			dependencies: ["2B05344E762F8A68"]
+			description: ["Why bleed yourself when a mob farm can do it? Kills a mob near the altar instantly for LP. Later, the &eWell of Suffering&f ritual automates it."]
+			id: "6F30499035340DA8"
+			optional: true
+			rewards: [
+				{
+					id: "4B26A1421EE9E663"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 10
+					id: "1D9F734CDF7156C7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3FDA6E9293D7A452"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0DABC48C2D39D127"
+					item: "bloodmagic:daggerofsacrifice"
+					type: "item"
+				}
+			]
+			title: "Dagger of Sacrifice"
+			x: 10.7d
+			y: 1.87d
+		}
+		{
+			dependencies: ["2B05344E762F8A68"]
+			description: ["Stand by it to become &etranquil&f, then sacrifice for bonus LP. Surround it with paths, crops, water and lava to raise tranquility."]
+			id: "04595FBE1370E37D"
+			optional: true
+			rewards: [
+				{
+					id: "230FE45CFD3156C4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 10
+					id: "48942FFDC92C61D9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4CB855F5A97D0D1C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "76BC165F7F0BB5DD"
+					item: "bloodmagic:incensealtar"
+					type: "item"
+				}
+			]
+			title: "Incense Altar"
+			x: 10.7d
+			y: 3.37d
+		}
+		{
+			dependencies: ["16242048190E101C"]
+			description: [
+				"A second, wider ring of 20 runes one level lower, plus four 2-block pillars capped with &eglowstone&f. Check the guide book for the exact layout."
+				""
+				"Then: &6Magician Blood Orb&f (block of gold, 25,000 LP)."
+				"&7&fReinforced Slate&7 - Made at: &fBlood Altar &7from &fBlank Slate"
+				"&7&fMagician's Blood Orb&7 - Made at: &fBlood Altar &7from &fGold Block"
+			]
+			id: "71332A08E0DAEBDA"
+			rewards: [
+				{
+					id: "340B3BB22E1E362F"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "428A7A7F95D2F109"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40E68EB69FCB76EC"
+					table_id: 9078944763667157318L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4789E117C45B5616"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "28 runes + 4 pillars"
+			tasks: [
+				{
+					count: 4L
+					id: "51F58CC2F5EA4CEE"
+					item: "bloodmagic:reinforcedslate"
+					type: "item"
+				}
+				{
+					id: "612D785EC9CF0109"
+					item: "bloodmagic:magicianbloodorb"
+					type: "item"
+				}
+			]
+			title: "&6Tier 3 Altar"
+			x: 7.7d
+			y: -2.86d
+		}
+		{
+			dependencies: ["71332A08E0DAEBDA"]
+			description: ["Crafts reagents, cutting fluids and long-lasting potion flasks using LP from your orb."]
+			id: "06ABD696DF835A99"
+			rewards: [
+				{
+					id: "52A04B98173A8416"
+					type: "xp"
+					xp: 120
+				}
+				{
+					exclude_from_claim_all: true
+					id: "79B0E9C4B9115B6C"
+					table_id: 4541931633169242376L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "03A4FECF7B60E1DC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "04CE7DE5B51054DC"
+					item: "bloodmagic:alchemytable"
+					type: "item"
+				}
+			]
+			title: "Alchemy Table"
+			x: 10.7d
+			y: -4.1d
+		}
+		{
+			dependencies: ["427BA2199EB4365B"]
+			description: [
+				"Rituals are multiblocks around a &6Master Ritual Stone&f. The &6Ritual Diviner&f places the stones for you - pick a ritual, right-click the master stone."
+				""
+				"Start with: &bFull Spring&f (water), &cSerenade of the Nether&f (lava), &aWell of Suffering&f (auto-sacrifice), &6Ritual of Magnetism&f (pulls ores up) and &eRitual of the Crusher&f."
+				"&7&fWeak Activation Crystal&7 - Made at: &fBlood Altar &7from &fLava Crystal"
+			]
+			id: "5D86D8B3DD8301F1"
+			rewards: [
+				{
+					id: "0EF716EAF18BE810"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "28D96F8711DC7B41"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "21133A882DAFE1D4"
+					item: "bloodmagic:ritualstone"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1FAC25E6B84E748C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Automated magic"
+			tasks: [
+				{
+					id: "659D5461F95BB700"
+					item: "bloodmagic:masterritualstone"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "239422D1FCB5C1F4"
+					item: "bloodmagic:ritualstone"
+					type: "item"
+				}
+				{
+					id: "232D98CC79B74EF0"
+					item: "bloodmagic:ritualdiviner"
+					type: "item"
+				}
+				{
+					id: "3ED3B6BD4179BDB7"
+					item: "bloodmagic:activationcrystalweak"
+					type: "item"
+				}
+			]
+			title: "&6Rituals"
+			x: 15.95d
+			y: -4.1d
+		}
+		{
+			dependencies: ["47FFBA90A4A3265A"]
+			description: [
+				"Armour that &elearns&f. Run and it gets faster. Take hits and it gets tougher. Eat and it gets... digestive. Wear the full set to earn upgrades."
+				"&7&fLiving Helmet&7 - Made at: &fAlchemy Array &7from &fIron Helmet, Binding Reagent"
+				"&7&fLiving Chestplate&7 - Made at: &fAlchemy Array &7from &fIron Chestplate, Binding Reagent"
+			]
+			id: "5F7F523B8465DBD8"
+			rewards: [
+				{
+					id: "4766FFBDECC43098"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "5434E024B008687A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s defense 160"
+					elevate_perms: true
+					icon: "minecraft:shield"
+					id: "5CD11954F1696BAC"
+					silent: true
+					title: "+160 Defense experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "23F8E0A009250592"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Armour that levels with you"
+			tasks: [
+				{
+					id: "32945159030F5D5C"
+					item: "bloodmagic:livinghelmet"
+					type: "item"
+				}
+				{
+					id: "61622909029ED94A"
+					item: "bloodmagic:livingplate"
+					type: "item"
+				}
+				{
+					id: "38CCB0D93BFDBC74"
+					item: "bloodmagic:livingleggings"
+					type: "item"
+				}
+				{
+					id: "52E81CB6404E5EC9"
+					item: "bloodmagic:livingboots"
+					type: "item"
+				}
+			]
+			title: "Living Armour"
+			x: 20.2d
+			y: -4.13d
+		}
+		{
+			dependencies: ["5D86D8B3DD8301F1"]
+			description: ["&7Made at: &fAlchemy Array &7from &fImbued Slate, Holding Reagent"]
+			id: "43A9BA8C1D31C618"
+			optional: true
+			rewards: [
+				{
+					id: "7032B4CD575DD516"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "6640E1E3CEAD7AB1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "793B1BFC92BFE5EB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Holds five sigils in one slot."
+			tasks: [
+				{
+					id: "6E5AAE42DB919586"
+					item: "bloodmagic:sigilofholding"
+					type: "item"
+				}
+			]
+			title: "Sigil of Holding"
+			x: 18.45d
+			y: -8.63d
+		}
+		{
+			dependencies: ["5D86D8B3DD8301F1"]
+			description: [
+				"A toggleable item magnet, and the Teleposer - swaps whole blocks (and you) between two linked points."
+				"&7&fSigil of Magnetism&7 - Made at: &fAlchemy Array &7from &fImbued Slate, Magnetism Reagent"
+			]
+			id: "4046C9ECB6755D42"
+			optional: true
+			rewards: [
+				{
+					id: "46F760C59E9B8286"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "12C0296436D39635"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "58DD6CB772810556"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4388DBE1D6494509"
+					item: "bloodmagic:sigilofmagnetism"
+					type: "item"
+				}
+				{
+					id: "6DB2F00FA4F5BAF2"
+					item: "bloodmagic:teleposer"
+					type: "item"
+				}
+			]
+			title: "Magnetism \\& Teleposition"
+			x: 18.45d
+			y: -5.63d
+		}
+		{
+			dependencies: ["6675A3E59E30DC80"]
+			description: [
+				"Another ring of 28 runes and four tall pillars capped with &eBloodstone&f large bricks. Master Blood Orb: 40,000 LP on a Weak Blood Shard."
+				"&7&fImbued Slate&7 - Made at: &fBlood Altar &7from &fReinforced Slate"
+				"&7&fMaster Blood Orb&7 - Made at: &fBlood Altar &7from &fWeak Blood Shard"
+			]
+			id: "783ED61705E95A76"
+			rewards: [
+				{
+					id: "0FF95EF6F3D84244"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 3
+					id: "3458C8AE60F6A317"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "503633B0FD647CEA"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "648FBF03D12652FF"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Runes, runes, runes"
+			tasks: [
+				{
+					count: 4L
+					id: "6EF32A9B49DB0833"
+					item: "bloodmagic:infusedslate"
+					type: "item"
+				}
+				{
+					id: "75928700C062503D"
+					item: "bloodmagic:masterbloodorb"
+					type: "item"
+				}
+			]
+			title: "&6Tier 4 Altar"
+			x: 20.2d
+			y: -2.57d
+		}
+		{
+			dependencies: ["783ED61705E95A76"]
+			description: ["Blood Magic's own ore-tripling line, using cutting fluids and explosive cells. No power required - just LP."]
+			id: "41FD45E51A62726D"
+			optional: true
+			rewards: [
+				{
+					id: "5D8D16A8A234AB16"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "161C0142A30340CD"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5D59B8776453BFA5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0C278C21AD847B23"
+					item: "bloodmagic:alchemicalreactionchamber"
+					type: "item"
+				}
+			]
+			title: "Alchemical Reaction Chamber"
+			x: 22.05d
+			y: -2.38d
+		}
+		{
+			dependencies: ["783ED61705E95A76"]
+			description: [
+				"Will can be released into the chunk as an &eaura&f, grown into crystals and split into four aspects: Corrosive, Destructive, Vengeful and Steadfast."
+				"&7&fDemon Crystallizer&7 - Made at: &fHellfire Forge &7from &fHellfire Forge, any stone, Lapis, any glass"
+				"&7&fDemon Will Aura Gauge&7 - Made at: &fHellfire Forge &7from &fGold Ingot, Redstone Dust, any glass, Demon Crystal"
+			]
+			id: "7C789FA8BAA36238"
+			optional: true
+			rewards: [
+				{
+					id: "48DE0EC89EBA9451"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "495D8F66D7F20757"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "760D971C42AF7ADD"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "57DD719973651EF5"
+					item: "bloodmagic:demoncrystallizer"
+					type: "item"
+				}
+				{
+					id: "32FF956D20BB5C7E"
+					item: "bloodmagic:demonwillgauge"
+					type: "item"
+				}
+			]
+			title: "Demon Crystals"
+			x: 22.05d
+			y: 0.62d
+		}
+		{
+			dependencies: ["783ED61705E95A76"]
+			description: [
+				"The outermost ring and four &eHellforged&f beacon-style caps. The Archmage Blood Orb holds 10,000,000 LP."
+				"&7&fDemonic Slate&7 - Made at: &fBlood Altar &7from &fImbued Slate"
+				"&7&fArchmage's Blood Orb&7 - Made at: &fBlood Altar &7from &fHellforged Block"
+			]
+			id: "606F15CF67E1BE54"
+			rewards: [
+				{
+					id: "340C10435C1085B2"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "207C985401158B4B"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "528DECCDBC347718"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3287E4744BAB5F18"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The great work"
+			tasks: [
+				{
+					count: 4L
+					id: "254AC06ED8753CE8"
+					item: "bloodmagic:demonslate"
+					type: "item"
+				}
+				{
+					id: "5425D600AF6A3DF4"
+					item: "bloodmagic:archmagebloodorb"
+					type: "item"
+				}
+			]
+			title: "&6Tier 5 Altar"
+			x: 22.05d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"606F15CF67E1BE54"
+				"5F7F523B8465DBD8"
+			]
+			description: ["A five-tier altar, rituals humming and armour that knows you better than you do. Blood Magic: mastered."]
+			id: "4E39D14798C34D5A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "55F7CB3FD2CD5B53"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22CC4245359B227D"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "59FB3E731927E925"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					id: "70F7A113BB65B005"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					command: "/mastery xp @s magic 240"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "52EB83E3E93DAE28"
+					silent: true
+					title: "+240 Magic experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2FD2D7D96EF88144"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "20E748636BEE073F"
+					title: "Worth every drop"
+					type: "checkmark"
+				}
+			]
+			title: "&4&lArchmage of Blood"
+			x: 24.15d
+			y: -6.63d
+		}
+		{
+			dependencies: ["5D86D8B3DD8301F1"]
+			description: ["Glowstone, redstone, gunpowder and gold, mixed at the Alchemy Table. It &ebinds&f a thing to its owner: Living armour, Bound tools and the sentient gear's later forms all start with it."]
+			id: "47FFBA90A4A3265A"
+			rewards: [
+				{
+					id: "7A6AEA31A1316D46"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "112370913B343FAB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "41911AC32260C650"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "279A998B938109AC"
+					item: "bloodmagic:reagentbinding"
+					type: "item"
+				}
+			]
+			title: "Binding Reagent"
+			x: 18.45d
+			y: -4.13d
+		}
+		{
+			dependencies: ["5D86D8B3DD8301F1"]
+			description: ["&eSaturated Tau&f, worked in the Alchemical Reaction Chamber, gives a shard. The Master Blood Orb needs one, and the higher altars need more."]
+			id: "6675A3E59E30DC80"
+			rewards: [
+				{
+					id: "0F5B9B7ABE260C38"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "24989B5871D08CA3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "38CADFE328EDA0BC"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Blood that set"
+			tasks: [
+				{
+					count: 2L
+					id: "5CBB4635D4043AE7"
+					item: "bloodmagic:weakbloodshard"
+					type: "item"
+				}
+			]
+			title: "Weak Blood Shards"
+			x: 18.45d
+			y: -2.57d
+		}
+		{
+			dependencies: ["06ABD696DF835A99"]
+			description: ["A stone that burns in a furnace for ever, paid for in LP each time. Useful on its own, and the seed of the &eActivation Crystal&f that starts a ritual."]
+			id: "04B4B2259A4445D2"
+			rewards: [
+				{
+					id: "6939D888118EEF7F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2478401463598590"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "42DE224494D7037C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "008ACE0659A0E9CF"
+					item: "bloodmagic:lavacrystal"
+					type: "item"
+				}
+			]
+			title: "A Lava Crystal"
+			x: 12.45d
+			y: -4.1d
+		}
+		{
+			dependencies: ["04B4B2259A4445D2"]
+			description: [
+				"A ritual is a pattern of &eRitual Stones&f, each marked with an element. The four tools, each made in the Blood Altar, do the marking: right-click a blank stone."
+				"The &eRitual Diviner&f shows the pattern and places it for you, if you carry the stones."
+			]
+			id: "427BA2199EB4365B"
+			rewards: [
+				{
+					id: "2DC7EF4A4586A2B1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "14D955BD2F94204F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "451660C7DC120FC9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Water, fire, earth, air"
+			tasks: [
+				{
+					id: "01B5E29D881AD238"
+					item: "bloodmagic:waterscribetool"
+					type: "item"
+				}
+				{
+					id: "1B74E1CAEF71DCB2"
+					item: "bloodmagic:firescribetool"
+					type: "item"
+				}
+				{
+					id: "09CB72C7C35A47C5"
+					item: "bloodmagic:earthscribetool"
+					type: "item"
+				}
+				{
+					id: "1ACCB52E997A480E"
+					item: "bloodmagic:airscribetool"
+					type: "item"
+				}
+			]
+			title: "Inscription Tools"
+			x: 14.2d
+			y: -4.1d
+		}
+		{
+			dependencies: ["40FFF3A0A3641391"]
+			description: ["Burn enough Demon Will into the area's aura and crystals grow there on their own. Harvest them for will without fighting."]
+			id: "20B74E9B66ADF7D5"
+			optional: true
+			rewards: [
+				{
+					id: "5E2483DA0A949065"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "37A702907225C62C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1CC0D8E036B2687B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Demon will, made solid"
+			tasks: [
+				{
+					id: "4AAB798F97A9A048"
+					item: "bloodmagic:defaultcrystal"
+					type: "item"
+				}
+			]
+			title: "Will Crystals"
+			x: 10.7d
+			y: 0.37d
+		}
+		{
+			dependencies: ["5D86D8B3DD8301F1"]
+			description: ["Tau grows from fruit found in Blood Magic's dungeons. Grown next to a dying creature, it becomes &eSaturated Tau&f, which you need for blood shards and the tier 4 altar."]
+			id: "1DE9E0327BB8F878"
+			optional: true
+			rewards: [
+				{
+					id: "252F89E673371BE2"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "248D4E2397009D79"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "322094EFC34BF697"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A strange plant"
+			tasks: [
+				{
+					id: "711E2E6745104ACF"
+					item: "bloodmagic:strong_tau"
+					type: "item"
+				}
+				{
+					id: "7AD757290CB882ED"
+					item: "bloodmagic:weak_tau"
+					type: "item"
+				}
+			]
+			title: "Tau Fruit"
+			x: 18.45d
+			y: -7.13d
+		}
+		{
+			dependencies: ["71332A08E0DAEBDA"]
+			description: ["The altar gains more Life Essence from creatures sacrificed near it."]
+			id: "5629B44D2C57652C"
+			optional: true
+			rewards: [
+				{
+					id: "6B0CA9B4AA377261"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6AC7D61CA1E91B52"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "70878885D011F0CA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "More from every kill"
+			tasks: [
+				{
+					id: "74A50E80C55E7E2D"
+					item: "bloodmagic:sacrificerune"
+					type: "item"
+				}
+			]
+			title: "The Rune of Sacrifice"
+			x: 10.7d
+			y: -2.63d
+		}
+		{
+			dependencies: ["783ED61705E95A76"]
+			description: ["The &eRune of Capacity&f raises how much Life Essence the altar holds. The &eDisplacement Rune&f speeds up its flow into and out of the altar."]
+			id: "41896D6B161A111A"
+			optional: true
+			rewards: [
+				{
+					id: "4368EE47BA8813AE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3BF4443FAEE617F8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7B33D54A43D059C5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bigger, faster altar"
+			tasks: [
+				{
+					id: "17F01991ADF449A3"
+					item: "bloodmagic:altarcapacityrune"
+					type: "item"
+				}
+				{
+					id: "5B8FFC82230A4327"
+					item: "bloodmagic:dislocationrune"
+					type: "item"
+				}
+			]
+			title: "Capacity and Displacement"
+			x: 22.05d
+			y: -0.88d
+		}
+		{
+			dependencies: ["71332A08E0DAEBDA"]
+			description: [
+				"Destroys the fluid you look at, for a small cost of Life Essence. Clears lava in a moment."
+				"&7Made at: &fAlchemy Array &7from &fReinforced Slate, Void Reagent"
+			]
+			id: "6A6D6A4DD0294A61"
+			optional: true
+			rewards: [
+				{
+					id: "48107EA37B122CD9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "700F1BA4E78AC7E6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "60D1697B5AADFE03"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Delete fluid"
+			tasks: [
+				{
+					id: "3F5FDF28F408E1CF"
+					item: "bloodmagic:voidsigil"
+					type: "item"
+				}
+			]
+			title: "The Void Sigil"
+			x: 10.7d
+			y: -1.13d
+		}
+		{
+			dependencies: ["606F15CF67E1BE54"]
+			description: ["Each one multiplies the altar's capacity, so stacking them grows it fast."]
+			id: "19D2B0D41A7B0CF9"
+			optional: true
+			rewards: [
+				{
+					id: "6F47E41551506D1A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "53863590C16C2AA6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3B34C34B2C964EE3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A much bigger altar"
+			tasks: [
+				{
+					id: "27353ADA34BC0305"
+					item: "bloodmagic:bettercapacityrune"
+					type: "item"
+				}
+			]
+			title: "Augmented Capacity"
+			x: 24.15d
+			y: -4.88d
+		}
+		{
+			dependencies: ["606F15CF67E1BE54"]
+			description: ["Lets the altar store charge while it is idle, so the next craft finishes in an instant."]
+			id: "0792412EFDCE30A9"
+			optional: true
+			rewards: [
+				{
+					id: "6900920BBFFB1D81"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "242EA187F72C6A3F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "149FB0E0D1E30043"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Charge ahead of time"
+			tasks: [
+				{
+					id: "6A678C6D3DB97BDF"
+					item: "bloodmagic:chargingrune"
+					type: "item"
+				}
+			]
+			title: "The Charging Rune"
+			x: 24.15d
+			y: -3.38d
+		}
+		{
+			dependencies: ["606F15CF67E1BE54"]
+			description: ["Changes the range and other settings of a running ritual."]
+			id: "249CDCF1FF9ECCCF"
+			optional: true
+			rewards: [
+				{
+					id: "61DCE72E1EEA80D1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6A7446EA281FACA8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0B7986E3126BBF26"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Adjust a ritual"
+			tasks: [
+				{
+					id: "34D115EF46285343"
+					item: "bloodmagic:ritualtinkerer"
+					type: "item"
+				}
+			]
+			title: "The Ritual Tinkerer"
+			x: 24.15d
+			y: -1.88d
+		}
+		{
+			dependencies: ["2B05344E762F8A68"]
+			description: ["Speeds up how often the altar moves Life Essence to and from its tanks."]
+			id: "2373C1DC823DB607"
+			optional: true
+			rewards: [
+				{
+					id: "37A361B84C7B60F1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4A8B2F878459DCD6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5731AB43BE2CEB79"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster transfers"
+			tasks: [
+				{
+					id: "12796711037397E3"
+					item: "bloodmagic:accelerationrune"
+					type: "item"
+				}
+			]
+			title: "The Acceleration Rune"
+			x: 10.7d
+			y: 4.87d
+		}
+		{
+			dependencies: ["6675A3E59E30DC80"]
+			description: ["Bricks made with blood shards. A tier 4 altar needs them on its pillars."]
+			id: "20A28C7B902EDE8A"
+			optional: true
+			rewards: [
+				{
+					id: "23C1BF65B42C6869"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "445F11C2C2668DD4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2E52BD1509F40BCA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Caps for a tier 4 altar"
+			tasks: [
+				{
+					id: "584E3680C6C0AD53"
+					item: "bloodmagic:largebloodstonebrick"
+					type: "item"
+				}
+			]
+			title: "Large Bloodstone Bricks"
+			x: 20.2d
+			y: -1.13d
+		}
+	]
+	subtitle: ["Power has a price. Usually yours."]
+	title: "&4Blood Magic"
+}

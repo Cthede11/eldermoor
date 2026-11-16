@@ -1,0 +1,274 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "reforge"
+	group: "02AD8609A8FE6EE4"
+	icon: "tieredreforge:reforge_station"
+	id: "48918518C25F0E83"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["335AEAC209505364"]
+			description: [
+				"Every weapon, tool and armour piece gets a &equality&f when it is made or found. The name tells you: a &7Dented&f chestplate is worse than a plain one; a &6Legendary&f sword is much better."
+				""
+				"The station takes three things: the item, some of the material it is made of, and a reforging catalyst. It rolls again."
+				""
+				"It is a gamble every time. The roll can be worse."
+			]
+			hide_until_deps_complete: true
+			id: "3D78587EDFAB71CC"
+			rewards: [
+				{
+					id: "5A921B5D3CBBDD7E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "6D1E61F5CA4AB550"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2CFC92CB2A6AE991"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 250"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "05333BC00002BFDD"
+					silent: true
+					title: "+250 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6E3BBBA3270C10CC"
+					item: "tieredreforge:reforge_station"
+					type: "item"
+				}
+			]
+			title: "&6&lA Second Chance"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D78587EDFAB71CC"]
+			id: "4DE34C69CF733096"
+			rewards: [
+				{
+					id: "129FCF8E113F400F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "665A437802E9CB3C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "5E3FF60431920EF0"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "The common catalyst. Each roll uses one."
+			tasks: [
+				{
+					count: 4L
+					id: "31FFEF0B81CCEB48"
+					item: "tieredreforge:fucdu"
+					type: "item"
+				}
+			]
+			title: "Catalyst"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DE34C69CF733096"]
+			icon: "minecraft:anvil"
+			id: "48A3D51F9F5D61DD"
+			rewards: [
+				{
+					id: "08C8843C849D0307"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "440A84EC018345FC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "6E91F1EE136DE0A4"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "Open the station and reforge anything."
+			tasks: [
+				{
+					block: "tieredreforge:reforge_station"
+					block_type: 0
+					checkItem: false
+					id: "03959BF2B11515EC"
+					isItemInteraction: false
+					title: "Use the Reforging Station"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "Roll the Dice"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48A3D51F9F5D61DD"]
+			icon: "minecraft:anvil"
+			id: "50E97CC45CBF2F40"
+			rewards: [
+				{
+					id: "630948C5EC1F958E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "74E869BF1D2E31D2"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D182C8C9F218E61"
+					table_id: 2614350496967698251L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s forging 100"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "5106EADAD44EC017"
+					silent: true
+					title: "+100 Forging experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Legendary is in there somewhere."
+			tasks: [
+				{
+					block: "tieredreforge:reforge_station"
+					block_type: 0
+					checkItem: false
+					id: "10F6983E7D11966B"
+					isItemInteraction: false
+					title: "Use the Reforging Station 10 times"
+					type: "questsadditions:use"
+					value: 10L
+				}
+			]
+			title: "Try, Try Again"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50E97CC45CBF2F40"]
+			id: "1EF88E7E201DD2BD"
+			rewards: [
+				{
+					id: "6DC4F38862E5EF92"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "778F83DB12D75EB6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "13009FAFA89869A6"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			subtitle: "The stronger catalyst gives better odds at the top qualities."
+			tasks: [
+				{
+					count: 2L
+					id: "1CC3F7D70024EB95"
+					item: "tieredreforge:fucdu_hard"
+					type: "item"
+				}
+			]
+			title: "The Good Stuff"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D78587EDFAB71CC"]
+			description: ["Not the same thing. Apotheosis's table rerolls the &daffixes&f on world-dropped gear, and has its own chapter in The Arcanum."]
+			id: "0703E553264BEAB8"
+			rewards: [
+				{
+					id: "2F71EB5D3643FD6B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "352B5B3A6E3F05DB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s forging 35"
+					elevate_perms: true
+					icon: "minecraft:anvil"
+					id: "06744D3DAD3F3019"
+					silent: true
+					title: "+35 Forging experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "31B5037B91B6AA73"
+					item: "apotheosis:simple_reforging_table"
+					type: "item"
+				}
+			]
+			title: "The Other Table"
+			x: 4.5d
+			y: 2.0d
+		}
+	]
+	subtitle: ["Every item rolls a quality. Roll again."]
+	title: "&6The Reforger"
+}

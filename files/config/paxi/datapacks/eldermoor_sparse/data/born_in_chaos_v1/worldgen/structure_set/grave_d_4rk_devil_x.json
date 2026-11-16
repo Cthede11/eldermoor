@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1386119179,
+    "separation": 21,
+    "spacing": 210,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:grave_d_4rk_devil_x",
+      "weight": 1
+    }
+  ]
+}

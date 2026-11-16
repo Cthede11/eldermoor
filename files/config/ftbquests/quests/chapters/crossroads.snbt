@@ -1,0 +1,1473 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "crossroads"
+	group: "20F67971AC218528"
+	icon: "minecraft:compass"
+	id: "26640B78CEE4D312"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"There is no single way to play. Six paths lead away from here, and each is a full adventure with its own chapters."
+				""
+				"&eChoosing a path reveals its chapters.&f Nothing locks you in: take one, take several, or split them between friends. A party with a Mayor, an Engineer and an Archmage is a formidable thing."
+				"{@pagebreak}"
+				"Every path has three &emilestones&f on this page. Each unlocks when you finish the linked chapter or feat - come back and claim it."
+				""
+				"Reach the final milestone on &aany three paths&f to become a &6Legend of Eldermoor&f."
+				""
+				"Your reward here is a &6choice&f: one gift for whichever calling speaks to you."
+			]
+			id: "518C67BB732FFB40"
+			rewards: [
+				{
+					id: "7C2B86EB9784DFFB"
+					table_id: 4359120301638584407L
+					type: "choice"
+				}
+				{
+					id: "18D9326C0CE01344"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "6F23EA93A59690BF"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "22DCF8627E0E7670"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Choose your adventure"
+			tasks: [
+				{
+					id: "244A410227E71FBF"
+					title: "I am ready"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lThe Crossroads"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["518C67BB732FFB40"]
+			description: [
+				"Reveals &aFounding a Colony&f. A Working Town and Walls \\& Wardens follow as the colony grows."
+				""
+				"Best shared: one colony, several officers."
+			]
+			icon: "minecolonies:blockhuttownhall"
+			id: "568A179A4BEAAA6B"
+			rewards: [
+				{
+					id: "6D98FE0F521AE3A4"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 32
+					id: "3AEE43BDAB395D93"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3DDBBB32F1E03D3E"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2C856D305B36AFC6"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&oFound a town. Fill it with people. Defend it.&r"
+			tasks: [
+				{
+					id: "0ED28238995722D2"
+					title: "I walk this path"
+					type: "checkmark"
+				}
+			]
+			title: "&aPath of the Colonist"
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"568A179A4BEAAA6B"
+				"1957B990BC313A5F"
+			]
+			icon: "minecolonies:blockhutcitizen"
+			id: "793F55E841C3FC31"
+			rewards: [
+				{
+					id: "5348960C77B5CC21"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 2
+					id: "01329BA84D86F22F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0ADD6ED2CC75CB4F"
+					table_id: 3685448626895050638L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2903B875C7BC106C"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Complete &aFounding a Colony&f."
+			tasks: [
+				{
+					id: "4DC40636AE27E36D"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Village Elder"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"793F55E841C3FC31"
+				"32B21F62C5D1D2DA"
+			]
+			icon: "minecolonies:blockhutuniversity"
+			id: "6043E85EB2267A21"
+			rewards: [
+				{
+					id: "43B9C3CA797278F1"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 4
+					id: "3C62360D31FE1B1B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "33AE961089A79600"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "55C40DEFD9733273"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Complete &eA Working Town&f."
+			tasks: [
+				{
+					id: "52F917CFB8C34AB8"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Lord Mayor"
+			x: 9.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"6043E85EB2267A21"
+				"3E1EE099022774A2"
+			]
+			icon: "minecolonies:blockhutbarracks"
+			id: "59CFE96369324EDA"
+			rewards: [
+				{
+					id: "41A1DF3B2033D508"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 2
+					id: "6E2431DA52EC5C17"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A602DB21079F122"
+					table_id: 1378822973048103414L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D8C51D3D5C5FD0F"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "468709BDD4FF9EC6"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Complete &cWalls \\& Wardens&f."
+			tasks: [
+				{
+					id: "7F81B17BDAD46DFB"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&6Sovereign"
+			x: 12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["518C67BB732FFB40"]
+			description: [
+				"Reveals &eThe Workshop&f, where each kind of machinery has a door. Open a door and its chapter appears."
+				""
+				"The milestones follow the three big pillars: Immersive Engineering, Mekanism and Applied Energistics 2."
+			]
+			icon: "create:wrench"
+			id: "4858C3A8E8B424FF"
+			rewards: [
+				{
+					id: "5FDC43AF3C4C39B3"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 24
+					id: "5060C2D1BE5FCE54"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4E956AB71B082F2B"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "137A15B9EEA4AC37"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&oWhy do it by hand when a machine the size of a house can do it?&r"
+			tasks: [
+				{
+					id: "5EFDFDEFD653AED7"
+					title: "I walk this path"
+					type: "checkmark"
+				}
+			]
+			title: "&ePath of the Engineer"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4858C3A8E8B424FF"
+				"473E3C788E6EAAC2"
+			]
+			icon: "createaddition:alternator"
+			id: "402260EE43B71FEC"
+			rewards: [
+				{
+					id: "13D745853DD3590A"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "3290E10396C0DF5D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "520C10194028E9B6"
+					table_id: 8835911965476984709L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "786CADDAE7700779"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Complete &eSparks&f."
+			tasks: [
+				{
+					id: "53849116296F9D5D"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Apprentice Engineer"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"584794403BA5BF6B"
+				"6C0C0F9380942EA7"
+				"698D4FA41B63405C"
+				"0BA934BADA9A0DE7"
+				"7A93565C7515EC59"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Master &aany one&f of Immersive Engineering, Mekanism, Applied Energistics 2, PneumaticCraft or Powah."]
+			icon: "immersiveengineering:hammer"
+			id: "2A4CA1AA6A9545FB"
+			rewards: [
+				{
+					id: "23267B7BD9228B74"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 4
+					id: "45F704E75EB0E9DF"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "62AF71CEC8B8F55A"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "23710E0508CBB125"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "749C834A4DC96D9D"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Journeyman Engineer"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2A4CA1AA6A9545FB"
+				"584794403BA5BF6B"
+				"6C0C0F9380942EA7"
+				"698D4FA41B63405C"
+			]
+			description: ["Master &aall three&f: Immersive Engineering, Mekanism and Applied Energistics 2."]
+			icon: "mekanism:alloy_atomic"
+			id: "2779921579F3FAB7"
+			rewards: [
+				{
+					id: "54DF04333F00800E"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 2
+					id: "243B38C0BA8D4A8E"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "38C2FFC50FADDE20"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A9054D3F4C1A6DD"
+					table_id: 2190574254409122039L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "4C401D58609ABE76"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "3CDD955B157CD1DD"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&6Master Engineer"
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["518C67BB732FFB40"]
+			description: ["Reveals &dThe Arcanum&f, where each school has a door. Open a door and its chapter appears."]
+			icon: "irons_spellbooks:iron_spell_book"
+			id: "3189889F0814B72A"
+			rewards: [
+				{
+					id: "5E41B4165C7C6CBA"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "1FC6E9C4A5C0CE9D"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "07FC58AB735F35BA"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "4E21EBE2341FB854"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&oNine schools of magic, and nobody says you can only pick one.&r"
+			tasks: [
+				{
+					id: "218C5B1748423F04"
+					title: "I walk this path"
+					type: "checkmark"
+				}
+			]
+			title: "&dPath of the Mage"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"16242048190E101C"
+				"38E0657E876BC94E"
+				"279696FA9CC14792"
+				"27A602FB1C84A57A"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Reach &aany one&f of: a Tier 2 Blood Altar, Tier II in Mana and Artifice, a level 30 Apotheosis enchant, or the end of Iron's Spells."]
+			icon: "minecraft:enchanted_book"
+			id: "7154341CFF18DA88"
+			rewards: [
+				{
+					id: "6C353D8D4C39BF60"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "7B4EBCE62F7CCEE2"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C98B478651350C9"
+					table_id: 9078944763667157318L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "60801669682D7DC2"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7B8418044B386DD7"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Adept"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"783ED61705E95A76"
+				"0F0BB99B11E21523"
+				"46BB7EC961AD8955"
+				"110333CF530DE9BA"
+				"0933FBF2BA37E792"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Reach &aany one&f of: a Tier 4 Blood Altar, a Mana and Artifice faction, a level 80 Apotheosis enchant, or the end of Eidolon or Forbidden \\& Arcanus."]
+			icon: "bloodmagic:masterbloodorb"
+			id: "3A9E3238A42C0A30"
+			rewards: [
+				{
+					id: "74123A5D11B71FEA"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 4
+					id: "396CFB1F4B2DAA52"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "326E7B1A9B9F618A"
+					table_id: 8945662656232876226L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "1DA5D08D8539B650"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4B0436829ED9322B"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Magus"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4E39D14798C34D5A"
+				"1880EF0C679B83D4"
+				"4308AFA920AE113E"
+				"27A602FB1C84A57A"
+				"110333CF530DE9BA"
+				"0933FBF2BA37E792"
+				"70F29AA0BB3FD62D"
+			]
+			icon: "mna:spell_book"
+			id: "03D5D4F4766D9F1C"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					id: "7BC2BDB4E2B8ED61"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 2
+					id: "606511A0A7239D4B"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C1543FBDEFE1CD6"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34BEC2B0B6617C76"
+					table_id: 8298031287037069412L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "7F845A6B1007A1E8"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Complete &aany three&f chapters of The Magical."
+			tasks: [
+				{
+					id: "7E7169C28C4764D8"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&6Archmage"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["518C67BB732FFB40"]
+			description: [
+				"Reveals &cThe Armoury&f, &bThe Long Shot&f, &cThe Bounty Board&f and &5Old Grudges&f."
+				""
+				"The three &cActs&f of the main story are open to everyone once First Days is done."
+			]
+			icon: "magistuarmory:steel_bastardsword"
+			id: "184768A56985E56B"
+			rewards: [
+				{
+					id: "0BC73AE1F01B8B23"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "6698C964ACE42911"
+					item: "minecraft:iron_sword"
+					type: "item"
+				}
+				{
+					id: "5DCA6802E6B41A5D"
+					item: "minecraft:shield"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "35BC45B60C298B2F"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6E8EDD258B87C14D"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&oThere are things out there with health bars. That is an insult.&r"
+			tasks: [
+				{
+					id: "39553B3F55524B28"
+					title: "I walk this path"
+					type: "checkmark"
+				}
+			]
+			title: "&cPath of the Warrior"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"184768A56985E56B"
+				"4ED70C028E50D89C"
+			]
+			icon: "magistuarmory:knight_chestplate"
+			id: "30A15301A1D77987"
+			rewards: [
+				{
+					id: "6F9EA0E009BE20B8"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "47D972F3579C2BD0"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07171EAB73DFD725"
+					table_id: 7914596619558840835L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "4ECED21152B1EBB1"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Complete &cThe Armoury&f."
+			tasks: [
+				{
+					id: "55A87A9826FC142D"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Man-at-Arms"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["30A15301A1D77987"]
+			icon: "minecraft:dragon_head"
+			id: "786C587D13FE4547"
+			rewards: [
+				{
+					id: "11BA9B84BCF878FC"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 5
+					id: "022AFC24840E04C6"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "53819AB79A5768B1"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "6CC6298F04BB949E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fight your way through Acts I and II and free the End."
+			tasks: [
+				{
+					advancement: "minecraft:end/kill_dragon"
+					criterion: ""
+					icon: "minecraft:dragon_head"
+					id: "57FAC9CC0FACEBA4"
+					title: "Slay the Ender Dragon"
+					type: "advancement"
+				}
+			]
+			title: "Dragonslayer"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["786C587D13FE4547"]
+			icon: "cataclysm:mech_eye"
+			id: "5A920A6D77B79111"
+			rewards: [
+				{
+					id: "5AD2526CDDFD8919"
+					type: "xp"
+					xp: 2500
+				}
+				{
+					count: 3
+					id: "4EA0AE41B7750F65"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0C659A5F0D0D5633"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "47D7E8170421BF69"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2F65C3D7C6FFF593"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Bring down two of Act III's lords: the Harbinger and Ignis."
+			tasks: [
+				{
+					advancement: "cataclysm:kill_harbinger"
+					criterion: ""
+					icon: "cataclysm:mech_eye"
+					id: "0D88C2DCDD4CE81B"
+					title: "Destroy the Harbinger"
+					type: "advancement"
+				}
+				{
+					entity: "cataclysm:ignis"
+					id: "4078852EC7EF28C3"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&6Champion"
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["518C67BB732FFB40"]
+			description: [
+				"Reveals &bThe Atlas&f, where each far realm has a door: the Aether, Blue Skies and the worlds beneath your feet."
+				""
+				"Waystones, paragliders, ships and the Nature's Compass are your friends."
+			]
+			icon: "minecraft:filled_map"
+			id: "077D1686E85C6E51"
+			rewards: [
+				{
+					id: "5640CAD6461D4797"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "26BE26ED82CB1D56"
+					item: "minecraft:map"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "109B88CEA4397817"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "31FDA62DAC1EB3EF"
+					item: "naturescompass:naturescompass"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2AFB4870A553B6C2"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&oOver the next hill. Under it, too.&r"
+			tasks: [
+				{
+					id: "089951C01EEE31DE"
+					title: "I walk this path"
+					type: "checkmark"
+				}
+			]
+			title: "&bPath of the Explorer"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["077D1686E85C6E51"]
+			description: ["Set foot in the Twilight Forest and the Nether. Act I explains each key."]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "3E61BD54A5B74802"
+			rewards: [
+				{
+					id: "6B5814D0749A193D"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "4752764407900F92"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "7925DBC706593832"
+					item: "waystones:warp_stone"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "7965FECDB0EB7339"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					dimension: "twilightforest:twilight_forest"
+					id: "5C13DC4848559E5F"
+					type: "dimension"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					id: "61C8C82DE6DACF6F"
+					type: "dimension"
+				}
+			]
+			title: "Wayfarer"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3E61BD54A5B74802"
+				"138EEF6832AAE528"
+				"53F98C5D89A5DAC4"
+			]
+			description: ["Reach the Aether and the Everbright, and craft your first Cave Map."]
+			icon: "aether:aether_portal_frame"
+			id: "2B38E8B72D9497D4"
+			rewards: [
+				{
+					id: "7FC3F60ABCC1A338"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 4
+					id: "3C1EFF7A10F1B93C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "158DE43F784967DF"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "656A2120AFE767BA"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					dimension: "aether:the_aether"
+					id: "1878A64CE955B387"
+					type: "dimension"
+				}
+				{
+					id: "5E2DE479FE7C2C50"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Realmwalker"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2B38E8B72D9497D4"
+				"63660F7E08FD80D0"
+				"728A7F73B32B80DD"
+			]
+			icon: "minecraft:elytra"
+			id: "79C9A19BB6D1C5A2"
+			rewards: [
+				{
+					id: "4D8C5DBE8A75973A"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 2
+					id: "6BB69110AF36720D"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19F0B6F557D6DCEA"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					id: "79266765D68DC082"
+					item: "minecraft:elytra"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "3BB1D15C1AF8C238"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Complete &bBlue Skies&f and &2Alex's Caves&f."
+			tasks: [
+				{
+					id: "3335837F93416952"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&6Worldstrider"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["518C67BB732FFB40"]
+			description: [
+				"Reveals &6A Place for Everything&f: backpacks, barrels, drawers and searchable storage."
+				""
+				"The perfect second path for whoever keeps the base running."
+			]
+			icon: "sophisticatedstorage:gold_barrel"
+			id: "1C63C68C2EB905D3"
+			rewards: [
+				{
+					id: "42EE8B66975FC1F5"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "762A7FBD21624297"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7C2701FA2B8C13BF"
+					item: "minecraft:item_frame"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "5FDC140CC20DE4A6"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&oSomebody has to know where the diamonds are.&r"
+			tasks: [
+				{
+					id: "3DF02C7A1677C356"
+					title: "I walk this path"
+					type: "checkmark"
+				}
+			]
+			title: "&6Path of the Quartermaster"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"54A1B50BF448A601"
+				"2D87556CA5752DF8"
+			]
+			dependency_requirement: "one_completed"
+			icon: "storagedrawers:controller"
+			id: "5C26D7149A311F6D"
+			rewards: [
+				{
+					id: "7E69253529189E91"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "52E76620BABE8F1F"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0A8CFFA49911CD29"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "497B0EF6B386AF3D"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Build a Sophisticated Storage Controller &aor&f a Drawer Controller."
+			tasks: [
+				{
+					id: "7EB50FD8C11DA15E"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Packrat"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5C26D7149A311F6D"
+				"71B07B9C54F18302"
+			]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "7DDE3B43629D9304"
+			rewards: [
+				{
+					id: "744DA45994399B0C"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 4
+					id: "0EE993C3569217EE"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16D91FB1ACEB34A7"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "402225788B88A88E"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			subtitle: "Complete &6A Place for Everything&f."
+			tasks: [
+				{
+					id: "1F4C682D244C7FAF"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "Steward"
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7DDE3B43629D9304"
+				"3F34C23ED65393F6"
+			]
+			icon: "ae2:controller"
+			id: "6D55B29D4E182707"
+			rewards: [
+				{
+					id: "6072E06FC78BB24A"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 2
+					id: "3E032C13B448FD26"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0627D148406FB3A2"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s exploration 100"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "2D0221A2723C5E1E"
+					silent: true
+					title: "+100 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Set up AE2 autocrafting (Path of the Engineer)."
+			tasks: [
+				{
+					id: "132BDB622E5C0C39"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&6Grand Quartermaster"
+			x: 12.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["518C67BB732FFB40"]
+			description: [
+				"Coins drop from monsters and hide in chests. Ticking this reveals &2The Merchant&f, a chapter that is one long shop counter: pay coins, receive goods."
+				""
+				"Villagers, goblin traders, bounty boards and delivery agreements pay too, and a colony's taxes make a fine income."
+			]
+			icon: "coinsje:gold_coin"
+			id: "735AD0DCBE1A8E8D"
+			optional: true
+			rewards: [
+				{
+					id: "7F033EFFF6DF89C4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 9
+					id: "3990B73A82777510"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s exploration 35"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "71D416FDED80F9DE"
+					silent: true
+					title: "+35 Exploration experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "34A30AB1CEF73253"
+					title: "Show me the wares"
+					type: "checkmark"
+				}
+			]
+			title: "&2The Merchant"
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"59CFE96369324EDA"
+				"2779921579F3FAB7"
+				"03D5D4F4766D9F1C"
+				"5A920A6D77B79111"
+				"79C9A19BB6D1C5A2"
+				"6D55B29D4E182707"
+			]
+			description: [
+				"Reach the final milestone of &aany three paths&f."
+				""
+				"Bards will sing of this. Probably off-key."
+			]
+			icon: "minecraft:nether_star"
+			id: "7966B52D7D1F0D97"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "56212EC2659093A0"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0484E9C568BDBB8C"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "6E592AE126925C51"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					id: "0FFC707BE6E01774"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "5708F88D0474FC48"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.5d
+			subtitle: "Any three paths"
+			tasks: [
+				{
+					id: "5B3C417196E4D4E7"
+					title: "Claim your legend"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lLegend of Eldermoor"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7966B52D7D1F0D97"
+				"59CFE96369324EDA"
+				"2779921579F3FAB7"
+				"03D5D4F4766D9F1C"
+				"5A920A6D77B79111"
+				"79C9A19BB6D1C5A2"
+				"6D55B29D4E182707"
+			]
+			description: ["Reach the final milestone of &aall six paths&f. Absolute madness."]
+			hide_dependency_lines: true
+			icon: "minecraft:dragon_egg"
+			id: "7E06700A034F6619"
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "52C76C092C766342"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B6F92A2AB912C38"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "57FA8C72DF2DF803"
+					table_id: 377933700796306313L
+					type: "loot"
+				}
+				{
+					count: 5
+					id: "14E80175C8B505C3"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+				{
+					id: "758ED0D50A8866B2"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					command: "/mastery xp @s exploration 250"
+					elevate_perms: true
+					icon: "minecraft:compass"
+					id: "50A610845C253D0A"
+					silent: true
+					title: "+250 Exploration experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.5d
+			subtitle: "All six paths"
+			tasks: [
+				{
+					id: "1EB7585CE8BAF4C4"
+					title: "There is nothing left to prove"
+					type: "checkmark"
+				}
+			]
+			title: "&d&lParagon"
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Choose your adventure - or choose them all"]
+	title: "&6&lThe Crossroads"
+}

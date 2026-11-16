@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 771309080,
+    "separation": 32,
+    "spacing": 350,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:gravecarrionexe",
+      "weight": 1
+    }
+  ]
+}

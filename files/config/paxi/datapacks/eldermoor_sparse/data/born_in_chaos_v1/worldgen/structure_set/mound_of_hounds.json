@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 2109128832,
+    "separation": 10,
+    "spacing": 175,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:mound_of_hounds",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 99,
+    "separation": 24,
+    "spacing": 60,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "alexscaves:underground_cabin",
+      "weight": 1
+    }
+  ]
+}

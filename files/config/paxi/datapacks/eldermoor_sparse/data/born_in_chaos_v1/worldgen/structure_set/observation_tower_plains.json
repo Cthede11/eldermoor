@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1237288945,
+    "separation": 42,
+    "spacing": 700,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "born_in_chaos_v1:observation_tower_plains",
+      "weight": 1
+    }
+  ]
+}

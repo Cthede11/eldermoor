@@ -1,0 +1,20 @@
+{
+  "weight": 2,
+  "verifiers": [
+    {
+      "id": "epicpaladins:arclight_helmet"
+    },
+    {
+      "id": "epicpaladins:arclight_chestplate"
+    },
+    {
+      "id": "epicpaladins:arclight_leggings"
+    },
+    {
+      "id": "epicpaladins:arclight_boots"
+    }
+  ],
+  "tiers": [
+    "tiered:armors/set"
+  ]
+}

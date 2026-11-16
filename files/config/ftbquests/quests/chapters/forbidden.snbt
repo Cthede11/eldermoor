@@ -1,0 +1,1212 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "forbidden"
+	group: "3368DAD22055D0D9"
+	icon: "forbidden_arcanus:hephaestus_forge"
+	id: "114CD08493137E83"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["432441C0CA796D4E"]
+			description: [
+				"Arcane crystals power a kind of magic nobody wrote a rulebook for."
+				""
+				"The heart of it is the &eHephaestus Forge&f: a ritual altar fed with aureal, souls, blood and experience, which makes things that cannot be crafted any other way."
+				""
+				"Getting there takes darkstone, a strange dust and a smithing table you will not get back."
+				"&7Made at: &fClibano &7from &fany arcane crystal ores"
+			]
+			hide_until_deps_complete: true
+			id: "41C69551E233AA7F"
+			rewards: [
+				{
+					id: "0630335C233AC5AD"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 4
+					id: "2F3E3E599593E700"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0361FF83848A418D"
+					item: "forbidden_arcanus:arcane_crystal"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "331F7760DEC25518"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					count: 2L
+					id: "77628F48A60FDACB"
+					item: "forbidden_arcanus:arcane_crystal"
+					type: "item"
+				}
+			]
+			title: "&c&lWhat the Crystals Want"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41C69551E233AA7F"]
+			description: ["A pale tree with a face. Its wood is the handle of everything here."]
+			id: "3DC258D80F297359"
+			rewards: [
+				{
+					id: "25A058AFF1AB0238"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "04513E49E3A5F276"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "727D1AE4063C8FA0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3C43A8AE67AE519F"
+					item: "forbidden_arcanus:edelwood_log"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3BABC7263F853F49"
+					item: "forbidden_arcanus:edelwood_stick"
+					type: "item"
+				}
+			]
+			title: "Edelwood"
+			x: 2.1d
+			y: -1.75d
+		}
+		{
+			dependencies: ["3DC258D80F297359"]
+			description: ["&7Found in chests: &fAbandoned Mineshaft"]
+			id: "4807A13372B80C1E"
+			rewards: [
+				{
+					id: "5F4730DEB72840BC"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7457C40FE1CC2FC2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "706F66BE053F4E28"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Carries lava, and small animals."
+			tasks: [
+				{
+					id: "1EF36BA21A95F951"
+					item: "forbidden_arcanus:edelwood_bucket"
+					type: "item"
+				}
+			]
+			title: "Edelwood Bucket"
+			x: 3.85d
+			y: -1.75d
+		}
+		{
+			dependencies: ["4807A13372B80C1E"]
+			description: ["&7Made at: &fClibano &7from &fArcane Crystal"]
+			id: "1D7EF38F02D5600F"
+			rewards: [
+				{
+					id: "616ACFA959433A4B"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "61674340D16499AE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7E112D687E495088"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Crush a crystal."
+			tasks: [
+				{
+					count: 4L
+					id: "11790C4B6FC09D7F"
+					item: "forbidden_arcanus:arcane_crystal_dust"
+					type: "item"
+				}
+			]
+			title: "Crystal Dust"
+			x: 5.7d
+			y: -1.75d
+		}
+		{
+			dependencies: ["1D7EF38F02D5600F"]
+			id: "1288EC8D9018F581"
+			rewards: [
+				{
+					id: "1A2B6D47A6D2F0B3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3BBEF722D62FA250"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0BA1766D78E3CA10"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fallen star metal, found in the End and in rare meteor ore."
+			tasks: [
+				{
+					id: "0F8D826ABA478D90"
+					item: "forbidden_arcanus:stellarite_piece"
+					type: "item"
+				}
+			]
+			title: "Stellarite"
+			x: 7.55d
+			y: -1.75d
+		}
+		{
+			dependencies: ["1288EC8D9018F581"]
+			description: ["&7&fRune&7 - Made at: &fClibano &7from &fany runic stones"]
+			id: "46B1B4277A8815E6"
+			rewards: [
+				{
+					id: "39024A0DC79E4DB3"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "6CAC3E338BE4A054"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "379222372DDF836F"
+					table_id: 4147719322908671144L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "00D2F5178E6A51CF"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Runic stone, mined. Dark runes come from the Nether."
+			tasks: [
+				{
+					count: 4L
+					id: "69C56AED132BA9C2"
+					item: "forbidden_arcanus:rune"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "455111C7E1FCF1D9"
+					item: "forbidden_arcanus:dark_rune"
+					type: "item"
+				}
+			]
+			title: "Runes"
+			x: 9.4d
+			y: -1.75d
+		}
+		{
+			dependencies: ["41C69551E233AA7F"]
+			id: "43484D35CD4048C8"
+			rewards: [
+				{
+					id: "61F6E130CEF818E8"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4F01D428FDC44558"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2BE4FA37425DED8D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mined in the deep dark places."
+			tasks: [
+				{
+					count: 32L
+					id: "73C797597757FAA6"
+					item: "forbidden_arcanus:darkstone"
+					type: "item"
+				}
+			]
+			title: "Darkstone"
+			x: 2.1d
+			y: 1.75d
+		}
+		{
+			dependencies: ["43484D35CD4048C8"]
+			description: ["Purifying dust. Use it on a smithing table surrounded by the right darkstone pattern and the table becomes a forge."]
+			id: "64F1563BC224269B"
+			rewards: [
+				{
+					id: "42940DD1D2934EE2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "231731382447F095"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "093AEBE5501AA393"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6A4C2FFD2C5D89CE"
+					item: "forbidden_arcanus:mundabitur_dust"
+					type: "item"
+				}
+			]
+			title: "Mundabitur Dust"
+			x: 3.85d
+			y: 1.75d
+		}
+		{
+			dependencies: ["64F1563BC224269B"]
+			description: ["Check the pattern in JEI: polished darkstone, chiseled corners, the table in the middle."]
+			id: "233787AA04E9E7A7"
+			rewards: [
+				{
+					id: "05A0BFA503CE394E"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "49F12D0A88133685"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F07C1733331FF12"
+					table_id: 4147719322908671144L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "75CC793F8BECC53B"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "741D9F62BE5AD2DC"
+					item: "forbidden_arcanus:hephaestus_forge"
+					type: "item"
+				}
+			]
+			title: "The Hephaestus Forge"
+			x: 5.7d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2EFB0065BCA56421"]
+			id: "22D795F9114391EE"
+			rewards: [
+				{
+					id: "5253F334E16DF9E3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "619DF442ED7E2EAF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2CF7C3E90D17FDC4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Rituals take up to eight ingredients, one per pedestal."
+			tasks: [
+				{
+					count: 8L
+					id: "3614B0E8DE16B049"
+					item: "forbidden_arcanus:darkstone_pedestal"
+					type: "item"
+				}
+			]
+			title: "Pedestals"
+			x: 9.4d
+			y: 1.75d
+		}
+		{
+			dependencies: ["1D1B401A2C417A2A"]
+			id: "3C1C94B449E11B11"
+			rewards: [
+				{
+					id: "1E82CA33A26E7DE0"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3F2D038283A56C57"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "247CB90B7B78DDB4"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pulls souls out of soul sand. The forge is always hungry."
+			tasks: [
+				{
+					id: "37D34E981A1ED5B3"
+					item: "forbidden_arcanus:soul_extractor"
+					type: "item"
+				}
+				{
+					id: "7C654BFE2E9C6D2E"
+					item: "forbidden_arcanus:soul"
+					type: "item"
+				}
+			]
+			title: "Soul Extractor"
+			x: 13.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["3C1C94B449E11B11"]
+			id: "0C44DED2BCE5D03C"
+			rewards: [
+				{
+					id: "28EEAE8B8737379E"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "678FB789E9C2E0A0"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "592B4177B898E246"
+					table_id: 4147719322908671144L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7558B5A37D5E0FF0"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Applied in a smithing table, it makes an item unbreakable."
+			tasks: [
+				{
+					id: "68FB2301BC899E46"
+					item: "forbidden_arcanus:eternal_stella"
+					type: "item"
+				}
+			]
+			title: "Eternal Stella"
+			x: 16.95d
+			y: 1.75d
+		}
+		{
+			dependencies: ["0FF8805E9BA9CF18"]
+			id: "064DD62C771A8053"
+			rewards: [
+				{
+					id: "391DB94A63A7E438"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7BA12EF49774EAC0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1C94EFB15D3B91B0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Strikes the Clibano and the anvil for extra output."
+			tasks: [
+				{
+					id: "35D085110AE38C05"
+					item: "forbidden_arcanus:iron_blacksmith_gavel"
+					type: "item"
+				}
+			]
+			title: "Blacksmith's Gavel"
+			x: 3.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["064DD62C771A8053"]
+			id: "7820DF3D0939A4CD"
+			rewards: [
+				{
+					id: "5E471A64633E1221"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7B49D9350B9FF299"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6620D4B568A4E13C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Gold of the gods. Made in the forge."
+			tasks: [
+				{
+					id: "1080DEDB034E1329"
+					item: "forbidden_arcanus:deorum_ingot"
+					type: "item"
+				}
+			]
+			title: "Deorum"
+			x: 5.7d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7820DF3D0939A4CD"]
+			description: ["&7Made from: &fDark Rune, Dark Matter, Deorum Ingot x2, Edelwood Stick"]
+			id: "698B470DA60C4C3F"
+			rewards: [
+				{
+					id: "4AEDDA7F085112A3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4BEEE8BD14BB7C05"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "453FE337EE0E35D2"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bleeds what it cuts."
+			tasks: [
+				{
+					id: "36F1B16D53266480"
+					item: "forbidden_arcanus:mystical_dagger"
+					type: "item"
+				}
+			]
+			title: "Mystical Dagger"
+			x: 7.55d
+			y: 0.0d
+		}
+		{
+			dependencies: ["698B470DA60C4C3F"]
+			description: ["&7Found in chests: &fEnd City"]
+			id: "6E2D6357AA02B860"
+			rewards: [
+				{
+					id: "176CF73C9336CF13"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6915E656EB54B366"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "73E4655054FB86F5"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Creative flight, for a while."
+			tasks: [
+				{
+					id: "0A6C19A09AF7732F"
+					item: "forbidden_arcanus:orb_of_temporary_flight"
+					type: "item"
+				}
+			]
+			title: "Borrowed Wings"
+			x: 9.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26D36EB29E367301"]
+			id: "6FEDDAC7242896B6"
+			rewards: [
+				{
+					id: "19738AD0D6572489"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7F38E212673EEEB6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "591F60E5E941AB4C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Picks up a creature and puts it down somewhere else."
+			tasks: [
+				{
+					id: "1D7704FDB84FCE81"
+					item: "forbidden_arcanus:quantum_catcher"
+					type: "item"
+				}
+			]
+			title: "Quantum Catcher"
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FEDDAC7242896B6"]
+			id: "302B17C82F75593E"
+			rewards: [
+				{
+					id: "79399750F3A6AB56"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "534E051031A0B6D3"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34004F8BFB42222F"
+					table_id: 4147719322908671144L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2164B0FD2C897ED3"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The forge has a price. Watch the meter."
+			tasks: [
+				{
+					id: "5B8867CDEA4ECA2E"
+					item: "forbidden_arcanus:sanity_meter"
+					type: "item"
+				}
+				{
+					id: "3B280BEBEE1BD0E8"
+					item: "forbidden_arcanus:spectral_eye_amulet"
+					type: "item"
+				}
+			]
+			title: "Sanity"
+			x: 14.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["233787AA04E9E7A7"]
+			description: ["&7Made from: &fDragon Head, Mystical Dagger"]
+			id: "6536AFD96B458416"
+			rewards: [
+				{
+					id: "4B335FA06CEB69FD"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "39629D26CA1D882E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "351FBC6E84209BCB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "From the Ender Dragon."
+			tasks: [
+				{
+					count: 3L
+					id: "77E7E9221953D485"
+					item: "forbidden_arcanus:dragon_scale"
+					type: "item"
+				}
+			]
+			title: "Dragon Scales"
+			x: 7.55d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6536AFD96B458416"]
+			id: "381F13FD44D9EA12"
+			rewards: [
+				{
+					id: "48A913869478D06B"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "6B4D3B7B894489C5"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A2D09971F632907"
+					table_id: 4147719322908671144L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6A0B40E42749E580"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Armour of dragon scale. Forge work."
+			tasks: [
+				{
+					id: "21D8BC4829E35CB3"
+					item: "forbidden_arcanus:draco_arcanus_chestplate"
+					type: "item"
+				}
+			]
+			title: "Draco Arcanus"
+			x: 9.4d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0956DAFE2F4DB7A0"]
+			description: ["&7Made from: &fDark Nether Star, Diamond x2, Draco Arcanus Staff, Obsidian Ingot"]
+			id: "36DF2CEA78A52F66"
+			rewards: [
+				{
+					id: "545BBCCE532233AD"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "01F2B0CE0F9C87AA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6A2E576A6AE6D1F3"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Breathes."
+			tasks: [
+				{
+					id: "47C4C89420226E07"
+					item: "forbidden_arcanus:draco_arcanus_scepter"
+					type: "item"
+				}
+			]
+			title: "The Scepter"
+			x: 13.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["36DF2CEA78A52F66"]
+			id: "1C9F1D787A8D8E45"
+			rewards: [
+				{
+					id: "0567BF70DD0D590E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "25496CB9496D73BA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7C42A4EAFF4F9363"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fire cannot touch whoever carries it."
+			tasks: [
+				{
+					id: "7CF4A959E1688758"
+					item: "forbidden_arcanus:obsidian_skull"
+					type: "item"
+				}
+			]
+			title: "Obsidian Skull"
+			x: 14.85d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1C9F1D787A8D8E45"]
+			id: "57F5137DA0E09C9A"
+			rewards: [
+				{
+					id: "43D61142EC616292"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "726E2DCE3D1C81FC"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07E2E880E1DFE7F7"
+					table_id: 4147719322908671144L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3519026DAC30BD55"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The same, on your arm."
+			tasks: [
+				{
+					id: "66CA9F37C7D44175"
+					item: "forbidden_arcanus:obsidian_skull_shield"
+					type: "item"
+				}
+			]
+			title: "Skull Shield"
+			x: 16.95d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"233787AA04E9E7A7"
+				"0C44DED2BCE5D03C"
+				"381F13FD44D9EA12"
+			]
+			description: ["The forge built, an Eternal Stella made, and Draco Arcanus on your back."]
+			hide_dependency_lines: true
+			id: "0933FBF2BA37E792"
+			rewards: [
+				{
+					id: "057F2E2A84FBD25E"
+					type: "xp"
+					xp: 2500
+				}
+				{
+					id: "104FCB3BE178BC44"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "47CB23FC6F1DBE3B"
+					table_id: 4147719322908671144L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0DCCE2206029E32E"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7DD8A47B16DC4DB3"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "4E4D9FEE7E4DBB24"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&c&lForbidden No Longer"
+			x: 19.3d
+			y: 1.83d
+		}
+		{
+			dependencies: ["233787AA04E9E7A7"]
+			description: [
+				"Darkstone is dug up underground. Polished, it is the floor the &eHephaestus Forge&f stands on and the stuff its pedestals are cut from."
+				"&7Made at: &fStonecutter &7from &fDarkstone"
+			]
+			id: "2EFB0065BCA56421"
+			rewards: [
+				{
+					id: "2AFDD8C379A680E5"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "73FF3A393DF1A55F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "580A853919B15A66"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "7F48ED685B4642DF"
+					item: "forbidden_arcanus:polished_darkstone"
+					type: "item"
+				}
+			]
+			title: "Polished Darkstone"
+			x: 7.55d
+			y: 1.75d
+		}
+		{
+			dependencies: ["41C69551E233AA7F"]
+			description: ["A head with no handle yet. Fit it to one in whatever metal you can afford: better metal, more uses."]
+			id: "0FF8805E9BA9CF18"
+			rewards: [
+				{
+					id: "25BC151941B593D3"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "235F6DB66F3CDED3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "51969A897893C319"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7724E05334D1ECAA"
+					item: "forbidden_arcanus:blacksmith_gavel_head"
+					type: "item"
+				}
+			]
+			title: "A Gavel Head"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["381F13FD44D9EA12"]
+			description: ["A Nether Star set in obsidian ingots. It is the price of the mod's last tier - and it means another Wither."]
+			id: "0956DAFE2F4DB7A0"
+			rewards: [
+				{
+					id: "19241CBBAEFE8FE5"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5B12AC417FE70491"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0782605CFFC3F464"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "04F2142A06662AF5"
+					item: "forbidden_arcanus:dark_nether_star"
+					type: "item"
+				}
+			]
+			title: "A Dark Nether Star"
+			x: 11.25d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6E2D6357AA02B860"]
+			description: ["Break a monster spawner and pieces of its cage fall out. The cage that holds a soul is made from the cage that used to make them."]
+			id: "26D36EB29E367301"
+			rewards: [
+				{
+					id: "642BF02FD9426FCE"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "017EBFE4CF296AD8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "45FE30A9ECA68779"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "23714C43CA74BE3F"
+					item: "forbidden_arcanus:spawner_scrap"
+					type: "item"
+				}
+			]
+			title: "Spawner Scrap"
+			x: 11.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22D795F9114391EE"]
+			description: ["Clear glass on an edelwood base. Things from this mod that have to be &okept&f - a pixie, a soul's essence - are kept in one."]
+			id: "1D1B401A2C417A2A"
+			rewards: [
+				{
+					id: "32452582F7E92B3A"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "27D5D992B066B282"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "08D8AE612224204F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "77231AEA1AF942C7"
+					item: "forbidden_arcanus:utrem_jar"
+					type: "item"
+				}
+			]
+			title: "An Utrem Jar"
+			x: 11.25d
+			y: 1.75d
+		}
+	]
+	subtitle: ["A forge that eats souls and gives back wonders"]
+	title: "&cForbidden \\& Arcanus"
+}

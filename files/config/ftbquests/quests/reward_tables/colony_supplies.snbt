@@ -1,0 +1,68 @@
+{
+	icon: "minecolonies:supplychestdeployer"
+	id: "332557FFF407D78E"
+	loot_size: 1
+	order_index: 35
+	rewards: [
+		{
+			count: 32
+			item: "minecraft:oak_log"
+			weight: 4.0f
+		}
+		{
+			count: 64
+			item: "minecraft:cobblestone"
+			weight: 4.0f
+		}
+		{
+			count: 16
+			item: "minecraft:bread"
+			weight: 3.0f
+		}
+		{
+			count: 8
+			item: "minecraft:iron_ingot"
+			weight: 3.0f
+		}
+		{
+			count: 32
+			item: "minecraft:torch"
+			weight: 3.0f
+		}
+		{
+			count: 16
+			item: "minecraft:glass"
+			weight: 2.0f
+		}
+		{
+			count: 12
+			item: "minecraft:white_wool"
+			weight: 2.0f
+		}
+		{
+			count: 16
+			item: "minecraft:coal"
+			weight: 3.0f
+		}
+		{
+			count: 16
+			item: "minecraft:baked_potato"
+			weight: 2.0f
+		}
+		{
+			count: 16
+			item: "minecraft:ladder"
+			weight: 2.0f
+		}
+		{
+			count: 16
+			item: "minecraft:clay_ball"
+		}
+		{
+			count: 3
+			item: "coinsje:iron_coin"
+			weight: 2.0f
+		}
+	]
+	title: "Colony Supplies"
+}

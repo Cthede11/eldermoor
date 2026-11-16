@@ -1,0 +1,2012 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "478F493742D3F387"
+	icon: "sophisticatedstorage:controller"
+	id: "14CACE5A6936EDCA"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1C63C68C2EB905D3"]
+			description: [
+				"Eldermoor throws a lot of loot at you. This chapter walks up the storage ladder:"
+				""
+				"&aBackpacks&f -> &eTiered chests \\& barrels&f -> &6Drawers&f for bulk -> a &bterminal&f that searches all of it -> and finally &dApplied Energistics&f in the Mechanical chapters."
+				""
+				"Tip: middle-click sorts any inventory."
+			]
+			hide_until_deps_complete: true
+			id: "42BD2A5B78AEC5E2"
+			rewards: [
+				{
+					id: "6039748147420C76"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 32
+					id: "328DEBB0F56A5A58"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "61A90B5631EB062C"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 250"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "0B1D554D9341771D"
+					silent: true
+					title: "+250 Building experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "The Hoarder's path"
+			tasks: [
+				{
+					count: 4L
+					id: "179E355C62524922"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			title: "&6Too Much Loot"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42BD2A5B78AEC5E2"]
+			description: ["Wear it in the chest slot or a Curios back slot and open it with &eB&f. It keeps its contents when placed in the world too."]
+			id: "1F2B55B4BEA95DA8"
+			rewards: [
+				{
+					id: "111DF7ACBCCC7703"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 4
+					id: "0E67873900A4363C"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6FA2CC5E3C85A349"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "2C1DA3B00F55E24E"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Carry more"
+			tasks: [
+				{
+					id: "6E3A25EBBF7510DD"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+			]
+			title: "Backpack"
+			x: 1.85d
+			y: -2.31d
+		}
+		{
+			dependencies: ["1F2B55B4BEA95DA8"]
+			description: ["Upgrades slot into the left side of the backpack. &ePickup&f sends matching drops straight into the pack."]
+			id: "2CAB47DEBF503890"
+			rewards: [
+				{
+					id: "0495B31B0C50BA3A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "1C282BD4E7EDE697"
+					item: "sophisticatedbackpacks:upgrade_base"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "07BCE40D9C18B88B"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1140EA14DC1D5291"
+					item: "sophisticatedbackpacks:upgrade_base"
+					type: "item"
+				}
+				{
+					id: "4D11E15DB93DD459"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+			]
+			title: "Backpack Upgrades"
+			x: 4.1d
+			y: -6.25d
+		}
+		{
+			dependencies: ["2CAB47DEBF503890"]
+			description: ["Pull items toward you, and eat automatically from the pack when hungry. Adventuring quality-of-life at its finest."]
+			id: "6DC2CCB6774C2BB6"
+			optional: true
+			rewards: [
+				{
+					id: "574CC739391A20EB"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "6D245912D699080E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "356F9BBF73F06F63"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "68450D6E0351CADC"
+					item: "sophisticatedbackpacks:magnet_upgrade"
+					type: "item"
+				}
+				{
+					id: "61C52F5BC87050E0"
+					item: "sophisticatedbackpacks:feeding_upgrade"
+					type: "item"
+				}
+			]
+			title: "Magnet \\& Feeding"
+			x: 7.1d
+			y: -13.37d
+		}
+		{
+			dependencies: ["2CAB47DEBF503890"]
+			description: ["Stack upgrades multiply slot capacity. Void upgrades delete the cobblestone you never wanted."]
+			id: "328D8FD4F3B89C4F"
+			optional: true
+			rewards: [
+				{
+					id: "720B7800FD64CD83"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "3401243118B589FE"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "00ECED2588F89EE8"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5CB96B0609F7DE74"
+					item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+					type: "item"
+				}
+				{
+					id: "1F0D83A7E47D0BEE"
+					item: "sophisticatedbackpacks:void_upgrade"
+					type: "item"
+				}
+			]
+			title: "Stack \\& Void"
+			x: 7.1d
+			y: -10.37d
+		}
+		{
+			dependencies: ["2CAB47DEBF503890"]
+			description: ["A crafting grid inside the backpack. There are also smelting, stonecutter, anvil, jukebox and tank upgrades."]
+			id: "6EB6E66DC3865637"
+			optional: true
+			rewards: [
+				{
+					id: "323EB80035593998"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "2F09958DC03547EA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "2DE61FCCA522BB04"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "16033CCFEE641CA9"
+					item: "sophisticatedbackpacks:crafting_upgrade"
+					type: "item"
+				}
+			]
+			title: "Workshop on your Back"
+			x: 7.1d
+			y: -8.62d
+		}
+		{
+			dependencies: ["1F2B55B4BEA95DA8"]
+			description: ["Put the tier below in the middle of a crafting grid and surround it with the metal. Everything inside it, and every upgrade, comes along."]
+			id: "6BF2607310EAEA1B"
+			rewards: [
+				{
+					id: "332E9145CC9C6A2B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "47B77556C58B44B9"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "22C33FF4D759CAB8"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "More rows, more upgrade slots"
+			tasks: [
+				{
+					id: "1AB4759016C7DEC3"
+					item: "sophisticatedbackpacks:iron_backpack"
+					type: "item"
+				}
+			]
+			title: "Iron Backpack"
+			x: 4.1d
+			y: -2.12d
+		}
+		{
+			dependencies: ["6BF2607310EAEA1B"]
+			description: ["Put the tier below in the middle of a crafting grid and surround it with the metal. Everything inside it, and every upgrade, comes along."]
+			id: "05887A30B273D5B2"
+			rewards: [
+				{
+					id: "04F9843217C14D58"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "5D2B93197B31E75E"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "130D331FB064F019"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bigger again"
+			tasks: [
+				{
+					id: "7BD0CB7AC1902E9D"
+					item: "sophisticatedbackpacks:gold_backpack"
+					type: "item"
+				}
+			]
+			title: "Gold Backpack"
+			x: 7.1d
+			y: -2.12d
+		}
+		{
+			dependencies: ["05887A30B273D5B2"]
+			description: [
+				"Put the tier below in the middle of a crafting grid and surround it with the metal. Everything inside it, and every upgrade, comes along."
+				"Netherite is the tier after this one, at a smithing table."
+			]
+			id: "2919F182A3AE5B78"
+			rewards: [
+				{
+					id: "5C71753C370E5E24"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "5252D188271E5462"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3EC2BE82F52B0E80"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "2E9D0B7F59FF3846"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last tier you can craft in a grid"
+			tasks: [
+				{
+					id: "6ADD39F9B2486AEB"
+					item: "sophisticatedbackpacks:diamond_backpack"
+					type: "item"
+				}
+			]
+			title: "Diamond Backpack"
+			x: 8.85d
+			y: -2.12d
+		}
+		{
+			dependencies: ["2919F182A3AE5B78"]
+			description: ["&7Made at: &fSmithing Table &7from &fNetherite Ingot, Diamond Backpack, Netherite Upgrade Smithing Template"]
+			id: "6D66BFA33EBED820"
+			rewards: [
+				{
+					id: "6CD1802452A3A4D9"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 2
+					id: "745F1112D7502564"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "016307ED2BF515FA"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s building 100"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "3CCDD686E8C3DE57"
+					silent: true
+					title: "+100 Building experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "120 slots, 7 upgrades"
+			tasks: [
+				{
+					id: "637C4598F29F3B9A"
+					item: "sophisticatedbackpacks:netherite_backpack"
+					type: "item"
+				}
+			]
+			title: "Netherite Backpack"
+			x: 10.6d
+			y: -2.12d
+		}
+		{
+			dependencies: ["42BD2A5B78AEC5E2"]
+			description: ["Sophisticated Storage chests, barrels and shulker boxes look vanilla but take the same upgrades as backpacks and can be dyed and upgraded in place."]
+			id: "2CF9112637B76325"
+			rewards: [
+				{
+					id: "1D1FA67D7F4ACE3B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 16
+					id: "4EF7BD5EE24B2FB3"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4F7EAEAA2F31C1C5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "513BC22E6D4FB8FA"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sophisticated Storage"
+			tasks: [
+				{
+					id: "3FB2225434CF2546"
+					item: "sophisticatedstorage:chest"
+					type: "item"
+				}
+				{
+					id: "043BA16A976038F4"
+					item: "sophisticatedstorage:barrel"
+					type: "item"
+				}
+			]
+			title: "Better Chests"
+			x: 1.85d
+			y: 6.07d
+		}
+		{
+			dependencies: ["2CF9112637B76325"]
+			description: ["Right-click a placed chest with a tier upgrade to grow it without emptying it. Wood -> Copper -> Iron -> Gold -> Diamond -> Netherite."]
+			id: "21BA7AC70C64BE3B"
+			rewards: [
+				{
+					id: "366A33EFCE20561B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "2DB9A5B7ECE25BD8"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "650307024B926BAC"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "30D4135F18BC0D7F"
+					item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+					type: "item"
+				}
+			]
+			title: "Tier Upgrades"
+			x: 4.1d
+			y: 2.88d
+		}
+		{
+			dependencies: ["21BA7AC70C64BE3B"]
+			description: [
+				"Copper, iron, gold, diamond, netherite: each tier of chest, barrel and shulker box holds more and takes more upgrades."
+				"A &eTier Upgrade&f item used on a placed chest upgrades it where it stands, so nothing has to be emptied first."
+			]
+			id: "2DE5027CCA3503FD"
+			rewards: [
+				{
+					id: "3AA7DE074E7A1C35"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "207AC6BF48E0D4E8"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "38CBB3FD02186103"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "6340D947B27E779D"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Chests come in tiers too"
+			tasks: [
+				{
+					id: "5B344280CEDD603E"
+					item: "sophisticatedstorage:diamond_chest"
+					type: "item"
+				}
+			]
+			title: "Diamond Chest"
+			x: 7.1d
+			y: 2.88d
+		}
+		{
+			dependencies: ["2CF9112637B76325"]
+			description: ["Hold a huge amount of 1-4 item types and show them on the front. Click to insert, punch to extract."]
+			id: "62C26295D5A22BE2"
+			optional: true
+			rewards: [
+				{
+					id: "79D627C119F6FC15"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "276166D1942801FC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "6597CAC0CD4C84AC"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2B570719232CB4D7"
+					item: "sophisticatedstorage:limited_barrel_1"
+					type: "item"
+				}
+			]
+			title: "Limited Barrels"
+			x: 4.1d
+			y: 8.51d
+		}
+		{
+			dependencies: ["1CFAF51EB05C8A9C"]
+			id: "0D30D01D2AEDA315"
+			optional: true
+			rewards: [
+				{
+					id: "1A9376B7091C3400"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "42E738F69E0E758A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "7CFAE4BFFCBCC912"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Auto-converts nuggets, ingots and blocks inside one container."
+			tasks: [
+				{
+					id: "7F8FA793258F4A56"
+					item: "sophisticatedstorage:compression_upgrade"
+					type: "item"
+				}
+			]
+			title: "Compression Upgrade"
+			x: 8.85d
+			y: 6.38d
+		}
+		{
+			dependencies: ["2DE5027CCA3503FD"]
+			description: [
+				"Touching (or linked) Sophisticated containers become one big inventory. Shift-right-click the controller with a stack to deposit it into whichever chest already holds that item."
+				""
+				"Point a hopper, pipe, Create funnel or AE2 Storage Bus at the controller to reach everything."
+			]
+			id: "54A1B50BF448A601"
+			rewards: [
+				{
+					id: "767D2749249F2DF7"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 4
+					id: "453E843F1F171679"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3DFDB1E0886D27D5"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s building 100"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "320BEF1F5E69C1EE"
+					silent: true
+					title: "+100 Building experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "One block to reach them all"
+			tasks: [
+				{
+					id: "51E7605D919C6CBE"
+					item: "sophisticatedstorage:controller"
+					type: "item"
+				}
+				{
+					id: "14DE95338FBA8439"
+					item: "sophisticatedstorage:storage_link"
+					type: "item"
+				}
+			]
+			title: "&6Storage Controller"
+			x: 8.85d
+			y: 2.88d
+		}
+		{
+			dependencies: ["54A1B50BF448A601"]
+			description: ["Links far-away containers to a controller, locks slots and toggles the count display."]
+			id: "39588CA85FC0BCF5"
+			optional: true
+			rewards: [
+				{
+					id: "16E1EEEFDA2AF144"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "29727F37AABE1A60"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "7C17A6B9243F4156"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "171F2076371CD3DB"
+					item: "sophisticatedstorage:storage_tool"
+					type: "item"
+				}
+			]
+			title: "Storage Tool"
+			x: 10.6d
+			y: 2.88d
+		}
+		{
+			dependencies: ["42BD2A5B78AEC5E2"]
+			description: [
+				"One item type per drawer, 32 stacks deep, with the item shown on the front. Perfect for cobble, ores, seeds and mob drops."
+				""
+				"Right-click to insert, double-right-click to dump your whole inventory's worth, punch to take a stack."
+			]
+			id: "7C82CBA06ED42C4D"
+			rewards: [
+				{
+					id: "106F04EBD87E0C5C"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 32
+					id: "79D17924171E7595"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4EFC549124D133E6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "0EC0EA7C0626D5CC"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bulk storage"
+			tasks: [
+				{
+					id: "07E0E9D65C547A6B"
+					item: "storagedrawers:oak_full_drawers_1"
+					type: "item"
+				}
+				{
+					id: "45CAD762A1F84FDA"
+					item: "storagedrawers:oak_full_drawers_4"
+					type: "item"
+				}
+			]
+			title: "Storage Drawers"
+			x: 1.85d
+			y: -0.63d
+		}
+		{
+			dependencies: ["7C82CBA06ED42C4D"]
+			description: ["Storage upgrades multiply capacity. The Void upgrade destroys overflow - ideal on a mob farm."]
+			id: "4744E4AD209C5680"
+			rewards: [
+				{
+					id: "025E949AA5501660"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 8
+					id: "5A412B584B25E8B2"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "672E53B733224C64"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "227BE46C37389D2E"
+					item: "storagedrawers:upgrade_template"
+					type: "item"
+				}
+				{
+					id: "25F6DF85457CA974"
+					item: "storagedrawers:iron_storage_upgrade"
+					type: "item"
+				}
+			]
+			title: "Drawer Upgrades"
+			x: 4.1d
+			y: -0.63d
+		}
+		{
+			dependencies: ["4744E4AD209C5680"]
+			description: ["Stores nuggets, ingots and blocks as a single pool and lets you take any form."]
+			id: "52757F4B84E675DA"
+			rewards: [
+				{
+					id: "44530EF760CE276F"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 16
+					id: "35AE2BA1DC18D477"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "5BFBBAF6FAC7B331"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "602A9082974E6BC0"
+					item: "storagedrawers:compacting_drawers_3"
+					type: "item"
+				}
+			]
+			title: "Compacting Drawer"
+			x: 7.1d
+			y: -0.63d
+		}
+		{
+			dependencies: ["52757F4B84E675DA"]
+			description: ["Connects every drawer within 50 blocks. Double-right-click the controller to sort your inventory into the wall. Pipe into it to automate."]
+			id: "2D87556CA5752DF8"
+			rewards: [
+				{
+					id: "58DE0037F08D30DC"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 4
+					id: "1BCB561865565C21"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "37F94A8080A135ED"
+					table_id: 162941360134059119L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s building 100"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "0FAA04A1AF85C979"
+					silent: true
+					title: "+100 Building experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "A wall you can talk to"
+			tasks: [
+				{
+					id: "0BB563757F284DF2"
+					item: "storagedrawers:controller"
+					type: "item"
+				}
+			]
+			title: "&6Drawer Controller"
+			x: 8.85d
+			y: -0.63d
+		}
+		{
+			dependencies: ["2D87556CA5752DF8"]
+			id: "465427B991151273"
+			optional: true
+			rewards: [
+				{
+					id: "07E2459CB86EEDA3"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 6
+					id: "08535CCE69660848"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "701EC59F5F02812B"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Locks a drawer to its item so it stays reserved when empty."
+			tasks: [
+				{
+					id: "06AB530EEF4B1543"
+					item: "storagedrawers:drawer_key"
+					type: "item"
+				}
+			]
+			title: "Drawer Key"
+			x: 10.6d
+			y: -0.63d
+		}
+		{
+			dependencies: [
+				"54A1B50BF448A601"
+				"2D87556CA5752DF8"
+			]
+			dependency_requirement: "one_completed"
+			description: ["&eTom's Simple Storage&f. An Inventory Connector links &oevery&f inventory touching it or each other - vanilla chests, Sophisticated chests, drawers, the lot. No power, no channels."]
+			id: "11A3A039F17BD3A2"
+			rewards: [
+				{
+					id: "30C5D9D4FA6811A6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "6B14A028ACEB6751"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "5CBA5B7FD1693D40"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Tom's Simple Storage"
+			tasks: [
+				{
+					id: "2A0DA28D95E8A103"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+			]
+			title: "Inventory Connector"
+			x: 10.6d
+			y: 0.88d
+		}
+		{
+			dependencies: ["11A3A039F17BD3A2"]
+			description: ["Place it on the connector or any linked chest: one searchable, sortable screen for the whole storage room."]
+			id: "0EF58A4A6B7D006E"
+			rewards: [
+				{
+					id: "71635A77AC2B1DB7"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 3
+					id: "0A43C50D9D48E916"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 100"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "7A6A5DEB771EACD4"
+					silent: true
+					title: "+100 Building experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Search everything"
+			tasks: [
+				{
+					id: "53E1BF059A4EC0FD"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+			]
+			title: "&6Storage Terminal"
+			x: 12.35d
+			y: 0.88d
+		}
+		{
+			dependencies: ["0EF58A4A6B7D006E"]
+			description: ["Adds a crafting grid that pulls from storage. JEI's + button works."]
+			id: "312D8EDB53A56688"
+			rewards: [
+				{
+					id: "49D8B54A09167BA9"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 3
+					id: "614D5810DF02FF30"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "58A8400ADEEED31D"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7989B83D13279E81"
+					item: "toms_storage:ts.crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "Crafting Terminal"
+			x: 14.1d
+			y: 0.88d
+		}
+		{
+			dependencies: ["0EF58A4A6B7D006E"]
+			description: ["Cables extend the network through walls; the Wireless Terminal opens it from 16 blocks away (further with a beacon)."]
+			id: "58287367BBDFD68E"
+			optional: true
+			rewards: [
+				{
+					id: "39AC7C14C6AF014A"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 3
+					id: "05719507F3D4CC78"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "6321157B03F03F3D"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "7D2954E2D9BBDB87"
+					item: "toms_storage:ts.inventory_cable"
+					type: "item"
+				}
+				{
+					id: "3BA02C5A034621AC"
+					item: "toms_storage:ts.wireless_terminal"
+					type: "item"
+				}
+			]
+			title: "Cables \\& Wireless"
+			x: 14.1d
+			y: 2.37d
+		}
+		{
+			dependencies: [
+				"312D8EDB53A56688"
+				"2919F182A3AE5B78"
+			]
+			description: [
+				"Everything has a place and you can find it in seconds."
+				""
+				"Outgrown it? &dApplied Energistics 2&f (The Mechanical) adds auto-crafting, and a MineColonies &aWarehouse&f keeps a whole town supplied."
+			]
+			id: "71B07B9C54F18302"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7C4823D8DCF83D40"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "14CD92F6FC78937A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					id: "34A88E2DDAA99534"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+				{
+					command: "/mastery xp @s building 160"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "4BEC12B904194743"
+					silent: true
+					title: "+160 Building experience"
+					type: "command"
+				}
+				{
+					command: "/mastery xp @s building 250"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "12EC8610AC3CF3A6"
+					silent: true
+					title: "+250 Building experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 1.75d
+			subtitle: "Chapter complete"
+			tasks: [
+				{
+					id: "132F4E66DC9A3CA8"
+					title: "Onward!"
+					type: "checkmark"
+				}
+			]
+			title: "&6&lQuartermaster"
+			x: 16.07d
+			y: 0.88d
+		}
+		{
+			dependencies: ["62C26295D5A22BE2"]
+			description: [
+				"A blank. Every chest and barrel upgrade - pickup, filter, compacting, void, stack - is this plus one or two ordinary things."
+				"Backpacks have their own base, made the same way with leather and string."
+			]
+			id: "1CFAF51EB05C8A9C"
+			optional: true
+			rewards: [
+				{
+					id: "25D58DAA0EA99468"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "25B1EDF240250CFC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "48C5502F77C60838"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "535DBDF1D9261D73"
+					item: "sophisticatedstorage:upgrade_base"
+					type: "item"
+				}
+			]
+			title: "Upgrade Bases"
+			x: 7.1d
+			y: 8.51d
+		}
+		{
+			dependencies: ["6DC2CCB6774C2BB6"]
+			description: ["Feeds you from the backpack when you are hungry, with filters so it only uses the food you choose."]
+			id: "058903ED6AAE63A4"
+			optional: true
+			rewards: [
+				{
+					id: "5C834E8FCB837DFA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2B457DDA5AC6CFD6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "267F26DAE0C074BB"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Eat without thinking"
+			tasks: [
+				{
+					id: "32714FEEF89BA135"
+					item: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					type: "item"
+				}
+			]
+			title: "Advanced Feeding"
+			x: 8.85d
+			y: -13.37d
+		}
+		{
+			dependencies: ["1F2B55B4BEA95DA8"]
+			description: ["A backpack with more slots and more upgrade slots. Each metal tier adds more."]
+			id: "4CA073EC4A0C14F3"
+			optional: true
+			rewards: [
+				{
+					id: "5CD4F8E298D3A1DE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "52AA0193087A29A5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "117AF911CDA6CE35"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "More room on your back"
+			tasks: [
+				{
+					id: "761F8AE8F89DDF82"
+					item: "sophisticatedbackpacks:copper_backpack"
+					type: "item"
+				}
+			]
+			title: "The Copper Backpack"
+			x: 4.1d
+			y: -3.63d
+		}
+		{
+			dependencies: ["2CAB47DEBF503890"]
+			description: ["Packs items into their block form as they arrive: nine ingots into a block, and so on. Saves a lot of room."]
+			id: "33BD30F635A88722"
+			optional: true
+			rewards: [
+				{
+					id: "3B762066F116328F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7EFDACCEAB15D2D2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "7B26C8C78DCD4AAB"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ingots into blocks, on the go"
+			tasks: [
+				{
+					id: "0CE14E6493C77578"
+					item: "sophisticatedbackpacks:advanced_compacting_upgrade"
+					type: "item"
+				}
+			]
+			title: "Advanced Compacting"
+			x: 8.7d
+			y: -8.87d
+		}
+		{
+			dependencies: ["1CFAF51EB05C8A9C"]
+			description: ["Limits which items pipes and hoppers can put into or take out of the backpack, with more options than the basic filter."]
+			id: "4FE19E403E5F91C7"
+			optional: true
+			rewards: [
+				{
+					id: "6EE448987194D4B2"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "19225B86CCAE9872"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "2DF15E6E1DAE929E"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Control what goes in"
+			tasks: [
+				{
+					id: "596C0D5C6564D8C7"
+					item: "sophisticatedbackpacks:advanced_filter_upgrade"
+					type: "item"
+				}
+			]
+			title: "Advanced Filter"
+			x: 10.45d
+			y: 5.88d
+		}
+		{
+			dependencies: ["2CAB47DEBF503890"]
+			description: ["Keeps chosen stacks in your inventory topped up from the backpack, and can put them in a set slot."]
+			id: "255EEF6BC92D9728"
+			optional: true
+			rewards: [
+				{
+					id: "442B17426A3E054F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "609639AAC055B2A7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "228BCB131A01CC10"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Never run out"
+			tasks: [
+				{
+					id: "3478CD3B86007376"
+					item: "sophisticatedbackpacks:advanced_refill_upgrade"
+					type: "item"
+				}
+			]
+			title: "Advanced Refill"
+			x: 8.7d
+			y: -7.37d
+		}
+		{
+			dependencies: ["1CFAF51EB05C8A9C"]
+			description: ["Smelts ores and metal items inside the backpack, automatically."]
+			id: "659058F27580520A"
+			optional: true
+			rewards: [
+				{
+					id: "265D70B85F375FAA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6DB7F76C50E21E42"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "724AC4CC7FE6CE2E"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "A blast furnace you carry"
+			tasks: [
+				{
+					id: "1CBC3BF503118826"
+					item: "sophisticatedbackpacks:auto_blasting_upgrade"
+					type: "item"
+				}
+			]
+			title: "Auto-Blasting"
+			x: 10.45d
+			y: 7.13d
+		}
+		{
+			dependencies: ["1CFAF51EB05C8A9C"]
+			description: ["Cooks food inside the backpack, pulling from and putting back into its slots on its own."]
+			id: "4433770BF83D2E09"
+			optional: true
+			rewards: [
+				{
+					id: "276A4471F452AB84"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4F29957F2D8FF639"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "35020ABA28A58B9E"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "A smoker you carry"
+			tasks: [
+				{
+					id: "08FF89B7CF34B6F0"
+					item: "sophisticatedbackpacks:auto_smoking_upgrade"
+					type: "item"
+				}
+			]
+			title: "Auto-Smoking"
+			x: 10.45d
+			y: 8.38d
+		}
+		{
+			dependencies: ["2CF9112637B76325"]
+			description: ["Use it on a placed Sophisticated chest or barrel to raise it a tier. The contents stay inside."]
+			id: "79D456155BD60554"
+			optional: true
+			rewards: [
+				{
+					id: "16B17350934CE1B0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "590A0716A3482D18"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "4BB7358C05E89247"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bigger without emptying"
+			tasks: [
+				{
+					id: "7DD3D99D5D4FE881"
+					item: "sophisticatedstorage:basic_to_copper_tier_upgrade"
+					type: "item"
+				}
+			]
+			title: "Upgrading Storage"
+			x: 4.1d
+			y: 4.38d
+		}
+		{
+			dependencies: ["79D456155BD60554"]
+			description: ["Raises a copper-tier container to iron."]
+			id: "6708450C417EC948"
+			optional: true
+			rewards: [
+				{
+					id: "0CD66F1BE7E44328"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "08DD15D6F121C233"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "30AB08822850FA21"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "The next tier"
+			tasks: [
+				{
+					id: "48CEE7C47D11F077"
+					item: "sophisticatedstorage:copper_to_iron_tier_upgrade"
+					type: "item"
+				}
+			]
+			title: "Copper to Iron"
+			x: 7.1d
+			y: 4.38d
+		}
+		{
+			dependencies: ["6708450C417EC948"]
+			description: ["Raises an iron-tier container to gold."]
+			id: "31C8DC7A793C4B81"
+			optional: true
+			rewards: [
+				{
+					id: "3AF0B90B4455600A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "58AE69B5C61EE75B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "790B725CACEE6AD2"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "And the next"
+			tasks: [
+				{
+					id: "24EDA4460BDD7C2A"
+					item: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+					type: "item"
+				}
+			]
+			title: "Iron to Gold"
+			x: 8.85d
+			y: 4.38d
+		}
+		{
+			dependencies: ["31C8DC7A793C4B81"]
+			description: ["Raises a gold-tier container to diamond."]
+			id: "3EF69D7B2FBC1EF1"
+			optional: true
+			rewards: [
+				{
+					id: "7D7EF88C8600C7B1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "033EFB51CD729FC4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "5C70C28144E21254"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Nearly the top"
+			tasks: [
+				{
+					id: "47ACFE0C6F642058"
+					item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+					type: "item"
+				}
+			]
+			title: "Gold to Diamond"
+			x: 10.6d
+			y: 4.38d
+		}
+		{
+			dependencies: ["3EF69D7B2FBC1EF1"]
+			description: ["Raises a diamond-tier container to netherite, the largest there is."]
+			id: "7ACFC52F2635E497"
+			optional: true
+			rewards: [
+				{
+					id: "4A7BBABD9773BCA3"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4D9ABD8FA790846F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "21A985C4AEDC6F33"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "The last tier"
+			tasks: [
+				{
+					id: "130BB52302D56507"
+					item: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+					type: "item"
+				}
+			]
+			title: "Diamond to Netherite"
+			x: 12.35d
+			y: 4.38d
+		}
+		{
+			dependencies: ["2CAB47DEBF503890"]
+			description: ["The backpack cannot be destroyed, cannot despawn and cannot fall into the void."]
+			id: "681279BC745A6CCA"
+			optional: true
+			rewards: [
+				{
+					id: "304DD2127126D198"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "61826F3AA19B0C5B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "54BC7923FFF15FBF"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "It cannot be lost"
+			tasks: [
+				{
+					id: "3E0916FE9C2F8DD9"
+					item: "sophisticatedbackpacks:everlasting_upgrade"
+					type: "item"
+				}
+			]
+			title: "The Everlasting Upgrade"
+			x: 7.1d
+			y: -6.37d
+		}
+		{
+			dependencies: ["2CAB47DEBF503890"]
+			description: ["Lets you store backpacks inside this one, and the upgrades of the inner ones still work."]
+			id: "27F0C87010BE627F"
+			optional: true
+			rewards: [
+				{
+					id: "33B7590ADE146D44"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "76C36A5A8952356E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "290C37E5C3E4B76A"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Backpacks in backpacks"
+			tasks: [
+				{
+					id: "15AAA0B9A3407D1E"
+					item: "sophisticatedbackpacks:inception_upgrade"
+					type: "item"
+				}
+			]
+			title: "The Inception Upgrade"
+			x: 8.7d
+			y: -5.37d
+		}
+		{
+			dependencies: ["6DC2CCB6774C2BB6"]
+			description: ["Draws dropped items and experience into the backpack from a wider range, with filters."]
+			id: "1EC19FB2A40B2A78"
+			optional: true
+			rewards: [
+				{
+					id: "30F1542440FFB5E0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "44729B70606306C9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "686647D9AC2AD5E1"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pull items in from further"
+			tasks: [
+				{
+					id: "31C2C2373274D4F0"
+					item: "sophisticatedbackpacks:advanced_magnet_upgrade"
+					type: "item"
+				}
+			]
+			title: "Advanced Magnet"
+			x: 8.85d
+			y: -11.86d
+		}
+		{
+			dependencies: ["2CAB47DEBF503890"]
+			description: ["Swaps the tool in your hand for whichever one in the backpack works best on the block or creature in front of you."]
+			id: "76F17D832892A9CF"
+			optional: true
+			rewards: [
+				{
+					id: "30833F4659868CCA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "19D71BB2EE7E1E86"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "2987105DF34CC59C"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "The right tool, every time"
+			tasks: [
+				{
+					id: "42695100554C0584"
+					item: "sophisticatedbackpacks:advanced_tool_swapper_upgrade"
+					type: "item"
+				}
+			]
+			title: "Advanced Tool Swapper"
+			x: 7.1d
+			y: -4.87d
+		}
+		{
+			dependencies: ["2CF9112637B76325"]
+			description: ["A Sophisticated chest at iron tier: more slots, and room for upgrades."]
+			id: "70880A3C73393CCE"
+			optional: true
+			rewards: [
+				{
+					id: "79F2865B0097AA8F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "71AEA8878321B767"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "3ACE6CA029C92D45"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "A bigger chest"
+			tasks: [
+				{
+					id: "7E085C93F7D10E20"
+					item: "sophisticatedstorage:iron_chest"
+					type: "item"
+				}
+			]
+			title: "The Iron Chest"
+			x: 4.1d
+			y: 5.89d
+		}
+		{
+			dependencies: ["328D8FD4F3B89C4F"]
+			description: ["Each slot holds eight times as many items."]
+			id: "18AB1E4AF71E20D8"
+			optional: true
+			rewards: [
+				{
+					id: "07526B84EFEF7954"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3A4426C9C1A3AE8F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "0EA86CD703097324"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Eight stacks per slot"
+			tasks: [
+				{
+					id: "43A9B3BF8BDBDC34"
+					item: "sophisticatedbackpacks:stack_upgrade_tier_3"
+					type: "item"
+				}
+			]
+			title: "Stack Upgrade III"
+			x: 8.85d
+			y: -10.37d
+		}
+		{
+			dependencies: ["2CAB47DEBF503890"]
+			description: ["Pumps experience between you and the backpack's tank. Bank levels before a risky fight."]
+			id: "50852B7985D878EF"
+			optional: true
+			rewards: [
+				{
+					id: "7D25DB21EBD09244"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "53E079FE81197383"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "79E5795D33E1F0D8"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Store your levels"
+			tasks: [
+				{
+					id: "57D3D14A3D03DF0B"
+					item: "sophisticatedbackpacks:xp_pump_upgrade"
+					type: "item"
+				}
+			]
+			title: "The Experience Pump"
+			x: 7.1d
+			y: -3.62d
+		}
+		{
+			dependencies: ["18AB1E4AF71E20D8"]
+			description: ["The next stack upgrade, made with a block of netherite."]
+			id: "46988AFC5FD5405B"
+			optional: true
+			rewards: [
+				{
+					id: "6EB9CB2378B0D7CD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "557D52CFCA5C8A75"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s building 35"
+					elevate_perms: true
+					icon: "minecraft:bricks"
+					id: "4022C00F4D87D12D"
+					silent: true
+					title: "+35 Building experience"
+					type: "command"
+				}
+			]
+			subtitle: "Even more per slot"
+			tasks: [
+				{
+					id: "18E356AFAC8C7A1C"
+					item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+					type: "item"
+				}
+			]
+			title: "Stack Upgrade IV"
+			x: 10.6d
+			y: -10.37d
+		}
+	]
+	subtitle: ["From backpacks to a searchable storage room"]
+	title: "&6A Place for Everything"
+}

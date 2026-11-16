@@ -1,0 +1,1446 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "merchant"
+	group: "09C54E6F60ECE61B"
+	icon: "coinsje:gold_coin"
+	id: "664E07F1808EEBB0"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["735AD0DCBE1A8E8D"]
+			description: [
+				"Each quest on this page is a &etrade&f. Hold the coins, click the task to hand them over, then claim what you bought. Every trade can be repeated as often as you like."
+				""
+				"Rows run from copper at the top to netherite at the bottom."
+				""
+				"&7Nine coins of one kind craft into a pile, and a pile crafts back into nine."
+			]
+			hide_until_deps_complete: true
+			id: "5DFF365D656D9E79"
+			rewards: [
+				{
+					id: "4C2DCCCA0067ABC5"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 9
+					id: "615120D6F4093B86"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s leadership 250"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "7634AE5209F28651"
+					silent: true
+					title: "+250 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "0BB11D146681D54E"
+					title: "Let me see"
+					type: "checkmark"
+				}
+			]
+			title: "&2&lThe Counter"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DFF365D656D9E79"]
+			description: ["The trades on this branch. Each can be bought again and again."]
+			icon: "coinsje:copper_coin"
+			id: "37FA11A112D8392E"
+			rewards: [
+				{
+					id: "04AF8E84A36EB246"
+					type: "xp"
+					xp: 5
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "15896117F500C4CE"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "3212D54F8FCC17B0"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&6The Copper Counter"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37FA11A112D8392E"]
+			description: [
+				"&ePrice:&f 6 copper coins"
+				"&aYou receive:&f 16 x this item"
+			]
+			icon: "minecraft:bread"
+			id: "6D172E0A2C520D62"
+			rewards: [
+				{
+					count: 16
+					id: "26CA0322B889E4F3"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 6L
+					id: "3DDD83C58DF6E9B0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: -2.6d
+			y: -2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37FA11A112D8392E"]
+			description: [
+				"&ePrice:&f 4 copper coins"
+				"&aYou receive:&f 32 x this item"
+			]
+			icon: "minecraft:torch"
+			id: "36B2EF770C05498A"
+			rewards: [
+				{
+					count: 32
+					id: "3B68BAA568079A78"
+					item: "minecraft:torch"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "1AF97BD5A871F2F2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: -1.0d
+			y: -2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37FA11A112D8392E"]
+			description: [
+				"&ePrice:&f 8 copper coins"
+				"&aYou receive:&f 32 x this item"
+			]
+			icon: "minecraft:arrow"
+			id: "3171D26C7C5F973A"
+			rewards: [
+				{
+					count: 32
+					id: "22D96C2DDBD8690B"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "6DCE2489EB4D64C0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 0.6d
+			y: -2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37FA11A112D8392E"]
+			description: [
+				"&ePrice:&f 8 copper coins"
+				"&aYou receive:&f 8 x this item"
+			]
+			icon: "minecraft:cooked_beef"
+			id: "5A979188611C26F6"
+			rewards: [
+				{
+					count: 8
+					id: "756003804214CEAA"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "67D35CC24E0A4951"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 2.2d
+			y: -2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37FA11A112D8392E"]
+			description: [
+				"&ePrice:&f 8 copper coins"
+				"&aYou receive:&f 32 x this item"
+			]
+			icon: "minecraft:oak_log"
+			id: "480C38C224B48BB7"
+			rewards: [
+				{
+					count: 32
+					id: "354295EDDA67CB42"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "7BFDD36A5AAF1535"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 3.8d
+			y: -2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37FA11A112D8392E"]
+			description: [
+				"&ePrice:&f 6 copper coins"
+				"&aYou receive:&f 16 x this item"
+			]
+			icon: "minecraft:bone_meal"
+			id: "4E584651847C0C8A"
+			rewards: [
+				{
+					count: 16
+					id: "00FF82CA8AF3F84A"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 6L
+					id: "38972E0149BB15EA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 5.4d
+			y: -2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37FA11A112D8392E"]
+			description: [
+				"&ePrice:&f 9 copper coins"
+				"&aYou receive:&f 8 x this item"
+			]
+			icon: "minecraft:leather"
+			id: "5D749E34678361D5"
+			rewards: [
+				{
+					count: 8
+					id: "22B478862B752FA1"
+					item: "minecraft:leather"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 9L
+					id: "61F36F67303D8E66"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 7.0d
+			y: -2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["37FA11A112D8392E"]
+			description: [
+				"&ePrice:&f 6 copper coins"
+				"&aYou receive:&f 8 x this item"
+			]
+			icon: "minecraft:string"
+			id: "48F79D774E1FBC81"
+			rewards: [
+				{
+					count: 8
+					id: "0C95E5DB31DFCC4E"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 6L
+					id: "25541305D2026F9B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 8.6d
+			y: -2.89d
+		}
+		{
+			dependencies: ["37FA11A112D8392E"]
+			description: ["The trades on this branch. Each can be bought again and again."]
+			icon: "coinsje:iron_coin"
+			id: "302F0A6C3D50BD28"
+			rewards: [
+				{
+					id: "4D1AA1C4443DA850"
+					type: "xp"
+					xp: 5
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "1E327A3619ADDDBC"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "530556F3A7BB9946"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&7The Iron Counter"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["302F0A6C3D50BD28"]
+			description: [
+				"&ePrice:&f 4 iron coins"
+				"&aYou receive:&f 8 x this item"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "2D7408AC1E4F08DC"
+			rewards: [
+				{
+					count: 8
+					id: "29BE5B41F64C1F91"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "16F4F8E2D703B1AD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 0.4d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["302F0A6C3D50BD28"]
+			description: [
+				"&ePrice:&f 2 iron coins"
+				"&aYou receive:&f 32 x this item"
+			]
+			icon: "minecraft:coal"
+			id: "4C7BB4515909E583"
+			rewards: [
+				{
+					count: 32
+					id: "37BDF93126BE28C1"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "6CC26111720310B7"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 2.0d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["302F0A6C3D50BD28"]
+			description: [
+				"&ePrice:&f 3 iron coins"
+				"&aYou receive:&f 16 x this item"
+			]
+			icon: "minecraft:redstone"
+			id: "530E01A4128CA3B7"
+			rewards: [
+				{
+					count: 16
+					id: "0CC31D9526A02E36"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "3F4056E7CC684955"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 3.6d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["302F0A6C3D50BD28"]
+			description: [
+				"&ePrice:&f 3 iron coins"
+				"&aYou receive:&f 16 x this item"
+			]
+			icon: "minecraft:lapis_lazuli"
+			id: "20ABC4E6C8762417"
+			rewards: [
+				{
+					count: 16
+					id: "18D6243AA90F35D6"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "0733971C4472F8A1"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 5.2d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["302F0A6C3D50BD28"]
+			description: [
+				"&ePrice:&f 6 iron coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "minecraft:saddle"
+			id: "1635719654C14F0F"
+			rewards: [
+				{
+					id: "45C2F24B254EB424"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 6L
+					id: "0B9A3F3672E01868"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 6.8d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["302F0A6C3D50BD28"]
+			description: [
+				"&ePrice:&f 5 iron coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "minecraft:name_tag"
+			id: "7D4EBD43551E80D8"
+			rewards: [
+				{
+					id: "31D7F70F6E3C4C67"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "3510832CD8C50D10"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 8.4d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["302F0A6C3D50BD28"]
+			description: [
+				"&ePrice:&f 6 iron coins"
+				"&aYou receive:&f 8 x this item"
+			]
+			icon: "minecraft:experience_bottle"
+			id: "1F5FD8D73E96E9E8"
+			rewards: [
+				{
+					count: 8
+					id: "4D3DA5E3E4D1EE62"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 6L
+					id: "0B398BAF36C16D68"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 10.0d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["302F0A6C3D50BD28"]
+			description: [
+				"&ePrice:&f 8 iron coins"
+				"&aYou receive:&f 4 x this item"
+			]
+			icon: "minecraft:ender_pearl"
+			id: "7EFDD174597D7C17"
+			rewards: [
+				{
+					count: 4
+					id: "6A82DC711409CE79"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "5FD9B5470D01B58A"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 11.6d
+			y: 2.89d
+		}
+		{
+			dependencies: ["302F0A6C3D50BD28"]
+			description: ["The trades on this branch. Each can be bought again and again."]
+			icon: "coinsje:gold_coin"
+			id: "28AD52D3D2DB86B4"
+			rewards: [
+				{
+					id: "4DA606F287B048F9"
+					type: "xp"
+					xp: 5
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "3975F907BEA662B8"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "51447936C013B4D3"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&eThe Gold Counter"
+			x: 16.6d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: [
+				"&ePrice:&f 4 gold coins"
+				"&aYou receive:&f 2 x this item"
+			]
+			icon: "minecraft:diamond"
+			id: "0AF19F3E5FA335CD"
+			rewards: [
+				{
+					count: 2
+					id: "7120B715C5F8AC96"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "7654919495633780"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 10.2d
+			y: -3.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: [
+				"&ePrice:&f 3 gold coins"
+				"&aYou receive:&f 2 x this item"
+			]
+			icon: "minecraft:golden_apple"
+			id: "1BBB8012BFCE4C53"
+			rewards: [
+				{
+					count: 2
+					id: "3BC23FA43117CFE6"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "010E9CF8AD62252C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 11.8d
+			y: -3.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: [
+				"&ePrice:&f 2 gold coins"
+				"&aYou receive:&f 3 x this item"
+			]
+			icon: "waystones:warp_scroll"
+			id: "3A17444370ACC2FC"
+			rewards: [
+				{
+					count: 3
+					id: "196533620EF8AD54"
+					item: "waystones:warp_scroll"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "3B96DC7014391CA6"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 13.4d
+			y: -3.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: [
+				"&ePrice:&f 2 gold coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "6F7F92C9E8FFF321"
+			rewards: [
+				{
+					id: "7F814CFD1359CA33"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "1DA0CEDE5F30AE1C"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 15.0d
+			y: -3.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: [
+				"&ePrice:&f 3 gold coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "explorerscompass:explorerscompass"
+			id: "0D5FBFD7E5217B2C"
+			rewards: [
+				{
+					id: "0F86396D27CC9CEE"
+					item: "explorerscompass:explorerscompass"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "41EE1683FBEA16C0"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 16.6d
+			y: -3.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: [
+				"&ePrice:&f 4 gold coins"
+				"&aYou receive:&f 2 x this item"
+			]
+			icon: "paraglider:spirit_orb"
+			id: "5B3742029580093D"
+			rewards: [
+				{
+					count: 2
+					id: "23A1E424F5E44118"
+					item: "paraglider:spirit_orb"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "4B43127AFEF5D9A7"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 18.2d
+			y: -3.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: [
+				"&ePrice:&f 3 gold coins"
+				"&aYou receive:&f 16 x this item"
+			]
+			icon: "irons_spellbooks:arcane_essence"
+			id: "2058928FD9447548"
+			rewards: [
+				{
+					count: 16
+					id: "2B56AE801976B6C4"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "7E59ADCC1BED5820"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 19.8d
+			y: -3.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: [
+				"&ePrice:&f 2 gold coins"
+				"&aYou receive:&f 8 x this item"
+			]
+			icon: "tieredreforge:fucdu"
+			id: "3F8159B19580379A"
+			rewards: [
+				{
+					count: 8
+					id: "7440B45578E42CE1"
+					item: "tieredreforge:fucdu"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "2F97090BC692FAE5"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 21.4d
+			y: -3.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: [
+				"&ePrice:&f 4 gold coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "fantasy_armor:moon_crystal"
+			id: "13939955DB5DFB4D"
+			rewards: [
+				{
+					id: "16D5DC11FC560B59"
+					item: "fantasy_armor:moon_crystal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "224071901360C520"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 23.0d
+			y: -3.25d
+		}
+		{
+			dependencies: ["28AD52D3D2DB86B4"]
+			description: ["The trades on this branch. Each can be bought again and again."]
+			icon: "coinsje:diamond_coin"
+			id: "4603DD51C701FADE"
+			rewards: [
+				{
+					id: "106615474B391CA3"
+					type: "xp"
+					xp: 5
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "5AD4A6713B63EF0C"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "7F01AF8F43F3849A"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&bThe Diamond Counter"
+			x: 19.6d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4603DD51C701FADE"]
+			description: [
+				"&ePrice:&f 2 diamond coins"
+				"&aYou receive:&f 2 x this item"
+			]
+			icon: "minecraft:netherite_scrap"
+			id: "7539CA38322F3FEC"
+			rewards: [
+				{
+					count: 2
+					id: "09DC1A0E18D3D390"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "3B158AE094A4E4D1"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 14.0d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4603DD51C701FADE"]
+			description: [
+				"&ePrice:&f 3 diamond coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "22499AD825B97EC3"
+			rewards: [
+				{
+					id: "423FBF3353B59C9A"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "7767B549642C872D"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 15.6d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4603DD51C701FADE"]
+			description: [
+				"&ePrice:&f 3 diamond coins"
+				"&aYou receive:&f 2 x this item"
+			]
+			icon: "minecraft:shulker_shell"
+			id: "47D0B19217853636"
+			rewards: [
+				{
+					count: 2
+					id: "6764E5037DE65B82"
+					item: "minecraft:shulker_shell"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "76CE917FC66A821A"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 17.2d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4603DD51C701FADE"]
+			description: [
+				"&ePrice:&f 5 diamond coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "minecraft:enchanted_golden_apple"
+			id: "71452E7201D0A080"
+			rewards: [
+				{
+					id: "3D42798A2F28BD15"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "6EE44AF20F9E8BFD"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 18.8d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4603DD51C701FADE"]
+			description: [
+				"&ePrice:&f 4 diamond coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "paraglider:heart_container"
+			id: "70708AB6EC4235F7"
+			rewards: [
+				{
+					id: "7E580F47449C4E63"
+					item: "paraglider:heart_container"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "6EB84C7E8F63BEAC"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 20.4d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4603DD51C701FADE"]
+			description: [
+				"&ePrice:&f 4 diamond coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "paraglider:stamina_vessel"
+			id: "3CD21121EC5276E2"
+			rewards: [
+				{
+					id: "768B18775234CEA3"
+					item: "paraglider:stamina_vessel"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "24862EC0ED50BD0F"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 22.0d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4603DD51C701FADE"]
+			description: [
+				"&ePrice:&f 4 diamond coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "3C788C3B930F4FEA"
+			rewards: [
+				{
+					id: "79502225A01E1947"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "260F63560EF76C67"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 23.6d
+			y: 2.89d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4603DD51C701FADE"]
+			description: [
+				"&ePrice:&f 8 diamond coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "minecraft:elytra"
+			id: "4C3F23FFF5E66173"
+			rewards: [
+				{
+					id: "6526B1A91711267A"
+					item: "minecraft:elytra"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "6E4B625C87E85AC2"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 25.2d
+			y: 2.89d
+		}
+		{
+			dependencies: ["4603DD51C701FADE"]
+			description: ["The trades on this branch. Each can be bought again and again."]
+			icon: "coinsje:netherite_coin"
+			id: "1C47FA6FF9E0E9FE"
+			rewards: [
+				{
+					id: "78BC263FC0F93251"
+					type: "xp"
+					xp: 5
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "2F1B5C8949D4F80F"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "77DEA7558DFCFAEB"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&8The Netherite Counter"
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1C47FA6FF9E0E9FE"]
+			description: [
+				"&ePrice:&f 1 netherite coin"
+				"&aYou receive:&f 2 x this item"
+			]
+			icon: "minecraft:netherite_ingot"
+			id: "33EED71308D923EA"
+			rewards: [
+				{
+					count: 2
+					id: "0FF628121FF979D0"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "521CE4584BBFF810"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 24.6d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1C47FA6FF9E0E9FE"]
+			description: [
+				"&ePrice:&f 1 netherite coin"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "darkdoppelganger:summon_scroll"
+			id: "77055D890B467399"
+			rewards: [
+				{
+					id: "275DC9F206B2D587"
+					item: "darkdoppelganger:summon_scroll"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "53D9A182F6E3D5D7"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 26.2d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1C47FA6FF9E0E9FE"]
+			description: [
+				"&ePrice:&f 2 netherite coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "minecraft:nether_star"
+			id: "721C63145800440F"
+			rewards: [
+				{
+					id: "24B0BDDD27B64C9F"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "2F265714BD0B2410"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 27.8d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1C47FA6FF9E0E9FE"]
+			description: [
+				"&ePrice:&f 3 netherite coins"
+				"&aYou receive:&f 1 x this item"
+			]
+			icon: "minecraft:beacon"
+			id: "25AC8E7A50F10A8E"
+			rewards: [
+				{
+					id: "62280892B1E4FCD1"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "41C109DE031C27CC"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+			]
+			title: ""
+			x: 29.4d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1C47FA6FF9E0E9FE"]
+			description: ["The trades on this branch. Each can be bought again and again."]
+			icon: "minecraft:chest"
+			id: "3316CF607E3DF775"
+			rewards: [
+				{
+					id: "0FA49D9C0F666AA6"
+					type: "xp"
+					xp: 5
+				}
+				{
+					command: "/mastery xp @s leadership 35"
+					elevate_perms: true
+					icon: "minecraft:emerald"
+					id: "6E21C1F4D5C1F6BD"
+					silent: true
+					title: "+35 Leadership experience"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "3343528F4C82045C"
+					title: "Show me"
+					type: "checkmark"
+				}
+			]
+			title: "&dMystery Goods"
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3316CF607E3DF775"]
+			description: [
+				"&ePrice:&f 5 gold coins"
+				"&aYou receive:&f One random enchanted book."
+			]
+			icon: "minecraft:enchanted_book"
+			id: "2F10F70C55B164E8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "712D38B8825B97DC"
+					table_id: 5576410721870332972L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "7014B3F06A540D9D"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+			]
+			title: "A Sealed Book"
+			x: 28.4d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3316CF607E3DF775"]
+			description: [
+				"&ePrice:&f 3 diamond coins"
+				"&aYou receive:&f Something good. Probably."
+			]
+			icon: "minecraft:chest"
+			id: "7771E8DF64FEC18B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "574D98111A66ED88"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "0B7EFE5BA06861B8"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+			]
+			title: "A Mystery Crate"
+			x: 30.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3316CF607E3DF775"]
+			description: [
+				"&ePrice:&f 2 netherite coins"
+				"&aYou receive:&f One roll on the same table the Legends get."
+			]
+			icon: "minecraft:nether_star"
+			id: "211A1A019E13B110"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "55E71956B0E7ACA0"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "52772DF35AC587C0"
+					item: "coinsje:netherite_coin"
+					type: "item"
+				}
+			]
+			title: "Spoils of Legend"
+			x: 31.6d
+			y: 2.5d
+		}
+	]
+	subtitle: ["Coins in, goods out. Every counter can be used again and again."]
+	title: "&2The Merchant"
+}

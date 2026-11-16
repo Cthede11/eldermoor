@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "frequency": 0.2,
+    "frequency_reduction_method": "legacy_type_1",
+    "salt": 1102102011,
+    "separation": 18,
+    "spacing": 74,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "goety:graveyard",
+      "weight": 1
+    }
+  ]
+}

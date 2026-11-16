@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1224466881,
+    "separation": 24,
+    "spacing": 54,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "inventorypets:code_structure_space_dungeon",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+	icon: "farmersdelight:cooking_pot"
+	id: "6C77D7B1F844D513"
+	loot_size: 1
+	order_index: 33
+	rewards: [
+		{
+			count: 8
+			item: "minecraft:bread"
+			weight: 3.0f
+		}
+		{
+			count: 6
+			item: "minecraft:cooked_beef"
+			weight: 3.0f
+		}
+		{
+			count: 4
+			item: "minecraft:golden_carrot"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "farmersdelight:cabbage_seeds"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "farmersdelight:tomato_seeds"
+			weight: 2.0f
+		}
+		{
+			count: 8
+			item: "farmersdelight:rice"
+			weight: 2.0f
+		}
+		{
+			count: 6
+			item: "farmersdelight:onion"
+			weight: 2.0f
+		}
+		{
+			count: 3
+			item: "minecraft:honey_bottle"
+		}
+		{
+			item: "minecraft:cake"
+		}
+	]
+	title: "Pantry Basket"
+}

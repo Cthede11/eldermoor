@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1224466883,
+    "separation": 24,
+    "spacing": 60,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "inventorypets:code_structure_tree_top",
+      "weight": 1
+    }
+  ]
+}

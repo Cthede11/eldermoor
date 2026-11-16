@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "frequency": 0.5,
+    "salt": 12394461,
+    "separation": 21,
+    "spacing": 84,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "explorify:end_shipwreck",
+      "weight": 1
+    }
+  ]
+}

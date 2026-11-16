@@ -1,0 +1,78 @@
+{
+	icon: "mekanism:basic_control_circuit"
+	id: "7A9F771E30E11785"
+	loot_size: 1
+	order_index: 37
+	rewards: [
+		{
+			count: 24
+			item: "minecraft:redstone"
+			weight: 4.0f
+		}
+		{
+			count: 24
+			item: "minecraft:copper_ingot"
+			weight: 4.0f
+		}
+		{
+			count: 16
+			item: "minecraft:iron_ingot"
+			weight: 4.0f
+		}
+		{
+			count: 8
+			item: "mekanism:ingot_steel"
+			weight: 3.0f
+		}
+		{
+			count: 8
+			item: "mekanism:ingot_osmium"
+			weight: 3.0f
+		}
+		{
+			count: 8
+			item: "create:brass_ingot"
+			weight: 3.0f
+		}
+		{
+			count: 12
+			item: "ae2:certus_quartz_crystal"
+			weight: 3.0f
+		}
+		{
+			count: 3
+			item: "mekanism:basic_control_circuit"
+			weight: 2.0f
+		}
+		{
+			count: 16
+			item: "minecraft:quartz"
+			weight: 2.0f
+		}
+		{
+			count: 8
+			item: "immersiveengineering:wirecoil_copper"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "mekanism:alloy_infused"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "coinsje:iron_coin"
+			weight: 2.0f
+		}
+		{
+			count: 8
+			item: "ae2:fluix_crystal"
+			weight: 2.0f
+		}
+		{
+			count: 2
+			item: "minecraft:diamond"
+		}
+	]
+	title: "Engineer's Crate"
+}

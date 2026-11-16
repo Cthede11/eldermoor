@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 850796625,
+    "separation": 18,
+    "spacing": 74,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "paraglider:tarrey_town_goddess_statue",
+      "weight": 1
+    }
+  ]
+}

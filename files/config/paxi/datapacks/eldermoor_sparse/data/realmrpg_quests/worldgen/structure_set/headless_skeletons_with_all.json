@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 3,
+      "other_set": "minecraft:nether_complexes"
+    },
+    "salt": 1224320461,
+    "separation": 49,
+    "spacing": 63,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "realmrpg_quests:headless_skeletons",
+      "weight": 1
+    }
+  ]
+}

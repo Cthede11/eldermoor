@@ -1,0 +1,1820 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "eidolon"
+	group: "3368DAD22055D0D9"
+	icon: "eidolon:codex"
+	id: "7988BB826415ADED"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4EE3AA5B1C4B185C"]
+			description: [
+				"Eidolon is slow, quiet magic: bubbling crucibles, candles round a fire, prayers at an altar."
+				""
+				"The Codex is the whole manual and it is good. Read the chapter before you build the thing."
+				""
+				"Two currencies matter: &esouls&f, taken from the undead, and &ereputation&f with the dark god or the light one, earned by prayer."
+			]
+			hide_until_deps_complete: true
+			id: "63F9B9B0307E25BA"
+			rewards: [
+				{
+					id: "14D6205FE98C5DA2"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "1438BD02717F6300"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "67D2849DF84A0126"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31EC9EC0BC8B2B59"
+					item: "minecraft:candle"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "762975E28A7B34C6"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "4DD7D28B2ACF9692"
+					item: "eidolon:codex"
+					type: "item"
+				}
+			]
+			title: "&5&lThe Ars Ecclesia"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63ED05C8D0F5436E"]
+			description: ["&7Smelted from: &fPewter Blend"]
+			id: "3A9C98AF10562676"
+			rewards: [
+				{
+					id: "7305A41825DB5477"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1070D1B78C020D99"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "098C1FC52831AC2E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Lead and iron, blended."
+			tasks: [
+				{
+					count: 8L
+					id: "0D7085B8E6A267C2"
+					item: "eidolon:pewter_ingot"
+					type: "item"
+				}
+			]
+			title: "Pewter"
+			x: 3.85d
+			y: 4.13d
+		}
+		{
+			dependencies: ["3A9C98AF10562676"]
+			description: ["Water, a fire underneath, and ingredients stirred in order. The Codex lists every recipe step by step."]
+			id: "4AD60F53BDE724B3"
+			rewards: [
+				{
+					id: "012ACBB02005B39A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "50D840816B3AA85B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7072B987AA12FC30"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "344CF8405A3DF6FB"
+					item: "eidolon:crucible"
+					type: "item"
+				}
+			]
+			title: "The Crucible"
+			x: 5.7d
+			y: 4.13d
+		}
+		{
+			dependencies: ["57E141EF669D70BB"]
+			description: ["A crafting grid with four extra corners for the special ingredients."]
+			id: "6141F834F51AA8FF"
+			rewards: [
+				{
+					id: "110BE276FBB8C346"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4A15B3B88C2D4467"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "07A986705DBCB298"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "46764E0C2A101604"
+					item: "eidolon:worktable"
+					type: "item"
+				}
+			]
+			title: "The Worktable"
+			x: 11.25d
+			y: 4.13d
+		}
+		{
+			dependencies: ["6141F834F51AA8FF"]
+			id: "578C83D9511A4E6D"
+			rewards: [
+				{
+					id: "3465C897FC5D16D4"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "510E687EB00B96F0"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "13CF6B86E831423A"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4EFC0DA915428113"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Gold, redstone and soul shards in the crucible."
+			tasks: [
+				{
+					count: 8L
+					id: "13F7D3DCE86FE277"
+					item: "eidolon:arcane_gold_ingot"
+					type: "item"
+				}
+			]
+			title: "Arcane Gold"
+			x: 13.1d
+			y: 2.37d
+		}
+		{
+			dependencies: ["593939DAE729B72F"]
+			description: ["Crucible work. Shadow gems are the dark half of most late recipes."]
+			id: "0F95AE6ED3C715C6"
+			rewards: [
+				{
+					id: "5B3F55976029883A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7AB22BBCB7712BD0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "08882D8D1F44C96F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "4D021EF50D9F913B"
+					item: "eidolon:lesser_soul_gem"
+					type: "item"
+				}
+				{
+					id: "30B2891E171CF85F"
+					item: "eidolon:shadow_gem"
+					type: "item"
+				}
+			]
+			title: "Soul Gems"
+			x: 18.45d
+			y: 2.37d
+		}
+		{
+			dependencies: ["62B00614E8BA02CC"]
+			description: [
+				"Enchant with soul shards instead of lapis, and choose from every option."
+				"&7Made at: &fWorktable &7from &fBook, Arcane Gold Ingot x2, Obsidian x4, Diamond, Gold Inlay"
+			]
+			id: "507FECEF6FA91E48"
+			rewards: [
+				{
+					id: "1F7E4D275DCD03F9"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "1E6855A501D654EC"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07ADE1417D1CA2DF"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "54C63C0D2927769C"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3249315CE6DE3BB4"
+					item: "eidolon:soul_enchanter"
+					type: "item"
+				}
+			]
+			title: "Soul Enchanter"
+			x: 23.8d
+			y: 2.37d
+		}
+		{
+			dependencies: ["63F9B9B0307E25BA"]
+			description: ["Kill the undead near a lit brazier ritual, or use a reaper's blade."]
+			id: "38BA6A4227A14142"
+			rewards: [
+				{
+					id: "20B8BB03A8F84848"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "44149009FE86011D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0C7637716D4DAEDB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "6EA3B53E68FA0F45"
+					item: "eidolon:soul_shard"
+					type: "item"
+				}
+			]
+			title: "Soul Shards"
+			x: 2.1d
+			y: -2.63d
+		}
+		{
+			dependencies: ["38BA6A4227A14142"]
+			id: "735CCEC4F2A02F20"
+			rewards: [
+				{
+					id: "3555E030360ECA7F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3884375A57ADF94E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "265E67AB4D859E97"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Rituals burn here. Stone hands around it hold the offerings."
+			tasks: [
+				{
+					id: "6A313BDDE9D0CEEB"
+					item: "eidolon:brazier"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6EB68BB945CBB235"
+					item: "eidolon:stone_hand"
+					type: "item"
+				}
+			]
+			title: "The Brazier"
+			x: 3.85d
+			y: -2.63d
+		}
+		{
+			dependencies: ["735CCEC4F2A02F20"]
+			description: ["&7Made from: &fStone x5, Pewter Ingot x2, Bone, Pewter Inlay"]
+			id: "2F5C18CA4DBB9BE7"
+			rewards: [
+				{
+					id: "0DB16296FF0CC26C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7B02AD1516229129"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "71F0E8DA781B86A6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stores souls for rituals."
+			tasks: [
+				{
+					id: "795CFF40DA6BD2D8"
+					item: "eidolon:necrotic_focus"
+					type: "item"
+				}
+			]
+			title: "Necrotic Focus"
+			x: 5.7d
+			y: -2.63d
+		}
+		{
+			dependencies: ["2F5C18CA4DBB9BE7"]
+			id: "2208DDE3832C230B"
+			rewards: [
+				{
+					id: "6DCD793DB4741BE5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "22DD3AD8D5E7CFC9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "37C116351A34593F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Rituals need light of the right kind."
+			tasks: [
+				{
+					count: 4L
+					id: "7D65F433D1998D45"
+					item: "eidolon:candlestick"
+					type: "item"
+				}
+			]
+			title: "Candlelight"
+			x: 7.55d
+			y: -2.63d
+		}
+		{
+			dependencies: ["2208DDE3832C230B"]
+			id: "7903FCF47F286086"
+			rewards: [
+				{
+					id: "3CE9DEC25A41D4CC"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "4D4735835D6D6F61"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FC878FA9F039716"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3DDFF36C81A6ACE3"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Holds a sacrifice for the altar."
+			tasks: [
+				{
+					id: "08AD44FB4EA17FC4"
+					item: "eidolon:goblet"
+					type: "item"
+				}
+			]
+			title: "The Goblet"
+			x: 9.4d
+			y: -2.63d
+		}
+		{
+			dependencies: ["63F9B9B0307E25BA"]
+			id: "4B05CDB7FDF0BE7A"
+			rewards: [
+				{
+					id: "6C8F40B9904A0301"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "629694B52AD7092D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "323597CC16891229"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "An effigy on an altar hears prayers. Pray once a day."
+			tasks: [
+				{
+					id: "7D43E80065BBD129"
+					item: "eidolon:wooden_altar"
+					type: "item"
+				}
+				{
+					id: "7DC3D4C07D5F73CB"
+					item: "eidolon:straw_effigy"
+					type: "item"
+				}
+			]
+			title: "A Wooden Altar"
+			x: 2.1d
+			y: -0.87d
+		}
+		{
+			dependencies: ["4B05CDB7FDF0BE7A"]
+			description: ["The Unholy Symbol speaks to the dark god. The Holy Symbol speaks to the other one. Your deeds decide what each will teach you."]
+			id: "26877DAEB67089FF"
+			rewards: [
+				{
+					id: "74DA5726863C21F4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4595C59B4D8E6841"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5BFD1797C9BAD7A0"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "75C66AC2CEF5786B"
+					item: "eidolon:unholy_symbol"
+					type: "item"
+				}
+			]
+			title: "Choosing a Side"
+			x: 3.85d
+			y: -0.87d
+		}
+		{
+			dependencies: ["26877DAEB67089FF"]
+			description: [
+				"Stone altars with candles, skulls and herbs around them count for more."
+				"&7&fStone Altar&7 - Made at: &fWorktable &7from &fSmooth Stone Slab x3, Stone x5, Pewter Inlay, Soul Shard"
+				"&7&fElder Statue&7 - Made at: &fWorktable &7from &fStone x4, Smooth Stone, any patron symbol, Gold Inlay"
+			]
+			id: "1CD0E9ED562742FF"
+			rewards: [
+				{
+					id: "3935EAAD237D561C"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "7F285AD90E3B570F"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75163FEC2D1C2202"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "73D0D20A54DCC5DB"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "16A76DE674ACDB21"
+					item: "eidolon:stone_altar"
+					type: "item"
+				}
+				{
+					id: "59007BCACD0838A4"
+					item: "eidolon:unholy_effigy"
+					type: "item"
+				}
+			]
+			title: "A Proper Altar"
+			x: 5.7d
+			y: -0.87d
+		}
+		{
+			dependencies: ["1CD0E9ED562742FF"]
+			id: "4D4B757EB8BEF4D8"
+			rewards: [
+				{
+					id: "09B43503E339036B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0EEF5A447200A6D3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "78A6F57BE37A11A9"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The dark god likes what you would expect."
+			tasks: [
+				{
+					id: "5E6D2B504282ABD6"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					id: "4393A9E757B2AF76"
+					item: "minecraft:wither_rose"
+					type: "item"
+				}
+			]
+			title: "Offerings"
+			x: 7.55d
+			y: -0.87d
+		}
+		{
+			dependencies: ["5448FBF1BDBE318E"]
+			description: [
+				"&7&fSoulfire Wand&7 - Made at: &fWorktable &7from &fGold Inlay, Arcane Gold Ingot x2, Wooden Rod, Shadow Gem, Blaze Powder and 1 more"
+				"&7&fBonechill Wand&7 - Made at: &fWorktable &7from &fPewter Inlay, Pewter Ingot x2, Wooden Rod, Wraith Heart, Bone Meal and 1 more"
+			]
+			id: "15998BACFF7128BD"
+			rewards: [
+				{
+					id: "32A76093C91DEFF2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6B32AE65C0A409B9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "50736D107DBA8583"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fire that burns souls; frost that slows the dead."
+			tasks: [
+				{
+					id: "16CDD6837ED97F29"
+					item: "eidolon:soulfire_wand"
+					type: "item"
+				}
+				{
+					id: "208B6597171F9EEB"
+					item: "eidolon:bonechill_wand"
+					type: "item"
+				}
+			]
+			title: "Wands"
+			x: 14.95d
+			y: 4.13d
+		}
+		{
+			dependencies: ["15998BACFF7128BD"]
+			description: ["&7Made at: &fBrazier ritual &7from &fPotion, Shadow Gem, Soul Shard x2, Nether Wart x2, Ghast Tear and 1 more"]
+			id: "51489BBFC23E1AC6"
+			rewards: [
+				{
+					id: "4FD903A86E1C639E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "45B77EE586D34FAB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "379251F29839E113"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Heals you for part of every hit."
+			tasks: [
+				{
+					id: "1BBB10A9F094714C"
+					item: "eidolon:sapping_sword"
+					type: "item"
+				}
+			]
+			title: "The Sapping Sword"
+			x: 16.7d
+			y: 4.13d
+		}
+		{
+			dependencies: ["51489BBFC23E1AC6"]
+			description: ["&7Made at: &fWorktable &7from &fObsidian x2, Crying Obsidian, Pewter Ingot, Pewter Inlay, any ender pearls and 2 more"]
+			id: "39D1B30F229DC6A8"
+			rewards: [
+				{
+					id: "21EC012287957DF8"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "3D28B3066C679292"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "710DEDEEAF66A96C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Digs faster the harder the block."
+			tasks: [
+				{
+					id: "7FD9C6E909765B01"
+					item: "eidolon:reversal_pick"
+					type: "item"
+				}
+			]
+			title: "Reversal Pick"
+			x: 18.45d
+			y: 4.13d
+		}
+		{
+			dependencies: ["39D1B30F229DC6A8"]
+			description: ["&7Made at: &fWorktable &7from &fPewter Ingot x3, Unholy Symbol, Pewter Inlay, Wooden Rod x2"]
+			id: "6C860BAB91430628"
+			rewards: [
+				{
+					id: "4F5891B67557704E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "76CE9B7CC06989C4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5917A0559654A67B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Takes heads."
+			tasks: [
+				{
+					id: "06C4E297F2423DCB"
+					item: "eidolon:cleaving_axe"
+					type: "item"
+				}
+			]
+			title: "Cleaving Axe"
+			x: 20.2d
+			y: 4.13d
+		}
+		{
+			dependencies: ["225C73DEF3D19A03"]
+			description: ["&7Made at: &fWorktable &7from &fPewter Ingot x3, any patron symbol, Tattered Cloth, Soul Shard, Wooden Rod x2"]
+			id: "2FC27227DFC8704A"
+			rewards: [
+				{
+					id: "5C9C08DC36AFEF12"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "42335A4225D97E12"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "60D0DA12E5560E6D"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "21D6E5CE1F6CEDD4"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The undead it kills leave soul shards instead of loot."
+			tasks: [
+				{
+					id: "708DA4117F9A69FA"
+					item: "eidolon:reaper_scythe"
+					type: "item"
+				}
+			]
+			title: "Reaper's Scythe"
+			x: 23.8d
+			y: 4.13d
+		}
+		{
+			dependencies: ["262D1FD8E0170407"]
+			description: [
+				"&7&fWarlock's Hat&7 - Made at: &fWorktable &7from &fWicked Weave x4, Soul Shard"
+				"&7&fWarlock's Cloak&7 - Made at: &fWorktable &7from &fWicked Weave x8, Soul Shard"
+			]
+			id: "2002542282DDB4C1"
+			rewards: [
+				{
+					id: "11BBF494EBFFA175"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7F3648CC3821EA03"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5A0E8B7BEE965895"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Cloth armour for casters."
+			tasks: [
+				{
+					id: "22268CFA8F0DE248"
+					item: "eidolon:warlock_hat"
+					type: "item"
+				}
+				{
+					id: "0C7A776D4830ECC4"
+					item: "eidolon:warlock_cloak"
+					type: "item"
+				}
+				{
+					id: "2103EDFADDAC963F"
+					item: "eidolon:warlock_boots"
+					type: "item"
+				}
+			]
+			title: "Warlock's Attire"
+			x: 14.95d
+			y: 5.87d
+		}
+		{
+			dependencies: ["4C938BF90DC9B110"]
+			description: [
+				"&7&fGravity Belt&7 - Made at: &fWorktable &7from &fany feathers x2, any ender pearls, Lesser Soul Gem, Basic Belt, Calx of End and 1 more"
+				"&7&fResolute Belt&7 - Made at: &fWorktable &7from &fGold Inlay, Arcane Gold Ingot x2, Basic Belt, Diamond, Leather and 2 more"
+			]
+			id: "378D1C99212B4516"
+			rewards: [
+				{
+					id: "50D7A83E017A46F7"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "61E871CD784798D0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "16B2B0E2762D0B68"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "One slows your fall. One stands firm."
+			tasks: [
+				{
+					id: "4BB97607620004FB"
+					item: "eidolon:gravity_belt"
+					type: "item"
+				}
+				{
+					id: "1CE67F14F4509907"
+					item: "eidolon:resolute_belt"
+					type: "item"
+				}
+			]
+			title: "Belts"
+			x: 18.45d
+			y: 5.87d
+		}
+		{
+			dependencies: ["1FB38D40C0C90FFB"]
+			description: ["&7Made at: &fBrazier ritual &7from &fPotion, Diamond, Redstone Dust x4, Lesser Soul Gem, Basic Amulet"]
+			id: "59940F017F80F8C2"
+			rewards: [
+				{
+					id: "60B189B2B65FB2F6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6D6ED8AD8046C474"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2100901838C24604"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stores overflow healing and gives it back when you are hurt."
+			tasks: [
+				{
+					id: "739EDC0AA7C92935"
+					item: "eidolon:sanguine_amulet"
+					type: "item"
+				}
+			]
+			title: "Sanguine Amulet"
+			x: 21.95d
+			y: 5.87d
+		}
+		{
+			dependencies: ["59940F017F80F8C2"]
+			description: ["&7Made at: &fWorktable &7from &fDiamond Block, Basic Amulet, Glass, Zombie Heart, Lesser Soul Gem and 1 more"]
+			id: "502636CCD75123DC"
+			rewards: [
+				{
+					id: "6F20B07D0699B3F4"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "1A04FFA3A6752539"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B460308C3BF4DCF"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "30E3CAB4F559BD91"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Double damage dealt. Double damage taken."
+			tasks: [
+				{
+					id: "287336A5E63EA0B2"
+					item: "eidolon:glass_hand"
+					type: "item"
+				}
+			]
+			title: "Glass Hand"
+			x: 23.8d
+			y: 5.87d
+		}
+		{
+			dependencies: ["4B05CDB7FDF0BE7A"]
+			description: ["A censer on an altar also adds two to its capacity. Light it and the incense burns for everyone nearby."]
+			id: "196318460CD8F67B"
+			rewards: [
+				{
+					id: "14711841F55C1CE2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0A7218B07C8DA32B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "28645E4831D04681"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Censer and burn an Offering Incense on an Altar"
+			tasks: [
+				{
+					advancement: "eidolon:incense"
+					criterion: ""
+					icon: "eidolon:censer"
+					id: "4D4EB6232B0D63DC"
+					title: "A Humble Offering"
+					type: "advancement"
+				}
+			]
+			title: "A Humble Offering"
+			x: 3.85d
+			y: 2.38d
+		}
+		{
+			dependencies: ["196318460CD8F67B"]
+			description: ["Restoration heals the living (and hurts the dead); Purity lifts curses and poison. The Codex's incense pages have every recipe."]
+			id: "16CF9F9C05A482F6"
+			rewards: [
+				{
+					id: "6412BDD5E825A3E7"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1E26769BF2BC06CD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "1B6516A5069D599B"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5F442A0A03FDF988"
+					item: "eidolon:restoration_incense"
+					type: "item"
+				}
+				{
+					id: "2EBC775E587FDEEE"
+					item: "eidolon:purity_incense"
+					type: "item"
+				}
+			]
+			title: "Healing Smoke"
+			x: 5.7d
+			y: 2.38d
+		}
+		{
+			dependencies: ["16CF9F9C05A482F6"]
+			description: [
+				"Armour, melee damage and speed for the whole party, a little stronger than the potions they come from."
+				"&7&fBloodlust Incense&7 - Made at: &fCrucible &7from &fSildrian Seed, Rotten Flesh, Refined Crimson, Merammer Resin"
+			]
+			id: "2602B6C5C00F53F2"
+			rewards: [
+				{
+					id: "72C8B975912161C6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6704A49D7C1C3D9F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6EB65256A59FB182"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "54BE21597BF3EF89"
+					item: "eidolon:tough_incense"
+					type: "item"
+				}
+				{
+					id: "20516D39FD861B0D"
+					item: "eidolon:bloodlust_incense"
+					type: "item"
+				}
+				{
+					id: "59CBC1CB18FB4ABF"
+					item: "eidolon:quicken_incense"
+					type: "item"
+				}
+			]
+			title: "Smoke Before Battle"
+			x: 7.55d
+			y: 2.38d
+		}
+		{
+			dependencies: ["2602B6C5C00F53F2"]
+			id: "111BCDE1A846CF32"
+			rewards: [
+				{
+					id: "2FE117656A7E8845"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "472CFF49C094E9CE"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4EE4D6C27D54CAEF"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "695DC2F48E26FBA1"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Consecrated with a holy symbol. The undead cannot stand near it."
+			tasks: [
+				{
+					id: "3F12C516FD6A781B"
+					item: "eidolon:deathbane_incense"
+					type: "item"
+				}
+			]
+			title: "Death Bane"
+			x: 9.4d
+			y: 2.38d
+		}
+		{
+			dependencies: ["58613F8CCD71128D"]
+			description: ["Write a chant's signs onto parchment at the Scriptorium and the &eChant Scroll&f casts it on the fly, no Codex needed. You must know the signs first."]
+			id: "19E8B17E2B09C697"
+			optional: true
+			rewards: [
+				{
+					id: "400B3B2B1AC87A2B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "244F1E889FB867C4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4C5847CB2695D791"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "648DBDC5B2641007"
+					item: "eidolon:scriptorium"
+					type: "item"
+				}
+				{
+					id: "3E36369BCBC84DC1"
+					item: "eidolon:chant_scroll"
+					type: "item"
+				}
+			]
+			title: "The Scriptorium"
+			x: 7.55d
+			y: 0.87d
+		}
+		{
+			dependencies: [
+				"507FECEF6FA91E48"
+				"1CD0E9ED562742FF"
+				"2FC27227DFC8704A"
+			]
+			hide_dependency_lines: true
+			id: "110333CF530DE9BA"
+			rewards: [
+				{
+					id: "2F4713E804108B47"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 5
+					id: "704125EDDA085A94"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4EFEE1354FD6234D"
+					table_id: 7425475955515657121L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F924E0EA6A7C2AD"
+					table_id: 2878545973601917989L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "382898943F4FDEBA"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "A soul enchanter, a stone altar and a reaper's scythe."
+			tasks: [
+				{
+					id: "0EC845AD18BD2D68"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&5&lHigh Priest"
+			x: 26.15d
+			y: 2.21d
+		}
+		{
+			dependencies: ["63F9B9B0307E25BA"]
+			id: "63ED05C8D0F5436E"
+			rewards: [
+				{
+					id: "4C50A83FE170FBD3"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0525DDE391F4CB48"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "78A36F9E4AFC48D6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Pewter is lead and iron. See The Deep for where lead hides."
+			tasks: [
+				{
+					count: 8L
+					id: "4C2A3352995F9477"
+					item: { Count: 1, id: "itemfilters:tag", tag: { value: "forge:ingots/lead" } }
+					title: "8 lead ingots"
+					type: "item"
+				}
+			]
+			title: "Lead"
+			x: 2.1d
+			y: 4.13d
+		}
+		{
+			dependencies: ["4AD60F53BDE724B3"]
+			id: "32CCBCE8F86E3638"
+			rewards: [
+				{
+					id: "1E07B924EFD1BF5D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7EE7C2BBC4484DA8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "567455963E6AFB72"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The crucible's first product: coal, stirred into boiling water."
+			tasks: [
+				{
+					count: 4L
+					id: "3D87A13C9845FD86"
+					item: "eidolon:sulfur"
+					type: "item"
+				}
+			]
+			title: "Sulfur"
+			x: 7.55d
+			y: 4.13d
+		}
+		{
+			dependencies: ["578C83D9511A4E6D"]
+			id: "47D80654D9B26646"
+			rewards: [
+				{
+					id: "5708E7D4E69E61E6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7B31042FA4F872C0"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "74286740B4AB8A76"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ender pearls, reduced in the crucible."
+			tasks: [
+				{
+					count: 2L
+					id: "0334E751412405FA"
+					item: "eidolon:ender_calx"
+					type: "item"
+				}
+			]
+			title: "Ender Calx"
+			x: 14.95d
+			y: 2.37d
+		}
+		{
+			dependencies: ["32CCBCE8F86E3638"]
+			description: ["Pewter worked into a fitting. The Worktable's recipes ask for one over and over, in the outer slots."]
+			id: "57E141EF669D70BB"
+			rewards: [
+				{
+					id: "59F7F34BF7799E65"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "19462367EC15BD39"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "14DC44EC25ECE6D8"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "0876589B8828824A"
+					item: "eidolon:pewter_inlay"
+					type: "item"
+				}
+			]
+			title: "Pewter Inlay"
+			x: 9.4d
+			y: 4.13d
+		}
+		{
+			dependencies: ["2002542282DDB4C1"]
+			description: ["Bones, burnt white in a blast furnace. A reagent in half the Crucible's recipes, and the white dust that rituals are steadied with."]
+			id: "4C938BF90DC9B110"
+			rewards: [
+				{
+					id: "1B92314EAA260C9D"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "39C21B96665594E9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "03E994A68A2B748C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "739022EDAE11D696"
+					item: "eidolon:enchanted_ash"
+					type: "item"
+				}
+			]
+			title: "Enchanted Ash"
+			x: 16.7d
+			y: 5.87d
+		}
+		{
+			dependencies: ["6C860BAB91430628"]
+			description: ["&eWraiths&f drop it, on cold nights and in the catacombs. What the dead were wrapped in."]
+			id: "225C73DEF3D19A03"
+			rewards: [
+				{
+					id: "2C04E0C9A3993541"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7751ACA75DDFC448"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7AC112759DA8CD3C"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "2A58021B9764FBCC"
+					item: "eidolon:tattered_cloth"
+					type: "item"
+				}
+			]
+			title: "Tattered Cloth"
+			x: 21.95d
+			y: 4.13d
+		}
+		{
+			dependencies: ["6141F834F51AA8FF"]
+			description: ["Wool worked at the Worktable around a Shadow Gem and an Unholy Symbol. The Warlock's whole wardrobe is cut from it."]
+			id: "262D1FD8E0170407"
+			rewards: [
+				{
+					id: "4E46E30442E97772"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "61D484630527C6BD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6902933BA0829A09"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7BE58964D1AC263C"
+					item: "eidolon:wicked_weave"
+					type: "item"
+				}
+			]
+			title: "Wicked Weave"
+			x: 13.1d
+			y: 5.87d
+		}
+		{
+			dependencies: ["0F95AE6ED3C715C6"]
+			description: ["The finer fitting, of arcane gold. Where pewter builds the tools, gold builds the things that hold souls."]
+			id: "62B00614E8BA02CC"
+			rewards: [
+				{
+					id: "7891A0928001B9F0"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "78E0EA6A6C32959C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "303A79EEBCA7C2BB"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "48844DE67179727B"
+					item: "eidolon:gold_inlay"
+					type: "item"
+				}
+			]
+			title: "Gold Inlay"
+			x: 20.2d
+			y: 2.37d
+		}
+		{
+			dependencies: ["6141F834F51AA8FF"]
+			description: ["A rare drop from Wraiths. Cold to hold. The frost wand is built around one."]
+			id: "5448FBF1BDBE318E"
+			rewards: [
+				{
+					id: "5236E020590D8319"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "128E899D279628FA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7D5532CA8A5F99E1"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2BA744240E439295"
+					item: "eidolon:wraith_heart"
+					type: "item"
+				}
+			]
+			title: "A Wraith Heart"
+			x: 13.1d
+			y: 4.13d
+		}
+		{
+			dependencies: ["47D80654D9B26646"]
+			description: ["Rotten flesh, bone meal, charcoal and a withered heart, reduced in the Crucible. The necromancer's ink, glue and fuel."]
+			id: "593939DAE729B72F"
+			rewards: [
+				{
+					id: "5A5BD4F1EB09C234"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7D26F4D0635C4045"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "266DA580598C0F45"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "2A52697A9406B09C"
+					item: "eidolon:death_essence"
+					type: "item"
+				}
+			]
+			title: "Essence of Death"
+			x: 16.7d
+			y: 2.37d
+		}
+		{
+			dependencies: ["378D1C99212B4516"]
+			description: ["Arcane gold on a string. It does nothing yet: amulets, rings and belts are made plain and then &egiven a purpose&f by a ritual."]
+			id: "1FB38D40C0C90FFB"
+			rewards: [
+				{
+					id: "3371572728A6DE7F"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "20D981EEDD56707F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4F925D8489DB1616"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "16685BCED4442885"
+					item: "eidolon:basic_amulet"
+					type: "item"
+				}
+			]
+			title: "A Plain Amulet"
+			x: 20.2d
+			y: 5.87d
+		}
+		{
+			dependencies: ["26877DAEB67089FF"]
+			description: ["&7Made at: &fCrucible &7from &fBlack Dye x2, Glow Ink Sac, Blue Dye, Silver Nugget x2, Glass Bottle"]
+			id: "58613F8CCD71128D"
+			optional: true
+			rewards: [
+				{
+					id: "7641FFA228C39EE6"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "68A0AD562F90A37E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "03B894DD6DB476AF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ink that holds a sign. The Scriptorium writes chants with it."
+			tasks: [
+				{
+					id: "22E538554E820CB7"
+					item: "eidolon:magic_ink"
+					type: "item"
+				}
+			]
+			title: "Magic Ink"
+			x: 5.7d
+			y: 0.87d
+		}
+	]
+	subtitle: ["Rituals, souls and the gods who answer"]
+	title: "&5Eidolon"
+}

@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "minecraft:nether_complexes"
+    },
+    "salt": 1224320461,
+    "separation": 38,
+    "spacing": 52,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "realmrpg_quests:piglin_gamblers",
+      "weight": 1
+    }
+  ]
+}

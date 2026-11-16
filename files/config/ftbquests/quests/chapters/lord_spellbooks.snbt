@@ -1,0 +1,1610 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lord_spellbooks"
+	group: "3368DAD22055D0D9"
+	icon: "cataclysm_spellbooks:ignis_spell_book"
+	id: "19BB634BF1462F79"
+	images: [ ]
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["452E2DB266FC328C"]
+			description: [
+				"&5Cataclysm: Spellbooks&f binds the eight Cataclysm lords' power into spellbooks, mage armour and weapons. Each lord's drops make its own set; look them up in JEI."
+				""
+				"&2Magic from the East&f brings two schools of its own, &eSpirit&f and &eSymmetry&f, worked with jade from deep underground. Its shrines and houses stand in the overworld."
+			]
+			hide_until_deps_complete: true
+			id: "6C6F8263E31D8C9E"
+			rewards: [
+				{
+					id: "1C409F0073673C79"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "0D430C05B1AA537F"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3E615784E318EE46"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Two additions to Iron's Spells."
+			tasks: [
+				{
+					id: "35387C25EB64AB37"
+					title: "Open the books"
+					type: "checkmark"
+				}
+			]
+			title: "&d&lNew Schools"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C6F8263E31D8C9E"]
+			description: [
+				"&7Dropped by: &fJiangshi"
+				"&7Mined from: &fDeepslate Jade Ore, Jade Ore"
+			]
+			id: "661657B3E181153A"
+			rewards: [
+				{
+					id: "00FCBF72418F3896"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "28DDC4F58B848719"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "59C8267170DC9303"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mined deep underground."
+			tasks: [
+				{
+					count: 8L
+					id: "125E409E1DBB876D"
+					item: "iss_magicfromtheeast:jade"
+					type: "item"
+				}
+			]
+			title: "Jade"
+			x: 2.1d
+			y: -1.61d
+		}
+		{
+			dependencies: ["661657B3E181153A"]
+			description: ["&7Made from: &fEmerald x4, Jade, Cinder Essence"]
+			id: "45A5C4B4996064B4"
+			rewards: [
+				{
+					id: "3CFEF67FC30423E2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "17EC4F39097A44FD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7621ED72B2CA4346"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "4648CC9BF58241CF"
+					item: "iss_magicfromtheeast:refined_jade_ingot"
+					type: "item"
+				}
+			]
+			title: "Refined Jade"
+			x: 4.1d
+			y: -1.61d
+		}
+		{
+			dependencies: ["45A5C4B4996064B4"]
+			description: [
+				"&7&fSpirit Rune&7 - Made from: &fany spirit focus x8, Blank Runestone"
+				"&7&fSymmetry Rune&7 - Made from: &fany symmetry focus x8, Blank Runestone"
+			]
+			id: "5D14668B95BE03AC"
+			rewards: [
+				{
+					id: "3DA179A96D3AC86E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "1FB58D0C24F5B152"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "66FCD3BABB0ABE7A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2F93314066AD629F"
+					item: "iss_magicfromtheeast:spirit_rune"
+					type: "item"
+				}
+				{
+					id: "4337DB979D9C6869"
+					item: "iss_magicfromtheeast:symmetry_rune"
+					type: "item"
+				}
+			]
+			title: "Two New Runes"
+			x: 5.85d
+			y: -1.61d
+		}
+		{
+			dependencies: ["5D14668B95BE03AC"]
+			id: "1C34CD6DD69FEECE"
+			rewards: [
+				{
+					id: "41EB90C466E72F06"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2F2BEC59E694C9FD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4F511FC907DF3D25"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Upgrade armour towards the new schools."
+			tasks: [
+				{
+					id: "56E49040AC503C12"
+					item: "iss_magicfromtheeast:spirit_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "08685D124ABD38B6"
+					item: "iss_magicfromtheeast:symmetry_upgrade_orb"
+					type: "item"
+				}
+			]
+			title: "Upgrade Orbs"
+			x: 7.7d
+			y: -1.61d
+		}
+		{
+			dependencies: ["45A5C4B4996064B4"]
+			description: ["&7Made from: &fany wizard base chestplate, Symmetry Rune, Arcane Essence"]
+			id: "153AE935BAD2DC72"
+			rewards: [
+				{
+					id: "7C7B0D8BDC59CAD2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "749E5B0365BDA071"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4AEDE8EBCA55EA8F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Taoist robes favour Symmetry."
+			tasks: [
+				{
+					id: "5F3B3D7AFD9CB14B"
+					item: "iss_magicfromtheeast:taoist_chestplate"
+					type: "item"
+				}
+			]
+			title: "Robes of the East"
+			x: 5.85d
+			y: -0.11d
+		}
+		{
+			dependencies: ["153AE935BAD2DC72"]
+			description: ["&7Made from: &fany wizard base chestplate, Spirit Rune, Arcane Essence"]
+			id: "61FCC342223DF171"
+			rewards: [
+				{
+					id: "18B9E80517856AC2"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "4345D5AE7274F1CD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "75CC287B3BB50396"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Onmyoji robes favour Spirit."
+			tasks: [
+				{
+					id: "7FCA75C7A21D4591"
+					item: "iss_magicfromtheeast:onmyoji_chestplate"
+					type: "item"
+				}
+			]
+			title: "The Onmyoji"
+			x: 7.7d
+			y: -0.11d
+		}
+		{
+			dependencies: ["61FCC342223DF171"]
+			description: ["&7Made from: &fChainmail Chestplate, Bloody Vellum x4, Refined Jade Ingot x4"]
+			id: "7D492C8283F4C6B9"
+			rewards: [
+				{
+					id: "03510437A869D138"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "2D3B13ABEEB58FFB"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0289917DEE200DF7"
+					table_id: 8298031287037069412L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "53CBDC567761D43F"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1BE095C148BDFBAF"
+					item: "iss_magicfromtheeast:jade_pagoda_chestplate"
+					type: "item"
+				}
+			]
+			title: "Jade Pagoda Armour"
+			x: 9.8d
+			y: -0.11d
+		}
+		{
+			dependencies: ["43B274082E1542E6"]
+			description: ["&7Made from: &fIron Ingot x2, Gold Ingot x2, Yin Yang Core, Stick"]
+			id: "73DEA2D3065F9E76"
+			rewards: [
+				{
+					id: "74E321FF6FF53653"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "03872659B02B82AA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "03E7B08CC3C40E22"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "504186F969B6813A"
+					item: "iss_magicfromtheeast:taiji_sword"
+					type: "item"
+				}
+			]
+			title: "Blades"
+			x: 13.4d
+			y: -0.11d
+		}
+		{
+			dependencies: ["6AAAF9907D15F287"]
+			description: ["&7Made from: &fGold Ingot x2, Soul Crystal x2, Weapon Parts"]
+			id: "12FBCC858CA3D0CF"
+			rewards: [
+				{
+					id: "2A48B7383B153152"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "4BF37561244173AD"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08AEB781B401C9E8"
+					table_id: 8298031287037069412L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4E354769DB38EB5E"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2EE532E284A4F81C"
+					item: "iss_magicfromtheeast:soul_katana"
+					type: "item"
+				}
+			]
+			title: "The Soul Katana"
+			x: 17.35d
+			y: -0.11d
+		}
+		{
+			dependencies: [
+				"6C6F8263E31D8C9E"
+				"28E8CB15B320082F"
+			]
+			description: [
+				"The Ancient Remnant's book, from its drops. The lords' books hold more spell slots than any other."
+				""
+				"&7Needs Act III."
+			]
+			id: "39D8654F18038421"
+			rewards: [
+				{
+					id: "107536B152E2A8BF"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7E433279387CD8A9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5B33692B590DDE99"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4354DBE8C7D39FFA"
+					item: "cataclysm_spellbooks:desert_spell_book"
+					type: "item"
+				}
+			]
+			title: "The First Grimoire"
+			x: 2.1d
+			y: 3.61d
+		}
+		{
+			dependencies: ["39D8654F18038421"]
+			description: ["&7Made at: &fSmithing Table &7from &fIgnitium Ingot, Blaze Instruction Manual, Smithing Template"]
+			id: "4E5EA28EEDFF8849"
+			rewards: [
+				{
+					id: "3C1C595B145FB884"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "43F70C305C34E9FD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0B1629FD392C89DA"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "4A6B77B8EC5B1973"
+					item: "cataclysm_spellbooks:ignis_spell_book"
+					type: "item"
+				}
+			]
+			title: "Ignis's Book"
+			x: 4.1d
+			y: 3.39d
+		}
+		{
+			dependencies: ["4E5EA28EEDFF8849"]
+			description: ["&7Made at: &fAltar of Amethyst &7from &fRuined Book"]
+			id: "265BECDD17ECE1DB"
+			rewards: [
+				{
+					id: "4170628BAFB69E61"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "613B79D15F9281A7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6FC722FE1B91120D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "12E3C1835188626D"
+					item: "cataclysm_spellbooks:abyss_spell_book"
+					type: "item"
+				}
+			]
+			title: "The Abyssal Book"
+			x: 5.85d
+			y: 3.39d
+		}
+		{
+			dependencies: ["265BECDD17ECE1DB"]
+			description: ["&7Made at: &fSmithing Table &7from &fCursium Ingot, Ancient Codex, Cursium Upgrade Smithing Template"]
+			id: "5DFA3BADB4429E89"
+			rewards: [
+				{
+					id: "2D3BDCB8691F5D4E"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "0728BE2ED9DA6F0A"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "199642DE03C9E6D2"
+					table_id: 8298031287037069412L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5203704F2BE2186A"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1C27AA8213212B44"
+					item: "cataclysm_spellbooks:codex_of_malice_spell_book"
+					type: "item"
+				}
+			]
+			title: "The Codex of Malice"
+			x: 17.35d
+			y: 3.39d
+		}
+		{
+			dependencies: ["39D8654F18038421"]
+			description: ["&7Made at: &fSmithing Table &7from &fIgnitium Ingot, Netherite Battlemage Robes, Smithing Template"]
+			id: "02BB827D2815E775"
+			rewards: [
+				{
+					id: "64E02D9F11D26A90"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "35AE5C271F0F15DA"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "20BF4F5177AB4D52"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5017DBE179278CB9"
+					item: "cataclysm_spellbooks:ignis_chestplate"
+					type: "item"
+				}
+			]
+			title: "Ignis's Robes"
+			x: 4.1d
+			y: 9.08d
+		}
+		{
+			dependencies: ["0C187106513E8960"]
+			description: ["&7Made from: &fArcane Cloth x8, Abyssal Rune"]
+			id: "0E9594A0CBFAC47A"
+			rewards: [
+				{
+					id: "6DE73E27D575C875"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3F858F12B35FF87F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "53F39AC8E39F8667"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3BCE06C92E05B8B2"
+					item: "cataclysm_spellbooks:abyssal_warlock_chestplate"
+					type: "item"
+				}
+			]
+			title: "The Abyssal Warlock"
+			x: 7.7d
+			y: 9.08d
+		}
+		{
+			dependencies: ["0E9594A0CBFAC47A"]
+			description: ["&7Made at: &fSmithing Table &7from &fCursium Ingot, Netherite Battlemage Robes, Cursium Upgrade Smithing Template"]
+			id: "710EF6CA95BC9865"
+			rewards: [
+				{
+					id: "021BFDC1A1F62FB0"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "6E3C972D2FD63082"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7B0EB1CCE87F7FB6"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "004BF069594A545A"
+					item: "cataclysm_spellbooks:cursium_mage_chestplate"
+					type: "item"
+				}
+			]
+			title: "The Cursium Mage"
+			x: 9.8d
+			y: 9.08d
+		}
+		{
+			dependencies: ["6DAC523090642C6B"]
+			id: "2B8B0EFA58B8468B"
+			rewards: [
+				{
+					id: "1EF0AEF46F5FEE77"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "330048A90F1E182A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "51BD938164ACAE00"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Made from the Harbinger's factory scrap."
+			tasks: [
+				{
+					id: "69C0612058AD4584"
+					item: "cataclysm_spellbooks:engineer_suit"
+					type: "item"
+				}
+			]
+			title: "The Engineer"
+			x: 13.4d
+			y: 5.64d
+		}
+		{
+			dependencies: ["2B8B0EFA58B8468B"]
+			description: ["&7Made at: &fSmithing Table &7from &fWitherite Ingot, Engineer's Suit, Excelsius Upgrade: Mana"]
+			id: "4D4424625FB5F522"
+			rewards: [
+				{
+					id: "604009E9412582BA"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "272F4B01A8C4EE1B"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "374AECAB87EFD30C"
+					table_id: 8298031287037069412L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "5907F3AB751EC009"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4137B245B8074EF4"
+					item: "cataclysm_spellbooks:excelsius_power_chestplate"
+					type: "item"
+				}
+			]
+			title: "Excelsius"
+			x: 15.25d
+			y: 7.39d
+		}
+		{
+			dependencies: ["39D8654F18038421"]
+			description: ["&7Made at: &fSmithing Table &7from &fMonstrous Horn, Decrepit Flamberge, Netherite Upgrade Smithing Template"]
+			id: "545B3AF890020227"
+			rewards: [
+				{
+					id: "2BD32102F81CCB9F"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "46DA9E5DA0F84160"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "159706C256C67C6F"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "5E0BA8C6C922A75D"
+					item: "cataclysm_spellbooks:monstrous_flamberge"
+					type: "item"
+				}
+			]
+			title: "The Monstrous Flamberge"
+			x: 4.1d
+			y: 1.89d
+		}
+		{
+			dependencies: ["6C87D8C23E2A87A1"]
+			description: ["&7Made from: &fWitherite Ingot, Mechanical Weapon Parts, Mechanical Scrap"]
+			id: "75D27F091E818C4B"
+			rewards: [
+				{
+					id: "51AE8A74760BEC48"
+					type: "xp"
+					xp: 180
+				}
+				{
+					count: 2
+					id: "1D928C085248CF02"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "48C863BCF84B603A"
+					table_id: 8298031287037069412L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 100"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "24A34D06CEA39972"
+					silent: true
+					title: "+100 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0F7E6151E0008C92"
+					item: "cataclysm_spellbooks:murasama_blade"
+					type: "item"
+				}
+			]
+			title: "Murasama"
+			x: 7.7d
+			y: 1.89d
+		}
+		{
+			dependencies: [
+				"5DFA3BADB4429E89"
+				"4D4424625FB5F522"
+				"12FBCC858CA3D0CF"
+				"7D492C8283F4C6B9"
+			]
+			description: ["Any &athree&f of: the Codex of Malice, Excelsius armour, the Soul Katana, Jade Pagoda armour."]
+			id: "56ECA57CF320065E"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					id: "6A6AB77947A02729"
+					type: "xp"
+					xp: 4000
+				}
+				{
+					id: "6442857B0D8B392B"
+					item: "coinsje:diamond_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0CC76D4F607564E9"
+					table_id: 6836421709223983787L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s magic 250"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "75AC8BE0083D8960"
+					silent: true
+					title: "+250 Magic experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "3E8DD9431A59477F"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			title: "&d&lArchmage of the New Schools"
+			x: 19.7d
+			y: 3.33d
+		}
+		{
+			dependencies: ["73DEA2D3065F9E76"]
+			id: "6AAAF9907D15F287"
+			rewards: [
+				{
+					id: "19DA100E425D3E12"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5AEBCF909ECA440D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "226BE44ABC22D87E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Left behind by the restless dead of the East."
+			tasks: [
+				{
+					count: 2L
+					id: "0924522EE0A858CE"
+					item: "iss_magicfromtheeast:crystallized_soul"
+					type: "item"
+				}
+			]
+			title: "Soul Crystals"
+			x: 15.25d
+			y: -0.11d
+		}
+		{
+			dependencies: ["7D492C8283F4C6B9"]
+			description: ["Two opposites held in balance. Every weapon of the Symmetry school is made around one."]
+			id: "43B274082E1542E6"
+			rewards: [
+				{
+					id: "0D126CE434CEFD09"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3FBD0F0B2E8A8480"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2FB370817B16AC28"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "57DA552E9D9DBA9B"
+					item: "iss_magicfromtheeast:yin_yang_core"
+					type: "item"
+				}
+			]
+			title: "A Yin Yang Core"
+			x: 11.65d
+			y: -0.11d
+		}
+		{
+			dependencies: ["02BB827D2815E775"]
+			description: ["The Leviathan's school: eight abyssal foci around a blank runestone. It turns plain cloth and a plain book into the deep's own."]
+			id: "0C187106513E8960"
+			rewards: [
+				{
+					id: "036DD61084EEC9F5"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "29DFEC3D8DE60C67"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6BD221D17617B602"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "713CFAFFE4761887"
+					item: "cataclysm_spellbooks:abyssal_rune"
+					type: "item"
+				}
+			]
+			title: "An Abyssal Rune"
+			x: 5.85d
+			y: 9.08d
+		}
+		{
+			dependencies: ["710EF6CA95BC9865"]
+			description: ["The Harbinger's school: eight technomancy foci around a blank runestone. Magic that thinks it is machinery."]
+			id: "6DAC523090642C6B"
+			rewards: [
+				{
+					id: "0FFB8F7046D61843"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "3DDEA9ACC647CDB7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2399F8F91D3805B7"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6E214C68728A19D1"
+					item: "cataclysm_spellbooks:technomancy_rune"
+					type: "item"
+				}
+			]
+			title: "A Technomancy Rune"
+			x: 11.65d
+			y: 7.02d
+		}
+		{
+			dependencies: ["545B3AF890020227"]
+			description: ["Scrap from the Ancient Factory, sorted into something that could be a blade again."]
+			id: "6C87D8C23E2A87A1"
+			rewards: [
+				{
+					id: "5231F6222C2EE714"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "421219A44CED69E4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "36D52A87ABB2BF82"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "38D99E440E313077"
+					item: "cataclysm_spellbooks:mechanical_weapon_parts"
+					type: "item"
+				}
+			]
+			title: "Mechanical Weapon Parts"
+			x: 5.85d
+			y: 1.89d
+		}
+		{
+			dependencies: ["710EF6CA95BC9865"]
+			description: [
+				"Another piece of the Cursium mage set."
+				"&7Made at: &fSmithing Table &7from &fCursium Ingot, Netherite Battlemage Boots, Cursium Upgrade Smithing Template"
+			]
+			id: "310D0034127098DF"
+			optional: true
+			rewards: [
+				{
+					id: "6EE37F0C06143871"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "7E9B0AEFEFF249D5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7B1C354139DDD372"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Cursed boots"
+			tasks: [
+				{
+					id: "2F43D25B2B98BB39"
+					item: "cataclysm_spellbooks:cursium_mage_boots"
+					type: "item"
+				}
+			]
+			title: "The Cursium Greaves"
+			x: 11.65d
+			y: 10.14d
+		}
+		{
+			dependencies: ["710EF6CA95BC9865"]
+			description: ["Netherite battlemage armour, upgraded with Cursium at a smithing table. Cursium comes from Maledictus."]
+			id: "11FC6F1116258890"
+			optional: true
+			rewards: [
+				{
+					id: "6BD00515651F741E"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "5FED7EF7F9D54642"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "78CF4C3AAEDC7ABF"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A cursed crown"
+			tasks: [
+				{
+					id: "1472B0CC87783A82"
+					item: "cataclysm_spellbooks:cursium_mage_circlet"
+					type: "item"
+				}
+			]
+			title: "The Cursium Circlet"
+			x: 11.65d
+			y: 11.64d
+		}
+		{
+			dependencies: ["310D0034127098DF"]
+			description: [
+				"Completes the Cursium mage set."
+				"&7Made at: &fSmithing Table &7from &fCursium Ingot, Netherite Battlemage Leggings, Cursium Upgrade Smithing Template"
+			]
+			id: "70B686DCD7567FA6"
+			optional: true
+			rewards: [
+				{
+					id: "76F717C26DC79B32"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "2DF5DAF894BF26CE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "7867B671EA2D706E"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "The set's last piece"
+			tasks: [
+				{
+					id: "5BE4E1B3C226DDD6"
+					item: "cataclysm_spellbooks:cursium_mage_skirt"
+					type: "item"
+				}
+			]
+			title: "The Cursium Skirt"
+			x: 13.4d
+			y: 10.14d
+		}
+		{
+			dependencies: ["02BB827D2815E775"]
+			description: [
+				"Netherite battlemage armour remade with &eIgnitium&f, from Ignis. A fire caster's set."
+				"&7&fIgnis Mage Greaves&7 - Made at: &fSmithing Table &7from &fIgnitium Ingot, Netherite Battlemage Boots, Smithing Template"
+				"&7&fIgnis Mage Hat&7 - Made at: &fSmithing Table &7from &fIgnitium Ingot, Netherite Battlemage Hat, Smithing Template"
+			]
+			id: "241ACC18E686CF2D"
+			optional: true
+			rewards: [
+				{
+					id: "07E4644A72EC7D28"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "23714EDAF8EA74C1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "0291D26E4C1C4E0A"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Robes of fire"
+			tasks: [
+				{
+					id: "7B342038DBBF84D2"
+					item: "cataclysm_spellbooks:ignis_boots"
+					type: "item"
+				}
+				{
+					id: "2692668D294E663D"
+					item: "cataclysm_spellbooks:ignis_helmet"
+					type: "item"
+				}
+				{
+					id: "658FF52396DC6067"
+					item: "cataclysm_spellbooks:ignis_leggings"
+					type: "item"
+				}
+			]
+			title: "The Ignis Mage Set"
+			x: 5.85d
+			y: 10.39d
+		}
+		{
+			dependencies: ["0E9594A0CBFAC47A"]
+			description: ["Mage robes of arcane cloth, a nature rune and the bones of the Kobolediators. Treasure of the Ancient Remnant's tomb."]
+			id: "7EE8EB88CB9F5877"
+			optional: true
+			rewards: [
+				{
+					id: "3F139AECF33E345C"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "74F104B818D2FCAF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "75D415DE38E80395"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sacred robes"
+			tasks: [
+				{
+					id: "1345640FD141F19B"
+					item: "cataclysm_spellbooks:pharaoh_chestplate"
+					type: "item"
+				}
+				{
+					id: "5C90455295152972"
+					item: "cataclysm_spellbooks:pharaoh_greaves"
+					type: "item"
+				}
+				{
+					id: "6CE15635E98F3565"
+					item: "cataclysm_spellbooks:pharaoh_helmet"
+					type: "item"
+				}
+				{
+					id: "3FD6304A7FDF4F08"
+					item: "cataclysm_spellbooks:pharaoh_leggings"
+					type: "item"
+				}
+			]
+			title: "The Pharaoh's Vestments"
+			x: 9.8d
+			y: 10.39d
+		}
+		{
+			dependencies: ["6C6F8263E31D8C9E"]
+			description: ["The Plagued robes, set with &eAmethyst Crab&f shell at a smithing table."]
+			id: "4BD84A5EA1FAABE4"
+			optional: true
+			rewards: [
+				{
+					id: "3D65FC4691D09389"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "37E6FDB2C9D67790"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "4D4206CD62735667"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Amethyst on plague robes"
+			tasks: [
+				{
+					id: "17395F71D2F3F085"
+					item: "cataclysm_spellbooks:bloom_stone_chestplate"
+					type: "item"
+				}
+				{
+					id: "4AAD7B3A1E8607E6"
+					item: "cataclysm_spellbooks:bloom_stone_greaves"
+					type: "item"
+				}
+				{
+					id: "5C9E56CDE9C00009"
+					item: "cataclysm_spellbooks:bloom_stone_hat"
+					type: "item"
+				}
+			]
+			title: "Bloom Stone"
+			x: 2.1d
+			y: -0.11d
+		}
+		{
+			dependencies: ["4BD84A5EA1FAABE4"]
+			description: [
+				"Completes the Bloom Stone set."
+				"&7Made at: &fSmithing Table &7from &fAmethyst Shard, Plagued Leggings, Amethyst Crab Shell"
+			]
+			id: "2EF05521289C2845"
+			optional: true
+			rewards: [
+				{
+					id: "754B6D1930FB4B9F"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "61A76C1743B4E97A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6016B097169B9C28"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "And its last piece"
+			tasks: [
+				{
+					id: "3099555C26DCF69C"
+					item: "cataclysm_spellbooks:bloom_stone_skirt"
+					type: "item"
+				}
+			]
+			title: "The Bloom Stone Skirt"
+			x: 4.1d
+			y: -0.11d
+		}
+		{
+			dependencies: ["6DAC523090642C6B"]
+			description: [
+				"Engineer's armour rebuilt in witherite. The leggings stop all fall damage."
+				"&7&fExcelsius Propulsion Greaves&7 - Made at: &fSmithing Table &7from &fWitherite Ingot, Engineer's Boots, Redstone Dust"
+				"&7&fExcelsius Propulsion Leggings&7 - Made at: &fSmithing Table &7from &fWitherite Ingot, Engineer's Pants, Redstone Dust"
+			]
+			id: "38D0C1B6B1FC5000"
+			optional: true
+			rewards: [
+				{
+					id: "7FCB895CBB8E0875"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "06E9FCF8F7042C69"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "2FF0EE2F57E3B963"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Never take fall damage"
+			tasks: [
+				{
+					id: "3BE497B78CBE578E"
+					item: "cataclysm_spellbooks:excelsius_greaves"
+					type: "item"
+				}
+				{
+					id: "37D6063557A4B60A"
+					item: "cataclysm_spellbooks:excelsius_leggings"
+					type: "item"
+				}
+			]
+			title: "Excelsius Propulsion"
+			x: 13.4d
+			y: 7.14d
+		}
+		{
+			dependencies: ["6DAC523090642C6B"]
+			description: [
+				"The Engineer's hood rebuilt with an upgrade for more mana."
+				"&7Made at: &fSmithing Table &7from &fWitherite Ingot, Engineer's Hood, Excelsius Upgrade: Mana"
+			]
+			id: "42D62DBBEE5470A4"
+			optional: true
+			rewards: [
+				{
+					id: "6395132086F47473"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "288DEC5A6A3ACA12"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "3BEAECF6A73C660D"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "A visor for mana"
+			tasks: [
+				{
+					id: "3FDE12BB65C02361"
+					item: "cataclysm_spellbooks:excelsius_power_visors"
+					type: "item"
+				}
+			]
+			title: "Excelsius Adversary"
+			x: 13.4d
+			y: 8.64d
+		}
+		{
+			dependencies: ["2B8B0EFA58B8468B"]
+			description: [
+				"Witherite on the Engineer's suit, upgraded for spell resistance, plus a visor that does the same for cooldowns."
+				"&7&fExcelsius Oppressor Chestplate&7 - Made at: &fSmithing Table &7from &fWitherite Ingot, Engineer's Suit, Excelsius Upgrade: Spell Resistance"
+				"&7&fExcelsius Oppressor Visor&7 - Made at: &fSmithing Table &7from &fWitherite Ingot, Engineer's Hood, Excelsius Upgrade: Spell Resistance"
+			]
+			id: "0AA935407A7C73BE"
+			optional: true
+			rewards: [
+				{
+					id: "4ABD53E971100967"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "65B53FD1E6A0E202"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "6C6FA99288434B73"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Armour against magic"
+			tasks: [
+				{
+					id: "343765B25C66DD61"
+					item: "cataclysm_spellbooks:excelsius_resist_chestplate"
+					type: "item"
+				}
+				{
+					id: "43A6D4D2DFE639FE"
+					item: "cataclysm_spellbooks:excelsius_resist_visors"
+					type: "item"
+				}
+				{
+					id: "131DBB4B9E7B342D"
+					item: "cataclysm_spellbooks:excelsius_speed_visors"
+					type: "item"
+				}
+			]
+			title: "Excelsius Oppressor"
+			x: 15.25d
+			y: 4.14d
+		}
+		{
+			dependencies: ["2B8B0EFA58B8468B"]
+			description: [
+				"The Engineer's suit rebuilt with an upgrade for shorter cooldowns."
+				"&7Made at: &fSmithing Table &7from &fWitherite Ingot, Engineer's Suit, Excelsius Upgrade: Cooldown"
+			]
+			id: "60A550A4F166CE40"
+			optional: true
+			rewards: [
+				{
+					id: "4DD72FE785E995A0"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 9
+					id: "32DE21CAB4651303"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s magic 35"
+					elevate_perms: true
+					icon: "minecraft:enchanted_book"
+					id: "254E2E5C504EDE86"
+					silent: true
+					title: "+35 Magic experience"
+					type: "command"
+				}
+			]
+			subtitle: "Faster spells"
+			tasks: [
+				{
+					id: "3281FFDBF175A0C9"
+					item: "cataclysm_spellbooks:excelsius_speed_chestplate"
+					type: "item"
+				}
+			]
+			title: "Excelsius Velocity"
+			x: 15.25d
+			y: 5.64d
+		}
+	]
+	subtitle: ["The lords' grimoires, and magic from the East"]
+	title: "&dNew Schools"
+}

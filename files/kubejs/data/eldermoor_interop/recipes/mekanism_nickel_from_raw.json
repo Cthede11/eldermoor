@@ -1,0 +1,13 @@
+{
+ "type": "mekanism:enriching",
+ "input": {
+  "ingredient": {
+   "tag": "forge:raw_materials/nickel"
+  },
+  "amount": 3
+ },
+ "output": {
+  "item": "immersiveengineering:dust_nickel",
+  "count": 4
+ }
+}

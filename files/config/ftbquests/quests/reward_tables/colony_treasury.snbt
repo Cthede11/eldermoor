@@ -1,0 +1,58 @@
+{
+	icon: "minecolonies:ancienttome"
+	id: "132290304CAE21F6"
+	loot_size: 1
+	order_index: 36
+	rewards: [
+		{
+			count: 3
+			item: "minecraft:diamond"
+			weight: 3.0f
+		}
+		{
+			count: 8
+			item: "minecraft:emerald"
+			weight: 3.0f
+		}
+		{
+			count: 12
+			item: "minecraft:gold_ingot"
+			weight: 3.0f
+		}
+		{
+			item: "minecolonies:ancienttome"
+			weight: 3.0f
+		}
+		{
+			count: 2
+			item: "minecraft:iron_block"
+			weight: 2.0f
+		}
+		{
+			count: 3
+			item: "coinsje:gold_coin"
+			weight: 3.0f
+		}
+		{
+			item: "coinsje:diamond_coin"
+		}
+		{
+			count: 12
+			item: "minecraft:experience_bottle"
+			weight: 2.0f
+		}
+		{
+			item: "minecraft:name_tag"
+		}
+		{
+			count: 4
+			item: "minecolonies:scroll_tp"
+			weight: 2.0f
+		}
+		{
+			count: 2
+			item: "minecolonies:scroll_buff"
+		}
+	]
+	title: "Colony Treasury"
+}

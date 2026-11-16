@@ -1,0 +1,20 @@
+{
+  "placement": {
+    "exclusion_zones": [
+      {
+        "chunk_count": 10,
+        "other_set": "valhelsia_structures:big_trees"
+      }
+    ],
+    "salt": 24357670,
+    "separation": 28,
+    "spacing": 88,
+    "type": "valhelsia_structures:valhelsia_random_spread"
+  },
+  "structures": [
+    {
+      "structure": "valhelsia_structures:tower_ruin",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,2999 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "kitchen"
+	group: "478F493742D3F387"
+	icon: "farmersdelight:cooking_pot"
+	id: "2A42D404A1DC4559"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["63D583F00BADD799"]
+			description: [
+				"Food is not just fuel here. Every &enew&f dish you try counts towards &cextra hearts&f (open the Food Book to see your progress), and cooked meals carry buffs that raw food never will."
+				""
+				"Wild cabbages, tomatoes, onions and rice grow in the world. Break them for seeds."
+				""
+				"&7Cooking and eating feed your Cooking tree; harvesting feeds Farming."
+				"&7Made at: &fGarden Cloche &7from &fCabbage Seeds, Dirt"
+			]
+			hide_until_deps_complete: true
+			id: "31CC77A0829F99A9"
+			rewards: [
+				{
+					id: "1E63ECD335A40178"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 9
+					id: "280231D0E353C496"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "522DBFC57D66B95F"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 250"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "3523CBFCD8F271F5"
+					silent: true
+					title: "+250 Cooking experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "farmersdelight:main/get_fd_seed"
+					criterion: ""
+					icon: "farmersdelight:wild_onions"
+					id: "497C29E610AC5DC7"
+					title: "Crops of the Wild"
+					type: "advancement"
+				}
+			]
+			title: "&a&lA World of Flavour"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31CC77A0829F99A9"]
+			id: "56B7FED294984658"
+			rewards: [
+				{
+					id: "5E4D78996E28AEE5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "37C2BA98F373AE41"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "6511ADAE8A5E979A"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Craft a Knife to scavenge extra goods from plants and animals"
+			tasks: [
+				{
+					advancement: "farmersdelight:main/craft_knife"
+					criterion: ""
+					icon: "farmersdelight:flint_knife"
+					id: "766CE54F639B4434"
+					title: "Hunt and Gather"
+					type: "advancement"
+				}
+			]
+			title: "Hunt and Gather"
+			x: 2.1d
+			y: 1.69d
+		}
+		{
+			dependencies: ["56B7FED294984658"]
+			description: ["&7Made at: &fCutting Board &7from &fBlock of Bamboo"]
+			id: "583D81B3A2B79435"
+			rewards: [
+				{
+					id: "00E18D9E899936E0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4C9ECA07ADBB4E30"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "6FC75796924203A3"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Harvest grass, wheat or rice with a Knife to collect Straw"
+			tasks: [
+				{
+					advancement: "farmersdelight:main/harvest_straw"
+					criterion: ""
+					icon: "farmersdelight:straw"
+					id: "2E0E76452D67DA10"
+					title: "Grasping at Straws"
+					type: "advancement"
+				}
+			]
+			title: "Grasping at Straws"
+			x: 8.85d
+			y: 1.69d
+		}
+		{
+			dependencies: ["583D81B3A2B79435"]
+			id: "4D9C48992B9D18BA"
+			rewards: [
+				{
+					id: "142F54388101FB30"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7AA60D2447F9B260"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "58ABCB2FF808F511"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "With a tool in hand, use a Cutting Board to break down an item"
+			tasks: [
+				{
+					advancement: "farmersdelight:main/use_cutting_board"
+					criterion: ""
+					icon: "farmersdelight:cutting_board"
+					id: "1B3DA23C433D6556"
+					title: "Watch Your Fingers"
+					type: "advancement"
+				}
+			]
+			title: "Watch Your Fingers"
+			x: 10.85d
+			y: 1.69d
+		}
+		{
+			dependencies: ["4D9C48992B9D18BA"]
+			description: ["&7Found in chests: &fFd Bastion Hoglin Stable, Fd Village Butcher"]
+			id: "74EA772100005516"
+			rewards: [
+				{
+					id: "7744E12E7132E3A6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0BE0CD44D04A9AF6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "4263FD604E7A6886"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Use a Knife to extract Ham from Pigs or Hoglins"
+			tasks: [
+				{
+					advancement: "farmersdelight:main/get_ham"
+					criterion: ""
+					icon: "farmersdelight:ham"
+					id: "5B77F7D1947FFAA1"
+					title: "Wild Butcher"
+					type: "advancement"
+				}
+			]
+			title: "Wild Butcher"
+			x: 14.45d
+			y: 1.69d
+		}
+		{
+			dependencies: ["74EA772100005516"]
+			description: ["The Butchery goes further than a knife: hang a carcass on a hook, skin it, and take cuts on the table."]
+			id: "578A0D8F8DD7594E"
+			rewards: [
+				{
+					id: "37237CD98DC3B4F0"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "1B2222B0C6E82838"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "779267557CB8458C"
+					table_id: 7815952837699228947L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s cooking 100"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "7DB8CF1EDF66897B"
+					silent: true
+					title: "+100 Cooking experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "25F4E8757EE37C57"
+					item: "butcher:butchers_knife"
+					type: "item"
+				}
+				{
+					id: "5B175B59BF2DF9FF"
+					item: "butcher:butcherstable"
+					type: "item"
+				}
+			]
+			title: "The Butcher's Trade"
+			x: 22.4d
+			y: 1.69d
+		}
+		{
+			dependencies: ["31CC77A0829F99A9"]
+			description: ["It needs heat underneath: a stove, a campfire or a fire."]
+			id: "5E5246C7F31D18F0"
+			rewards: [
+				{
+					id: "1B5C5931CE2B8B47"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6EB7AFC0DF03FEC7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "27D9981D62901DB1"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Put down a Cooking Pot and start preparing meals!"
+			tasks: [
+				{
+					advancement: "farmersdelight:main/place_cooking_pot"
+					criterion: ""
+					icon: "farmersdelight:cooking_pot"
+					id: "20AA6AF624879897"
+					title: "Dinner's Served!"
+					type: "advancement"
+				}
+			]
+			title: "Dinner's Served!"
+			x: 2.1d
+			y: -13.81d
+		}
+		{
+			dependencies: ["5E5246C7F31D18F0"]
+			id: "02D4982EFD4D42AB"
+			rewards: [
+				{
+					id: "16097EE085D8ABCD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "379E566E75AFB92C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "582377D6DB7FC882"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Heats a pot and grills six items on top."
+			tasks: [
+				{
+					id: "38E7AD294C0B0BEA"
+					item: "farmersdelight:stove"
+					type: "item"
+				}
+			]
+			title: "A Stove"
+			x: 8.85d
+			y: -13.81d
+		}
+		{
+			dependencies: ["3F1EA505E4AAF885"]
+			description: ["Skillets let you cook on the go. Stand near heat, then hold food in your other hand!"]
+			id: "18E5CAEDD47526A7"
+			rewards: [
+				{
+					id: "0B023214C1AAE60C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "74C93299605CC721"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "7960899F7A37BD17"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/use_skillet"
+					criterion: ""
+					icon: "farmersdelight:skillet"
+					id: "24827A1256683AD3"
+					title: "Portable Cooking"
+					type: "advancement"
+				}
+			]
+			title: "Portable Cooking"
+			x: 14.45d
+			y: -10.81d
+		}
+		{
+			dependencies: ["18E5CAEDD47526A7"]
+			description: ["Warm bowl meals will keep you healing steadily, no matter how hungry you are!"]
+			id: "0968A5F77F9B7D40"
+			rewards: [
+				{
+					id: "789FC8C2EE789D05"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "11FCCF433F34E56C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "618CC4554DDE244B"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/eat_comfort_food"
+					criterion: ""
+					icon: "farmersdelight:baked_cod_stew"
+					id: "536EF18E5232FEB7"
+					title: "Comforting!"
+					type: "advancement"
+				}
+			]
+			title: "Comforting!"
+			x: 16.3d
+			y: -10.81d
+		}
+		{
+			dependencies: ["0968A5F77F9B7D40"]
+			description: ["Plated meals will prevent you from getting exhausted or hungry for a while!"]
+			id: "12EF8AFBED784FCF"
+			rewards: [
+				{
+					id: "44DD150C8147834F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "571D34526028D975"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "111977219075AF07"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/eat_nourishing_food"
+					criterion: ""
+					icon: "farmersdelight:steak_and_potatoes"
+					id: "58B31B8EF0B9D476"
+					title: "Nourishing!"
+					type: "advancement"
+				}
+			]
+			title: "Nourishing!"
+			x: 18.3d
+			y: -10.81d
+		}
+		{
+			dependencies: ["12EF8AFBED784FCF"]
+			description: [
+				"Some meals are big enough to be placed down and shared with friends!"
+				""
+				"Roast chicken, stuffed pumpkin, honey glazed ham, shepherd's pie."
+			]
+			id: "55C79F838456B60B"
+			rewards: [
+				{
+					id: "6832C28CAD9FD43F"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "14FDA0BA1843B9A3"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "13389A31816EE8C4"
+					table_id: 7815952837699228947L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s cooking 100"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "49B69E7FF838D5DB"
+					silent: true
+					title: "+100 Cooking experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "farmersdelight:main/place_feast"
+					criterion: ""
+					icon: "farmersdelight:roast_chicken_block"
+					id: "3B1AB4FAE64DC850"
+					title: "A Glorious Feast"
+					type: "advancement"
+				}
+			]
+			title: "A Glorious Feast"
+			x: 22.4d
+			y: -10.81d
+		}
+		{
+			dependencies: ["31CC77A0829F99A9"]
+			description: ["Place down some Organic Compost. It composts better with sun, water and mushrooms!"]
+			id: "29388755E75A8DD0"
+			rewards: [
+				{
+					id: "5EBE70906AB86271"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "09524C2DFAA73DF9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "1E007BD92A1B3F7C"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/place_organic_compost"
+					criterion: ""
+					icon: "farmersdelight:organic_compost"
+					id: "0BD02F606A96CD51"
+					title: "Advanced Composting"
+					type: "advancement"
+				}
+			]
+			title: "Advanced Composting"
+			x: 2.1d
+			y: -3.69d
+		}
+		{
+			dependencies: ["56A6F51741E17006"]
+			description: [
+				"Organic Compost slowly decays into Rich Soil, an upgrade for your farms!"
+				"&7Made at: &fSpout &7from &fOrganic Compost"
+			]
+			id: "708F72E73355CB7B"
+			rewards: [
+				{
+					id: "5A6E1B8BC463DAA5"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "67A8607D31E8391C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "2D9C03BBB95C45F8"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/get_rich_soil"
+					criterion: ""
+					icon: "farmersdelight:rich_soil"
+					id: "62ECAE0B2FE09580"
+					title: "Plant Food"
+					type: "advancement"
+				}
+			]
+			title: "Plant Food"
+			x: 10.85d
+			y: -1.31d
+		}
+		{
+			dependencies: ["708F72E73355CB7B"]
+			description: ["Shear a fully mature Mushroom Colony. To grow them like this, you'll need a very rich soil..."]
+			id: "20A5CA77F22B11BE"
+			rewards: [
+				{
+					id: "3D705F2FE674D97B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "28A768BCF4F3302C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "7A5589873D38C1FB"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/get_mushroom_colony"
+					criterion: ""
+					icon: "farmersdelight:red_mushroom_colony"
+					id: "6A14E8CF3F6E197A"
+					title: "Fungus Among Us"
+					type: "advancement"
+				}
+			]
+			title: "Fungus Among Us"
+			x: 14.45d
+			y: -1.31d
+		}
+		{
+			dependencies: ["20A5CA77F22B11BE"]
+			id: "0DD9DDF9D81A6999"
+			rewards: [
+				{
+					id: "15392FFE866EFD60"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "67F94E4BE4DEC3FE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "30C8F706782147D2"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Plant grains of Rice in a shallow water puddle"
+			tasks: [
+				{
+					advancement: "farmersdelight:main/plant_rice"
+					criterion: ""
+					icon: "farmersdelight:rice"
+					id: "449BEA1FC5E830A5"
+					title: "Dipping Your Roots"
+					type: "advancement"
+				}
+			]
+			title: "Dipping Your Roots"
+			x: 16.3d
+			y: -1.31d
+		}
+		{
+			dependencies: ["0DD9DDF9D81A6999"]
+			id: "73FF95045EB11DD4"
+			rewards: [
+				{
+					id: "419E07F38D4AF5CF"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "1A20031D9F71E96A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "5EE5664DC7269A47"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Hang some rope above a tomato crop to make it grow taller"
+			tasks: [
+				{
+					advancement: "farmersdelight:main/harvest_ropelogged_tomato"
+					criterion: ""
+					icon: "farmersdelight:tomato"
+					id: "4E366CA2E9DD3826"
+					title: "Tall-mato"
+					type: "advancement"
+				}
+			]
+			title: "Tall-mato"
+			x: 18.3d
+			y: -1.31d
+		}
+		{
+			dependencies: ["73FF95045EB11DD4"]
+			description: ["Cultivate every food-related plant you can find, such as vegetables, fruits, fungi or roots!"]
+			id: "2DAE529AA7C3921F"
+			rewards: [
+				{
+					id: "017A36563AA1A0DB"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "0071C9B9D4BA686E"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "283D5ADDD7A8D488"
+					table_id: 7815952837699228947L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s cooking 100"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "57ABE1982CA73F04"
+					silent: true
+					title: "+100 Cooking experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "farmersdelight:main/plant_all_crops"
+					criterion: ""
+					icon: "farmersdelight:cabbage"
+					id: "106F73A60570F6BC"
+					title: "Crop Rotation"
+					type: "advancement"
+				}
+			]
+			title: "Crop Rotation"
+			x: 22.4d
+			y: -1.31d
+		}
+		{
+			dependencies: ["7BC4F933D957140C"]
+			description: ["Aquaculture rods take a hook, a line, a bobber and bait. Different waters hold different fish."]
+			id: "6B58C244C60F76F5"
+			rewards: [
+				{
+					id: "0107B3D8BD5DC2B2"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "703B6634264E9F02"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "236B376192446ABE"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "54CEA94ACFF629C0"
+					item: "aquaculture:iron_fishing_rod"
+					type: "item"
+				}
+			]
+			title: "A Better Rod"
+			x: 8.85d
+			y: 14.78d
+		}
+		{
+			dependencies: ["4B84EA5B87327263"]
+			id: "480DEF20F0A92835"
+			rewards: [
+				{
+					id: "4BE29C5E3E83C2B0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "06C9C7ACB24E76FC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "4D30F01E8700B08E"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Change hooks and bait here. Worms come from tilling soil."
+			tasks: [
+				{
+					id: "50F6E0640E076CD0"
+					item: "aquaculture:tackle_box"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0DD0C2C6C546F370"
+					item: "aquaculture:worm"
+					type: "item"
+				}
+			]
+			title: "Tackle Box"
+			x: 14.45d
+			y: 10.88d
+		}
+		{
+			dependencies: ["480DEF20F0A92835"]
+			id: "11323D2EFA337E38"
+			rewards: [
+				{
+					id: "292A0B9823E169BE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6667C90B4DF5526B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "02C52664EB1EE6D8"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Any fish on a crafting grid with a fillet knife."
+			tasks: [
+				{
+					count: 8L
+					id: "29CFDCFA7C300B7E"
+					item: "aquaculture:fish_fillet_raw"
+					type: "item"
+				}
+			]
+			title: "Fillets"
+			x: 16.3d
+			y: 10.88d
+		}
+		{
+			dependencies: ["19563D7246168E4D"]
+			description: ["Rarely, the sea gives up a chest. Sometimes there is a blue ingot inside."]
+			id: "6BADAC94FE347BB8"
+			rewards: [
+				{
+					id: "70275535CC2222DA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7CD4A10D2893B072"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "08FC481EEA25211A"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "164F9A60EC24DFEA"
+					item: "aquaculture:neptunium_ingot"
+					type: "item"
+				}
+			]
+			title: "Neptune's Bounty"
+			x: 20.05d
+			y: 8.06d
+		}
+		{
+			dependencies: ["6BADAC94FE347BB8"]
+			description: ["&7Made from: &fany string x2, Wooden Rod, Neptunium Ingot x2"]
+			id: "38021E1D1728C533"
+			rewards: [
+				{
+					id: "403783B427FAFD0E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "6837A9BAE4CF3816"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "31E33894FBFC7FA9"
+					table_id: 7815952837699228947L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s cooking 100"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "305B0E01F1F7EDA8"
+					silent: true
+					title: "+100 Cooking experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The best rod there is."
+			tasks: [
+				{
+					id: "3D35188B30E9129B"
+					item: "aquaculture:neptunium_fishing_rod"
+					type: "item"
+				}
+			]
+			title: "The Sea King's Rod"
+			x: 22.4d
+			y: 3.69d
+		}
+		{
+			dependencies: ["5E5246C7F31D18F0"]
+			description: ["The Nether has its own crops and its own cuts. A machete harvests them."]
+			id: "62CE4E837D52A397"
+			rewards: [
+				{
+					id: "49D92028FE3270D6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "693BFE4AEA766C1A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "6E8067EBFA45136E"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "25A12988D4A1D749"
+					item: "nethersdelight:iron_machete"
+					type: "item"
+				}
+			]
+			title: "Nether Cuisine"
+			x: 8.85d
+			y: -9.06d
+		}
+		{
+			dependencies: ["62CE4E837D52A397"]
+			description: ["&7Dropped by: &fHoglin"]
+			id: "3BDD159086798A58"
+			rewards: [
+				{
+					id: "632B45F6BA291A8B"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "79E2EB3C39F855B2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "09C16D47F0BA3660"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Tastes like pork with an attitude."
+			tasks: [
+				{
+					id: "3FF8191CA6E56875"
+					item: "nethersdelight:hoglin_loin"
+					type: "item"
+				}
+			]
+			title: "Hoglin"
+			x: 10.85d
+			y: -9.06d
+		}
+		{
+			dependencies: ["3BDD159086798A58"]
+			id: "06EEA24C298B4807"
+			rewards: [
+				{
+					id: "6AF0F9C299F18DC1"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "3780D3976907F68B"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "609D7E5525A6E5C2"
+					table_id: 7815952837699228947L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s cooking 100"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "5BD1869AF7E7D2D0"
+					silent: true
+					title: "+100 Cooking experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A stove that never needs lighting."
+			tasks: [
+				{
+					id: "017510C3340DD58D"
+					item: "nethersdelight:blackstone_stove"
+					type: "item"
+				}
+			]
+			title: "Blackstone Stove"
+			x: 14.45d
+			y: -9.06d
+		}
+		{
+			dependencies: [
+				"578A0D8F8DD7594E"
+				"55C79F838456B60B"
+				"2DAE529AA7C3921F"
+				"38021E1D1728C533"
+			]
+			id: "1B0DB3AE28FB08D4"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					id: "62D8A2AED9BA3DB8"
+					type: "xp"
+					xp: 700
+				}
+				{
+					id: "7DBF76335D15CDF9"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3812A76BF30E6F83"
+					table_id: 7815952837699228947L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7357C33B6A0FBDDB"
+					table_id: 1281641154896614215L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s cooking 250"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "7A3C4132D9D4DFE9"
+					silent: true
+					title: "+250 Cooking experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "Finish any three rows."
+			tasks: [
+				{
+					id: "796C73CF8ABD17B1"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&a&lMaster of the Kitchen"
+			x: 24.75d
+			y: 1.62d
+		}
+		{
+			dependencies: ["02D4982EFD4D42AB"]
+			description: ["Beef, a carrot and a potato in the pot, and a bowl to serve it in. Compare it with a raw carrot."]
+			id: "3F1EA505E4AAF885"
+			rewards: [
+				{
+					id: "26778DD57D77B83A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "544F9B57498869D3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "4943310EE4B9DBF8"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "29A48305484DBC3C"
+					item: "farmersdelight:beef_stew"
+					type: "item"
+				}
+			]
+			title: "The First Real Meal"
+			x: 10.85d
+			y: -15.31d
+		}
+		{
+			dependencies: ["31CC77A0829F99A9"]
+			id: "7BC4F933D957140C"
+			rewards: [
+				{
+					id: "7ACE5C082E6C2733"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "55650D26E24386D6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "61A5D13542C4F33B"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Three sticks and two string. Fish bite faster in the rain."
+			tasks: [
+				{
+					id: "5995999390FCC9D9"
+					item: "minecraft:fishing_rod"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4A7EBE5B52B3F014"
+					item: "minecraft:cod"
+					type: "item"
+				}
+			]
+			title: "A Line in the Water"
+			x: 2.1d
+			y: 14.56d
+		}
+		{
+			dependencies: ["6B58C244C60F76F5"]
+			description: ["Each hook changes what you catch or how often. They fit in the rod through a tackle box."]
+			id: "4B84EA5B87327263"
+			rewards: [
+				{
+					id: "66A6A0323822103F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7F73FB0E92B8B192"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "614CF0F72BFAF227"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "09BADFD3C28141D2"
+					item: "aquaculture:iron_hook"
+					type: "item"
+				}
+				{
+					id: "456503D70E05DE81"
+					item: "aquaculture:bobber"
+					type: "item"
+				}
+			]
+			title: "Hooks and Bobbers"
+			x: 10.85d
+			y: 14.78d
+		}
+		{
+			dependencies: ["11323D2EFA337E38"]
+			description: ["Not every catch is a fish: boxes, lockboxes and treasure chests come up too. The rarest is Neptune's Bounty."]
+			id: "19563D7246168E4D"
+			rewards: [
+				{
+					id: "7B9C0B59C7B98305"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0DC9B6FAB7FADCAC"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "6064102598AC9B2C"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "538C23294418108B"
+					item: "aquaculture:neptunes_bounty"
+					type: "item"
+				}
+			]
+			title: "Something Heavy on the Line"
+			x: 18.3d
+			y: 8.06d
+		}
+		{
+			dependencies: ["29388755E75A8DD0"]
+			description: ["Dirt, straw, bone meal and tree bark. Left near water it darkens, slowly, into &eRich Soil&f - faster with mushrooms or more compost beside it."]
+			id: "56A6F51741E17006"
+			rewards: [
+				{
+					id: "24DCE8FA20E0ED7D"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7060D148FA64E18B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "7D0599CE303DD1CC"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "40C86AAA651474B9"
+					item: "farmersdelight:organic_compost"
+					type: "item"
+				}
+			]
+			title: "Organic Compost"
+			x: 8.85d
+			y: -3.69d
+		}
+		{
+			dependencies: ["11323D2EFA337E38"]
+			description: ["A fish caught in mushroom country. Cut it up and it gives brown mushrooms."]
+			id: "7CB725515F2837FC"
+			optional: true
+			rewards: [
+				{
+					id: "12CE439F3A44D81E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "144D9AA088805C24"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "496C7EBAD3897B48"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "A fish that is a mushroom"
+			tasks: [
+				{
+					id: "0AD85A3F051D4CA9"
+					item: "aquaculture:brown_shrooma"
+					type: "item"
+				}
+			]
+			title: "The Brown Shrooma"
+			x: 18.3d
+			y: 9.44d
+		}
+		{
+			dependencies: ["6BADAC94FE347BB8"]
+			description: ["Deals extra damage to anything you fight underwater."]
+			id: "0E46BAD13E2B5354"
+			optional: true
+			rewards: [
+				{
+					id: "74B103FF04E31601"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "37F68A6DAB9F7FA9"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "2CC333817C217DC7"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Stronger in the water"
+			tasks: [
+				{
+					id: "05FE2AB18B9ADBAC"
+					item: "aquaculture:neptunium_axe"
+					type: "item"
+				}
+			]
+			title: "The Neptunium Axe"
+			x: 22.4d
+			y: 5.44d
+		}
+		{
+			dependencies: ["6BADAC94FE347BB8"]
+			description: ["Each piece helps underwater: the helmet lets you see further, the chestplate lets you breathe, the leggings make you weightless and the boots make you swim faster."]
+			id: "41E267ECFA02714B"
+			optional: true
+			rewards: [
+				{
+					id: "41161FC9F16AD808"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "38ECFBC5C75164C8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "282881D20C2F265F"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Dress for the deep"
+			tasks: [
+				{
+					id: "361D8AA6103BFF85"
+					item: "aquaculture:neptunium_boots"
+					type: "item"
+				}
+				{
+					id: "075DFF565C9421B1"
+					item: "aquaculture:neptunium_chestplate"
+					type: "item"
+				}
+				{
+					id: "4435F5AEB5893AC2"
+					item: "aquaculture:neptunium_helmet"
+					type: "item"
+				}
+				{
+					id: "38C70889A9553FEC"
+					item: "aquaculture:neptunium_leggings"
+					type: "item"
+				}
+			]
+			title: "Neptunium Armour"
+			x: 24.0d
+			y: 5.19d
+		}
+		{
+			dependencies: ["6BADAC94FE347BB8"]
+			description: ["Its arrows fly through water as smoothly as through air."]
+			id: "6393201EC95174C2"
+			optional: true
+			rewards: [
+				{
+					id: "2082EEFE3A601CD4"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4B797F1B052E4D05"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "6B50148423569D0C"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Arrows that cut through water"
+			tasks: [
+				{
+					id: "67BDA6DFAAA22A62"
+					item: "aquaculture:neptunium_bow"
+					type: "item"
+				}
+			]
+			title: "The Neptunium Bow"
+			x: 25.6d
+			y: 4.94d
+		}
+		{
+			dependencies: ["6BADAC94FE347BB8"]
+			description: ["Farmland you till with it stays moist, no water needed."]
+			id: "0DDA340E1F7A4AC7"
+			optional: true
+			rewards: [
+				{
+					id: "28A52E46E09E8C28"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5128DB2827EC5F08"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "32BCB2A9A2D783F4"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Farmland that stays wet"
+			tasks: [
+				{
+					id: "7C9D61DFF2D89E22"
+					item: "aquaculture:neptunium_hoe"
+					type: "item"
+				}
+			]
+			title: "The Neptunium Hoe"
+			x: 25.6d
+			y: 6.19d
+		}
+		{
+			dependencies: ["6BADAC94FE347BB8"]
+			description: ["No mining slowdown underwater. Ocean monuments stop being a chore."]
+			id: "6AE757632FF427F7"
+			optional: true
+			rewards: [
+				{
+					id: "2C88C7A2F00816F2"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "46C26632EB75BFC4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "5C3F6321F9083EEA"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Mine underwater at full speed"
+			tasks: [
+				{
+					id: "3487158E3D03926F"
+					item: "aquaculture:neptunium_pickaxe"
+					type: "item"
+				}
+			]
+			title: "The Neptunium Pickaxe"
+			x: 25.6d
+			y: 7.44d
+		}
+		{
+			dependencies: ["6BADAC94FE347BB8"]
+			description: [
+				"No digging slowdown underwater."
+				"&7Made from: &fNeptunium Ingot, Wooden Rod x2"
+			]
+			id: "696A7B2F8C661C90"
+			optional: true
+			rewards: [
+				{
+					id: "7931DF30CAC0A7DE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7C5B2F788FD87AB3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "3870C90CE88B0591"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Dig the seabed"
+			tasks: [
+				{
+					id: "09DAEB907D102A2A"
+					item: "aquaculture:neptunium_shovel"
+					type: "item"
+				}
+			]
+			title: "The Neptunium Shovel"
+			x: 22.4d
+			y: 8.44d
+		}
+		{
+			dependencies: ["6BADAC94FE347BB8"]
+			description: ["Deals extra damage to anything you fight underwater."]
+			id: "6EF6EEFE08FD40A0"
+			optional: true
+			rewards: [
+				{
+					id: "0F05D40B82C43F91"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5A8D4DF9EF1DD585"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "78636D4BB3637957"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "A sword for drowned and guardians"
+			tasks: [
+				{
+					id: "2187BA00A0BA9B7D"
+					item: "aquaculture:neptunium_sword"
+					type: "item"
+				}
+			]
+			title: "The Neptunium Sword"
+			x: 22.4d
+			y: 9.69d
+		}
+		{
+			dependencies: ["11323D2EFA337E38"]
+			description: ["Caught in the same waters as the brown one, and it gives red mushrooms."]
+			id: "65FDF11CB5112A7B"
+			optional: true
+			rewards: [
+				{
+					id: "6A8CE3CAAB3933CD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "70DF611EFEC44B68"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "3785E94651613801"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Its red cousin"
+			tasks: [
+				{
+					id: "0E9FC1BDF691D5DF"
+					item: "aquaculture:red_shrooma"
+					type: "item"
+				}
+			]
+			title: "The Red Shrooma"
+			x: 18.3d
+			y: 10.94d
+		}
+		{
+			dependencies: ["56A6F51741E17006"]
+			description: ["Place a whole pie and cut slices off it with a knife, or eat it straight from the table."]
+			id: "55F7C5377D7302CE"
+			optional: true
+			rewards: [
+				{
+					id: "6F6726C47E45832A"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4B0BD3E61692B7AF"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "7D9D20CEE2AC80E8"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Cut it in slices"
+			tasks: [
+				{
+					id: "4FF3E4E829BB9ED5"
+					item: "farmersdelight:apple_pie"
+					type: "item"
+				}
+			]
+			title: "Apple Pie"
+			x: 10.85d
+			y: -4.31d
+		}
+		{
+			dependencies: ["56A6F51741E17006"]
+			description: [
+				"Wild cabbage grows near beaches; cut it with a knife for seeds. Cabbage goes into salads, rolls and sandwiches."
+				"&7Made at: &fGarden Cloche &7from &fCabbage Seeds, Dirt"
+			]
+			id: "54F64C383649322C"
+			optional: true
+			rewards: [
+				{
+					id: "70C45072591CCB21"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "3B661AAB26B5E912"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "3A64C1ED0041B8BC"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Leaves for salad and rolls"
+			tasks: [
+				{
+					id: "1734031728F0A693"
+					item: "farmersdelight:cabbage"
+					type: "item"
+				}
+			]
+			title: "Cabbage"
+			x: 10.85d
+			y: -5.81d
+		}
+		{
+			dependencies: ["56A6F51741E17006"]
+			description: ["Another pie to place whole and slice."]
+			id: "61A66C2936BB3D9B"
+			optional: true
+			rewards: [
+				{
+					id: "08B87C431C3BAB55"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "23B43584B4A134C6"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "6E94844F902425A4"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sweeter still"
+			tasks: [
+				{
+					id: "2BBA84E357093E5E"
+					item: "farmersdelight:chocolate_pie"
+					type: "item"
+				}
+			]
+			title: "Chocolate Pie"
+			x: 10.85d
+			y: -2.81d
+		}
+		{
+			dependencies: ["56A6F51741E17006"]
+			description: ["Placed whole and eaten in slices."]
+			id: "296DFFD58D1B66FB"
+			optional: true
+			rewards: [
+				{
+					id: "7BA64D181E495BDC"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2AB7B71D1B83A8A1"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "04ED31847167AFFE"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "A dessert for the table"
+			tasks: [
+				{
+					id: "449AECC8DD7095BF"
+					item: "farmersdelight:sweet_berry_cheesecake"
+					type: "item"
+				}
+			]
+			title: "Sweet Berry Cheesecake"
+			x: 10.85d
+			y: 0.19d
+		}
+		{
+			dependencies: ["7BC4F933D957140C"]
+			description: ["Cod, potato, egg and tomato, cooked in the pot."]
+			id: "1BA9EA09883B2209"
+			optional: true
+			rewards: [
+				{
+					id: "73D3A79353E25C6F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6EAD5D70D95B820F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "3F2069BE5F6909DD"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Cod with potatoes"
+			tasks: [
+				{
+					id: "61D2931E2C0CC8DA"
+					item: "farmersdelight:baked_cod_stew"
+					type: "item"
+				}
+			]
+			title: "Baked Cod Stew"
+			x: 8.85d
+			y: 11.94d
+		}
+		{
+			dependencies: ["54F64C383649322C"]
+			description: ["Cabbage wrapped round a filling, cooked in the pot."]
+			id: "2871DAACB9F36DD0"
+			optional: true
+			rewards: [
+				{
+					id: "39E09F315B0C6A11"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6C68DAE99A3FC695"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "33E90C52F0368C85"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Filled leaves"
+			tasks: [
+				{
+					id: "43F479A50CB69642"
+					item: "farmersdelight:cabbage_rolls"
+					type: "item"
+				}
+			]
+			title: "Cabbage Rolls"
+			x: 14.45d
+			y: -7.31d
+		}
+		{
+			dependencies: ["54F64C383649322C"]
+			description: ["Bread, cooked chicken, salad leaves and a carrot. Filling food that keeps you fed far longer than raw meat."]
+			id: "5F202A3D5D09710C"
+			optional: true
+			rewards: [
+				{
+					id: "7D2DE66B8D94E7CA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "6B32B5CC398259FE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "47C3F8023690A954"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Proper lunch"
+			tasks: [
+				{
+					id: "10085A3BDE1C16FA"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+			]
+			title: "A Chicken Sandwich"
+			x: 14.45d
+			y: -5.81d
+		}
+		{
+			dependencies: ["7BC4F933D957140C"]
+			description: [
+				"Cod slices on cooked rice."
+				"&7Made from: &fRaw Cod Slice x2, Cooked Rice"
+			]
+			id: "5668A0108C205032"
+			optional: true
+			rewards: [
+				{
+					id: "30F95B14D602A3B7"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "30FFD62E28FBE038"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "70906C3B27F6FF4D"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "The cod version"
+			tasks: [
+				{
+					id: "5E56F1A87EDB5557"
+					item: "farmersdelight:cod_roll"
+					type: "item"
+				}
+			]
+			title: "Cod Rolls"
+			x: 8.85d
+			y: 13.44d
+		}
+		{
+			dependencies: ["3F1EA505E4AAF885"]
+			description: ["Place an item on it and use a knife, axe or other tool to cut it: slices, fillets, bark and more."]
+			id: "6768E7E61D07DDC4"
+			optional: true
+			rewards: [
+				{
+					id: "215107519B4E2A6F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "17C5113D20071519"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "5ED63651C80602CC"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Where the knife work happens"
+			tasks: [
+				{
+					id: "75601D1E6861A59F"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			title: "The Cutting Board"
+			x: 14.45d
+			y: -19.81d
+		}
+		{
+			dependencies: ["3F1EA505E4AAF885"]
+			description: [
+				"Rotten flesh, bone meal, meat and rice. Feed it to a tamed wolf to heal it and keep it strong."
+				"&7Made at: &fCooking Pot &7from &fRotten Flesh, Bone Meal, any wolf prey, Rice Crop"
+			]
+			id: "4EE8F17562C873E3"
+			optional: true
+			rewards: [
+				{
+					id: "399EBC7641E6A32C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4D3B5E0C9BBAEB64"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "6115E0C48DE2645C"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Treat your wolf"
+			tasks: [
+				{
+					id: "464152FF3517CF19"
+					item: "farmersdelight:dog_food"
+					type: "item"
+				}
+			]
+			title: "Dog Food"
+			x: 14.45d
+			y: -18.31d
+		}
+		{
+			dependencies: ["54F64C383649322C"]
+			description: ["Cooked in the Cooking Pot from dough, cabbage, onion and meat or mushrooms."]
+			id: "57D4B418B0356759"
+			optional: true
+			rewards: [
+				{
+					id: "61ADFC434F026F96"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "01A6B66DD45C1462"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "0292215AC6F71C6D"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Dough wrapped round meat"
+			tasks: [
+				{
+					id: "09F1DBD127C0CA6B"
+					item: "farmersdelight:dumplings"
+					type: "item"
+				}
+			]
+			title: "Dumplings"
+			x: 14.45d
+			y: -4.31d
+		}
+		{
+			dependencies: ["7BC4F933D957140C"]
+			description: [
+				"Raw fish, tomato sauce and onion, cooked together."
+				"&7Made at: &fCooking Pot &7from &fany raw fishes, Tomato Sauce, Onion Crop"
+			]
+			id: "53263C81844F61D3"
+			optional: true
+			rewards: [
+				{
+					id: "0C051D5F05C385B2"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "17EBCAF93CD44A94"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "4D28CCD1BD8341A3"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Fish, tomato, onion"
+			tasks: [
+				{
+					id: "3452DF42C543CFD2"
+					item: "farmersdelight:fish_stew"
+					type: "item"
+				}
+			]
+			title: "Fish Stew"
+			x: 8.85d
+			y: 16.19d
+		}
+		{
+			dependencies: ["4B84EA5B87327263"]
+			description: ["Iron and string. Aquaculture's rods take a line, a hook and a bobber, and changing them changes what you catch."]
+			id: "341F8CD5B88786A3"
+			optional: true
+			rewards: [
+				{
+					id: "2FF6BBA3F60DDFA0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "465F0BD5266C3445"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "45B7795EBCE2C2F3"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Better line for better rods"
+			tasks: [
+				{
+					id: "74FA8DB31737F7C6"
+					item: "aquaculture:fishing_line"
+					type: "item"
+				}
+			]
+			title: "Fishing Line"
+			x: 14.45d
+			y: 12.19d
+		}
+		{
+			dependencies: ["3F1EA505E4AAF885"]
+			description: ["Dried kelp, rice and carrot. Cut it into slices to share."]
+			id: "3669A02313D1DD93"
+			optional: true
+			rewards: [
+				{
+					id: "5C79A06D4A34E473"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2A90B4409D4A1865"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "434531A861958437"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Seaweed round the rice"
+			tasks: [
+				{
+					id: "13B04CB784441D48"
+					item: "farmersdelight:kelp_roll"
+					type: "item"
+				}
+			]
+			title: "Kelp Rolls"
+			x: 14.45d
+			y: -16.81d
+		}
+		{
+			dependencies: ["3F1EA505E4AAF885"]
+			description: ["Melon and ice. Eating one cools you down; it even puts out fire."]
+			id: "66D87E9C25751D67"
+			optional: true
+			rewards: [
+				{
+					id: "183E6CC45A4A3116"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5B61B62A3BC03CC8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "47472BEB03E98EE2"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Ice on a stick"
+			tasks: [
+				{
+					id: "6509025027F784D9"
+					item: "farmersdelight:melon_popsicle"
+					type: "item"
+				}
+			]
+			title: "A Melon Popsicle"
+			x: 14.45d
+			y: -15.31d
+		}
+		{
+			dependencies: ["3F1EA505E4AAF885"]
+			description: ["Salmon slices on cooked rice. Several kinds of roll make a Rice Roll Medley."]
+			id: "54569D9121E43264"
+			optional: true
+			rewards: [
+				{
+					id: "532D2459EAF5CE51"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "19DFEC526D22BFB2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "523B48B227AEE709"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Raw fish, rice"
+			tasks: [
+				{
+					id: "26D76FFE689AB167"
+					item: "farmersdelight:salmon_roll"
+					type: "item"
+				}
+			]
+			title: "Salmon Rolls"
+			x: 14.45d
+			y: -13.81d
+		}
+		{
+			dependencies: ["4B84EA5B87327263"]
+			description: ["Half the time, a cast does not cost the rod any durability."]
+			id: "0B5BC436F35610C5"
+			optional: true
+			rewards: [
+				{
+					id: "533FAFAB596E9F51"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7751D93A1A324DF3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "0D48F8026BF5272D"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Barely wears your rod"
+			tasks: [
+				{
+					id: "2FE53FF6A251678B"
+					item: "aquaculture:diamond_hook"
+					type: "item"
+				}
+			]
+			title: "The Diamond Hook"
+			x: 14.45d
+			y: 13.69d
+		}
+		{
+			dependencies: ["4B84EA5B87327263"]
+			description: ["A chance to catch two things on one cast."]
+			id: "18C9676B98E6611E"
+			optional: true
+			rewards: [
+				{
+					id: "039D57EAA17FB853"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7441A1154FCC9812"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "66B1E83088B5F14A"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Two at once"
+			tasks: [
+				{
+					id: "3378900E6259C34D"
+					item: "aquaculture:double_hook"
+					type: "item"
+				}
+			]
+			title: "The Double Hook"
+			x: 14.45d
+			y: 15.19d
+		}
+		{
+			dependencies: ["4B84EA5B87327263"]
+			description: ["A hook that raises your luck while fishing."]
+			id: "5AAAA36A40CDA503"
+			optional: true
+			rewards: [
+				{
+					id: "569C746238280523"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "776DC56DBE3740B3"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "0E2ED45767F7408F"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Luckier catches"
+			tasks: [
+				{
+					id: "4B2CA2CA2DA62076"
+					item: "aquaculture:gold_hook"
+					type: "item"
+				}
+			]
+			title: "The Gold Hook"
+			x: 14.45d
+			y: 16.69d
+		}
+		{
+			dependencies: ["4B84EA5B87327263"]
+			description: ["Your line lands closer to you. Useful in small ponds."]
+			id: "2261C8343EB450B8"
+			optional: true
+			rewards: [
+				{
+					id: "5ADBED673E89FE04"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "26AFCD666EA97EF5"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "5D80D1641756CC99"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Short casts"
+			tasks: [
+				{
+					id: "001F3A3C7FBE9BB5"
+					item: "aquaculture:heavy_hook"
+					type: "item"
+				}
+			]
+			title: "The Heavy Hook"
+			x: 14.45d
+			y: 17.94d
+		}
+		{
+			dependencies: ["3669A02313D1DD93"]
+			description: [
+				"A kelp roll cut with a knife into quick bites."
+				"&7Made at: &fCutting Board &7from &fKelp Roll, Knives Tool"
+			]
+			id: "5519E18EA2F0261B"
+			optional: true
+			rewards: [
+				{
+					id: "549CF3CAC77DC5C1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "11EE0974F7200241"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "286D1B1724471497"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Sliced to share"
+			tasks: [
+				{
+					id: "36887E39E1398040"
+					item: "farmersdelight:kelp_roll_slice"
+					type: "item"
+				}
+			]
+			title: "Kelp Roll Slices"
+			x: 16.3d
+			y: -16.81d
+		}
+		{
+			dependencies: ["4B84EA5B87327263"]
+			description: ["Plays a sound when a fish is about to bite."]
+			id: "2E1603A124F45D4C"
+			optional: true
+			rewards: [
+				{
+					id: "7533AAAF21D377A9"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4110FD688C6B26C2"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "689DE57AC231087A"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "It tells you"
+			tasks: [
+				{
+					id: "25CAC3E0C395737C"
+					item: "aquaculture:note_hook"
+					type: "item"
+				}
+			]
+			title: "The Note Hook"
+			x: 14.45d
+			y: 19.19d
+		}
+		{
+			dependencies: ["4B84EA5B87327263"]
+			description: ["Gives you longer to reel in after a fish bites."]
+			id: "74329DBB19093C49"
+			optional: true
+			rewards: [
+				{
+					id: "726C8E5F83CB623F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "557276AFAC24052E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "49F7FF5D400D6DC1"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "More time to reel"
+			tasks: [
+				{
+					id: "079AEBD7B534FA5C"
+					item: "aquaculture:redstone_hook"
+					type: "item"
+				}
+			]
+			title: "The Redstone Hook"
+			x: 14.45d
+			y: 20.44d
+		}
+		{
+			dependencies: ["3F1EA505E4AAF885"]
+			description: ["Cook food in it over heat, or hold food in your off hand and the skillet in your main hand to fry it. It is also a decent weapon."]
+			id: "1F681821547D06D5"
+			optional: true
+			rewards: [
+				{
+					id: "5FFFBBE01626FF58"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7FC65D9686A0B99E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "59F257CC8C3129B9"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "A pan you can swing"
+			tasks: [
+				{
+					id: "00F1D7799E60A41F"
+					item: "farmersdelight:skillet"
+					type: "item"
+				}
+			]
+			title: "The Skillet"
+			x: 14.45d
+			y: -12.31d
+		}
+		{
+			dependencies: ["6B58C244C60F76F5"]
+			description: ["A rod far tougher than the iron one, with room for the same line, hook and bobber."]
+			id: "65F9934A33380382"
+			optional: true
+			rewards: [
+				{
+					id: "15040307166143DE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "751B4CF6D67C37D8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "0AEF394266E7050C"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "A rod that lasts"
+			tasks: [
+				{
+					id: "28A752CF2089237D"
+					item: "aquaculture:diamond_fishing_rod"
+					type: "item"
+				}
+			]
+			title: "The Diamond Fishing Rod"
+			x: 10.85d
+			y: 16.19d
+		}
+		{
+			dependencies: ["0B5BC436F35610C5"]
+			description: ["Luckier catches, and half your casts cost no durability."]
+			id: "46ED7987157A2FAB"
+			optional: true
+			rewards: [
+				{
+					id: "768636432F079161"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "379454A49905C29C"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "5C89108B22B755AB"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "The best hook there is"
+			tasks: [
+				{
+					id: "6A4E135151717D70"
+					item: "aquaculture:nether_star_hook"
+					type: "item"
+				}
+			]
+			title: "The Nether Star Hook"
+			x: 16.3d
+			y: 13.69d
+		}
+		{
+			dependencies: ["31CC77A0829F99A9"]
+			description: [
+				"Tomatoes make tomato sauce, which goes into stews, pasta and more."
+				"&7Made at: &fGarden Cloche &7from &fTomato Seeds, Dirt"
+			]
+			id: "332C208697998CE3"
+			optional: true
+			rewards: [
+				{
+					id: "3ADCDC0B96CCF5BB"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4AB394DDF4B1738B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "0E6E212DEBE976AD"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Grown on a climbing vine"
+			tasks: [
+				{
+					id: "63E78AD0BA5B1828"
+					item: "farmersdelight:tomato"
+					type: "item"
+				}
+			]
+			title: "Tomatoes"
+			x: 2.1d
+			y: -1.31d
+		}
+		{
+			dependencies: ["02D4982EFD4D42AB"]
+			description: ["Glow berries, milk, egg and sugar in the Cooking Pot. A sweet that gives a little light."]
+			id: "683A00D0D6606A19"
+			optional: true
+			rewards: [
+				{
+					id: "307170771BB911E1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "7F824BCE2F931D79"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "23E5ED600AF62749"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "A dessert that glows"
+			tasks: [
+				{
+					id: "7750815D6050D644"
+					item: "farmersdelight:glow_berry_custard"
+					type: "item"
+				}
+			]
+			title: "Glow Berry Custard"
+			x: 10.85d
+			y: -13.81d
+		}
+		{
+			dependencies: ["02D4982EFD4D42AB"]
+			description: [
+				"Honey and wheat."
+				"&7Made from: &fHoney Bottle, Wheat x2"
+			]
+			id: "6E5920E8C915A9C8"
+			optional: true
+			rewards: [
+				{
+					id: "3E3AA3221A3A6426"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "4A969AA61D8E0D5B"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "53B678D778155A11"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Another quick snack"
+			tasks: [
+				{
+					id: "5CF8C481426D1689"
+					item: "farmersdelight:honey_cookie"
+					type: "item"
+				}
+			]
+			title: "Honey Cookies"
+			x: 10.85d
+			y: -12.31d
+		}
+		{
+			dependencies: ["4B84EA5B87327263"]
+			description: ["Your line flies further. Useful on wide water."]
+			id: "5F969FD1FD96D43E"
+			optional: true
+			rewards: [
+				{
+					id: "60E88AA874CECA33"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "2298B31B272CD21E"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "65C6CDCC94133888"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "Long casts"
+			tasks: [
+				{
+					id: "4E1C59A72F6CE59F"
+					item: "aquaculture:light_hook"
+					type: "item"
+				}
+			]
+			title: "The Light Hook"
+			x: 14.45d
+			y: 21.94d
+		}
+		{
+			dependencies: ["02D4982EFD4D42AB"]
+			description: [
+				"Sweet berries and wheat."
+				"&7Made from: &fSweet Berries, Wheat x2"
+			]
+			id: "4E2516F568852F56"
+			optional: true
+			rewards: [
+				{
+					id: "21DC205C1ECB90AD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "0C7901D31D36F8FD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "09332812F457691A"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "A quick snack"
+			tasks: [
+				{
+					id: "6F41D419255682B6"
+					item: "farmersdelight:sweet_berry_cookie"
+					type: "item"
+				}
+			]
+			title: "Sweet Berry Cookies"
+			x: 10.85d
+			y: -10.81d
+		}
+		{
+			dependencies: ["31CC77A0829F99A9"]
+			description: ["Hay, a rice bale, an apple and a golden carrot. Feed it to a tamed mount to heal it and give it a boost."]
+			id: "02B92D0387F7CF56"
+			optional: true
+			rewards: [
+				{
+					id: "5004EEAC657DC6E2"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 3
+					id: "5CFC5424E680725F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s cooking 35"
+					elevate_perms: true
+					icon: "minecraft:bread"
+					id: "44E9D5D54A306380"
+					silent: true
+					title: "+35 Cooking experience"
+					type: "command"
+				}
+			]
+			subtitle: "For a faithful mount"
+			tasks: [
+				{
+					id: "1570123C8D16EAAF"
+					item: "farmersdelight:horse_feed"
+					type: "item"
+				}
+			]
+			title: "Horse Feed"
+			x: 2.1d
+			y: 0.19d
+		}
+	]
+	subtitle: ["Grow it, catch it, cook it - and get hearts for it"]
+	title: "&aField \\& Kitchen"
+}

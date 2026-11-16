@@ -1,0 +1,64 @@
+{
+	icon: "magistuarmory:steel_bastardsword"
+	id: "6DD64BB1314FEA03"
+	loot_size: 1
+	order_index: 34
+	rewards: [
+		{
+			count: 8
+			item: "mekanism:ingot_steel"
+			weight: 4.0f
+		}
+		{
+			count: 16
+			item: "minecraft:iron_ingot"
+			weight: 4.0f
+		}
+		{
+			count: 12
+			item: "minecraft:leather"
+			weight: 3.0f
+		}
+		{
+			count: 3
+			item: "minecraft:diamond"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "magistuarmory:steel_chainmail"
+			weight: 3.0f
+		}
+		{
+			count: 48
+			item: "minecraft:arrow"
+			weight: 3.0f
+		}
+		{
+			count: 2
+			item: "minecraft:golden_apple"
+			weight: 2.0f
+		}
+		{
+			item: "minecraft:shield"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "coinsje:iron_coin"
+			weight: 3.0f
+		}
+		{
+			count: 8
+			item: "minecraft:experience_bottle"
+			weight: 2.0f
+		}
+		{
+			item: "simplyswords:iron_cutlass"
+		}
+		{
+			item: "minecraft:netherite_scrap"
+		}
+	]
+	title: "Armoury Chest"
+}

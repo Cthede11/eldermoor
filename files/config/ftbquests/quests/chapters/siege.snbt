@@ -1,0 +1,1106 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "siege"
+	group: "02AD8609A8FE6EE4"
+	icon: "createbigcannons:cannon_mount"
+	id: "502FA116FCD43519"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["61AD760F453ED88D"]
+			description: [
+				"Create Big Cannons builds artillery out of blocks: an end, a chamber and barrels in a line, assembled on a &eCannon Mount&f that Create's rotation aims."
+				""
+				"Cannons are loaded from the muzzle - powder charges, then the projectile - and fired with redstone. Every cannon has a limit; overload one and it bursts."
+				""
+				"&cCannon fire breaks blocks.&f Agree with your friends where to test, and keep it away from the colony."
+				""
+				"Hold &eW&f over any part for Ponder."
+			]
+			hide_until_deps_complete: true
+			id: "58310D14C3C076A7"
+			rewards: [
+				{
+					id: "7F2D5E0DA5C6A9C9"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 2
+					id: "0078158BDED9F84D"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "24CD2B589EC9AD01"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E8B4039F3D839CA"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "7690728E164F7D20"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2051BEDC80BB585E"
+					item: "createbigcannons:cannon_mount"
+					type: "item"
+				}
+			]
+			title: "&c&lSiegeworks"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58310D14C3C076A7"]
+			description: ["The first cannon is carved from logs. It is weak and takes only a small charge, but it fires."]
+			id: "335B6B0CD748EDBD"
+			rewards: [
+				{
+					id: "01132329B43E5B48"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7B830FD3A38A1F89"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "288BE4C7F497D9AB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "6A6CC4EE1552F332"
+					item: "createbigcannons:log_cannon_end"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2CC7B66B1A386FF4"
+					item: "createbigcannons:log_cannon_chamber"
+					type: "item"
+				}
+			]
+			title: "A Log Cannon"
+			x: 2.1d
+			y: -1.75d
+		}
+		{
+			dependencies: ["335B6B0CD748EDBD"]
+			description: [
+				"Powder charges first, then the shot, pushed in with the Ram Rod. Solid shot punches through wood and thin walls."
+				""
+				"The ram rod and the &eWorm&f (which pulls munitions back out) cost you hunger."
+			]
+			id: "0A12328E1EEFE8E3"
+			rewards: [
+				{
+					id: "1DC6048B303B2D78"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "51465068AA58850F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2C711B6B7D71C3B1"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "4CB38D382DDACCDA"
+					item: "createbigcannons:powder_charge"
+					type: "item"
+				}
+				{
+					id: "72B7433128FC8DAA"
+					item: "createbigcannons:solid_shot"
+					type: "item"
+				}
+				{
+					id: "74D89B1570B5B840"
+					item: "createbigcannons:ram_rod"
+					type: "item"
+				}
+			]
+			title: "Powder and Shot"
+			x: 3.85d
+			y: -1.75d
+		}
+		{
+			dependencies: ["0A12328E1EEFE8E3"]
+			description: ["Iron instead of wood: a cannon that takes more powder and throws further."]
+			id: "6440B8FDA325E12D"
+			rewards: [
+				{
+					id: "48BFAA81D6C01145"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "65B17EC29F54B6AD"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2634FAD745991ABE"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "2CAFA7843762CA27"
+					item: "createbigcannons:wrought_iron_cannon_end"
+					type: "item"
+				}
+				{
+					id: "55F8C00C7FD83963"
+					item: "createbigcannons:wrought_iron_cannon_chamber"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron"
+			x: 5.6d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6440B8FDA325E12D"]
+			description: ["A carriage puts a cannon on wheels. The Cannon Loader is a contraption that loads for you."]
+			id: "64423416B6813AD1"
+			rewards: [
+				{
+					id: "0495280D567F5533"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "51581137C0A8F6BD"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03797229942305E6"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "43BDF18F6BA1087E"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7A6E2F99550AAA86"
+					item: "createbigcannons:cannon_carriage"
+					type: "item"
+				}
+				{
+					id: "36D73AF9A7908581"
+					item: "createbigcannons:cannon_loader"
+					type: "item"
+				}
+			]
+			title: "Carriage and Loader"
+			x: 7.45d
+			y: -1.75d
+		}
+		{
+			dependencies: ["0A12328E1EEFE8E3"]
+			description: [
+				"Shells explode; shot does not. Every shell needs a fuze in its nose. The impact fuze goes off when it hits - most of the time."
+				"&7&fHigh Explosive (HE) Shell&7 - Made at: &fMechanical Crafters &7from &fIron Ingot x5, any wooden slabs, any high explosive materials x2"
+			]
+			id: "4047BBC876A1CD01"
+			rewards: [
+				{
+					id: "0A97F2080D84E0DF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6D4B1EAFACDEB698"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "33173728EC2DD6DF"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3C58021C2A5C1086"
+					item: "createbigcannons:he_shell"
+					type: "item"
+				}
+				{
+					id: "6E9F7A2E1FEDD27E"
+					item: "createbigcannons:impact_fuze"
+					type: "item"
+				}
+			]
+			title: "High Explosive"
+			x: 5.6d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4047BBC876A1CD01"]
+			description: [
+				"Set a timed fuze and the shell bursts in the air. Shrapnel over a crowd of mobs is the point."
+				"&7&fShrapnel Shell&7 - Made at: &fMechanical Crafters &7from &fIron Ingot x5, Shot Balls, any gunpowder, any wooden slabs"
+			]
+			id: "1ABF467D78E0DF19"
+			rewards: [
+				{
+					id: "2A90BA6843979FCB"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "2DB4C22A4F51A8DB"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0507EF6F740E8AA5"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7EBB717411382778"
+					item: "createbigcannons:timed_fuze"
+					type: "item"
+				}
+				{
+					id: "7C07350CC27B9CCF"
+					item: "createbigcannons:shrapnel_shell"
+					type: "item"
+				}
+			]
+			title: "Timing"
+			x: 7.45d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1ABF467D78E0DF19"]
+			id: "73423E42C0C88193"
+			rewards: [
+				{
+					id: "1098949061CCAF58"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1403461BE41E74E7"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "06E254DF5B515612"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Bursts as it passes close to something. Anti-air."
+			tasks: [
+				{
+					id: "762DD86C4F79DD7B"
+					item: "createbigcannons:proximity_fuze"
+					type: "item"
+				}
+			]
+			title: "Proximity"
+			x: 9.55d
+			y: -3.5d
+		}
+		{
+			dependencies: ["73423E42C0C88193"]
+			description: [
+				"Smoke screens a crossing. Fluid shells carry whatever you fill them with. The gas mask keeps you breathing in your own gas clouds."
+				"&7&fFluid Shell&7 - Made at: &fMechanical Crafters &7from &fIron Ingot x5, Fluid Pipe x2, any wooden slabs"
+			]
+			id: "266C3F07368F32E0"
+			rewards: [
+				{
+					id: "2BD4F106B4039261"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "4ED2BE32C81142B4"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "3E277AA32346DBFB"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7F5B3B709925F82E"
+					item: "createbigcannons:smoke_shell"
+					type: "item"
+				}
+				{
+					id: "64221A6FCE61A21F"
+					item: "createbigcannons:fluid_shell"
+					type: "item"
+				}
+				{
+					id: "71A73CAF6CD7B947"
+					item: "createbigcannons:gas_mask"
+					type: "item"
+				}
+			]
+			title: "Smoke and Gas"
+			x: 11.4d
+			y: -3.5d
+		}
+		{
+			dependencies: ["58310D14C3C076A7"]
+			id: "54E5B219BC8885A7"
+			rewards: [
+				{
+					id: "0851CF5156EBDB98"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "24687F8CF3D8EE5D"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "305843C3D0C8FC88"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Iron and coal, compacted in a heated basin under a press."
+			tasks: [
+				{
+					count: 8L
+					id: "2E4C0C6D1E0220C5"
+					item: "createbigcannons:cast_iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Cast Iron"
+			x: 2.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54E5B219BC8885A7"]
+			description: ["With this lid on a heated basin, Create melts metal instead of mixing it."]
+			id: "636B595CDC65B78B"
+			rewards: [
+				{
+					id: "4DFA37759B1EECBF"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "22BDEA4135280794"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0AC38F3DC4D422D4"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "07DCDF63B4E9BB3F"
+					item: "createbigcannons:basin_foundry_lid"
+					type: "item"
+				}
+			]
+			title: "Basin Foundry"
+			x: 3.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["636B595CDC65B78B"]
+			description: [
+				"Pour molten metal into a mould packed with casting sand and it sets into an unbored cannon block."
+				"&7&fCannon End Cast Mould&7 - Made at: &fMechanical Saw &7from &fany logs"
+				"&7&fMedium Cast Mould&7 - Made at: &fMechanical Saw &7from &fany logs"
+			]
+			id: "4DD6C3EED4A40145"
+			rewards: [
+				{
+					id: "768D881EC78C3192"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "03225AD7C1D60284"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "0A831B4CD8329E04"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "41A2CE5DE9CD3828"
+					item: "createbigcannons:cannon_end_cast_mould"
+					type: "item"
+				}
+				{
+					id: "2357E6A7E7454861"
+					item: "createbigcannons:medium_cast_mould"
+					type: "item"
+				}
+			]
+			title: "Moulds"
+			x: 5.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DD6C3EED4A40145"]
+			description: ["The cast block spins on a bearing like a lathe while the drill is pushed through it. The drill needs water and must turn at least as fast as the piece."]
+			id: "68D85C220A28084C"
+			rewards: [
+				{
+					id: "0FFF52629581C34B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "15C29580E1B9BB65"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "302FD32F5592C559"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "736E2F2DE93B2B9F"
+					item: "createbigcannons:cannon_drill"
+					type: "item"
+				}
+			]
+			title: "Boring"
+			x: 7.45d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68D85C220A28084C"]
+			description: ["Cast, bored, and closed with a sliding breech so it loads from behind. A real gun."]
+			id: "20FD6E93D81E1B8D"
+			rewards: [
+				{
+					id: "77C72B104F8EF90B"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "6230BBD9E551D6C7"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "69EA1EEB45C1EC6F"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2B2F13CFB5A2A4D5"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "56461E9FE12461C4"
+					item: "createbigcannons:cast_iron_cannon_barrel"
+					type: "item"
+				}
+				{
+					id: "4D6EE89286041AE4"
+					item: "createbigcannons:cast_iron_cannon_chamber"
+					type: "item"
+				}
+				{
+					id: "20C49087FBD9D18D"
+					item: "createbigcannons:cast_iron_sliding_breech"
+					type: "item"
+				}
+			]
+			title: "A Cast Iron Cannon"
+			x: 9.55d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54E5B219BC8885A7"]
+			description: ["Copper and tin. In Eldermoor every mod's bronze is the same ingot."]
+			id: "2DE0140AE4D5D384"
+			rewards: [
+				{
+					id: "5C2EA40E4AFA0922"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "6C5796DD444ABA9F"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "52287E0C431E111E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "036F7143A74018A4"
+					item: "mekanism:ingot_bronze"
+					type: "item"
+				}
+			]
+			title: "Bronze"
+			x: 3.85d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2DE0140AE4D5D384"]
+			description: ["Small calibre, fast fire: breech, recoil spring and barrels in a line."]
+			id: "33CC33BB1942168E"
+			rewards: [
+				{
+					id: "73E77591842937C5"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0F4A79E138E223D8"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "2C74F062E22E9840"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "64B4E2D8B177452B"
+					item: "createbigcannons:bronze_autocannon_breech"
+					type: "item"
+				}
+				{
+					id: "3DFDE097548A574F"
+					item: "createbigcannons:bronze_autocannon_recoil_spring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3D9F7460188E0353"
+					item: "createbigcannons:bronze_autocannon_barrel"
+					type: "item"
+				}
+			]
+			title: "Autocannon"
+			x: 5.6d
+			y: 1.75d
+		}
+		{
+			dependencies: ["33CC33BB1942168E"]
+			id: "4189D9734023F5AE"
+			rewards: [
+				{
+					id: "7346415B80A819B2"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "0CB954F1C88AC52A"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1EA2E67A8D780DBA"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			subtitle: "Flak bursts near its target; armour-piercing goes through it."
+			tasks: [
+				{
+					count: 8L
+					id: "75A7C0C5E2300EB9"
+					item: "createbigcannons:flak_autocannon_round"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3B3D8E603A832774"
+					item: "createbigcannons:ap_autocannon_round"
+					type: "item"
+				}
+			]
+			title: "Rounds"
+			x: 7.45d
+			y: 1.75d
+		}
+		{
+			dependencies: ["4189D9734023F5AE"]
+			description: ["Feeds the autocannon so you are not loading it one round at a time."]
+			id: "22098B0F422CE15F"
+			rewards: [
+				{
+					id: "7F9AE4D1B87FD0A8"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "6711C258A583DD3B"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "69B8F717DED5D3EC"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "21BC4E62F426F556"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1F9A5DF2548D1C6C"
+					item: "createbigcannons:autocannon_ammo_container"
+					type: "item"
+				}
+			]
+			title: "Ammo Container"
+			x: 18.7d
+			y: 1.75d
+		}
+		{
+			dependencies: ["20FD6E93D81E1B8D"]
+			description: ["Steel cannons are built up: tubes of different sizes slid over one another and joined. The builder assembles the layers."]
+			id: "6AF774C2E9D6BD86"
+			rewards: [
+				{
+					id: "51D49EDDB9C6C811"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "7F9DC871A0F16A92"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5770321C60D3FF3E"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "1E0262948F227C2C"
+					item: "createbigcannons:cannon_builder"
+					type: "item"
+				}
+			]
+			title: "The Cannon Builder"
+			x: 11.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AF774C2E9D6BD86"]
+			id: "5192F5D483D5F347"
+			rewards: [
+				{
+					id: "391BCC6005916196"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "2049BCDA55CFAEE4"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1779C6B266B41911"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "1FA4AD8D56A38094"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Takes a far bigger charge than cast iron."
+			tasks: [
+				{
+					id: "00B4EB1AE7A6B745"
+					item: "createbigcannons:built_up_steel_cannon_barrel"
+					type: "item"
+				}
+				{
+					id: "751E059F7F4082C7"
+					item: "createbigcannons:steel_screw_breech"
+					type: "item"
+				}
+			]
+			title: "A Steel Cannon"
+			x: 13.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5192F5D483D5F347"]
+			description: [
+				"A quick-firing breech takes one brass cartridge instead of loose powder bags. Faster to reload."
+				"&7&fBig Cartridge&7 - Made at: &fCreate sequenced assembly &7from &fBig Cartridge Sheet, Partially Formed Big Cartridge x2"
+			]
+			id: "39BB6748DFD1C038"
+			rewards: [
+				{
+					id: "6A1103BAD440A74E"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "1C307F1084722ADE"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "741A5B82F5233C20"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "107738CB1C2E8288"
+					item: "createbigcannons:steel_quickfiring_breech"
+					type: "item"
+				}
+				{
+					id: "77F4C1F3FC8AFFDD"
+					item: "createbigcannons:big_cartridge"
+					type: "item"
+				}
+			]
+			title: "Quick-Firing"
+			x: 15.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39BB6748DFD1C038"]
+			description: ["Steel or cast iron alloyed with netherite scrap in a heated mixer. The strongest cannon metal."]
+			id: "4758F96F17201E9B"
+			rewards: [
+				{
+					id: "72D12DF356E1F31A"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 6
+					id: "72A784054CFF3563"
+					item: "coinsje:copper_coin"
+					type: "item"
+				}
+				{
+					command: "/mastery xp @s tech 35"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "02F16786BCEE3F01"
+					silent: true
+					title: "+35 Engineering experience"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "735B01D89C947746"
+					item: "createbigcannons:nethersteel_ingot"
+					type: "item"
+				}
+			]
+			title: "Nethersteel"
+			x: 16.85d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4758F96F17201E9B"]
+			description: ["Nethersteel takes the largest powder charges without bursting. Built-up pieces are assembled layer by layer on a &eCannon Builder&f."]
+			id: "7FF73FE9DA7DB559"
+			rewards: [
+				{
+					id: "00768EAFBFB6F52F"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 4
+					id: "5F077498C5D3B503"
+					item: "coinsje:iron_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75706A5B269E06E9"
+					table_id: 5386352790735213075L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 100"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "52E1B21D728422D3"
+					silent: true
+					title: "+100 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The last metal a cannon can be made of"
+			tasks: [
+				{
+					id: "6166212C180258A7"
+					item: "createbigcannons:built_up_nethersteel_cannon_barrel"
+					type: "item"
+				}
+				{
+					id: "3D3FF4C4A18FBC4B"
+					item: "createbigcannons:nethersteel_screw_breech"
+					type: "item"
+				}
+			]
+			title: "A Nethersteel Cannon"
+			x: 18.7d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"20FD6E93D81E1B8D"
+				"22098B0F422CE15F"
+				"5192F5D483D5F347"
+			]
+			description: ["Any two of: a cast iron cannon, a fed autocannon, a steel cannon."]
+			hide_dependency_lines: true
+			id: "25BA1FE5EDA74557"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "1B7DDE3B2C6545B6"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					count: 4
+					id: "6FDE41E90A531098"
+					item: "coinsje:gold_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "54028DA20D2CCAF4"
+					table_id: 3964824304375825551L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "494C49A897F81D5A"
+					table_id: 5701508291619146972L
+					type: "loot"
+				}
+				{
+					command: "/mastery xp @s tech 250"
+					elevate_perms: true
+					icon: "minecraft:redstone"
+					id: "5F1E867A120DF242"
+					silent: true
+					title: "+250 Engineering experience"
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "02236B025022C1BB"
+					title: "Claim"
+					type: "checkmark"
+				}
+			]
+			title: "&c&lMaster Gunner"
+			x: 21.05d
+			y: 1.58d
+		}
+	]
+	subtitle: ["Cannons, shells and fuzes, built from Create parts"]
+	title: "&cSiegeworks"
+}

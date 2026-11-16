@@ -1,0 +1,20 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 16,
+      "other_set": "minecraft:woodland_mansions"
+    },
+    "frequency": 0.8,
+    "salt": 10128856,
+    "separation": 56,
+    "spacing": 112,
+    "spread_type": "linear",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "explorify:dark_forest_settlement",
+      "weight": 1
+    }
+  ]
+}

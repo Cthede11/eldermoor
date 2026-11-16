@@ -1,0 +1,61 @@
+{
+  "type": "avaritia:infinity_catalyst",
+  "category": "misc",
+  "group": "default",
+  "ingredients": [
+    {
+      "item": "minecraft:bedrock"
+    },
+    {
+      "item": "avaritia:crystal_matrix_ingot"
+    },
+    {
+      "item": "avaritia:neutron_ingot"
+    },
+    {
+      "item": "avaritia:cosmic_meatballs"
+    },
+    {
+      "item": "avaritia:ultimate_stew"
+    },
+    {
+      "item": "avaritia:endest_pearl"
+    },
+    {
+      "item": "avaritia:record_fragment"
+    },
+    {
+      "item": "soulsweapons:lord_soul_white"
+    },
+    {
+      "item": "soulsweapons:lord_soul_day_stalker"
+    },
+    {
+      "item": "soulsweapons:lord_soul_night_prowler"
+    },
+    {
+      "item": "soulsweapons:lord_soul_void"
+    },
+    {
+      "item": "fdbosses:malkuth_trophy"
+    },
+    {
+      "item": "fdbosses:chesed_trophy"
+    },
+    {
+      "item": "fdbosses:geburah_trophy"
+    },
+    {
+      "item": "goety:void_echo"
+    },
+    {
+      "item": "goety_revelation:broken_halo"
+    },
+    {
+      "item": "deeperdarker:heart_of_the_deep"
+    },
+    {
+      "item": "draconicevolution:chaos_shard"
+    }
+  ]
+}
