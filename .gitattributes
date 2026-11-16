@@ -1,0 +1,2 @@
+# store every file byte for byte: the updater checks each file's SHA-1 against manifest.json
+* -text
