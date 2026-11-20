@@ -1,0 +1,25 @@
+{
+ "hidden": true,
+ "type": "origins:action_on_callback",
+ "entity_action_chosen": {
+  "type": "origins:and",
+  "actions": [
+   {
+    "type": "origins:give",
+    "stack": {
+     "item": "irons_spellbooks:copper_spell_book",
+     "amount": 1
+    }
+   },
+   {
+    "type": "origins:give",
+    "stack": {
+     "item": "irons_spellbooks:ice_rune",
+     "amount": 4
+    }
+   }
+  ]
+ },
+ "execute_chosen_when_orb": false,
+ "loading_priority": 100
+}

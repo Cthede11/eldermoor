@@ -1,6 +1,6 @@
 {
  "pack": "Eldermoor [RPG]",
- "version": "1.7.1",
+ "version": "1.7.2",
  "forge": "47.4.28",
  "minecraft": "1.20.1",
  "files_base": "https://raw.githubusercontent.com/Cthede11/eldermoor/main/files/",
@@ -14,7 +14,6 @@
  ],
  "retired": [
   "AdvancedPeripherals-1.20.1-0.7.41r.jar",
-  "AltOriginGui-*",
   "AmbientSounds_FORGE_v6.1.8_mc1.20.1.jar",
   "Apotheosis-1.20.1-7.4.6.jar",
   "ApothicCurios-1.20.1-1.0.3d.jar",
@@ -48,7 +47,6 @@
   "JadeAddons-1.20.1-Forge-5.3.1.jar",
   "Kiwi-1.20.1-Forge-11.8.29.jar",
   "L_Enders_Cataclysm-2.63.jar",
-  "Medieval Origins*",
   "MineColonies_Compatibility-1.20.1-2.70.jar",
   "MineColonies_Tweaks-1.20.1-2.59.jar",
   "NaturesCompass-1.20.1-1.11.2-forge.jar",
@@ -56,7 +54,6 @@
   "Obscure-Tooltips-2.2.jar",
   "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
   "Patchouli-1.20.1-84.1-FORGE.jar",
-  "Pehkui-*",
   "PuzzlesLib-v8.1.32-1.20.1-Forge.jar",
   "Quark-4.0-461.jar",
   "ShoulderSurfing-Forge-1.20.1-4.10.5.jar",
@@ -154,8 +151,6 @@
   "moonlight-1.20-2.13.81-forge.jar",
   "notenoughanimations-forge-1.9.3-mc1.20.1.jar",
   "obscure_api-15.jar",
-  "origins-classes-*",
-  "origins-forge-*",
   "packetfixer-forge-2.0.0-1.19-to-1.20.1.jar",
   "particle_core-0.2.6+1.20.1+forge.jar",
   "projectvibrantjourneys-1.20.1-6.0.7.jar",
@@ -956,7 +951,7 @@
   },
   {
    "path": "config/bcc-common.toml",
-   "sha1": "82622f436521ea9de4f1dba419e9a2496fa68ddc",
+   "sha1": "96fadf44b5aa0c5cc510e4e1d0b669f8ff359d69",
    "size": 351
   },
   {
@@ -1816,8 +1811,8 @@
   },
   {
    "path": "config/Feathers-Client.toml",
-   "sha1": "e2b399e50a0352ffbf6dfb05cde92aa5784648dd",
-   "size": 1089
+   "sha1": "67977988a379efee4112c5710e25b28c4d60a8de",
+   "size": 1090
   },
   {
    "path": "config/Feathers-Common.toml",
@@ -2541,8 +2536,8 @@
   },
   {
    "path": "config/irons_spellbooks-client.toml",
-   "sha1": "f74d545865e11fb0718176c51f62725cdde3b3db",
-   "size": 2894
+   "sha1": "045591e1703bdf3676ff2ae0a497f325bed2407d",
+   "size": 2829
   },
   {
    "path": "config/itemborders-common.toml",
@@ -3060,6 +3055,16 @@
    "size": 283
   },
   {
+   "path": "config/origins-common.toml",
+   "sha1": "6f7c522a7d003e41635818d040927d233981e7e8",
+   "size": 17986
+  },
+  {
+   "path": "config/origins_classes-client.toml",
+   "sha1": "cc332c485360148926e2c96767b033d90f44117c",
+   "size": 59
+  },
+  {
    "path": "config/overflowingbars-client.toml",
    "sha1": "b949a190c38291b0fe28e1f5ac294e1b26cb665f",
    "size": 3119
@@ -3081,8 +3086,8 @@
   },
   {
    "path": "config/parcool-client.toml",
-   "sha1": "03943cb3794d694b694836769b160a67212748b4",
-   "size": 7240
+   "sha1": "9f1c71d6668977463d2c3aa40a21c8da634f8b73",
+   "size": 7239
   },
   {
    "path": "config/particle_core_config.toml",
@@ -3198,6 +3203,36 @@
    "path": "config/paxi/datapacks/eldermoor_fixes/data/irons_spellbooks/loot_tables/chests/citadel/citadel_tomes.json",
    "sha1": "108ca446a86437b4f51849fb23d78b95e6a0d9b8",
    "size": 6024
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/medievalorigins/powers/alfiq/pickpocket.json",
+   "sha1": "268f3c0ffa20c1496f92e0efe29c3ef9ebdeb06a",
+   "size": 3033
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/medievalorigins/powers/dwarf/mythril_resonance.json",
+   "sha1": "7f297437154614acf48fdb7a022e01c06dfe9297",
+   "size": 6496
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/medievalorigins/powers/goblin/greedy.json",
+   "sha1": "27dc91343a99dadc03c7bbbd14977f0167d1241d",
+   "size": 8748
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/medievalorigins/powers/high_elf/gear_spawn.json",
+   "sha1": "10833bad9afed6973675cb060f1c498b9692323d",
+   "size": 440
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/medievalorigins/powers/moon_elf/nimble.json",
+   "sha1": "03ca0d8312113b1bef5f4e0c8d356d762fe86058",
+   "size": 494
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/medievalorigins/powers/revenant/summon_scaling.json",
+   "sha1": "3698231742ec27fef75d84dc5ee49bff6884973f",
+   "size": 578
   },
   {
    "path": "config/paxi/datapacks/eldermoor_fixes/pack.mcmeta",
@@ -4700,6 +4735,76 @@
    "size": 3
   },
   {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/functions/orb/move.mcfunction",
+   "sha1": "947e4ab0dbe3ff805f3de1565f51688e82eee763",
+   "size": 78
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/functions/orb/shine.mcfunction",
+   "sha1": "10e50e6a5f8a4e7e1c0ba265d22d016da5acf3ad",
+   "size": 125
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/functions/setup_chosen.mcfunction",
+   "sha1": "a65df5fe08c5813fd72d6fe26866253b949638c2",
+   "size": 483
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/functions/setup_lost.mcfunction",
+   "sha1": "8b14bdff27ce147ee47d06157ee1963e8e7ae712",
+   "size": 201
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/functions/sid/beacon.mcfunction",
+   "sha1": "0e1e49ebcd570f486015553f8dfb0d67c9b5c67f",
+   "size": 383
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/functions/size.mcfunction",
+   "sha1": "3ab5b41e8e976666f8c7464ef95a9a8d76bd209f",
+   "size": 142
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/origins/lightweaver.json",
+   "sha1": "86e09325fdfdf2bcff409904de17ce6c21dfa054",
+   "size": 464
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/powers/abilities/beacon.json",
+   "sha1": "8a4e5cd40e2aca7cb99872109f10b120cbfa44b1",
+   "size": 22736
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/powers/abilities/life_link.json",
+   "sha1": "097e2f911bc7d9892a411320eefb4f5146468935",
+   "size": 3859
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/powers/passives/armor.json",
+   "sha1": "3e36dca1a67a54dcc9ab99f26aff686d79c1febc",
+   "size": 743
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/powers/passives/hearts.json",
+   "sha1": "549c36e1949e12bba3f5bbc55a9bde944504c121",
+   "size": 322
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/powers/passives/idle.json",
+   "sha1": "0df23dcf1abc6ca6bda6e7796e0f2d766c33107a",
+   "size": 2907
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/powers/passives/vision.json",
+   "sha1": "cdb5233797375c977a5b80b16d8347fcd88735c5",
+   "size": 198
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/lightweaver/powers/setup.json",
+   "sha1": "161abed2bf3f839174470280564a554f61d6cca2",
+   "size": 1713
+  },
+  {
    "path": "config/paxi/datapacks/Needed_Data/data/lootbundles/loot_modifiers/chest_loot_fragment.json",
    "sha1": "b60f395b24ce62b1c914fb955216403d1bbf336e",
    "size": 89
@@ -4723,6 +4828,11 @@
    "path": "config/paxi/datapacks/Needed_Data/data/lootbundles/tags/items/whitelist.json",
    "sha1": "c2909af1bdc65e5a932d70cb21f045fdb0abe5aa",
    "size": 843
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/medievalorigins/tags/items/valkyrie_weapons.json",
+   "sha1": "a30acb15cb790515dc51030e9f28c7828c2ccea2",
+   "size": 439
   },
   {
    "path": "config/paxi/datapacks/Needed_Data/data/minecraft/tags/items/axes.json",
@@ -4753,6 +4863,61 @@
    "path": "config/paxi/datapacks/Needed_Data/data/monsterplus/weapon_attributes/gnawing_jaw.json",
    "sha1": "516e38c5648706bdeffaf466f223bc2c3606975f",
    "size": 36
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/oef/powers/carnivore.json",
+   "sha1": "5de5c2ba12224ee9c95d1d26f005be919b93e7ac",
+   "size": 1076
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/oef/powers/omnivore_half_c.json",
+   "sha1": "49a35aa91358b1115585c30dd9fa711519331fe7",
+   "size": 921
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/oef/powers/omnivore_half_v.json",
+   "sha1": "5b55e6dd4bf6ee1c2bb4f122d8147543d0481e95",
+   "size": 922
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/oef/powers/vegetarian.json",
+   "sha1": "73f884b0c4370f82d6780caf82863e7bb874f060",
+   "size": 630
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/oef/tags/items/seafood.json",
+   "sha1": "5553dbfef28dbab702352f6398d12c8c137a1af7",
+   "size": 7874
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/origins/origin_layers/origin.json",
+   "sha1": "a17cee05d223cb2d2d3c97b7d3662c3f5a691326",
+   "size": 300
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/origins/powers/carnivore.json",
+   "sha1": "7c08c50edac1115851088c42a4d8b81f07dfa303",
+   "size": 731
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/origins/powers/vegetarian.json",
+   "sha1": "cf1a2dffc9f02b388583b296322cde7cf2006867",
+   "size": 803
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/origins/tags/items/ignore_diet.json",
+   "sha1": "0da62b6a15f4233dad6f67746f7e41f16854d211",
+   "size": 10109
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/origins/tags/items/meat.json",
+   "sha1": "46489f9232d6affcb3e2070ea89d96a1d82f2796",
+   "size": 14079
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/origins/tags/items/omnivore_only.json",
+   "sha1": "f2fc4c97d278774f6132e153c8a00d9a1a987dbe",
+   "size": 7739
   },
   {
    "path": "config/paxi/datapacks/Needed_Data/data/paraglider/loot_modifiers/spirit_orbs/spawner.json",
@@ -4803,6 +4968,281 @@
    "path": "config/paxi/datapacks/Needed_Data/data/paraglider/recipes/horned_statue/sell_stamina_vessel.json",
    "sha1": "0f4aeba37d603a3e8666e5892ae15998a75410eb",
    "size": 340
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/origins/archer.json",
+   "sha1": "dc89b8797a0a98d142d200fd5f9014232e7b1423",
+   "size": 367
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/origins/bard.json",
+   "sha1": "933431492b659d527cd9b69437eca0c948dcda33",
+   "size": 837
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/origins/brute.json",
+   "sha1": "2fd16b0f0f0e8d22774d4714c10ecb421f3fc323",
+   "size": 461
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/origins/cleric.json",
+   "sha1": "e5ec1462a47187dde024e8cae62bc247b56c6243",
+   "size": 664
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/origins/knight.json",
+   "sha1": "50a246c91ed80820f172a9d88a9f25c074152437",
+   "size": 386
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/origins/mage.json",
+   "sha1": "7fd3b1cb3ec826bac5e5b3ff1deb759ae522e242",
+   "size": 366
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/origins/thief.json",
+   "sha1": "98695ec924e22773e5bf61b4d738e90e380ecc24",
+   "size": 482
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/better_unnoticed.json",
+   "sha1": "e1707396b96edd06e21fe8fd956d93c50fcfa69e",
+   "size": 347
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/brewer_jumpboost.json",
+   "sha1": "0f45a049de2fb448ffeb13847ec414b0815b847b",
+   "size": 328
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/brewer_regeneration.json",
+   "sha1": "ad724591a51e7978db06dbcfe3ebe8fcdc12d9f4",
+   "size": 360
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/brewer_speed.json",
+   "sha1": "93ff23d2dbd3ed13fd4c03d086c3d4bd7719aea8",
+   "size": 353
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/brewer_strength.json",
+   "sha1": "6b3bfed3158d44255309799f5d0ac1bdc0bd7368",
+   "size": 356
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/charismatic.json",
+   "sha1": "db27952175edc022fd33159866ead307e7e505a7",
+   "size": 715
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/charismatic_toggle.json",
+   "sha1": "4e38752bb265d866059041cbac3a333433150d06",
+   "size": 297
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/decoy.json",
+   "sha1": "06d00405422f7c0182b34a0542adba9028c3e04a",
+   "size": 577
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/durable.json",
+   "sha1": "26b3d4554e609a1cd54dc9e3c6d253e049f6e7f0",
+   "size": 262
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/fastcure.json",
+   "sha1": "03285c7cf42c46ebc6bc0cb96490c772941ebc3e",
+   "size": 246
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/fireball.json",
+   "sha1": "09901d7487ddc16f3277d13a9ef6d6c08948fe0d",
+   "size": 581
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/forgivable.json",
+   "sha1": "b350faec5a19ffd36a740f136e7d2f9191158a68",
+   "size": 213
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/heal_pool.json",
+   "sha1": "5e9dcf0ca14decf98e489a5b272b98408862908b",
+   "size": 691
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/horn_effects/admire.json",
+   "sha1": "33a16f9def7d250a0c64af9bed0b9060ac88dba9",
+   "size": 1028
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/horn_effects/call.json",
+   "sha1": "b6466f9c5924708020fd3f5d71ea05c0f6ea103c",
+   "size": 1023
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/horn_effects/dream.json",
+   "sha1": "37e7e3b8558e68c4346a172a80c695b92c799582",
+   "size": 1032
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/horn_effects/feel.json",
+   "sha1": "9161bb4e58e0bc6c23ec7a480aa1ace5121b1ca6",
+   "size": 1030
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/horn_effects/musical_talent.json",
+   "sha1": "33c769421cdffacd0f1d1ece9bead88549c6167c",
+   "size": 265
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/horn_effects/ponder.json",
+   "sha1": "a0858ff60a2550bd84ad2a8349622d231d48fdf7",
+   "size": 1029
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/horn_effects/seek.json",
+   "sha1": "7b270c0158da497532dcc1b310212c19991a0b8c",
+   "size": 1020
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/horn_effects/sing.json",
+   "sha1": "c9a27c6456a393ab786e4dd142841f1e028768da",
+   "size": 1023
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/horn_effects/yearn.json",
+   "sha1": "96e2764224547dc4594e9229c13d81b61f920884",
+   "size": 1186
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/inexperienced.json",
+   "sha1": "01219042818c7fd6dc148e182b3b9be295a5e3cc",
+   "size": 399
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/marksman.json",
+   "sha1": "46f519634c4772c721b1ee25dcc601f52e2faf10",
+   "size": 280
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/musical_past.json",
+   "sha1": "6794e71c99f773ff601a4817ffc2dc32fb79f700",
+   "size": 336
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/no_time_to_rest.json",
+   "sha1": "1801c93001c96c6372b2636b06dcadbdd20c4244",
+   "size": 232
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/not_the_smartest.json",
+   "sha1": "eaf2e60024cb4d0f148976f6b009310a4e76ccf8",
+   "size": 245
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/one_with_the_world.json",
+   "sha1": "2f5aab3a7deab06ffd7e4965c40eb1f215920b31",
+   "size": 386
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/prepared.json",
+   "sha1": "b7d55fb5d3e6ab8727c187e2951bc83eee9c3b66",
+   "size": 231
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/pure.json",
+   "sha1": "6497bd93bfc5d962b9fe55bf3ac57f6cc2b0fe8a",
+   "size": 282
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/pure_color.json",
+   "sha1": "211cccadcfa25e88454ce29c7610be102af8fa8b",
+   "size": 215
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/pure_shake.json",
+   "sha1": "819585482b21ff026c7b249932164f0d28e97f9a",
+   "size": 160
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/quiver.json",
+   "sha1": "0aa0231f938a843161379ef51458da51b7950194",
+   "size": 695
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/resourceful.json",
+   "sha1": "91662b5c8deb2f1c6e54b9797f290fe56c89b274",
+   "size": 564
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/select_targets_strong.json",
+   "sha1": "3c5cb4a032befe33b0f203edc8cea81ddfe74456",
+   "size": 453
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/select_targets_weak.json",
+   "sha1": "4d423e2252925447b52d026e33e9e5c69a3df54c",
+   "size": 476
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/speedy.json",
+   "sha1": "67f41a09accc2a03ecea64c32fea2fa749360187",
+   "size": 402
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/stealthy.json",
+   "sha1": "7a0e1f989dfd191fcbe5e38878dd2cedc31ac466",
+   "size": 306
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/stealthy_damage.json",
+   "sha1": "1dfb17dfcdc8c8180ecf560af9f9998f37e8a11a",
+   "size": 477
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/stealthy_invis.json",
+   "sha1": "596f849c6d9423e12475aed88bec749135befa9d",
+   "size": 482
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/thefty.json",
+   "sha1": "9b7de3491e7f95a720326626cbe3d6b74c63b6d7",
+   "size": 667
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/trained.json",
+   "sha1": "998fa1a6ca94dfee02d1ac228c7c11a5e37b0a53",
+   "size": 251
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/uneasy_alliance.json",
+   "sha1": "150286be344a386e85fe21db13246d9f31889ab5",
+   "size": 658
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/untrained.json",
+   "sha1": "897376074fbafd4bc66ac0cbb28480add7836a6f",
+   "size": 307
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/unwieldly.json",
+   "sha1": "fc25d2c3f5e9cc162d51e81126ed92101bd2a27f",
+   "size": 245
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/villagefriendly.json",
+   "sha1": "fef855c96df1dbf958fc93936bab59cdfffd6694",
+   "size": 485
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/water_walk.json",
+   "sha1": "de1d00ca6c458e72e3086ccb6d633d398694bfe1",
+   "size": 505
+  },
+  {
+   "path": "config/paxi/datapacks/Needed_Data/data/rpg_origins/powers/weak.json",
+   "sha1": "2470ad99c7d702bc5eb99460146b7a209bd668f1",
+   "size": 365
   },
   {
    "path": "config/paxi/datapacks/Needed_Data/data/shrines/worldgen/structure/abandoned_villa.json",
@@ -5528,6 +5968,16 @@
    "path": "config/paxi/resourcepacks/loeresources/pack.mcmeta",
    "sha1": "4f8e75f619a901fe4c97bf2beb80224955b3f396",
    "size": 192
+  },
+  {
+   "path": "config/pehkui-client.toml",
+   "sha1": "50ccb3af7b7fc2103f3f34de24a7c0564fc8a997",
+   "size": 138
+  },
+  {
+   "path": "config/pehkui-common.toml",
+   "sha1": "c11b9ccc2be7db28ea07b48af4ff9b1822082c7b",
+   "size": 407
   },
   {
    "path": "config/pickupnotifier/pickupnotifier-client.toml",
@@ -6871,8 +7321,8 @@
   },
   {
    "path": "defaultconfigs/parcool-server.toml",
-   "sha1": "eb89921d31c84fcdcb4235f5f3e21ce0cb5a3fc3",
-   "size": 3343
+   "sha1": "09bfa1ef67840294d65abbf56c5b0acdaff5fc2c",
+   "size": 3342
   },
   {
    "path": "Eldermoor Performance Presets.bat",
@@ -6953,6 +7403,111 @@
    "path": "kubejs/data/avaritia/recipes/infinity_catalyst_eternal.json",
    "sha1": "fb51549cab28657f750ff7974ed603dae03a6d42",
    "size": 1174
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/armor_armors_bad.json",
+   "sha1": "29f81e4d20137844a9c91fcba2a8fdafbb86c9eb",
+   "size": 2292
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/armor_armors_good.json",
+   "sha1": "a44679e9abbfcaf095ddd66559d2bf0413c6a441",
+   "size": 2758
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/armor_armors_normal.json",
+   "sha1": "9140183073469446367940a0b91fe045f7613cef",
+   "size": 2218
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/axes_melee_weapons_bad.json",
+   "sha1": "e055238930856c60d1e1986a0474ee764b647443",
+   "size": 2247
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/axes_melee_weapons_good.json",
+   "sha1": "037f1f80c9cc45c8ce48d6610fab07a1f980ec79",
+   "size": 2444
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/axes_tools_extended.json",
+   "sha1": "da116ed479509658268714dec2bfd0e11e4e42e5",
+   "size": 2209
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/axes_tools_gathering.json",
+   "sha1": "cdfac0988ea01f4d76f754ac5848b32adcee3035",
+   "size": 2253
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/axes_weapons_normal.json",
+   "sha1": "705b3f2a7ed3a1fe48425d5ac414bf1a52d0e592",
+   "size": 2218
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/bows_bows_bad.json",
+   "sha1": "092baab6de59f41e5f5b6e298c66cb67726eae3d",
+   "size": 2256
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/bows_bows_good.json",
+   "sha1": "445f71137a76af64597b2ffce2144668ab36ddc0",
+   "size": 2301
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/fishing_fishing_rods_bad.json",
+   "sha1": "81f3ef1a02d8e373103f74e7a702fa7915d87521",
+   "size": 2218
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/fishing_fishing_rods_good.json",
+   "sha1": "e64cf9186f598133bb8c3fe3ff0d749c32854287",
+   "size": 2281
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/melee_melee_weapons_bad.json",
+   "sha1": "fa573e2018b145df41b5d1c222b1b0a444a34771",
+   "size": 2248
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/melee_melee_weapons_good.json",
+   "sha1": "71cf6a0348bb6ea959e090f033e287ec1595582e",
+   "size": 2445
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/melee_weapons_normal.json",
+   "sha1": "13e84ddff971222c9aaf70616ebeb4c633db68dc",
+   "size": 2219
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/shields_shields_bad.json",
+   "sha1": "3b9abba4fb05376daa212fd0a72ee88b81f90de7",
+   "size": 2242
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/shields_shields_good.json",
+   "sha1": "236ad1c20371b4d75ce0b2274f669a9b56478510",
+   "size": 2302
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/tools_tools_extended.json",
+   "sha1": "c5e1dbb888f10d78031971f371fabbaa1ca960b4",
+   "size": 2210
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/tools_tools_gathering.json",
+   "sha1": "d19da2e0e62f3da3109be50d7bf595bbff4c91c6",
+   "size": 2254
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/tools_tools_good.json",
+   "sha1": "b7fe1ab504c185b9d5a54430b6b3948e088d70ee",
+   "size": 2323
+  },
+  {
+   "path": "kubejs/data/eldermoor/tiered_modifiers/pools/reforge/tools_tools_normal.json",
+   "sha1": "fe540ed0f5aecdb3e8a3b1e2a27905cdd6b1e4cd",
+   "size": 2253
   },
   {
    "path": "kubejs/data/eldermoor_interop/recipes/ie_crusher_raw_zinc.json",
@@ -7135,6 +7690,11 @@
    "size": 5796
   },
   {
+   "path": "kubejs/server_scripts/eldermoor_reforge.js",
+   "sha1": "7f663b5106f3a166bda21b5811f52f8af8a3472b",
+   "size": 1983
+  },
+  {
    "path": "kubejs/server_scripts/eldermoor_stamina.js",
    "sha1": "e1430638d24734569895b92e8c21fb7ec90b2a33",
    "size": 1854
@@ -7239,6 +7799,12 @@
    "sha1": "24943e5efe95c10367259a7bbd13874ca56ebf0a",
    "size": 218740,
    "asset": "v1.7.1/24943e5efe95c10367259a7bbd13874ca56ebf0a.jar"
+  },
+  {
+   "path": "mods/AltOriginGui-forge-1.20.1-1.1.2.jar",
+   "sha1": "a98a708e3751f167d5e669839a90915c56a9d56f",
+   "size": 204097,
+   "asset": "v1.7.2/a98a708e3751f167d5e669839a90915c56a9d56f.jar"
   },
   {
    "path": "mods/AmbientSounds_FORGE_v6.3.11_mc1.20.1.jar",
@@ -7973,6 +8539,12 @@
    "asset": "v1.7.1/3f2663b57220c174e3818eb08be90131950820c7.jar"
   },
   {
+   "path": "mods/elevatorid-1.20.1-1.9.2-forge.jar",
+   "sha1": "5d7a852c1cd78ad1559c64137ac067961ebfa711",
+   "size": 187858,
+   "asset": "v1.7.2/5d7a852c1cd78ad1559c64137ac067961ebfa711.jar"
+  },
+  {
    "path": "mods/elytraslot-forge-6.4.4+1.20.1.jar",
    "sha1": "f11443ef3371fa790eb33cba1a517638a3afcb07",
    "size": 100660,
@@ -8682,9 +9254,9 @@
   },
   {
    "path": "mods/mastery-1.1.0.jar",
-   "sha1": "37766b40904bd7e6fe6ca59dfafe0478e0285249",
-   "size": 334979,
-   "asset": "v1.7.1/37766b40904bd7e6fe6ca59dfafe0478e0285249.jar"
+   "sha1": "9465af255ad5ab72b4d8bfd6fd30588ab992d15a",
+   "size": 347936,
+   "asset": "v1.7.2/9465af255ad5ab72b4d8bfd6fd30588ab992d15a.jar"
   },
   {
    "path": "mods/mcw-bridges-3.1.2-mc1.20.1forge.jar",
@@ -8715,6 +9287,12 @@
    "sha1": "214da89b2153d496343bde8626283975e358edbd",
    "size": 1320692,
    "asset": "v1.7.1/214da89b2153d496343bde8626283975e358edbd.jar"
+  },
+  {
+   "path": "mods/Medieval Origins Revival-6.5.1+1.20.1-forge.jar",
+   "sha1": "e5344f5384ead5089db48bb8ed237dc741968465",
+   "size": 3468656,
+   "asset": "v1.7.2/e5344f5384ead5089db48bb8ed237dc741968465.jar"
   },
   {
    "path": "mods/meetyourfight-1.20.1-1.6.2.jar",
@@ -8951,6 +9529,18 @@
    "asset": "v1.7.1/984f774e71790deaec674c7587bd24e0711871b2.jar"
   },
   {
+   "path": "mods/origins-classes-forge-1.2.1.jar",
+   "sha1": "63e099d2faf0785e667b17b1d9db7a4648805ed3",
+   "size": 190573,
+   "asset": "v1.7.2/63e099d2faf0785e667b17b1d9db7a4648805ed3.jar"
+  },
+  {
+   "path": "mods/origins-forge-1.20.1-1.10.0.9-all.jar",
+   "sha1": "71af2b5fa4d2905ab71ca7c488a508dba277f109",
+   "size": 2307868,
+   "asset": "v1.7.2/71af2b5fa4d2905ab71ca7c488a508dba277f109.jar"
+  },
+  {
    "path": "mods/packetfixer-3.3.2-1.18-1.20.4-merged.jar",
    "sha1": "79ebc5e66a5ee3ce92afb340e693d506e97361a0",
    "size": 188661,
@@ -8991,6 +9581,12 @@
    "sha1": "a3a7008e07a27b3c831af7e4c82fbbc10a4da328",
    "size": 96892,
    "asset": "v1.7.1/a3a7008e07a27b3c831af7e4c82fbbc10a4da328.jar"
+  },
+  {
+   "path": "mods/Pehkui-3.8.2+1.20.1-forge.jar",
+   "sha1": "4bc816efdd8e5e2a97423313674401351710e403",
+   "size": 671605,
+   "asset": "v1.7.2/4bc816efdd8e5e2a97423313674401351710e403.jar"
   },
   {
    "path": "mods/pipez-forge-1.20.1-1.2.26.jar",

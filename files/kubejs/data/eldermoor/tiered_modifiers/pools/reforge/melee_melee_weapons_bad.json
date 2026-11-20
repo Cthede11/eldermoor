@@ -1,0 +1,161 @@
+{
+ "weight": 3,
+ "verifiers": [
+  {
+   "tag": "eldermoor:reforge/melee"
+  }
+ ],
+ "exclusions": [
+  {
+   "tag": "forge:armors/helmets"
+  },
+  {
+   "tag": "forge:armor"
+  },
+  {
+   "tag": "forge:armors"
+  },
+  {
+   "tag": "bookshelf:armor"
+  },
+  {
+   "tag": "forge:armors/chestplates"
+  },
+  {
+   "tag": "forge:armors/leggings"
+  },
+  {
+   "tag": "forge:armors/boots"
+  },
+  {
+   "id": "sons_of_sins:remnant_helmet"
+  },
+  {
+   "id": "sons_of_sins:remnant_chestplate"
+  },
+  {
+   "id": "sons_of_sins:remnant_leggings"
+  },
+  {
+   "id": "sons_of_sins:remnant_boots"
+  },
+  {
+   "id": "epicpaladins:arclight_helmet"
+  },
+  {
+   "id": "epicpaladins:arclight_chestplate"
+  },
+  {
+   "id": "epicpaladins:arclight_leggings"
+  },
+  {
+   "id": "epicpaladins:arclight_boots"
+  },
+  {
+   "tag": "forge:tools/bows"
+  },
+  {
+   "tag": "forge:bows"
+  },
+  {
+   "tag": "too_many_bows:bows"
+  },
+  {
+   "id": "minecraft:elytra"
+  },
+  {
+   "id": "alexsmobs:tarantula_hawk_elytra"
+  },
+  {
+   "id": "enigmaticlegacy:enigmatic_elytra"
+  },
+  {
+   "id": "minecraft:fishing_rod"
+  },
+  {
+   "id": "forge:fishing_rods"
+  },
+  {
+   "id": "aquaculture:neptunium_fishing_rod"
+  },
+  {
+   "id": "aquaculture:diamond_fishing_rod"
+  },
+  {
+   "id": "aquaculture:gold_fishing_rod"
+  },
+  {
+   "id": "aquaculture:iron_fishing_rod"
+  },
+  {
+   "tag": "minecraft:swords"
+  },
+  {
+   "tag": "minecraft:axes"
+  },
+  {
+   "tag": "blue_skies:tools/swords"
+  },
+  {
+   "tag": "blue_skies:tools"
+  },
+  {
+   "tag": "forge:weapons"
+  },
+  {
+   "tag": "forge:weapons/melee"
+  },
+  {
+   "tag": "forge:swords"
+  },
+  {
+   "tag": "simpleswords:uniques"
+  },
+  {
+   "tag": "c:swords"
+  },
+  {
+   "tag": "sons_of_sins:is_slicer"
+  },
+  {
+   "id": "sons_of_sins:ether_sword"
+  },
+  {
+   "id": "sons_of_sins:osseous_sword"
+  },
+  {
+   "tag": "forge:shields"
+  },
+  {
+   "tag": "minecraft:pickaxes"
+  },
+  {
+   "tag": "forge:shovels"
+  },
+  {
+   "tag": "forge:pickaxes"
+  },
+  {
+   "tag": "forge:hoes"
+  },
+  {
+   "tag": "forge:tool"
+  },
+  {
+   "tag": "minecraft:shovels"
+  },
+  {
+   "tag": "minecraft:hoes"
+  },
+  {
+   "tag": "sons_of_sins:is_osseous"
+  },
+  {
+   "id": "sons_of_sins:shape_shifting_tool"
+  }
+ ],
+ "tiers": [
+  "tiered:melee_weapons/dull",
+  "tiered:melee_weapons/berserk"
+ ]
+}

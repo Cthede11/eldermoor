@@ -186,13 +186,13 @@
 		#Range: 0 ~ 10000
 		stamina_consumption_of_BreakfallReady = 0
 		#Range: 0 ~ 10000
-		stamina_consumption_of_CatLeap = 50
+		stamina_consumption_of_CatLeap = 25
 		#Range: 0 ~ 10000
-		stamina_consumption_of_ChargeJump = 25
+		stamina_consumption_of_ChargeJump = 13
 		#Range: 0 ~ 10000
 		stamina_consumption_of_ClimbPoles = 0
 		#Range: 0 ~ 10000
-		stamina_consumption_of_ClimbUp = 40
+		stamina_consumption_of_ClimbUp = 20
 		#Range: 0 ~ 10000
 		stamina_consumption_of_ClingToCliff = 1
 		#Range: 0 ~ 10000
@@ -200,37 +200,37 @@
 		#Range: 0 ~ 10000
 		stamina_consumption_of_Dive = 0
 		#Range: 0 ~ 10000
-		stamina_consumption_of_Dodge = 20
+		stamina_consumption_of_Dodge = 10
 		#Range: 0 ~ 10000
 		stamina_consumption_of_FastRun = 1
 		#Range: 0 ~ 10000
 		stamina_consumption_of_FastSwim = 1
 		#Range: 0 ~ 10000
-		stamina_consumption_of_Flipping = 20
+		stamina_consumption_of_Flipping = 10
 		#Range: 0 ~ 10000
 		stamina_consumption_of_HangDown = 1
 		#Range: 0 ~ 10000
 		stamina_consumption_of_HorizontalWallRun = 1
 		#Range: 0 ~ 10000
-		stamina_consumption_of_JumpFromBar = 25
+		stamina_consumption_of_JumpFromBar = 13
 		#Range: 0 ~ 10000
 		stamina_consumption_of_QuickTurn = 0
 		#Range: 0 ~ 10000
-		stamina_consumption_of_Roll = 25
+		stamina_consumption_of_Roll = 13
 		#Range: 0 ~ 10000
 		stamina_consumption_of_SkyDive = 0
 		#Range: 0 ~ 10000
 		stamina_consumption_of_Slide = 0
 		#Range: 0 ~ 10000
-		stamina_consumption_of_Tap = 25
+		stamina_consumption_of_Tap = 13
 		#Range: 0 ~ 10000
-		stamina_consumption_of_Vault = 12
+		stamina_consumption_of_Vault = 6
 		#Range: 0 ~ 10000
-		stamina_consumption_of_VerticalWallRun = 40
+		stamina_consumption_of_VerticalWallRun = 20
 		#Range: 0 ~ 10000
-		stamina_consumption_of_WallJump = 30
+		stamina_consumption_of_WallJump = 15
 		#Range: 0 ~ 10000
-		stamina_consumption_of_WallSlide = 2
+		stamina_consumption_of_WallSlide = 1
 		#Infinite Stamina (this needs a permission from server, even if it is on single player's game. normally permitted)
 		#Please check 'parcool-server.toml' in 'serverconfig' directory
 		infinite_stamina = false
