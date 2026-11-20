@@ -1,9 +1,9 @@
-# Eldermoor [RPG] 1.7.2
+# Eldermoor [RPG] 1.7.3
 
 Minecraft 1.20.1, Forge 47.4.28.
 
 ## First time
-1. Get the starter pack (`Eldermoor-RPG-1.7.2-client.zip`) from whoever runs the server and import it in CurseForge
+1. Get the starter pack (`Eldermoor-RPG-1.7.3-client.zip`) from whoever runs the server and import it in CurseForge
    (Create Custom Profile > Import).
 2. Play. That's it.
 

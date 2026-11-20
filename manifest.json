@@ -1,6 +1,6 @@
 {
  "pack": "Eldermoor [RPG]",
- "version": "1.7.2",
+ "version": "1.7.3",
  "forge": "47.4.28",
  "minecraft": "1.20.1",
  "files_base": "https://raw.githubusercontent.com/Cthede11/eldermoor/main/files/",
@@ -951,7 +951,7 @@
   },
   {
    "path": "config/bcc-common.toml",
-   "sha1": "96fadf44b5aa0c5cc510e4e1d0b669f8ff359d69",
+   "sha1": "c0228e8d6b4c7d51a38cbfe6e8db0710c4054fb0",
    "size": 351
   },
   {
@@ -9092,9 +9092,9 @@
   },
   {
    "path": "mods/Kiwi-1.20.1-Forge-11.10.3.jar",
-   "sha1": "286ddd999fef46144da34bda0215a3376d858930",
+   "sha1": "1380034abc414f84fbfaf4a39ceea359db0723c0",
    "size": 1677733,
-   "asset": "v1.7.1/286ddd999fef46144da34bda0215a3376d858930.jar"
+   "asset": "v1.7.3/1380034abc414f84fbfaf4a39ceea359db0723c0.jar"
   },
   {
    "path": "mods/kleeslabs-forge-1.20.1-15.0.12.jar",
