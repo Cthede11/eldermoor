@@ -899,6 +899,11 @@
   "name": "silent-lib-1.20.1-8.0.0.jar",
   "uploaded": true
  },
+ "66ab3e752af609461f855c82065632efe34a4d9f": {
+  "asset": "v1.7.5/66ab3e752af609461f855c82065632efe34a4d9f.jar",
+  "name": "asyncjei-1.0.2.jar",
+  "uploaded": true
+ },
  "66c32ec52d06a64342f7ac09afe5b454b8db87af": {
   "asset": "v1.7.1/66c32ec52d06a64342f7ac09afe5b454b8db87af.jar",
   "name": "goety-2.5.60.6.jar",

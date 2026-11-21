@@ -9,11 +9,13 @@ try {
   console.error('[eldermoor] login guard: mob calming disabled: ' + e)
 }
 
+// Rotation as the properties yRot/xRot: on the server KubeJS finds neither getYRot() nor m_146908_() (probed 2026-11-21).
+// Inside blocks use let, not const: Rhino throws "redeclaration of var" when a block with a const runs twice.
 function guardBaseline(player, data) {
   data.putDouble('eldermoorGuardX', player.x)
   data.putDouble('eldermoorGuardZ', player.z)
-  data.putFloat('eldermoorGuardYaw', player.getYRot())
-  data.putFloat('eldermoorGuardPitch', player.getXRot())
+  data.putFloat('eldermoorGuardYaw', player.yRot)
+  data.putFloat('eldermoorGuardPitch', player.xRot)
 }
 
 PlayerEvents.loggedIn(event => {
@@ -32,14 +34,14 @@ PlayerEvents.tick(event => {
   if (left <= 0) return
   left--
   if (!data.getBoolean('eldermoorGuardInput')) {
-    const dx = player.x - data.getDouble('eldermoorGuardX')
-    const dz = player.z - data.getDouble('eldermoorGuardZ')
-    const moved = dx * dx + dz * dz
+    let dx = player.x - data.getDouble('eldermoorGuardX')
+    let dz = player.z - data.getDouble('eldermoorGuardZ')
+    let moved = dx * dx + dz * dz
     if (moved > 64) {
       guardBaseline(player, data)          // a teleport, not the player walking
     } else {
-      const turned = Math.abs(player.getYRot() - data.getFloat('eldermoorGuardYaw')) +
-                     Math.abs(player.getXRot() - data.getFloat('eldermoorGuardPitch'))
+      let turned = Math.abs(player.yRot - data.getFloat('eldermoorGuardYaw')) +
+                     Math.abs(player.xRot - data.getFloat('eldermoorGuardPitch'))
       if (moved > 0.25 || turned > 2) {
         data.putBoolean('eldermoorGuardInput', true)
         if (left > GUARD_GRACE) left = GUARD_GRACE
@@ -47,9 +49,9 @@ PlayerEvents.tick(event => {
     }
   }
   if (Mob != null && left % 20 == 0) {
-    const id = player.getId()
+    let id = player.getId()
     player.level.getEntitiesOfClass(Mob, player.getBoundingBox().inflate(24)).forEach(mob => {
-      const target = mob.getTarget()
+      let target = mob.getTarget()
       if (target != null && target.getId() == id) mob.setTarget(null)
     })
   }
