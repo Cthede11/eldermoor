@@ -1,6 +1,6 @@
 {
  "pack": "Eldermoor [RPG]",
- "version": "1.7.3",
+ "version": "1.7.4",
  "forge": "47.4.28",
  "minecraft": "1.20.1",
  "files_base": "https://raw.githubusercontent.com/Cthede11/eldermoor/main/files/",
@@ -951,7 +951,7 @@
   },
   {
    "path": "config/bcc-common.toml",
-   "sha1": "c0228e8d6b4c7d51a38cbfe6e8db0710c4054fb0",
+   "sha1": "20c17d750e0f20462cd96ad8aefc89de9220dff1",
    "size": 351
   },
   {
@@ -2833,6 +2833,11 @@
    "path": "config/majruszsdifficulty.json",
    "sha1": "5279d5f746bd79e843dbf2d9a075db9748315855",
    "size": 24951
+  },
+  {
+   "path": "config/mantle-client.toml",
+   "sha1": "7d4d195a29dde91aa1619816b1cc4226bc93dbcb",
+   "size": 26
   },
   {
    "path": "config/mastery-common.toml",
@@ -5840,6 +5845,11 @@
    "size": 166
   },
   {
+   "path": "config/paxi/resourcepacks/loeresources/assets/loe/tips/eldermoor_login.json",
+   "sha1": "f36f642f78f10a21d41431dfbfdac2fbd1510ca0",
+   "size": 175
+  },
+  {
    "path": "config/paxi/resourcepacks/loeresources/assets/loe/tips/eldermoor_mainpath.json",
    "sha1": "445578bf98bb82bda6b17136bf0d272d4d9e39e2",
    "size": 243
@@ -7690,6 +7700,11 @@
    "size": 5796
   },
   {
+   "path": "kubejs/server_scripts/eldermoor_login_guard.js",
+   "sha1": "c8acdd902f18be748f5c7d825e39468341ec4085",
+   "size": 2644
+  },
+  {
    "path": "kubejs/server_scripts/eldermoor_reforge.js",
    "sha1": "7f663b5106f3a166bda21b5811f52f8af8a3472b",
    "size": 1983
@@ -7925,6 +7940,12 @@
    "sha1": "91ab6fc2cc208550f7fc37c43e42eba81eff318e",
    "size": 850974,
    "asset": "v1.7.1/91ab6fc2cc208550f7fc37c43e42eba81eff318e.jar"
+  },
+  {
+   "path": "mods/asyncjei-1.0.1.jar",
+   "sha1": "511ed49d7e449009792994e5b9152a8c50a541e5",
+   "size": 28871,
+   "asset": "v1.7.4/511ed49d7e449009792994e5b9152a8c50a541e5.jar"
   },
   {
    "path": "mods/athena-forge-1.20.1-3.1.2.jar",
@@ -8527,10 +8548,10 @@
    "asset": "v1.7.1/323054485b7d511da2dfa7db71276f44794d1d24.jar"
   },
   {
-   "path": "mods/eldermoor_tweaks-1.0.0.jar",
-   "sha1": "c49a4e92f5c1771ff00056fce40c67d688c44e4c",
-   "size": 4201,
-   "asset": "v1.7.1/c49a4e92f5c1771ff00056fce40c67d688c44e4c.jar"
+   "path": "mods/eldermoor_tweaks-1.0.1.jar",
+   "sha1": "1da14da5b46039df15ea05758370d763a2648840",
+   "size": 5620,
+   "asset": "v1.7.4/1da14da5b46039df15ea05758370d763a2648840.jar"
   },
   {
    "path": "mods/elenaidodge2-1.1.jar",
@@ -8561,6 +8582,12 @@
    "sha1": "e480919fd0645aebe9996b42ec65b41f16dcb6dd",
    "size": 15572517,
    "asset": "v1.7.1/e480919fd0645aebe9996b42ec65b41f16dcb6dd.jar"
+  },
+  {
+   "path": "mods/emi-1.1.24+1.20.1+forge.jar",
+   "sha1": "ea320200878e4a49196760234a22da763671520a",
+   "size": 1121750,
+   "asset": "v1.7.4/ea320200878e4a49196760234a22da763671520a.jar"
   },
   {
    "path": "mods/EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar",
@@ -9253,10 +9280,10 @@
    "asset": "v1.7.1/602bcad5fcb9f7a49c57f897cf4abe28bc8261d7.jar"
   },
   {
-   "path": "mods/mastery-1.1.0.jar",
-   "sha1": "9465af255ad5ab72b4d8bfd6fd30588ab992d15a",
-   "size": 347936,
-   "asset": "v1.7.2/9465af255ad5ab72b4d8bfd6fd30588ab992d15a.jar"
+   "path": "mods/mastery-1.1.2.jar",
+   "sha1": "8764b3bfcaf1c09c957b240b4a81c4ca19b1891f",
+   "size": 347787,
+   "asset": "v1.7.4/8764b3bfcaf1c09c957b240b4a81c4ca19b1891f.jar"
   },
   {
    "path": "mods/mcw-bridges-3.1.2-mc1.20.1forge.jar",

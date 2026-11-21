@@ -249,6 +249,11 @@
   "name": "smoothchunk-1.20.1-4.4.jar",
   "uploaded": true
  },
+ "1da14da5b46039df15ea05758370d763a2648840": {
+  "asset": "v1.7.4/1da14da5b46039df15ea05758370d763a2648840.jar",
+  "name": "eldermoor_tweaks-1.0.1.jar",
+  "uploaded": true
+ },
  "1da5744853d17979033d5ee3cd4251b8340ea7be": {
   "asset": "v1.7.1/1da5744853d17979033d5ee3cd4251b8340ea7be.jar",
   "name": "particle_core-0.3.3+1.20.1+forge.jar",
@@ -687,6 +692,11 @@
  "50e1407869ef0e909e3bdda9328b8bd7db03fdc0": {
   "asset": "v1.7.1/50e1407869ef0e909e3bdda9328b8bd7db03fdc0.jar",
   "name": "geckolib-forge-1.20.1-4.8.4.jar",
+  "uploaded": true
+ },
+ "511ed49d7e449009792994e5b9152a8c50a541e5": {
+  "asset": "v1.7.4/511ed49d7e449009792994e5b9152a8c50a541e5.jar",
+  "name": "asyncjei-1.0.1.jar",
   "uploaded": true
  },
  "51f43857c6056ad281da36a61b3b6bd65a7306a4": {
@@ -1167,6 +1177,11 @@
  "8751f9a178b3002e746b2f30af75dd83281821ee": {
   "asset": "v1.7.1/8751f9a178b3002e746b2f30af75dd83281821ee.jar",
   "name": "simpleshops-1.2.2.jar",
+  "uploaded": true
+ },
+ "8764b3bfcaf1c09c957b240b4a81c4ca19b1891f": {
+  "asset": "v1.7.4/8764b3bfcaf1c09c957b240b4a81c4ca19b1891f.jar",
+  "name": "mastery-1.1.2.jar",
   "uploaded": true
  },
  "88467fe87b95e6cf7a432822033cf74dd8586254": {
@@ -2022,6 +2037,11 @@
  "e9de4acffce328fb3728464e1945611c8f512d05": {
   "asset": "v1.7.1/e9de4acffce328fb3728464e1945611c8f512d05.jar",
   "name": "azurelib-neo-1.20.1-3.2.9.jar",
+  "uploaded": true
+ },
+ "ea320200878e4a49196760234a22da763671520a": {
+  "asset": "v1.7.4/ea320200878e4a49196760234a22da763671520a.jar",
+  "name": "emi-1.1.24+1.20.1+forge.jar",
   "uploaded": true
  },
  "ea7e7247132cb3acacadd96b2b6b635c4cc63a74": {
