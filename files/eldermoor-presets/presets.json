@@ -19,7 +19,9 @@
   "SimpleRPC-",
   "TravelersTitles-",
   "blur-",
+  "colorwheel-",
   "drippyloadingscreen_",
+  "emi-",
   "fallingleaves-",
   "fancymenu_",
   "farsight-",
@@ -50,7 +52,7 @@
   "potato": {
    "title": "Potato",
    "for": "Old laptops, integrated graphics, 8 GB of RAM. The pack starts on this one.",
-   "what": "Vanilla-style menus and textures, no shaders or distant terrain, shortest view and fewest effects.",
+   "what": "Vanilla-style menus and textures, no shaders or distant terrain, shortest view and fewest effects. Recipes in JEI (EMI off: it needs 8 GB).",
    "memory_mb": 5120,
    "edits": [
     {
@@ -289,7 +291,9 @@
     "farsight-",
     "notenoughanimations-",
     "oculus-",
-    "DistantHorizons-"
+    "DistantHorizons-",
+    "emi-",
+    "colorwheel-"
    ],
    "resource_packs": [
     "vanilla",
@@ -304,7 +308,7 @@
   "low": {
    "title": "Low",
    "for": "Older gaming laptops and PCs (GTX 10/16 series, 16 GB of RAM)",
-   "what": "A middle ground: no shaders or distant terrain, modest view and lean textures; lightweight cosmetics stay on.",
+   "what": "A middle ground: no shaders or distant terrain, modest view and lean textures; lightweight cosmetics stay on. Recipes in JEI (EMI off: it needs 8 GB).",
    "memory_mb": 6144,
    "edits": [
     {
@@ -534,7 +538,9 @@
     "RyoamicLights-",
     "farsight-",
     "SimpleRPC-",
-    "DistantHorizons-"
+    "DistantHorizons-",
+    "emi-",
+    "colorwheel-"
    ],
    "resource_packs": [
     "vanilla",
@@ -549,7 +555,7 @@
   "balanced": {
    "title": "Balanced",
    "for": "Most PCs (RTX 20 series or better, 16 GB of RAM)",
-   "what": "Everything on except shaders. Distant terrain at reduced detail.",
+   "what": "Everything on except shaders. Distant terrain at reduced detail. Recipes in EMI.",
    "memory_mb": 8192,
    "edits": [
     {
@@ -794,7 +800,7 @@
   "high": {
    "title": "High",
    "for": "Strong PCs (RTX 3060 / RX 6700 or better, 32 GB of RAM)",
-   "what": "Complementary shaders, full distant terrain, long view, every effect.",
+   "what": "Complementary shaders, full distant terrain, long view, every effect. Recipes in EMI.",
    "memory_mb": 10240,
    "edits": [
     {

@@ -1,6 +1,6 @@
 {
  "pack": "Eldermoor [RPG]",
- "version": "1.7.5",
+ "version": "1.7.6",
  "forge": "47.4.28",
  "minecraft": "1.20.1",
  "files_base": "https://raw.githubusercontent.com/Cthede11/eldermoor/main/files/",
@@ -951,7 +951,7 @@
   },
   {
    "path": "config/bcc-common.toml",
-   "sha1": "c4425f459d0e959b4d2e697d4e212847258d159d",
+   "sha1": "be853fca82e5fb1dff4d363c588a4c4984eb853c",
    "size": 351
   },
   {
@@ -7351,8 +7351,8 @@
   },
   {
    "path": "eldermoor-presets/presets.json",
-   "sha1": "4f49e05fb1fcfb549f387771812fe7b99c04a3a4",
-   "size": 27847
+   "sha1": "4f4a6acf68ef47d820399cd670f2feb9cee28e5d",
+   "size": 28050
   },
   {
    "path": "eldermoor-update/source.json",
@@ -7942,10 +7942,10 @@
    "asset": "v1.7.1/91ab6fc2cc208550f7fc37c43e42eba81eff318e.jar"
   },
   {
-   "path": "mods/asyncjei-1.0.2.jar",
-   "sha1": "66ab3e752af609461f855c82065632efe34a4d9f",
-   "size": 29797,
-   "asset": "v1.7.5/66ab3e752af609461f855c82065632efe34a4d9f.jar"
+   "path": "mods/asyncjei-1.0.3.jar",
+   "sha1": "1e6a85319da36a85f3fd69aaa13b19b3e8a7bcb0",
+   "size": 51549,
+   "asset": "v1.7.6/1e6a85319da36a85f3fd69aaa13b19b3e8a7bcb0.jar"
   },
   {
    "path": "mods/athena-forge-1.20.1-3.1.2.jar",
@@ -8548,10 +8548,10 @@
    "asset": "v1.7.1/323054485b7d511da2dfa7db71276f44794d1d24.jar"
   },
   {
-   "path": "mods/eldermoor_tweaks-1.0.1.jar",
-   "sha1": "1da14da5b46039df15ea05758370d763a2648840",
-   "size": 5620,
-   "asset": "v1.7.4/1da14da5b46039df15ea05758370d763a2648840.jar"
+   "path": "mods/eldermoor_tweaks-1.0.2.jar",
+   "sha1": "09b4027a94cf512a9762d91d3992413b4aacfb0f",
+   "size": 6887,
+   "asset": "v1.7.6/09b4027a94cf512a9762d91d3992413b4aacfb0f.jar"
   },
   {
    "path": "mods/elenaidodge2-1.1.jar",
