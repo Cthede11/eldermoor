@@ -1,6 +1,6 @@
 {
  "pack": "Eldermoor [RPG]",
- "version": "1.7.6",
+ "version": "1.7.7",
  "forge": "47.4.28",
  "minecraft": "1.20.1",
  "files_base": "https://raw.githubusercontent.com/Cthede11/eldermoor/main/files/",
@@ -951,7 +951,7 @@
   },
   {
    "path": "config/bcc-common.toml",
-   "sha1": "be853fca82e5fb1dff4d363c588a4c4984eb853c",
+   "sha1": "37ead6b767f3076a6d70f62e268ad0b73d0ba4a5",
    "size": 351
   },
   {
@@ -2591,8 +2591,8 @@
   },
   {
    "path": "config/jei/jei-client.ini",
-   "sha1": "16631d44354be025418dab658413d0b442261e72",
-   "size": 7760
+   "sha1": "1c1e2016cbb69f5312fa7c3777bb8fcaedd3ecd2",
+   "size": 7753
   },
   {
    "path": "config/jei/jei-colors.ini",
@@ -3056,8 +3056,8 @@
   },
   {
    "path": "config/oculus.properties",
-   "sha1": "421c92c2645817f97db6cc4b42b22eb6365e48ef",
-   "size": 283
+   "sha1": "d114f0396e162cb6424005d09d99055872616284",
+   "size": 277
   },
   {
    "path": "config/origins-common.toml",
@@ -3238,6 +3238,86 @@
    "path": "config/paxi/datapacks/eldermoor_fixes/data/medievalorigins/powers/revenant/summon_scaling.json",
    "sha1": "3698231742ec27fef75d84dc5ee49bff6884973f",
    "size": 578
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/angler_additions_3_pool.json",
+   "sha1": "241aa2c587311d61087dbb141612eb7575a7db4b",
+   "size": 1258
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/angler_end_1_pool.json",
+   "sha1": "5f907e53095d530b60f9fdf1c3e8ad92318e7914",
+   "size": 770
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/cook_additions_1_pool.json",
+   "sha1": "ba69e22c51436fb598e8d178ac082ea5f8142406",
+   "size": 1236
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/cook_additions_2_pool.json",
+   "sha1": "8cee02d845cbf209329080440ab9b5b1d89029e3",
+   "size": 780
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/cook_additions_3_pool.json",
+   "sha1": "cf0d31f52a8929ca16a43a55417b343390345d6f",
+   "size": 1433
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/cook_additions_4_pool.json",
+   "sha1": "b0ff9b5f83aa88cb039c3e7f93425d943e3c5b44",
+   "size": 1236
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/cook_end_1_pool.json",
+   "sha1": "ffb2b1ead525f2d07ff7de64f88ee768d1ff903d",
+   "size": 2063
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/lumberjack_additions_3_pool.json",
+   "sha1": "e71b1b487968a91c3f7ceb3def6a1481d503b889",
+   "size": 3007
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/lumberjack_end_1_pool.json",
+   "sha1": "8462afb008b15937a60266091b6ffef504639965",
+   "size": 2165
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/miner_additions_1_pool.json",
+   "sha1": "1750c1ae18a2ad702b399c337e6c8193b0f9e194",
+   "size": 1537
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/miner_additions_2_pool.json",
+   "sha1": "175967599622ffd4353f8b9f45c9a9dbc85c13a0",
+   "size": 1247
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/miner_additions_3_pool.json",
+   "sha1": "2110b7b450922ad54e47638bb3089867d5541193",
+   "size": 1537
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/miner_main_room_pool.json",
+   "sha1": "f8444958f0eda016858d73cee559cd8ff153db06",
+   "size": 1761
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/monster_hunter_additions_3_pool.json",
+   "sha1": "dbefe3a58ed70c8dfc06d47c4ac7dfefaa382b1d",
+   "size": 3075
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/minecraft/worldgen/template_pool/monster_hunter_end_1_pool.json",
+   "sha1": "e7b151b402b806443759a0355abe3adc4cb6a0c9",
+   "size": 2233
+  },
+  {
+   "path": "config/paxi/datapacks/eldermoor_fixes/data/my_datapack_files/worldgen/template_pool/basement_pool.json",
+   "sha1": "e3fac9d9e5ef06d5998a791b7676934131ed138a",
+   "size": 316
   },
   {
    "path": "config/paxi/datapacks/eldermoor_fixes/pack.mcmeta",
@@ -6186,8 +6266,8 @@
   },
   {
    "path": "config/quark-common.toml",
-   "sha1": "bbb7786383d43c8830b10c43916035ac7bd7963a",
-   "size": 80021
+   "sha1": "329a741090e781c2d2cf3a9fef62dce99275d462",
+   "size": 82001
   },
   {
    "path": "config/questsadditions-client.toml",
@@ -6541,8 +6621,8 @@
   },
   {
    "path": "config/resourcepackoverrides.json",
-   "sha1": "e32ae309c187cea8ef2390a455751c71765c5171",
-   "size": 1123
+   "sha1": "3b0fe4eb50f24211244dfd97d7fc8ee683eae811",
+   "size": 1205
   },
   {
    "path": "config/rested_xp.json",
@@ -7341,8 +7421,8 @@
   },
   {
    "path": "eldermoor-presets/apply.ps1",
-   "sha1": "e4a2da801d8bf9e030d1e3b09f425cfc95759034",
-   "size": 9312
+   "sha1": "6ceb91ab74280acaff33edc616e0fcc77e9497f6",
+   "size": 9998
   },
   {
    "path": "eldermoor-presets/current.txt",
@@ -7351,8 +7431,8 @@
   },
   {
    "path": "eldermoor-presets/presets.json",
-   "sha1": "4f4a6acf68ef47d820399cd670f2feb9cee28e5d",
-   "size": 28050
+   "sha1": "aed8a4f30b473742ecfcf040ba70528dd4b1e2c5",
+   "size": 31962
   },
   {
    "path": "eldermoor-update/source.json",
@@ -7361,8 +7441,8 @@
   },
   {
    "path": "eldermoor-update/update.ps1",
-   "sha1": "97a606a45e92395f8fd5dfa2e3875ff16abb1133",
-   "size": 9528
+   "sha1": "46a24591cdf5a4a2cfd70fda2109bbc8728e5d79",
+   "size": 10630
   },
   {
    "path": "kubejs/assets/kubejs/textures/block/example_block.png",
@@ -7706,13 +7786,18 @@
   },
   {
    "path": "kubejs/server_scripts/eldermoor_reforge.js",
-   "sha1": "7f663b5106f3a166bda21b5811f52f8af8a3472b",
-   "size": 1983
+   "sha1": "81d964ac1f9dd61b2028fb2bc1009dec4d12a39d",
+   "size": 2718
   },
   {
    "path": "kubejs/server_scripts/eldermoor_stamina.js",
    "sha1": "e1430638d24734569895b92e8c21fb7ec90b2a33",
    "size": 1854
+  },
+  {
+   "path": "kubejs/server_scripts/eldermoor_torch_guard.js",
+   "sha1": "2790dc295ee333cf2d2a2bc9788bc143560e7233",
+   "size": 1681
   },
   {
    "path": "kubejs/startup_scripts/example.js",
@@ -8272,6 +8357,12 @@
    "asset": "v1.7.1/86de515018d3bb853cf0a91c026acde748c3e29c.jar"
   },
   {
+   "path": "mods/colorwheel-forge-1.3.2+mc1.20.1.jar",
+   "sha1": "266c1394b56251c4fd60b43dc2f8c3713e63deb1",
+   "size": 1143606,
+   "asset": "v1.7.7/266c1394b56251c4fd60b43dc2f8c3713e63deb1.jar"
+  },
+  {
    "path": "mods/common-networking-forge-1.0.6-1.20.1.jar",
    "sha1": "28c3ffcdec0f39fd91937df203a93de1e6268788",
    "size": 21714,
@@ -8548,10 +8639,10 @@
    "asset": "v1.7.1/323054485b7d511da2dfa7db71276f44794d1d24.jar"
   },
   {
-   "path": "mods/eldermoor_tweaks-1.0.2.jar",
-   "sha1": "09b4027a94cf512a9762d91d3992413b4aacfb0f",
-   "size": 6887,
-   "asset": "v1.7.6/09b4027a94cf512a9762d91d3992413b4aacfb0f.jar"
+   "path": "mods/eldermoor_tweaks-1.0.4.jar",
+   "sha1": "f5f8ee8840a23adea88e02c503ff6940b6a9b9d0",
+   "size": 12930,
+   "asset": "v1.7.7/f5f8ee8840a23adea88e02c503ff6940b6a9b9d0.jar"
   },
   {
    "path": "mods/elenaidodge2-1.1.jar",
@@ -9280,10 +9371,10 @@
    "asset": "v1.7.1/602bcad5fcb9f7a49c57f897cf4abe28bc8261d7.jar"
   },
   {
-   "path": "mods/mastery-1.1.2.jar",
-   "sha1": "8764b3bfcaf1c09c957b240b4a81c4ca19b1891f",
-   "size": 347787,
-   "asset": "v1.7.4/8764b3bfcaf1c09c957b240b4a81c4ca19b1891f.jar"
+   "path": "mods/mastery-1.1.4.jar",
+   "sha1": "ae189fad4551148643bde7dc4ede2af6b2b1d94a",
+   "size": 358529,
+   "asset": "v1.7.7/ae189fad4551148643bde7dc4ede2af6b2b1d94a.jar"
   },
   {
    "path": "mods/mcw-bridges-3.1.2-mc1.20.1forge.jar",
@@ -10437,6 +10528,11 @@
    "size": 556651
   },
   {
+   "path": "resourcepacks/Eldermoor Lite Textures.zip",
+   "sha1": "d3dd4a18b5b379c5bb325453c71af7a9e37864dc",
+   "size": 13273639
+  },
+  {
    "path": "resourcepacks/EmbellishedStone-1.20.1-1.0.0.zip",
    "sha1": "7e681fdb997ca95a56e7394977955b2e2624b29e",
    "size": 2525
@@ -10482,9 +10578,9 @@
    "size": 18424
   },
   {
-   "path": "shaderpacks/ComplementaryUnbound_r5.4.zip",
-   "sha1": "239542849d064ab0ac9758a3e6278c310ace0a04",
-   "size": 452408
+   "path": "shaderpacks/ComplementaryUnbound_r5.9.3.zip.txt",
+   "sha1": "47a4a24056a2611581c9cc2ea89cc19d5254cf48",
+   "size": 104
   },
   {
    "path": "shaderpacks/\u00a7r\u00a7lAstra\u00a74\u00a7lLex\u00a7r\u00a7l_By_LexBoosT_\u00a74\u00a7lV93.0\u00a7r\u00a7l.zip",
@@ -10500,6 +10596,14 @@
    "path": "Update Eldermoor.bat",
    "sha1": "52b47f2233f189a951ae6dc65b0691392768b1dd",
    "size": 519
+  }
+ ],
+ "external": [
+  {
+   "path": "shaderpacks/ComplementaryUnbound_r5.9.3.zip",
+   "size": 553400,
+   "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67",
+   "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/B1kyfoUZ/ComplementaryUnbound_r5.9.3.zip"
   }
  ]
 }

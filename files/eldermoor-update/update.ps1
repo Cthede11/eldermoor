@@ -150,11 +150,18 @@ if (Test-Path -LiteralPath $modsDir) {
     }
 }
 
+# files the pack may not re-host (the Complementary shader pack's license allows it in modpacks only through Modrinth
+# or CurseForge): fetched from their official download when missing; a file already there is never replaced or removed
+$ext = New-Object System.Collections.ArrayList
+foreach ($x in @($manifest.external)) {
+    if ($x -and -not (Test-Path -LiteralPath (Local-Path $x.path))) { [void]$ext.Add($x) }
+}
 $bytes = 0
 foreach ($t in $todo) { $bytes += [int64]$t.f.size }
-Write-Host ("  To download: {0} file(s), {1:N1} MB.  To remove: {2}.  Your own changes kept: {3}." -f $todo.Count, ($bytes / 1MB), $remove.Count, $kept)
+foreach ($x in $ext) { $bytes += [int64]$x.size }
+Write-Host ("  To download: {0} file(s), {1:N1} MB.  To remove: {2}.  Your own changes kept: {3}." -f ($todo.Count + $ext.Count), ($bytes / 1MB), $remove.Count, $kept)
 if ($Check) { Done 0 }
-if ($todo.Count -eq 0 -and $remove.Count -eq 0 -and $installedVersion -eq $manifest.version) {
+if ($todo.Count -eq 0 -and $ext.Count -eq 0 -and $remove.Count -eq 0 -and $installedVersion -eq $manifest.version) {
     Write-Host "  Already up to date." -ForegroundColor Green
     Done 0
 }
@@ -180,6 +187,14 @@ foreach ($t in $todo) {
     }
     Move-Item -LiteralPath $tmp -Destination $t.local
     $installed[$f.path] = $f.sha1
+}
+foreach ($x in $ext) {
+    $local = Local-Path $x.path
+    Write-Host ("  {0} ({1:N1} MB, from {2})" -f $x.path, ($x.size / 1MB), ([Uri]$x.url).Host)
+    $tmp = $local + ".eldermoor-download"
+    try { Fetch $x.url $tmp } catch { Write-Host "  could not download $($x.path); the game works without it, run the updater again later." -ForegroundColor Yellow; continue }
+    if ((Get-Sha1 $tmp) -ne $x.sha1) { Remove-Item -LiteralPath $tmp -Force; Write-Host "  $($x.path) arrived damaged; run the updater again." -ForegroundColor Red; continue }
+    Move-Item -LiteralPath $tmp -Destination $local
 }
 foreach ($r in $remove) {
     Backup $r.rel $r.local

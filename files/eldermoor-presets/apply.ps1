@@ -209,5 +209,12 @@ foreach ($f in $mods.On) { Write-Host "    switched back on: $f" }
 Write-Host ""
 Write-Host ("  One more step, in the CurseForge app: right-click the profile > Profile Options,") -ForegroundColor Yellow
 Write-Host ("  untick 'Use system memory settings' and set Allocated Memory to {0} MB." -f (Get-Memory $p $hw)) -ForegroundColor Yellow
+if ($p.jvm_args) {
+    Write-Host ""
+    Write-Host "  For this preset, also replace the Java arguments: CurseForge > Settings > Minecraft >" -ForegroundColor Yellow
+    Write-Host "  Java Settings > Additional Arguments (garbage collector settings tuned for this preset's memory):" -ForegroundColor Yellow
+    Write-Host ("    {0}" -f $p.jvm_args)
+    try { Set-Clipboard -Value $p.jvm_args; Write-Host "  (copied to the clipboard: paste with Ctrl+V)" } catch {}
+}
 Write-Host "  Every setting can still be changed in the game's Video Settings afterwards."
 Done 0

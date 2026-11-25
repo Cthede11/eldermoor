@@ -364,6 +364,11 @@
   "name": "logprot-1.20.1-3.5.jar",
   "uploaded": true
  },
+ "266c1394b56251c4fd60b43dc2f8c3713e63deb1": {
+  "asset": "v1.7.7/266c1394b56251c4fd60b43dc2f8c3713e63deb1.jar",
+  "name": "colorwheel-forge-1.3.2+mc1.20.1.jar",
+  "uploaded": true
+ },
  "270d1b008faf53015a4223923671d9e375e9ff81": {
   "asset": "v1.7.1/270d1b008faf53015a4223923671d9e375e9ff81.jar",
   "name": "fantasy-armor-1.3.1-1.20.1-forge.jar",
@@ -1564,6 +1569,11 @@
   "name": "fancymenu_forge_3.10.0_MC_1.20.1.jar",
   "uploaded": true
  },
+ "ae189fad4551148643bde7dc4ede2af6b2b1d94a": {
+  "asset": "v1.7.7/ae189fad4551148643bde7dc4ede2af6b2b1d94a.jar",
+  "name": "mastery-1.1.4.jar",
+  "uploaded": true
+ },
  "ae47625db6e72241a4a3791dfdd5bcd5cf2dc05c": {
   "asset": "v1.7.1/ae47625db6e72241a4a3791dfdd5bcd5cf2dc05c.jar",
   "name": "merequester-forge-1.20.1-1.2.1.jar",
@@ -2192,6 +2202,11 @@
  "f518c42c64f472e464adc067da389c0797af141b": {
   "asset": "v1.7.1/f518c42c64f472e464adc067da389c0797af141b.jar",
   "name": "[1.20.1-forge]-Epic-Knights-Ores-and-Alloys-1.1.jar",
+  "uploaded": true
+ },
+ "f5f8ee8840a23adea88e02c503ff6940b6a9b9d0": {
+  "asset": "v1.7.7/f5f8ee8840a23adea88e02c503ff6940b6a9b9d0.jar",
+  "name": "eldermoor_tweaks-1.0.4.jar",
   "uploaded": true
  },
  "f5fc631d832d383565718be0b71023068ab7dca1": {
